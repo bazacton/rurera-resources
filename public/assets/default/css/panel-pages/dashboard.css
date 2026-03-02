@@ -799,11 +799,6 @@ Right SideBar Style Start
     margin: 15px 0 0 -15px; 
     padding: 15px; 
     min-width: 280px;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
 }
 .user-profile-icons .dropdown-menu .dropdown-header {text-align: left;font-weight: 600; color: #333; padding: 0 0 10px;}
 .dropdown-list-content .dropdown-item {background-color: #f9f8f8; border-radius: 5px; padding: 10px 15px; display: block; margin: 0 0 15px;}
