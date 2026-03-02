@@ -761,14 +761,6 @@ Right SideBar Style Start
 .user-profile-icons {margin-bottom: 15px; width: 100%;}
 .user-profile-icons ul {display: flex; align-items: center; flex-wrap: wrap; gap: 12px 20px; justify-content: flex-end; width: 100%;}
 .user-profile-icons > ul > li {display: inline-flex;align-items: center; min-width: 50px;}
-.user-profile-icons > ul > li.sidebar-no-mobile {
-    padding-bottom: 15px;
-    margin-bottom: -15px;
-}
-.user-profile-icons > ul > li.dropdown {
-    padding: 0 0 15px;
-    margin: 0 0 -15px;
-}
 .user-profile-icons .dropdown > a > img,
 .user-profile-icons img {width: 28px; height: 28px; object-fit: contain; }
 .user-profile-icons li .dropdown-toggle-btn {display: inline-flex; align-items: center; gap: 5px; position: relative; border: 0; padding: 0; background-color: inherit; font-weight: 700;}
@@ -825,7 +817,6 @@ Right SideBar Style Start
 .panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list .dropdown-item .user-list-name {color: var(--primary); font-weight: 500;}
 .user-profile-icons ul .menu-button-mobile,
 .user-profile-icons ul .sidebar-logo-mobile{display: none;}
-.user-profile-icons > ul > li.sidebar-no-mobile .dropdown {margin-bottom: -15px; padding-bottom: 15px;}
 /* user-profile-dropdown style End */
 /* Streak-dropdown style Start */
 .streak-dropdown .streak-icon {
