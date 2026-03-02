@@ -92,23 +92,20 @@
 </div>
 @push('scripts_bottom')
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        function updateStickyOffset() {
-            const selectedTopics = document.querySelector('.selected-topics');
-            const root = document.documentElement;
+    function updateStickyOffset() {
+        const selectedTopics = document.querySelector('.selected-topics');
+        const root = document.documentElement;
 
-            if (!selectedTopics) return;
-
+        if (selectedTopics) {
             const height = selectedTopics.offsetHeight;
             root.style.setProperty('--sticky-offset', height + 'px');
+        }
         }
 
         // Run on load
         updateStickyOffset();
 
-        // Run on resize
+        // Run on resize (important if responsive)
         window.addEventListener('resize', updateStickyOffset);
-
-    });
 </script>
 @endpush
