@@ -1459,13 +1459,13 @@ body mjx-container[display] {
 .value-lable .no-questions-lable:before {
     content: "";
     position: absolute;
-    top: 100%;
     height: 8px;
     width: 8px;
     background-color: #000;
     left: 50%;
+    top: 100%;
     transform: rotate(45deg) translateX(-50%);
-    margin-right: 0;
+    margin-top: -2px;
 }
 .quiz-questions-bar:hover .value-lable .no-questions-lable {opacity: 1; visibility: visible;margin-bottom: -10px;}
 .quiz-questions-bar:hover .value-lable:after {top: -35px;}
