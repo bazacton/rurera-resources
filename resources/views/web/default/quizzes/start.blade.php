@@ -57,7 +57,7 @@ $started_already = isset($started_already)? $started_already : false;
                     </div>
                 </div>
             </section>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center h-100">
                 <div class="d-flex align-items-center justify-content-center w-100">
                     @php $content_class = ''; @endphp
                     @if( $quiz->quiz_type == 'vocabulary' || $quiz->quiz_type == 'practice')
