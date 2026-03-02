@@ -5358,7 +5358,7 @@ a.badge-circle-gray200.focus,
 a.badge-circle-gray200:focus {outline: 0; box-shadow: 0 0 0 .2rem hsla(0, 0%, 94.5%, .5);}
 .nav-tabs .nav-item a.active:after {content: "";position: absolute;bottom: 0;left: 50%;width: 85%;height: 5px;background-color: var(--primary);border-radius: 5px;transform: translate(-50%, 17px);}
 .rtl .nav-tabs .nav-item a.active:after {bottom: 2px;}
-.dropdown-menu {padding: 15px; min-width: 325px; z-index: 511; border: unset;top: 100%; overflow: visible !important;visibility: hidden;opacity: 0;margin-top: -15px;display: block;transition: opacity 0.3s ease, transform 0.3s ease; will-change: opacity, transform;}
+.dropdown-menu {padding: 15px; min-width: 325px; z-index: 511; border: unset;top: 100%; overflow: visible !important;visibility: hidden;opacity: 0;display: block;transition: opacity 0.3s ease, transform 0.3s ease; transform: translateY(10px); will-change: opacity, transform;}
 .dropdown:hover .dropdown-menu {opacity: 1; visibility: visible;margin-top: 15px;}
 .dropdown-menu.user-profile-dropdown {min-width: 125px;}
 header .dropdown-menu {transform: translate3d(0, 54px, 0) !important;}
