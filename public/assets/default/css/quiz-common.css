@@ -3590,6 +3590,9 @@ html:has(.learn-test-start) {
     flex-direction: column;
     min-height: 250px;
 }
+.section-lable {
+    color: #222;
+}
 .section-bottom {
     margin-top: auto;
     display: flex;
