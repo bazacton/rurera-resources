@@ -401,7 +401,7 @@
         </div>
     </div>
 
-<div class="modal fade leave-option-modal show" id="leave-option-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-modal="true">
+<div class="modal fade leave-option-modal show rurera-hide" id="leave-option-modal2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-modal="true">
   <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
