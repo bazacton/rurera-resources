@@ -3583,3 +3583,31 @@ html:has(.learn-test-start) {
     border-color: var(--primary);
 }
 /* Rurera-Report Modal Style End */
+
+/* Test Section Style Start */
+.test-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+}
+.section-bottom {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-no-of-questions,
+.section-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.section-bottom .icon-box {
+    height: 40px;
+    width: 40px;
+}
+.section-bottom .icon-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Test Section Style End */
