@@ -10,7 +10,7 @@
                 <img src="/assets/default/svgs/ask.svg" alt="">
             </i>
             <div class="text-box">
-                {{isset($section_data->no_of_questions)? $section_data->no_of_questions : 0}} Questions
+                {{isset($section_data->no_of_questions)? $section_data->no_of_questions : 0}} <span>Questions</span>
             </div>
             
         </div>
