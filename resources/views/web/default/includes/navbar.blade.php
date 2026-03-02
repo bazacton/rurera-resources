@@ -43,7 +43,7 @@
                     @if(!empty($generalSettings['logo']))
                         <!-- <img src="{{ $generalSettings['logo'] }}" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="185" height="38" itemprop="image" loading="eager"> -->
                          <img src="/assets/default/img/sidebar/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="68" height="67" itemprop="image" loading="eager">
-                        <span class="logo-text font-30 font-weight-bold ml-10">Rurera</span>
+                        <span class="logo-text font-22 font-weight-bold ml-10">Rurera</span>
                     @endif
                 </a>
 
