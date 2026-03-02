@@ -807,24 +807,13 @@ Right SideBar Style Start
 .dropdown-list-content .dropdown-item .time {color: #666;}
 .user-profile-icons .dropdown-footer a {border: 1px solid var(--primary); color: var(--primary); padding: 5px 10px; display: inline-block;line-height: normal; border-radius: 5px; font-weight: 500;}
 .user-profile-icons .dropdown:hover .dropdown-menu { margin-top: 0; transform: translateX(-50%) translateY(0);}
-.panel-right-sidebar .dropdown:hover .dropdown-menu.user-profile-dropdown {
-    transform: translateX(0) translateY(0);
-}
+.panel-right-sidebar .dropdown:hover .dropdown-menu.user-profile-dropdown {transform: translateX(0) translateY(0);}
 .user-profile-icons .dropdown-menu.user-coins-menu .dropdown-header {font-size: 1rem; font-weight: normal; display: flex; align-items: flex-start;padding: 0; gap: 10px;flex-wrap: wrap;}
 .user-profile-icons .dropdown-menu.user-coins-menu .coins-text {width: calc(100% - 40px); box-sizing: border-box; white-space: normal; font-weight: 600;}
 .user-profile-icons .dropdown-menu.user-coins-menu .coins-text span {display: block; font-weight: normal; font-size: 14px; color: #666; padding-top: 5px;}
 .user-profile-icons .dropdown-menu.user-coins-menu .coins-text a {color: var(--primary); text-decoration: underline;}
-.user-profile-dropdown .user-name {
-    display: block;
-    margin: 0 0 10px;
-}
-.user-profile-dropdown .user-manage-btn {
-    font-size: 14px !important;
-    padding: 8px 15px;
-    line-height: normal;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
+.user-profile-dropdown .user-name {display: block; margin: 0 0 10px;}
+.user-profile-dropdown .user-manage-btn {font-size: 14px !important; padding: 8px 15px; line-height: normal; margin-bottom: 5px; border-radius: 5px;}
 .dropdown-menu.user-profile-dropdown .user-nav-list {border: 0; padding: 15px 20px 15px !important; display: inline-block; text-align: left; border-bottom: 1px solid #f4f4f6; width: 100%;}
 .top-navbar .dropdown-menu.user-profile-dropdown .user-nav-list img,
 .dropdown-menu.user-profile-dropdown .user-nav-list img {height: 35px; width: 35px; margin-right: 15px; float: left; margin-top: 3px;}
@@ -836,10 +825,7 @@ Right SideBar Style Start
 .panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list .dropdown-item .user-list-name {color: var(--primary); font-weight: 500;}
 .user-profile-icons ul .menu-button-mobile,
 .user-profile-icons ul .sidebar-logo-mobile{display: none;}
-.user-profile-icons > ul > li.sidebar-no-mobile .dropdown {
-    margin-bottom: -15px;
-    padding-bottom: 15px;
-}
+.user-profile-icons > ul > li.sidebar-no-mobile .dropdown {margin-bottom: -15px; padding-bottom: 15px;}
 /* user-profile-dropdown style End */
 /* Streak-dropdown style Start */
 .streak-dropdown .streak-icon {
