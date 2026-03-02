@@ -25,7 +25,7 @@
         </div>
     </div>
 </div>
-<div class="quiz_section_instructions">
+<div class="quiz_section_instructions mb-25">
     <h2>{!! isset($section_data->instr)? $section_data->instr : '' !!}</h2>
     <p>Answer as many of these Reading Comprehension questions as you can in the 5 minutes provided. You can move on to the next section when the 5 minutes have passed, or if you have finished all of the questions in this section. Try your best, and good luck!</p>
 </div>
