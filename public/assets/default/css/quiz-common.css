@@ -3620,5 +3620,6 @@ html:has(.learn-test-start) {
 .section-bottom .text-box span {
     color: #666;
     padding-top: 5px;
+    white-space: nowrap;
 }
 /* Test Section Style End */
