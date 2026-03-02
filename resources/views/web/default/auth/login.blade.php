@@ -32,8 +32,9 @@
     <div class="container d-flex flex-column justify-content-center align-items-center">
         <div class="text-center mb-30 mt-50">
             <a href="/" class="login-logo d-inline-flex justify-content-center align-items-center">
-                <img src="/assets/default/img/sidebar/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="68" height="67" itemprop="image" loading="eager">
-                <span class="logo-text font-30 font-weight-bold ml-10">Rurera</span>
+                <!-- <img src="/assets/default/img/sidebar/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="68" height="67" itemprop="image" loading="eager">
+                <span class="logo-text font-30 font-weight-bold ml-10">Rurera</span> -->
+                <img src="/store/1/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="185" height="38" itemprop="image" loading="eager">
             </a>
         </div>
         @if(!empty(session()->has('msg')))
