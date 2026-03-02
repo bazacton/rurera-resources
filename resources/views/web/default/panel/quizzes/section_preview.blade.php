@@ -4,8 +4,18 @@
         {{isset($section_data->name)? $section_data->name : ''}}
     </h1>
 
-    <div class="section-no-of-questions">{{isset($section_data->no_of_questions)? $section_data->no_of_questions : 0}} Questions</div>
-    <div class="section-time">{{isset($section_data->time)? $section_data->time : 0}} mins <span>Time Limit</span></div>
+    <div class="section-no-of-questions">
+        <i class="icon-box">
+            <img src="/assets/default/svgs/ask.svg" alt="">
+        </i>
+        {{isset($section_data->no_of_questions)? $section_data->no_of_questions : 0}} Questions
+    </div>
+    <div class="section-time">
+        <i class="icon-box">
+            <img src="/assets/default/svgs/ask.svg" alt="">
+        </i>
+        {{isset($section_data->time)? $section_data->time : 0}} mins <span>Time Limit</span>
+    </div>
     
 </div>
 <div class="quiz_section_instructions">
