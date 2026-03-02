@@ -1459,8 +1459,8 @@ body mjx-container[display] {
 .value-lable .no-questions-lable:before {
     content: "";
     position: absolute;
-    height: 5px;
-    width: 5px;
+    height: 6px;
+    width: 6px;
     background-color: #000;
     left: 50%;
     top: 100%;
