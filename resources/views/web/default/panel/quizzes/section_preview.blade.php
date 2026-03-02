@@ -12,7 +12,7 @@
     </div>
     <div class="section-time">
         <i class="icon-box">
-            <img src="/assets/default/svgs/ask.svg" alt="">
+            <img src="/assets/default/svgs/timer.svg" alt="">
         </i>
         {{isset($section_data->time)? $section_data->time : 0}} mins <span>Time Limit</span>
     </div>
