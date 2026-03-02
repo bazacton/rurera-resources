@@ -3629,7 +3629,7 @@ html:has(.learn-test-start) {
     background-color: var(--primary);
     border: 0;
     color: #fff;
-    padding: 6px 15px;
+    padding: 8px 15px;
     height: auto;
     line-height: normal;
     border-radius: 3px;
