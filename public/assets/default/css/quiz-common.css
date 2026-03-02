@@ -3616,12 +3616,14 @@ html:has(.learn-test-start) {
     display: inline-flex;
     flex-direction: column;
     line-height: normal;
+    font-weight: 500;
 }
 .section-bottom .text-box span {
     color: #666;
     padding-top: 2px;
     white-space: nowrap;
     font-size: .875rem;
+    font-weight: normal;
 }
 .section-start-quiz {
     background-color: var(--primary);
