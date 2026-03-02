@@ -806,7 +806,7 @@ Right SideBar Style Start
 .user-profile-icons .notifications-lable {display: block; margin: 0 0 5px; font-weight: 600; text-transform: capitalize;}
 .dropdown-list-content .dropdown-item .time {color: #666;}
 .user-profile-icons .dropdown-footer a {border: 1px solid var(--primary); color: var(--primary); padding: 5px 10px; display: inline-block;line-height: normal; border-radius: 5px; font-weight: 500;}
-.user-profile-icons .dropdown:hover .dropdown-menu { margin-top: 0;}
+.user-profile-icons .dropdown:hover .dropdown-menu { margin-top: 0; transform: translateY(0);}
 .user-profile-icons .dropdown-menu.user-coins-menu .dropdown-header {font-size: 1rem; font-weight: normal; display: flex; align-items: flex-start;padding: 0; gap: 10px;flex-wrap: wrap;}
 .user-profile-icons .dropdown-menu.user-coins-menu .coins-text {width: calc(100% - 40px); box-sizing: border-box; white-space: normal; font-weight: 600;}
 .user-profile-icons .dropdown-menu.user-coins-menu .coins-text span {display: block; font-weight: normal; font-size: 14px; color: #666; padding-top: 5px;}
