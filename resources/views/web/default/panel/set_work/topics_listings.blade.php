@@ -96,16 +96,25 @@
         const selectedTopics = document.querySelector('.selected-topics');
         const root = document.documentElement;
 
-        if (selectedTopics) {
-            const height = selectedTopics.offsetHeight;
-            root.style.setProperty('--sticky-offset', height + 'px');
-        }
-        }
+        if (!selectedTopics) return;
 
-        // Run on load
-        updateStickyOffset();
+        const height = selectedTopics.offsetHeight;
+        root.style.setProperty('--sticky-offset', height + 'px');
+    }
 
-        // Run on resize (important if responsive)
-        window.addEventListener('resize', updateStickyOffset);
+    // Observe DOM changes
+    const observer = new MutationObserver(() => {
+        if (document.querySelector('.selected-topics')) {
+            updateStickyOffset();
+        }
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+
+    // Resize listener
+    window.addEventListener('resize', updateStickyOffset);
 </script>
 @endpush
