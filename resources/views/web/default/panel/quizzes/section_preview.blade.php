@@ -5,7 +5,7 @@
     </h1>
 
     <div class="section-no-of-questions">{{isset($section_data->no_of_questions)? $section_data->no_of_questions : 0}} Questions</div>
-    <div class="section-time">Time: {{isset($section_data->time)? $section_data->time : 0}}</div>
+    <div class="section-time">{{isset($section_data->time)? $section_data->time : 0}} mins <span>Time Limit</span></div>
     <div class="quiz_section_instructions">{!! isset($section_data->instr)? $section_data->instr : '' !!}</div>
 </div>
 <div class="test-description">
