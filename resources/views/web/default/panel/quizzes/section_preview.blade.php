@@ -3,7 +3,7 @@
     <h2 class="mb-10">
         {{isset($section_data->name)? $section_data->name : ''}}
     </h2>
-    <p class="section-lable font-18">Reading Comprehension <span class="font-14 d-block">Section 2 of 5</span></p>
+    <p class="section-lable font-18">Reading Comprehension <span class="font-14 d-block pt-10">Section 2 of 5</span></p>
     <div class="section-bottom">
         <div class="section-no-of-questions">
             <i class="icon-box">
