@@ -826,9 +826,8 @@ Right SideBar Style Start
 .top-navbar .dropdown-menu.user-profile-dropdown .user-nav-list img,
 .dropdown-menu.user-profile-dropdown .user-nav-list img {height: 35px; width: 35px; margin-right: 15px; float: left; margin-top: 3px;}
 .top-navbar .dropdown-menu.user-profile-dropdown .user-nav-list .user-list-name {display: inline-block; font-size: 12px; font-weight: 500; margin: 0 0 2px;line-height: normal;}
-.top-navbar .dropdown-menu.user-profile-dropdown .user-nav-list .user-list-email,
-.panel-right-sidebar .dropdown-menu.user-profile-dropdown {min-width: 250px; top: 100% !important; bottom: auto; left: auto !important; right: -10px !important; text-align: center; transform: none !important;}
-.panel-right-sidebar .dropdown-menu.user-profile-dropdown {max-width: 220px;min-width: 220px;margin-right: 15px;}
+.top-navbar .dropdown-menu.user-profile-dropdown .user-nav-list .user-list-email {min-width: 250px; top: 100% !important; bottom: auto; left: auto !important; right: -10px !important; text-align: center; transform: none !important;}
+.panel-right-sidebar .dropdown-menu.user-profile-dropdown {max-width: 220px;min-width: 220px;margin-right: 15px; left: auto; right: -10px;}
 .panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list {padding: 0 !important; border: 0;}
 .panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list .dropdown-item {padding: 0 20px !important; margin-bottom: 10px; display: flex; align-items: center; flex-direction: column;}
 .panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list .dropdown-item .user-list-name {color: var(--primary); font-weight: 500;}
