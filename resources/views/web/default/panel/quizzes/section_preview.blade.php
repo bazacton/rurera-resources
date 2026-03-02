@@ -7,7 +7,7 @@
     <div class="section-bottom">
         <div class="section-no-of-questions">
             <i class="icon-box">
-                <img src="/assets/default/svgs/ask.svg" alt="">
+                <img src="/assets/default/svgs/clipboard-list.svg" alt="">
             </i>
             <div class="text-box">
                 {{isset($section_data->no_of_questions)? $section_data->no_of_questions : 0}} 
@@ -17,7 +17,7 @@
         </div>
         <div class="section-time">
             <i class="icon-box">
-                <img src="/assets/default/svgs/timer.svg" alt="">
+                <img src="/assets/default/svgs/clock-colord.svg" alt="">
             </i>
             <div class="text-box">
                 {{isset($section_data->time)? $section_data->time : 0}} mins <span>Time Limit</span>
