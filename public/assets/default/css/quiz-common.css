@@ -3622,4 +3622,15 @@ html:has(.learn-test-start) {
     padding-top: 5px;
     white-space: nowrap;
 }
+.section-start-quiz {
+    background-color: var(--primary);
+    border: 0;
+    color: #fff;
+    padding: 6px 15px;
+    height: auto;
+    line-height: normal;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: .875rem;
+}
 /* Test Section Style End */
