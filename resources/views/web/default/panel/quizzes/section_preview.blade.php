@@ -1,6 +1,6 @@
 
 <div class="test-section panel-border bg-white rounded-sm mb-25 p-20">
-    <h2 class="mb-10">
+    <h2 class="mb-5">
         {{isset($section_data->name)? $section_data->name : ''}}
     </h2>
     <p class="section-lable font-18">Reading Comprehension <span class="font-14 d-block pt-10">Section 2 of 5</span></p>
