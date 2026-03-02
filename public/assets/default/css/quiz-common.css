@@ -3619,8 +3619,9 @@ html:has(.learn-test-start) {
 }
 .section-bottom .text-box span {
     color: #666;
-    padding-top: 5px;
+    padding-top: 2px;
     white-space: nowrap;
+    font-size: .875rem;
 }
 .section-start-quiz {
     background-color: var(--primary);
