@@ -3595,6 +3595,7 @@ html:has(.learn-test-start) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 70%;
 }
 .section-no-of-questions,
 .section-time {
