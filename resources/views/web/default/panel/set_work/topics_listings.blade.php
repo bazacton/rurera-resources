@@ -92,24 +92,23 @@
 </div>
 @push('scripts_bottom')
 <script>
-    function updateStickyOffset() {
-        const selectedTopics = document.querySelector('.selected-topics');
-        const root = document.documentElement;
+    document.addEventListener('DOMContentLoaded', function () {
+        function updateStickyOffset() {
+            const selectedTopics = document.querySelector('.selected-topics');
+            const root = document.documentElement;
 
-        if (!selectedTopics) return;
+            if (!selectedTopics) return;
 
-        const height = selectedTopics.offsetHeight;
-        root.style.setProperty('--sticky-offset', height + 'px');
-    }
-
-    // Wait until element exists
-    const interval = setInterval(() => {
-        if (document.querySelector('.selected-topics')) {
-            updateStickyOffset();
-            clearInterval(interval);
+            const height = selectedTopics.offsetHeight;
+            root.style.setProperty('--sticky-offset', height + 'px');
         }
-    }, 200);
 
-    window.addEventListener('resize', updateStickyOffset);
+        // Run on load
+        updateStickyOffset();
+
+        // Run on resize
+        window.addEventListener('resize', updateStickyOffset);
+
+    });
 </script>
 @endpush
