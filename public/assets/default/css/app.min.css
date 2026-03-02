@@ -1086,7 +1086,7 @@ nav li {
   gap: 8px;
 }
 .login-logo img {
-  max-width: 50px;
+  max-width: 130px;
   object-fit: contain;
 }
 .login-logo .logo-text {
