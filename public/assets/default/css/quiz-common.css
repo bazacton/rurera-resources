@@ -3604,8 +3604,8 @@ html:has(.learn-test-start) {
     gap: 10px;
 }
 .section-bottom .icon-box {
-    height: 40px;
-    width: 40px;
+    height: 38px;
+    width: 38px;
 }
 .section-bottom .icon-box img {
     max-width: 100%;
