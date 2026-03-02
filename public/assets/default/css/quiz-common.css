@@ -1467,8 +1467,7 @@ body mjx-container[display] {
     transform: rotate(45deg) translateX(-50%);
     margin-right: 0;
 }
-.quiz-questions-bar:hover .value-lable:before,
-.quiz-questions-bar:hover .value-lable:after {opacity: 1; visibility: visible; top: -13px;}
+.quiz-questions-bar:hover .value-lable .no-questions-lable {opacity: 1; visibility: visible; top: -13px;}
 .quiz-questions-bar:hover .value-lable:after {top: -35px;}
 .quiz-corrects-incorrects {width: 95px; display: inline-block; vertical-align: middle; margin-right: -4px; position: relative; }
 .quiz-status-bar .coin-numbers {background-color: #e5e5e5; border-radius: 20px; margin-left: -2px; padding: 4px 5px; width: 60px; display: inline-flex; align-items: center; justify-content: center; gap: 5px; font-size: var(--fs-xs); font-weight: 500; position: relative;}
