@@ -1,9 +1,9 @@
 
 <div class="test-section panel-border bg-white rounded-sm mb-25 p-20">
-    <h1>
+    <h1 class="mb-10">
         {{isset($section_data->name)? $section_data->name : ''}}
     </h1>
-    <p class="section-lable">Reading Comprehension <span>Section 2 of 5</span></p>
+    <p class="section-lable font-18">Reading Comprehension <span class="font-14 d-block">Section 2 of 5</span></p>
     <div class="section-no-of-questions">
         <i class="icon-box">
             <img src="/assets/default/svgs/ask.svg" alt="">
