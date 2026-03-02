@@ -93,7 +93,7 @@
 @push('scripts_bottom')
 <script>
     function updateStickyOffset() {
-        const selectedTopics = document.querySelector('.select-topics');
+        const selectedTopics = document.querySelector('.selected-topics');
         const root = document.documentElement;
 
         if (!selectedTopics) return;
@@ -102,19 +102,14 @@
         root.style.setProperty('--sticky-offset', height + 'px');
     }
 
-    // Observe DOM changes
-    const observer = new MutationObserver(() => {
-        if (document.querySelector('.select-topics')) {
+    // Wait until element exists
+    const interval = setInterval(() => {
+        if (document.querySelector('.selected-topics')) {
             updateStickyOffset();
+            clearInterval(interval);
         }
-    });
+    }, 200);
 
-    observer.observe(document.body, {
-        childList: true,
-        subtree: true
-    });
-
-    // Resize listener
     window.addEventListener('resize', updateStickyOffset);
 </script>
 @endpush
