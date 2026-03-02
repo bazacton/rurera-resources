@@ -13660,7 +13660,7 @@ button.bg-gray200:hover {
 
 a.text-primary:focus,
 a.text-primary:hover {
-    color: #26a553 !important
+    color: var(--primary);
 }
 
 .text-secondary {
