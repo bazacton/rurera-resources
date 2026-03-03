@@ -205,6 +205,8 @@
             slidesPerView: 3,
             slidesPerGroup: 3,
             spaceBetween: 16,
+            freeMode: true,
+            grabCursor: true,
             navigation: { nextEl: '#btnNext', prevEl: '#btnPrev' },
             pagination: { el: '#dots', clickable: true }
         });
