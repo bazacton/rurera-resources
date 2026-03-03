@@ -97,33 +97,30 @@
             </button>
 
             <div id="notificationsMenu" class="notifications-menu user-menu font-14">
-                <div class="user-menu-inner">
-                    <div class="dropdown-header font-16">{{ trans('admin/main.notifications') }}
-                        <div class="float-right">
-                            @can('admin_notifications_markAllRead')
-                            <a href="{{ getAdminPanelUrl() }}/notifications/mark_all_read">{{ trans('admin/main.mark_all_read') }}</a>
-                            @endcan
-                        </div>
-                    </div>
-
-                    <div class="dropdown-list-content dropdown-list-icons">
-                        @foreach($unReadNotifications as $unreadNotification)
-                        <a href="{{ getAdminPanelUrl() }}/notifications" class="dropdown-item">
-                            <div class="dropdown-item-icon bg-info text-white d-flex align-items-center justify-content-center">
-                                <i class="far fa-user"></i>
-                            </div>
-                            <div class="dropdown-item-desc">
-                                <span class="notifications-lable">{{ $unreadNotification->title }}</span>
-                                <div class="time text-primary">{{ dateTimeFormat($unreadNotification->created_at,'Y M j | H:i') }}</div>
-                            </div>
-                        </a>
-                        @endforeach
-                    </div>
-                    <div class="dropdown-footer text-right">
-                        <a href="{{ getAdminPanelUrl() }}/notifications">{{ trans('admin/main.view_all') }} <i class="fas fa-chevron-right"></i></a>
+                <div class="dropdown-header font-16">{{ trans('admin/main.notifications') }}
+                    <div class="float-right">
+                        @can('admin_notifications_markAllRead')
+                        <a href="{{ getAdminPanelUrl() }}/notifications/mark_all_read">{{ trans('admin/main.mark_all_read') }}</a>
+                        @endcan
                     </div>
                 </div>
-                
+
+                <div class="dropdown-list-content dropdown-list-icons">
+                    @foreach($unReadNotifications as $unreadNotification)
+                    <a href="{{ getAdminPanelUrl() }}/notifications" class="dropdown-item">
+                        <div class="dropdown-item-icon bg-info text-white d-flex align-items-center justify-content-center">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div class="dropdown-item-desc">
+                            <span class="notifications-lable">{{ $unreadNotification->title }}</span>
+                            <div class="time text-primary">{{ dateTimeFormat($unreadNotification->created_at,'Y M j | H:i') }}</div>
+                        </div>
+                    </a>
+                    @endforeach
+                </div>
+                <div class="dropdown-footer text-right">
+                    <a href="{{ getAdminPanelUrl() }}/notifications">{{ trans('admin/main.view_all') }} <i class="fas fa-chevron-right"></i></a>
+                </div>
             </div>
         </li>
         {{--<li>
@@ -145,16 +142,13 @@
                 {{$authUser->getRewardPoints()}}
             </strong>
             <div class="user-coins-menu user-menu">
-                <div class="user-menu-inner ">
-                    <div class="dropdown-header">
-                        <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
-                        <div class="coins-text">
-                            Coins
-                            <span>You have {{$authUser->getRewardPoints()}} Coins <a href="/shop">Go to Shop</a></span>
-                        </div>
+                <div class="dropdown-header">
+                    <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
+                    <div class="coins-text">
+                        Coins
+                        <span>You have {{$authUser->getRewardPoints()}} Coins <a href="/shop">Go to Shop</a></span>
                     </div>
                 </div>
-                
             </div>
         </li>
         @endif
@@ -178,40 +172,37 @@
                     </a>
 
                     <div id="userProfileDropdown" class="user-profile-dropdown user-menu" aria-labelledby="dropdownMenuButton">
-                        <div  class="user-menu-inner">
-                            <div class="dropdown-item user-nav-detail">
-                                <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image"
-                                    alt="rounded circle" loading="eager" title="rounded circle">
-                                <span class="font-16 text-dark-blue user-name">{{ $authUser->get_full_name() }}</span>
-                                <a href="setting" class="font-16 text-dark-blue user-manage-btn">Manage Account</a>
-                            </div>
-                            <div class="d-md-none border-bottom mb-20 pb-10 text-right">
-                                <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
-                            </div>
-                            @php $parent_id = 0; @endphp
-                            @if( !empty( $profile_navs ) )
-                            <div class="user-nav-list">
-                                @foreach( $profile_navs as $profile_nav)
-
-                                @php $parent_id = isset($profile_nav['id'])? $profile_nav['id'] : $parent_id; @endphp
-
-                                <a class="dropdown-item " data-toggle="modal" data-target="#switch_user_modal" href="switch_user/{{$profile_nav['id']}}">
-                                    <img src="{{ $profile_nav->getAvatar() }}" class="rounded-circle" alt="{{ $profile_nav['full_name'] }}" width="400" height="400" itemprop="image"
-                                        alt="rounded circle" loading="eager" title="rounded circle">
-                                    @php $full_name = (isset( $navData['is_parent'] ) && $navData['is_parent'] == true)? 'Parent Dashboard' : $profile_nav['full_name']; @endphp
-                                    <span class="font-16 text-dark-blue user-list-name">{{ $full_name }}</span>
-                                    <span class="font-16 text-dark-blue user-list-email">{{ $profile_nav['email'] }}</span>
-                                </a>
-                                @endforeach
-                            </div>
-                            @endif
-                            <a class="dropdown-item nav-logout" href="/logout">
-                                <img src="/assets/default/img/icons/sidebar/logout.svg" height="24" itemprop="image"
-                                    width="24" alt="nav-icon" title="nav-icon" loading="eager">
-                                <span class="font-16 text-dark-blue">{{ trans('panel.log_out') }}</span>
-                            </a>
+                        <div class="dropdown-item user-nav-detail">
+                            <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image"
+                                 alt="rounded circle" loading="eager" title="rounded circle">
+                            <span class="font-16 text-dark-blue user-name">{{ $authUser->get_full_name() }}</span>
+                            <a href="setting" class="font-16 text-dark-blue user-manage-btn">Manage Account</a>
                         </div>
-                        
+                        <div class="d-md-none border-bottom mb-20 pb-10 text-right">
+                            <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
+                        </div>
+                        @php $parent_id = 0; @endphp
+                        @if( !empty( $profile_navs ) )
+                        <div class="user-nav-list">
+                            @foreach( $profile_navs as $profile_nav)
+
+                            @php $parent_id = isset($profile_nav['id'])? $profile_nav['id'] : $parent_id; @endphp
+
+                            <a class="dropdown-item " data-toggle="modal" data-target="#switch_user_modal" href="switch_user/{{$profile_nav['id']}}">
+                                <img src="{{ $profile_nav->getAvatar() }}" class="rounded-circle" alt="{{ $profile_nav['full_name'] }}" width="400" height="400" itemprop="image"
+                                     alt="rounded circle" loading="eager" title="rounded circle">
+                                @php $full_name = (isset( $navData['is_parent'] ) && $navData['is_parent'] == true)? 'Parent Dashboard' : $profile_nav['full_name']; @endphp
+                                <span class="font-16 text-dark-blue user-list-name">{{ $full_name }}</span>
+                                <span class="font-16 text-dark-blue user-list-email">{{ $profile_nav['email'] }}</span>
+                            </a>
+                            @endforeach
+                        </div>
+                        @endif
+                        <a class="dropdown-item nav-logout" href="/logout">
+                            <img src="/assets/default/img/icons/sidebar/logout.svg" height="24" itemprop="image"
+                                 width="24" alt="nav-icon" title="nav-icon" loading="eager">
+                            <span class="font-16 text-dark-blue">{{ trans('panel.log_out') }}</span>
+                        </a>
                     </div>
                 </div>
                 @endif
