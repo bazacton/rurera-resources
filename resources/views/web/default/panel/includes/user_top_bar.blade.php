@@ -97,30 +97,33 @@
             </button>
 
             <div id="notificationsMenu" class="notifications-menu user-menu font-14">
-                <div class="dropdown-header font-16">{{ trans('admin/main.notifications') }}
-                    <div class="float-right">
-                        @can('admin_notifications_markAllRead')
-                        <a href="{{ getAdminPanelUrl() }}/notifications/mark_all_read">{{ trans('admin/main.mark_all_read') }}</a>
-                        @endcan
+                <div class="user-menu-inner">
+                    <div class="dropdown-header font-16">{{ trans('admin/main.notifications') }}
+                        <div class="float-right">
+                            @can('admin_notifications_markAllRead')
+                            <a href="{{ getAdminPanelUrl() }}/notifications/mark_all_read">{{ trans('admin/main.mark_all_read') }}</a>
+                            @endcan
+                        </div>
+                    </div>
+
+                    <div class="dropdown-list-content dropdown-list-icons">
+                        @foreach($unReadNotifications as $unreadNotification)
+                        <a href="{{ getAdminPanelUrl() }}/notifications" class="dropdown-item">
+                            <div class="dropdown-item-icon bg-info text-white d-flex align-items-center justify-content-center">
+                                <i class="far fa-user"></i>
+                            </div>
+                            <div class="dropdown-item-desc">
+                                <span class="notifications-lable">{{ $unreadNotification->title }}</span>
+                                <div class="time text-primary">{{ dateTimeFormat($unreadNotification->created_at,'Y M j | H:i') }}</div>
+                            </div>
+                        </a>
+                        @endforeach
+                    </div>
+                    <div class="dropdown-footer text-right">
+                        <a href="{{ getAdminPanelUrl() }}/notifications">{{ trans('admin/main.view_all') }} <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
-
-                <div class="dropdown-list-content dropdown-list-icons">
-                    @foreach($unReadNotifications as $unreadNotification)
-                    <a href="{{ getAdminPanelUrl() }}/notifications" class="dropdown-item">
-                        <div class="dropdown-item-icon bg-info text-white d-flex align-items-center justify-content-center">
-                            <i class="far fa-user"></i>
-                        </div>
-                        <div class="dropdown-item-desc">
-                            <span class="notifications-lable">{{ $unreadNotification->title }}</span>
-                            <div class="time text-primary">{{ dateTimeFormat($unreadNotification->created_at,'Y M j | H:i') }}</div>
-                        </div>
-                    </a>
-                    @endforeach
-                </div>
-                <div class="dropdown-footer text-right">
-                    <a href="{{ getAdminPanelUrl() }}/notifications">{{ trans('admin/main.view_all') }} <i class="fas fa-chevron-right"></i></a>
-                </div>
+                
             </div>
         </li>
         {{--<li>
