@@ -773,8 +773,8 @@ Right SideBar Style Start
 .user-profile-icons img {width: 28px; height: 28px; object-fit: contain; }
 .user-profile-icons li .dropdown-toggle-btn {display: inline-flex; align-items: center; gap: 5px; position: relative; border: 0; padding: 0; background-color: inherit; font-weight: 700;}
 .dropdown-menu.user-profile-dropdown .user-nav-list .user-list-email {line-height: normal; display: none;}
-.user-profile-icons .dropdown-menu:after, 
-.user-profile-icons .dropdown-menu:before {content: ""; position: absolute; top: -8px; left: 50%; margin-left: -8px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
+.user-profile-icons .user-menu:after, 
+.user-profile-icons .user-menu:before {content: ""; position: absolute; top: -8px; left: 50%; margin-left: -8px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
 .user-profile-icons .sidebar-no-mobile .dropdown-menu:before {
     background-color: #fff;
     top: -8px;
@@ -783,14 +783,14 @@ Right SideBar Style Start
     right: 15px;
     left: auto;
 }
-.user-profile-icons .dropdown-menu:after {
+.user-profile-icons .user-menu:after {
     background-color: #fff;
 }
-.user-profile-icons .sidebar-no-mobile .dropdown-menu:after {
+.user-profile-icons .sidebar-no-mobile .user-menu:after {
     right: 15px;
     left: auto;
 }
-.user-profile-icons .dropdown-menu {
+.user-profile-icons .user-menu {
     border-radius: 8px; 
     border: 1px solid #ddd; 
     box-shadow: none; 
@@ -800,29 +800,29 @@ Right SideBar Style Start
     padding: 15px; 
     min-width: 280px;
 }
-.user-profile-icons .dropdown-menu .dropdown-header {text-align: left;font-weight: 600; color: #333; padding: 0 0 10px;}
+.user-profile-icons .user-menu .dropdown-header {text-align: left;font-weight: 600; color: #333; padding: 0 0 10px;}
 .dropdown-list-content .dropdown-item {background-color: #f9f8f8; border-radius: 5px; padding: 10px 15px; display: block; margin: 0 0 15px;}
 .dropdown-list-content .dropdown-item:active {color: #16181b;text-decoration: none; background-color: #f8f9fa;}
 .user-profile-icons .notifications-lable {display: block; margin: 0 0 5px; font-weight: 600; text-transform: capitalize;}
 .dropdown-list-content .dropdown-item .time {color: #666;}
 .user-profile-icons .dropdown-footer a {border: 1px solid var(--primary); color: var(--primary); padding: 5px 10px; display: inline-block;line-height: normal; border-radius: 5px; font-weight: 500;}
-.user-profile-icons .dropdown:hover .dropdown-menu { margin-top: 0; transform: translateX(-50%) translateY(0);}
-.panel-right-sidebar .dropdown:hover .dropdown-menu.user-profile-dropdown {transform: translateX(0) translateY(0);}
-.user-profile-icons .dropdown-menu.user-coins-menu .dropdown-header {font-size: 1rem; font-weight: normal; display: flex; align-items: flex-start;padding: 0; gap: 10px;flex-wrap: wrap;}
-.user-profile-icons .dropdown-menu.user-coins-menu .coins-text {width: calc(100% - 40px); box-sizing: border-box; white-space: normal; font-weight: 600;}
-.user-profile-icons .dropdown-menu.user-coins-menu .coins-text span {display: block; font-weight: normal; font-size: 14px; color: #666; padding-top: 5px;}
-.user-profile-icons .dropdown-menu.user-coins-menu .coins-text a {color: var(--primary); text-decoration: underline;}
+.user-profile-icons .dropdown:hover .user-menuenu { margin-top: 0; transform: translateX(-50%) translateY(0);}
+.panel-right-sidebar .dropdown:hover .user-menu.user-profile-dropdown {transform: translateX(0) translateY(0);}
+.user-profile-icons .user-menu.user-coins-menu .dropdown-header {font-size: 1rem; font-weight: normal; display: flex; align-items: flex-start;padding: 0; gap: 10px;flex-wrap: wrap;}
+.user-profile-icons .user-menu.user-coins-menu .coins-text {width: calc(100% - 40px); box-sizing: border-box; white-space: normal; font-weight: 600;}
+.user-profile-icons .user-menu.user-coins-menu .coins-text span {display: block; font-weight: normal; font-size: 14px; color: #666; padding-top: 5px;}
+.user-profile-icons .user-menu.user-coins-menu .coins-text a {color: var(--primary); text-decoration: underline;}
 .user-profile-dropdown .user-name {display: block; margin: 0 0 10px;}
 .user-profile-dropdown .user-manage-btn {font-size: 14px !important; padding: 8px 15px; line-height: normal; margin-bottom: 5px; border-radius: 5px;}
-.dropdown-menu.user-profile-dropdown .user-nav-list {border: 0; padding: 15px 20px 15px !important; display: inline-block; text-align: left; border-bottom: 1px solid #f4f4f6; width: 100%;}
-.top-navbar .dropdown-menu.user-profile-dropdown .user-nav-list img,
-.dropdown-menu.user-profile-dropdown .user-nav-list img {height: 35px; width: 35px; margin-right: 15px; float: left; margin-top: 3px;}
-.top-navbar .dropdown-menu.user-profile-dropdown .user-nav-list .user-list-name {display: inline-block; font-size: 12px; font-weight: 500; margin: 0 0 2px;line-height: normal;}
-.top-navbar .dropdown-menu.user-profile-dropdown .user-nav-list .user-list-email {min-width: 250px; top: 100% !important; bottom: auto; left: auto !important; right: -10px !important; text-align: center; transform: none !important;}
-.panel-right-sidebar .dropdown-menu.user-profile-dropdown {max-width: 220px;min-width: 220px;margin-right: 15px; left: auto; right: -10px; transform: translateY(10px);}
-.panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list {padding: 0 !important; border: 0;}
-.panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list .dropdown-item {padding: 0 20px !important; margin-bottom: 10px; display: flex; align-items: center; flex-direction: column;}
-.panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list .dropdown-item .user-list-name {color: var(--primary); font-weight: 500;}
+.user-menu.user-profile-dropdown .user-nav-list {border: 0; padding: 15px 20px 15px !important; display: inline-block; text-align: left; border-bottom: 1px solid #f4f4f6; width: 100%;}
+.top-navbar .user-menu.user-profile-dropdown .user-nav-list img,
+.user-menu.user-profile-dropdown .user-nav-list img {height: 35px; width: 35px; margin-right: 15px; float: left; margin-top: 3px;}
+.top-navbar .user-menu.user-profile-dropdown .user-nav-list .user-list-name {display: inline-block; font-size: 12px; font-weight: 500; margin: 0 0 2px;line-height: normal;}
+.top-navbar .user-menu.user-profile-dropdown .user-nav-list .user-list-email {min-width: 250px; top: 100% !important; bottom: auto; left: auto !important; right: -10px !important; text-align: center; transform: none !important;}
+.panel-right-sidebar .user-menu.user-profile-dropdown {max-width: 220px;min-width: 220px;margin-right: 15px; left: auto; right: -10px; transform: translateY(10px);}
+.panel-right-sidebar .user-menu.user-profile-dropdown .user-nav-list {padding: 0 !important; border: 0;}
+.panel-right-sidebar .user-menu.user-profile-dropdown .user-nav-list .dropdown-item {padding: 0 20px !important; margin-bottom: 10px; display: flex; align-items: center; flex-direction: column;}
+.panel-right-sidebar .user-menu.user-profile-dropdown .user-nav-list .dropdown-item .user-list-name {color: var(--primary); font-weight: 500;}
 .user-profile-icons ul .menu-button-mobile,
 .user-profile-icons ul .sidebar-logo-mobile{display: none;}
 .user-profile-icons > ul > li.sidebar-no-mobile .dropdown {margin-bottom: -15px; padding-bottom: 15px;}
