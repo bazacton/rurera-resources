@@ -34,12 +34,6 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @stack('styles_top')
     <link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_no}}">
-    <style>
-        .user-menu {
-            opacity: 0;
-        }
-    </style>
-    @stack('scripts_top')
     <!-- Preload Main Font (CeraRoundPro) -->
     <link rel="preload" href="/store/1/fonts/CeraRoundPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/store/1/fonts/CeraRoundPro-Medium.woff2" as="font" type="font/woff2" crossorigin>
@@ -49,6 +43,13 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
     <link rel="preload" href="/store/1/fonts/Vazir-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/store/1/fonts/Vazir-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/store/1/fonts/Vazir-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        .user-menu {
+            opacity: 0;
+        }
+    </style>
+    @stack('scripts_top')
+    
     
 </head>
 @php $bodyClass = ''; @endphp
