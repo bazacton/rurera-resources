@@ -145,7 +145,7 @@
                 {{$authUser->getRewardPoints()}}
             </strong>
             <div class="user-coins-menu user-menu">
-                <div class="user-menu-inner">
+                <div class="user-menu-inner ">
                     <div class="dropdown-header">
                         <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
                         <div class="coins-text">
