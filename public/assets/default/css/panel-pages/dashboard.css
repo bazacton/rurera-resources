@@ -108,7 +108,7 @@ Left SideBar-menu Start
 .xs-panel-nav {background-color: #fff; border-bottom: 1px solid #ddd; padding: 0 0 15px;}
 .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {font-weight: 600; color: #777; text-transform: uppercase;}
 .panel-sidebar .sidebar-menu .sidenav-item a .crown-icon {width: 18px; vertical-align: middle; margin-left: 8px;}
-.panel-sidebar .sidebar-menu .user-menu li a {display: block; padding: 5px 15px; font-weight: 400; text-transform: capitalize;}
+.panel-sidebar .sidebar-menu .dropdown-menu li a {display: block; padding: 5px 15px; font-weight: 400; text-transform: capitalize;}
 .conversations-list {max-height: 710px; overflow: auto;}
 .col-lg-5.conversations-list .table-responsive {min-width: 660px;}
 .conversations-card {max-height: 405px; overflow: auto;}
@@ -135,10 +135,10 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-user-stats .sidebar-user-stat-item strong {font-size: 16px; font-weight: 700; line-height: 1.2; color: #171347; pointer-events: none;}
 .panel-sidebar .sidebar-user-stats .sidebar-user-stat-item .stat-name {font-size: 14px; font-weight: 500; line-height: 1.29; color: #818894; pointer-events: none;}
 .panel-sidebar .sidebar-menu {height: calc(100% - 100px); padding-bottom: 35px; overflow: hidden; overflow-y: auto;}
-.panel-sidebar .sidebar-menu .user-menu {margin: 10px 0 0; width: 100%; min-width: auto; box-shadow: none; border: 1px solid #ddd; border-radius: 3px; padding: 5px 0; display: none;}
+.panel-sidebar .sidebar-menu .dropdown-menu {margin: 10px 0 0; width: 100%; min-width: auto; box-shadow: none; border: 1px solid #ddd; border-radius: 3px; padding: 5px 0; display: none;}
 .panel-sidebar .dropdown-toggle:after {margin-left: 10px;}
-.panel-sidebar .sidebar-menu .user-menu.show {display: block; opacity: 1; visibility: visible;}
-.panel-sidebar .sidebar-menu .user-menu:before {background-color: #fff; position: absolute; top: -6px; left: 15px; content: ""; height: 10px; width: 10px; border-top: 1px solid #ddd; border-left: 1px solid #ddd; transform: rotate(45deg);}
+.panel-sidebar .sidebar-menu .dropdown-menu.show {display: block; opacity: 1; visibility: visible;}
+.panel-sidebar .sidebar-menu .dropdown-menu:before {background-color: #fff; position: absolute; top: -6px; left: 15px; content: ""; height: 10px; width: 10px; border-top: 1px solid #ddd; border-left: 1px solid #ddd; transform: rotate(45deg);}
 .panel-sidebar .sidebar-menu.has-user-group {height: calc(100% - 455px);}
 .panel-sidebar .sidebar-menu.without-bottom-image {height: calc(100% - 298px);}
 @media (max-width:991px) {
@@ -432,7 +432,7 @@ Left SideBar-menu End
 .panel-content .grid-card .img-holder img[src*="shuttlecock.svg"] {transform: scale(-1) rotate(110deg); position: relative; bottom: -5px;}
 .panel-content .template-grid .text-holder {background-color: inherit; border: 0; padding: 0; min-height: auto; line-height: normal; display: flex; flex-direction: row; align-items: center; gap: 12px;}
 .panel-content .template-grid .coin-counts img {max-width: 20px; max-height: 20px; margin-top: 0;}
-.panel-content .template-grid .text-holder a {word-wrap: break-word; color: inherit;}
+.panel-content .template-grid .text-holder a {word-wrap: break-word;}
 .type-list-data > a:hover {border-color: #cecece;}
 .panel-content .grid-card .title-label,
 .login-options .coming-soon {font-weight: 500; position: relative; background-color: #f3f1f1; font-size: 15px; padding: 6px 8px; border-radius: 4px; margin-left: 10px; margin-bottom: 5px; display: inline-block; line-height: normal;}
@@ -746,13 +746,13 @@ Right SideBar Style Start
 *************************/
 
 /* user-profile-dropdown style start */
-.user-menu.user-profile-dropdown .user-nav-list .user-list-email {display: block; color: #aeb3b9; font-size: 12px !important; font-weight: 500;}
-.user-menu.user-profile-dropdown .user-nav-detail {display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 5px 0;}
-.user-menu.user-profile-dropdown .user-nav-detail img {width: 70px;height: 70px;object-fit: contain; margin-bottom: 10px;}
+.dropdown-menu.user-profile-dropdown .user-nav-list .user-list-email {display: block; color: #aeb3b9; font-size: 12px !important; font-weight: 500;}
+.dropdown-menu.user-profile-dropdown .user-nav-detail {display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 5px 0;}
+.dropdown-menu.user-profile-dropdown .user-nav-detail img {width: 70px;height: 70px;object-fit: contain; margin-bottom: 10px;}
 .user-profile-dropdown .nav-logout {display: inline-flex;align-items: center; gap: 10px;flex-wrap: wrap;border: 0; min-width: 175px;width: auto;padding: 0; margin-bottom: 10px; justify-content: center; width: 100%;}
 .user-profile-dropdown .nav-logout span {font-weight: 500;color: var(--primary);}
 .user-profile-dropdown .nav-logout img,
-.user-menu.user-profile-dropdown .user-nav-list img {display: none;}
+.dropdown-menu.user-profile-dropdown .user-nav-list img {display: none;}
 .user-profile-dropdown .dropdown-item:hover {background-color: inherit;}
 .user-manage-btn {border: 1px solid #d3d4d6; padding: 10px 30px; border-radius: 10px;color: #343e47; font-weight: 500; display: block; text-align: center; margin: 0 0 10px;}
 .user-profile-dropdown .sub-dropdown {position: relative; z-index: 1; margin-left: -20px; padding-left: 20px;}
@@ -772,10 +772,10 @@ Right SideBar Style Start
 .user-profile-icons .dropdown > a > img,
 .user-profile-icons img {width: 28px; height: 28px; object-fit: contain; }
 .user-profile-icons li .dropdown-toggle-btn {display: inline-flex; align-items: center; gap: 5px; position: relative; border: 0; padding: 0; background-color: inherit; font-weight: 700;}
-.user-menu.user-profile-dropdown .user-nav-list .user-list-email {line-height: normal; display: none;}
-.user-profile-icons .user-menu .user-menu-inner:after, 
-.user-profile-icons .user-menu .user-menu-inner:before {content: ""; position: absolute; top: -8px; left: 50%; margin-left: -8px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
-.user-profile-icons .sidebar-no-mobile .user-menu-inner:before {
+.dropdown-menu.user-profile-dropdown .user-nav-list .user-list-email {line-height: normal; display: none;}
+.user-profile-icons .user-menu:after, 
+.user-profile-icons .user-menu:before {content: ""; position: absolute; top: -8px; left: 50%; margin-left: -8px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
+.user-profile-icons .sidebar-no-mobile .dropdown-menu:before {
     background-color: #fff;
     top: -8px;
     box-shadow: none;
@@ -783,34 +783,33 @@ Right SideBar Style Start
     right: 15px;
     left: auto;
 }
-.user-profile-icons .user-profile-dropdown.user-menu .user-menu-inner:before {
+.user-profile-icons .user-profile-dropdown.user-menu:before {
     display: none;
 }
-.user-profile-icons .user-menu .user-menu-inner:after {
+.user-profile-icons .user-menu:after {
     background-color: #fff;
 }
-.user-profile-icons .sidebar-no-mobile .user-menu .user-menu-inner:after {
+.user-profile-icons .sidebar-no-mobile .user-menu:after {
     right: 15px;
     left: auto;
 }
 .user-profile-icons .user-menu {
+    background-color: #fff;
+    border-radius: 8px; 
+    border: 1px solid #ddd; 
+    box-shadow: none; 
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
-}
-.user-menu-inner {
-    background-color: #fff;
-    border-radius: 8px; 
-    border: 1px solid #ddd;
-    padding: 15px; 
-    min-width: 280px; 
-    opacity: 0;
     margin-top: 15px;
+    padding: 15px; 
+    min-width: 280px;
+    z-index: 2;
+    opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 .user-profile-icons .user-menu .dropdown-header {text-align: left;font-weight: 600; color: #333; padding: 0 0 10px;}
 .dropdown-list-content .dropdown-item {background-color: #f9f8f8; border-radius: 5px; padding: 10px 15px; display: block; margin: 0 0 15px;}
@@ -818,8 +817,8 @@ Right SideBar Style Start
 .user-profile-icons .notifications-lable {display: block; margin: 0 0 5px; font-weight: 600; text-transform: capitalize;}
 .dropdown-list-content .dropdown-item .time {color: #666;}
 .user-profile-icons .dropdown-footer a {border: 1px solid var(--primary); color: var(--primary); padding: 5px 10px; display: inline-block;line-height: normal; border-radius: 5px; font-weight: 500;}
-.user-profile-icons .dropdown:hover .user-menu .user-menu-inner { margin-top: 0; opacity: 1; visibility: visible; pointer-events: auto; display: block;}
-.panel-right-sidebar .dropdown:hover .user-menu.user-profile-dropdown .user-menu-inner {transform: translateX(0) translateY(0);}
+.user-profile-icons .dropdown:hover .user-menu { margin-top: 0; opacity: 1; visibility: visible; pointer-events: auto;}
+.panel-right-sidebar .dropdown:hover .user-menu.user-profile-dropdown {transform: translateX(0) translateY(0);}
 .user-profile-icons .user-menu.user-coins-menu .dropdown-header {font-size: 1rem; font-weight: normal; display: flex; align-items: flex-start;padding: 0; gap: 10px;flex-wrap: wrap;}
 .user-profile-icons .user-menu.user-coins-menu .coins-text {width: calc(100% - 40px); box-sizing: border-box; white-space: normal; font-weight: 600;}
 .user-profile-icons .user-menu.user-coins-menu .coins-text span {display: block; font-weight: normal; font-size: 14px; color: #666; padding-top: 5px;}
@@ -831,8 +830,7 @@ Right SideBar Style Start
 .user-menu.user-profile-dropdown .user-nav-list img {height: 35px; width: 35px; margin-right: 15px; float: left; margin-top: 3px;}
 .top-navbar .user-menu.user-profile-dropdown .user-nav-list .user-list-name {display: inline-block; font-size: 12px; font-weight: 500; margin: 0 0 2px;line-height: normal;}
 .top-navbar .user-menu.user-profile-dropdown .user-nav-list .user-list-email {min-width: 250px; top: 100% !important; bottom: auto; left: auto !important; right: -10px !important; text-align: center; transform: none !important;}
-.panel-right-sidebar .user-menu.user-profile-dropdown {max-width: 220px;min-width: 220px;margin-right: 15px; left: auto; right: -10px; transform: translateY(0);}
-.user-profile-dropdown.user-menu .user-menu-inner {min-width: auto;}
+.panel-right-sidebar .user-menu.user-profile-dropdown {max-width: 220px;min-width: 220px;margin-right: 15px; left: auto; right: -10px; transform: translateY(10px);}
 .panel-right-sidebar .user-menu.user-profile-dropdown .user-nav-list {padding: 0 !important; border: 0;}
 .panel-right-sidebar .user-menu.user-profile-dropdown .user-nav-list .dropdown-item {padding: 0 20px !important; margin-bottom: 10px; display: flex; align-items: center; flex-direction: column;}
 .panel-right-sidebar .user-menu.user-profile-dropdown .user-nav-list .dropdown-item .user-list-name {color: var(--primary); font-weight: 500;}
@@ -2449,10 +2447,10 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .db-form-tabs .totalChilds .btn.btn-primary {border-radius: 30px;}
 .db-form-tabs .totalChilds .progrss-bar {border-color: #ddd; border-radius: 30px; overflow: hidden; width: 100% !important; background-color: #ccc; background-size: 30px 30px; background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);}
 .db-form-tabs .dropdown-toggle:after {display: none;}
-.db-form-tabs .user-menu {min-width: 150px;}
-.db-form-tabs .user-menu li {list-style: none; padding-left: 0;}
-.db-form-tabs .user-menu li:after {display: none;}
-.db-form-tabs .user-menu li .dropdown-item {padding-left: 10px; padding-right: 0; font-size: 15px;}
+.db-form-tabs .dropdown-menu {min-width: 150px;}
+.db-form-tabs .dropdown-menu li {list-style: none; padding-left: 0;}
+.db-form-tabs .dropdown-menu li:after {display: none;}
+.db-form-tabs .dropdown-menu li .dropdown-item {padding-left: 10px; padding-right: 0; font-size: 15px;}
 .db-form-tabs a.dropdown-toggle span {height: 3px; width: 3px; background-color: #287eff; border-radius: 50%;}
 .db-form-tabs .bg-body {background-color: #f4f5f1; border: 1px dashed #e9ecef !important;}
 .db-form-tabs .db-security .card-title,
@@ -2487,10 +2485,10 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .db-form-tabs .rurera-tables-list a.dropdown-toggle {border: 0; width: 20px; height: 20px;}
 .db-form-tabs .rurera-tables-list a.dropdown-toggle img {max-width: 20px; min-height: 20px; min-width: auto;}
 .db-form-tabs .rurera-tables-list a.dropdown-toggle .icon-box {height: auto; width: auto; background-color: inherit;}
-.rurera-tables-list .dropdown:hover .user-menu {opacity: 0; visibility: hidden; margin: 0;}
-.rurera-tables-list .user-menu.show,
-.rurera-tables-list .dropdown.show:hover .user-menu {opacity: 1; visibility: visible; top: 100% !important;}
-.db-form-tabs .rurera-tables-list .user-menu {min-width: 120px; margin: 0; transition: none; padding: 10px; border-radius: 5px; left: auto !important; right: 0; transform: none !important; z-index: 2;}
+.rurera-tables-list .dropdown:hover .dropdown-menu {opacity: 0; visibility: hidden; margin: 0;}
+.rurera-tables-list .dropdown-menu.show,
+.rurera-tables-list .dropdown.show:hover .dropdown-menu {opacity: 1; visibility: visible; top: 100% !important;}
+.db-form-tabs .rurera-tables-list .dropdown-menu {min-width: 120px; margin: 0; transition: none; padding: 10px; border-radius: 5px; left: auto !important; right: 0; transform: none !important; z-index: 2;}
 .member-card-header .btn img {width: 18px; height: 18px;}
 .db-members .card .list-group-item:nth-child(even) {background-color: #fff;}
 .billing-card .list-group-item {padding: 0;}
