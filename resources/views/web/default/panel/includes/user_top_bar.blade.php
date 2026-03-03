@@ -1,5 +1,5 @@
 
-<div class="user-profile-icons" itemscope itemtype="https://schema.org/Organization">
+<div class="user-profile-icons">
     <ul>
         <li class="sidebar-logo-mobile">
             <a class="sidebar-logo" href="{{url('/')}}/" itemscope itemprop="url">
@@ -96,7 +96,7 @@
                 @endif
             </button>
 
-            <!-- <div id="notificationsMenu" class="notifications-menu user-menu font-14">
+            <div id="notificationsMenu" class="notifications-menu user-menu font-14">
                 <div class="dropdown-header font-16">{{ trans('admin/main.notifications') }}
                     <div class="float-right">
                         @can('admin_notifications_markAllRead')
@@ -121,7 +121,7 @@
                 <div class="dropdown-footer text-right">
                     <a href="{{ getAdminPanelUrl() }}/notifications">{{ trans('admin/main.view_all') }} <i class="fas fa-chevron-right"></i></a>
                 </div>
-            </div> -->
+            </div>
         </li>
         {{--<li>
             <div class="assignments">
@@ -141,7 +141,7 @@
                 <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
                 {{$authUser->getRewardPoints()}}
             </strong>
-            <!-- <div class="user-coins-menu user-menu">
+            <div class="user-coins-menu user-menu">
                 <div class="dropdown-header">
                     <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
                     <div class="coins-text">
@@ -149,7 +149,7 @@
                         <span>You have {{$authUser->getRewardPoints()}} Coins <a href="/shop">Go to Shop</a></span>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </li>
         @endif
 
