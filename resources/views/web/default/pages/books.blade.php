@@ -200,20 +200,32 @@
 
       function initSwiper(){
         if(swiper){ swiper.destroy(true, true); }
+
         swiper = new Swiper('#bookSwiper', {
-          slidesPerView: 'auto',
-          spaceBetween: 16,
-          freeMode: true,
-          grabCursor: true,
-          navigation: { nextEl: '#btnNext', prevEl: '#btnPrev' },
-          pagination: { el: '#dots', clickable: true }
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+            freeMode: true,
+            grabCursor: true,
+
+            navigation: { 
+            nextEl: '#btnNext', 
+            prevEl: '#btnPrev' 
+            },
+
+            pagination: { 
+            el: '#dots', 
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 3
+            }
         });
+
         swiper.on('slideChange', function(){
-          currentIndex = swiper.activeIndex;
-          setActive(currentIndex);
-          updateArrows();
+            currentIndex = swiper.activeIndex;
+            setActive(currentIndex);
+            updateArrows();
         });
-      }
+    }
 
       function goTo(i){
         if(i < 0 || i >= books.length) return;
