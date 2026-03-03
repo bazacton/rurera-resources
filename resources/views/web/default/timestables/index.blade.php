@@ -172,9 +172,10 @@
                     <article class="grid-card timestables-mode-data">
                         <div class="text-holder">
                             <h3 class="font-16 font-weight-bold">
-                                <a class="grid-btn" href="javascript:;">Global Arena
+                                <button type="button" class="grid-btn" disabled>
+                                    Global Arena
                                     <span class="title-label">Coming Soon</span>
-                                </a>
+                                </button>
                             </h3>
                         </div>
                         <div class="img-holder">
