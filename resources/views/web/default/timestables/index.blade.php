@@ -100,8 +100,8 @@
                                 </a>
                             </h3>
                             <div class="coin-counts">
-                            <strong>
-                                <img src="/assets/default/img/panel-sidebar/heart-red.png" alt="heart-red">
+                            <strong aria-label="46 hearts remaining">
+                                <img src="/assets/default/img/panel-sidebar/heart-red.png" alt="" aria-hidden="true">
                                 {{$authUser->user_life_lines}}
                             </strong>
                             </div>
