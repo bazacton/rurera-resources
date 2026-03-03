@@ -1,4 +1,10 @@
-
+@push('styles_top')
+<style>
+    .user-menu {
+        opacity: 0;
+    }
+</style>
+@endpush
 <div class="user-profile-icons">
     <ul>
         <li class="sidebar-logo-mobile">
