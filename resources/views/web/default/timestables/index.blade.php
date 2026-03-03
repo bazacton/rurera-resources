@@ -20,7 +20,7 @@
                         <div class="modal-body">
                         <div class="col-12 col-lg-12 pt-15">
                         <div class="sound-card panel-border bg-white rounded-sm p-20">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" autofocus>
                             <span aria-hidden="true">×</span>
                             </button>
                             <h2 class="selective-sound font-22">very</h2>
