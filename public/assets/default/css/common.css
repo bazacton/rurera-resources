@@ -5082,7 +5082,7 @@ caption,
 th {text-align: center;}
 a:active,
 a:link,
-a:visited { -webkit-transition: color 0.3s ease; -o-transition: color 0.3s ease; transition: color 0.3s ease; }
+a:visited {-webkit-transition: color 0.3s ease; -o-transition: color 0.3s ease; transition: color 0.3s ease;}
 li {list-style: none;}
 a:focus,
 a:hover {cursor: pointer; text-decoration: none;}
