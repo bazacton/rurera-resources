@@ -246,7 +246,7 @@
                                 </button>
                             </div>
                             <div class="language-box">
-                                <input type="radio" name="language" id="two">
+                                <input type="radio" name="language" id="two" value="japanese">
                                 <label for="two">
                                     <span class="icon-box"></span>
                                     <span class="country-lable">Japanese</span>
