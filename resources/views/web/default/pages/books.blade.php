@@ -202,22 +202,11 @@
         if(swiper){ swiper.destroy(true, true); }
 
         swiper = new Swiper('#bookSwiper', {
-            slidesPerView: 'auto',
+            slidesPerView: 3,
+            slidesPerGroup: 3,
             spaceBetween: 16,
-            freeMode: true,
-            grabCursor: true,
-
-            navigation: { 
-            nextEl: '#btnNext', 
-            prevEl: '#btnPrev' 
-            },
-
-            pagination: { 
-            el: '#dots', 
-            clickable: true,
-            dynamicBullets: true,
-            dynamicMainBullets: 3
-            }
+            navigation: { nextEl: '#btnNext', prevEl: '#btnPrev' },
+            pagination: { el: '#dots', clickable: true }
         });
 
         swiper.on('slideChange', function(){
