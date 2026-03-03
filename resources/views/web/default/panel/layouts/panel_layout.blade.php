@@ -44,7 +44,11 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
     <link rel="preload" href="/store/1/fonts/Vazir-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/store/1/fonts/Vazir-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/store/1/fonts/Vazir-Bold.woff2" as="font" type="font/woff2" crossorigin>
-
+    <style>
+        .user-menu {
+            opacity: 0;
+        }
+    </style>
 </head>
 @php $bodyClass = ''; @endphp
 @if(auth()->check() && auth()->user()->isParent())
