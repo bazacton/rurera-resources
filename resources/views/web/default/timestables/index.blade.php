@@ -56,7 +56,7 @@
                     <div class="text-holder">
                         <h3 class="font-16 font-weight-bold">
                             <a class="stretched-link" href="/timestable/freedom-mode">
-                                <span class="sr-only">Freedom mode</span>
+                                Freedom mode
                             </a>
                         </h3>
                     </div>
@@ -69,7 +69,7 @@
                     <div class="text-holder">
                         <h3 class="font-16 font-weight-bold">
                             <a class="stretched-link" href="/timestable/powerup-mode">
-                                <span class="sr-only">Power-up Heatmap</span>
+                                Power-up Heatmap
                             </a>
                         </h3>
                     </div>
@@ -82,7 +82,7 @@
                     <div class="text-holder">
                         <h3 class="font-16 font-weight-bold">
                             <a class="stretched-link" href="/timestable/trophy-mode">
-                                <span class="sr-only">Trophy Mode</span>
+                                Trophy Mode
                             </a>
                         </h3>
                     </div>
@@ -95,7 +95,7 @@
                     <div class="text-holder">
                         <h3 class="font-16 font-weight-bold">
                             <a class="stretched-link" href="/timestable/treasure-mission">
-                                <span class="sr-only">Treasure Mission</span>
+                                Treasure Mission
                             </a>
                         </h3>
                         <div class="coin-counts">
@@ -115,7 +115,7 @@
                     <div class="text-holder">
                         <h3 class="font-16 font-weight-bold">
                             <a class="stretched-link" href="/timestable/showdown-mode">
-                                <span class="sr-only">Showdown</span>
+                                Showdown
                             </a>
                         </h3>
                     </div>
@@ -128,7 +128,7 @@
                     <div class="text-holder">
                         <h3 class="font-16 font-weight-bold">
                             <a class="stretched-link" href="/timestable/heat-map">
-                                <span class="sr-only">Heat Map</span>
+                                Heat Map
                             </a>
                         </h3>
                     </div>
@@ -141,7 +141,7 @@
                     <div class="text-holder">
                         <h3 class="font-16 font-weight-bold">
                             <a class="stretched-link" href="/analytics">
-                                <span class="sr-only">Analytics</span>
+                                Analytics
                             </a>
                         </h3>
                     </div>
