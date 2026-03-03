@@ -96,7 +96,7 @@
                 @endif
             </button>
 
-            <div id="notificationsMenu" class="notifications-menu font-14">
+            <div id="notificationsMenu" class="notifications-menu user-menu font-14">
                 <div class="dropdown-header font-16">{{ trans('admin/main.notifications') }}
                     <div class="float-right">
                         @can('admin_notifications_markAllRead')
@@ -141,7 +141,7 @@
                 <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
                 {{$authUser->getRewardPoints()}}
             </strong>
-            <div class="user-coins-menu">
+            <div class="user-coins-menu user-menu">
                 <div class="dropdown-header">
                     <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
                     <div class="coins-text">
@@ -171,7 +171,7 @@
                              alt="rounded circle" loading="eager" title="rounded circle">
                     </a>
 
-                    <div id="userProfileDropdown" class="user-profile-dropdown" aria-labelledby="dropdownMenuButton">
+                    <div id="userProfileDropdown" class="user-profile-dropdown user-menu" aria-labelledby="dropdownMenuButton">
                         <div class="dropdown-item user-nav-detail">
                             <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image"
                                  alt="rounded circle" loading="eager" title="rounded circle">
