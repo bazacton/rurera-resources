@@ -239,15 +239,15 @@
         });
       }
 
-      nextBtn.addEventListener('click', function(){
-        if(swiper){ swiper.slideNext(); }
-      });
-      prevBtn.addEventListener('click', function(){
-        if(swiper){ swiper.slidePrev(); }
-      });
-      window.addEventListener('resize', function(){
-        if(swiper){ setActive(swiper.activeIndex); updateArrows(); }
-      });
+    //   nextBtn.addEventListener('click', function(){
+    //     if(swiper){ swiper.slideNext(); }
+    //   });
+    //   prevBtn.addEventListener('click', function(){
+    //     if(swiper){ swiper.slidePrev(); }
+    //   });
+    //   window.addEventListener('resize', function(){
+    //     if(swiper){ setActive(swiper.activeIndex); updateArrows(); }
+    //   });
 
       renderTrack();
       goTo(0);
