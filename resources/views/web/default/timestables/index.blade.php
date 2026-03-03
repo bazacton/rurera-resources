@@ -26,7 +26,7 @@
                             <h2 class="selective-sound font-22">very</h2>
                                 <div class="sound-box">
                                     <span class="icon-box">
-                                        <img src="/assets/default/svgs/sound.svg" alt="sound svg image" height="800" width="800">
+                                        <img src="/assets/default/svgs/sound.svg" alt="" aria-hidden="true" height="800" width="800">
                                     </span>
                                     <h2 id="exampleModalCenterTitle" class="current-sound font-22">very</h2>
                                 </div>
@@ -75,7 +75,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="" aria-hidden="true" itemprop="image" loading="lazy">
+                            <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="" aria-hidden="true" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Conquer questions to turn your heatmap green.</p>
                     </article>
@@ -88,7 +88,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/svgs/shuttlecock.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" itemprop="image" loading="lazy">
+                            <img src="/assets/default/svgs/shuttlecock.svg" class="img-cover" alt="" aria-hidden="true" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Speed trophy badge by playing 10 games.</p>
                     </article>
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/img/treasure.png" class="img-cover" alt="" aria-hidden="true" itemprop="image" loading="lazy">
+                            <img src="/assets/default/img/treasure.png" class="img-cover" alt="" aria-hidden="true" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
 
@@ -121,7 +121,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/img/showdown.png" class="img-cover" alt="" aria-hidden="true" itemprop="image" loading="lazy">
+                            <img src="/assets/default/img/showdown.png" class="img-cover" alt="" aria-hidden="true" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
                     </article>
@@ -134,7 +134,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="" aria-hidden="true" itemprop="image" loading="lazy">
+                            <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="" aria-hidden="true" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Colours visualization for user data in heatmap</p>
                     </article>
@@ -147,7 +147,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="" aria-hidden="true" itemprop="image" loading="lazy">
+                            <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="" aria-hidden="true" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
 
@@ -178,7 +178,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/svgs/global-arena.svg" class="img-cover" alt="" aria-hidden="true" itemprop="image" loading="lazy">
+                            <img src="/assets/default/svgs/global-arena.svg" class="img-cover" alt="" aria-hidden="true" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
 
