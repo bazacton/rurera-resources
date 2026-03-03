@@ -8,50 +8,7 @@
                 <div class="section-title mb-15">
                     <h2 class="font-22 mb-0">Time Tables</h2>
                 </div>
-                <div class="modal fade"
-                id="exampleModalCenter"
-                tabindex="-1"
-                role="dialog"
-                aria-modal="true"
-                aria-labelledby="exampleModalCenterTitle"
-                aria-describedby="modalDescription">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                        <div class="modal-body">
-                        <div class="col-12 col-lg-12 pt-15">
-                        <div class="sound-card panel-border bg-white rounded-sm p-20">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" autofocus>
-                            <span aria-hidden="true">×</span>
-                            </button>
-                            <h2 class="selective-sound font-22">very</h2>
-                                <div class="sound-box">
-                                    <span class="icon-box">
-                                        <img src="/assets/default/svgs/sound.svg" alt="" aria-hidden="true" height="800" width="800">
-                                    </span>
-                                    <h2 id="exampleModalCenterTitle" class="current-sound font-22">very</h2>
-                                </div>
-                                <div class="sound-list">
-                                    <h5>adjective</h5>
-                                    <ol>
-                                        <li>being actual or real</li>
-                                        <li>exact, precise</li>
-                                        <li>exactly suitable or necessary</li>
-                                    </ol>
-                                </div>
-                                <div class="sound-list mb-0">
-                                    <h5>adverb</h5>
-                                    <ol>
-                                        <li>in actual fact: truly</li>
-                                        <li>to a great degree: extremely</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="type-list-data single-player-data">
                     <article class="grid-card timestables-mode-data" data-mode_type="freedom_mode">
                         <div class="text-holder">
@@ -264,12 +221,53 @@
             </div>
         </div>
         <div class="show-section-data"></div>
-        
-
     </section>
 </main>
 
+<div class="modal fade"
+    id="exampleModalCenter"
+    tabindex="-1"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="exampleModalCenterTitle"
+    aria-describedby="modalDescription">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-body">
+        <div class="col-12 col-lg-12 pt-15">
+        <div class="sound-card panel-border bg-white rounded-sm p-20">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" autofocus>
+            <span aria-hidden="true">×</span>
+            </button>
+            <h2 class="selective-sound font-22">very</h2>
+                <div class="sound-box">
+                    <span class="icon-box">
+                        <img src="/assets/default/svgs/sound.svg" alt="" aria-hidden="true" height="800" width="800">
+                    </span>
+                    <h2 id="exampleModalCenterTitle" class="current-sound font-22">very</h2>
+                </div>
+                <div class="sound-list">
+                    <h5>adjective</h5>
+                    <ol>
+                        <li>being actual or real</li>
+                        <li>exact, precise</li>
+                        <li>exactly suitable or necessary</li>
+                    </ol>
+                </div>
+                <div class="sound-list mb-0">
+                    <h5>adverb</h5>
+                    <ol>
+                        <li>in actual fact: truly</li>
+                        <li>to a great degree: extremely</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        </div>
 
+        </div>
+    </div>
+</div>
 @endsection
 
 @push('scripts_bottom')
