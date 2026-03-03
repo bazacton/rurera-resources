@@ -830,6 +830,7 @@ Right SideBar Style Start
     -webkit-transform: translateX(-50%) translateY(0) scale(0);
         -ms-transform: translateX(-50%) translateY(0) scale(0);
             transform: translateX(-50%) translateY(0) scale(0);
+            display: none;
 }
 .panel-right-sidebar .dropdown:hover .user-menu.user-profile-dropdown {
     -webkit-transform: translateX(0) translateY(0);
