@@ -20,7 +20,7 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/default/img/fav-icon.png">
     <!-- General CSS File -->
     <link rel="stylesheet" href="/assets/default/css/panel-pages/dashboard.css?ver={{$rand_no}}">
-	<link rel="stylesheet" href="/assets/default/css/common.css?ver={{$rand_no}}">
+	<link rel="stylesheet" href="/assets/default/css/common.css">
 
 	@if(auth()->check() && auth()->user()->isParent())
 		<link rel="stylesheet" href="/assets/default/css/panel-pages/parent.css?ver={{$rand_no}}">
