@@ -810,6 +810,7 @@ Right SideBar Style Start
     margin-top: 15px;
     visibility: hidden;
     pointer-events: none;
+    z-index: 2;
     transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 .user-profile-icons .user-menu .dropdown-header {text-align: left;font-weight: 600; color: #333; padding: 0 0 10px;}
