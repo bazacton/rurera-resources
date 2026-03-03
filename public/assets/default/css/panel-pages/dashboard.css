@@ -783,6 +783,9 @@ Right SideBar Style Start
     right: 15px;
     left: auto;
 }
+.user-profile-icons .user-profile-dropdown.user-menu:before {
+    display: none;
+}
 .user-profile-icons .user-menu:after {
     background-color: #fff;
 }
