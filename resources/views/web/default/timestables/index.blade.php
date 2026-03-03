@@ -233,8 +233,8 @@
                         </div>
                         <div class="select-language">
                             <div class="language-box">
-                                <input type="radio" name="language" id="one" value="romanized">
-                                <label for="one">
+                                <input type="radio" name="language" id="language-romanized" value="romanized">
+                                <label for="language-romanized">
                                     <span class="country-lable">Romanized</span>
                                 </label>
                                 <button type="button"
@@ -246,8 +246,8 @@
                                 </button>
                             </div>
                             <div class="language-box">
-                                <input type="radio" name="language" id="two" value="japanese">
-                                <label for="two">
+                                <input type="radio" name="language" id="language-japanese" value="japanese">
+                                <label for="language-japanese">
                                     <span class="icon-box"></span>
                                     <span class="country-lable">Japanese</span>
                                 </label>
