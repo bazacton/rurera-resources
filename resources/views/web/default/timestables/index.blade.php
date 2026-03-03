@@ -177,7 +177,7 @@
                         </h3>
                     </div>
                     <div class="img-holder">
-                        <img src="/assets/default/svgs/global-arena.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        <img src="/assets/default/svgs/global-arena.svg" class="img-cover" alt="" aria-hidden="true" title="Engaging Students through Interactive Technologies" itemprop="image" loading="lazy">
                     </div>
                     <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
 
