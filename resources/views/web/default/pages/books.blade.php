@@ -252,10 +252,10 @@
       renderTrack();
       goTo(0);
 
-      function updateArrows(){
-        var idx = swiper ? swiper.activeIndex : currentIndex;
-        prevBtn.disabled = idx <= 0;
-        nextBtn.disabled = idx >= books.length - 1;
-      }
+    //   function updateArrows(){
+    //     var idx = swiper ? swiper.activeIndex : currentIndex;
+    //     prevBtn.disabled = idx <= 0;
+    //     nextBtn.disabled = idx >= books.length - 1;
+    //   }
     </script>
 @endpush
