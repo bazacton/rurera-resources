@@ -238,7 +238,7 @@
                     </div>
                     <div class="invalid-feedback"></div>
                 </fieldset>
-                <fieldset class="form-group rurera_common_hide_field test_types_field">
+                <fieldset class="form-group rurera_common_hide_field test_types_field rurera-hide">
                     <legend class="input-label">Test Type</legend>
                     <div class="radio-buttons" aria-label="Test Type">
                         <label class="card-radio">
@@ -471,7 +471,7 @@
                     </div>
                 </div>
 
-                <div class="practice-quiz-ajax-fields rurera_common_hide_field courses_fields"></div>
+                <div class="practice-quiz-ajax-fields rurera_common_hide_field courses_fields rurera-hide"></div>
 
 
                 <div class="rurera_common_hide_field">
