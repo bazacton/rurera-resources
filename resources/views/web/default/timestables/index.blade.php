@@ -61,7 +61,7 @@
                         </h3>
                     </div>
                     <div class="img-holder">
-                        <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="Freedom mode icon" loading="lazy" title="Engaging Students through Interactive Technologies">
+                        <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="" aria-hidden="true" loading="lazy" title="Engaging Students through Interactive Technologies">
                     </div>
                     <p class="text-gray font-14">Explore multiplication, division, or both at your own pace.</p>
                 </div>
@@ -74,7 +74,7 @@
                         </h3>
                     </div>
                     <div class="img-holder">
-                        <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="" aria-hidden="true" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                     </div>
                     <p class="text-gray font-14">Conquer questions to turn your heatmap green.</p>
                 </div>
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <div class="img-holder">
-                        <img src="/assets/default/img/treasure.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
+                        <img src="/assets/default/img/treasure.png" class="img-cover" alt="" aria-hidden="true" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
                     </div>
                     <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
 
@@ -120,7 +120,7 @@
                         </h3>
                     </div>
                     <div class="img-holder">
-                        <img src="/assets/default/img/showdown.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
+                        <img src="/assets/default/img/showdown.png" class="img-cover" alt="" aria-hidden="true" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
                     </div>
                     <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
                 </div>
@@ -133,7 +133,7 @@
                         </h3>
                     </div>
                     <div class="img-holder">
-                        <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="" aria-hidden="true" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                     </div>
                     <p class="text-gray font-14">Colours visualization for user data in heatmap</p>
                 </div>
@@ -146,7 +146,7 @@
                         </h3>
                     </div>
                     <div class="img-holder">
-                        <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                        <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="" aria-hidden="true" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                     </div>
                     <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
 
