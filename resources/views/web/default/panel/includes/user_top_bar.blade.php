@@ -96,7 +96,7 @@
                 @endif
             </button>
 
-            <div id="notificationsMenu" class="dropdown-menu dropdown-list dropdown-menu-right font-14">
+            <div id="notificationsMenu" class="dropdown-list dropdown-menu-right font-14">
                 <div class="dropdown-header font-16">{{ trans('admin/main.notifications') }}
                     <div class="float-right">
                         @can('admin_notifications_markAllRead')
@@ -141,7 +141,7 @@
                 <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
                 {{$authUser->getRewardPoints()}}
             </strong>
-            <div class="dropdown-menu user-coins-menu dropdown-list dropdown-menu-right">
+            <div class="user-coins-menu">
                 <div class="dropdown-header">
                     <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
                     <div class="coins-text">
