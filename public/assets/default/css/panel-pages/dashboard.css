@@ -842,7 +842,7 @@ Right SideBar Style Start
     width: 350px;
     background-color: #fff;
     border-radius: 5px;
-    transform: translateX(-50%) translateY(10px);
+    transform: translateX(-50%) translateY(25px);
     opacity: 0;
     visibility: hidden;
     margin-top: 0;
@@ -854,7 +854,7 @@ Right SideBar Style Start
 .streak-dropdown:hover .streak-dropdown-content {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(0);
+    transform: translateX(-50%) translateY(15px);
 }
 .streak-dropdown-content:before {
     content: "";
