@@ -349,13 +349,16 @@ body .daterangepicker td.active:hover {
     text-align: center;
     vertical-align: middle;
     margin-right: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .select-topics .topics-table input[type=checkbox]:checked {
     border-color: transparent;
     background-color: var(--primary);
 }
 .select-topics .topics-table input[type=checkbox]:checked:before {
-    content: "✔";
+    content: "\2713";
     color: #fff;
 }
 .select-topics .muted {
