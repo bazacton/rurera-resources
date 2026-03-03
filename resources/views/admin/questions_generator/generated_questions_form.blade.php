@@ -350,6 +350,9 @@ $single_question = isset($single_question)? $single_question : false;
 <!-- Edit-questions Tabs Start -->
 <div class="edit-questions-difficulty-tabs">
 @if($single_question == false)
+    @if(isset($QuestionsBulkListObj->quiz_id) && $QuestionsBulkListObj->quiz_id > 0)
+        <a href="javascript:;" class="mock_test_selection rurera-hide" data-default_question_id="{{$default_question_id}}"  data-quiz_id="{{isset($QuestionsBulkListObj->quiz_id)? $QuestionsBulkListObj->quiz_id : 0}}" data-bulk_list_id="{{isset($QuestionsBulkListObj->id)? $QuestionsBulkListObj->id : 0}}">Mock Test</a>
+    @endif
 <div class="question-types-colors">
 	<span class="checkbox_questions_color">MCQs</span>
 	<span class="true_false_questions_color">True/False</span>
@@ -366,7 +369,6 @@ $single_question = isset($single_question)? $single_question : false;
         </div>
     </div>
     @endif
-
 </div>
 </div>
 
@@ -560,26 +562,44 @@ $single_question = isset($single_question)? $single_question : false;
     );
 
 
-
+    $("body").on("click", ".mock_test_selection", function (t) {
+        var quiz_id = $(this).attr('data-quiz_id');
+        var bulk_list_id = $(this).attr('data-bulk_list_id');
+        var loaderDiv = $('.edit-questions-difficulty-data');
+        rurera_loader(loaderDiv, 'button');
+        $.ajax({
+            type: "POST",
+            url: '/admin/questions-generator/generate_question_builder_difficulty_layout',
+            data: {'quiz_id': quiz_id, 'bulk_list_id': bulk_list_id},
+            success: function (return_data) {
+                rurera_remove_loader(loaderDiv, 'button');
+                $(".edit-questions-difficulty-data").html(return_data);
+                $(".difficulty-level-btn.active").click();
+            }
+        });
+    });
+    if($(".mock_test_selection").length > 0){
+        $(".mock_test_selection").click();
+    }
 
     $("body").on("change", ".part_item_selection", function (t) {
-	var part_item_id = $(this).val();
-	var bulk_list_id = $(this).attr('data-bulk_list_id');
-	var default_question_id = $(this).attr('data-default_question_id');
-	var loaderDiv = $('.edit-questions-difficulty-tabs');
-	rurera_loader(loaderDiv, 'button');
-	$.ajax({
-		type: "POST",
-		url: '/admin/questions-generator/generate_question_builder_difficulty_layout',
-		data: {'part_item_id': part_item_id, 'bulk_list_id': bulk_list_id, 'default_question_id': default_question_id},
-		success: function (return_data) {
-			rurera_remove_loader(loaderDiv, 'button');
-			$(".edit-questions-difficulty-data").html(return_data);
-			 $(".difficulty-level-btn.active").click();
-			//$(".question-builder-layout.active").click();
-		}
-	});
-});
+        var part_item_id = $(this).val();
+        var bulk_list_id = $(this).attr('data-bulk_list_id');
+        var default_question_id = $(this).attr('data-default_question_id');
+        var loaderDiv = $('.edit-questions-difficulty-tabs');
+        rurera_loader(loaderDiv, 'button');
+        $.ajax({
+            type: "POST",
+            url: '/admin/questions-generator/generate_question_builder_difficulty_layout',
+            data: {'part_item_id': part_item_id, 'bulk_list_id': bulk_list_id, 'default_question_id': default_question_id},
+            success: function (return_data) {
+                rurera_remove_loader(loaderDiv, 'button');
+                $(".edit-questions-difficulty-data").html(return_data);
+                 $(".difficulty-level-btn.active").click();
+                //$(".question-builder-layout.active").click();
+            }
+        });
+    });
 $(".part_item_selection").change();
 function decodeHtml(html) {
     var txt = document.createElement("textarea");
@@ -589,8 +609,11 @@ function decodeHtml(html) {
 
  $("body").on("click", ".difficulty-level-btn", function (t) {
 	 var thisObj = $(this);
+     $(".difficulty-level-btn").removeClass('active');
+     thisObj.addClass('active');
 	 var difficulty_level = $(this).attr('data-difficulty_level');
 	 var bulk_list_id = $(this).attr('data-bulk_list_id');
+     var section_id = $(this).attr('data-section_id');
 	 var part_item_id = $(this).attr('data-part_item_id');
 	 var default_question_id = $('.part_item_selection').attr('data-default_question_id');
 	 var loaderDiv = $('.tab-content');
@@ -601,7 +624,7 @@ function decodeHtml(html) {
 				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 			},
 			url: '/admin/questions-generator/get_questions_list_layout',
-			data: {'difficulty_level': difficulty_level, 'default_question_id': default_question_id, 'bulk_list_id': bulk_list_id, 'part_item_id': part_item_id},
+			data: {'section_id': section_id, 'difficulty_level': difficulty_level, 'default_question_id': default_question_id, 'bulk_list_id': bulk_list_id, 'part_item_id': part_item_id},
 			success: function (return_data) {
 				$(".edit-questions-tabs").html(return_data);
 				$(".question-builder-layout.active").click();
@@ -642,15 +665,25 @@ function decodeHtml(html) {
 
  $("body").on("click", ".question-builder-layout", function (t) {
      var default_question_id = $(".part_item_selection").attr('data-default_question_id');
+     if(default_question_id == undefined || default_question_id == 'undefined'){
+         var default_question_id = $(".mock_test_selection").attr('data-default_question_id');
+     }
+     console.log('default_question_id='+default_question_id);
 	 var thisObj = $(this);
 	 var question_id = $(this).attr('data-question_id');
      if(default_question_id != question_id) {
          var topic_part_item_id = $(this).attr('data-topic_part_item_id');
          var questions_bulk_list_id = $(this).attr('data-questions_bulk_list_id');
          var loaderDiv = $('.tab-content');
-         rurera_loader(loaderDiv, 'button');
-         window.location.href = '/admin/questions-generator/view-api-response/'+questions_bulk_list_id+'/'+topic_part_item_id+'/'+question_id;
-         return;
+         if($(".mock_test_selection").length > 0){
+
+             console.log('mock-test');
+         }else{
+            rurera_loader(loaderDiv, 'button');
+            window.location.href = '/admin/questions-generator/view-api-response/'+questions_bulk_list_id+'/'+topic_part_item_id+'/'+question_id;
+             return;
+         }
+
      }
 	 var question_index = $(this).attr('data-question_index');
 	 var is_deleted = $(this).attr('data-is_deleted');
