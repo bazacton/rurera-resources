@@ -7,12 +7,13 @@
             <div class="section-title mb-15">
                 <h2 class="font-22 mb-0">Time Tables</h2>
             </div>
-            <div class="modal fade" id="exampleModalCenter" 
-                tabindex="-1" 
-                role="dialog" 
-                aria-hidden="true"
-                aria-modal="true"
-                aria-labelledby="exampleModalCenterTitle">
+            <div class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-describedby="modalDescription">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                     <div class="modal-body">
