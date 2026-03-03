@@ -176,7 +176,7 @@
                 <div class="card">
                     @can('admin_topic_parts_create')
                     <div class="card-header">
-                        <div class="text-right">
+                        <div class="text-right rurera-hide">
                             <a href="/admin/topics_parts/create" class="btn btn-primary">New Topic Part</a>
                         </div>
                     </div>
