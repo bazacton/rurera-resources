@@ -773,9 +773,9 @@ Right SideBar Style Start
 .user-profile-icons img {width: 28px; height: 28px; object-fit: contain; }
 .user-profile-icons li .dropdown-toggle-btn {display: inline-flex; align-items: center; gap: 5px; position: relative; border: 0; padding: 0; background-color: inherit; font-weight: 700;}
 .user-menu.user-profile-dropdown .user-nav-list .user-list-email {line-height: normal; display: none;}
-.user-profile-icons .user-menu:after, 
-.user-profile-icons .user-menu:before {content: ""; position: absolute; top: -8px; left: 50%; margin-left: -8px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
-.user-profile-icons .sidebar-no-mobile .user-menu:before {
+.user-profile-icons .user-menu .user-menu-inner:after, 
+.user-profile-icons .user-menu .user-menu-inner:before {content: ""; position: absolute; top: -8px; left: 50%; margin-left: -8px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
+.user-profile-icons .sidebar-no-mobile .user-menu-inner:before {
     background-color: #fff;
     top: -8px;
     box-shadow: none;
@@ -783,34 +783,34 @@ Right SideBar Style Start
     right: 15px;
     left: auto;
 }
-.user-profile-icons .user-profile-dropdown.user-menu:before {
+.user-profile-icons .user-profile-dropdown.user-menu .user-menu-inner:before {
     display: none;
 }
-.user-profile-icons .user-menu:after {
+.user-profile-icons .user-menu .user-menu-inner:after {
     background-color: #fff;
 }
-.user-profile-icons .sidebar-no-mobile .user-menu:after {
+.user-profile-icons .sidebar-no-mobile .user-menu .user-menu-inner:after {
     right: 15px;
     left: auto;
 }
 .user-profile-icons .user-menu {
-    background-color: #fff;
-    border-radius: 8px; 
-    border: 1px solid #ddd; 
-    box-shadow: none; 
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 15px;
+    
+}
+.user-menu-inner {
+    background-color: #fff;
+    border-radius: 8px; 
+    border: 1px solid #ddd;
     padding: 15px; 
-    min-width: 280px;
-    z-index: 2;
+    min-width: 280px; 
     opacity: 0;
-    display: none;
+    margin-top: 15px;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 0.25s ease, visibility 0.25s ease;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 .user-profile-icons .user-menu .dropdown-header {text-align: left;font-weight: 600; color: #333; padding: 0 0 10px;}
 .dropdown-list-content .dropdown-item {background-color: #f9f8f8; border-radius: 5px; padding: 10px 15px; display: block; margin: 0 0 15px;}
