@@ -107,7 +107,7 @@
                             </div>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/img/treasure.png" class="img-cover" alt="" aria-hidden="true" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="lazy">
+                            <img src="/assets/default/img/treasure.png" class="img-cover" alt="" aria-hidden="true" itemprop="image" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
 
@@ -121,7 +121,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/img/showdown.png" class="img-cover" alt="" aria-hidden="true" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="lazy">
+                            <img src="/assets/default/img/showdown.png" class="img-cover" alt="" aria-hidden="true" itemprop="image" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
                     </article>
