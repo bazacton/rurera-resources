@@ -23,7 +23,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                             </button>
-                            <span class="selective-sound font-22">very</span>
+                            <h2 class="selective-sound font-22">very</h2>
                                 <div class="sound-box">
                                     <span class="icon-box">
                                         <img src="/assets/default/svgs/sound.svg" alt="sound svg image" height="800" width="800">
