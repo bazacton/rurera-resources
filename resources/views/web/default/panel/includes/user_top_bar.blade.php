@@ -1,5 +1,5 @@
 
-<div class="user-profile-icons" itemscope itemtype="https://schema.org/Organization">
+<div class="user-profile-icons">
     <ul>
         <li class="sidebar-logo-mobile">
             <a class="sidebar-logo" href="{{url('/')}}/" itemscope itemprop="url">
