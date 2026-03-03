@@ -165,7 +165,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/svgs/worldCup-colord.svg" class="img-cover" alt="Preparing for Success: Online Courses for Year 5 Students" title="Preparing for Success: Online Courses for Year 5 Students" itemprop="image" loading="lazy">
+                            <img src="/assets/default/svgs/worldCup-colord.svg" class="img-cover" alt="" aria-hidden="true" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Play and compete with classmates in exciting challenges.</p>
                     </div>
