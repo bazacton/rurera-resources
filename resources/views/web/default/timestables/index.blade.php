@@ -75,7 +75,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="" aria-hidden="true" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                            <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="" aria-hidden="true" title="Engaging Students through Interactive Technologies" itemprop="image" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Conquer questions to turn your heatmap green.</p>
                     </article>
@@ -88,7 +88,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/svgs/shuttlecock.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                            <img src="/assets/default/svgs/shuttlecock.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Speed trophy badge by playing 10 games.</p>
                     </article>
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/img/treasure.png" class="img-cover" alt="" aria-hidden="true" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
+                            <img src="/assets/default/img/treasure.png" class="img-cover" alt="" aria-hidden="true" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
 
@@ -121,7 +121,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/img/showdown.png" class="img-cover" alt="" aria-hidden="true" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
+                            <img src="/assets/default/img/showdown.png" class="img-cover" alt="" aria-hidden="true" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Journey through times tables practice and discover hidden treasures.</p>
                     </article>
@@ -134,7 +134,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="" aria-hidden="true" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                            <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="" aria-hidden="true" title="Engaging Students through Interactive Technologies" itemprop="image" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Colours visualization for user data in heatmap</p>
                     </article>
@@ -147,7 +147,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="" aria-hidden="true" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                            <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="" aria-hidden="true" title="Engaging Students through Interactive Technologies" itemprop="image" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
 
@@ -165,7 +165,7 @@
                             </h3>
                         </div>
                         <div class="img-holder">
-                            <img src="/assets/default/svgs/worldCup-colord.svg" class="img-cover" alt="Preparing for Success: Online Courses for Year 5 Students" title="Preparing for Success: Online Courses for Year 5 Students" itemprop="image" loading="eager">
+                            <img src="/assets/default/svgs/worldCup-colord.svg" class="img-cover" alt="Preparing for Success: Online Courses for Year 5 Students" title="Preparing for Success: Online Courses for Year 5 Students" itemprop="image" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Play and compete with classmates in exciting challenges.</p>
                     </div>
