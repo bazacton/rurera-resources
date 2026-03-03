@@ -171,7 +171,7 @@
                              alt="rounded circle" loading="eager" title="rounded circle">
                     </a>
 
-                    <!-- <div id="userProfileDropdown" class="user-profile-dropdown user-menu" aria-labelledby="dropdownMenuButton">
+                    <div id="userProfileDropdown" class="user-profile-dropdown user-menu" aria-labelledby="dropdownMenuButton">
                         <div class="dropdown-item user-nav-detail">
                             <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image"
                                  alt="rounded circle" loading="eager" title="rounded circle">
@@ -203,7 +203,7 @@
                                  width="24" alt="nav-icon" title="nav-icon" loading="eager">
                             <span class="font-16 text-dark-blue">{{ trans('panel.log_out') }}</span>
                         </a>
-                    </div> -->
+                    </div>
                 </div>
                 @endif
                 @else
