@@ -1244,6 +1244,7 @@ $(document).on('click', '.subchapter-add-form-submit', function (e) {
                 false, //confirmButton
             );
             if(return_data.status == 'success') {
+                parentObj.closest('.sub-topic-modal-add').modal('hide');
                 $(".year_group_chapters").change();
             }
         }
