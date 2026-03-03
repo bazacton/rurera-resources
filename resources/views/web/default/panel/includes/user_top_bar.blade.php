@@ -96,7 +96,7 @@
                 @endif
             </button>
 
-            <div id="notificationsMenu" class="dropdown-list dropdown-menu-right font-14">
+            <div id="notificationsMenu" class="notifications-menu font-14">
                 <div class="dropdown-header font-16">{{ trans('admin/main.notifications') }}
                     <div class="float-right">
                         @can('admin_notifications_markAllRead')
