@@ -1065,7 +1065,7 @@
                     <input type="hidden" name="topic_part_id" class="topic_part_id" value="0">
                     <input type="hidden" name="sub_chapter_id" class="sub_chapter_id" value="0">
                     <input type="hidden" name="current_year_id" class="move_topic_category_id" value="0">
-                    <input type="hidden" name="current_subject_id" value="{{$webinar->id}}">
+                    <input type="hidden" name="current_subject_id" value="{{isset($webinar->id)? $webinar->id : 0}}">
                     <div aria-labelledby="movetopicPart" role="tabpanel" style="">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
@@ -1167,7 +1167,7 @@
                     {{ csrf_field() }}
                     <div class="modal-body">
                         <input type="hidden" name="sub_chapter_id" class="sub_chapter_id" value="0">
-                        <input type="hidden" name="current_subject_id" value="{{$webinar->id}}">
+                        <input type="hidden" name="current_subject_id" value="{{isset($webinar->id)? $webinar->id : 0}}">
                         <div aria-labelledby="movesubTopic" role="tabpanel" style="">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
@@ -1256,7 +1256,7 @@
                     {{ csrf_field() }}
                     <div class="modal-body">
                         <input type="hidden" name="chapter_id" class="chapter_id_chapter" value="0">
-                        <input type="hidden" name="current_subject_id" value="{{$webinar->id}}">
+                        <input type="hidden" name="current_subject_id" value="{{isset($webinar->id)? $webinar->id : 0}}">
                         <div aria-labelledby="moveChapter" role="tabpanel" style="">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
