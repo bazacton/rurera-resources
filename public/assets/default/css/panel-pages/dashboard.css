@@ -432,7 +432,7 @@ Left SideBar-menu End
 .panel-content .grid-card .img-holder img[src*="shuttlecock.svg"] {transform: scale(-1) rotate(110deg); position: relative; bottom: -5px;}
 .panel-content .template-grid .text-holder {background-color: inherit; border: 0; padding: 0; min-height: auto; line-height: normal; display: flex; flex-direction: row; align-items: center; gap: 12px;}
 .panel-content .template-grid .coin-counts img {max-width: 20px; max-height: 20px; margin-top: 0;}
-.panel-content .template-grid .text-holder a {word-wrap: break-word;}
+.panel-content .template-grid .text-holder a {word-wrap: break-word; color: inherit;}
 .type-list-data > a:hover {border-color: #cecece;}
 .panel-content .grid-card .title-label,
 .login-options .coming-soon {font-weight: 500; position: relative; background-color: #f3f1f1; font-size: 15px; padding: 6px 8px; border-radius: 4px; margin-left: 10px; margin-bottom: 5px; display: inline-block; line-height: normal;}
