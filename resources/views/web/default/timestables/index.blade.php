@@ -7,8 +7,6 @@
             <div class="section-title mb-15">
                 <h2 class="font-22 mb-0">Time Tables</h2>
             </div>
-            
-
             <div class="modal fade" id="exampleModalCenter" 
                 tabindex="-1" 
                 role="dialog" 
