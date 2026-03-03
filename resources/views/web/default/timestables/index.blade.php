@@ -155,7 +155,7 @@
                 </div>
 
                 <div class="type-list-data multi-player-data rurera-hide">
-                    <div class="grid-card timestables-mode-data">
+                    <article class="grid-card timestables-mode-data">
                         <div class="text-holder">
                             <h3 class="font-16 font-weight-bold">
                                 <button type="button" class="grid-btn" disabled>
@@ -168,8 +168,8 @@
                             <img src="/assets/default/svgs/worldCup-colord.svg" class="img-cover" alt="" aria-hidden="true" loading="lazy">
                         </div>
                         <p class="text-gray font-14">Play and compete with classmates in exciting challenges.</p>
-                    </div>
-                    <div class="grid-card timestables-mode-data">
+                    </article>
+                    <article class="grid-card timestables-mode-data">
                         <div class="text-holder">
                             <h3 class="font-16 font-weight-bold">
                                 <a class="grid-btn" href="javascript:;">Global Arena
@@ -182,7 +182,7 @@
                         </div>
                         <p class="text-gray font-14">Connect with individuals worldwide in a Cloud.</p>
 
-                    </div>
+                    </article>
                 </div>
                 <div class="rurera-hide">
                     <div class="preferences panel-border bg-white rounded-sm p-20">
