@@ -96,7 +96,7 @@
                 @endif
             </button>
 
-            <div id="notificationsMenu" class="notifications-menu user-menu font-14">
+            <!-- <div id="notificationsMenu" class="notifications-menu user-menu font-14">
                 <div class="dropdown-header font-16">{{ trans('admin/main.notifications') }}
                     <div class="float-right">
                         @can('admin_notifications_markAllRead')
@@ -121,7 +121,7 @@
                 <div class="dropdown-footer text-right">
                     <a href="{{ getAdminPanelUrl() }}/notifications">{{ trans('admin/main.view_all') }} <i class="fas fa-chevron-right"></i></a>
                 </div>
-            </div>
+            </div> -->
         </li>
         {{--<li>
             <div class="assignments">
@@ -141,7 +141,7 @@
                 <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
                 {{$authUser->getRewardPoints()}}
             </strong>
-            <div class="user-coins-menu user-menu">
+            <!-- <div class="user-coins-menu user-menu">
                 <div class="dropdown-header">
                     <img src="/assets/default/img/panel-sidebar/coins.svg" alt="Coins balance">
                     <div class="coins-text">
@@ -149,7 +149,7 @@
                         <span>You have {{$authUser->getRewardPoints()}} Coins <a href="/shop">Go to Shop</a></span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </li>
         @endif
 
@@ -171,7 +171,7 @@
                              alt="rounded circle" loading="eager" title="rounded circle">
                     </a>
 
-                    <div id="userProfileDropdown" class="user-profile-dropdown user-menu" aria-labelledby="dropdownMenuButton">
+                    <!-- <div id="userProfileDropdown" class="user-profile-dropdown user-menu" aria-labelledby="dropdownMenuButton">
                         <div class="dropdown-item user-nav-detail">
                             <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image"
                                  alt="rounded circle" loading="eager" title="rounded circle">
@@ -203,7 +203,7 @@
                                  width="24" alt="nav-icon" title="nav-icon" loading="eager">
                             <span class="font-16 text-dark-blue">{{ trans('panel.log_out') }}</span>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
                 @endif
                 @else
