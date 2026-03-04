@@ -493,7 +493,7 @@
     {!! parseShortcode('[SC_rurera-activation-cta]') !!}
    {!! parseShortcode('[SC_testimonials-section-f]') !!}
    {!! parseShortcode('[SC_times-table-features-section-f]') !!}
-   <section class="trusted-section mb-60">
+<section class="trusted-section mb-60">
     <div class="trusted-container">
     <h2 class="trusted-title">
       Trusted by over 3,000 institutions
@@ -704,5 +704,8 @@ if (buttons) {
 
     toggleBtn.textContent = paused ? '▶' : '❚❚';
   });
+  document.querySelectorAll(".logo-track").forEach(track => {
+    track.innerHTML += track.innerHTML;
+    });
 </script>
 @endpush
