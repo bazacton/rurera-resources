@@ -193,6 +193,11 @@
     </section>
 </section>
 <!-- Cookie Consent Modal -->
+ <div class="revisit-btn-wrapper">
+  <button class="cky-btn-revisit" aria-label="Consent Preferences"> 
+    <img src="/assets/default/svgs/revisit.svg" alt="Revisit consent button"> 
+  </button>
+</div>
 <div class="modal fade cookie-modal" id="cookieModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog" role="document">
     <div class="modal-content cookie-box">
