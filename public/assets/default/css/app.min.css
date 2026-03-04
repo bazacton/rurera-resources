@@ -16798,8 +16798,12 @@ section.feature-grid {
 }
 /* Infinite Scroll */
 @keyframes scroll {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 /* Fade effect */
 .fade-left,
