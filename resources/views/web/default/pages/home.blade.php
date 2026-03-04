@@ -212,7 +212,7 @@
         <div class="cookie-buttons mt-3">
           <button class="btn-customise mr-2">Customise</button>
           <button class="btn-reject mr-2">Reject All</button>
-          <button class="btn-accept mr-2">Accept All</button>
+          <button class="accept-all mr-2">Accept All</button>
         </div>
 
       </div>
