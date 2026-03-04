@@ -229,6 +229,7 @@
 
 @push('scripts_bottom')
 <script src="/assets/default/vendors/swiper-slider/swiper-bundle.min.js"></script>
+<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 <script>
     function setupWordChange(timeout, animationTimeout = 300) {
     const container = document.getElementById("change");
