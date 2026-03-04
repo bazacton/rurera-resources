@@ -310,6 +310,11 @@
             </div>
           </div>
         </div>
+        <div class="cookie-buttons mt-3" bis_skin_checked="1">
+          <button class="btn-customise mr-2">Customise</button>
+          <button class="btn-reject mr-2">Reject All</button>
+          <button class="accept-all">Accept All</button>
+        </div>
       </div>
     </div>
   </div>
