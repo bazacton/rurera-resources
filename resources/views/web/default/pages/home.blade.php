@@ -194,10 +194,10 @@
 </section>
 <!-- Cookie Consent Modal -->
 <div class="modal fade cookie-modal" id="cookieModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+  <div class="modal-dialog" role="document">
     <div class="modal-content cookie-box">
 
-      <div class="modal-body">
+      <div class="modal-body p-0">
 
         <button type="button" class="close cookie-close" data-dismiss="modal">
           &times;
@@ -208,11 +208,6 @@
         <p class="cookie-text">
           We use cookies to improve your browsing experience, serve personalized content, and analyze our traffic.
           By clicking Accept all Cookies, you agree to the storing of cookies on your device.
-        </p>
-
-        <p class="cookie-text">
-          You can customize your settings by clicking Manage Preferences.
-          For more details, see our <a href="#">Cookie Policy</a>.
         </p>
 
         <div class="cookie-buttons mt-3">
