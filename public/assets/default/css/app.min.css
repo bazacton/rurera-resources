@@ -16942,7 +16942,7 @@ body:has(.cookie-modal.show) .revisit-btn-wrapper {
     font-size: .875rem;
 }
 .show-desc-btn {
-    font-size: 875rem;
+    font-size: .875rem;
     font-family: inherit;
     color: var(--primary);
     text-decoration: none;
@@ -16953,8 +16953,5 @@ body:has(.cookie-modal.show) .revisit-btn-wrapper {
     background: transparent;
     border-color: transparent;
     text-transform: none;
-    min-height: 0;
-    text-shadow: none;
-    box-shadow: none;
 }
 /* Cookie-Modal Style End */
