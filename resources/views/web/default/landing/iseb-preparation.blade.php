@@ -690,44 +690,44 @@ if (buttons) {
 </script>
 
 <script>
+  window.addEventListener("load", () => {
+
   const toggleBtn = document.getElementById('sliderToggle');
   const tracks = document.querySelectorAll('.logo-track');
 
   let paused = false;
 
-  toggleBtn.addEventListener('click', () => {
-    paused = !paused;
+  tracks.forEach(track => {
 
-    tracks.forEach(track => {
-      track.style.animationPlayState = paused ? 'paused' : 'running';
-    });
-
-    toggleBtn.textContent = paused ? '▶' : '❚❚';
-  });
-
-  window.addEventListener("load", () => {
-    document.querySelectorAll(".logo-track").forEach(track => {
-
-    // duplicate once
+    // duplicate content
     track.innerHTML += track.innerHTML;
 
     let position = 0;
-    const speed = 0.5; // same speed for all rows
+    const speed = 0.5;
     const maxScroll = track.scrollWidth / 2;
 
     function animate() {
-      position += speed;
 
-      if (position >= maxScroll) {
-        position = 0; // reset without visible jump
+      if (!paused) {
+        position += speed;
+
+        if (position >= maxScroll) {
+          position = 0;
+        }
+
+        track.style.transform = `translateX(-${position}px)`;
       }
 
-      track.style.transform = `translateX(-${position}px)`;
       requestAnimationFrame(animate);
     }
 
     animate();
+  });
 
+  // Toggle Button
+  toggleBtn.addEventListener('click', () => {
+    paused = !paused;
+    toggleBtn.textContent = paused ? '▶' : '❚❚';
   });
 
 });
