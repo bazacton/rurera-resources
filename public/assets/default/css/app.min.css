@@ -16929,4 +16929,16 @@ section.feature-grid {
 body:has(.cookie-modal.show) .revisit-btn-wrapper {
     display: none;
 }
+
+
+.preference-modal .modal-dialog {
+    max-width: 845px;
+}
+.preference-modal .modal-title {
+    font-size: 1.25rem;
+}
+.preference-content-wrapper p {
+    margin: 0 0 15px;
+    font-size: .875rem;
+}
 /* Cookie-Modal Style End */
