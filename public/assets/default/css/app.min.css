@@ -16965,10 +16965,14 @@ body:has(.cookie-modal.show) .revisit-btn-wrapper {
     border: 0;
     border-radius: 0;
     margin: 0 0 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 15px;
 }
 .preference-accordion .card-header {
+    background-color: inherit;
     padding: 0;
     border-radius: 0;
+    border: 0;
 }
 .preference-accordion .btn-link {
     padding: 0;
@@ -16979,6 +16983,7 @@ body:has(.cookie-modal.show) .revisit-btn-wrapper {
     font-size: 1rem;
     font-weight: 700;
     color: #212121;
+    text-decoration: none;
 }
 .preference-accordion .btn-link span {
     text-align: left;
