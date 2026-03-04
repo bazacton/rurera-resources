@@ -1791,14 +1791,22 @@
                     icon: 'success',
                 });
 
-                if (typeof result.dont_reload === "undefined") {
-                    setTimeout(() => {
-                        if (typeof result.redirect_to !== "undefined" && result.redirect_to !== undefined && result.redirect_to !== null && result.redirect_to !== '') {
-                            window.location.href = result.redirect_to;
-                        } else {
-                            window.location.reload();
-                        }
-                    }, 1000);
+                if(result.reload_class != '' && result.reload_class != "undefined"){
+
+
+
+                }else {
+
+                    if (typeof result.dont_reload === "undefined") {
+                        setTimeout(() => {
+                            if (typeof result.redirect_to !== "undefined" && result.redirect_to !== undefined && result.redirect_to !== null && result.redirect_to !== '') {
+                                window.location.href = result.redirect_to;
+                            } else {
+
+                                window.location.reload();
+                            }
+                        }, 1000);
+                    }
                 }
             } else {
                 Swal.fire({
@@ -2782,8 +2790,10 @@ $(document).ready(function () {
 
 
 $(document).on('click', '.add-more-question', function (e) {
+
     var question_id = $(this).attr('data-id');
     var bulk_id = $(this).attr('data-bulk_id');
+    var section_id = $(".difficulty-level-btn.active").attr('data-section_id');
     var part_item_id = $(this).attr('data-part_item_id');
     var difficulty_level = $(this).attr('data-difficulty_level');
     var parentObj = $(this).closest('.main-content');
@@ -2794,9 +2804,11 @@ $(document).on('click', '.add-more-question', function (e) {
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
-        data: {"question_id": question_id, "bulk_id": bulk_id, "part_item_id": part_item_id, "difficulty_level": difficulty_level},
+
+        data: {"section_id": section_id, "question_id": question_id, "bulk_id": bulk_id, "part_item_id": part_item_id, "difficulty_level": difficulty_level},
         success: function (return_data) {
-            //rurera_remove_loader(parentObj, 'div');
+
+            rurera_remove_loader(parentObj, 'div');
             //parentObj.html(return_data);
             window.location.href = return_data;
         }
@@ -2921,3 +2933,27 @@ function simulateDrop(file) {
 
     dropzone.dispatchEvent(dropEvent);
 }
+
+$(document).on('click', '.repeater-creator', function (e) {
+
+    var targetClass = $(this).attr('data-repeater_target');
+    var appendClass = $(this).attr('data-repeater_append_target');
+
+    if (!targetClass || !appendClass) return;
+
+    var $clone = $('.' + targetClass).first().clone();
+
+    $clone.removeClass('rurera-hide');
+
+    // Clear inputs
+    $clone.find('input, textarea, select').val('');
+
+
+    $('.' + appendClass).append($clone);
+});
+
+
+/* DELETE FUNCTION */
+$(document).on('click', '.repeater-remove', function () {
+    $(this).closest('.repeater-field-sections').remove();
+});
