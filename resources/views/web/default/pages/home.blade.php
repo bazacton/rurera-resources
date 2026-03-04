@@ -243,7 +243,7 @@
           <div class="card">
             <div class="card-header" id="heading1">
               <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
                   Necessary
                   <span>Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data.</span>
                 </button>
@@ -261,7 +261,7 @@
           <div class="card">
             <div class="card-header" id="heading2">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                   Functional
                   <span>Functional cookies help perform certain functionalities like sharing the content of the website on social media platforms, collecting feedback, and other third-party features.</span>
                 </button>
@@ -278,13 +278,30 @@
           <div class="card">
             <div class="card-header" id="heading3">
               <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                   Analytics
                   <span>Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.</span>
                 </button>
               </h5>
             </div>
             <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#preference-accordion">
+              <div class="card-body">
+                <div class="audit-table">
+                  <p class="empty-cookies-text">No cookies to display.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading4">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  Analytics
+                  <span>Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.</span>
+                </button>
+              </h5>
+            </div>
+            <div id="collapse3" class="collapse" aria-labelledby="heading4" data-parent="#preference-accordion">
               <div class="card-body">
                 <div class="audit-table">
                   <p class="empty-cookies-text">No cookies to display.</p>
