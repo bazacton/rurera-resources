@@ -16785,9 +16785,9 @@ section.feature-grid {
   gap: 24px;
   width: max-content;
   animation: scroll 40s linear infinite;
+  will-change: transform;
   transform: translate3d(0,0,0);
   backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
 }
 .logo-track img {
   width: 130px;
@@ -16798,8 +16798,8 @@ section.feature-grid {
 }
 /* Infinite Scroll */
 @keyframes scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-1000px); }
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 /* Fade effect */
 .fade-left,
