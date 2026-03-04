@@ -16953,5 +16953,36 @@ body:has(.cookie-modal.show) .revisit-btn-wrapper {
     background: transparent;
     border-color: transparent;
     text-transform: none;
+    min-height: 0;
+    text-shadow: none;
+    box-shadow: none;
+}
+.preference-content-wrapper {
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 25px;
+}
+.preference-accordion .card {
+    border: 0;
+    border-radius: 0;
+    margin: 0 0 15px;
+}
+.preference-accordion .card-header {
+    padding: 0;
+    border-radius: 0;
+}
+.preference-accordion .btn-link {
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #212121;
+}
+.preference-accordion .btn-link span {
+    text-align: left;
+    font-size: .875rem;
+    font-weight: 400;
 }
 /* Cookie-Modal Style End */
