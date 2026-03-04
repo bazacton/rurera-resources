@@ -192,6 +192,39 @@
         </div>
     </section>
 </section>
+<!-- Cookie Consent Modal -->
+<div class="modal fade cookie-modal" id="cookieModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content cookie-box">
+
+      <div class="modal-body">
+
+        <button type="button" class="close cookie-close" data-dismiss="modal">
+          &times;
+        </button>
+
+        <h5 class="cookie-title">Accept the use of cookies.</h5>
+
+        <p class="cookie-text">
+          We use cookies to improve your browsing experience, serve personalized content, and analyze our traffic.
+          By clicking Accept all Cookies, you agree to the storing of cookies on your device.
+        </p>
+
+        <p class="cookie-text">
+          You can customize your settings by clicking Manage Preferences.
+          For more details, see our <a href="#">Cookie Policy</a>.
+        </p>
+
+        <div class="cookie-buttons mt-3">
+          <button class="btn btn-primary mr-2">Accept all Cookies</button>
+          <button class="btn btn-outline-secondary">Manage Preferences</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
 @endsection
 
 @push('scripts_bottom')
@@ -268,5 +301,10 @@
     document.addEventListener("DOMContentLoaded", () => {
     setupWordChange(2000);
     });
+</script>
+<script>
+  $(document).ready(function () {
+    $('#cookieModal').modal('show');
+  });
 </script>
 @endpush
