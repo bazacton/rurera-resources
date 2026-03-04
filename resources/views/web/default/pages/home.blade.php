@@ -203,16 +203,16 @@
           &times;
         </button>
 
-        <h5 class="cookie-title">Accept the use of cookies.</h5>
+        <h5 class="cookie-title">We value your privacy</h5>
 
         <p class="cookie-text">
-          We use cookies to improve your browsing experience, serve personalized content, and analyze our traffic.
-          By clicking Accept all Cookies, you agree to the storing of cookies on your device.
+          We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking "Accept All", you consent to our use of cookies.
         </p>
 
         <div class="cookie-buttons mt-3">
-          <button class="btn btn-primary mr-2">Accept all Cookies</button>
-          <button class="btn btn-outline-secondary">Manage Preferences</button>
+          <button class="btn-customise mr-2">Customise</button>
+          <button class="btn-reject mr-2">Reject All</button>
+          <button class="btn-accept mr-2">Accept All</button>
         </div>
 
       </div>
