@@ -16834,3 +16834,41 @@ section.feature-grid {
   z-index: 2;
 }
 /* Trusted Section Style End */
+
+/* Cookie-Modal Style Start */
+.cookie-modal .modal-dialog {
+  position: fixed;
+  bottom: 20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.cookie-box {
+  border-radius: 10px;
+  padding: 10px;
+}
+.cookie-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.cookie-text {
+  font-size: 875rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+.cookie-buttons .btn-primary {
+  background-color: #5a3d8a;
+  border-color: #5a3d8a;
+}
+.cookie-buttons .btn-primary:hover {
+  background-color: #4a2f75;
+  border-color: #4a2f75;
+}
+.cookie-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+}
+/* Cookie-Modal Style End */
