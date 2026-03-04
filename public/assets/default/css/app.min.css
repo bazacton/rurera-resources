@@ -16888,7 +16888,7 @@ section.feature-grid {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #0056a7;
+    background:  var(--primary);
     width: 45px;
     height: 45px;
     border-radius: 50%;
