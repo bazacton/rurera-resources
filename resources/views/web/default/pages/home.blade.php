@@ -193,7 +193,7 @@
     </section>
 </section>
 <!-- Cookie Consent Modal -->
- <div class="revisit-btn-wrapper">
+ <div class="revisit-btn-wrapper" data-tooltip="Consent Preferences">
   <button class="cky-btn-revisit" aria-label="Consent Preferences"> 
     <img src="/assets/default/svgs/revisit.svg" alt="Revisit consent button"> 
   </button>
