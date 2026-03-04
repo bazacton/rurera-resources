@@ -16968,6 +16968,9 @@ body:has(.cookie-modal.show) .revisit-btn-wrapper {
     border-bottom: 1px solid #ddd;
     padding: 0 0 15px;
 }
+.preference-accordion .card:last-child {
+    border: 0;
+}
 .preference-accordion .card-header {
     background-color: inherit;
     padding: 0;
