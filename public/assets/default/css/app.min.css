@@ -16782,17 +16782,12 @@ section.feature-grid {
 }
 .logo-track {
   display: flex;
-  gap: 24px;
-  width: max-content;
-  animation: scroll 40s linear infinite;
+  gap: 40px;
+  animation: scroll linear infinite;
   will-change: transform;
-  transform: translate3d(0,0,0);
-  backface-visibility: hidden;
 }
 .logo-track img {
-  width: 130px;
-  height: 73px;
-  object-fit: contain;
+  height: 60px;
   flex-shrink: 0;
   display: block;
 }
