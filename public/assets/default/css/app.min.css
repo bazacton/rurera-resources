@@ -16861,8 +16861,8 @@ section.feature-grid {
   border-color: #5a3d8a;
 }
 .cookie-buttons .btn-primary:hover {
-  background-color: #4a2f75;
-  border-color: #4a2f75;
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 .cookie-close {
   position: absolute;
