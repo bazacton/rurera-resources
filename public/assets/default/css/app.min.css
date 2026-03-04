@@ -16893,7 +16893,6 @@ section.feature-grid {
     height: 45px;
     border-radius: 50%;
     position: fixed;
-    z-index: 999999;
     cursor: pointer;
 }
 .cky-btn-revisit {
