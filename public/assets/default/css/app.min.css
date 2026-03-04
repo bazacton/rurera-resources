@@ -16793,7 +16793,7 @@ section.feature-grid {
 .logo-track {
   display: flex;
   gap: 40px;
-  animation: scroll linear infinite;
+  width: max-content;
   will-change: transform;
 }
 .logo-track img {
