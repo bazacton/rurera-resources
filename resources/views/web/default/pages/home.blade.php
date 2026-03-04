@@ -296,12 +296,29 @@
             <div class="card-header" id="heading4">
               <h5 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                  Analytics
-                  <span>Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.</span>
+                  Performance
+                  <span>Performance cookies are used to understand and analyse the key performance indexes of the website which helps in delivering a better user experience for the visitors.</span>
                 </button>
               </h5>
             </div>
-            <div id="collapse3" class="collapse" aria-labelledby="heading4" data-parent="#preference-accordion">
+            <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#preference-accordion">
+              <div class="card-body">
+                <div class="audit-table">
+                  <p class="empty-cookies-text">No cookies to display.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading5">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  Advertisement
+                  <span>Advertisement cookies are used to provide visitors with customised advertisements based on the pages you visited previously and to analyse the effectiveness of the ad campaigns.</span>
+                </button>
+              </h5>
+            </div>
+            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#preference-accordion">
               <div class="card-body">
                 <div class="audit-table">
                   <p class="empty-cookies-text">No cookies to display.</p>
