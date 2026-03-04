@@ -16926,4 +16926,7 @@ section.feature-grid {
     border-left-width: 0;
     border-right-color: #4e4b66;
 }
+body:has(.cookie-modal.show) .revisit-btn-wrapper {
+    display: none;
+}
 /* Cookie-Modal Style End */
