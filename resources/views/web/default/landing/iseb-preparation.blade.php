@@ -704,8 +704,25 @@ if (buttons) {
 
     toggleBtn.textContent = paused ? '▶' : '❚❚';
   });
+  
   document.querySelectorAll(".logo-track").forEach(track => {
+    // duplicate content
     track.innerHTML += track.innerHTML;
+
+    // calculate half width (original set)
+    const trackWidth = track.scrollWidth / 2;
+
+    // set animation dynamically
+    track.style.animationDuration = "40s";
+
+    const styleSheet = document.styleSheets[0];
+    styleSheet.insertRule(`
+        @keyframes scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-${trackWidth}px); }
+        }
+    `, styleSheet.cssRules.length);
+
     });
 </script>
 @endpush
