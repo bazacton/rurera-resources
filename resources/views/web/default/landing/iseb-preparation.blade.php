@@ -704,25 +704,32 @@ if (buttons) {
 
     toggleBtn.textContent = paused ? '▶' : '❚❚';
   });
-  
-  document.querySelectorAll(".logo-track").forEach(track => {
-    // duplicate content
+
+  window.addEventListener("load", () => {
+    document.querySelectorAll(".logo-track").forEach(track => {
+
+    // duplicate once
     track.innerHTML += track.innerHTML;
 
-    // calculate half width (original set)
-    const trackWidth = track.scrollWidth / 2;
+    let position = 0;
+    const speed = 0.5; // same speed for all rows
+    const maxScroll = track.scrollWidth / 2;
 
-    // set animation dynamically
-    track.style.animationDuration = "40s";
+    function animate() {
+      position += speed;
 
-    const styleSheet = document.styleSheets[0];
-    styleSheet.insertRule(`
-        @keyframes scroll {
-        from { transform: translateX(0); }
-        to { transform: translateX(-${trackWidth}px); }
-        }
-    `, styleSheet.cssRules.length);
+      if (position >= maxScroll) {
+        position = 0; // reset without visible jump
+      }
 
-    });
+      track.style.transform = `translateX(-${position}px)`;
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+
+  });
+
+});
 </script>
 @endpush
