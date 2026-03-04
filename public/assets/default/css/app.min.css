@@ -16790,10 +16790,11 @@ section.feature-grid {
   -webkit-font-smoothing: antialiased;
 }
 .logo-track img {
-  transition: 0.3s;
   width: 130px;
   height: 73px;
   object-fit: contain;
+  flex-shrink: 0;
+  display: block;
 }
 /* Infinite Scroll */
 @keyframes scroll {
