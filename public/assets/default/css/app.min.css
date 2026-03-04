@@ -14966,11 +14966,21 @@ section:has(.trial-steps) .rurera-btn-group a small {
 }
 .cookie-buttons button {
   background-color: inherit;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  padding: 10px 15px;
-  line-height: normal;
-  outline: none;
+  border: 2px solid var(--primary);
+  flex: auto;
+  max-width: 100%;
+  font-size: .875rem;
+  font-family: inherit;
+  line-height: 24px;
+  padding: 8px;
+  font-weight: 500;
+  margin: 0 8px 0 0;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: none;
+  min-height: 0;
+  color: var(--primary);
 }
 .cookie-buttons .accept-all {
   background-color: var(--primary);
@@ -16865,14 +16875,6 @@ section.feature-grid {
 .cookie-text {
   color: #555;
   margin-bottom: 8px;
-}
-.cookie-buttons .btn-primary {
-  background-color: #5a3d8a;
-  border-color: #5a3d8a;
-}
-.cookie-buttons .btn-primary:hover {
-  background-color: #4a2f75;
-  border-color: #4a2f75;
 }
 .cookie-close {
   position: absolute;
