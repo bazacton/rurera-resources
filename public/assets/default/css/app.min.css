@@ -16873,8 +16873,8 @@ section.feature-grid {
   margin: 0 0 8px 0;
 }
 .cookie-text {
-  color: #555;
   margin-bottom: 8px;
+  font-size: .875rem;
 }
 .cookie-close {
   position: absolute;
