@@ -2680,30 +2680,11 @@ Admin Questions Generator Page Style End
 /* Admin Webinars Topics Accrdions Style End */
 
 /* Webinars Table Style Start */
-.card-body .table td:has(.webinars-list-controls) {
-    min-width: 205px;
-}
-.card-body .webinars-list-controls .webinars-lists-dropdown {
-    display: flex;
-    margin: 0;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-.btn-group.webinars-list-controls {
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-}
-.card-body .table tr:hover td .webinars-list-controls {
-    opacity: 1;
-    visibility: visible;
-}
-.webinars-list-controls button, .webinars-list-controls a {
-    padding: 0;
-    line-height: normal;
-    height: auto;
-    border: 0;
-}
+.card-body .table td:has(.webinars-list-controls) {min-width: 205px;}
+.card-body .webinars-list-controls .webinars-lists-dropdown {display: flex; margin: 0; flex-wrap: wrap; gap: 5px;}
+.btn-group.webinars-list-controls {width: 100%; opacity: 0; visibility: hidden;}
+.card-body .table tr:hover td .webinars-list-controls {opacity: 1; visibility: visible;}
+.webinars-list-controls button, .webinars-list-controls a {padding: 0; line-height: normal; height: auto; border: 0;}
 .webinars-list-controls a span i,
 .webinars-list-controls button span i {text-align: center;}
 /* Webinars Table Style End */
