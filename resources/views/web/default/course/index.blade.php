@@ -180,7 +180,7 @@
                                                     @endphp
                                                     <div class="chapter-card">
                                                         <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$topicPartObj->id}}" aria-expanded="true">{{ $topicPartObj->title }} {{($smart_score > 0)? '('.$smart_score.')' : ''}}
-                                                            <span class="topic-accuracy test@@ {{$completion_class}}">
+                                                            <span class="topic-accuracy {{$completion_class}}">
                                                                 <span class="accuracy-tooltip">{{$completion_title}}</span>
                                                                 <img src="/assets/default/svgs/{{$completion_icon}}.svg">
                                                             </span>                                                                                </a>
