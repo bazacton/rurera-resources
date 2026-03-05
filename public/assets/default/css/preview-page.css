@@ -4,84 +4,21 @@
 .preview-question-area {padding-right: 400px; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
 .preview-question-area.centered {padding-right: 0;}
 .preview-question-area .justify-content-center > .mt-50 {margin-top: 0;}
-.preview-question-area .rurera-question-block.active {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+.preview-question-area .rurera-question-block.active {display: flex; flex-wrap: wrap; justify-content: center;}
 /* Main scroll container */
-.quiz-area-page .lms-quiz-section .questions-data-block {
-    height: 100vh;
-    max-height: 100%;
-}
+.quiz-area-page .lms-quiz-section .questions-data-block {height: 100vh; max-height: 100%;}
 /* Chrome, Edge, Safari */
-.quiz-area-page .lms-quiz-section .questions-data-block::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-  display: none;
-}
-.quiz-area-page .lms-quiz-section .questions-data-block::-webkit-scrollbar-thumb {
-  background: transparent;
-}
-.quiz-area-page .lms-quiz-section .questions-data-block::-webkit-scrollbar-track {
-  background: transparent;
-}
-.preview-question-area .question-right-side {
-    background-color: #fff;
-    max-width: 400px;
-    z-index: 2;
-    padding: 0 0 25px 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    margin-top: 25px;
-    transition: transform 0.3s ease;
-}
-.preview-question-area .question-right-inner {
-    overflow: hidden;
-    overflow-y: auto;
-    height: 100%;
-    padding: 0 15px 0 0;
-    scrollbar-gutter: stable;
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
+.quiz-area-page .lms-quiz-section .questions-data-block::-webkit-scrollbar {width: 0px; height: 0px; display: none;}
+.quiz-area-page .lms-quiz-section .questions-data-block::-webkit-scrollbar-thumb {background: transparent;}
+.quiz-area-page .lms-quiz-section .questions-data-block::-webkit-scrollbar-track {background: transparent;}
+.preview-question-area .question-right-side {background-color: #fff; max-width: 400px; z-index: 2; padding: 0 0 25px 0; position: fixed; top: 0; right: 0; height: 100%; margin-top: 25px; transition: transform 0.3s ease;}
+.preview-question-area .question-right-inner {overflow: hidden; overflow-y: auto; height: 100%; padding: 0 15px 0 0; scrollbar-gutter: stable; scrollbar-width: thin; scrollbar-color: transparent transparent; scrollbar-width: none; -ms-overflow-style: none;}
 .question-right-side.hidden,
-.preview-question-area.centered .question-right-side {
-    transform: translateX(100%);
-}
-.preview-question-area .question-right-side .review-msg-box .input-group {
-    border: 0;
-    border-radius: 0;
-    padding: 0;
-}
-.preview-question-area .question-explaination {
-    background-color: #fff;
-}
-.question-right-side .toggle-btn {
-    position: absolute;
-    left: -34px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 35px;
-    height: 60px;
-    background: white;
-    border: 1px solid #ddd;
-    border-right: none;
-    border-radius: 8px 0 0 8px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    z-index: 10;
-}
-.question-right-side .toggle-btn:hover {
-background: #f0f0f0;
-}
+.preview-question-area.centered .question-right-side {transform: translateX(100%);}
+.preview-question-area .question-right-side .review-msg-box .input-group {border: 0; border-radius: 0; padding: 0;}
+.preview-question-area .question-explaination {background-color: #fff;}
+.question-right-side .toggle-btn {position: absolute; left: -34px; top: 50%; transform: translateY(-50%); width: 35px; height: 60px; background: white; border: 1px solid #ddd; border-right: none; border-radius: 8px 0 0 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; z-index: 10;}
+.question-right-side .toggle-btn:hover {background: #f0f0f0;}
 
 .question-right-side .toggle-btn svg {
 transition: transform 0.3s ease;
