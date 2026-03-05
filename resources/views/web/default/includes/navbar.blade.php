@@ -204,18 +204,17 @@
                         @if(!empty($authUser))
                         @endif
                         @if(!empty($authUser))
-                            <div class="dropdown">
-                                <a href="#!" class="navbar-user d-flex align-items-center dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                   aria-expanded="false">
+                            <div class="user-account-area">
+                                 <span href="#" class="navbar-user d-flex align-items-center">
                                     {{ $authUser->get_full_name() }}
+                                 </span>
                                     <a href="/dashboard" class="font-16 text-dark-blue user-dashboard-btn">Manage Account</a>
                                 </a>
                             </div>
                             <div class="dropdown">
-                                <a href="#!" class="navbar-user d-flex align-items-center dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                   aria-expanded="false">
+                                <span href="#" class="navbar-user d-flex align-items-center">
                                     <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image" alt="rounded circle" loading="eager" title="rounded circle">
-                                </a>
+                                </span>
                             </div>
                         @else
                             <div class="d-flex align-items-center">
