@@ -295,6 +295,9 @@
 .user-account-area .user-dashboard-btn {
     color: var(--primary);
 }
+.user-account-area .navbar-user-name {
+    width: calc(100% - 50px);
+}
 .top-navbar .navbar-user .user-name {
   line-height: 1.31;
   color: var(--secondary);
