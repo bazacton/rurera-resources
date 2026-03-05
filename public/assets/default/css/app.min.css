@@ -9567,7 +9567,7 @@ body .flipbook-data {
 }
 .round {
   position: absolute;
-  border: 2px solid rgb(0 0 0 / 0.2);
+  border: 0;
   width: 40px;
   height: 40px;
   border-radius: 100%;
