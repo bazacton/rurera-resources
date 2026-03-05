@@ -2766,6 +2766,7 @@ Admin Questions Generator Page Style End
     height: 18px;
     width: 18px;
     margin-top: -9px;
+    filter: invert(45%) sepia(0%) saturate(759%) hue-rotate(136deg) brightness(101%) contrast(81%);
 }
 .user-edit-holder .form-field:has(img) .form-control {
     padding-left: 32px;
