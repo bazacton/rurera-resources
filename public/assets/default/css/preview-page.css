@@ -1,23 +1,9 @@
-.preview-question-area .quiz-status-bar {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.preview-question-area.centered {
-    width: 100%;
-}
+.preview-question-area .quiz-status-bar {width: 85%; margin-left: auto; margin-right: auto;}
+.preview-question-area.centered {width: 100%;}
 /* Preview Question Right Side Style Start */
-.preview-question-area {
-    padding-right: 400px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-.preview-question-area.centered {
-    padding-right: 0;
-}
-.preview-question-area .justify-content-center > .mt-50 {
-    margin-top: 0 !important;
-}
+.preview-question-area {padding-right: 400px; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.preview-question-area.centered {padding-right: 0;}
+.preview-question-area .justify-content-center > .mt-50 {margin-top: 0;}
 .preview-question-area .rurera-question-block.active {
     display: flex;
     flex-wrap: wrap;
