@@ -202,14 +202,7 @@
                 @if(isset( $authUser ))
                     @include('web.default.includes.notification-dropdown')
                 @endif
-                @if(isset( $authUser ) && $authUser->isUser())
-                    <div class="coin-counts">
-                        <strong>
-                            <img src="/assets/default/img/coin-img.png" alt="coin-img">
-                            {{$authUser->getRewardPoints()}}
-                        </strong>
-                    </div>
-                @endif
+
                 <div class="nav-icons-or-start-live navbar-order">
                     <div class="xs-w-100 d-flex align-items-center justify-content-between">
                         @if(!empty($authUser))
@@ -225,7 +218,7 @@
                                         <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image" alt="rounded circle" loading="eager" title="rounded circle">
                                         <span class="font-16 text-dark-blue user-name">{{ $authUser->get_full_name() }}</span>
                                         <span class="font-16 text-dark-blue user-email">{{ $authUser->email }}</span>
-                                        <a href="/panel" class="font-16 text-dark-blue user-manage-btn">Manage Account</a>
+                                        <a href="/dashboard" class="font-16 text-dark-blue user-manage-btn">Manage Account</a>
                                     </div>
                                     <div class="d-md-none border-bottom mb-20 pb-10 text-right">
                                         <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
@@ -239,7 +232,7 @@
                                                     continue;
                                                 }
                                                 @endphp
-                                                <a class="dropdown-item " href="/panel/switch_user/{{$profile_nav['id']}}">
+                                                <a class="dropdown-item " href="/switch_user/{{$profile_nav['id']}}">
                                                     <img src="{{ $profile_nav->getAvatar() }}" class="rounded-circle" alt="{{ $profile_nav['full_name'] }}" width="400" height="400" itemprop="image"
                                                          alt="rounded circle" loading="eager" title="rounded circle">
                                                     @php $full_name = (isset( $navData['is_parent'] ) && $navData['is_parent'] == true)? 'Parent' :  $profile_nav['full_name']; @endphp
