@@ -85,9 +85,6 @@
         .mock-exam .mock-exam-page-wrap { padding: 28px 0; }
 
         /* Full-width, full-height modal (scoped via .mock-exam-modal class) */
-        .mock-exam-modal {
-            position: relative;
-        }
         .mock-exam-modal:before {
             content: "";
         }
