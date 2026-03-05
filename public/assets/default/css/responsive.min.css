@@ -4195,6 +4195,11 @@
     .rurera-feature-slider {
         min-height: auto;
     }
+    .cookie-modal .modal-dialog {
+        left: 0;
+        bottom: 15px;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 640px) {
     .lms-faqs .nav-tabs {
