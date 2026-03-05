@@ -245,7 +245,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     opacity: 0;
     transition: all .5s;
 }
-.topic-accuracy:hover:before {
+.topic-accuracy:hover .accuracy-tooltip {
     opacity: 1;
     visibility: visible;
     transform: translateY(-10px) translateX(-50%);
