@@ -2726,42 +2726,13 @@ Admin Questions Generator Page Style End
 .avatar-media-box .edit-btn img {max-width: 100%; pointer-events: none;}
 .form-field {position: relative;}
 .user-edit-holder .form-field img {position: absolute; top: 50%; left: 10px; height: 18px; width: 18px; margin-top: -9px; filter: invert(45%) sepia(0%) saturate(759%) hue-rotate(136deg) brightness(101%) contrast(81%);}
-.user-edit-holder .form-field:has(img) .form-control {
-    padding-left: 32px;
-}
-.user-title h3 {
-    margin-bottom: 0;
-}
-.user-title {
-    margin: 0 0 15px;
-}
-.social-list .list-item {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.social-list {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin: 0 0 25px;
-}
-.social-logo img {
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
-    object-fit: contain;
-}
-.social-list .connect-btn {
-    border: 0;
-    padding: 0;
-    height: auto;
-    line-height: normal;
-    background-color: inherit;
-    font-weight: 500;
-    outline: none;
-}
+.user-edit-holder .form-field:has(img) .form-control {padding-left: 32px;}
+.user-title h3 {margin-bottom: 0;}
+.user-title {margin: 0 0 15px;}
+.social-list .list-item {display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between;}
+.social-list {display: flex; flex-direction: column; gap: 25px; margin: 0 0 25px;}
+.social-logo img {margin-right: 10px; width: 25px; height: 25px; object-fit: contain;}
+.social-list .connect-btn {border: 0; padding: 0; height: auto; line-height: normal; background-color: inherit; font-weight: 500; outline: none;}
 /* Admin Linked Accounts Style End */
 
 @media (min-width: 993px) {
