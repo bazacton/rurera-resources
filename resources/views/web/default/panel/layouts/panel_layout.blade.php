@@ -1292,16 +1292,29 @@ function makeStatisticsChart(canvasId, chartVar, label, labels, data) {
             e.preventDefault();
 
             const isExpanded = $(this).data('expanded') || false;
+            const $extraRows = $rows.slice(visibleCount);
 
             if (!isExpanded) {
-            $rows.slice(visibleCount).slideDown(200);
-            $(this).text('Show less');
+
+                // Smooth stagger show
+                $extraRows.each(function (i) {
+                    $(this).delay(i * 80).slideDown(200);
+                });
+
+                $(this).text('Show less');
+
             } else {
-            $rows.slice(visibleCount).slideUp(200);
-            $(this).text(`See all ${$rows.length} skills`);
+
+                // Smooth stagger hide
+                $($extraRows.get().reverse()).each(function (i) {
+                    $(this).delay(i * 80).slideUp(200);
+                });
+
+                $(this).text(`See all ${$rows.length} skills`);
             }
 
             $(this).data('expanded', !isExpanded);
+
         });
 
     });
