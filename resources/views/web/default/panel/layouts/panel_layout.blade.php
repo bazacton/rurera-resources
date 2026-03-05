@@ -1281,28 +1281,28 @@ function makeStatisticsChart(canvasId, chartVar, label, labels, data) {
 <script>
     $(document).ready(function () {
 
-    const $rows = $('.focus-table tbody tr');
-    const visibleCount = 4;
-    const $toggleBtn = $('.show-skills-btn');
+        const $rows = $('.focus-table tbody tr');
+        const visibleCount = 4;
+        const $toggleBtn = $('.show-skills-btn');
 
-    // Hide rows after first 4
-    $rows.slice(visibleCount).hide();
+        // Hide rows after first 4
+        $rows.slice(visibleCount).hide();
 
-    $toggleBtn.on('click', function (e) {
-        e.preventDefault();
+        $toggleBtn.on('click', function (e) {
+            e.preventDefault();
 
-        const isExpanded = $(this).data('expanded') || false;
+            const isExpanded = $(this).data('expanded') || false;
 
-        if (!isExpanded) {
-        $rows.slice(visibleCount).slideDown(200);
-        $(this).text('Show less');
-        } else {
-        $rows.slice(visibleCount).slideUp(200);
-        $(this).text(`See all ${$rows.length} skills`);
-        }
+            if (!isExpanded) {
+            $rows.slice(visibleCount).slideDown(200);
+            $(this).text('Show less');
+            } else {
+            $rows.slice(visibleCount).slideUp(200);
+            $(this).text(`See all ${$rows.length} skills`);
+            }
 
-        $(this).data('expanded', !isExpanded);
-    });
+            $(this).data('expanded', !isExpanded);
+        });
 
     });
 </script>
