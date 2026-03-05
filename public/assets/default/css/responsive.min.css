@@ -4196,9 +4196,9 @@
         min-height: auto;
     }
     .cookie-modal .modal-dialog {
-        left: 0;
-        bottom: 15px;
-        width: 100%;
+        left: 8px;
+        bottom: 8px;
+        width: 95%;
     }
 }
 @media screen and (max-width: 640px) {
