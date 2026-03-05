@@ -276,10 +276,24 @@
 }
 .top-navbar .navbar-user img,
 .navbar .navbar-user img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   -o-object-fit: contain;
   object-fit: contain;
+}
+.user-account-area {
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.user-account-area .navbar-user {
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.user-account-area .user-dashboard-btn {
+    color: var(--primary);
 }
 .top-navbar .navbar-user .user-name {
   line-height: 1.31;
