@@ -1,3 +1,11 @@
+.preview-question-area .quiz-status-bar {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.preview-question-area.centered {
+    width: 100%;
+}
 /* Preview Question Right Side Style Start */
 .preview-question-area {
     padding-right: 400px;
