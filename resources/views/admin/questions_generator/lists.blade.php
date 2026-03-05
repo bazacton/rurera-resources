@@ -87,6 +87,15 @@
         /* Full-width, full-height modal (scoped via .mock-exam-modal class) */
         .mock-exam-modal:before {
             content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .050);
+            pointer-events: none;
+            opacity: 0;
+        }
+        .mock-exam-modal.show:before {
+            opacity: 1;
         }
         .mock-exam-modal.modal-fullwidth .modal-dialog {
             max-width: 720px;
