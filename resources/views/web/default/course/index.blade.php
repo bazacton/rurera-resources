@@ -232,7 +232,7 @@
                                                         </div>
                                                         <div class="seg-progress">
                                                             <div class="seg-fill {{$completion_class}} width_{{$total_completion}}">
-                                                                <span class="Smart-score-tooltip">Smart Score: {{$total_completion}}</span>
+                                                                <span class="smart-score-tooltip">Smart Score: {{$total_completion}}</span>
                                                             </div>
                                                         </div>
                                                     </div>
