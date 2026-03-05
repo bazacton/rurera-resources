@@ -2801,6 +2801,7 @@ Admin Questions Generator Page Style End
     line-height: normal;
     background-color: inherit;
     font-weight: 500;
+    outline: none;
 }
 /* Admin Linked Accounts Style End */
 
