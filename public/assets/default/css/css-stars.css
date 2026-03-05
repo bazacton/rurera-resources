@@ -277,7 +277,6 @@ width: 90px;
 height: 5px;
 background: #e5e7eb;
 border-radius: 20px;
-overflow: hidden;
 }
 /* Background segments */
 .seg-progress::before {
