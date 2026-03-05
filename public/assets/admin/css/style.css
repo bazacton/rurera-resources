@@ -2719,6 +2719,20 @@ Admin Questions Generator Page Style End
     display: none;
 }
 /* Admin Linked Accounts Style Start */
+.form-field {
+    position: relative;
+}
+.user-edit-holder .form-field img {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    height: 18px;
+    width: 18px;
+    margin-top: -9px;
+}
+.user-edit-holder .form-field:has(img) .form-control {
+    padding-left: 32px;
+}
 .user-title h3 {
     margin-bottom: 0;
 }
