@@ -2750,6 +2750,7 @@ Admin Questions Generator Page Style End
     opacity: 0;
     position: absolute;
     cursor: pointer;
+    text-indent: -99999px;
 }
 .avatar-media-box .edit-btn img {
     max-width: 100%;
