@@ -341,6 +341,7 @@
             <button type="submit" class="submit-btn mt-0">Generate List</button>
             <!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
         </div>
+    </div>
 </form>
 
 
