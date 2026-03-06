@@ -282,8 +282,10 @@
   object-fit: contain;
 }
 .user-account-area {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 15px;
 }
 .account-info {
   display: flex;
