@@ -99,6 +99,9 @@
     .mockExam-item-meta .success-lable {
         color: #47c363;
     }
+    .mockExam-item-meta .badge.badge-success.rurera-hide {
+        display: none;
+    }
     .mock-exam-btn-holder {
         text-align: right;
     }
