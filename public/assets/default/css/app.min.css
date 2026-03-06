@@ -283,8 +283,11 @@
 }
 .user-account-area {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+.account-info {
+  display: flex;
+  flex-direction: column;
 }
 .user-account-area .navbar-user {
     justify-content: center;
