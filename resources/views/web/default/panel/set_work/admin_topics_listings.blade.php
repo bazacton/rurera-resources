@@ -96,6 +96,9 @@
         font-size: .875rem;
         font-weight: 600;
     }
+    .mockExam-item-meta .success-lable {
+        color: #47c363;
+    }
     .mock-exam-btn-holder {
         text-align: right;
     }
