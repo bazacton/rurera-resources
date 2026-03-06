@@ -458,13 +458,14 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <div class="modal-box container questions_bul_list_block">
-                        @include('admin.questions_generator.mock_bulk_list_form',[
-                                'categories' => $categories,
-                                ])
-                    </div>
+                    
                 </div>
             </div>
+        </div>
+        <div class="modal-box container questions_bul_list_block">
+            @include('admin.questions_generator.mock_bulk_list_form',[
+                    'categories' => $categories,
+                    ])
         </div>
         @endsection
 
