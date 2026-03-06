@@ -1293,7 +1293,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
         left: -30px;
         right: auto;
         transform: none;
-        width: 320px;
+        width: 300px;
     }
     .streak-dropdown:hover .streak-dropdown-content {
         transform: none;
