@@ -9871,6 +9871,7 @@ body .flipbook-data {
 .gallery-sub-header .masonry-grid .grid-item {
   margin-bottom: 0;
   padding: 0 5px;
+  max-width: 100%;
 }
 .gallery-sub-header .masonry-grid figure {
   margin-bottom: 10px;
