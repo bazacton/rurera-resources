@@ -288,7 +288,7 @@
 
                                                     <div class="d-flex align-items-center justify-content-between">
                                                         <div>
-                                                            <div class="mock-exam-small-help mb-1">Items in this section</div>
+                                                            <div class="mock-exam-small-help mb-1 rurera-hide">Items in this section</div>
                                                             <div class="mock-exam-small-help">Use <b>+</b> on the main page to add items.</div>
                                                         </div>
                                                         <span class="mock-exam-pill"><span class="mockExam-tpl-section-count"></span> items</span>
