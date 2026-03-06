@@ -466,6 +466,251 @@
                 </div>
             </div>
         </div>
+    </div>
+
+        <!-- MODAL 1: Sections Builder (FULL WIDTH) -->
+        <div class="modal fade modal-fullwidth mock-exam-modal" id="mockExam-builderModal" tabindex="-1" role="dialog" aria-labelledby="mockExam-builderModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <div class="d-flex align-items-center">
+                            <div class="mr-3">
+              <span class="mock-exam-icon-btn bg-light text-primary" style="border:1px solid #e9ecef;">
+                <span style="font-size:20px; line-height:1;">+</span>
+              </span>
+                            </div>
+                            <div>
+                                <h5 class="modal-title mb-0" id="mockExam-builderModalTitle">Create new list</h5>
+                                <div class="mock-exam-small-help">Create sections, sort them, edit/delete. Assign items from the main page.</div>
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button"  class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="mockExam-saveAndCloseBtn">Done</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 2: Assign Items (FULL WIDTH) -->
+        <div class="modal fade modal-fullwidth mock-exam-modal" id="mockExam-assignModal" tabindex="-1" role="dialog" aria-labelledby="mockExam-assignModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="modal-title mb-0" id="mockExam-assignModalTitle">Assign item to a section</h5>
+                            <div class="mock-exam-small-help">Choose a section to add the selected item. Items can only belong to one section at a time.</div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="align-items-start justify-content-between flex-wrap rurera-hide">
+                            <div class="mb-2">
+                                <div class="mock-exam-muted">Selected item</div>
+                                <h5 id="mockExam-selectedItemTitle" class="mb-1">None</h5>
+                                <div id="mockExam-selectedItemAssignedNote" class="mock-exam-small-help" style="display:none;"></div>
+                            </div>
+                            <div class="mb-2">
+                                <span class="mock-exam-pill">Total sections: <span id="mockExam-assignSectionsCount">0</span></span>
+                            </div>
+                        </div>
+
+                        <hr class="rurera-hide">
+
+                        <div id="mockExam-assignSectionsList"></div>
+
+                        <div id="mockExam-assignNoSections" class="mock-exam-empty-note mt-3" style="display:none;">
+                            No sections created yet. Open <b>List Builder</b> and create sections first.
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="mockExam-assignDoneBtn">Done</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 3: Add/Edit Section (SMALL NESTED MODAL) -->
+        <div class="modal fade modal-sm2 mock-exam-modal" id="mockExam-sectionFormModal" tabindex="-1" role="dialog" aria-labelledby="mockExam-sectionFormTitle" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mockExam-sectionFormTitle">Add Section</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Single mode -->
+                        <div id="mockExam-singleModeFields">
+                            <div class="form-group">
+                                <label>Section name</label>
+                                <input type="text" class="form-control" id="mockExam-secName" placeholder="Enter section name">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>No. of questions</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-secQuestions" placeholder="e.g. 10">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Time (mins)</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-secTime" placeholder="e.g. 15">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Instructions</label>
+                                <textarea id="mockExam-secInstructions" class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Bulk mode -->
+                        <div id="mockExam-bulkModeFields" style="display:none;">
+                            <div class="alert alert-info small mb-3">
+                                This will create multiple sections at once. Names will be generated like: <b>Prefix 1</b>, <b>Prefix 2</b>, ...
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label>How many?</label>
+                                    <input type="number" min="1" class="form-control" id="mockExam-bulkCount" value="3">
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <label>Name prefix</label>
+                                    <input type="text" class="form-control" id="mockExam-bulkPrefix" placeholder="e.g. Section" value="Section">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>No. of questions</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-bulkQuestions" placeholder="e.g. 10">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Time (mins)</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-bulkTime" placeholder="e.g. 15">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Instructions</label>
+                                <textarea id="mockExam-bulkInstructions" class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <div id="mockExam-formError" class="text-danger small" style="display:none;"></div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-secondary" data-dismiss="modal" type="button">Cancel</button>
+                        <button class="btn btn-primary" id="mockExam-formSaveBtn" type="button">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL 3: Add/Edit Section (SMALL NESTED MODAL) -->
+        <div class="modal fade modal-sm2 mock-exam-modal" id="mockExam-sectionFormModal" tabindex="-1" role="dialog" aria-labelledby="mockExam-sectionFormTitle" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mockExam-sectionFormTitle">Add Section</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Single mode -->
+                        <div id="mockExam-singleModeFields">
+                            <div class="form-group">
+                                <label>Section name</label>
+                                <input type="text" class="form-control" id="mockExam-secName" placeholder="Enter section name">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>No. of questions</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-secQuestions" placeholder="e.g. 10">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Time (mins)</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-secTime" placeholder="e.g. 15">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Instructions</label>
+                                <textarea id="mockExam-secInstructions" class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Bulk mode -->
+                        <div id="mockExam-bulkModeFields" style="display:none;">
+                            <div class="alert alert-info small mb-3">
+                                This will create multiple sections at once. Names will be generated like: <b>Prefix 1</b>, <b>Prefix 2</b>, ...
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label>How many?</label>
+                                    <input type="number" min="1" class="form-control" id="mockExam-bulkCount" value="3">
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <label>Name prefix</label>
+                                    <input type="text" class="form-control" id="mockExam-bulkPrefix" placeholder="e.g. Section" value="Section">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>No. of questions</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-bulkQuestions" placeholder="e.g. 10">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Time (mins)</label>
+                                    <input type="number" min="0" class="form-control" id="mockExam-bulkTime" placeholder="e.g. 15">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Instructions</label>
+                                <textarea id="mockExam-bulkInstructions" class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <div id="mockExam-formError" class="text-danger small" style="display:none;"></div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-secondary" data-dismiss="modal" type="button">Cancel</button>
+                        <button class="btn btn-primary" id="mockExam-formSaveBtn" type="button">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         @endsection
 
         @push('scripts_bottom')
@@ -1296,7 +1541,7 @@
 
                             if (assigned) {
                                 var section_id = assigned.sectionId;
-                                var assigned_response = '<input type="text" name="sections['+section_id+'][topic_parts][]" value="'+itemId+'">'
+                                var assigned_response = '<input type="hidden" name="sections['+section_id+'][topic_parts][]" value="'+itemId+'">'
                                 $assignBtn.prop("disabled", true).addClass("mock-exam-btn-disabled").attr("title", "Already assigned (remove first)");
                                 $unassignBtn.removeClass("d-none");
                                 $meta.html(`${base} • <span class="badge badge-success">Assigned</span> <span class="ml-1">${label}</span>`);
