@@ -1839,7 +1839,7 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     padding-right: 50px;
 }
 .mockExam-tpl-assigned-holder .mockExam-tpl-assigned-breadcrumb {
-    padding-top: 5px;
+    padding-top: 8px;
     font-weight: 400;
 }
 .mockExam-tpl-assigned-remove {
