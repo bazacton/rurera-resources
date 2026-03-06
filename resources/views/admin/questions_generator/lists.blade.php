@@ -1556,7 +1556,7 @@
                                 var assigned_response = '<input type="hidden" name="sections['+section_id+'][topic_parts][]" value="'+itemId+'">'
                                 $assignBtn.prop("disabled", true).addClass("mock-exam-btn-disabled").attr("title", "Already assigned (remove first)");
                                 $unassignBtn.removeClass("d-none");
-                                $meta.html(`${base} <span class="badge badge-success rurera-hide">Assigned</span> <span class="ml-0">${label}</span>`);
+                                $meta.html(`${base} <span class="badge badge-success rurera-hide">Assigned</span> <span class="ml-0 success-lable">${label}</span>`);
                                 $meta.append(assigned_response);
                             } else {
                                 $assignBtn.prop("disabled", false).removeClass("mock-exam-btn-disabled").attr("title", "Shortlist (assign to section)");
