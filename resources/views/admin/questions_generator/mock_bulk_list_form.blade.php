@@ -237,9 +237,11 @@
                                     <!-- Assigned item template -->
                                     <div class="mockExam-tpl-assigned-item mock-exam-assigned-item">
                                         <div class="mockExam-tpl-assigned-holder">
-                                            <div class="mockExam-tpl-assigned-title">
-                                                <span class="mockExam-tpl-assigned-total_questions"></span>
+                                            <div class="title-holder">
+                                                <div class="mockExam-tpl-assigned-title"></div>
+                                                <div class="mockExam-tpl-assigned-total_questions"></div>
                                             </div>
+                                            
                                             <div class="mockExam-tpl-assigned-breadcrumb"></div>
                                         </div>
                                         
