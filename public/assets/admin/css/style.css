@@ -1827,7 +1827,7 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     display: flex;
     justify-content: space-between;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: .2rem;
     padding: 15px 20px 15px 10px;
     line-height: normal;
     position: relative;
