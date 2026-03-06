@@ -9911,8 +9911,11 @@ body .flipbook-data {
 .gallery-sub-header .simple .masonry-grid .row {
   margin: 0 -5px;
   column-count: 5;
-  display: block;
-  column-gap: 0;
+}
+.masonry-grid .row {
+    column-count: 4;
+    display: block;
+    column-gap: 0;
 }
 .gallery-sub-header .simple .masonry-grid [class*="col-"] {
   padding: 0 5px;
