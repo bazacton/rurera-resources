@@ -78,7 +78,9 @@
     .select-topics .topics-table tbody .listing-data-row.topic-row:hover {
         background-color: #f1f1f1;
     }
-    
+    .mockExam-item-meta:empty {
+        display: none;
+    }
     .select-topics .topics-table th:first-child {
         padding-left: 0;
         width: 33.333%;
