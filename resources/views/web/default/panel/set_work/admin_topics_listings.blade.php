@@ -70,40 +70,20 @@
         background: none;
         pointer-events: none;
     }
-    .select-topics .topics-table {
-        border-spacing: 0 20px;
-        border-collapse: separate;
-    }
     .listing-data-row.topic-row,
     .select-topics .topics-table tbody .listing-data-row.topic-row:hover {
         background-color: #f1f1f1;
     }
-    .mockExam-item-meta:empty {
-        display: none;
-    }
-    .select-topics .topics-table th {
-        border: 0;
-        padding: 0;
+    .select-topics .topics-table th,
+    .select-topics .topics-table td {
+        padding: 10px 10px;
     }
     .select-topics .topics-table th:first-child {
         padding-left: 0;
         width: 33.333%;
-        border-radius: 0;
     }
     .select-topics .topics-table th:last-child {
         text-align: right !important;
-        border-radius: 0;
-    }
-    .select-topics .topics-table td {
-        border-top: 1px solid #eee;
-    }
-    .select-topics .topics-table td:first-child {
-        border-left: 1px solid #eee;
-        border-radius: .2rem 0 0 .2rem;
-    }
-    .select-topics .topics-table td:last-child {
-        border-right: 1px solid #eee;
-        border-radius: 0 .2rem .2rem 0;
     }
     .select-topics .topics-table .listing-data-row label {
         margin-bottom: 0;
@@ -308,7 +288,7 @@
                                                     id="input-max-value"
                                                     pattern="[0-9]*"
                                                     inputmode="numeric"
-                                                    value="{{isset($topic_part_data['max'])? $topic_part_data['max'] : 0}}"
+                                                    value="{{isset($topic_part_data['max'])? $topic_part_data['max'] : 1}}"
                                                     placeholder="0"
                                                 />
                                                 <span class="unit-label">TO</span>
@@ -340,7 +320,7 @@
                                                     type="range"
                                                     min="0"
                                                     max="100"
-                                                    value="{{isset($topic_part_data['max'])? $topic_part_data['max'] : 0}}"
+                                                    value="{{isset($topic_part_data['max'])? $topic_part_data['max'] : 1}}"
                                                     step="1"
                                                     aria-valuemin="0"
                                                     aria-valuemax="100"

@@ -87,7 +87,7 @@
         /* Full-width, full-height modal (scoped via .mock-exam-modal class) */
         .mock-exam-modal:before {
             content: "";
-            position: fixed;
+            position: absolute;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, .4);
@@ -1609,10 +1609,12 @@
                                 sec.items.forEach(itemId => {
                                     const item = state.items.find(i => i.id === itemId);
                                     const $it = $tpl.assignedItem.clone(false, false);
+                                    var min_questions = $('.mock-exam-item-row[data-mockexam-item-id="'+itemId+'"]').find('#input-min-value').val();
+                                    var max_questions = $('.mock-exam-item-row[data-mockexam-item-id="'+itemId+'"]').find('#input-max-value').val();
                                     $it.attr("data-mockexam-item-id", itemId);
                                     $it.find(".mockExam-tpl-assigned-title").text(item ? item.title : itemId);
                                     $it.find(".mockExam-tpl-assigned-breadcrumb").text(item ? item.breadcrumb : itemId);
-                                    $it.find(".mockExam-tpl-assigned-total_questions").text(item ? item.total_questions : itemId);
+                                    $it.find(".mockExam-tpl-assigned-total_questions").text(min_questions+' - '+max_questions);
                                     $it.find(".mockExam-tpl-assigned-remove")
                                         .off("click.mockExam")
                                         .on("click.mockExam", () => removeItemFromSection(sec.id, itemId));
