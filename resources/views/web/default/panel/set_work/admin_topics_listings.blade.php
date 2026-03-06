@@ -99,6 +99,9 @@
     .mock-exam-btn-holder {
         text-align: right;
     }
+    .mock-exam-btn-holder button {
+        font-size: 1.4rem;
+    }
     /* Range Slider Style Start */
     .thumbs {
         display: flex;
