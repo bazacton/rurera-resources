@@ -87,7 +87,7 @@
         /* Full-width, full-height modal (scoped via .mock-exam-modal class) */
         .mock-exam-modal:before {
             content: "";
-            position: fixed;
+            position: absolute;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, .4);
@@ -1037,7 +1037,17 @@
 
                     $(document).on('click', '.create-questions-bulk-list-btn', function () {
                         $('input[name="bulk_id"]').val(0);
-                        $(".questions_bulk_list").modal('show');
+                        $(".questions_bul_list_block").html('');
+                        var bulk_list_id = 0;
+                        $.ajax({
+                            type: "GET",
+                            url: '/admin/questions-generator/edit_bulk_list_form',
+                            data: {'bulk_list_id': bulk_list_id},
+                            success: function (return_data) {
+                                $(".questions_bul_list_block").html(return_data);
+                                $('.questions_bulk_list').modal('show');
+                            }
+                        });
                     });
 
                     $(document).on('change', '.mock-category-field', function () {
