@@ -1842,6 +1842,9 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     padding-top: 8px;
     font-weight: 400;
 }
+.mockExam-tpl-assigned-breadcrumb:empty {
+    display: none;
+}
 .mockExam-tpl-assigned-remove {
     color: #6c757d;
     font-weight: 600;
