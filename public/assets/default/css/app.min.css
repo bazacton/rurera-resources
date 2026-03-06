@@ -9911,9 +9911,16 @@ body .flipbook-data {
 .gallery-sub-header .simple .masonry-grid .row {
   margin: 0 -5px;
   column-count: 5;
+  display: block;
+  column-gap: 0;
 }
 .gallery-sub-header .simple .masonry-grid [class*="col-"] {
   padding: 0 5px;
+  max-width: 100%;
+  display: inline-block;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
 }
 .benefits-list li {
   font-weight: 500;
