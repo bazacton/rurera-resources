@@ -70,6 +70,10 @@
         background: none;
         pointer-events: none;
     }
+    .select-topics .topics-table {
+        border-spacing: 0 20px;
+        border-collapse: separate;
+    }
     .listing-data-row.topic-row,
     .select-topics .topics-table tbody .listing-data-row.topic-row:hover {
         background-color: #f1f1f1;
@@ -83,9 +87,11 @@
     .select-topics .topics-table th:first-child {
         padding-left: 0;
         width: 33.333%;
+        border-radius: 0;
     }
     .select-topics .topics-table th:last-child {
         text-align: right !important;
+        border-radius: 0;
     }
     .select-topics .topics-table .listing-data-row label {
         margin-bottom: 0;
