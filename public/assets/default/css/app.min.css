@@ -282,7 +282,6 @@
   object-fit: contain;
 }
 .user-account-area {
-    max-width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -294,9 +293,6 @@
 }
 .user-account-area .user-dashboard-btn {
     color: var(--primary);
-}
-.user-account-area .navbar-user-name {
-    width: calc(100% - 50px);
 }
 .top-navbar .navbar-user .user-name {
   line-height: 1.31;
