@@ -74,9 +74,11 @@
     .select-topics .topics-table tbody .listing-data-row.topic-row:hover {
         background-color: #f1f1f1;
     }
-    .select-topics .topics-table th,
-    .select-topics .topics-table td {
-        padding: 10px 10px;
+    .select-topics .topics-table td:first-child {
+        border-left: 1px solid #eee;
+    }
+    .select-topics .topics-table td:last-child {
+        border-right: 1px solid #eee;
     }
     .select-topics .topics-table th:first-child {
         padding-left: 0;
