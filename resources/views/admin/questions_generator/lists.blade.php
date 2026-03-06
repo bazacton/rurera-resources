@@ -445,7 +445,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <div class="modal-box container questions_bul_list_block">
+                    <div class="modal-box container questions_bul_list_block1">
                     </div>
                 </div>
             </div>
@@ -458,7 +458,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <div class="modal-box container">
+                    <div class="modal-box container questions_bul_list_block">
                         @include('admin.questions_generator.mock_bulk_list_form',[
                                 'categories' => $categories,
                                 ])
@@ -1728,7 +1728,7 @@
             <script>
 
             $(document).on('click', '.edit-bulk-list', function () {
-
+                $(".questions_bul_list_block").html('');
                 var bulk_list_id = $(this).attr('data-bulk_id');
                 $.ajax({
                     type: "GET",
@@ -1736,7 +1736,7 @@
                     data: {'bulk_list_id': bulk_list_id},
                     success: function (return_data) {
                         $(".questions_bul_list_block").html(return_data);
-                        $('.questions_bulk_list_form').modal('show');
+                        $('.questions_bulk_list').modal('show');
                     }
                 });
             });
