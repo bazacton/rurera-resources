@@ -341,7 +341,7 @@
             <button type="submit" class="submit-btn mt-0">Generate List</button>
             <!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
         </div>
-        <form>
+</form>
 
 
 
@@ -354,9 +354,9 @@
                         <div class="modal-header">
                             <div class="d-flex align-items-center">
                                 <div class="mr-3">
-              <span class="mock-exam-icon-btn bg-light text-primary" style="border:1px solid #e9ecef;">
-                <span style="font-size:20px; line-height:1;">+</span>
-              </span>
+                                    <span class="mock-exam-icon-btn bg-light text-primary" style="border:1px solid #e9ecef;">
+                                        <span style="font-size:20px; line-height:1;">+</span>
+                                    </span>
                                 </div>
                                 <div>
                                     <h5 class="modal-title mb-0" id="mockExam-builderModalTitle">Create new list</h5>
