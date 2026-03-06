@@ -290,6 +290,7 @@
 .account-info {
   display: flex;
   flex-direction: column;
+  gap: 2px;
 }
 .user-account-area .navbar-user {
     justify-content: center;
