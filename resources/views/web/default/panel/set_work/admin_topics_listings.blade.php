@@ -86,11 +86,11 @@
         text-align: right !important;
     }
     .select-topics .topics-table .listing-data-row label {
-        margin-bottom: 5px;
+        margin-right: 5px;
         font-weight: bold;
         color: #333;
         font-size: .875rem;
-        width: 100%;
+        margin-bottom: 0;
     }
     .select-topics .topics-table span {
         font-size: .875rem;
