@@ -1856,6 +1856,14 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     flex-direction: column;
     gap: 10px;
 }
+.mock-exam-section-card {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.mock-exam-section-card .card-header {
+    padding: 15px;
+    background-color: inherit;
+}
 .mock-exam-small-help.mockExam-tpl-assign-meta {
     background-color: #f9fafc;
     padding: 10px 15px;
