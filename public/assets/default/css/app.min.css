@@ -16907,6 +16907,7 @@ section.feature-grid {
     border-radius: 50%;
     position: fixed;
     cursor: pointer;
+    z-index: 5;
 }
 .cky-btn-revisit {
     display: flex;
