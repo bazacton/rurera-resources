@@ -877,7 +877,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .panel-right-sidebar .product-card .font-16,
     .lms-client-description p.font-16 {font-size: 16px !important;}
     .container-fluid.read-quiz-content {padding-left: 15px; padding-right: 15px;}
-    .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {font-size: 16px !important;}
+    .panel-sidebar .sidebar-menu {padding-left: 15px;}
     .listing-card .btn-holder,
     .book-percentage {position: initial;transform: none;margin-top: 20px;}
     body .lms-quiz-section .question-area,
