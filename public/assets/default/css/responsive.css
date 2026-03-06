@@ -152,11 +152,11 @@ Lms Responsive Style Start
     .navbar-brand {margin-right: 0;}
     .navbar-brand img {height: auto !important;}
     .menu-category>ul>li {flex-direction: column;}
-    .menu-category>ul>li .cat-dropdown-menu {width: 100%; position: relative; box-shadow: none; top: 10px; display: none;}
-    .menu-category>ul>li .cat-dropdown-menu>li .sub-menu {position: relative; left: 0 !important; top: 4px; width: 100%; box-shadow: none; display: none;}
-    .menu-category>ul>li .cat-dropdown-menu:after {display: none;}
-    .menu-category>ul>li.xs-categories-toggle.show-items .cat-dropdown-menu,
-    .menu-category>ul>li.xs-categories-toggle.show-items .cat-dropdown-menu .show-sub-menu .sub-menu {display: block; opacity: 1 !important; visibility: visible !important; top: 0 !important;}
+    .menu-category>ul>li .cat-user-menu {width: 100%; position: relative; box-shadow: none; top: 10px; display: none;}
+    .menu-category>ul>li .cat-user-menu>li .sub-menu {position: relative; left: 0 !important; top: 4px; width: 100%; box-shadow: none; display: none;}
+    .menu-category>ul>li .cat-user-menu:after {display: none;}
+    .menu-category>ul>li.xs-categories-toggle.show-items .cat-user-menu,
+    .menu-category>ul>li.xs-categories-toggle.show-items .cat-user-menu .show-sub-menu .sub-menu {display: block; opacity: 1 !important; visibility: visible !important; top: 0 !important;}
     .login-container {margin: 60px 0 70px;}
     .reward-program-section .reward-program-section-hero-card {height: auto; padding-top: 30px;}
     .reward-program-section .reward-program-section-hero-card .reward-program-section-hero {position: relative; top: 0; left: 0; height: auto;}
@@ -593,8 +593,8 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
 	.user-profile-icons .dropdown > a > img, .user-profile-icons img,
     .panel-right-sidebar .coin-counts img{width: 28px; height: 28px; margin-right: 0; margin-top: 0;}
     body .sidebar-logo img {max-width: 30px;}
-.panel-right-sidebar .dropdown-menu.user-profile-dropdown {transition: none; opacity: 1; visibility: visible; display: none;}
-    .panel-right-sidebar .dropdown-menu.user-profile-dropdown.show {display: block;}
+.panel-right-sidebar .user-menu.user-profile-dropdown {transition: none; opacity: 1; visibility: visible; display: none;}
+    .panel-right-sidebar .user-menu.user-profile-dropdown.show {display: block;}
     .panel-right-sidebar [class*="col-"],
     .panel-content [class*="col-"]{position: initial;}
 .user-profile-icons ul .menu-button-mobile,
@@ -714,7 +714,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .lms-text-section .lms-img-holder figure img {width: 100% !important; object-fit: contain;}
     .pages-sub-header {max-height: inherit;}
     .home-banner .choose-sats [class*="col-"]:last-child .sats-box {margin-bottom: 0;}
-    .user-assign-topics .dropdown-menu {right: 0; left: auto;}
+    .user-assign-topics .user-menu {right: 0; left: auto;}
     .chart-filters,
     .chart-filters ul {flex-wrap: wrap; border: 0;}
     .spells-quiz-info ul {justify-content: flex-start; gap: 0;}
@@ -1021,7 +1021,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .profile-view-data {margin: 0;}
     .profile-view-data > li {width: 100%; margin-right: 0; padding: 0;}
     .spell-levels .lms-tooltip {max-width: 200px; min-width: 200px;}
-    .spell-links .rurera-tooltip.dropup .dropdown-menu {left: auto !important; transform: none !important; right: 0;}
+    .spell-links .rurera-tooltip.dropup .user-menu {left: auto !important; transform: none !important; right: 0;}
     .spell-links .lms-tooltip:before {right: 25px; transform: translateX(0) rotate(45deg); left: auto;}
     .spell-links .lms-tooltip:after {right: 25px; transform: translateX(0) rotate(45deg); left: auto;}
     .spell-levels ul > li:nth-child(1) .lms-tooltip,
@@ -1142,9 +1142,9 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .testimonials-container .right-gradient-box {width: 30px; height: 30px;}
     .testimonials-container .left-gradient-box {width: 40px; height: 40px;}
     .navbar-notification-action {height: 72px;}
-    .top-navbar .dropdown .dropdown-menu {height: 462px; overflow: hidden !important; overflow-y: auto !important;}
-    .top-navbar .dropdown .dropdown-menu.show {top: 0 !important; transform: none !important; margin-top: 0;}
-    .top-navbar .dropdown .dropdown-menu:after {display: none;}
+    .top-navbar .dropdown .user-menu {height: 462px; overflow: hidden !important; overflow-y: auto !important;}
+    .top-navbar .dropdown .user-menu.show {top: 0 !important; transform: none !important; margin-top: 0;}
+    .top-navbar .dropdown .user-menu:after {display: none;}
     .navbar-shopping-cart .navbar-cart-actions {height: 240px;}
     .navbar-shopping-cart .navbar-cart-total {padding-top: 20px;}
     .no-result .no-result-logo {width: 175px;height: 175px;}
@@ -1331,7 +1331,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .chapter-tags .debug-details {
         right: 0;
     }
-    .user-profile-icons .dropdown-menu {
+    .user-profile-icons .user-menu {
         min-width: 220px;
     }
     .student-profile-holder .profile-inner, 
