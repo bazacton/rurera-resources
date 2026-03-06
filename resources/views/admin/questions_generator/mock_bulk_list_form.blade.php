@@ -51,6 +51,8 @@
                             <option value="iseb" {{$selected}}>Iseb</option>
                             @php $selected = (isset($quizObj->id) && $quizObj->quiz_type == 'cat4')? 'selected' : ''; @endphp
                             <option value="cat4" {{$selected}}>Cat 4</option>
+                            @php $selected = (isset($quizObj->id) && $quizObj->quiz_type == 'progress_test')? 'selected' : ''; @endphp
+                            <option value="progress_test" {{$selected}}>Progress Test</option>
                         </select>
                     </div>
                 </div>
