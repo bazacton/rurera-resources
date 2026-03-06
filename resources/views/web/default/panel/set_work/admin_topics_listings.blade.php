@@ -211,7 +211,9 @@
                     @php $listingDataArray = isset($listingData[$parentObj->id])? $listingData[$parentObj->id] : [];
                     @endphp
                     <tr class="listing-data-row topic-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}">
-                        <td data-th="Topic" colspan="3"><b>{{isset($parentObj->title)? $parentObj->title : ''}}</b></td>
+                        <td data-th="Topic" colspan="3"><b>{{isset($parentObj->title)? $parentObj->title : ''}}</b>
+
+                        </td>
                     </tr>
                     @php $already_sections = array();
 
@@ -224,6 +226,7 @@
                             @endphp
                             <tr class="listing-data-row mock-exam-item-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}" data-mockexam-item-id="{{isset($listingObj->id)? $listingObj->id : 0}}" data-mockExam-item-title="{{isset($listingObj->title)? $listingObj->title : '-'}}">
                                 <td data-th="Topic"> <label  for="check_{{isset($listingObj->id)? $listingObj->id : 0}}">{{isset($listingObj->title)? $listingObj->title : '-'}}</label>
+                                    <span>Questions: {{isset($listingObj->total_questions)? $listingObj->total_questions : 0}}</span>
                                     @if(!empty($topic_part_data))
                                         @php $section_id = isset($topic_part_data['section_id'])? $topic_part_data['section_id'] : 0;
                                         $section_name = isset($topic_part_data['section_name'])? $topic_part_data['section_name'] : '';
