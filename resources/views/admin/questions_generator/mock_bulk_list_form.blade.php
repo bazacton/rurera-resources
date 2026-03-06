@@ -236,7 +236,9 @@
 
                                     <!-- Assigned item template -->
                                     <div class="mockExam-tpl-assigned-item mock-exam-assigned-item">
+                                        <div class="mockExam-tpl-assigned-breadcrumb"></div>
                                         <div class="mockExam-tpl-assigned-title"></div>
+                                        <div class="mockExam-tpl-assigned-total_questions"></div>
                                         <div class="mock-exam-rm mockExam-tpl-assigned-remove" title="Remove">×</div>
                                     </div>
 

@@ -1504,8 +1504,10 @@
                             const $row = $(this);
                             const id = String($row.attr("data-mockexam-item-id") || "").trim();
                             const title = String($row.attr("data-mockExam-item-title") || "").trim();
+                            const breadcrumb = String($row.attr("data-mockExam-item-breadcrumb") || "").trim();
+                            const total_questions = String($row.attr("data-mockExam-item-total_questions") || "").trim();
                             if (!id) return;
-                            items.push({ id, title: title || id });
+                            items.push({ id, breadcrumb: breadcrumb || id, total_questions: total_questions || id, title: title || id });
                         });
                         state.items = items;
                     }
@@ -1609,6 +1611,8 @@
                                     const $it = $tpl.assignedItem.clone(false, false);
                                     $it.attr("data-mockexam-item-id", itemId);
                                     $it.find(".mockExam-tpl-assigned-title").text(item ? item.title : itemId);
+                                    $it.find(".mockExam-tpl-assigned-breadcrumb").text(item ? item.breadcrumb : itemId);
+                                    $it.find(".mockExam-tpl-assigned-total_questions").text(item ? item.total_questions : itemId);
                                     $it.find(".mockExam-tpl-assigned-remove")
                                         .off("click.mockExam")
                                         .on("click.mockExam", () => removeItemFromSection(sec.id, itemId));

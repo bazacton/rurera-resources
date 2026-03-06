@@ -244,7 +244,7 @@
                                 $smart_score = isset($listingObj->performance)? $listingObj->performance : 0;
                                 $topic_part_data = isset($selected_parts[$listingObj->id])? $selected_parts[$listingObj->id] : array();
                             @endphp
-                            <tr class="listing-data-row mock-exam-item-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}" data-mockexam-item-id="{{isset($listingObj->id)? $listingObj->id : 0}}" data-mockExam-item-title="{{isset($listingObj->title)? $listingObj->title : '-'}}">
+                            <tr class="listing-data-row mock-exam-item-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}" data-mockexam-item-id="{{isset($listingObj->id)? $listingObj->id : 0}}" data-mockExam-item-title="{{isset($listingObj->title)? $listingObj->title : '-'}}" data-mockExam-item-breadcrumb="{{isset($listingObj->breadcrumb)? $listingObj->breadcrumb : '-'}}" data-mockExam-item-total_questions="{{isset($listingObj->total_questions)? $listingObj->total_questions : '0'}}">
                                 <td data-th="Topic">
                                     <span class="breadcrumbs">{{isset($listingObj->bread_crumbs)? $listingObj->bread_crumbs : ''}}</span><br>
                                     <label  for="check_{{isset($listingObj->id)? $listingObj->id : 0}}">{{isset($listingObj->title)? $listingObj->title : '-'}}</label>
