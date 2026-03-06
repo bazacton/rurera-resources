@@ -1826,9 +1826,9 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .mock-exam-assigned-item {
     display: flex;
     justify-content: space-between;
-    border: 1px dashed #ccc;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 3px 20px 3px 8px;
+    padding: 15px 20px 15px 10px;
     line-height: normal;
     position: relative;
 }
