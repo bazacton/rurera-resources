@@ -83,7 +83,7 @@
     }
     .select-topics .topics-table th {
         border: 0;
-        padding-bottom: 0;
+        padding: 0;
     }
     .select-topics .topics-table th:first-child {
         padding-left: 0;
