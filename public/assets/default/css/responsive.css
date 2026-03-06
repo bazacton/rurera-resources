@@ -1295,6 +1295,9 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
         transform: none;
         width: 320px;
     }
+    .streak-dropdown:hover .streak-dropdown-content {
+        transform: none;
+    }
     .streak-dropdown-content:before {
         left: 0;
         margin-left: 35px;
