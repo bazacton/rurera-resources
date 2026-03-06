@@ -213,13 +213,52 @@
                     <tr class="listing-data-row topic-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}">
                         <td data-th="Topic" colspan="3"><b>{{isset($parentObj->title)? $parentObj->title : ''}}</b></td>
                     </tr>
+                    @php $already_sections = array();
+
+                    @endphp
                     @if(!empty($listingDataArray))
                         @foreach($listingDataArray as $listingObj)
-                            @php $smart_score = isset($listingObj->performance)? $listingObj->performance : 0;
+                            @php
+                                $smart_score = isset($listingObj->performance)? $listingObj->performance : 0;
+                                $topic_part_data = isset($selected_parts[$listingObj->id])? $selected_parts[$listingObj->id] : array();
                             @endphp
                             <tr class="listing-data-row mock-exam-item-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}" data-mockexam-item-id="{{isset($listingObj->id)? $listingObj->id : 0}}" data-mockExam-item-title="{{isset($listingObj->title)? $listingObj->title : '-'}}">
                                 <td data-th="Topic"> <label  for="check_{{isset($listingObj->id)? $listingObj->id : 0}}">{{isset($listingObj->title)? $listingObj->title : '-'}}</label>
-                                    <div class="mock-exam-small-help mockExam-item-meta mt-10"></div>
+                                    @if(!empty($topic_part_data))
+                                        @php $section_id = isset($topic_part_data['section_id'])? $topic_part_data['section_id'] : 0;
+                                        $section_name = isset($topic_part_data['section_name'])? $topic_part_data['section_name'] : '';
+                                        $section_intro = isset($topic_part_data['section_intro'])? $topic_part_data['section_intro'] : '';
+                                        $section_no_of_questions = isset($topic_part_data['section_no_of_questions'])? $topic_part_data['section_no_of_questions'] : 0;
+                                        $section_time = isset($topic_part_data['section_time'])? $topic_part_data['section_time'] : 0;
+
+
+                                            @endphp
+                                        @if(!in_array($section_id, $already_sections))
+                                            @php $already_sections[] = $section_id;  @endphp
+                                            <script>
+                                                var sectionId = '{{$section_id}}';
+
+                                                if (!window.mockExam.state.sections.some(sec => sec.id == sectionId)) {
+                                                    window.mockExam.state.sections.push({
+                                                        id: sectionId,
+                                                        name: '{{$section_name}}',
+                                                        numQuestions: {{$section_no_of_questions}},
+                                                        timeMins: {{$section_time}},
+                                                        instructions: '{{$section_intro}}',
+                                                        items: []
+                                                    });
+                                                }
+                                            </script>
+                                        @endif
+                                        <script>
+                                            window.mockExam.addItemToSection('{{isset($topic_part_data['section_id'])? $topic_part_data['section_id'] : 0}}', '{{$listingObj->id}}');
+                                            //window.mockExam.refreshItemsUI();
+                                        </script>
+                                    @endif
+                                    <div class="mock-exam-small-help mockExam-item-meta mt-10">
+
+
+                                    </div>
                                 </td>
                                 <td>
 
@@ -232,7 +271,7 @@
                                                     id="input-min-value"
                                                     pattern="[0-9]*"
                                                     inputmode="numeric"
-                                                    value="0"
+                                                    value="{{isset($topic_part_data['min'])? $topic_part_data['min'] : 0}}"
                                                     placeholder="0"
                                                 />
                                                 <span class="unit-label">FROM</span>
@@ -244,7 +283,7 @@
                                                     id="input-max-value"
                                                     pattern="[0-9]*"
                                                     inputmode="numeric"
-                                                    value="0"
+                                                    value="{{isset($topic_part_data['max'])? $topic_part_data['max'] : 0}}"
                                                     placeholder="0"
                                                 />
                                                 <span class="unit-label">TO</span>
@@ -262,7 +301,7 @@
                                                     type="range"
                                                     min="0"
                                                     max="100"
-                                                    value="0"
+                                                    value="{{isset($topic_part_data['min'])? $topic_part_data['min'] : 0}}"
                                                     step="1"
                                                     aria-valuemin="0"
                                                     aria-valuemax="100"
@@ -276,7 +315,7 @@
                                                     type="range"
                                                     min="0"
                                                     max="100"
-                                                    value="0"
+                                                    value="{{isset($topic_part_data['max'])? $topic_part_data['max'] : 0}}"
                                                     step="1"
                                                     aria-valuemin="0"
                                                     aria-valuemax="100"
