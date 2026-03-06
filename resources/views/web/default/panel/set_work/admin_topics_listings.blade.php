@@ -87,6 +87,14 @@
     }
     .select-topics .topics-table .listing-data-row label {
         margin-bottom: 0;
+        margin-right: 10px;
+        font-weight: bold;
+        color: #333;
+        font-size: .875rem;
+    }
+    .select-topics .topics-table span {
+        font-size: .875rem;
+        font-weight: 600;
     }
     .mock-exam-btn-holder {
         text-align: right;
