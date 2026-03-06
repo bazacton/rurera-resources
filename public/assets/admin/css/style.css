@@ -1831,6 +1831,8 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     padding: 15px 20px 15px 10px;
     line-height: normal;
     position: relative;
+    font-size: .875rem;
+    font-weight: 700;
 }
 .mockExam-tpl-assigned-remove {
     color: #dc3545;
