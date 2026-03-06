@@ -207,10 +207,11 @@
                             <div class="user-account-area font-14">
                                 <span class="navbar-user d-flex align-items-center">
                                     <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image" alt="rounded circle" loading="eager" title="rounded circle">
-                                    <span class="navbar-user-name">{{ $authUser->get_full_name() }}</span>
                                 </span>
-                                 
-                                <a href="/dashboard" class="user-dashboard-btn">Manage Account</a>
+                                <div class="account-info">
+                                    <span class="navbar-user-name">{{ $authUser->get_full_name() }}</span>
+                                    <a href="/dashboard" class="user-dashboard-btn">Manage Account</a>
+                                </div>
                             </div>
                         @else
                             <div class="d-flex align-items-center">
