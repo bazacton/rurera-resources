@@ -1835,13 +1835,20 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     font-weight: 700;
 }
 .mockExam-tpl-assigned-remove {
-    color: #dc3545;
+    color: #6c757d;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
     position: absolute;
     right: 8px;
-    margin-top: -2px;
+    margin-top: -5px;
+    background-color: #c6f2d6;
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .mockExam-tpl-assign-items,
 .mockExam-tpl-section-items {
