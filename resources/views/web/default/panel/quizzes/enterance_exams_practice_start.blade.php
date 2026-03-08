@@ -106,7 +106,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                     @endphp
 
 
-                                    <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
+                                    <div class="quiz-section-data rurera-hide1 active" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
 
 
                                         <div class="quiz-status-bar mb-md-50 mt-15">
@@ -146,7 +146,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                     {!! $section_layout !!}
 
-                                        <div class="quiz-section-questions rurera-hide">
+                                        <div class="quiz-section-questions rurera-hide1">
 
                                             <div class="question-inner-step-area">
                                                 <div class="question-layout-block">
@@ -160,7 +160,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                             $active_class = ($active_question_id == $active_actual_question_id)? '' : '';
                                                             $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
                                                                     @endphp
-                                                                    <div class="rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
+                                                                    <div class="rurera-question-block active question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
                                                                          data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
                                                                          data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
                                                                          data-question_no="{{$question_counter}}"
