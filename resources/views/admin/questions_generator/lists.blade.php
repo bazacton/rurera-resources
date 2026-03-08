@@ -1035,6 +1035,8 @@
 
 
 
+
+
                     $(document).on('click', '.create-questions-bulk-list-btn', function () {
                         $('input[name="bulk_id"]').val(0);
                         $(".questions_bul_list_block").html('');
@@ -1448,6 +1450,7 @@
                         sections: [],
                         items: [],
                         selectedItemId: null,
+                        selectedItemIds: null,
                         sectionFormMode: "single",
                         editingSectionId: null
                     };
@@ -1459,6 +1462,7 @@
                     function cacheEls() {
                         $els.root = $("#mockExam-root");
                         $els.itemsList = $("#mockExam-itemsList");
+                        $els.itemsListSelected = $("#mockExam-itemsListSelected");
                         $els.sectionsCountPill = $("#mockExam-sectionsCountPill");
 
                         $els.builderModal = $("#mockExam-builderModal");
@@ -1510,7 +1514,7 @@
                     /** Read items from DOM (no JS rendering) */
                     function loadItemsFromDom() {
                         const items = [];
-                        $els.itemsList.find("[data-mockexam-item-id]").each(function() {
+                        $els.itemsListSelected.find("[data-mockexam-item-id]").each(function() {
                             const $row = $(this);
                             const id = String($row.attr("data-mockexam-item-id") || "").trim();
                             const title = String($row.attr("data-mockExam-item-title") || "").trim();
@@ -1523,8 +1527,10 @@
                     }
 
                     function getSelectedItem() {
-                        return state.items.find(i => i.id === state.selectedItemId) || null;
+                        const item = state.items.find(i => i.id === state.selectedItemId);
+                        return item ? item : state.selectedItemIds;
                     }
+
 
                     function findAssignedSection(itemId) {
                         for (let i = 0; i < state.sections.length; i++) {
@@ -1551,12 +1557,14 @@
                             // base meta always has ID
                             const base = ``;
 
+                            $row.find('.topic_part-selection').removeClass('rurera-hide');
                             if (assigned) {
+                                $row.find('.topic_part-selection').addClass('rurera-hide');
                                 var section_id = assigned.sectionId;
                                 var assigned_response = '<input type="hidden" name="sections['+section_id+'][topic_parts][]" value="'+itemId+'">'
                                 $assignBtn.prop("disabled", true).addClass("mock-exam-btn-disabled").attr("title", "Already assigned (remove first)");
                                 $unassignBtn.removeClass("d-none");
-                                $meta.html(`${base} <span class="badge badge-success rurera-hide">Assigned</span> <span class="ml-0 success-lable">${label}</span>`);
+                                $meta.html(`${base} <span class="badge badge-success rurera-hide1">Assigned</span> <span class="ml-0 success-lable">${label}</span>`);
                                 $meta.append(assigned_response);
                             } else {
                                 $assignBtn.prop("disabled", false).removeClass("mock-exam-btn-disabled").attr("title", "Shortlist (assign to section)");
@@ -1619,12 +1627,11 @@
                                 sec.items.forEach(itemId => {
                                     const item = state.items.find(i => i.id === itemId);
                                     const $it = $tpl.assignedItem.clone(false, false);
-                                    var min_questions = $('.mock-exam-item-row[data-mockexam-item-id="'+itemId+'"]').find('#input-min-value').val();
-                                    var max_questions = $('.mock-exam-item-row[data-mockexam-item-id="'+itemId+'"]').find('#input-max-value').val();
+                                    var total_questions = $('#mockExam-itemsListSelected .mock-exam-item-row[data-mockexam-item-id="'+itemId+'"]').attr('data-mockexam-item-total_questions');
                                     $it.attr("data-mockexam-item-id", itemId);
                                     $it.find(".mockExam-tpl-assigned-title").text(item ? item.title : itemId);
                                     $it.find(".mockExam-tpl-assigned-breadcrumb").text(item ? item.breadcrumb : itemId);
-                                    $it.find(".mockExam-tpl-assigned-total_questions").text(min_questions+' - '+max_questions);
+                                    $it.find(".mockExam-tpl-assigned-total_questions").text(total_questions);
                                     $it.find(".mockExam-tpl-assigned-remove")
                                         .off("click.mockExam")
                                         .on("click.mockExam", () => removeItemFromSection(sec.id, itemId));
@@ -1689,8 +1696,15 @@
                             } else if (!selected || isAssignedElsewhere) {
                                 $btn.addClass("btn-primary").text("Add selected item").prop("disabled", true);
                             } else {
-                                $btn.addClass("btn-primary").text("Add selected item").prop("disabled", false)
-                                    .on("click.mockExam", () => addItemToSection(sec.id, selected.id));
+                                var selected_ids = selected.id;
+                                if (Array.isArray(selected)) {
+                                    $btn.addClass("btn-primary").text("Add selected item").prop("disabled", false)
+                                        .on("click.mockExam", () => addItemToSectionMulti(sec.id, selected));
+                                } else {
+                                    $btn.addClass("btn-primary").text("Add selected item").prop("disabled", false)
+                                        .on("click.mockExam", () => addItemToSection(sec.id, selected.id));
+                                }
+
                             }
 
                             const $secItems = $wrap.find(".mockExam-tpl-assign-items").empty();
@@ -1860,6 +1874,12 @@
                         $els.assignModal.modal("show");
                     }
 
+                    function openMultiAssignForItem(itemIds) {
+                        state.selectedItemIds = itemIds;
+                        renderAssignModal();
+                        $els.assignModal.modal("show");
+                    }
+
                     function deleteSection(sectionId) {
                         if (!confirm("Delete this section? Items in it will become unassigned.")) return;
                         state.sections = state.sections.filter(s => s.id !== sectionId);
@@ -1873,6 +1893,41 @@
                         renderSections();
                         renderAssignModal();
                         refreshItemsUI();
+                    }
+
+                    function addItemToSectionMulti(sectionId, itemIds) {
+                        $.each(itemIds, function(index, itemId) {
+
+                            if (findAssignedSection(itemId)) return true; // skip this item
+
+                            const sec = state.sections.find(s => s.id === sectionId);
+                            if (!sec) return true; // skip if section not found
+
+
+                            var topic_title = $els.itemsList.find('[data-mockexam-item-id="'+itemId+'"]').attr('data-mockexam-item-title');
+                            var breadcrumb = $els.itemsList.find('[data-mockexam-item-id="'+itemId+'"]').attr('data-mockexam-item-breadcrumb');
+                            var total_questions = $els.itemsList.find('[data-mockexam-item-id="'+itemId+'"]').attr('data-mockexam-item-total_questions');
+
+                            var selectedItemHTML = `
+<div class="mock-exam-item-row"
+    data-mockexam-item-id="${itemId}"
+    data-mockexam-item-title="${topic_title}"
+    data-mockexam-item-breadcrumb="${breadcrumb}"
+    data-mockexam-item-total_questions="${total_questions}">
+</div>`;
+
+                            $("#mockExam-itemsListSelected").append(selectedItemHTML);
+                            sec.items.push(itemId);
+
+                        });
+
+                        $(".topic_part-selection").prop('checked', false);
+                        $(".check-uncheck-all").prop('checked', false);
+
+                        $("#mockExam-assignDoneBtn").click();
+                        loadItemsFromDom();
+
+                        renderSections();
                     }
 
                     function addItemToSection(sectionId, itemId) {
@@ -1977,6 +2032,17 @@
                         bindEvents();
 
                     }
+
+                    $(document).on('click', '.assign_multi_topics', function () {
+                        var topic_part_ids = [];
+
+                        $('input[name="topic_part_ids[]"]:checked').each(function () {
+                            topic_part_ids.push($(this).val());
+                        });
+
+                        openMultiAssignForItem(topic_part_ids);
+
+                    });
 
                     return { init, state, addItemToSection: addItemToSection, refreshItemsUI: refreshItemsUI };
                 })(jQuery);

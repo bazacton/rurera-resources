@@ -100,6 +100,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                     @php $section_layout = isset($questions_section_data['layout'])? $questions_section_data['layout'] : '';
                                         $section_data = isset($questions_section_data['section_data'])? $questions_section_data['section_data'] : (object) array();
 
+                                        $questions_layout = isset($questions_section_data['questions'])? $questions_section_data['questions'] : (object) array();
                                         $section_time = isset($section_data->time)? $section_data->time : 0;
                                         $section_time = ($section_time*60);
                                     @endphp
@@ -156,7 +157,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 @php $question_counter  = 1; @endphp
                                                                 @foreach( $questions_layout as $result_question_id => $questionLayout)
                                                                     @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
-                                                            $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
+                                                            $active_class = ($active_question_id == $active_actual_question_id)? '' : '';
                                                             $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
                                                                     @endphp
                                                                     <div class="rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
