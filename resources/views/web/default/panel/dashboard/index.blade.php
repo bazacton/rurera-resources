@@ -39,22 +39,43 @@
         <div class="rurera-tasks-item">
         <div class="row align-items-center">
             <div class="col-md-7">
-            <div class="d-flex align-items-center">
-                <div class="rurera-tasks-icon"></div>
-                <div class="rurera-tasks-content">
-                <div class="rurera-tasks-title-row">
-                    <h3 class="rurera-tasks-name font-16 font-weight-bold">Cambridge Select Insight (CEM Select)</h3>
-                    <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
+                <div class="d-flex align-items-center">
+                    <div class="rurera-tasks-content">
+                        <div class="rurera-tasks-title-row">
+                            <h3 class="rurera-tasks-name font-16 font-weight-bold">Cambridge Select Insight (CEM Select)</h3>
+                            <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
+                        </div>
+                        <p class="rurera-tasks-desc">Active online test</p>
+                    </div>
                 </div>
-                <p class="rurera-tasks-desc">Active online test</p>
-                </div>
-            </div>
             </div>
             <div class="col-md-5 rurera-tasks-row-right">
-            <div class="rurera-tasks-actions font-14">
-                <button class="rurera-tasks-btn rurera-tasks-btn-outline">Mark Answers</button>
-                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Download</button>
+                <div class="rurera-tasks-actions font-14">
+                    <button class="rurera-tasks-btn rurera-tasks-btn-outline">Mark Answers</button>
+                    <button class="rurera-tasks-btn rurera-tasks-btn-primary">Download</button>
+                </div>
             </div>
+        </div>
+        </div>
+
+        <div class="rurera-tasks-item">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <div class="d-flex align-items-center">
+                    <div class="rurera-tasks-content">
+                        <div class="rurera-tasks-title-row">
+                            <h3 class="rurera-tasks-name font-16 font-weight-bold">English Placement Assessment</h3>
+                            <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
+                        </div>
+                        <p class="rurera-tasks-desc">Pending review submission</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 rurera-tasks-row-right">
+                <div class="rurera-tasks-actions font-14">
+                    <button class="rurera-tasks-btn rurera-tasks-btn-outline">Finish</button>
+                    <button class="rurera-tasks-btn rurera-tasks-btn-primary">Resume</button>
+                </div>
             </div>
         </div>
         </div>
@@ -63,30 +84,6 @@
         <div class="row align-items-center">
             <div class="col-md-7">
             <div class="d-flex align-items-center">
-                <div class="rurera-tasks-icon"></div>
-                <div class="rurera-tasks-content">
-                <div class="rurera-tasks-title-row">
-                    <h3 class="rurera-tasks-name font-16 font-weight-bold">English Placement Assessment</h3>
-                    <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
-                </div>
-                <p class="rurera-tasks-desc">Pending review submission</p>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-5 rurera-tasks-row-right">
-            <div class="rurera-tasks-actions font-14">
-                <button class="rurera-tasks-btn rurera-tasks-btn-outline">Finish</button>
-                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Resume</button>
-            </div>
-            </div>
-        </div>
-        </div>
-
-        <div class="rurera-tasks-item">
-        <div class="row align-items-center">
-            <div class="col-md-7">
-            <div class="d-flex align-items-center">
-                <div class="rurera-tasks-icon"></div>
                 <div class="rurera-tasks-content">
                 <div class="rurera-tasks-title-row">
                     <h3 class="rurera-tasks-name font-16 font-weight-bold">Quantitative Reasoning Practice</h3>
@@ -110,7 +107,6 @@
             <div class="row align-items-center">
             <div class="col-md-7">
                 <div class="d-flex align-items-center">
-                <div class="rurera-tasks-icon"></div>
                 <div class="rurera-tasks-content">
                     <div class="rurera-tasks-title-row">
                     <h3 class="rurera-tasks-name font-16 font-weight-bold">Reading Comprehension Mock</h3>
@@ -133,7 +129,6 @@
             <div class="row align-items-center">
             <div class="col-md-7">
                 <div class="d-flex align-items-center">
-                <div class="rurera-tasks-icon"></div>
                 <div class="rurera-tasks-content">
                     <div class="rurera-tasks-title-row">
                         <h3 class="rurera-tasks-name font-16 font-weight-bold">Vocabulary Builder Challenge</h3>
@@ -156,7 +151,6 @@
             <div class="row align-items-center">
                 <div class="col-md-7">
                     <div class="d-flex align-items-center">
-                    <div class="rurera-tasks-icon"></div>
                     <div class="rurera-tasks-content">
                         <div class="rurera-tasks-title-row">
                         <h3 class="rurera-tasks-name font-16 font-weight-bold">Verbal Skills Final Check</h3>
