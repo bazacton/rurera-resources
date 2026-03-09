@@ -750,7 +750,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script>
     $(document).on('click', '.open-in-chatgpt', function (evt) {
-        const prompt = $(this).closest('.promptModal').find('.promptEditor').html();
+        const prompt = $(this).closest('.promptModal').find('.promptEditor').val();
         const encoded=encodeURIComponent(prompt);
         const url="https://chat.openai.com/?q="+encoded;
 
