@@ -52,8 +52,8 @@
             </div>
             <div class="col-md-5 rurera-tasks-row-right">
             <div class="rurera-tasks-actions">
-                <button class="rurera-tasks-btn rurera-tasks-btn-outline">End test</button>
-                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Continue</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-outline">Mark Answers</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Download</button>
             </div>
             </div>
         </div>
@@ -75,8 +75,8 @@
             </div>
             <div class="col-md-5 rurera-tasks-row-right">
             <div class="rurera-tasks-actions">
-                <button class="rurera-tasks-btn rurera-tasks-btn-outline">Review</button>
-                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Start</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-outline">Finish</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Resume</button>
             </div>
             </div>
         </div>
