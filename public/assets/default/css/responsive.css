@@ -1342,12 +1342,12 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
         margin-left: -8px;
     }
     .student-profile-holder .profile-inner, 
-    .student-profile-holder .edit-info-list {width: 100%; flex: 0 0 100%; max-width: 100%;}
+    .student-profile-holder .edit-info-list {width: 100%; flex: 0 0 100%; max-width: 100%; height: auto;}
     .student-profile-holder .profile-inner {margin-bottom: 15px;}
     .ru-book-slider .stat-card {
         max-width: 100%;
     }
-    .chapter-card > a {padding-right: 130px;}
+    .chapter-card > a {padding-right: 130px; }
 }
 
 @media screen and (max-width: 640px) {
