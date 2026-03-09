@@ -34,6 +34,153 @@
             <img src="{{ getPageBackgroundSettings('dashboard') }}" alt="dashboard-banner image" class="img-cover">
         </div>
     </div>
+    <div class="rurera-tasks-card" id="rureraTasksCard">
+        <div class="rurera-tasks-item">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+            <div class="d-flex align-items-center">
+                <div class="rurera-tasks-icon"></div>
+                <div class="rurera-tasks-content">
+                <div class="rurera-tasks-title-row">
+                    <div class="rurera-tasks-name">Cambridge Select Insight (CEM Select)</div>
+                    <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
+                </div>
+                <p class="rurera-tasks-desc">Active online test</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-5 rurera-tasks-row-right">
+            <div class="rurera-tasks-actions">
+                <button class="btn rurera-tasks-btn rurera-tasks-btn-outline">End test</button>
+                <button class="btn rurera-tasks-btn rurera-tasks-btn-primary">Continue</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="rurera-tasks-item">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+            <div class="d-flex align-items-center">
+                <div class="rurera-tasks-icon"></div>
+                <div class="rurera-tasks-content">
+                <div class="rurera-tasks-title-row">
+                    <div class="rurera-tasks-name">English Placement Assessment</div>
+                    <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
+                </div>
+                <p class="rurera-tasks-desc">Pending review submission</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-5 rurera-tasks-row-right">
+            <div class="rurera-tasks-actions">
+                <button class="btn rurera-tasks-btn rurera-tasks-btn-outline">Review</button>
+                <button class="btn rurera-tasks-btn rurera-tasks-btn-primary">Start</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="rurera-tasks-item">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+            <div class="d-flex align-items-center">
+                <div class="rurera-tasks-icon"></div>
+                <div class="rurera-tasks-content">
+                <div class="rurera-tasks-title-row">
+                    <div class="rurera-tasks-name">Quantitative Reasoning Practice</div>
+                    <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
+                </div>
+                <p class="rurera-tasks-desc">2 sections remaining</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-5 rurera-tasks-row-right">
+            <div class="rurera-tasks-actions">
+                <button class="btn rurera-tasks-btn rurera-tasks-btn-outline">Pause</button>
+                <button class="btn rurera-tasks-btn rurera-tasks-btn-primary">Continue</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="rureraHiddenTasks" class="collapse" style="margin-top: 18px; border-top: 1px solid #e6ebf0; padding-top: 18px;">
+        <div class="rurera-tasks-item">
+            <div class="row align-items-center">
+            <div class="col-md-7">
+                <div class="d-flex align-items-center">
+                <div class="rurera-tasks-icon"></div>
+                <div class="rurera-tasks-content">
+                    <div class="rurera-tasks-title-row">
+                    <div class="rurera-tasks-name">Reading Comprehension Mock</div>
+                    <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
+                    </div>
+                    <p class="rurera-tasks-desc">Scheduled for today at 5:00 PM</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-5 rurera-tasks-row-right">
+                <div class="rurera-tasks-actions">
+                <button class="btn rurera-tasks-btn rurera-tasks-btn-outline">Reschedule</button>
+                <button class="btn rurera-tasks-btn rurera-tasks-btn-primary">Join</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="rurera-tasks-item">
+            <div class="row align-items-center">
+            <div class="col-md-7">
+                <div class="d-flex align-items-center">
+                <div class="rurera-tasks-icon"></div>
+                <div class="rurera-tasks-content">
+                    <div class="rurera-tasks-title-row">
+                    <div class="rurera-tasks-name">Vocabulary Builder Challenge</div>
+                    <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
+                    </div>
+                    <p class="rurera-tasks-desc">New challenge unlocked</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-5 rurera-tasks-row-right">
+                <div class="rurera-tasks-actions">
+                <button class="btn rurera-tasks-btn rurera-tasks-btn-outline">Details</button>
+                <button class="btn rurera-tasks-btn rurera-tasks-btn-primary">Open</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="rurera-tasks-item">
+            <div class="row align-items-center">
+            <div class="col-md-7">
+                <div class="d-flex align-items-center">
+                <div class="rurera-tasks-icon"></div>
+                <div class="rurera-tasks-content">
+                    <div class="rurera-tasks-title-row">
+                    <div class="rurera-tasks-name">Verbal Skills Final Check</div>
+                    <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
+                    </div>
+                    <p class="rurera-tasks-desc">Ready to submit</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-5 rurera-tasks-row-right">
+                <div class="rurera-tasks-actions">
+                <button class="btn rurera-tasks-btn rurera-tasks-btn-outline">Preview</button>
+                <button class="btn rurera-tasks-btn rurera-tasks-btn-primary">Submit</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="rurera-tasks-toggle-wrap" id="rureraTasksToggleWrap">
+        <a class="rurera-tasks-toggle" data-toggle="collapse" href="#rureraHiddenTasks" role="button" aria-expanded="false" aria-controls="rureraHiddenTasks" id="rureraTasksToggle">
+            View all tasks →
+        </a>
+        </div>
+    </div>
     <div class="mt-15 rurera-hide">
         <div class="section-title text-left mb-30">
             <h2 class="font-22 font-weight-bold">Subjects Progress <a href="#" class="text-primary">How we calculated?</a></h2>
