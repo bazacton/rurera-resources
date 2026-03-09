@@ -1110,6 +1110,8 @@ nav li {
 .login-logo img {
   max-width: 130px;
   object-fit: contain;
+  object-position: initial;
+  height: auto;
 }
 .login-logo .logo-text {
   color: #203c64;
