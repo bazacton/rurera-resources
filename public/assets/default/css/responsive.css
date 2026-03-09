@@ -1347,6 +1347,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .ru-book-slider .stat-card {
         max-width: 100%;
     }
+    .chapter-card > a {padding-right: 130px;}
 }
 
 @media screen and (max-width: 640px) {
