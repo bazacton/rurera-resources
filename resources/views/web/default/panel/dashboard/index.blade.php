@@ -52,6 +52,7 @@
             <div class="col-md-5 rurera-tasks-row-right">
                 <div class="rurera-tasks-actions font-14">
                     <button class="rurera-tasks-btn rurera-tasks-btn-primary">Download</button>
+                    <button type="button" class="rurera-tasks-close-btn">&times;</button>
                 </div>
             </div>
         </div>
@@ -73,6 +74,7 @@
             <div class="col-md-5 rurera-tasks-row-right">
                 <div class="rurera-tasks-actions font-14">
                     <button class="rurera-tasks-btn rurera-tasks-btn-primary">Resume</button>
+                    <button type="button" class="rurera-tasks-close-btn">&times;</button>
                 </div>
             </div>
         </div>
@@ -94,6 +96,7 @@
             <div class="col-md-5 rurera-tasks-row-right">
             <div class="rurera-tasks-actions font-14">
                 <button class="rurera-tasks-btn rurera-tasks-btn-primary">Continue</button>
+                <button type="button" class="rurera-tasks-close-btn">&times;</button>
             </div>
             </div>
         </div>
@@ -115,7 +118,8 @@
             </div>
             <div class="col-md-5 rurera-tasks-row-right">
                 <div class="rurera-tasks-actions font-14">
-                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Join</button>
+                    <button class="rurera-tasks-btn rurera-tasks-btn-primary">Join</button>
+                    <button type="button" class="rurera-tasks-close-btn">&times;</button>
                 </div>
             </div>
             </div>
@@ -137,6 +141,7 @@
             <div class="col-md-5 rurera-tasks-row-right">
                 <div class="rurera-tasks-actions font-14">
                     <button class="rurera-tasks-btn rurera-tasks-btn-primary">Open</button>
+                    <button type="button" class="rurera-tasks-close-btn">&times;</button>
                     </div>
                 </div>
             </div>
@@ -157,7 +162,8 @@
                 </div>
                 <div class="col-md-5 rurera-tasks-row-right">
                     <div class="rurera-tasks-actions font-14">
-                    <button class="rurera-tasks-btn rurera-tasks-btn-primary">Submit</button>
+                        <button class="rurera-tasks-btn rurera-tasks-btn-primary">Submit</button>
+                        <button type="button" class="rurera-tasks-close-btn">&times;</button>
                     </div>
                 </div>
                 </div>
