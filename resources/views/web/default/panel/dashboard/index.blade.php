@@ -43,7 +43,7 @@
                 <div class="rurera-tasks-icon"></div>
                 <div class="rurera-tasks-content">
                 <div class="rurera-tasks-title-row">
-                    <div class="rurera-tasks-name">Cambridge Select Insight (CEM Select)</div>
+                    <h3 class="rurera-tasks-name font-16 font-weight-bold">Cambridge Select Insight (CEM Select)</h3>
                     <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
                 </div>
                 <p class="rurera-tasks-desc">Active online test</p>
@@ -66,7 +66,7 @@
                 <div class="rurera-tasks-icon"></div>
                 <div class="rurera-tasks-content">
                 <div class="rurera-tasks-title-row">
-                    <div class="rurera-tasks-name">English Placement Assessment</div>
+                    <h3 class="rurera-tasks-name font-16 font-weight-bold">English Placement Assessment</h3>
                     <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
                 </div>
                 <p class="rurera-tasks-desc">Pending review submission</p>
@@ -89,7 +89,7 @@
                 <div class="rurera-tasks-icon"></div>
                 <div class="rurera-tasks-content">
                 <div class="rurera-tasks-title-row">
-                    <div class="rurera-tasks-name">Quantitative Reasoning Practice</div>
+                    <h3 class="rurera-tasks-name font-16 font-weight-bold">Quantitative Reasoning Practice</h3>
                     <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
                 </div>
                 <p class="rurera-tasks-desc">2 sections remaining</p>
@@ -113,7 +113,7 @@
                 <div class="rurera-tasks-icon"></div>
                 <div class="rurera-tasks-content">
                     <div class="rurera-tasks-title-row">
-                    <div class="rurera-tasks-name">Reading Comprehension Mock</div>
+                    <h3 class="rurera-tasks-name font-16 font-weight-bold">Reading Comprehension Mock</h3>
                     <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
                     </div>
                     <p class="rurera-tasks-desc">Scheduled for today at 5:00 PM</p>
@@ -136,50 +136,50 @@
                 <div class="rurera-tasks-icon"></div>
                 <div class="rurera-tasks-content">
                     <div class="rurera-tasks-title-row">
-                    <div class="rurera-tasks-name">Vocabulary Builder Challenge</div>
-                    <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
+                        <h3 class="rurera-tasks-name font-16 font-weight-bold">Vocabulary Builder Challenge</h3>
+                        <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
+                        </div>
+                        <p class="rurera-tasks-desc">New challenge unlocked</p>
                     </div>
-                    <p class="rurera-tasks-desc">New challenge unlocked</p>
-                </div>
                 </div>
             </div>
             <div class="col-md-5 rurera-tasks-row-right">
                 <div class="rurera-tasks-actions">
-                <button class="rurera-tasks-btn rurera-tasks-btn-outline">Details</button>
-                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Open</button>
+                    <button class="rurera-tasks-btn rurera-tasks-btn-outline">Details</button>
+                    <button class="rurera-tasks-btn rurera-tasks-btn-primary">Open</button>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
 
         <div class="rurera-tasks-item">
             <div class="row align-items-center">
-            <div class="col-md-7">
-                <div class="d-flex align-items-center">
-                <div class="rurera-tasks-icon"></div>
-                <div class="rurera-tasks-content">
-                    <div class="rurera-tasks-title-row">
-                    <div class="rurera-tasks-name">Verbal Skills Final Check</div>
-                    <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
+                <div class="col-md-7">
+                    <div class="d-flex align-items-center">
+                    <div class="rurera-tasks-icon"></div>
+                    <div class="rurera-tasks-content">
+                        <div class="rurera-tasks-title-row">
+                        <h3 class="rurera-tasks-name font-16 font-weight-bold">Verbal Skills Final Check</h3>
+                        <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
+                        </div>
+                        <p class="rurera-tasks-desc">Ready to submit</p>
                     </div>
-                    <p class="rurera-tasks-desc">Ready to submit</p>
+                    </div>
+                </div>
+                <div class="col-md-5 rurera-tasks-row-right">
+                    <div class="rurera-tasks-actions">
+                    <button class="rurera-tasks-btn rurera-tasks-btn-outline">Preview</button>
+                    <button class="rurera-tasks-btn rurera-tasks-btn-primary">Submit</button>
+                    </div>
                 </div>
                 </div>
             </div>
-            <div class="col-md-5 rurera-tasks-row-right">
-                <div class="rurera-tasks-actions">
-                <button class="rurera-tasks-btn rurera-tasks-btn-outline">Preview</button>
-                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Submit</button>
-                </div>
-            </div>
-            </div>
-        </div>
         </div>
 
         <div class="rurera-tasks-toggle-wrap" id="rureraTasksToggleWrap">
-        <a class="rurera-tasks-toggle" data-toggle="collapse" href="#rureraHiddenTasks" role="button" aria-expanded="false" aria-controls="rureraHiddenTasks" id="rureraTasksToggle">
-            View all tasks →
-        </a>
+            <a class="rurera-tasks-toggle" data-toggle="collapse" href="#rureraHiddenTasks" role="button" aria-expanded="false" aria-controls="rureraHiddenTasks" id="rureraTasksToggle">
+                View all tasks →
+            </a>
         </div>
     </div>
     <div class="mt-15 rurera-hide">
