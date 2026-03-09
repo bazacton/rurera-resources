@@ -784,7 +784,7 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .heatmap-range-slider {flex-wrap: wrap;gap: 10px;}
     .heatmap-range-slider .ui-slider.ui-widget-content {flex-basis: 70%; width: 70%;}
     .panel-subheader .title {text-align: left;}
-    .stats-list ul li {padding: 0 0 0 15px; margin: 0 0 15px 15px; text-align: left;}
+    .stats-list ul li {padding: 0 0 0 15px; margin: 0 0 15px 15px; text-align: left; flex: 0 0 45%; max-width: 45%;}
     .stats-list ul li:last-child {
         border-left: 0;
         padding-left: 0;
