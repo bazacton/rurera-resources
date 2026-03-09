@@ -1111,7 +1111,7 @@ nav li {
   gap: 8px;
 }
 .login-logo img {
-  max-width: 130px;
+  max-width: 150px;
   object-fit: contain;
   object-position: initial;
   height: auto;
