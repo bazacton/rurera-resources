@@ -49,7 +49,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="mx-lg-30 d-none d-lg-flex flex-grow-1 navbar-toggle-content " id="navbarContent">
+                <div class="mx-lg-30 d-none d-lg-flex flex-grow-1 navbar-toggle-content" id="navbarContent">
                     <a class="mobile-logo" href="{{url('/')}}/" itemprop="url">
                         <img src="{{ $generalSettings['logo'] }}" alt="" aria-hidden="true" title="Rurera Logo" width="185" height="38" loading="lazy">
                     </a>
@@ -206,7 +206,7 @@
                         @if(!empty($authUser))
                             <div class="user-account-area font-14">
                                 <span class="navbar-user d-flex align-items-center">
-                                    <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" alt="rounded circle" loading="lazy" title="rounded circle">
+                                    <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" loading="lazy">
                                 </span>
                                 <div class="account-info">
                                     <span class="navbar-user-name">{{ $authUser->get_full_name() }}</span>
