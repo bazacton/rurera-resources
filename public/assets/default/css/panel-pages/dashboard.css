@@ -384,9 +384,6 @@ Left SideBar-menu End
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 28px;
-    padding: 4px 10px;
-    border-radius: 999px;
     font-size: 12px;
     font-weight: 700;
     line-height: 1;
@@ -396,17 +393,12 @@ Left SideBar-menu End
 }
 
 .rurera-tasks-tag-overdue {
-    background: #ffe4e8;
     color: #c6284f;
-    border: 1px solid #ffc6d0;
 }
 
 .rurera-tasks-tag-due-soon {
-    background: #fff3d8;
     color: #b26a00;
-    border: 1px solid #ffe2a8;
 }
-
 .rurera-tasks-actions {
     display: flex;
     justify-content: flex-end;
