@@ -385,7 +385,7 @@ Left SideBar-menu End
     position: absolute;
     inset: 10px;
     border-radius: 50%;
-    background: #2f73f6;
+    background: var(--primary);
 }
 
 .rurera-tasks-icon:after {
@@ -475,29 +475,29 @@ Left SideBar-menu End
 }
 
 .rurera-tasks-btn-outline {
-    border: 2px solid #2f73f6;
-    color: #2f73f6;
+    border: 2px solid var(--primary);
+    color: var(--primary);
     background: #fff;
 }
 
 .rurera-tasks-btn-outline:hover,
 .rurera-tasks-btn-outline:focus {
-    color: #2f73f6;
+    color: var(--primary);
     background: #f8fbff;
-    border-color: #2f73f6;
+    border-color: var(--primary);
 }
 
 .rurera-tasks-btn-primary {
-    border: 2px solid #2f73f6;
+    border: 2px solid var(--primary);
     color: #fff;
-    background: #2f73f6;
+    background: var(--primary);
 }
 
 .rurera-tasks-btn-primary:hover,
 .rurera-tasks-btn-primary:focus {
     color: #fff;
-    background: #2363da;
-    border-color: #2363da;
+    background: var(--primary);
+    border-color: var(--primary);
 }
 
 .rurera-tasks-toggle-wrap {
@@ -509,7 +509,7 @@ Left SideBar-menu End
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #2f73f6;
+    color: var(--primary);
     font-weight: 700;
     font-size: 20px;
     text-decoration: none !important;
@@ -517,7 +517,7 @@ Left SideBar-menu End
 
 .rurera-tasks-toggle:hover,
 .rurera-tasks-toggle:focus {
-    color: #2f73f6;
+    color: var(--primary);
 }
 
 @media (max-width: 991.98px) {
