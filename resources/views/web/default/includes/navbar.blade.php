@@ -41,7 +41,7 @@
 
                 <a class="navbar-brand navbar-order d-flex align-items-center justify-content-center mr-0 {{ (empty($navBtnUrl) and empty($navBtnText)) ? 'ml-auto' : '' }}" href="{{url('/')}}/" itemprop="url">
                     @if(!empty($generalSettings['logo']))
-                        <img src="{{ $generalSettings['logo'] }}" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="185" height="38" itemprop="image" loading="lazy">
+                        <img src="{{ $generalSettings['logo'] }}" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="185" height="38" loading="lazy">
                     @endif
                 </a>
 
@@ -51,7 +51,7 @@
 
                 <div class="mx-lg-30 d-none d-lg-flex flex-grow-1 navbar-toggle-content " id="navbarContent">
                     <a class="mobile-logo" href="{{url('/')}}/" itemprop="url">
-                        <img src="{{ $generalSettings['logo'] }}" alt="Rurera Logo" title="Rurera Logo" width="185" height="38" itemprop="image" loading="lazy">
+                        <img src="{{ $generalSettings['logo'] }}" alt="Rurera Logo" title="Rurera Logo" width="185" height="38" loading="lazy">
                     </a>
                     <div class="navbar-toggle-header text-right d-lg-none">
                         <button class="btn-transparent" id="navbarClose">
@@ -206,7 +206,7 @@
                         @if(!empty($authUser))
                             <div class="user-account-area font-14">
                                 <span class="navbar-user d-flex align-items-center">
-                                    <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image" alt="rounded circle" loading="lazy" title="rounded circle">
+                                    <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" alt="rounded circle" loading="lazy" title="rounded circle">
                                 </span>
                                 <div class="account-info">
                                     <span class="navbar-user-name">{{ $authUser->get_full_name() }}</span>
