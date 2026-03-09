@@ -407,7 +407,6 @@ Left SideBar-menu End
     align-items: center;
     padding: 8px 15px;
     border-radius: 50px;
-    flex: 0 0 15.555%;
     box-sizing: border-box;
 }
 .tests-list li.active {background-color: #fff; border-color: var(--primary); color: var(--primary);}
