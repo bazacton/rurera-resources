@@ -494,7 +494,7 @@ Left SideBar-menu End
     align-items: center;
     justify-content: center;
     color: var(--primary);
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 .rurera-tasks-toggle:hover,
