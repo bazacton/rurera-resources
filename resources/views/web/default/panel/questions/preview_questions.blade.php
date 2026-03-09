@@ -312,17 +312,11 @@ If image exists verify it is relevant.
 10. JSON Structure Validation
 Check required fields and logical consistency.
 
-Return result strictly in this JSON format:
+Return the result in a structured report with these sections:
 
-{
-"status": "pass | fail",
-"curriculum_subject": "",
-"curriculum_topic": "",
-"age_suitability": "appropriate | too_easy | too_hard",
-"issues_found": [],
-"suggested_fix": "",
-"confidence": "high | medium | low"
-}
+1. Validation Result (table)
+2. Issues Identified (numbered list)
+3. Suggested Fix (paragraph)
 
 Here is the question to review:
 
