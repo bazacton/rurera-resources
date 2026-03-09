@@ -4,7 +4,85 @@
     $rand_id = rand(99,9999);
 
 @endphp
-
+<style>
+    :root {
+        --page-width: 210mm; --page-height: 297mm;
+        --page-padding-top: 10mm; --page-padding-right: 16mm; --page-padding-bottom: 8mm; --page-padding-left: 16mm;
+        --header-offset-top: 10mm; --footer-offset-bottom: 8mm;
+        --header-height: 14mm; --footer-height: 14mm;
+        --content-gap-after-header: 5mm; --content-gap-before-footer: 7mm;
+        --line: #d6dbe3; --line-strong: #9aa4b2; --text: #111827; --muted: #5b6472; --soft: #f5f7fb; --accent: #1d4ed8;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #eef2f7; color: var(--text); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1.45; }
+    body { padding: 18px; }
+    .toolbar { text-align: center; margin-bottom: 14px; }
+    .btn { border: 0; border-radius: 8px; background: var(--accent); color: #fff; padding: 10px 18px; font-size: 14px; font-weight: 700; cursor: pointer; margin: 0 6px 8px; }
+    .status-text { margin-top: 8px; color: var(--muted); font-size: 12px; }
+    #pages { display: flex; flex-direction: column; gap: 18px; align-items: center; }
+    .page { width: var(--page-width); min-height: var(--page-height); height: var(--page-height); box-sizing: border-box; print-color-adjust: exact; background: #fff; position: relative; box-shadow: 0 12px 30px rgba(17,24,39,0.08); overflow: hidden; page-break-after: always; break-after: page; display:flex; flex-direction:column; }
+    .page-header, .page-footer { margin-left: var(--page-padding-left); margin-right: var(--page-padding-right); color: var(--muted); flex: 0 0 auto; }
+    .page-header { margin-top: var(--header-offset-top); min-height: var(--header-height); border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-bottom: 3mm; }
+    .page-footer { margin-top: auto; margin-bottom: var(--footer-offset-bottom); min-height: var(--footer-height); border-top: 1px solid var(--line); display: flex; flex-direction: column; justify-content: center; gap: 2mm; padding-top: 2.5mm; font-size: 10.5px; }
+    .footer-top { font-weight: 700; color: var(--text); text-align: center; }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .page-body { margin-top: var(--content-gap-after-header); margin-left: var(--page-padding-left); margin-right: var(--page-padding-right); margin-bottom: var(--content-gap-before-footer); overflow: hidden; flex:1 1 auto; min-height:0; }
+    .header-left { display: flex; align-items: center; gap: 10px; min-width: 0; }
+    .paper-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 34px; height: 34px; border-radius: 8px; background: #111827; color: #fff; font-weight: 700; font-size: 13px; flex: 0 0 34px; }
+    .header-title { font-size: 12px; font-weight: 700; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .header-subtitle { font-size: 10.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .header-right { text-align: right; font-size: 10.5px; white-space: nowrap; }
+    .cover { height: 100%; display: flex; flex-direction: column; gap: 16px; }
+    .cover-top { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; padding-bottom: 14px; border-bottom: 2px solid #111827; }
+    .cover h1 { margin: 0 0 8px; font-size: 28px; line-height: 1.15; }
+    .cover h2 { margin: 0; font-size: 16px; color: var(--muted); font-weight: 600; }
+    .meta-grid { display: grid; grid-template-columns: auto auto; gap: 6px 12px; align-content: start; font-size: 12px; }
+    .meta-grid strong { color: var(--text); }
+    .qr-box { width: 92px; height: 92px; border: 1px solid var(--line-strong); padding: 6px; background: #fff; flex: 0 0 92px; }
+    .qr-box svg, .thumb svg { width: 100%; height: 100%; display: block; }
+    .cover-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 16px; flex: 1; }
+    .panel { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: #fff; }
+    .panel-title { padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--soft); font-weight: 700; font-size: 12px; }
+    .panel-body { padding: 12px; }
+    .instruction-list, .options { margin: 0; padding-left: 18px; }
+    .instruction-list li { margin-bottom: 8px; }
+    .section-summary { display: flex; justify-content: space-between; gap: 8px; padding: 8px 0; border-bottom: 1px dashed var(--line); }
+    .section-summary:last-child { border-bottom: 0; }
+    .section-page { display: flex; flex-direction: column; gap: 12px; }
+    .section-hero { border: 1px solid var(--line-strong); border-radius: 12px; padding: 18px; background: linear-gradient(180deg, #f9fbff 0%, #ffffff 100%); }
+    .eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; margin-bottom: 8px; }
+    .section-hero h2 { margin: 0 0 8px; font-size: 22px; line-height: 1.2; }
+    .section-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .chip { display: inline-block; border: 1px solid var(--line-strong); border-radius: 999px; padding: 5px 10px; font-size: 11px; font-weight: 700; background: #fff; }
+    .section-instructions-wrap { margin-bottom: 14px; }
+    .question-block { border: 1px solid var(--line); border-radius: 10px; padding: 14px 14px 12px; margin-bottom: 10px; page-break-inside: avoid; break-inside: avoid; background: #fff; }
+    .question-head { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 8px; align-items: flex-start; }
+    .q-number { font-weight: 700; font-size: 13px; color: var(--text); }
+    .q-type { color: var(--muted); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; }
+    .question-text { font-size: 12.5px; margin-bottom: 10px; }
+    .mark-one { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+    .blank-line { display: inline-block; min-width: 90px; border-bottom: 1px solid #111827; transform: translateY(-1px); }
+    .tf-grid { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 8px; }
+    .mcq-option { margin-bottom: 7px; padding-left: 24px; position: relative; }
+    .mcq-option::before { content: attr(data-label); position: absolute; left: 0; top: 0; font-weight: 700; }
+    .hint { margin-top: 8px; padding: 8px 10px; border-radius: 8px; background: #f8fafc; border: 1px dashed var(--line-strong); color: var(--muted); font-size: 11.5px; }
+    .reading-box { border: 1px solid var(--line); border-left: 4px solid #111827; border-radius: 8px; padding: 10px 12px; background: #fafbfd; margin-bottom: 12px; }
+    .thumb { width: 92px; height: 68px; border: 1px solid var(--line-strong); border-radius: 8px; background: #fff; display: inline-flex; align-items: center; justify-content: center; overflow: hidden; margin: 6px 0 10px; }
+    .end-of-test { text-align: center; font-weight: 700; letter-spacing: 0.1em; color: var(--text); border: 1px solid var(--line-strong); border-radius: 10px; padding: 14px 12px; margin-top: 12px; background: #fafbfd; }
+    .source-content, .template { position: absolute; left: -99999px; top: 0; width: calc(var(--page-width) - var(--page-padding-left) - var(--page-padding-right)); visibility: hidden; }
+    [data-force-new-page="true"] { break-before: page; page-break-before: always; }
+    body.exporting { background: #fff; padding: 0; }
+    body.exporting .toolbar { display:none !important; }
+    body.exporting #pages { display:block; gap:0; align-items:stretch; }
+    body.exporting .page { margin:0; box-shadow:none; break-after:auto; page-break-after:auto; }
+    @media print {
+        @page { size: A4; margin: 0; }
+        html, body { background:#fff; padding:0; }
+        .toolbar, .source-content, .template { display:none !important; }
+        #pages { display:block; gap:0; }
+        .page { box-shadow:none; margin:0; height: var(--page-height); min-height: var(--page-height); break-after: page; page-break-after: always; }
+    }
+</style>
 @php $quiz_type = isset( $quiz->quiz_type )? $quiz->quiz_type : '';
 $duration_type = isset( $duration_type )? $duration_type : 'no_time_limit';
 
@@ -26,356 +104,116 @@ $correct_answer_explaination = true;//isset($correct_answer_explaination)? $corr
 $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
 @php $total_questions = isset($questions_list)? count($questions_list) : 0; @endphp
-<div class="content-section">
-
-    <section class="lms-quiz-section">
-
-        <div class="container questions-data-block read-quiz-content" data-total_questions="{{$total_questions}}">
-
-            <div class="justify-content-center w-100">
-                <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
-                    <div class="question-step quiz-complete" style="display:none">
-
-                        <div class="step-block">Test Completed!!!</div>
-
-                    </div>
-                    <div data-result_attempt_id="{{isset($quizAttempt->id)? $quizAttempt->id : 0}}" data-quiz_result_id="{{isset($newQuizStart->id)? $newQuizStart->id : 0}}" class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-                        <a href="javascript:;" class="load-more-questions rurera-hide">Load More Questions</a>
-                        <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
-                            <div class="correct-appriciate" style="display:none"></div>
-
-
-
-                            @if(!empty($questions_sections_layout))
-
-                                @php $section_counter = 1; @endphp
-                                @foreach($questions_sections_layout as $section_id => $questions_section_data)
-
-                                    @php $section_layout = isset($questions_section_data['layout'])? $questions_section_data['layout'] : '';
-                                        $section_data = isset($questions_section_data['section_data'])? $questions_section_data['section_data'] : (object) array();
-
-                                        $questions_layout = isset($questions_section_data['questions'])? $questions_section_data['questions'] : (object) array();
-                                        $section_time = isset($section_data->time)? $section_data->time : 0;
-                                        $section_time = ($section_time*60);
-                                    @endphp
-
-
-                                    <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
-                                        <div class="quiz-pagination rurera-hide1">
-                                            <div class="swiper-container">
-                                                <ul class="swiper-wrapper" data-section_id="{{$section_id}}">
-
-
-
-                                                    @if( !empty( $questions_layout  ) )
-                                                        @php $question_count  = 1; @endphp
-                                                        @foreach( $questions_layout as $result_question_id => $questionLayout)
-                                                            @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
-                                                            $active_class = ($active_question_id == $active_actual_question_id)? '' : '';
-                                                            $active_class = ($active_class == '' && $question_count == 1)? 'active' : '';
-                                                            $is_flagged = false;
-                                                            @endphp
-                                                            <li data-question_id="{{$result_question_id}}" data-actual_question_id="{{$result_question_id}}" class="swiper-slide {{ ( $is_flagged == true)?
-                                               'has-flag' : ''}} "><a
-                                                                    href="javascript:;">
-                                                                    {{$question_count}}</a></li>
-
-                                                            @php $question_count++; @endphp
-                                                        @endforeach
-                                                    @endif
-                                                </ul>
-                                            </div>
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
-                                        </div>
-
-                                        <div class="quiz-status-bar mb-md-50 mt-15">
-                                            <div class="questions-bar-box">
-                                                <div class="quiz-questions-bar-holder">
-                                                    <div class="quiz-questions-bar">
-                                                        <span class="value-lable progress-bar-counter" data-title="" style="left:0%">
-                                                            <span class="no-questions-lable">No of Questions</span>
-                                                            <span class="no-questions-value">0</span>
-                                                        </span>
-                                                        <span class="bar-fill progress-bar-fill" data-title="" style="width: 0%;"></span>
-                                                    </div>
-                                                    <span class="coin-numbers">
-                                                            <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
-                                                            <span class="total-earned-coins">0</span>
-                                                        </span>
-                                                </div>
-                                            </div>
-                                            <div class="quiz-time-bar">
-                                                <div class="timer-wrap">
-                                                    <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
-                                                    <div class="quiz-timer-counter" data-time_counter="{{($section_time)}}">
-                                                        <div class="time-box" id="hh">00</div>
-                                                        <span class="colon">:</span>
-                                                        <div class="time-box" id="mm">00</div>
-                                                        <span class="colon">:</span>
-                                                        <div class="time-box" id="ss">00</div>
-                                                    </div>
-                                                </div>
-                                                <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
-                                                    <img src="/assets/default/svgs/setting.svg" alt="setting">
-                                                </button>
-                                            </div>
-                                        </div>
-
-
-
-                                    {!! $section_layout !!}
-
-                                        <div class="quiz-section-questions rurera-hide">
-
-                                            <div class="question-inner-step-area">
-                                                <div class="question-layout-block">
-
-                                                    <div class="left-content has-bg">
-                                                        <div class="questions-lists-block">
-                                                            @if( !empty( $questions_layout  ) )
-                                                                @php $question_counter  = 1; @endphp
-                                                                @foreach( $questions_layout as $result_question_id => $questionLayout)
-                                                                    @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
-                                                            $active_class = ($active_question_id == $active_actual_question_id)? '' : '';
-                                                            $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
-                                                            $active_class = ($section_counter == 1)? $active_class : '';
-                                                                    @endphp
-                                                                    <div class="rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
-                                                                         data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
-                                                                         data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
-                                                                         data-question_no="{{$question_counter}}"
-                                                                         data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
-
-                                                                        {!! $questionLayout !!}
-
-                                                                    </div>
-
-                                                                    @php $question_counter++; @endphp
-                                                                @endforeach
-                                                            @endif
-                                                        </div>
-                                                        <div class="show-notifications" data-show_message="yes"></div>
-                                                        <div id="scroll-controls" class="page-prev-next-controls pr-0">
-                                                            <div class="controls-inner">
-                                                                <!-- Top State: Scroll Down Button -->
-                                                                <button id="btn-top" class="btn-top scroll-btn pill btn-hidden">
-                                                                    Scroll down <i class="arrow down"></i>
-                                                                </button>
-
-                                                                <!-- Bottom State: Scroll Up Button -->
-                                                                <button id="btn-bottom" class="scroll-btn pill btn-hidden">
-                                                                    Scroll up <i class="arrow up"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                                            <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1 mr-md-0" data-target="#review_submit">
-                                                                Finish
-                                                                <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-                                                            </a>
-                                                            <button type="button" class="report-btn mr-md-auto"
-                                                                    data-toggle="tooltip"
-                                                                    title="Report this question"
-                                                                    data-target="#reportModal"
-                                                                    data-toggle2="modal">
-                                                                Report
-                                                            </button>
-                                                            <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
-                                                                Next
-                                                                <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                                            </a>
-                                                            <a href="javascript:;" id="prev-btn" class="rurera-hide prev-btn">
-                                                                prev
-                                                                <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                                            </a>
-                                                            <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
-                                                                mark answer
-                                                            </a>
-                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
-                                                                Next
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    @php $section_counter++; @endphp
-                                @endforeach
-                            @endif
-
-
-
-
-
-                        </div>
-                    </div>
-                    <div class="question-area-temp hide"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="toolbar">
+    <button class="btn" onclick="downloadPdf()">Download PDF</button>
+    <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+    <div id="statusText" class="status-text">Preparing pages…</div>
 </div>
 
-@if($quiz->quiz_type == 'vocabulary')
-    <div class="question-status-modal">
-        <div class="modal fade question_status_modal" id="question_status_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="modal-box">
-                            <div class="modal-title">
-                                <h3>Incorrect!</h3>
-                                <span class="inc" style="text-decoration: line-through;">are</span>
-                                <span class="cor">are</span>
-                            </div>
-                            <p>
-                                <span>verb</span> when more than one person is being something
-                            </p>
-                            <a href="javascript:;" class="confirm-btn" data-dismiss="modal" aria-label="Close">Okay</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div id="pages"></div>
+
+<template id="pageHeaderTemplate" class="template">
+    <div class="header-left">
+        <div class="paper-badge">KS2</div>
+        <div>
+            <div class="header-title">KS2 SATs Practice Paper</div>
+            <div class="header-subtitle">KS2-2026-MIXED-01</div>
         </div>
     </div>
-@endif
+    <div class="header-right">Mixed Practice Paper</div>
+</template>
 
-<div class="modal fade review_submit" id="review_submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <div class="modal-body">
-                <p></p>
-                <a href="javascript:;" class="submit_quiz_final nav-link mt-20 btn-primary rounded-pill" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"> Submit </a>
-            </div>
-        </div>
+<template id="pageFooterTemplate" class="template">
+    <div class="footer-top">Please go to next page</div>
+    <div class="footer-bottom">
+        <div>Confidential Practice Material</div>
+        <div class="page-number-slot">Page 1 of 1</div>
     </div>
-</div>
-<div class="modal fade validation_error" id="validation_error" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <div class="modal-body">
-                <p>Please fill all the required fields before submitting.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade rur-settings-modal" id="rurSettingsModal" tabindex="-1" role="dialog" aria-labelledby="rurSettingsTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content shadow">
-            <div class="modal-header">
-                <h5 class="modal-title" id="rurSettingsTitle">Settings</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
+</template>
 
-            <div class="modal-body py-2">
-                <div class="rur-setting-row">
-                    <div class="rur-setting-text">
-                        <div class="rur-setting-title">Timer</div>
-                        <div class="rur-setting-sub">Show countdown badge</div>
-                    </div>
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input show-timer-check" id="show-timer-check">
-                        <label class="custom-control-label" for="show-timer-check"></label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal-footer d-flex justify-content-between">
-                <button type="button" class="btn btn-outline-secondary btn-sm setting-reset-btn" id="setting-reset-btn">Reset</button>
+<div id="source" class="source-content">
+    <article class="content-block cover-block">
+        <div class="cover">
+            <div class="cover-top">
                 <div>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <h1>KS2 SATs Practice Paper</h1>
+                    <h2>Mixed Maths Questions • Multiple Choice • Fill in the Blanks • True/False</h2>
+                </div>
+                <div class="qr-box">
+                    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-label="QR code">
+                        <rect width="120" height="120" fill="#fff"/><g fill="#000">
+                            <rect x="6" y="6" width="30" height="30"/><rect x="12" y="12" width="18" height="18" fill="#fff"/><rect x="16" y="16" width="10" height="10"/>
+                            <rect x="84" y="6" width="30" height="30"/><rect x="90" y="12" width="18" height="18" fill="#fff"/><rect x="94" y="16" width="10" height="10"/>
+                            <rect x="6" y="84" width="30" height="30"/><rect x="12" y="90" width="18" height="18" fill="#fff"/><rect x="16" y="94" width="10" height="10"/>
+                        </g>
+                    </svg>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<!-- Report Modal Html Start -->
-<div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
-
-            <!-- Header -->
-            <div class="modal-header border-0 pb-0">
-                <h5 class="modal-title font-weight-bold font-16" id="reportModalLabel">Report Issue</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+            <div class="meta-grid">
+                <strong>Paper code</strong><span>KS2-2026-MIXED-01</span>
+                <strong>Total questions</strong><span>40</span>
+                <strong>Total time</strong><span>60 minutes total</span>
+                <strong>Sections</strong><span>5</span>
             </div>
-
-            <!-- Body -->
-            <div class="modal-body pt-3">
-                <div class="report-options d-flex flex-column gap-2 font-14">
-                    <label class="radio-label d-flex align-items-center mb-2">
-                        <input type="radio" name="reportReason" value="wrong_answer" class="mr-2" onchange="handleReasonChange(this)">
-                        <span>The answer options are wrong</span>
-                    </label>
-
-                    <label class="radio-label d-flex align-items-center mb-2">
-                        <input type="radio" name="reportReason" value="unclear" class="mr-2" onchange="handleReasonChange(this)">
-                        <span>The question is unclear or confusing</span>
-                    </label>
-
-                    <label class="radio-label d-flex align-items-center mb-2">
-                        <input type="radio" name="reportReason" value="typo" class="mr-2" onchange="handleReasonChange(this)">
-                        <span>Typo or grammatical error</span>
-                    </label>
-
-                    <label class="radio-label d-flex align-items-center mb-2">
-                        <input type="radio" name="reportReason" value="other" class="mr-2" onchange="handleReasonChange(this)">
-                        <span>Other reason</span>
-                    </label>
+            <div class="cover-grid">
+                <div class="panel">
+                    <div class="panel-title">Instructions</div>
+                    <div class="panel-body">
+                        <ol class="instruction-list">
+                            <li>Read each question carefully before answering.</li>
+                            <li>There are five sections in this paper.</li>
+                            <li>Each new section starts on a new page.</li>
+                            <li>Questions may be multiple choice, fill in the blanks or true / false.</li>
+                            <li>Write answers clearly and check your work if you have time.</li>
+                        </ol>
+                    </div>
                 </div>
-
-                <!-- Dynamic Feedback Area -->
-                <div class="feedback-area mt-3" id="feedbackArea">
-                    <label id="feedbackLabel" class="font-weight-bold font-16">Please provide details:</label>
-                    <textarea class="form-control" id="feedbackInput" rows="3" placeholder="Describe the issue here..."></textarea>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="modal-footer border-0">
-                <button type="button" class="btn btn-light border" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-danger" onclick="submitReport()">Submit Report</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Report Modal Html End -->
-<a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
-
-<div class="modal fade question_inactivity_modal" id="question_inactivity_modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="modal-box">
-        <span class="icon-box d-block mb-15">
-            <img src="/assets/default/img/clock-modal-img.png" alt="clock-modal-img">
-        </span>
-                    <h3 class="font-24 font-weight-normal mb-10">Are you still there?</h3>
-                    <p class="mb-15 font-16">
-                        You've been inactive for a while, and your session was paused. You can continue learning by using the following links
-                    </p>
-                    <ul class="activity-info">
-                        <li>Total Attempted Questions: <strong class="total-questions">10</strong></li>
-                        <li><span class="icon-box"></span> Correct: <strong class="correct-questions">1</strong></li>
-                        <li>Incorrect: <strong class="incorrect-questions">2</strong></li>
-                    </ul>
-                    <div class="inactivity-controls">
-                        <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">Continue Test</a>
+                <div class="panel">
+                    <div class="panel-title">Sections and Articles</div>
+                    <div class="panel-body">
+                        <div class="section-summary"><div><strong>Section 1: Number and Place Value</strong><br><span>Answer all 8 questions in this section.</span></div><div>8 questions • 10 minutes</div></div>
+                        <div class="section-summary"><div><strong>Section 2: Calculation</strong><br><span>Answer all 8 questions in this section.</span></div><div>8 questions • 12 minutes</div></div>
+                        <div class="section-summary"><div><strong>Section 3: Fractions, Decimals and Percentages</strong><br><span>Answer all 8 questions in this section.</span></div><div>8 questions • 12 minutes</div></div>
+                        <div class="section-summary"><div><strong>Section 4: Measurement and Geometry</strong><br><span>Answer all 8 questions in this section.</span></div><div>8 questions • 13 minutes</div></div>
+                        <div class="section-summary"><div><strong>Section 5: Reasoning and Word Problems</strong><br><span>Answer all 8 questions in this section.</span></div><div>8 questions • 13 minutes</div></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
+
+@if(!empty($questions_sections_layout))
+
+    @php $section_counter = 1; @endphp
+    @foreach($questions_sections_layout as $section_id => $questions_section_data)
+
+        @php $section_layout = isset($questions_section_data['layout'])? $questions_section_data['layout'] : '';
+                            $section_data = isset($questions_section_data['section_data'])? $questions_section_data['section_data'] : (object) array();
+
+                            $questions_layout = isset($questions_section_data['questions'])? $questions_section_data['questions'] : (object) array();
+                            $section_time = isset($section_data->time)? $section_data->time : 0;
+                            $section_time = ($section_time*60);
+        @endphp
+
+
+        {!! $section_layout !!}
+
+        @if( !empty( $questions_layout  ) )
+            @php $question_counter  = 1; @endphp
+            @foreach( $questions_layout as $result_question_id => $questionLayout)
+
+                {!! $questionLayout !!}
+
+            @endforeach
+        @endif
+        </div>
+@php $section_counter++; @endphp
+@endforeach
+@endif
 </div>
+
+
+
 
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
@@ -949,4 +787,134 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
 
+</script>
+<script>
+    function setStatus(message) {
+        const status = document.getElementById("statusText");
+        if (status) status.textContent = message;
+    }
+    function createPage() {
+        const page = document.createElement("section");
+        page.className = "page";
+        const header = document.createElement("div");
+        header.className = "page-header";
+        header.innerHTML = document.getElementById("pageHeaderTemplate").innerHTML;
+        const body = document.createElement("div");
+        body.className = "page-body";
+        const footer = document.createElement("div");
+        footer.className = "page-footer";
+        footer.innerHTML = document.getElementById("pageFooterTemplate").innerHTML;
+        page.appendChild(header); page.appendChild(body); page.appendChild(footer);
+        return page;
+    }
+    function fillFooter(page, pageNo, totalPages) {
+        const footerTop = page.querySelector(".footer-top");
+        const pageSlot = page.querySelector(".page-number-slot");
+        if (footerTop) footerTop.textContent = pageNo === totalPages ? "Please check your answers" : "Please go to next page";
+        if (pageSlot) pageSlot.textContent = `Page ${pageNo} of ${totalPages}`;
+    }
+
+    function paginate() {
+        const pagesContainer = document.getElementById("pages");
+        const source = document.getElementById("source");
+        const blocks = Array.from(source.children);
+
+        pagesContainer.innerHTML = "";
+
+        function makePage() {
+            const page = createPage();
+            pagesContainer.appendChild(page);
+            const body = page.querySelector(".page-body");
+            return {
+                page,
+                body,
+                getHeight() {
+                    return body.clientHeight || body.getBoundingClientRect().height || 0;
+                },
+                getScrollHeight() {
+                    return body.scrollHeight || body.getBoundingClientRect().height || 0;
+                },
+                hasContent() {
+                    return body.children.length > 0;
+                }
+            };
+        }
+
+        let current = makePage();
+
+        for (const originalBlock of blocks) {
+            const block = originalBlock.cloneNode(true);
+            const forceNewPage = originalBlock.dataset.forceNewPage === "true";
+
+            if (forceNewPage && current.hasContent()) {
+                current = makePage();
+            }
+
+            current.body.appendChild(block);
+
+            if (current.getScrollHeight() > current.getHeight()) {
+                current.body.removeChild(block);
+
+                if (!current.hasContent()) {
+                    // Oversized single block: keep it on the current page rather than creating ghost pages.
+                    current.body.appendChild(block);
+                    continue;
+                }
+
+                current = makePage();
+                current.body.appendChild(block);
+
+                if (current.getScrollHeight() > current.getHeight()) {
+                    // If a single block is taller than one page, keep it anyway rather than looping into blanks.
+                    // This preserves content visibility and avoids empty pages.
+                }
+            }
+        }
+
+        const pages = Array.from(pagesContainer.querySelectorAll(".page"));
+        for (let i = pages.length - 1; i >= 0; i -= 1) {
+            const body = pages[i].querySelector(".page-body");
+            if (pages.length > 1 && body && body.children.length === 0) {
+                pages[i].remove();
+            }
+        }
+
+        const finalPages = Array.from(pagesContainer.querySelectorAll(".page"));
+        finalPages.forEach((page, index) => fillFooter(page, index + 1, finalPages.length));
+    }
+    async function downloadPdf() {
+        const pages = Array.from(document.querySelectorAll("#pages .page"));
+        const hasJsPdf = window.jspdf && window.jspdf.jsPDF;
+        const hasCanvas = typeof html2canvas !== "undefined";
+        if (!pages.length) { setStatus("No pages found to export."); return; }
+        if (!hasJsPdf || !hasCanvas) { setStatus("PDF libraries could not be loaded. Use Print / Save as PDF instead."); return; }
+        setStatus("Generating PDF…");
+        document.body.classList.add("exporting");
+        try {
+            const { jsPDF } = window.jspdf;
+            const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4", compress: true });
+            for (let index = 0; index < pages.length; index += 1) {
+                const page = pages[index];
+                const canvas = await html2canvas(page, { scale: 2, useCORS: true, backgroundColor: "#ffffff", logging: false, windowWidth: page.scrollWidth, windowHeight: page.scrollHeight });
+                const imageData = canvas.toDataURL("image/jpeg", 0.98);
+                if (index > 0) pdf.addPage("a4", "portrait");
+                pdf.addImage(imageData, "JPEG", 0, 0, 210, 297, undefined, "FAST");
+            }
+            pdf.save("ks2_sats_question_paper.pdf");
+            setStatus("PDF downloaded.");
+        } catch (error) {
+            console.error(error);
+            setStatus("PDF download failed. Use Print / Save as PDF instead.");
+        } finally {
+            document.body.classList.remove("exporting");
+        }
+    }
+    function buildPaper() { paginate(); setStatus("Pages ready."); }
+    let resizeTimer = null;
+    window.addEventListener("resize", () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => { paginate(); setStatus("Pages updated."); }, 120);
+    });
+    window.addEventListener("beforeprint", paginate);
+    window.addEventListener("load", buildPaper);
 </script>
