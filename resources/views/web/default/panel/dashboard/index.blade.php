@@ -47,7 +47,7 @@
                             <h3 class="rurera-tasks-name font-16 font-weight-bold">Cambridge Select Insight (CEM Select)</h3>
                             <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
                         </div>
-                        <p class="rurera-tasks-desc">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                        <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                             <h3 class="rurera-tasks-name font-16 font-weight-bold">English Placement Assessment</h3>
                             <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
                         </div>
-                        <p class="rurera-tasks-desc">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                        <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                     <h3 class="rurera-tasks-name font-16 font-weight-bold">Quantitative Reasoning Practice</h3>
                     <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
                 </div>
-                <p class="rurera-tasks-desc">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
                 </div>
             </div>
             </div>
@@ -114,7 +114,7 @@
                     <h3 class="rurera-tasks-name font-16 font-weight-bold">Reading Comprehension Mock</h3>
                     <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
                     </div>
-                    <p class="rurera-tasks-desc">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                    <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
                 </div>
                 </div>
             </div>
@@ -136,7 +136,7 @@
                         <h3 class="rurera-tasks-name font-16 font-weight-bold">Vocabulary Builder Challenge</h3>
                         <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
                         </div>
-                        <p class="rurera-tasks-desc">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                        <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@
                         <h3 class="rurera-tasks-name font-16 font-weight-bold">Verbal Skills Final Check</h3>
                         <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
                         </div>
-                        <p class="rurera-tasks-desc">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                        <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
                     </div>
                     </div>
                 </div>
