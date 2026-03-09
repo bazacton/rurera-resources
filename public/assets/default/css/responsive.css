@@ -785,6 +785,10 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .heatmap-range-slider .ui-slider.ui-widget-content {flex-basis: 70%; width: 70%;}
     .panel-subheader .title {text-align: left;}
     .stats-list ul li {padding: 0 0 0 15px; margin: 0 0 15px 15px; text-align: left;}
+    .stats-list ul li:last-child {
+        border-left: 0;
+        padding-left: 0;
+    }
     .panel-content .spell-levels .panel-subheader {padding-right: 10px;}
     .chart-filters .analytics-type li {width: 48%;}
     .time-card {padding: 15px;}
