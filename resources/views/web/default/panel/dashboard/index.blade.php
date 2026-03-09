@@ -177,7 +177,7 @@
         </div>
 
         <div class="rurera-tasks-toggle-wrap" id="rureraTasksToggleWrap">
-            <a class="rurera-tasks-toggle" data-toggle="collapse" href="#rureraHiddenTasks" role="button" aria-expanded="false" aria-controls="rureraHiddenTasks" id="rureraTasksToggle">
+            <a class="rurera-tasks-toggle font-weight-bold" data-toggle="collapse" href="#rureraHiddenTasks" role="button" aria-expanded="false" aria-controls="rureraHiddenTasks" id="rureraTasksToggle">
                 View all tasks →
             </a>
         </div>
