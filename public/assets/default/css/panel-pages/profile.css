@@ -221,8 +221,8 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .user-detail .info-title span {color: #64748b;}
 .info-text h3 {color: #1e293b; line-height: normal;}
 .info-text span {color: #64748b;}
-.profile-view-data {margin: 0 -5px;}
-.profile-view-data > li {width: 50%; display: inline-block; margin-right: -4px; padding: 0 5px;}
+.edit-info-list .profile-view-data {margin: 0 -5px;}
+.edit-info-list .profile-view-data > li {width: 50%; display: inline-block; margin-right: -4px; padding: 0 5px;}
 .edit-info-list li > a,
 .edit-info-list li > button {background-color: #fff; border: 0; border-bottom: 1px solid #ddd; flex-wrap: wrap;}
 .edit-info-list li:last-child > a {
