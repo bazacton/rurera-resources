@@ -407,7 +407,7 @@
             </div>
         </div>
     </div>
-    <section class="assignments-table count-number-wrapp mt-30 rurera-hide">
+    <section class="assignments-table count-number-wrapp mt-30">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12">
