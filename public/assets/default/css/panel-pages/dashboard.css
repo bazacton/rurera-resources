@@ -379,7 +379,6 @@ Left SideBar-menu End
     margin-right: 18px;
     flex: 0 0 60px;
 }
-
 .rurera-tasks-icon:before {
     content: "";
     position: absolute;
@@ -387,7 +386,6 @@ Left SideBar-menu End
     border-radius: 50%;
     background: var(--primary);
 }
-
 .rurera-tasks-icon:after {
     content: "";
     position: absolute;
@@ -399,11 +397,9 @@ Left SideBar-menu End
     left: 26px;
     transform: rotate(42deg);
 }
-
 .rurera-tasks-content {
     min-width: 0;
 }
-
 .rurera-tasks-title-row {
     display: flex;
     align-items: center;
@@ -411,22 +407,12 @@ Left SideBar-menu End
     gap: 10px;
     margin-bottom: 4px;
 }
-
-.rurera-tasks-name {
-    font-size: 22px;
-    line-height: 1.2;
-    font-weight: 700;
-    margin: 0;
-    color: #1f2328;
-}
-
 .rurera-tasks-desc {
     color: #6b7177;
     margin: 0;
     font-size: 16px;
     line-height: 1.35;
 }
-
 .rurera-tasks-tag {
     display: inline-flex;
     align-items: center;
@@ -523,11 +509,6 @@ Left SideBar-menu End
     .rurera-tasks-card {
     padding: 20px 18px;
     }
-
-    .rurera-tasks-name {
-    font-size: 20px;
-    }
-
     .rurera-tasks-row-right {
     margin-top: 16px;
     }
