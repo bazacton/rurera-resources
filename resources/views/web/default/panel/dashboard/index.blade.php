@@ -48,6 +48,7 @@
                             <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
                         </div>
                         <p class="rurera-tasks-desc">Active online test</p>
+                        <p class="rurera-tasks-desc">Mock test • Deadline 01/07/24 • Assigned by you</p>
                     </div>
                 </div>
             </div>
@@ -70,6 +71,7 @@
                             <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
                         </div>
                         <p class="rurera-tasks-desc">Pending review submission</p>
+                        <p class="rurera-tasks-desc">Mock test • Deadline 01/07/24 • Assigned by you</p>
                     </div>
                 </div>
             </div>
@@ -92,6 +94,7 @@
                     <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
                 </div>
                 <p class="rurera-tasks-desc">2 sections remaining</p>
+                <p class="rurera-tasks-desc">Mock test • Deadline 01/07/24 • Assigned by you</p>
                 </div>
             </div>
             </div>
@@ -115,6 +118,7 @@
                     <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
                     </div>
                     <p class="rurera-tasks-desc">Scheduled for today at 5:00 PM</p>
+                    <p class="rurera-tasks-desc">Mock test • Deadline 01/07/24 • Assigned by you</p>
                 </div>
                 </div>
             </div>
@@ -137,6 +141,7 @@
                         <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
                         </div>
                         <p class="rurera-tasks-desc">New challenge unlocked</p>
+                        <p class="rurera-tasks-desc">Mock test • Deadline 01/07/24 • Assigned by you</p>
                     </div>
                 </div>
             </div>
@@ -159,6 +164,7 @@
                         <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
                         </div>
                         <p class="rurera-tasks-desc">Ready to submit</p>
+                        <p class="rurera-tasks-desc">Mock test • Deadline 01/07/24 • Assigned by you</p>
                     </div>
                     </div>
                 </div>
