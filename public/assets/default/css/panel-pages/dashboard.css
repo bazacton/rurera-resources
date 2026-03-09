@@ -494,8 +494,6 @@ Left SideBar-menu End
     align-items: center;
     justify-content: center;
     color: var(--primary);
-    font-weight: 700;
-    font-size: 20px;
     text-decoration: none !important;
 }
 
