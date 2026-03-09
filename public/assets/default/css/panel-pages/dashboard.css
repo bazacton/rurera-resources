@@ -404,26 +404,42 @@ Left SideBar-menu End
     justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
+    -webkit-transition: all 0.2s ease-in-out; 
+    transition: all 0.2s ease-in-out;
 }
-
-.rurera-tasks-btn {
+.rurera-tasks-actions:has(.rurera-tasks-close-btn) {
+    margin-right: -60px;
+}
+.rurera-tasks-item:hover .rurera-tasks-actions {
+    margin-right: 0;
+}
+.rurera-tasks-btn,
+.rurera-tasks-close-btn {
     border-radius: 5px;
     font-weight: 500;
     padding: 10px 20px;
     min-width: 110px;
     white-space: nowrap;
 }
-
-.rurera-tasks-btn + .rurera-tasks-btn {
-    margin-left: 14px;
-}
-
-.rurera-tasks-btn-outline {
+.rurera-tasks-btn-outline,
+.rurera-tasks-close-btn {
     border: 2px solid var(--primary);
     color: var(--primary);
     background: #fff;
 }
-
+.rurera-tasks-close-btn {
+    min-width: auto;
+    font-size: 1.5rem;
+    height: 42.8px;
+    padding: 0 15px;
+    margin-left: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+.rurera-tasks-item:hover .rurera-tasks-close-btn {
+    opacity: 1;
+    visibility: visible;
+}
 .rurera-tasks-btn-outline:hover,
 .rurera-tasks-btn-outline:focus {
     color: var(--primary);
