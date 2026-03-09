@@ -1,6 +1,7 @@
 @php namespace App\Http\Controllers\Web;
  namespace App\Http\Controllers\Admin;
 use App\Models\QuestionLogs;
+use App\Models\Category;
 $QuestionsGenerator = new QuestionsGenerator();
 @endphp
 @extends(getTemplate().'.layouts.appstart')
@@ -259,6 +260,9 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                         @php
                                                             $question_json = $QuestionsGenerator->get_question_json($questionObj);
                                                             $question_json = json_encode($question_json, JSON_PRETTY_PRINT);
+                                                            $category_id_no = json_decode($questionObj->category_id);
+                                                            $category_id_no = isset($category_id_no[0])? $category_id_no[0] : 0;
+                                                            $CategoryObj = Category::find($category_id_no);
                                                         @endphp
                                                         <div class="modal-dialog">
                                                             <div class="modal-content">
@@ -269,15 +273,17 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
 
                                                                 <div class="modal-body">
 <textarea id="promptEditor" class="promptEditor" rows="50" cols="50">
-
-You are an educational content reviewer specializing in the UK National Curriculum for Key Stage 2 (Years 3–6).
+You are an educational content reviewer specializing in the UK National Curriculum for Key Stage 2 ({{isset($CategoryObj->id)? $CategoryObj->getTitleAttribute() : ''}}).
 
 Your task is to review a multiple-choice question provided in JSON format and perform quality assurance (QA).
 
 Evaluate the question according to the following criteria:
 
+
 1. Curriculum Alignment
-Check whether the question is appropriate for KS2 (Year 3–6) students in the UK.
+* Check whether the question is appropriate for KS2 ({{isset($CategoryObj->id)? $CategoryObj->getTitleAttribute() : ''}}) students in the UK.
+* Identify the likely subject and topic (e.g., {{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}} – {{isset($questionObj->topicPart->id)? $questionObj->topicPart->title : ''}}).
+* Flag if the question is too easy, too advanced, or not aligned with KS2.
 
 2. Concept Accuracy
 Verify that the question and explanation are factually correct.
