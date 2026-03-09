@@ -51,8 +51,8 @@
             </div>
             <div class="col-md-5 rurera-tasks-row-right">
             <div class="rurera-tasks-actions">
-                <button class="btn rurera-tasks-btn rurera-tasks-btn-outline">End test</button>
-                <button class="btn rurera-tasks-btn rurera-tasks-btn-primary">Continue</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-outline">End test</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Continue</button>
             </div>
             </div>
         </div>
@@ -74,8 +74,8 @@
             </div>
             <div class="col-md-5 rurera-tasks-row-right">
             <div class="rurera-tasks-actions">
-                <button class="btn rurera-tasks-btn rurera-tasks-btn-outline">Review</button>
-                <button class="btn rurera-tasks-btn rurera-tasks-btn-primary">Start</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-outline">Review</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Start</button>
             </div>
             </div>
         </div>
@@ -97,8 +97,8 @@
             </div>
             <div class="col-md-5 rurera-tasks-row-right">
             <div class="rurera-tasks-actions">
-                <button class="btn rurera-tasks-btn rurera-tasks-btn-outline">Pause</button>
-                <button class="btn rurera-tasks-btn rurera-tasks-btn-primary">Continue</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-outline">Pause</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Continue</button>
             </div>
             </div>
         </div>
@@ -121,8 +121,8 @@
             </div>
             <div class="col-md-5 rurera-tasks-row-right">
                 <div class="rurera-tasks-actions">
-                <button class="btn rurera-tasks-btn rurera-tasks-btn-outline">Reschedule</button>
-                <button class="btn rurera-tasks-btn rurera-tasks-btn-primary">Join</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-outline">Reschedule</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Join</button>
                 </div>
             </div>
             </div>
@@ -144,8 +144,8 @@
             </div>
             <div class="col-md-5 rurera-tasks-row-right">
                 <div class="rurera-tasks-actions">
-                <button class="btn rurera-tasks-btn rurera-tasks-btn-outline">Details</button>
-                <button class="btn rurera-tasks-btn rurera-tasks-btn-primary">Open</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-outline">Details</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Open</button>
                 </div>
             </div>
             </div>
@@ -167,8 +167,8 @@
             </div>
             <div class="col-md-5 rurera-tasks-row-right">
                 <div class="rurera-tasks-actions">
-                <button class="btn rurera-tasks-btn rurera-tasks-btn-outline">Preview</button>
-                <button class="btn rurera-tasks-btn rurera-tasks-btn-primary">Submit</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-outline">Preview</button>
+                <button class="rurera-tasks-btn rurera-tasks-btn-primary">Submit</button>
                 </div>
             </div>
             </div>
