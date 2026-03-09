@@ -411,7 +411,7 @@ Left SideBar-menu End
 }
 .tests-list li.active {background-color: #fff; border-color: var(--primary); color: var(--primary);}
 .tests-list.school-zone-list li {min-height: 60px;}
-.tests-list img {width: 30px; height: 30px; object-fit: contain; }
+.tests-list img {width: 40px; height: 40px; object-fit: contain; }
 /*Test-List Default Style For Timestables Practice Page End*/
 
 /*Grid Card Default Style For Timestables Practice Page*/
