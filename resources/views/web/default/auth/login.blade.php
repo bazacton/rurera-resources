@@ -5,7 +5,6 @@
 @endif
 @push('styles_top')
     <style>
-        body{background-color: #fafafa !important;}
         .login_pin {
             border: 1px solid #ddd;
             max-width: 50px;
