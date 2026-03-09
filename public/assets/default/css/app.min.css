@@ -518,7 +518,10 @@ nav li {
   margin-left: 0;
 }
 .top-navbar .navbar-brand img {
-    max-width: 135px;
+  max-width: 135px;
+  width: auto;
+  object-position: inherit;
+  height: auto;
 }
 .top-navbar .dropdown-menu.user-profile-dropdown {
   min-width: 250px;
