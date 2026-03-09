@@ -94,6 +94,7 @@
                     <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
                 </div>
                 <p class="rurera-tasks-desc">2 sections remaining</p>
+                <p class="rurera-tasks-desc">Mock test - Deadline 01/07/24  - Assigned by you</p>
                 </div>
             </div>
             </div>
