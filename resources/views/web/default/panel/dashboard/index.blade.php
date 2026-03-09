@@ -35,7 +35,7 @@
         </div>
     </div>
     <h2 class="font-22 mb-10">In progress learning content</h2>
-    <div class="rurera-tasks-card" id="rureraTasksCard">
+    <div class="rurera-tasks-card bg-white panel-border rounded-sm" id="rureraTasksCard">
         <div class="rurera-tasks-item">
         <div class="row align-items-center">
             <div class="col-md-7">
