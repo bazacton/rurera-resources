@@ -1,6 +1,54 @@
 <form action="/admin/questions-generator/generate-bulk-list" method="POST" id="generate-bulk-list-form" class="px-25 generate-bulk-list-form">
     @csrf
+    <div id="mockExam-itemsListSelected">
+        @if(!empty($sections_data))
+            @foreach( $sections_data as $section_id => $sectionObj)
+                @php
+                    $section_name = isset($sectionObj->name)? $sectionObj->name : '';
+                    $section_intro = isset($sectionObj->instr)? $sectionObj->instr : '';
+                    $section_no_of_questions = isset($sectionObj->no_of_questions)? $sectionObj->no_of_questions : '';
+                    $section_time = isset($sectionObj->time)? $sectionObj->time : '';
+                    $selected_topic_parts = isset($selected_parts[$section_id])?$selected_parts[$section_id] : (object) array();
 
+                @endphp
+                <script>
+                    var sectionId = '{{$section_id}}';
+
+                    if (!window.mockExam.state.sections.some(sec => sec.id == sectionId)) {
+                        window.mockExam.state.sections.push({
+                            id: sectionId,
+                            name: '{{$section_name}}',
+                            numQuestions: {{$section_no_of_questions}},
+                            timeMins: {{$section_time}},
+                            instructions: '{{$section_intro}}',
+                            items: []
+                        });
+                    }
+                </script>
+                @if(!empty($selected_topic_parts))
+                    @foreach($selected_topic_parts as $topic_part_id => $topic_part_data)
+
+
+                        <div class="mock-exam-item-row"
+                             data-mockexam-item-id="{{$topic_part_id}}"
+                             data-mockexam-item-title="{{isset($topic_part_data['section_title'])? $topic_part_data['section_title'] : ''}}"
+                             data-mockexam-item-breadcrumb="{{isset($topic_part_data['bread_crumbs'])? $topic_part_data['bread_crumbs'] : ''}}"
+                             data-mockexam-item-total_questions="{{isset($topic_part_data['no_of_questions'])? $topic_part_data['no_of_questions'] : 0}}"
+                        >
+                            <input type="hidden" name="sections[{{$section_id}}][topic_parts][]" value="{{$topic_part_id}}">
+                        </div>
+
+                        <script>
+                            window.mockExam.addItemToSection('{{isset($section_id)? $section_id : 0}}', '{{$topic_part_id}}');
+                        </script>
+                    @endforeach
+                @endif
+
+
+
+            @endforeach
+        @endif
+    </div>
     <input type="hidden" name="bulk_id" value="{{isset($QuestionsBulkListObj->id)? $QuestionsBulkListObj->id : 0}}">
     <div class="row">
         <div class="col-md-12 col-lg-12">
@@ -241,10 +289,10 @@
                                                 <div class="mockExam-tpl-assigned-title"></div>
                                                 <div class="mockExam-tpl-assigned-total_questions"></div>
                                             </div>
-                                            
+
                                             <div class="mockExam-tpl-assigned-breadcrumb"></div>
                                         </div>
-                                        
+
                                         <div class="mock-exam-rm mockExam-tpl-assigned-remove" title="Remove">×</div>
                                     </div>
 
@@ -334,11 +382,7 @@
                                             </div>
                                             <button type="button" class="btn btn-sm mockExam-tpl-assign-btn" type="button">Add selected item</button>
                                         </div>
-                                        <div class="card-body">
-                                            <div class="mock-exam-small-help mb-2 mockExam-tpl-assign-instr"></div>
-                                            <div class="mock-exam-small-help mb-2 mockExam-tpl-assign-meta"></div>
-                                            <div class="mockExam-tpl-assign-items"></div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>

@@ -213,6 +213,7 @@
         @endif
     </div>
     <div class="topics-table-holder lms-chapter-ul-outer table-sm panel-border bg-white rounded-sm">
+
         <table class="topics-table mt-0" id="mockExam-itemsList">
             <thead>
             <tr>
@@ -222,13 +223,16 @@
             </tr>
             </thead>
             <tbody>
+            <button type="button" class="assign_multi_topics">Assign</button>
             @php $is_have_records = true; @endphp
             @if(!empty( $parentData) && $is_have_records == true)
                 @foreach( $parentData as $parentObj)
                     @php $listingDataArray = isset($listingData[$parentObj->id])? $listingData[$parentObj->id] : [];
                     @endphp
                     <tr class="listing-data-row topic-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}">
-                        <td data-th="Topic" colspan="3"><b>{{isset($parentObj->title)? $parentObj->title : ''}}</b>
+                        <td data-th="Topic" colspan="3">
+                            <input type="checkbox" id="questions_topic_0" value="1" class="form-check-input mt-0 check-uncheck-all" data-target_class="topic_part-selection">
+                            <b>{{isset($parentObj->title)? $parentObj->title : ''}}</b>
 
                         </td>
                     </tr>
@@ -243,40 +247,11 @@
                             @endphp
                             <tr class="listing-data-row mock-exam-item-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}" data-mockexam-item-id="{{isset($listingObj->id)? $listingObj->id : 0}}" data-mockExam-item-title="{{isset($listingObj->title)? $listingObj->title : '-'}}" data-mockExam-item-breadcrumb="{{isset($listingObj->breadcrumb)? $listingObj->breadcrumb : '-'}}" data-mockExam-item-total_questions="{{isset($listingObj->total_questions)? $listingObj->total_questions : '0'}}">
                                 <td data-th="Topic">
+                                    <input type="checkbox" name="topic_part_ids[]" id="topic_part_id_{{isset($listingObj->id)? $listingObj->id : 0}}" value="{{isset($listingObj->id)? $listingObj->id : 0}}" class="form-check-input section-child topic_part-selection">
                                     <span class="breadcrumbs">{{isset($listingObj->bread_crumbs)? $listingObj->bread_crumbs : ''}}</span><br>
                                     <label  for="check_{{isset($listingObj->id)? $listingObj->id : 0}}">{{isset($listingObj->title)? $listingObj->title : '-'}}</label>
                                     <span>Questions: {{isset($listingObj->total_questions)? $listingObj->total_questions : 0}}</span>
-                                    @if(!empty($topic_part_data))
-                                        @php $section_id = isset($topic_part_data['section_id'])? $topic_part_data['section_id'] : 0;
-                                        $section_name = isset($topic_part_data['section_name'])? $topic_part_data['section_name'] : '';
-                                        $section_intro = isset($topic_part_data['section_intro'])? $topic_part_data['section_intro'] : '';
-                                        $section_no_of_questions = isset($topic_part_data['section_no_of_questions'])? $topic_part_data['section_no_of_questions'] : 0;
-                                        $section_time = isset($topic_part_data['section_time'])? $topic_part_data['section_time'] : 0;
-
-
-                                            @endphp
-                                        @if(!in_array($section_id, $already_sections))
-                                            @php $already_sections[] = $section_id;  @endphp
-                                            <script>
-                                                var sectionId = '{{$section_id}}';
-
-                                                if (!window.mockExam.state.sections.some(sec => sec.id == sectionId)) {
-                                                    window.mockExam.state.sections.push({
-                                                        id: sectionId,
-                                                        name: '{{$section_name}}',
-                                                        numQuestions: {{$section_no_of_questions}},
-                                                        timeMins: {{$section_time}},
-                                                        instructions: '{{$section_intro}}',
-                                                        items: []
-                                                    });
-                                                }
-                                            </script>
-                                        @endif
-                                        <script>
-                                            window.mockExam.addItemToSection('{{isset($topic_part_data['section_id'])? $topic_part_data['section_id'] : 0}}', '{{$listingObj->id}}');
-                                            //window.mockExam.refreshItemsUI();
-                                        </script>
-                                    @endif
+                                    
                                     <div class="mock-exam-small-help mockExam-item-meta mt-10">
 
 
