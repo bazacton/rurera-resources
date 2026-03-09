@@ -399,16 +399,7 @@ Left SideBar-menu End
 
 /*Test-List Default Style For Timestables Practice Page*/
 .tests-list {width: 100%; display: flex; gap: 8px; padding: 0; flex-wrap: wrap;}
-.tests-list li {
-    cursor: pointer;
-    border: 1px solid #ddd;
-    display: inline-flex;
-    gap: 10px;
-    align-items: center;
-    padding: 8px 15px;
-    border-radius: 50px;
-    box-sizing: border-box;
-}
+.tests-list li { cursor: pointer; border: 1px solid #ddd; display: inline-flex; gap: 8px; align-items: center; padding: 8px 15px; border-radius: 50px; box-sizing: border-box;}
 .tests-list li.active {background-color: #fff; border-color: var(--primary); color: var(--primary);}
 .tests-list.school-zone-list li {min-height: 60px;}
 .tests-list img {width: 35px; height: 35px; object-fit: contain; }
