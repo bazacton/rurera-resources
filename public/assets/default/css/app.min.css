@@ -1101,8 +1101,8 @@ nav li {
   margin: 0 0 0 8px;
   font-size: 18px;
 }
-.container:has(.rurera-processing) .text-center:has(.login-logo ) {
-    display: none;
+.container:has(.rurera-processing) .login-logo {
+    display: none !important;
 }
 .login-logo {
   gap: 8px;
@@ -7084,12 +7084,12 @@ span.question-status-wrong,
   color: #7c7d7f;
 }
 .membership-steps-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  max-width: 575px;
-  margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+max-width: 575px;
+margin: 0 auto;
 }
 .membership-steps-list li {
   position: relative;
