@@ -34,7 +34,9 @@
             <img src="{{ getPageBackgroundSettings('dashboard') }}" alt="dashboard-banner image" class="img-cover">
         </div>
     </div>
-    <h2 class="font-22 mb-10">In progress learning content</h2>
+    <div class="section-title text-left mb-10">
+        <h2 class="font-16 font-weight-bold">Set Work</h2>
+    </div>
     <div class="rurera-tasks-card bg-white panel-border rounded-sm px-20 py-15" id="rureraTasksCard">
         <div class="rurera-tasks-item">
         <div class="row align-items-center">
