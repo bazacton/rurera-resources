@@ -5461,7 +5461,5 @@ p {line-height: 1.5;}
 
 /* Date Calendar Style Start */
 .parent-panel .daterangepicker td.active, 
-.parent-panel .daterangepicker td.active:hover {
-    background-color: var(--primary)
-}
+.parent-panel .daterangepicker td.active:hover {background-color: var(--primary)}
 /* Date Calendar Style End */
