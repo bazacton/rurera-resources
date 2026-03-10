@@ -438,7 +438,7 @@ Left SideBar-menu End
 .rurera-tasks-actions-dropdown .dropdown-toggle {
     border: 0;
     background-color: inherit;
-    padding: 0 15px;
+    padding: 0 8px;
 }
 .rurera-tasks-actions-dropdown .dropdown-menu {
     min-width: auto;
@@ -453,6 +453,8 @@ Left SideBar-menu End
 }
 .dropdown-toggle img {
     filter: invert(35%) sepia(100%) saturate(842%) hue-rotate(210deg) brightness(101%) contrast(116%);
+    height: 22px;
+    width: 22px;
 }
 .rurera-tasks-actions-dropdown .dropdown-toggle:after {
     display: none;
