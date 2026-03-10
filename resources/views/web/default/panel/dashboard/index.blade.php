@@ -1023,37 +1023,37 @@
         var $chartData = @json($monthlyChart['data']);
     </script>
 		<script type="text/javascript">
-var searchRequest = null;
+            var searchRequest = null;
 
 
-$('body').on('click', '.progress-info', function (e) {
-	$(this).closest('li').find('.stages-items').toggleClass('rurera-hide');
-});
+            $('body').on('click', '.progress-info', function (e) {
+                $(this).closest('li').find('.stages-items').toggleClass('rurera-hide');
+            });
 
-$('body').on('click', '.set-work-ajax li', function (e) {
-    rurera_loader($(".set-work-content"), 'div');
-    $(".set-work-ajax li").removeAttr('class');
-    $(this).addClass('active');
-    var assignment_status = $(this).attr('data-type');
-    searchRequest = jQuery.ajax({
-        type: "GET",
-        url: '/panel/set-work/search',
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        },
-        beforeSend: function () {
-            if (searchRequest != null) {
-                searchRequest.abort();
-            }
-        },
-        data: {"assignment_status": assignment_status},
-        success: function (return_data) {
-            rurera_remove_loader($(".set-work-content"), 'div');
-            $(".set-work-content").html(return_data);
-        }
-    });
+        $('body').on('click', '.set-work-ajax li', function (e) {
+            rurera_loader($(".set-work-content"), 'div');
+            $(".set-work-ajax li").removeAttr('class');
+            $(this).addClass('active');
+            var assignment_status = $(this).attr('data-type');
+            searchRequest = jQuery.ajax({
+                type: "GET",
+                url: '/panel/set-work/search',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                beforeSend: function () {
+                    if (searchRequest != null) {
+                        searchRequest.abort();
+                    }
+                },
+                data: {"assignment_status": assignment_status},
+                success: function (return_data) {
+                    rurera_remove_loader($(".set-work-content"), 'div');
+                    $(".set-work-content").html(return_data);
+                }
+            });
 
-});
+        });
 </script>
 <script>
 $(document).ready(function () {
