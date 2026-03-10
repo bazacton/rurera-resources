@@ -473,7 +473,11 @@ Left SideBar-menu End
     color: #fff;
     background: var(--primary);
 }
-
+.rurera-tasks-close-btn span {
+    display: block;
+    line-height: normal;
+    color: #e60909;
+}
 .rurera-tasks-btn-primary:hover,
 .rurera-tasks-btn-primary:focus {
     color: #fff;
