@@ -1088,6 +1088,26 @@ $(document).ready(function () {
     });
 });
 </script>
+<script>
+$(document).ready(function () {
+    $(function () {
+        var visibleTasks = $('#rureraTasksCard > .rurera-tasks-item').length;
+        var hiddenTasks = $('#rureraHiddenTasks .rurera-tasks-item').length;
+
+        if ((visibleTasks + hiddenTasks) <= 3 || hiddenTasks === 0) {
+            $('#rureraTasksToggleWrap').hide();
+        }
+
+        $('#rureraHiddenTasks').on('show.bs.collapse', function () {
+            $('#rureraTasksToggle').text('Show less ↑');
+        });
+
+        $('#rureraHiddenTasks').on('hide.bs.collapse', function () {
+            $('#rureraTasksToggle').text('View all tasks →');
+        });
+    });
+});
+</script>
 @endpush
 
     @if(!empty($giftModal))
@@ -1099,27 +1119,7 @@ $(document).ready(function () {
             handleLimitedAccountModal('{!! $giftModal !!}', 40)
         })(jQuery)
     </script>
-    <script>
-    $(document).ready(function () {
-        $(function () {
-            var visibleTasks = $('#rureraTasksCard > .rurera-tasks-item').length;
-            var hiddenTasks = $('#rureraHiddenTasks .rurera-tasks-item').length;
-
-            if ((visibleTasks + hiddenTasks) <= 3 || hiddenTasks === 0) {
-                $('#rureraTasksToggleWrap').hide();
-            }
-
-            $('#rureraHiddenTasks').on('show.bs.collapse', function () {
-                $('#rureraTasksToggle').text('Show less ↑');
-            });
-
-            $('#rureraHiddenTasks').on('hide.bs.collapse', function () {
-                $('#rureraTasksToggle').text('View all tasks →');
-            });
-        });
-    });
-  </script>
+    
 
     @endpush
     @endif
-
