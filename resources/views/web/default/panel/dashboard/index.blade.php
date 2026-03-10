@@ -58,7 +58,7 @@
                         <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="rurera-tasks-dropdown">
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
                             <button type="button" class="rurera-tasks-close-btn">
                                 <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
                                 <span>Delete</span>
@@ -90,7 +90,7 @@
                         <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="rurera-tasks-dropdown">
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
                             <button type="button" class="rurera-tasks-close-btn">
                                 <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
                                 <span>Delete</span>
@@ -122,7 +122,7 @@
                     <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="rurera-tasks-dropdown">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
                         <button type="button" class="rurera-tasks-close-btn">
                             <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
                             <span>Delete</span>
@@ -155,7 +155,7 @@
                         <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="rurera-tasks-dropdown">
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
                             <button type="button" class="rurera-tasks-close-btn">
                                 <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
                                 <span>Delete</span>
@@ -187,7 +187,7 @@
                         <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="rurera-tasks-dropdown">
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
                             <button type="button" class="rurera-tasks-close-btn">
                                 <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
                                 <span>Delete</span>
@@ -219,7 +219,7 @@
                             <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="rurera-tasks-dropdown">
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
                                 <button type="button" class="rurera-tasks-close-btn">
                                     <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
                                     <span>Delete</span>
