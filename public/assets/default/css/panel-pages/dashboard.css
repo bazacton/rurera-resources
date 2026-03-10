@@ -427,7 +427,7 @@ Left SideBar-menu End
 }
 .rurera-tasks-btn-outline,
 .rurera-tasks-close-btn {
-    border: 2px solid var(--primary);
+    border: 1px solid var(--primary);
     color: var(--primary);
     background: #fff;
 }
