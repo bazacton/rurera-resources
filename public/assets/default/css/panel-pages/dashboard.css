@@ -492,18 +492,6 @@ Left SideBar-menu End
     margin-top: 0;
     flex-wrap: wrap;
     }
-
-    .rurera-tasks-btn {
-    width: 100%;
-    min-width: 0;
-    height: 54px;
-    font-size: 18px;
-    }
-
-    .rurera-tasks-btn + .rurera-tasks-btn {
-    margin-left: 0;
-    margin-top: 12px;
-    }
 }
 /*Dashboard To-do List Style End*/
 
