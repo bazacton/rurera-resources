@@ -31,7 +31,7 @@
             trans('panel.view_all_events') }}</a>
 
         <div class="dashboard-banner">
-            <img src="{{ getPageBackgroundSettings('dashboard') }}" alt="dashboard-banner image">
+            <img src="{{ getPageBackgroundSettings('dashboard') }}" alt="dashboard-banner image" class="img-cover">
         </div>
     </div>
     <div class="section-title text-left mb-10">
