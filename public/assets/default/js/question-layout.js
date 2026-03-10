@@ -757,7 +757,17 @@ function init_question_functions() {
         }
     });
 
-    $("body").on('click', '.quiz-pagination ul li, .questions-nav-controls .prev-btn1, .questions-nav-controls .next-btn1', function (e) {
+    $(document).on('click', '.quiz-pagination ul li', function (e) {
+
+        $('.quiz-pagination ul li').removeClass('active');
+        var question_id = $(this).attr('data-question_id');
+        $(".rurera-question-block").removeClass('active');
+        $('.rurera-question-block[data-qresult="'+question_id+'"]').addClass('active');
+        $(this).addClass('active');
+
+    });
+
+    $("body").on('click', '.quiz-pagination11 ul li, .questions-nav-controls .prev-btn1, .questions-nav-controls .next-btn1', function (e) {
 
         if ($(this).hasClass('disable-btn')) {
             return;
