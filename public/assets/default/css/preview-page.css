@@ -70,6 +70,14 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     font-size: .875rem;
     margin: 0 0 15px;
 }
+.promptModal .modal-buttons button {
+    border: 1px solid var(--primary);
+    background-color: inherit;
+    padding: 6px 15px;
+    border-radius: 3px;
+    color: var(--primary);
+    font-size: .875rem;
+}
 .question-right-header {
     display: flex;
     align-items: center;
