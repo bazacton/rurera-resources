@@ -283,6 +283,24 @@ body:has(.sentences-block) footer.footer.footer-home {display: none;}
 .spell_words_popup .discount-code-block .nav-link {width: auto; background-color: inherit; border-radius: 5px !important; box-shadow: none; color: var(--primary); border: 1px solid var(--primary); text-align: center; height: 52px; line-height: 30px; position: relative; margin-top: 30px; font-weight: 500; margin-bottom: 0; }
 .spell_words_popup .discount-code-block .nav-link:after {content: "\2192"; display: inline-block; font-weight: 500; font-size: 24px; vertical-align: middle; margin-left: 10px;}
 .spell_words_popup .discount-code-block p {margin: 0 0 10px; color: var(--primary); font-weight: 500;}
+.spell_words_popup .tests-list li {
+    border: 1px dashed #ddd;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    min-height: 100px;
+    border-radius: .625rem;
+    flex: 0 0 15.555%;
+    text-align: center;
+}
+.spell_words_popup .tests-list li.active {
+    border-color: var(--primary);
+    color: var(--primary);
+    border-style: solid;
+    box-shadow: 0 -4px 0 0 #1b85fd inset;
+}
 /* Spell Words popup Style End */
 
 /*****************************
