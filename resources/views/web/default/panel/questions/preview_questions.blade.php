@@ -264,7 +264,7 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                             $category_id_no = isset($category_id_no[0])? $category_id_no[0] : 0;
                                                             $CategoryObj = Category::find($category_id_no);
                                                         @endphp
-                                                        <div class="modal-dialog">
+                                                        <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
                                                                     <h3>Edit Prompt Before Sending</h3>
