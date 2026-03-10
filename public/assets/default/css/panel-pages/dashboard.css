@@ -451,7 +451,7 @@ Left SideBar-menu End
 .rurera-tasks-actions-dropdown .dropdown-menu.show {
     display: block;
 }
-.dropdown-toggle img {
+.rurera-tasks-actions-dropdown .dropdown-toggle img {
     filter: invert(35%) sepia(100%) saturate(842%) hue-rotate(210deg) brightness(101%) contrast(116%);
     height: 22px;
     width: 22px;
@@ -465,7 +465,7 @@ Left SideBar-menu End
     background: #f8fbff;
     border-color: var(--primary);
 }
-.rurera-tasks-actions-dropdown .rurera-tasks-close-btn img {height: 22px; width: 22px; filter: invert(9%) sepia(100%) saturate(6146%) hue-rotate(360deg) brightness(113%) contrast(95%);}
+.rurera-tasks-close-btn img {height: 22px; width: 22px; filter: invert(9%) sepia(100%) saturate(6146%) hue-rotate(360deg) brightness(113%) contrast(95%);}
 .rurera-tasks-btn-primary {
     border: 2px solid var(--primary);
     color: #fff;
