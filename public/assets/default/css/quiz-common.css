@@ -1217,9 +1217,6 @@ body mjx-container[display] {
 .question_label ul {
     margin-top: 15px;
 }
-.preview-question-area .question-layout::selection {
-    background-color: transparent;
-}
 .cloud_nner_text li span{
     display: inline-block;
     word-wrap: break-word;
