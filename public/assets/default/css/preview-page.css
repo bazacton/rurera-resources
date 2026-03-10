@@ -84,6 +84,7 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     font-size: .875rem;
 }
 .promptModal .modal-buttons .cancel-btn {
+    background-color: inherit;
     color: #f5264c;
     border-color: #f5264c;
 }
