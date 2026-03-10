@@ -1197,8 +1197,6 @@ body mjx-container[display] {
 .rurera-question-block:has(.question-number-holder) .question-layout.row {display: flex; align-items: flex-start !important; width: auto;}
 /* body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bottom: 130px;} */
 .question-layout {padding: 0; display: inline-block; width: 100%;}
-
-.question-explaination::selection {background-color: transparent;}
 .question-layout.row {align-items: center !important;}
 .question-layout.row:has(.rureraform-col .image-field),
 .question-layout.row.align-items-start {align-items: flex-start !important;}
