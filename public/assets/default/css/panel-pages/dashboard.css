@@ -441,6 +441,13 @@ Left SideBar-menu End
     background-color: inherit;
     padding: 0 15px;
 }
+.rurera-tasks-actions-dropdown .dropdown-menu {
+    min-width: auto;
+    visibility: visible;
+    opacity: 1;
+    padding: 0;
+    border-radius: 3px;
+}
 .rurera-tasks-actions-dropdown .dropdown-toggle:after {
     display: none;
 }
