@@ -1022,10 +1022,6 @@
         var $chartDataMonths = @json($monthlyChart['months']);
         var $chartData = @json($monthlyChart['data']);
     </script>
-
-    <script type="text/javascript">
-        feather.replace();
-    </script>
 		<script type="text/javascript">
 var searchRequest = null;
 
