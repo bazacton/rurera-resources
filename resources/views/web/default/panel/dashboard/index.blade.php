@@ -55,10 +55,14 @@
                 <div class="rurera-tasks-actions font-14">
                     <button class="rurera-tasks-btn rurera-tasks-btn-outline">Download</button>
                     <div class="rurera-tasks-actions-dropdown">
-                        <button type="button" class="rurera-tasks-close-btn dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="/assets/default/svgs/dots-circle.svg" alt="" aria-hidden="true">
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="rurera-tasks-dropdown"></div>
+                        <div class="dropdown-menu" aria-labelledby="rurera-tasks-dropdown">
+                            <button type="button" class="rurera-tasks-close-btn">
+                                <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
