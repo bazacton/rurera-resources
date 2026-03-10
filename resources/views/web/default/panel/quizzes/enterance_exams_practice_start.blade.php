@@ -719,10 +719,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 following questions that you've skipped:
             </p>
 
-            <div class="d-flex justify-content-center gap-3 mb-5">
-                <button class="btn btn-outline-primary px-3">2</button>
-                <button class="btn btn-outline-primary px-3">10</button>
-            </div>
             `;
         if ($next.length > 0) {
 
