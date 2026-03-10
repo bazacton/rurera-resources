@@ -443,7 +443,7 @@ Left SideBar-menu End
     padding: 0 8px;
 }
 .rurera-tasks-actions-dropdown .dropdown-menu {
-    min-width: auto;
+    min-width: 120px;
     visibility: visible;
     opacity: 1;
     padding: 0;
