@@ -1170,6 +1170,7 @@ body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stab
 .question-details li span {
     font-size: var(--fs-sm);
     width: calc(100% - 85px);
+    word-wrap: break-word;
 }
 body mjx-container[display] {
     padding: 0;
