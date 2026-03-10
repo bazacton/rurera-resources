@@ -425,7 +425,7 @@ Left SideBar-menu End
 }
 .rurera-tasks-close-btn {
     min-width: auto;
-    padding: 5px 10px;
+    padding: 8px;
     border: none;
     background-color: inherit;
     display: flex;
@@ -467,7 +467,7 @@ Left SideBar-menu End
     background: #f8fbff;
     border-color: var(--primary);
 }
-.rurera-tasks-close-btn img {height: 22px; width: 22px; filter: invert(9%) sepia(100%) saturate(6146%) hue-rotate(360deg) brightness(113%) contrast(95%);}
+.rurera-tasks-close-btn img {height: 20px; width: 20px; margin: 1px 5px 0 0; filter: invert(9%) sepia(100%) saturate(6146%) hue-rotate(360deg) brightness(113%) contrast(95%);}
 .rurera-tasks-btn-primary {
     border: 2px solid var(--primary);
     color: #fff;
