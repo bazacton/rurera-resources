@@ -347,6 +347,7 @@ Left SideBar-menu End
 .dashboard-banner-container .dashboard-banner img {
     max-width: 100%;
     max-height: 100%;
+    object-fit: contain;
 }
 .rtl .dashboard-banner-container .dashboard-banner {left: 0; right: auto}
 .dashboard-banner-container .panel-view-btn {color: var(--primary);}
