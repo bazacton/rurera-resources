@@ -434,13 +434,7 @@ Left SideBar-menu End
     height: 42.8px;
     padding: 0 15px;
     margin-left: 10px;
-    opacity: 0;
-    visibility: hidden;
     border: none;
-}
-.rurera-tasks-item:hover .rurera-tasks-close-btn {
-    opacity: 1;
-    visibility: visible;
 }
 .rurera-tasks-btn-outline:hover,
 .rurera-tasks-btn-outline:focus {
