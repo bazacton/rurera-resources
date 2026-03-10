@@ -1939,25 +1939,6 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .select-topics .topics-table tbody tr:hover {
     background: #f9fbff;
 }
-.select-topics .topics-table input[type=checkbox] {
-    height: 20px;
-    width: 20px;
-    font-size: 12px;
-    position: relative;
-    appearance: none;
-    -webkit-appearance: none;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    text-align: center;
-}
-.select-topics .topics-table input[type=checkbox]:checked {
-    border-color: transparent;
-    background-color: var(--primary);
-}
-.select-topics .topics-table input[type=checkbox]:checked:before {
-    content: "✔";
-    color: #fff;
-}
 .select-topics .muted {
     color: #999;
 }
