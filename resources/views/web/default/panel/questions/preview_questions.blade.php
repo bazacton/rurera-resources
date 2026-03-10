@@ -211,40 +211,42 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
 
 
                                                                         <div class="row questions_logs_block">
-                                                                            <h4>Question Logs</h4>
-                                                                            @if($questionLogs->count() > 0)
-                                                                                <ul class="lms-card-timeline">
+                                                                            <div class="col-12">
+                                                                                <h4>Question Logs</h4>
+                                                                                @if($questionLogs->count() > 0)
+                                                                                    <ul class="lms-card-timeline">
 
-                                                                                    @if( !empty( $questionLogs ))
-                                                                                        @foreach($questionLogs as $logObj)
-                                                                                            <li>
-                                                                                                <div class="card">
-                                                                                                    <div class="card-body">
-                                                                                                        <div class="media">
-                                                                                                            <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-2 rounded-circle" alt="User">
-                                                                                                            <div class="media-body">
-                                                                                                                <div class="d-flex justify-content-between align-items-center lms-card-info">
-                                                                                                                    <h5 class="mt-0 mb-1">
-                                                                                                                        {{$logObj->user->get_full_name()}}
-                                                                                                                        <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
-                                                                                                                    </h5>
-                                                                                                                    <div class="log_details">
-                                                                                                                        <span class="badge mb-2">{{$logObj->action_type}}</span>
+                                                                                        @if( !empty( $questionLogs ))
+                                                                                            @foreach($questionLogs as $logObj)
+                                                                                                <li>
+                                                                                                    <div class="card">
+                                                                                                        <div class="card-body">
+                                                                                                            <div class="media">
+                                                                                                                <img src="{{url('/').$logObj->user->getAvatar(40)}}" width="40" class="mr-2 rounded-circle" alt="User">
+                                                                                                                <div class="media-body">
+                                                                                                                    <div class="d-flex justify-content-between align-items-center lms-card-info">
+                                                                                                                        <h5 class="mt-0 mb-1">
+                                                                                                                            {{$logObj->user->get_full_name()}}
+                                                                                                                            <small class="text-muted">{{ dateTimeFormat($logObj->action_at, 'j M y | H:i') }}</small>
+                                                                                                                        </h5>
+                                                                                                                        <div class="log_details">
+                                                                                                                            <span class="badge mb-2">{{$logObj->action_type}}</span>
+                                                                                                                        </div>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
+                                                                                                            <p class="mb-0">
+                                                                                                                {!! $logObj->log_data !!}
+                                                                                                            </p>
                                                                                                         </div>
-                                                                                                        <p class="mb-0">
-                                                                                                            {!! $logObj->log_data !!}
-                                                                                                        </p>
                                                                                                     </div>
-                                                                                                </div>
-                                                                                            </li>
+                                                                                                </li>
 
-                                                                                        @endforeach
-                                                                                    @endif
-                                                                                </ul>
-                                                                            @endif
+                                                                                            @endforeach
+                                                                                        @endif
+                                                                                    </ul>
+                                                                                @endif
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </form>
