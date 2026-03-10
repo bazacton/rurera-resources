@@ -1795,6 +1795,8 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     border: 1px solid #ddd;
     border-radius: 3px;
     text-align: center;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
 }
 .select-topics .topics-table input[type=checkbox]:checked {
     border-color: transparent;
