@@ -411,9 +411,6 @@ Left SideBar-menu End
     -webkit-transition: all 0.2s ease-in-out; 
     transition: all 0.2s ease-in-out;
 }
-.rurera-tasks-actions:has(.rurera-tasks-close-btn) {
-    margin-right: -50px;
-}
 .rurera-tasks-item:hover .rurera-tasks-actions {
     margin-right: 0;
 }
