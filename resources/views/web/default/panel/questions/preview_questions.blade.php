@@ -1,5 +1,8 @@
 @php namespace App\Http\Controllers\Web;
+ namespace App\Http\Controllers\Admin;
 use App\Models\QuestionLogs;
+use App\Models\Category;
+$QuestionsGenerator = new QuestionsGenerator();
 @endphp
 @extends(getTemplate().'.layouts.appstart')
 @php
@@ -195,6 +198,7 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                                                             <textarea rows="10" name="review_message" required class="form-control">The content has been reviewed and meets the QA standards. It is now approved for publishing.</textarea>
                                                                                             <div class="review-msg-control">
                                                                                                 <button type="submit" class="btn btn-primary">Submit</button>
+                                                                                                <button type="button" class="btn btn-default review-ai" data-target_modal="promptModal_{{$questionObj->id}}">Review with AI</button>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -202,6 +206,8 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
 
                                                                             </div>
                                                                         </div>
+
+
 
 
                                                                         <div class="row questions_logs_block">
@@ -247,6 +253,83 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
                                                         </div>
 
 
+                                                    </div>
+
+
+                                                    <div class="modal fade promptModal_{{$questionObj->id}} promptModal" id="promptModal_{{$questionObj->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        @php
+                                                            $question_json = $QuestionsGenerator->get_question_json($questionObj);
+                                                            $question_json = json_encode($question_json, JSON_PRETTY_PRINT);
+                                                            $category_id_no = json_decode($questionObj->category_id);
+                                                            $category_id_no = isset($category_id_no[0])? $category_id_no[0] : 0;
+                                                            $CategoryObj = Category::find($category_id_no);
+                                                        @endphp
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h3>Edit Prompt Before Sending</h3>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                </div>
+
+                                                                <div class="modal-body">
+<textarea id="promptEditor" class="promptEditor" rows="50" cols="50">
+You are an educational content reviewer specializing in the UK National Curriculum for Key Stage 2 ({{isset($CategoryObj->id)? $CategoryObj->getTitleAttribute() : ''}}).
+
+Your task is to review a multiple-choice question provided in JSON format and perform quality assurance (QA).
+
+Evaluate the question according to the following criteria:
+
+
+1. Curriculum Alignment
+* Check whether the question is appropriate for KS2 ({{isset($CategoryObj->id)? $CategoryObj->getTitleAttribute() : ''}}) students in the UK.
+* Identify the likely subject and topic (e.g., {{isset($questionObj->course->id)? $questionObj->course->getTitleAttribute() : ''}} – {{isset($questionObj->topicPart->id)? $questionObj->topicPart->title : ''}}).
+* Flag if the question is too easy, too advanced, or not aligned with KS2.
+
+2. Concept Accuracy
+Verify that the question and explanation are factually correct.
+
+3. Correct Answer Validation
+Ensure the number of correct answers matches the question_type.
+
+4. Distractor Quality
+Ensure incorrect options are plausible but clearly incorrect.
+
+5. Age Appropriateness
+Vocabulary must suit ages 7–11.
+
+6. Question Clarity
+Avoid ambiguity.
+
+7. Hint Quality
+Hint should guide thinking without revealing the answer.
+
+8. Explanation Quality
+Explanation must clearly explain why the correct answer is correct.
+
+9. Image Relevance
+If image exists verify it is relevant.
+
+10. JSON Structure Validation
+Check required fields and logical consistency.
+
+Return the result in a structured report with these sections:
+
+1. Validation Result (table)
+2. Issues Identified (numbered list)
+3. Suggested Fix (paragraph)
+
+Here is the question to review:
+
+{!! $question_json !!}
+</textarea>
+
+                                                                    <div class="modal-buttons">
+                                                                        <button type="button" class="open-in-chatgpt">Open in ChatGPT</button>
+                                                                        <button onclick="closeModal()">Cancel</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
 
                                                     <div class="modal fade review_submit approve_modal_box" id="approve_modal_{{$questionObj->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -304,6 +387,9 @@ $element_unique_id = isset($element_unique_id )? $element_unique_id : 0;
 </div>
 
 
+
+
+
 @endsection
 
 @push('scripts_bottom')
@@ -348,6 +434,14 @@ $(document).on('click', '.prev-btn', function (e) {
     }
 });
 //
+
+
+    $(document).on('click', '.review-ai', function (evt) {
+
+        var target_modal = $(this).attr('data-target_modal');
+        $("."+target_modal).modal('show');
+    });
+
 $(document).on('submit', '.approve_question_form', function (evt) {
 
     var thisObj = $('.approve_question_form');
@@ -651,5 +745,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
   timeline.after(toggleBtn);
 });
+</script>
+
+
+<script>
+    $(document).on('click', '.open-in-chatgpt', function (evt) {
+        const prompt = $(this).closest('.promptModal').find('.promptEditor').val();
+        const encoded=encodeURIComponent(prompt);
+        const url="https://chat.openai.com/?q="+encoded;
+
+        window.open(url,"_blank");
+    });
+    function getPrompt(){
+        return document.getElementById("promptEditor").value;
+    }
+
+    function closeModal(){
+        $(".promptModal").modal('hide');
+    }
+
+
 </script>
 @endpush
