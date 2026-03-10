@@ -436,6 +436,11 @@ Left SideBar-menu End
     margin-left: 10px;
     border: none;
 }
+.rurera-tasks-actions-dropdown .dropdown-toggle {
+    border: 0;
+    background-color: inherit;
+    padding: 0 15px;
+}
 .rurera-tasks-actions-dropdown .dropdown-toggle:after {
     display: none;
 }
