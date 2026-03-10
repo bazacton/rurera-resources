@@ -343,7 +343,11 @@ Left SideBar-menu End
 /*Dashboard-banner For Parent Page Style Start*/
 .dashboard-banner-container {margin-top: 90px; min-height: 250px;}
 .dashboard-banner-container h2 {position: relative; z-index: 1;}
-.dashboard-banner-container .dashboard-banner {position: absolute; right: 0; bottom: 0; height: 340px;}
+.dashboard-banner-container .dashboard-banner {position: absolute; right: 0; bottom: 0; height: 300px;}
+.dashboard-banner-container .dashboard-banner img {
+    max-width: 100%;
+    max-height: 100%;
+}
 .rtl .dashboard-banner-container .dashboard-banner {left: 0; right: auto}
 .dashboard-banner-container .panel-view-btn {color: var(--primary);}
 .unread-notification-lists {min-height: 120px}
