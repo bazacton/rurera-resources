@@ -356,9 +356,8 @@ Left SideBar-menu End
 
 /*Dashboard To-do List Style Start*/
 .rurera-tasks-card {
-    background: #fff;
+    overflow: hidden;
 }
-
 .rurera-tasks-item + .rurera-tasks-item {
     border-top: 1px solid #e6ebf0;
     margin-top: 18px;
