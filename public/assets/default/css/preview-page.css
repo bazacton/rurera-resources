@@ -19,11 +19,9 @@
 .preview-question-area .question-explaination {background-color: #fff;}
 .question-right-side .toggle-btn {position: absolute; left: -34px; top: 50%; transform: translateY(-50%); width: 35px; height: 60px; background: white; border: 1px solid #ddd; border-right: none; border-radius: 8px 0 0 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; z-index: 10;}
 .question-right-side .toggle-btn:hover {background: #f0f0f0;}
-
 .question-right-side .toggle-btn svg {
 transition: transform 0.3s ease;
 }
-
 .question-right-side.hidden .toggle-btn svg {
 transform: rotate(180deg);
 }
@@ -62,6 +60,15 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
 .preview-question-area .form-box {
     user-select: none;
     pointer-events: none;
+}
+.promptModal .promptEditor {
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: .875rem;
+    margin: 0 0 15px;
 }
 .question-right-header {
     display: flex;
