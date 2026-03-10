@@ -465,7 +465,7 @@ Left SideBar-menu End
     background: #f8fbff;
     border-color: var(--primary);
 }
-.rurera-tasks-close-btn img {height: 22px; width: 22px; filter: invert(9%) sepia(100%) saturate(6146%) hue-rotate(360deg) brightness(113%) contrast(95%);}
+.rurera-tasks-actions-dropdown .rurera-tasks-close-btn img {height: 22px; width: 22px; filter: invert(9%) sepia(100%) saturate(6146%) hue-rotate(360deg) brightness(113%) contrast(95%);}
 .rurera-tasks-btn-primary {
     border: 2px solid var(--primary);
     color: #fff;
