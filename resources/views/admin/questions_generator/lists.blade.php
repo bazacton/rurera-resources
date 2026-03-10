@@ -969,25 +969,25 @@
                         let totalMin = 0;
                         let totalMax = 0;
 
-                        $('.mock_practice_questions').each(function () {
-                            let value = $(this).val().trim();
+                        // $('.mock_practice_questions').each(function () {
+                        //     let value = $(this).val().trim();
 
-                            if (value !== '') {
+                        //     if (value !== '') {
 
-                                if (value.indexOf('-') !== -1) {
-                                    let parts = value.split('-');
-                                    let min = parseInt(parts[0]) || 0;
-                                    let max = parseInt(parts[1]) || 0;
+                        //         if (value.indexOf('-') !== -1) {
+                        //             let parts = value.split('-');
+                        //             let min = parseInt(parts[0]) || 0;
+                        //             let max = parseInt(parts[1]) || 0;
 
-                                    totalMin += min;
-                                    totalMax += max;
-                                } else {
-                                    let number = parseInt(value) || 0;
-                                    totalMin += number;
-                                    totalMax += number;
-                                }
-                            }
-                        });
+                        //             totalMin += min;
+                        //             totalMax += max;
+                        //         } else {
+                        //             let number = parseInt(value) || 0;
+                        //             totalMin += number;
+                        //             totalMax += number;
+                        //         }
+                        //     }
+                        // });
 
                         return { min: totalMin, max: totalMax };
                     }
