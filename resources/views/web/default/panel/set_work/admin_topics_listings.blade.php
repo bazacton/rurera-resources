@@ -248,7 +248,7 @@
                             <tr class="listing-data-row mock-exam-item-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}" data-mockexam-item-id="{{isset($listingObj->id)? $listingObj->id : 0}}" data-mockExam-item-title="{{isset($listingObj->title)? $listingObj->title : '-'}}" data-mockExam-item-breadcrumb="{{isset($listingObj->breadcrumb)? $listingObj->breadcrumb : '-'}}" data-mockExam-item-total_questions="{{isset($listingObj->total_questions)? $listingObj->total_questions : '0'}}">
                                 <td data-th="Topic">
                                     <input type="checkbox" name="topic_part_ids[]" id="topic_part_id_{{isset($listingObj->id)? $listingObj->id : 0}}" value="{{isset($listingObj->id)? $listingObj->id : 0}}" class="form-check-input section-child topic_part-selection">
-                                    <span class="breadcrumbs">{{isset($listingObj->bread_crumbs)? $listingObj->bread_crumbs : ''}}</span><br>
+                                    <span class="breadcrumbs">{{isset($listingObj->bread_crumbs)? $listingObj->bread_crumbs : ''}}</span>
                                     <label  for="check_{{isset($listingObj->id)? $listingObj->id : 0}}">{{isset($listingObj->title)? $listingObj->title : '-'}}</label>
                                     <span>Questions: {{isset($listingObj->total_questions)? $listingObj->total_questions : 0}}</span>
                                     
