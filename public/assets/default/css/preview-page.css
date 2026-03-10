@@ -80,6 +80,10 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     color: var(--primary);
     font-size: .875rem;
 }
+.promptModal .modal-buttons .cancel-btn {
+    color: #f5264c;
+    border-color: #f5264c;
+}
 .question-right-header {
     display: flex;
     align-items: center;
