@@ -1100,21 +1100,23 @@ $(document).ready(function () {
         })(jQuery)
     </script>
     <script>
-    $(function () {
-      var visibleTasks = $('#rureraTasksCard > .rurera-tasks-item').length;
-      var hiddenTasks = $('#rureraHiddenTasks .rurera-tasks-item').length;
+    $(document).ready(function () {
+        $(function () {
+            var visibleTasks = $('#rureraTasksCard > .rurera-tasks-item').length;
+            var hiddenTasks = $('#rureraHiddenTasks .rurera-tasks-item').length;
 
-      if ((visibleTasks + hiddenTasks) <= 3 || hiddenTasks === 0) {
-        $('#rureraTasksToggleWrap').hide();
-      }
+            if ((visibleTasks + hiddenTasks) <= 3 || hiddenTasks === 0) {
+                $('#rureraTasksToggleWrap').hide();
+            }
 
-      $('#rureraHiddenTasks').on('show.bs.collapse', function () {
-        $('#rureraTasksToggle').text('Show less ↑');
-      });
+            $('#rureraHiddenTasks').on('show.bs.collapse', function () {
+                $('#rureraTasksToggle').text('Show less ↑');
+            });
 
-      $('#rureraHiddenTasks').on('hide.bs.collapse', function () {
-        $('#rureraTasksToggle').text('View all tasks →');
-      });
+            $('#rureraHiddenTasks').on('hide.bs.collapse', function () {
+                $('#rureraTasksToggle').text('View all tasks →');
+            });
+        });
     });
   </script>
 
