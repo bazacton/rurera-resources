@@ -57,7 +57,7 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     margin: 0;
     font-size: 14px;
 }
-.preview-question-area .form-box {
+.preview-question-area .form-box:has(.form-field) {
     user-select: none;
     pointer-events: none;
 }
