@@ -77,10 +77,10 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
 }
 .promptModal .modal-buttons button {
     border: 1px solid var(--primary);
-    background-color: inherit;
+    background-color: var(--primary);
     padding: 6px 15px;
     border-radius: 3px;
-    color: var(--primary);
+    color: #fff;
     font-size: .875rem;
 }
 .promptModal .modal-buttons .cancel-btn {
