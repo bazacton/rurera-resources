@@ -265,7 +265,6 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     margin: 0 0 15px;
 }
 .preview-question-area .question-layout-block {
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
