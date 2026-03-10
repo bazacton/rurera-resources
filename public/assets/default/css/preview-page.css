@@ -16,7 +16,6 @@
 .question-right-side.hidden,
 .preview-question-area.centered .question-right-side {transform: translateX(100%);}
 .preview-question-area .question-right-side .review-msg-box .input-group {border: 0; border-radius: 0; padding: 0;}
-.preview-question-area .question-explaination {background-color: #fff;}
 .question-right-side .toggle-btn {position: absolute; left: -34px; top: 50%; transform: translateY(-50%); width: 35px; height: 60px; background: white; border: 1px solid #ddd; border-right: none; border-radius: 8px 0 0 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; z-index: 10;}
 .question-right-side .toggle-btn:hover {background: #f0f0f0;}
 .question-right-side .toggle-btn svg {
