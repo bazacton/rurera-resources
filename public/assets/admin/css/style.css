@@ -1798,6 +1798,15 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
     margin: 0 10px 0 0;
     vertical-align: middle;
 }
+.topics-table-holder .assign_multi_topics {
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    padding: 4px 20px;
+    color: var(--primary);
+    background-color: inherit;
+    outline: none;
+    margin: 0 0 10px;
+}
 .select-topics .topics-table input[type=checkbox]:checked {
     border-color: transparent;
     background-color: var(--primary);
