@@ -436,13 +436,16 @@ Left SideBar-menu End
     margin-left: 10px;
     border: none;
 }
+.rurera-tasks-actions-dropdown .dropdown-toggle:after {
+    display: none;
+}
 .rurera-tasks-btn-outline:hover,
 .rurera-tasks-btn-outline:focus {
     color: var(--primary);
     background: #f8fbff;
     border-color: var(--primary);
 }
-
+.rurera-tasks-close-btn img {height: 22px; width: 22px; filter: invert(9%) sepia(100%) saturate(6146%) hue-rotate(360deg) brightness(113%) contrast(95%);}
 .rurera-tasks-btn-primary {
     border: 2px solid var(--primary);
     color: #fff;
