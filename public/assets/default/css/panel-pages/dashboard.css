@@ -411,26 +411,28 @@ Left SideBar-menu End
 .rurera-tasks-item:hover .rurera-tasks-actions {
     margin-right: 0;
 }
-.rurera-tasks-btn,
-.rurera-tasks-close-btn {
+.rurera-tasks-btn {
     border-radius: 5px;
     font-weight: 500;
     padding: 10px 20px;
     min-width: 110px;
     white-space: nowrap;
 }
-.rurera-tasks-btn-outline,
-.rurera-tasks-close-btn {
+.rurera-tasks-btn-outline {
     border: 1px solid var(--primary);
     color: var(--primary);
     background: #fff;
 }
 .rurera-tasks-close-btn {
     min-width: auto;
-    font-size: 1.5rem;
-    height: 42.8px;
-    padding: 0 15px;
+    padding: 5px 10px;
     border: none;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    font-size: .875rem;
+    justify-content: space-between;
+    width: 100%;
 }
 .rurera-tasks-actions-dropdown {
     position: relative;
