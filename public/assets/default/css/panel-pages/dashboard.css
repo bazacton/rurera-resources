@@ -449,6 +449,7 @@ Left SideBar-menu End
     padding: 0;
     border-radius: 3px;
     display: none;
+    transition: none;
 }
 .rurera-tasks-actions-dropdown .dropdown-menu.show {
     display: block;
