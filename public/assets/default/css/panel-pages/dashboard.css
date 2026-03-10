@@ -447,6 +447,10 @@ Left SideBar-menu End
     opacity: 1;
     padding: 0;
     border-radius: 3px;
+    display: none;
+}
+.rurera-tasks-actions-dropdown .dropdown-menu.show {
+    display: block;
 }
 .dropdown-toggle img {
     filter: invert(35%) sepia(100%) saturate(842%) hue-rotate(210deg) brightness(101%) contrast(116%);
