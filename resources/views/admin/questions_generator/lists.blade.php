@@ -373,7 +373,7 @@
                                             <td class="text-left" data-id="generated_questions">{{ $QuestionsBulkListObj->generated_questions }} / {{ $QuestionsBulkListObj->waiting_questions }} / {{ $QuestionsBulkListObj->rejected_questions }}</td>
                                             <td class="text-left" data-id="user">{{ $QuestionsBulkListObj->user->get_full_name() }}</td>
                                             <td class="text-left" data-id="created_at">{{ dateTimeFormat($QuestionsBulkListObj->created_at, 'j M y | H:i') }}</td>
-                                            <td data-id="action">
+                                            <td data-id="action test@@">
                                                 @can('admin_topic_parts_edit')
                                                     @if($QuestionsBulkListObj->status == 'active')
 
