@@ -325,7 +325,7 @@ Here is the question to review:
 
                                                                     <div class="modal-buttons">
                                                                         <button type="button" class="open-in-chatgpt">Open in ChatGPT</button>
-                                                                        <button onclick="closeModal()">Cancel</button>
+                                                                        <button onclick="closeModal()" class="cancel-btn">Cancel</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
