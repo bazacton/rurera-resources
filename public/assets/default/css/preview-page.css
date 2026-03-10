@@ -209,6 +209,7 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     padding-top: 15px;
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .review-msg-control .btn {
     height: auto;
