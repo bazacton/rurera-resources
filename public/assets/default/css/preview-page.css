@@ -61,6 +61,9 @@ body:has(.quiz-time-bar) .question-right-side .prev-next-controls {
     user-select: none;
     pointer-events: none;
 }
+.promptModal .modal-dialog {
+    max-width: 700px;
+}
 .promptModal .promptEditor {
     height: 200px;
     border: 1px solid #ddd;
