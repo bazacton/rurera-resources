@@ -168,8 +168,8 @@
                                             </span>
 
                                             <span class="analytics-cions-earned">
-                                                <img src="/assets/default/img/sidebar/all.svg" alt="coins">
-                                                <span>{{isset($resultSessionArray['smart_code_label'])? $resultSessionArray['smart_code_label'] : ''}}</span>
+
+                                                <span>&nbsp;</span>
                                             </span>
                                         </div>
 
