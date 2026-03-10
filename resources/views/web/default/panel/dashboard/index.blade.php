@@ -54,7 +54,7 @@
             <div class="col-md-5 rurera-tasks-row-right">
                 <div class="rurera-tasks-actions font-14">
                     <button class="rurera-tasks-btn rurera-tasks-btn-outline">Download</button>
-                    <div class="rurera-tasks-actions-dropdown">
+                    <div class="rurera-tasks-actions-dropdown dropdown">
                         <button type="button"
                             class="dropdown-toggle"
                             id="rurera-tasks-dropdown"
