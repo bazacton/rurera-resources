@@ -2068,5 +2068,12 @@
                 });
             });
             </script>
+            <script>
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip({
+                        trigger: 'hover'
+                    });
+                });
+            </script>
 
     @endpush
