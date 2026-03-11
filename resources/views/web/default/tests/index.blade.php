@@ -65,7 +65,7 @@
                                 </ul>
                             </div>
                             <!-- Test List Filters End -->
-                            
+
                         </div>
                     </div>
                 </form>
@@ -87,7 +87,126 @@
 
                     </tbody>
                 </table>
+
+
+
+
             </div>
+
+
+            <div class="rurera-test-pack-container">
+                <!-- First Test Pack -->
+                <div class="rurera-test-pack">
+                    <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 01</h3>
+                    <p class="rurera-test-description font-14">Complete mock test</p>
+
+                    <div class="rurera-test-info">
+            <span class="rurera-icon-location">
+                <img src="/assets/icons/location-icon.svg" alt="Location Icon" height="16" width="16">
+            </span>Bexley
+                        <span>Ages 10-11</span>
+                        <span class="rurera-icon-time">
+                <img src="/assets/icons/time-icon.svg" alt="Time Icon" height="16" width="16">
+            </span>1h 40m
+                        <span>Qs. 125</span>
+                    </div>
+
+                    <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
+
+                    <p class="rurera-test-inclusions-title font-14">What's included:</p>
+                    <p class="rurera-test-subjects">
+            <span class="rurera-subject-icon">
+                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English & Verbal Reasoning" height="32" width="32">
+            </span>1 x English &amp; Verbal Reasoning paper
+                    </p>
+
+                    <p class="rurera-test-subjects">
+            <span class="rurera-subject-icon">
+                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning & Maths" height="32" width="32">
+            </span>1 x Non-Verbal Reasoning &amp; Maths paper
+                    </p>
+
+                    <div class="rurera-test-price">
+                        <p class="rurera-test-price-value font-16">£20.00</p>
+                        <button type="button" class="rurera-button-add-to-cart btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+
+                <!-- Second Test Pack -->
+                <div class="rurera-test-pack">
+                    <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 02</h3>
+                    <p class="rurera-test-description font-14">Complete mock test</p>
+
+                    <div class="rurera-test-info">
+            <span class="rurera-icon-location">
+                <img src="/assets/icons/location-icon.svg" alt="Location Icon" height="16" width="16">
+            </span>Bexley
+                        <span>Ages 10-11</span>
+                        <span class="rurera-icon-time">
+                <img src="/assets/icons/time-icon.svg" alt="Time Icon" height="16" width="16">
+            </span>1h 45m
+                        <span>Qs. 130</span>
+                    </div>
+
+                    <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
+
+                    <p class="rurera-test-inclusions-title font-14">What's included:</p>
+                    <p class="rurera-test-subjects">
+            <span class="rurera-subject-icon">
+                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English & Verbal Reasoning" height="32" width="32">
+            </span>1 x English &amp; Verbal Reasoning paper
+                    </p>
+
+                    <p class="rurera-test-subjects">
+            <span class="rurera-subject-icon">
+                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning & Maths" height="32" width="32">
+            </span>1 x Non-Verbal Reasoning &amp; Maths paper
+                    </p>
+
+                    <div class="rurera-test-price">
+                        <p class="rurera-test-price-value font-16">£22.00</p>
+                        <button type="button" class="rurera-button-add-to-cart btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+
+                <!-- Third Test Pack -->
+                <div class="rurera-test-pack">
+                    <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 03</h3>
+                    <p class="rurera-test-description font-14">Complete mock test</p>
+
+                    <div class="rurera-test-info">
+            <span class="rurera-icon-location">
+                <img src="/assets/icons/location-icon.svg" alt="Location Icon" height="16" width="16">
+            </span>Bexley
+                        <span>Ages 10-11</span>
+                        <span class="rurera-icon-time">
+                <img src="/assets/icons/time-icon.svg" alt="Time Icon" height="16" width="16">
+            </span>1h 30m
+                        <span>Qs. 120</span>
+                    </div>
+
+                    <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
+
+                    <p class="rurera-test-inclusions-title font-14">What's included:</p>
+                    <p class="rurera-test-subjects">
+            <span class="rurera-subject-icon">
+                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English & Verbal Reasoning" height="32" width="32">
+            </span>1 x English &amp; Verbal Reasoning paper
+                    </p>
+
+                    <p class="rurera-test-subjects">
+            <span class="rurera-subject-icon">
+                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning & Maths" height="32" width="32">
+            </span>1 x Non-Verbal Reasoning &amp; Maths paper
+                    </p>
+
+                    <div class="rurera-test-price">
+                        <p class="rurera-test-price-value font-16">£19.00</p>
+                        <button type="button" class="rurera-button-add-to-cart btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Sats Listings End -->
         </div>
 
