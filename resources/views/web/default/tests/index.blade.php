@@ -39,7 +39,7 @@
         </div>
         <div class="col-12">
             <!-- Listing Search Start -->
-            <div class="listing-search lms-jobs-form mb-0">
+            <div class="listing-search lms-jobs-form mb-0 panel-border bg-white rounded-sm">
                 <form>
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-12 col-md-12">
@@ -70,7 +70,7 @@
             </div>
             <!-- Listing Search End -->
             <!-- Total-Tests Counter Start -->
-            <h3 class="total-tests has-border font-16 font-weight-bold">Total Tests: {{$sats->count()}}</h3>
+            <h3 class="total-tests font-16 font-weight-bold">Total Tests: {{$sats->count()}}</h3>
             <!-- Total-Tests Counter Start -->
         </div>
         <div class="col-12 col-lg-12 col-md-12">
