@@ -784,7 +784,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 Now is a great time to check your answers and to try to answer the
                 following questions that you've skipped:
             </p>
-            ${buttonsHTML}
+            <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
+                ${buttonsHTML}
+            </div>
 
             `;
         if ($next.length > 0) {
