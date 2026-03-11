@@ -57,6 +57,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                         $questions_layout = isset($questions_section_data['questions'])? $questions_section_data['questions'] : (object) array();
                                         $section_time = isset($section_data->time)? $section_data->time : 0;
+                                        $section_name = isset($section_data->name)? $section_data->name : '';
                                         $section_time = ($section_time*60);
                                         $start_time = isset($section_data->start_time)? $section_data->start_time : 0;
                                         $section_practice_time = $section_time;
@@ -157,7 +158,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                         $active_question = true;
                                                                     }
                                                                     @endphp
-                                                                    <div class="1111 rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
+                                                                Section: {{$section_name}}
+                                                                    <div class=" rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
                                                                          data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
                                                                          data-start_time="0" data-qresult="{{isset( $question_result_id )? $question_result_id : 0}}"
                                                                          data-question_no="{{$question_counter}}"
