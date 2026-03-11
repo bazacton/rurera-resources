@@ -575,7 +575,7 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                                             <span>Daniel Harper</span>
                                                             <div class="books-progress-holder">
                                                                 <div class="progress">
-                                                                    <div class="progress-green w_75"></div>
+                                                                    <div class="progress-green w_25"></div>
                                                                 </div>
                                                                 <div class="book-pages">329/763</div>
                                                             </div>
@@ -592,7 +592,7 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                                             <span>Sophia Bennett</span>
                                                             <div class="books-progress-holder">
                                                                 <div class="progress">
-                                                                    <div class="progress-green w_75"></div>
+                                                                    <div class="progress-green w_40"></div>
                                                                 </div>
                                                                 <div class="book-pages">329/763</div>
                                                             </div>
