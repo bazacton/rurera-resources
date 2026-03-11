@@ -11,6 +11,10 @@ Sub Pages Style
     top: 50%;
     margin-top: -10px;
     margin-left: 10px;
+    filter: invert(69%) sepia(0%) saturate(61%) hue-rotate(213deg) brightness(88%) contrast(90%);
+}
+.listing-search .input-field:has(input:focus) img {
+    filter: none;
 }
 .listing-search .has-border {padding: 0; }
 .sats-listing-card {border-radius: 10px; padding: 20px; margin-bottom: 30px; }
