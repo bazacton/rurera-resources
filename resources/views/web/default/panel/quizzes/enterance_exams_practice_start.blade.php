@@ -702,9 +702,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".quiz-section-data.active").find('.quiz-pagination li[data-question_id="'+question_id+'"]').addClass('active');
 
         if ($next.length > 0) {
-            $(".question-next-btn").html('Next');
+            $(".question-submit-btn").html('Next');
         }else{
-            $(".question-next-btn").html('Finish');
+            $(".question-submit-btn").html('Finish');
         }
 
         if ($prev.length > 0) {
@@ -732,9 +732,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         const $prev = $active.prev('.rurera-question-block');
 
         if ($next.length > 0) {
-            $(".question-next-btn").html('Next');
+            $(".question-submit-btn").html('Next');
         }else{
-            $(".question-next-btn").html('Finish');
+            $(".question-submit-btn").html('Finish');
         }
 
         if ($prev.length > 0) {
