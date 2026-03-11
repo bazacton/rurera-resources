@@ -24,6 +24,7 @@
                         <div class="search-input bg-white">
                             <form action="/books" method="get">
                                 <div class="form-group d-flex align-items-center m-0 rounded-sm">
+                                    <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
                                     <input type="text" name="search" class="form-control border-0 font-14" value="{{ request()->get('search','') }}" placeholder="Search by Author, Title, or Keyword"/>
                                     <button type="submit" class="btn btn-primary rounded-pill">{{ trans('home.find') }}</button>
                                 </div>
