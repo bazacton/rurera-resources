@@ -36,6 +36,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         display: inline-block;
         margin-bottom: 25px;
     }
+    .disabled-div {
+        pointer-events: none;
+    }
     .question-palette::after {
         content: '';
         position: absolute;
@@ -492,7 +495,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             var pendingQuestions = $(".quiz-section-data.active")
                 .find('.quiz-pagination li')
-                .not('.correct, .incorrect');
+                .not('.correct, .attempted');
 
 
             var question_ids = [];
@@ -637,6 +640,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
     function afterQuestionValidation(return_data, thisForm, question_id, thisBlock) {
         var question_status_class = (return_data.incorrect_flag == true) ? 'incorrect' : 'correct';
+        question_status_class = 'attempted';
         $(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").addClass(question_status_class);
         var notifications_settings_show_message = $(".show-notifications").attr('data-show_message');
 
@@ -731,7 +735,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     function afterContinue(){
         var firstPending = $(".quiz-section-data.active")
             .find('.quiz-pagination li')
-            .not('.correct, .incorrect')
+            .not('.correct, .attempted')
             .first();
         firstPending.click();
         afterPrevQuestion();
@@ -747,17 +751,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".quiz-section-data.active").find('.quiz-pagination li[data-question_id="'+question_id+'"]').addClass('active');
 
         if ($next.length > 0) {
-            $(".question-next-btn").removeClass('rurera-hide')
-            $(".question-next-btn").html('Skip');
+            $(".question-next-btn").removeClass('disabled-div');
         }else{
-            $(".question-next-btn").addClass('rurera-hide')
-            $(".question-next-btn").html('Skip');
+            $(".question-next-btn").addClass('disabled-div');
         }
 
         if ($prev.length > 0) {
-            $(".prev-btn").removeClass('rurera-hide');
+            $(".prev-btn").removeClass('disabled-div');
         }else{
-            $(".prev-btn").addClass('rurera-hide');
+            $(".prev-btn").addClass('disabled-div');
         }
     }
     function afterNextQuestion(){
@@ -779,17 +781,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         const $prev = $active.prev('.rurera-question-block');
 
         if ($next.length > 0) {
-            $(".question-next-btn").removeClass('rurera-hide')
-            $(".question-next-btn").html('Skip');
+            $(".question-next-btn").removeClass('disabled-div');
         }else{
-            $(".question-next-btn").addClass('rurera-hide')
-            $(".question-next-btn").html('Skip');
+            $(".question-next-btn").addClass('disabled-div');
         }
 
         if ($prev.length > 0) {
-            $(".prev-btn").removeClass('rurera-hide');
+            $(".prev-btn").removeClass('disabled-div');
         }else{
-            $(".prev-btn").addClass('rurera-hide');
+            $(".prev-btn").addClass('disabled-div');
         }
     }
 
@@ -818,7 +818,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         var pendingQuestions = $(".quiz-section-data.active")
             .find('.quiz-pagination li')
-            .not('.correct, .incorrect');
+            .not('.correct, .attempted');
 
         var buttonsHTML = '<div class="d-flex justify-content-center gap-3 mb-5">';
 
