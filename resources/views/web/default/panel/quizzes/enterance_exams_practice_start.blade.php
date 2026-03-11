@@ -479,6 +479,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     var active_section_id = '{{$active_section_id}}';
 
 
+    if(active_section_id != '' && active_section_id != 0){
+        $('.quiz-section-data[data-section_id="'+active_section_id+'"]').find('.section-start-quiz').click();
+    }
     alert(active_section_id);
     function quiz_default_functions() {
 
