@@ -57,6 +57,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                         $questions_layout = isset($questions_section_data['questions'])? $questions_section_data['questions'] : (object) array();
                                         $section_time = isset($section_data->time)? $section_data->time : 0;
+                                        $section_name = isset($section_data->name)? $section_data->name : '';
                                         $section_time = ($section_time*60);
                                         $start_time = isset($section_data->start_time)? $section_data->start_time : 0;
                                         $section_practice_time = $section_time;
@@ -145,6 +146,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                                     <div class="left-content has-bg">
                                                         <div class="questions-lists-block">
+                                                            Section: {{$section_name}}
                                                             @if( !empty( $questions_layout  ) )
                                                                 @php $question_counter  = 1; @endphp
                                                                 @foreach( $questions_layout as $result_question_id => $questionLayout)
@@ -157,7 +159,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                         $active_question = true;
                                                                     }
                                                                     @endphp
-                                                                    <div class="1111 rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
+
+                                                                    <div class=" rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
                                                                          data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
                                                                          data-start_time="0" data-qresult="{{isset( $question_result_id )? $question_result_id : 0}}"
                                                                          data-question_no="{{$question_counter}}"
@@ -679,6 +682,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         const $next = $active.next('.rurera-question-block');
         const $prev = $active.prev('.rurera-question-block');
 
+        var question_id = $(".quiz-section-data.active").find(".rurera-question-block.active").attr('data-qresult');
+        $(".quiz-section-data.active").find(".quiz-pagination li").removeClass('active');
+        $(".quiz-section-data.active").find('.quiz-pagination li[data-question_id="'+question_id+'"]').addClass('active');
+
         if ($next.length > 0) {
             $(".question-next-btn").html('Next');
         }else{
@@ -698,6 +705,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".quiz-section-data.active").find(".quiz-timer-counter").attr('data-time_counter', timer_counter);
             quiz_default_functions();
         }
+
+        var question_id = $(".quiz-section-data.active").find(".rurera-question-block.active").attr('data-qresult');
+        $(".quiz-section-data.active").find(".quiz-pagination li").removeClass('active');
+        $(".quiz-section-data.active").find('.quiz-pagination li[data-question_id="'+question_id+'"]').addClass('active');
+
 
 
         const $active = $('.rurera-question-block.active');
