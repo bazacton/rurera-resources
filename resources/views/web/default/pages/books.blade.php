@@ -267,4 +267,22 @@
     },100);
     goTo(0);  
     </script>
+    <script>
+        const input = document.getElementById("searchTests");
+        const clearBtn = document.getElementById("clearSearch");
+
+        input.addEventListener("input", function () {
+            if (this.value.length > 0) {
+                clearBtn.style.display = "block";
+            } else {
+                clearBtn.style.display = "none";
+            }
+        });
+
+        clearBtn.addEventListener("click", function () {
+            input.value = "";
+            clearBtn.style.display = "none";
+            input.focus();
+        });
+    </script>
 @endpush
