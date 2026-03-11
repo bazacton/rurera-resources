@@ -45,6 +45,7 @@
                         <div class="col-12 col-lg-12 col-md-12">
                             <div class="form-group">
                                 <div class="input-field">
+                                    <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
                                     <input type="text" class="search-tests" placeholder="Test Keyword">
                                 </div>
                             </div>
