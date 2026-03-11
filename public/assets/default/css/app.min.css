@@ -9892,7 +9892,6 @@ body .flipbook-data {
   max-width: 100%;
   position: initial;
   position: initial;
-  object-fit: cover;
 }
 .gallery-sub-header .masonry-grid figure img.has-shadow-x {
   box-shadow: 0 2px 2px rgb(0 0 0 / 0.4);
