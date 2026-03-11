@@ -674,6 +674,23 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         //$('#ne0xt-btn')[0].click();
     }
 
+    function afterPrevQuestion(){
+        const $active = $('.rurera-question-block.active');
+        const $next = $active.next('.rurera-question-block');
+        const $prev = $active.prev('.rurera-question-block');
+
+        if ($next.length > 0) {
+            $(".question-next-btn").html('Next');
+        }else{
+            $(".question-next-btn").html('Finish');
+        }
+
+        if ($prev.length > 0) {
+            $(".prev-btn").removeClass('rurera-hide');
+        }else{
+            $(".prev-btn").addClass('rurera-hide');
+        }
+    }
     function afterNextQuestion(){
         focusIntervalCount = 240;
         focusInterval = null;
@@ -685,11 +702,18 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         const $active = $('.rurera-question-block.active');
         const $next = $active.next('.rurera-question-block');
+        const $prev = $active.prev('.rurera-question-block');
 
         if ($next.length > 0) {
             $(".question-next-btn").html('Next');
         }else{
             $(".question-next-btn").html('Finish');
+        }
+
+        if ($prev.length > 0) {
+            $(".prev-btn").removeClass('rurera-hide');
+        }else{
+            $(".prev-btn").addClass('rurera-hide');
         }
     }
 
