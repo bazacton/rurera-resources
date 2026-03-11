@@ -9,7 +9,7 @@ Sub Pages Style
     align-items: center;
     gap: 15px;
 }
-.search-block .search-input .input-field {border: 1px solid #ddd; padding: 10px 20px 10px 15px; width: calc(100% - 140px);}
+.search-block .search-input .input-field {border: 1px solid #ddd; padding: 10px 20px 10px 15px; width: calc(100% - 140px); height: 44px;}
 .search-block .search-input .form-group .btn {background-color: var(--primary); height: 42px; padding: 0 40px; box-shadow: none; border-color: var(--primary); }
 .search-block .search-input {border-radius: 15px; background-color: #DFE6EE; }
 .search-block .search-input .form-group:has(input:focus) .search-input {
@@ -29,7 +29,7 @@ Sub Pages Style
     cursor: pointer;
     display: none;
 }
-.search-block .search-input input[type=text] {height: auto; padding: 0.3rem 1rem 0.3rem 0.3rem; background-color: inherit;}
+.search-block .search-input input[type=text] {height: auto; padding: 0 1rem 0 0.3rem; background-color: inherit;}
 .search-block .icon-box img {filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(187deg) brightness(87%) contrast(83%);}
 .lms-library-slider {margin-top: -200px; padding-bottom: 70px;}
 .lms-library-slider figure img {border-radius: 14px; max-width: 100%; transition: all .5s; width: 227px;}
