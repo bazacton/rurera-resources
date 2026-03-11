@@ -546,21 +546,22 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                                         @endforeach
                                                     </ul>
                                                 </div>
+                                                <div class="books-feature-listings">
+                                                    <div class="books-feature-listing-item">
+                                                        <div class="img-holder">
+                                                            <img src="/store/1/books/book-cover-image/Hide-and-Seek.jpg" alt="" area-hidden="true" height="182" width="137">
+                                                        </div>
+                                                        <div class="text-holder">
+                                                            <h43 class="font-14 font-weight-bold text-dark-charcoal mb-5">
+                                                                <a href="/books/hide-and-seek" class="">Hide And Seek</a>
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             @endif
                                         @endif
                                     @endif
-                                    <div class="books-feature-listings">
-                                        <div class="books-feature-listing-item">
-                                            <div class="img-holder">
-                                                <img src="/store/1/books/book-cover-image/Hide-and-Seek.jpg" alt="" area-hidden="true" height="182" width="137">
-                                            </div>
-                                            <div class="text-holder">
-                                                <h43 class="font-14 font-weight-bold text-dark-charcoal mb-5">
-                                                    <a href="/books/hide-and-seek" class="">Hide And Seek</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
 
                                 @if(!request()->is('panel') && !request()->is('panel/setting') && !request()->is('panel/rewards') && !request()->is('panel/marketing/affiliates') && !request()->is('panel/store/purchases') && !request()->is('panel/notifications') && !request()->is('panel/support/tickets'))
 
