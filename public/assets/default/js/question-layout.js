@@ -748,7 +748,7 @@ function init_question_functions() {
             $active.removeClass('active');
             $prev.addClass('active');
 
-            $(this).addClass('rurera-hide');
+            //$(this).addClass('rurera-hide');
             $('.question-submit-btn').removeClass('rurera-hide');
 
             if (typeof afterPrevQuestion === "function") {
