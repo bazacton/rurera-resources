@@ -684,6 +684,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             .not('.correct, .incorrect')
             .first();
         firstPending.click();
+        afterPrevQuestion();
     }
 
     function afterPrevQuestion(){
