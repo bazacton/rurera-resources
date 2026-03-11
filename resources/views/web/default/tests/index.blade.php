@@ -62,6 +62,8 @@
                                     <li data-type="iseb"><img src="/assets/default/img/assignment-logo/iseb.png" alt="iseb"> ISEB</li>
                                     <li data-type="cat4"><img src="/assets/default/img/assignment-logo/cat4.png" alt="cat4"> CAT 4</li>
                                     <li data-type="independent_exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt="independent_exams"> Independent Exams</li>
+                                    <li data-type="progress_test"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt="progress_test"> Progress Test</li>
+
                                 </ul>
                             </div>
                             <!-- Test List Filters End -->
