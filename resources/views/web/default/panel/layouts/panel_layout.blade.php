@@ -615,6 +615,9 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="show-cards-btn-holder">
+                                                        <button type="button" class="show-cards-btn">Show More 1 card</button>
+                                                    </div>
                                                 </div>
                                             @endif
                                         @endif
@@ -1389,6 +1392,72 @@ function makeStatisticsChart(canvasId, chartVar, label, labels, data) {
 
     });
 </script>
+<script>
 
+    document.addEventListener("DOMContentLoaded", function(){
+
+    const cards = document.querySelectorAll(".books-card");
+    const btn = document.querySelector(".show-cards-btn");
+
+    const initialVisible = 3;
+    const step = 1;
+
+    let visible = initialVisible;
+
+    function updateCards(){
+
+    cards.forEach((card,index)=>{
+
+    if(index < visible){
+    card.classList.remove("hide");
+    card.classList.add("slide-show");
+    }else{
+    card.classList.add("hide");
+    }
+
+    });
+
+    updateButton();
+
+    }
+
+    function updateButton(){
+
+    if(visible >= cards.length){
+    btn.textContent = "Show Less";
+    }else{
+    let remaining = cards.length - visible;
+    let next = remaining >= step ? step : remaining;
+
+    btn.textContent = `Show ${next} More Card${next>1?"s":""}`;
+    }
+
+    }
+
+    btn.addEventListener("click", function(){
+
+    if(visible >= cards.length){
+
+    visible = initialVisible;
+    window.scrollTo({
+    top: document.querySelector(".books-feature-listings").offsetTop - 100,
+    behavior:"smooth"
+    });
+
+    }else{
+
+    visible += step;
+
+    }
+
+    updateCards();
+
+    });
+
+    updateCards();
+
+});
+
+</script>
 </body>
 </html>
