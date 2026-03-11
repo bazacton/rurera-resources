@@ -13,6 +13,29 @@
         <h2 class="mt-0 mb-10 font-22">Spelling word lists</h2>
         <p class="font-14">Strengthen your vocabulary with curated word lists tailored to different levels. Learn meanings, usage, and improve retention through regular practice.</p>
     </div>
+    <div class="ru-search-block">
+        <div class="top-search-form panel-border bg-white rounded-sm p-25">
+            <div class="ru-search-input">
+                <form action="" method="get">
+                    <div class="form-group d-flex align-items-center m-0 mb-25 rounded-sm">
+                        <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
+                        <input type="text" name="search" id="search-input" class="form-control border-0 font-14" value="" placeholder="Search.."/>
+                        <span class="search-clear" id="clearSearch">&times;</span>
+                    </div>
+                    <div class="tests-list-holder">
+                        <ul class="tests-list">
+                            <li class="active">Fiction</li>
+                            <li>Non-Fiction</li>
+                            <li>Story</li>
+                            <li>Mystery</li>
+                            <li>Fantasy</li>
+                            <li>Adventure</li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- Listing Search Start -->
     <div class="listing-search lms-jobs-form mb-20">
         <button type="button"
