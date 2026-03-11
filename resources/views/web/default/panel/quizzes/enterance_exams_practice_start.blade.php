@@ -746,9 +746,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         var current_section_id = $active.attr('data-section_id');
         const $next = $active.next('.quiz-section-data');
         var total_questions = $('.quiz-pagination ul[data-section_id="'+current_section_id+'"] li').length;
-        console.log(total_questions);
-        console.log(correct_questions);
-        console.log(incorrect_questions);
         var section_move_html =
             'Total Questions: ' + total_questions + '<br>' +
             'Correct Questions: ' + correct_questions + '<br>' +
@@ -756,6 +753,20 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             'Pending Questions: ' + (total_questions - (correct_questions + incorrect_questions)) + '<br>' +
             'You still have: ' + getTimeStr(quiz_timer_remaining) + ' remaining';
 
+        var pendingQuestions = $(".quiz-section-data.active")
+            .find('.quiz-pagination li')
+            .not('.correct, .incorrect');
+
+        var buttonsHTML = '<div class="d-flex justify-content-center gap-3 mb-5">';
+
+        pendingQuestions.each(function () {
+            var questionId = $(this).data('question_id');
+            var questionNumber = $(this).find('a').text().trim();
+
+            buttonsHTML += '<button type="button" data-question_id="' + questionId + '" class="btn btn-outline-primary px-3">' + questionNumber + '</button>';
+        });
+
+        buttonsHTML += '</div>';
 
         var section_move_html = `
 
@@ -773,6 +784,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 Now is a great time to check your answers and to try to answer the
                 following questions that you've skipped:
             </p>
+            ${buttonsHTML}
 
             `;
         if ($next.length > 0) {
