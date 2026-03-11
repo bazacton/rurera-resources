@@ -63,14 +63,15 @@
                                 </ul>
                             </div>
                             <!-- Test List Filters End -->
-                                <!-- Total-Tests Counter Start -->
-                            <h3 class="total-tests has-border font-16 font-weight-bold">Total Tests: {{$sats->count()}}</h3>
-                            <!-- Total-Tests Counter Start -->
+                            
                         </div>
                     </div>
                 </form>
             </div>
             <!-- Listing Search End -->
+            <!-- Total-Tests Counter Start -->
+            <h3 class="total-tests has-border font-16 font-weight-bold">Total Tests: {{$sats->count()}}</h3>
+            <!-- Total-Tests Counter Start -->
         </div>
         <div class="col-12 col-lg-12 col-md-12">
             <!-- Sats Listings Start -->
