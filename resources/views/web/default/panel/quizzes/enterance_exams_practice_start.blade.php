@@ -84,6 +84,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 $question_result_id = isset($result_question_ids[$result_question_id])? $result_question_ids[$result_question_id] : 0;
                                                             $active_class = ($active_question_id == $active_actual_question_id)? '' : '';
                                                             $active_class = ($active_class == '' && $question_count == 1)? 'active' : '';
+                                                            $question_status = 'waiting';
                                                             $is_flagged = false;
                                                             @endphp
                                                             <li data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="swiper-slide {{$active_class}} {{ ( $is_flagged == true)?
@@ -677,6 +678,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         //$('#ne0xt-btn')[0].click();
     }
 
+    function afterContinue(){
+        var firstPending = $(".quiz-section-data.active")
+            .find('.quiz-pagination li')
+            .not('.correct, .incorrect')
+            .first();
+        firstPending.click();
+    }
+
     function afterPrevQuestion(){
         const $active = $('.rurera-question-block.active');
         const $next = $active.next('.rurera-question-block');
@@ -737,9 +746,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         var current_section_id = $active.attr('data-section_id');
         const $next = $active.next('.quiz-section-data');
         var total_questions = $('.quiz-pagination ul[data-section_id="'+current_section_id+'"] li').length;
-        console.log(total_questions);
-        console.log(correct_questions);
-        console.log(incorrect_questions);
         var section_move_html =
             'Total Questions: ' + total_questions + '<br>' +
             'Correct Questions: ' + correct_questions + '<br>' +
@@ -747,6 +753,20 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             'Pending Questions: ' + (total_questions - (correct_questions + incorrect_questions)) + '<br>' +
             'You still have: ' + getTimeStr(quiz_timer_remaining) + ' remaining';
 
+        var pendingQuestions = $(".quiz-section-data.active")
+            .find('.quiz-pagination li')
+            .not('.correct, .incorrect');
+
+        var buttonsHTML = '<div class="d-flex justify-content-center gap-3 mb-5">';
+
+        pendingQuestions.each(function () {
+            var questionId = $(this).data('question_id');
+            var questionNumber = $(this).find('a').text().trim();
+
+            buttonsHTML += '<button type="button" data-question_id="' + questionId + '" class="btn btn-outline-primary px-3">' + questionNumber + '</button>';
+        });
+
+        buttonsHTML += '</div>';
 
         var section_move_html = `
 
@@ -764,6 +784,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 Now is a great time to check your answers and to try to answer the
                 following questions that you've skipped:
             </p>
+            <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
+                ${buttonsHTML}
+            </div>
 
             `;
         if ($next.length > 0) {
@@ -778,6 +801,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
 
     }
+
+
+
     function getTimeStr(secondsString) {
         var h = Math.floor(secondsString / 3600); //Get whole hours
         secondsString -= h * 3600;
