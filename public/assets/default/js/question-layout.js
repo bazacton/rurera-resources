@@ -715,8 +715,8 @@ function init_question_functions() {
             $next.addClass('active');
 
             $(this).addClass('rurera-hide');
-            $('.question-next-btn').addClass('rurera-hide');
-            $('.question-submit-btn').removeClass('rurera-hide');
+            //$('.question-next-btn').addClass('rurera-hide');
+            //$('.question-submit-btn').removeClass('rurera-hide');
 
             rurera_question_timer('.rurera-question-block.active', 'seconds');
 
