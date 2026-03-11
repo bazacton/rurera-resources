@@ -681,6 +681,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         const $next = $active.next('.rurera-question-block');
         const $prev = $active.prev('.rurera-question-block');
 
+        var question_id = $(".quiz-section-data.active").find(".rurera-question-block.active").attr('data-qresult');
+        $(".quiz-section-data.active").find(".quiz-pagination li").removeClass('active');
+        $(".quiz-section-data.active").find('.quiz-pagination li[data-question_id="'+question_id+'"]').addClass('active');
+
         if ($next.length > 0) {
             $(".question-next-btn").html('Next');
         }else{
