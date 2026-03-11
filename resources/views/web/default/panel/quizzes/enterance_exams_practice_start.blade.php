@@ -681,11 +681,20 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".quiz-section-data.active").find(".quiz-timer-counter").attr('data-time_counter', timer_counter);
             quiz_default_functions();
         }
+
+
+        const $active = $('.rurera-question-block.active');
+        const $next = $active.next('.rurera-question-block');
+
+        if ($next.length > 0) {
+            $(".question-next-btn").html('Next');
+        }else{
+            $(".question-next-btn").html('Finish');
+        }
     }
 
 
     function afterNoNextQuestion(){
-        console.log('afterNoNextQuestionafterNoNextQuestionafterNoNextQuestion');
         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
 
         var quiz_timer_remaining = $active.find('.quiz-timer-counter').attr('data-time_counter');
@@ -996,5 +1005,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     $('[data-toggle="tooltip"]').tooltip({
         container: '.report-btn'
     });
+
+
 
 </script>
