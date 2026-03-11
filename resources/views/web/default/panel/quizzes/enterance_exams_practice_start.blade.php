@@ -214,9 +214,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
                                                             <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
-                                                                mark answer
+                                                                Next
                                                             </a>
-                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1">
+                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
                                                                 Next
                                                             </a>
                                                         </div>
