@@ -197,7 +197,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                     data-toggle2="modal">
                                                                 Report
                                                             </button>
-                                                            <a href="javascript:;" id="next-btn" class="rurera-hide1 next-btn">
+                                                            <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
                                                                 Next
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
@@ -208,7 +208,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                             <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
                                                                 mark answer
                                                             </a>
-                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
+                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1">
                                                                 Next
                                                             </a>
                                                         </div>
