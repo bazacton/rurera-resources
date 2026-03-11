@@ -701,6 +701,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             quiz_default_functions();
         }
 
+        var question_id = $(".quiz-section-data.active").find(".rurera-question-block.active").attr('data-qresult');
+        $(".quiz-section-data.active").find(".quiz-pagination li").removeClass('active');
+        $(".quiz-section-data.active").find('.quiz-pagination li[data-question_id="'+question_id+'"]').addClass('active');
+
+
 
         const $active = $('.rurera-question-block.active');
         const $next = $active.next('.rurera-question-block');
