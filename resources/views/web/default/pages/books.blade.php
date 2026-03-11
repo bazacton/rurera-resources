@@ -198,42 +198,37 @@
         initSwiper();
       }
 
-      function initSwiper(){
+     function initSwiper(){
         if(swiper){ swiper.destroy(true, true); }
 
         swiper = new Swiper('#bookSwiper', {
             slidesPerView: 3,
-            slidesPerGroup: 3,
+            slidesPerGroup: 1,
             spaceBetween: 16,
             freeMode: true,
             grabCursor: true,
 
-            initialSlide: 1,
+            initialSlide: 1, // slider Book2 se start karega
 
             navigation: { nextEl: '#btnNext', prevEl: '#btnPrev' },
-            pagination: { el: '#dots', clickable: true }
-        });
+            pagination: { el: '#dots', clickable: true },
 
-        swiper.on('slideChange', function(){
-            currentIndex = swiper.activeIndex - 1;
-
-            if(currentIndex < 0) currentIndex = 0;
-            if(currentIndex >= books.length) currentIndex = books.length - 1;
-
-            setActive(currentIndex);
-            updateArrows();
+            on:{
+                init:function(){
+                    this.slideTo(1,0); // force next slide
+                }
+            }
         });
     }
 
-      function goTo(i){
+    function goTo(i){
         if(i < 0 || i >= books.length) return;
 
         currentIndex = i;
         setActive(i);
 
-        // slider ko next slide se start karna hai
         if(swiper){
-            swiper.slideTo(i + 1, 0); 
+            swiper.slideTo(i + 1);
         }
     }
 
