@@ -46,8 +46,8 @@
                             <div class="form-group">
                                 <div class="input-field">
                                     <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
-                                    <span class="search-clear">&times;</span>
-                                    <input type="text" class="search-tests" placeholder="Test Keyword">
+                                    <span class="search-clear" id="clearSearch">&times;</span>
+                                    <input type="text" class="search-tests" id="searchTests" placeholder="Test Keyword">
                                 </div>
                             </div>
                         </div>
@@ -254,7 +254,22 @@
 
         });
     });
+    const input = document.getElementById("searchTests");
+    const clearBtn = document.getElementById("clearSearch");
 
+    input.addEventListener("input", function () {
+        if (this.value.length > 0) {
+            clearBtn.style.display = "block";
+        } else {
+            clearBtn.style.display = "none";
+        }
+    });
+
+    clearBtn.addEventListener("click", function () {
+        input.value = "";
+        clearBtn.style.display = "none";
+        input.focus();
+    });
 </script>
 @if (!auth()->subscription('sats'))
     <script>
