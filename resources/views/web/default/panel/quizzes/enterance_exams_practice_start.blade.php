@@ -739,6 +739,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
 
+    $(document).on('click', '.question-paging', function (e) {
+
+        var question_id = $(this).attr('data-question_id');
+        $(".quiz-section-data.active").find('.quiz-pagination li[data-question_id="'+question_id+'"]').click();
+        $(".swal2-popup").modal('hide');
+    });
+
     function afterNoNextQuestion(){
         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
 
@@ -763,7 +770,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             var questionId = $(this).data('question_id');
             var questionNumber = $(this).find('a').text().trim();
 
-            buttonsHTML += '<button type="button" data-question_id="' + questionId + '" class="btn btn-outline-primary px-3">' + questionNumber + '</button>';
+            buttonsHTML += '<button type="button" data-question_id="' + questionId + '" class="question-paging btn btn-outline-primary px-3">' + questionNumber + '</button>';
         });
 
         buttonsHTML += '</div>';
