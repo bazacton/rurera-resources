@@ -27,6 +27,16 @@
                                     <input type="text" name="search" class="form-control border-0 font-14" value="{{ request()->get('search','') }}" placeholder="Search by Author, Title, or Keyword"/>
                                     <button type="submit" class="btn btn-primary rounded-pill">{{ trans('home.find') }}</button>
                                 </div>
+                                <div class="tests-list-holder">
+                                    <ul class="tests-list">
+                                        <li>Fiction</li>
+                                        <li>Non-Fiction</li>
+                                        <li>Story</li>
+                                        <li>Mystery</li>
+                                        <li>Fantasy</li>
+                                        <li>Adventure</li>
+                                    </ul>
+                                </div>
                             </form>
                         </div>
                     </div>
