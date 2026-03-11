@@ -744,6 +744,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         var question_id = $(this).attr('data-question_id');
         $(".quiz-section-data.active").find('.quiz-pagination li[data-question_id="'+question_id+'"]').click();
         $(".swal2-close").click();
+        afterPrevQuestion();
     });
 
     function afterNoNextQuestion(){
