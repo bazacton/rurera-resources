@@ -46,6 +46,7 @@
                             <div class="form-group">
                                 <div class="input-field">
                                     <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
+                                    <span class="search-clear">&times;</span>
                                     <input type="text" class="search-tests" placeholder="Test Keyword">
                                 </div>
                             </div>
