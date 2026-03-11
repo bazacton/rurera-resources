@@ -207,6 +207,9 @@
             spaceBetween: 16,
             freeMode: true,
             grabCursor: true,
+
+            initialSlide: 1,
+
             navigation: { nextEl: '#btnNext', prevEl: '#btnPrev' },
             pagination: { el: '#dots', clickable: true }
         });
@@ -246,12 +249,14 @@
         el = document.getElementById('activeAudio'); if(el) el.textContent = b.audio;
         el = document.getElementById('activeProgress'); if(el) el.style.width = b.progress + '%';
         el = document.getElementById('btnRead'); if(el) el.setAttribute('href', '#');
-        Array.prototype.forEach.call(track.children, function(el, idx){
-          el.classList.toggle('active', idx === i);
+        Array.prototype.forEach.call(track.children, function(el){
+            el.classList.remove('active');
         });
       }
 
     renderTrack();
-    goTo(0);  
+    setTimeout(function(){
+        goTo(0);
+    },100); 
     </script>
 @endpush
