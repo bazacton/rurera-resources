@@ -375,31 +375,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 <!-- Report Modal Html End -->
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
-<div class="modal fade question_inactivity_modal" id="question_inactivity_modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="modal-box">
-        <span class="icon-box d-block mb-15">
-            <img src="/assets/default/img/clock-modal-img.png" alt="clock-modal-img">
-        </span>
-                    <h3 class="font-24 font-weight-normal mb-10">Are you still there?</h3>
-                    <p class="mb-15 font-16">
-                        You've been inactive for a while, and your session was paused. You can continue learning by using the following links
-                    </p>
-                    <ul class="activity-info">
-                        <li>Total Attempted Questions: <strong class="total-questions">10</strong></li>
-                        <li><span class="icon-box"></span> Correct: <strong class="correct-questions">1</strong></li>
-                        <li>Incorrect: <strong class="incorrect-questions">2</strong></li>
-                    </ul>
-                    <div class="inactivity-controls">
-                        <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">Continue Test</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
@@ -437,7 +412,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
     function quiz_default_functions() {
 
-        console.log('-----------quiz_default_functions------------');
         if( focusInterval == null) {
 
             focusInterval = setInterval(function () {
@@ -449,10 +423,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                     TimerActive = false;
                     timePaused = true;
                     var total_questions = $('.quiz-pagination li').length;
-                    $(".question_inactivity_modal .modal-body .total-questions").html(correct_questions+incorrect_questions);
-                    $(".question_inactivity_modal .modal-body .correct-questions").html(correct_questions);
-                    $(".question_inactivity_modal .modal-body .incorrect-questions").html(incorrect_questions);
-                    $(".question_inactivity_modal").modal('show');
                     focusIntervalCount = 240;
                     //clearInterval(focusInterval);
                     focusInterval = null;
