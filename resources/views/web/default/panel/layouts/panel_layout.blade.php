@@ -546,15 +546,22 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                                         @endforeach
                                                     </ul>
                                                 </div>
-                                                <div class="books-feature-listings">
-                                                    <div class="books-feature-listing-item">
+                                                <div class="books-feature-listings panel-border bg-white rounded-sm p-20">
+                                                    <div class="books-card">
                                                         <div class="img-holder">
                                                             <img src="/store/1/books/book-cover-image/Hide-and-Seek.jpg" alt="" area-hidden="true" height="182" width="137">
                                                         </div>
                                                         <div class="text-holder">
-                                                            <h43 class="font-14 font-weight-bold text-dark-charcoal mb-5">
-                                                                <a href="/books/hide-and-seek" class="">Hide And Seek</a>
-                                                            </h4>
+                                                            <h3 class="font-14 font-weight-bold text-dark-charcoal">
+                                                                <a href="/books/hide-and-seek" class="">Doing My Chores</a>
+                                                            </h3>
+                                                            <span>Emily Carter</span>
+                                                            <div class="books-progress-holder">
+                                                                <div class="progress">
+                                                                    <div class="progress-green w_75"></div>
+                                                                </div>
+                                                                <div class="book-pages">625/684</div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
