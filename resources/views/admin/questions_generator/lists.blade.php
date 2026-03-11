@@ -87,7 +87,7 @@
         /* Full-width, full-height modal (scoped via .mock-exam-modal class) */
         .mock-exam-modal:before {
             content: "";
-            position: fixed;
+            position: absolute;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, .4);
@@ -373,7 +373,7 @@
                                             <td class="text-left" data-id="generated_questions">{{ $QuestionsBulkListObj->generated_questions }} / {{ $QuestionsBulkListObj->waiting_questions }} / {{ $QuestionsBulkListObj->rejected_questions }}</td>
                                             <td class="text-left" data-id="user">{{ $QuestionsBulkListObj->user->get_full_name() }}</td>
                                             <td class="text-left" data-id="created_at">{{ dateTimeFormat($QuestionsBulkListObj->created_at, 'j M y | H:i') }}</td>
-                                            <td data-id="action test@@">
+                                            <td data-id="action">
                                                 @can('admin_topic_parts_edit')
                                                     @if($QuestionsBulkListObj->status == 'active')
 
@@ -391,6 +391,7 @@
                                                         <a href="javascript:;" data-bulk_id="{{ $QuestionsBulkListObj->id }}" class="edit-bulk-list btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Questions List">
                                                             <i class="fas fa-edit"></i>
                                                         </a>
+                                                            @include('admin.includes.delete_button',['url' => '/admin/questions-generator/'.$QuestionsBulkListObj->id.'/delete' , 'btnClass' => 'btn-sm'])
                                                         @endif
 
                                                     @endif
@@ -2067,6 +2068,13 @@
                     }
                 });
             });
+
+            $(document).on('click', '.remove-gallery-image', function () {
+                var target_class = $(this).attr('data-target_class');
+                $('.'+target_class).html('');
+                $(this).addClass('rurera-hide');
+            });
+
             </script>
 
     @endpush
