@@ -35,7 +35,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         display: inline-block;
         margin-bottom: 25px;
-        min-width: 600px;
     }
     .question-palette::after {
         content: '';
@@ -61,15 +60,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         justify-content: center;
         max-width: 550px; /* Adjust to fit 10 items */
     }
-    .quiz-pagination li,
-    .lms-quiz-section ul li {
-        margin: 0 5px;
-            width: auto;
+    .quiz-pagination li {
+        margin: 4px;
     }
     .quiz-pagination li a {
         width: 45px;
         height: 45px;
-        background-color: var(--primary);
+        background-color: #007bff;
         color: white;
         display: flex;
         justify-content: center;
@@ -81,10 +78,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         user-select: none;
         text-decoration: none;
     }
-    .quiz-pagination li:first-child a,
-    .quiz-pagination li:last-child a {border-radius: 8px;}
     .quiz-pagination li a:hover {
-        background-color: var(--primary);
+        background-color: #0056b3;
         transform: translateY(-2px);
         color: white;
     }
@@ -92,12 +87,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     /* Active / Highlight State */
     .quiz-pagination li.active a {
         background-color: white;
-        color: var(--primary);
-        border: 2px solid var(--primary);
+        color: #007bff;
+        border: 2px solid #007bff;
     }
     .quiz-pagination li.active a:hover {
         background-color: #e7f3ff;
-        color: var(--primary);
+        color: #007bff;
     }
 
     /* Incorrect State (White background like unanswered) */
@@ -513,39 +508,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             focusIntervalCount = 240;
             focusInterval = null;
         });
-        $(document).on('click', '.finish-section', function (e) {
-            var qattempt_id = $(".question-area .question-step").attr('data-qattempt');
 
-            var pendingQuestions = $(".quiz-section-data.active")
-                .find('.quiz-pagination li')
-                .not('.correct, .attempted');
-
-
-            var question_ids = [];
-            pendingQuestions.each(function () {
-                var questionId = $(this).data('question_id');
-                question_ids.push(questionId);
-
-            });
-
-            console.log(question_ids);
-
-            jQuery.ajax({
-                type: "POST",
-                url: '/question_attempt/jump_section',
-                dataType: 'json',
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                data: {"qattempt_id": qattempt_id, 'question_ids': question_ids},
-                success: function (return_data) {
-
-                    console.log(return_data);
-                }
-            });
-
-
-        });
 
 
 
@@ -911,10 +874,45 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         return return_string;
     }
 
+    $(document).on('click', '.finish-section', function (e) {
+        afterNoNextQuestion();
+
+    });
+
     function onSectionMoveConfirm(){
         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
         var current_section_id = $active.attr('data-section_id');
         const $next = $active.next('.quiz-section-data');
+
+
+        var qattempt_id = $(".question-area .question-step").attr('data-qattempt');
+
+        var pendingQuestions = $(".quiz-section-data.active")
+            .find('.quiz-pagination li')
+            .not('.correct, .attempted');
+
+
+        var question_ids = [];
+        pendingQuestions.each(function () {
+            var questionId = $(this).data('question_id');
+            question_ids.push(questionId);
+
+        });
+
+        jQuery.ajax({
+            type: "POST",
+            url: '/question_attempt/jump_section',
+            dataType: 'json',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: {"qattempt_id": qattempt_id, 'question_ids': question_ids},
+            success: function (return_data) {
+
+            }
+        });
+
+
         if ($next.length > 0) {
 
              $active.addClass('rurera-hide');
@@ -935,6 +933,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
 
     }
+
 
 
 
