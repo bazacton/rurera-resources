@@ -14,7 +14,7 @@
         <p class="font-14">Strengthen your vocabulary with curated word lists tailored to different levels. Learn meanings, usage, and improve retention through regular practice.</p>
     </div>
     <div class="ru-search-block">
-        <div class="top-search-form panel-border bg-white rounded-sm p-25">
+        <div class="top-search-form panel-border bg-white rounded-sm p-25 mb-30">
             <div class="ru-search-input">
                 <form action="" method="get">
                     <div class="form-group d-flex align-items-center mb-25 rounded-sm">
