@@ -39,7 +39,7 @@
         </div>
         <div class="col-12">
             <!-- Listing Search Start -->
-            <div class="listing-search lms-jobs-form mb-0 panel-border bg-white rounded-sm">
+            <div class="listing-search lms-jobs-form mb-0 panel-border bg-white rounded-sm mb-30 p-25">
                 <form>
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-12 col-md-12">
@@ -51,9 +51,9 @@
                         </div>
                         <div class="col-12 col-lg-12 col-md-12">
                             <!-- Test List Filters Start -->
-                            <div class="tests-list-holder mb-25">
+                            <div class="tests-list-holder">
                                 <a href="#." class="filter-mobile-btn">Filters</a>
-                                <ul class="tests-list mb-30 font-14">
+                                <ul class="tests-list font-14">
                                     <li data-type="all" class="active">All Tests</li>
                                     <li data-type="sats"><img src="/assets/default/img/assignment-logo/sats.png" alt="sats"> SATs</li>
                                     <li data-type="11plus"><img src="/assets/default/img/assignment-logo/11plus.png" alt="11plus"> 11Plus</li>
