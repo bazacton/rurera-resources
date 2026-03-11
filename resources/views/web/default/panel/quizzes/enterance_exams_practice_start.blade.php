@@ -60,13 +60,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         justify-content: center;
         max-width: 550px; /* Adjust to fit 10 items */
     }
-    .quiz-pagination li {
-        margin: 4px;
+    .quiz-pagination li,
+    .lms-quiz-section ul li {
+        margin: 0 5px;
     }
     .quiz-pagination li a {
         width: 45px;
         height: 45px;
-        background-color: #007bff;
+        background-color: var(--primary);
         color: white;
         display: flex;
         justify-content: center;
@@ -78,8 +79,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         user-select: none;
         text-decoration: none;
     }
+    .quiz-pagination li:first-child a,
+    .quiz-pagination li:last-child a {border-radius: 8px;}
     .quiz-pagination li a:hover {
-        background-color: #0056b3;
+        background-color: var(--primary);
         transform: translateY(-2px);
         color: white;
     }
@@ -87,12 +90,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     /* Active / Highlight State */
     .quiz-pagination li.active a {
         background-color: white;
-        color: #007bff;
-        border: 2px solid #007bff;
+        color: var(--primary);
+        border: 2px solid var(--primary);
     }
     .quiz-pagination li.active a:hover {
         background-color: #e7f3ff;
-        color: #007bff;
+        color: var(--primary);
     }
 
     /* Incorrect State (White background like unanswered) */
