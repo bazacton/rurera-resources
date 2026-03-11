@@ -260,6 +260,13 @@ display:block;
     transform: none;
     box-shadow: none;
 }
+.reading-slider .swiper-slide-active{
+    transform:none;
+    box-shadow:none;
+}
+.reading-slider .swiper-slide-next{
+    transform:none;
+}
 .ru-book-slider .fade-right{
 position:absolute;
 top:0;
