@@ -36,9 +36,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         display: inline-block;
         margin-bottom: 25px;
     }
-    .disabled-div {
-        pointer-events: none;
-    }
     .question-palette::after {
         content: '';
         position: absolute;
@@ -52,7 +49,21 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         border-top: 12px solid white;
         filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.05));
     }
-    .num-box {
+
+    /* Quiz Pagination Styles */
+    .quiz-pagination ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 550px; /* Adjust to fit 10 items */
+    }
+    .quiz-pagination li {
+        margin: 4px;
+    }
+    .quiz-pagination li a {
         width: 45px;
         height: 45px;
         background-color: #007bff;
@@ -60,31 +71,37 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 4px;
         border-radius: 8px;
         cursor: pointer;
         font-weight: bold;
         transition: all 0.2s ease-in-out;
         user-select: none;
+        text-decoration: none;
     }
-    .num-box:hover {
+    .quiz-pagination li a:hover {
         background-color: #0056b3;
         transform: translateY(-2px);
+        color: white;
     }
-    .num-box.highlight {
+
+    /* Active / Highlight State */
+    .quiz-pagination li.active a {
         background-color: white;
         color: #007bff;
         border: 2px solid #007bff;
     }
-    .num-box.highlight:hover {
+    .quiz-pagination li.active a:hover {
         background-color: #e7f3ff;
+        color: #007bff;
     }
-    .num-box.unanswered {
+
+    /* Incorrect State (White background like unanswered) */
+    .quiz-pagination li.incorrect:not(.active) a {
         background-color: white;
         color: #6c757d;
         border: 1px solid #e0e0e0;
     }
-    .num-box.unanswered:hover {
+    .quiz-pagination li.incorrect:not(.active) a:hover {
         background-color: #f8f9fa;
     }
 </style>
@@ -133,9 +150,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
+                                        <div class="question-palette">
                                         <div class="quiz-pagination rurera-hide">
-                                            <div class="swiper-container">
-                                                <ul class="swiper-wrapper" data-section_id="{{$section_id}}">
+
+                                                <ul data-section_id="{{$section_id}}">
 
 
 
@@ -149,7 +167,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                             $question_status = 'waiting';
                                                             $is_flagged = false;
                                                             @endphp
-                                                            <li data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="swiper-slide {{$active_class}} {{ ( $is_flagged == true)?
+                                                            <li data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$active_class}} {{ ( $is_flagged == true)?
                                                'has-flag' : ''}} "><a
                                                                     href="javascript:;">
                                                                     {{$question_count}}</a></li>
@@ -159,9 +177,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                     @endif
                                                 </ul>
                                             </div>
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
                                         </div>
+
+
 
                                         <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
 
