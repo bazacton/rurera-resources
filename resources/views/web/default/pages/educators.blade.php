@@ -10,17 +10,13 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-lg-7 col-md-7">
-                    <h1>Upgrade Your Classroom <span itemprop="sub title" class="text-scribble">Experience</span></h1>
-                    <p itemprop="description" class="font-14">Rurera offers a platform for teachers and educators designed to enhance their teaching skills and effectiveness.</p>
-                    <ul class="mb-30">
-                        <li class="mb-10"><img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Enhance teaching skills</li>
-                        <li class="mb-10"><img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Reduced workload</li>
-                        <li class="mb-10">
-                            <img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Fast grading using automated marking
-                        </li>
-                        <li>
-                            <img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Homework aligned with national curriculum
-                        </li>
+                    <h1>Upgrade Your Classroom <span class="text-scribble">Experience</span></h1>
+                    <p class="font-14">Rurera offers a platform for teachers and educators designed to enhance their teaching skills and effectiveness.</p>
+                    <ul class="mb-30 benefits-list">
+                        <li class="mb-10">Enhance teaching skills</li>
+                        <li class="mb-10">Reduced workload</li>
+                        <li class="mb-10">Fast grading using automated marking</li>
+                        <li>Homework aligned with national curriculum</li>
                     </ul>
                     <a class="text-white bg-primary justify-content-center mt-0 register-btn try-rurera-btn" href="https://rurera.com/pricing">Try Rurera for free</a>
                 </div>
