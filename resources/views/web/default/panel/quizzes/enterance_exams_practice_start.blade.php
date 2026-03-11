@@ -480,6 +480,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
     if(active_section_id != '' && active_section_id != 0){
+        console.log('active_section_id===='+active_section_id);
         $('.quiz-section-data[data-section_id="'+active_section_id+'"]').find('.section-start-quiz').click();
     }
     function quiz_default_functions() {
