@@ -26,8 +26,8 @@
     </div>
 </div>
 <div class="quiz_section_instructions mb-25">
-    <h3 class="mb-5">{!! isset($section_data->instr)? $section_data->instr : '' !!}</h3>
-    <p>Answer as many of these Reading Comprehension questions as you can in the {{isset($section_data->time)? $section_data->time : 0}} minutes provided. You can move on to the next section when the {{isset($section_data->time)? $section_data->time : 0}} minutes have passed, or if you have finished all of the questions in this section. Try your best, and good luck!</p>
+    <h3 class="mb-5">Instructions:</h3>
+    {!! isset($section_data->instr)? $section_data->instr : '' !!}
 </div>
 
 
