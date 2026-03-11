@@ -1431,6 +1431,9 @@ body mjx-container[display] {
     min-width: 40px;
     text-align: center;
 }
+.quiz-questions-bar-holder .value-lable[style="left: 100%;"] {
+    margin-left: -40px;
+}
 .quiz-questions-bar-holder .value-lable[style="left:0%"] {
     margin-left: 0;
 }
