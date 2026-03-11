@@ -94,13 +94,88 @@
             </div>
 
 
+            <div class="rurera-mock-test">
+                <!-- First Test Pack -->
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                    <div class="rurera-test-info">
+                        <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
+                        <div class="rurera-text-box font-14">
+                            <h4 class="font-16 font-weight-bold">
+                                <a href="/mock-practice/xyz" class="d-block mb-5">xyz</a>
+                            </h4>
+                            <span class="rurera-sub_label">0 Question(s),</span>
+                            <span class="rurera-sub_label">Time: 20m,</span>
+                            <span class="rurera-sub_label">Sats</span>
+                        </div>
+                    </div>
+                    <div class="rurera-test-modal">
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test </a>
+                    </div>
+                </div>
+
+                <!-- Second Test Pack -->
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                    <div class="rurera-test-info">
+                        <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
+                        <div class="rurera-text-box font-14">
+                            <h4 class="font-16 font-weight-bold">
+                                <a href="/mock-practice/year-6-english" class="d-block mb-5">Year 6 English</a>
+                            </h4>
+                            <span class="rurera-sub_label">0 Question(s),</span>
+                            <span class="rurera-sub_label">Time: 10m,</span>
+                            <span class="rurera-sub_label">Sats</span>
+                            <img src="/assets/default/img/stop-watch.png" alt="stop-watch" width="360" height="360">
+                        </div>
+                    </div>
+                    <div class="rurera-test-modal">
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test </a>
+                    </div>
+                </div>
+
+                <!-- Third Test Pack -->
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                    <div class="rurera-test-info">
+                        <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
+                        <div class="rurera-text-box font-14">
+                            <h4 class="font-16 font-weight-bold">
+                                <a href="/mock-practice/year-6-maths-curriculum-test-baz" class="d-block mb-5">Year 6 Maths Curriculum Test - Baz</a>
+                            </h4>
+                            <span class="rurera-sub_label">0 Question(s),</span>
+                            <span class="rurera-sub_label">Time: 20m,</span>
+                            <span class="rurera-sub_label">Sats</span>
+                        </div>
+                    </div>
+                    <div class="rurera-test-modal">
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test </a>
+                    </div>
+                </div>
+
+                <!-- Fourth Test Pack -->
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                    <div class="rurera-test-info">
+                        <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
+                        <div class="rurera-text-box font-14">
+                            <h4 class="font-16 font-weight-bold">
+                                <a href="/mock-practice/year-6-maths-curriculum-test" class="d-block mb-5">Year 6 Maths Curriculum Test</a>
+                            </h4>
+                            <span class="rurera-sub_label">0 Question(s),</span>
+                            <span class="rurera-sub_label">Time: 25m,</span>
+                            <span class="rurera-sub_label">Sats</span>
+                        </div>
+                    </div>
+                    <div class="rurera-test-modal">
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test</a>
+                    </div>
+                </div>
+            </div>
+
             <div class="rurera-test-pack-container">
                 <!-- First Test Pack -->
-                <div class="rurera-test-pack">
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
                     <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 01</h3>
                     <p class="rurera-test-description font-14">Complete mock test</p>
 
-                    <div class="rurera-test-info">
+                    <div class="rurera-test-pack-info">
             <span class="rurera-icon-location">
                 <img src="/assets/icons/location-icon.svg" alt="Location Icon" height="16" width="16">
             </span>Bexley
@@ -116,13 +191,13 @@
                     <p class="rurera-test-inclusions-title font-14">What's included:</p>
                     <p class="rurera-test-subjects">
             <span class="rurera-subject-icon">
-                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English & Verbal Reasoning" height="32" width="32">
+                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English &amp; Verbal Reasoning" height="32" width="32">
             </span>1 x English &amp; Verbal Reasoning paper
                     </p>
 
                     <p class="rurera-test-subjects">
             <span class="rurera-subject-icon">
-                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning & Maths" height="32" width="32">
+                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning &amp; Maths" height="32" width="32">
             </span>1 x Non-Verbal Reasoning &amp; Maths paper
                     </p>
 
@@ -133,11 +208,11 @@
                 </div>
 
                 <!-- Second Test Pack -->
-                <div class="rurera-test-pack">
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
                     <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 02</h3>
                     <p class="rurera-test-description font-14">Complete mock test</p>
 
-                    <div class="rurera-test-info">
+                    <div class="rurera-test-pack-info">
             <span class="rurera-icon-location">
                 <img src="/assets/icons/location-icon.svg" alt="Location Icon" height="16" width="16">
             </span>Bexley
@@ -153,13 +228,13 @@
                     <p class="rurera-test-inclusions-title font-14">What's included:</p>
                     <p class="rurera-test-subjects">
             <span class="rurera-subject-icon">
-                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English & Verbal Reasoning" height="32" width="32">
+                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English &amp; Verbal Reasoning" height="32" width="32">
             </span>1 x English &amp; Verbal Reasoning paper
                     </p>
 
                     <p class="rurera-test-subjects">
             <span class="rurera-subject-icon">
-                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning & Maths" height="32" width="32">
+                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning &amp; Maths" height="32" width="32">
             </span>1 x Non-Verbal Reasoning &amp; Maths paper
                     </p>
 
@@ -170,11 +245,11 @@
                 </div>
 
                 <!-- Third Test Pack -->
-                <div class="rurera-test-pack">
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
                     <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 03</h3>
                     <p class="rurera-test-description font-14">Complete mock test</p>
 
-                    <div class="rurera-test-info">
+                    <div class="rurera-test-pack-info">
             <span class="rurera-icon-location">
                 <img src="/assets/icons/location-icon.svg" alt="Location Icon" height="16" width="16">
             </span>Bexley
@@ -190,13 +265,13 @@
                     <p class="rurera-test-inclusions-title font-14">What's included:</p>
                     <p class="rurera-test-subjects">
             <span class="rurera-subject-icon">
-                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English & Verbal Reasoning" height="32" width="32">
+                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English &amp; Verbal Reasoning" height="32" width="32">
             </span>1 x English &amp; Verbal Reasoning paper
                     </p>
 
                     <p class="rurera-test-subjects">
             <span class="rurera-subject-icon">
-                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning & Maths" height="32" width="32">
+                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning &amp; Maths" height="32" width="32">
             </span>1 x Non-Verbal Reasoning &amp; Maths paper
                     </p>
 
