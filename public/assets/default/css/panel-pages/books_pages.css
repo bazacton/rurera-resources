@@ -7,6 +7,9 @@ Sub Pages Style
 .search-block .search-input .form-group {border: 1px solid #ddd; padding: 10px 20px 10px 15px;}
 .search-block .search-input .form-group .btn {background-color: var(--primary); height: 42px; padding: 0 40px; box-shadow: none; border-color: var(--primary); }
 .search-block .search-input {border-radius: 15px; background-color: #DFE6EE; }
+.search-block .search-input .form-group:has(input:focus) {
+    border-color: #333;
+}
 .search-block .search-input img {
     height: 20px;
     width: 20px;
