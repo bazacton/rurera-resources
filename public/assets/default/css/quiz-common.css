@@ -1359,6 +1359,7 @@ body mjx-container[display] {
 .quiz-pagination .swiper-container li {margin: 6px 6px 0 0; width: 21px; max-width: 22.25px; list-style: none;}
 .quiz-pagination li a,
 .read-quiz-info ~ .read-quiz-content .quiz-pagination li a {border: 0 solid #ecefff; height: 26px; width: 26px; display: inline-flex; text-align: center; align-items: center; justify-content: center; font-size: var(--fs-sm); color: #fff; border-radius: 3px; position: relative; transition: all .5s ease; width: 100%;}
+.quiz-pagination li a {color: #333;}
 .quiz-pagination .incorrect a {color: red !important; box-shadow: 0 2px 0 0 red; border-radius: 0;}
 .quiz-pagination .correct a {color: green !important; box-shadow: 0 2px 0 0 green; border-radius: 0;}
 .quiz-pagination .in-review a {background-color: orange; border-color: #fbd796;}
