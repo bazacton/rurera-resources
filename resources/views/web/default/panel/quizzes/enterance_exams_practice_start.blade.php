@@ -161,21 +161,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                         </div>
 
                                         <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
-                                            <div class="questions-bar-box">
-                                                <div class="quiz-questions-bar-holder">
-                                                    <div class="quiz-questions-bar">
-                                                        <span class="value-lable progress-bar-counter" data-title="" style="left:0%">
-                                                            <span class="no-questions-lable">No of Questions</span>
-                                                            <span class="no-questions-value">0</span>
-                                                        </span>
-                                                        <span class="bar-fill progress-bar-fill" data-title="" style="width: 0%;"></span>
-                                                    </div>
-                                                    <span class="coin-numbers">
-                                                            <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
-                                                            <span class="total-earned-coins">0</span>
-                                                        </span>
-                                                </div>
-                                            </div>
+
                                             <div class="quiz-time-bar">
                                                 <div class="timer-wrap">
                                                     <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
