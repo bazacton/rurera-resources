@@ -125,7 +125,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
 
-                            @php $active_question = false; @endphp
+                            @php $active_question = false; $active_section_id = ''; @endphp
                             @if(!empty($questions_sections_layout))
 
                                 @php $section_counter = 1; @endphp
@@ -166,6 +166,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                             $active_class = ($active_class == '' && $question_count == 1)? 'active' : '';
                                                             $question_status = 'waiting';
                                                             $is_flagged = false;
+                                                            $active_section_id = ($active_class == 'active')? $section_id : $active_section_id;
                                                             @endphp
                                                             <li data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$active_class}} {{ ( $is_flagged == true)?
                                                'has-flag' : ''}} "><a
@@ -475,7 +476,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     var focusIntervalCount = 240;
     var TimerActive = true;
 
+    var active_section_id = '{{$active_section_id}}';
 
+
+    alert(active_section_id);
     function quiz_default_functions() {
 
         if( focusInterval == null) {
