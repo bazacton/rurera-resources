@@ -2678,6 +2678,7 @@ Books Right Sidebar Cards Style Start
     border-radius:12px;
     margin-bottom:15px;
     box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    transition: all .4s ease;
 }
 .books-card .img-holder {
     width: 50px;
@@ -2720,8 +2721,38 @@ Books Right Sidebar Cards Style Start
 .w_75 {
     width: 75%;
 }
+.w_40 {
+    width: 40%;
+}
+.w_25 {
+    width: 25%;
+}
 .book-pages {
     color: #000;
+}
+.books-card.hide{
+    display:none;
+}
+
+.books-card.slide-show{
+    animation: slideFade .45s ease;
+}
+
+@keyframes slideFade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.show-cards-btn{
+    padding:0;
+    border:0;
+    background-color:inherit;
+    outline: none;
 }
 /*****************************
 Books Right Sidebar Cards Style End
