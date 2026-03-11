@@ -1377,8 +1377,7 @@ body mjx-container[display] {
 .lms-quiz-section .timer-number,
 .read-quiz-info ~ .read-quiz-content .timer-number {font-size: var(--fs-xxl); color: #f4fefd; margin-left: 20px; display: block; line-height: normal; }
 .quiz-pagination li a:hover,
-.quiz-pagination li.active a,
-.quiz-pagination li.active:first-child a {border-color: #7c97f0;}
+.quiz-pagination li.active a {border-color: var(--primary); color: var(--primary);}
 .timer-number em {font-size: var(--fs-xl); font-style: normal;}
 .quiz-timer {display: flex; align-items: center; max-width: 200px;}
 .quiz-timer .timer-number {min-width: 140px; font-size: var(--fs-xl);}
