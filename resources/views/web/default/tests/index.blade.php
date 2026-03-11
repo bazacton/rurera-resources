@@ -278,7 +278,7 @@
                         </div>
                     </div>
                     <div class="rurera-test-price">
-                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test</a>
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test Modal</a>
                     </div>
                 </div>
             </div>
