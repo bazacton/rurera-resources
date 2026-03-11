@@ -2733,7 +2733,6 @@ Books Right Sidebar Cards Style Start
 .books-card.hide{
     display:none;
 }
-
 .books-card.slide-show{
     animation: slideFade .45s ease;
 }
@@ -2749,10 +2748,12 @@ Books Right Sidebar Cards Style Start
     }
 }
 .show-cards-btn{
-    padding:0;
-    border:0;
-    background-color:inherit;
+    padding: 0;
+    border: 0;
+    background-color: inherit;
     outline: none;
+    font-size: .875rem;
+    font-weight: 500;
 }
 /*****************************
 Books Right Sidebar Cards Style End
