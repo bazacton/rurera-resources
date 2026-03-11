@@ -146,6 +146,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                                     <div class="left-content has-bg">
                                                         <div class="questions-lists-block">
+                                                            Section: {{$section_name}}
                                                             @if( !empty( $questions_layout  ) )
                                                                 @php $question_counter  = 1; @endphp
                                                                 @foreach( $questions_layout as $result_question_id => $questionLayout)
@@ -158,7 +159,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                         $active_question = true;
                                                                     }
                                                                     @endphp
-                                                                Section: {{$section_name}}
+
                                                                     <div class=" rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
                                                                          data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
                                                                          data-start_time="0" data-qresult="{{isset( $question_result_id )? $question_result_id : 0}}"
