@@ -64,6 +64,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     .quiz-pagination li,
     .lms-quiz-section ul li {
         margin: 0 5px;
+            width: auto;
     }
     .quiz-pagination li a {
         width: 45px;
