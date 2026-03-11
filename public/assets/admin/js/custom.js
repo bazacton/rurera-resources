@@ -2733,9 +2733,22 @@ if($(".rurera_conditional_field").length > 0){
 }
 
 
-function rurera_modal_alert(msg_type, msg_title, confirmButton){
+function rurera_modal_alert(msg_type, msg_title, confirmButton, afterConfirmFunc = ''){
 
-    Swal.fire({icon: msg_type, html: '<h3 class="font-20 text-center text-dark-blue">'+msg_title+'</h3>', showConfirmButton: confirmButton, showCloseButton: true});
+    Swal.fire({
+        icon: msg_type,
+        html: '<h3 class="font-20 text-center text-dark-blue">'+msg_title+'</h3>',
+        showConfirmButton: confirmButton,
+        showCloseButton: true
+    }).then((result) => {
+
+        if (result.isConfirmed) {
+            if(afterConfirmFunc !== '' && typeof window[afterConfirmFunc] === "function"){
+                window[afterConfirmFunc]();
+            }
+        }
+
+    });
 
 }
 

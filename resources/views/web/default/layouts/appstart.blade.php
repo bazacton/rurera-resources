@@ -19,6 +19,7 @@ $rand_no = rand(99,9999);
     <link rel="stylesheet" href="/assets/default/css/common.min.css?ver={{$rand_no}}">
     <link rel="stylesheet" href="/assets/default/css/quiz-common.css?ver={{$rand_no}}">
 	<link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_no}}">
+    <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
 
 
     @if($isRtl)
@@ -68,4 +69,6 @@ $rand_no = rand(99,9999);
 
 
 </body>
+<script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
+<script src="/assets/default/js/parts/main.min.js?ver={{$rand_no}}"></script>
 </html>
