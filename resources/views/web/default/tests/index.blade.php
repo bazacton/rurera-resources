@@ -295,38 +295,38 @@
 </section>
 
 
-<div class="rurera-modal fade" id="rureraMockTestModal" tabindex="-1" role="dialog" aria-labelledby="rureraMockTestModalLabel" aria-hidden="true">
-    <div class="rurera-modal-dialog" role="document">
-        <div class="rurera-modal-content">
-            <div class="rurera-modal-header">
-                <h5 class="rurera-modal-title" id="rureraMockTestModalLabel">Choose how to complete this test</h5>
-                <button type="button" class="rurera-close" data-dismiss="modal" aria-label="Close">
+<div class="modal fade" id="rureraMockTestModal" tabindex="-1" role="dialog" aria-labelledby="rureraMockTestModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="rureraMockTestModalLabel">Choose how to complete this test</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="rurera-modal-body">
-                <div class="rurera-row">
-                    <div class="rurera-col-6">
-                        <div class="rurera-option-card">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="option-card">
                             <img src="/assets/icons/online-icon.svg" alt="Online Icon" width="32" height="32">
-                            <h6 class="rurera-font-weight-bold">Online</h6>
+                            <h6 class="font-weight-bold">Online</h6>
                             <p>Complete this test on your device. Get your results instantly.</p>
-                            <a href="javascript:;" class="rurera-btn rurera-btn-primary">Add to to-do list</a>
+                            <a href="javascript:;" class="btn btn-primary">Add to to-do list</a>
                         </div>
                     </div>
-                    <div class="rurera-col-6">
-                        <div class="rurera-option-card">
+                    <div class="col-6">
+                        <div class="option-card">
                             <img src="/assets/icons/online-icon.svg" alt="On Paper Icon" width="32" height="32">
-                            <h6 class="rurera-font-weight-bold">On paper</h6>
+                            <h6 class="font-weight-bold">On paper</h6>
                             <p>This is an online exam. A paper option is not provided.</p>
-                            <button class="rurera-btn rurera-btn-disabled" disabled>Unavailable</button>
+                            <button class="btn btn-disabled" disabled>Unavailable</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="rurera-modal-footer">
-                <button type="button" class="rurera-btn rurera-btn-secondary" data-dismiss="modal">Close</button>
-                <a href="#" class="rurera-btn rurera-btn-primary">Proceed</a>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="#" class="btn btn-primary">Proceed</a>
             </div>
         </div>
     </div>
