@@ -509,47 +509,58 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                     @endif
 
                                     @if($is_subject_page == false)
-                                    @if(auth()->user()->isUser() && !request()->is('quests'))
+                                        @if(auth()->user()->isUser() && !request()->is('quests'))
+                                            @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly'))->count() > 0 )
+                                                <div class="quests-list panel-border bg-white rounded-sm p-20 mb-30">
+                                                    <h3 class="font-16 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
+                                                        Daily Quests
+                                                        <a href="/quests" class="view-all font-weight-bold font-14">View All</a>
+                                                    </h3>
+                                                    <ul aria-label="Daily quests">
+                                                        @foreach( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly')) as $questObj)
+                                                            @php $questUserData = $DailyQuestsController->getQuestUserData($questObj);
 
-                                    @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly'))->count() > 0 )
-                                        <div class="quests-list panel-border bg-white rounded-sm p-20 mb-30">
-                                            <h3 class="font-16 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
-                                                Daily Quests
-                                                <a href="/quests" class="view-all font-weight-bold font-14">View All</a>
-                                            </h3>
-                                            <ul aria-label="Daily quests">
-                                                @foreach( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly')) as $questObj)
-                                                    @php $questUserData = $DailyQuestsController->getQuestUserData($questObj);
-
-                                                    $quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
-                                                    $quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
-                                                    @endphp
-                                                    <li>
-                                                        <div class="quests-item">
-                                                            <div class="icon-box">
-                                                                <img src="{{$quest_icon}}" alt="quests image" loading="lazy">
-                                                            </div>
-                                                            <div class="item-text">
-                                                                <h5 class="font-14 font-weight-500">{{$questObj->title}}</h5>
-                                                                <div class="levels-progress horizontal">
-                                                                    <span class="progress-box">
-                                                                        <span class="progress-count" style="width: {{isset( $questUserData['completion_percentage'] )? $questUserData['completion_percentage'] : 0}}%;"></span>
-                                                                    </span>
-                                                                    <span class="progress-numbers">{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</span>
+                                                            $quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
+                                                            $quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
+                                                            @endphp
+                                                            <li>
+                                                                <div class="quests-item">
+                                                                    <div class="icon-box">
+                                                                        <img src="{{$quest_icon}}" alt="quests image" loading="lazy">
+                                                                    </div>
+                                                                    <div class="item-text">
+                                                                        <h5 class="font-14 font-weight-500">{{$questObj->title}}</h5>
+                                                                        <div class="levels-progress horizontal">
+                                                                            <span class="progress-box">
+                                                                                <span class="progress-count" style="width: {{isset( $questUserData['completion_percentage'] )? $questUserData['completion_percentage'] : 0}}%;"></span>
+                                                                            </span>
+                                                                            <span class="progress-numbers">{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</span>
+                                                                        </div>
+                                                                        <span class="progress-icon">
+                                                                            <img src="/assets/default/img/quests-coin.png" alt="quests-coin" loading="lazy">
+                                                                            +{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
+                                                                        </span>
+                                                                    </div>
                                                                 </div>
-                                                                <span class="progress-icon">
-                                                                    <img src="/assets/default/img/quests-coin.png" alt="quests-coin" loading="lazy">
-                                                                    +{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                @endforeach
-                                            </ul>
+                                                            </li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                            @endif
+                                        @endif
+                                    @endif
+                                    <div class="books-feature-listings">
+                                        <div class="books-feature-listing-item">
+                                            <div class="img-holder">
+                                                <img src="/store/1/books/book-cover-image/Hide-and-Seek.jpg" alt="" area-hidden="true" height="182" width="137">
+                                            </div>
+                                            <div class="text-holder">
+                                                <h43 class="font-14 font-weight-bold text-dark-charcoal mb-5">
+                                                    <a href="/books/hide-and-seek" class="">Hide And Seek</a>
+                                                </h4>
+                                            </div>
                                         </div>
-                                    @endif
-                                @endif
-                                    @endif
+                                    </div>
 
                                 @if(!request()->is('panel') && !request()->is('panel/setting') && !request()->is('panel/rewards') && !request()->is('panel/marketing/affiliates') && !request()->is('panel/store/purchases') && !request()->is('panel/notifications') && !request()->is('panel/support/tickets'))
 
