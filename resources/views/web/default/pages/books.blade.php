@@ -31,7 +31,7 @@
                                 </div>
                                 <div class="tests-list-holder">
                                     <ul class="tests-list">
-                                        <li>Fiction</li>
+                                        <li class="active">Fiction</li>
                                         <li>Non-Fiction</li>
                                         <li>Story</li>
                                         <li>Mystery</li>
