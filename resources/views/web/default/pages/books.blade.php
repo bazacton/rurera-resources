@@ -242,6 +242,7 @@
         });
       }
 
-    
+    renderTrack();
+    goTo(0);  
     </script>
 @endpush
