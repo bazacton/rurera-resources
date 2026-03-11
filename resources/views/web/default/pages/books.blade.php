@@ -257,6 +257,7 @@
     renderTrack();
     setTimeout(function(){
         goTo(0);
-    },100); 
+    },100);
+    goTo(0);  
     </script>
 @endpush
