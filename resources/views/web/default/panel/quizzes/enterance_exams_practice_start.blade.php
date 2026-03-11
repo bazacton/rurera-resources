@@ -461,14 +461,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             jQuery.ajax({
                 type: "POST",
-                url: '/question_attempt/jump_review1',
+                url: '/question_attempt/jump_section',
                 dataType: 'json',
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
-                data: {"qattempt_id": qattempt_id},
+                data: {"qattempt_id": qattempt_id, 'question_ids': question_ids},
                 success: function (return_data) {
 
+                    console.log(return_data);
                 }
             });
 
