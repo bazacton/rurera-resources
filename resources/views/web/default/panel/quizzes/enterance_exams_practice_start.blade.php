@@ -273,10 +273,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
                                                             <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
-                                                                Next
+                                                                Mark Answer
                                                             </a>
-                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
-                                                                Next
+                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1">
+                                                                Skip
                                                             </a>
                                                         </div>
                                                     </div>
@@ -761,9 +761,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".quiz-section-data.active").find('.quiz-pagination li[data-question_id="'+question_id+'"]').addClass('active');
 
         if ($next.length > 0) {
-            $(".question-submit-btn").html('Next');
+            $(".question-next-btn").removeClass('rurera-hide')
+            $(".question-next-btn").html('Skip');
         }else{
-            $(".question-submit-btn").html('Finish');
+            $(".question-next-btn").addClass('rurera-hide')
+            $(".question-next-btn").html('Skip');
         }
 
         if ($prev.length > 0) {
@@ -791,9 +793,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         const $prev = $active.prev('.rurera-question-block');
 
         if ($next.length > 0) {
-            $(".question-submit-btn").html('Next');
+            $(".question-next-btn").removeClass('rurera-hide')
+            $(".question-next-btn").html('Skip');
         }else{
-            $(".question-submit-btn").html('Finish');
+            $(".question-next-btn").addClass('rurera-hide')
+            $(".question-next-btn").html('Skip');
         }
 
         if ($prev.length > 0) {
@@ -830,13 +834,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             .find('.quiz-pagination li')
             .not('.correct, .incorrect');
 
-        var buttonsHTML = '<div class="d-flex justify-content-center">';
+        var buttonsHTML = '<div class="d-flex justify-content-center gap-3 mb-5">';
 
         pendingQuestions.each(function () {
             var questionId = $(this).data('question_id');
             var questionNumber = $(this).find('a').text().trim();
 
-            buttonsHTML += '<div data-question_id="' + questionId + '" class="question-paging num-box">' + questionNumber + '</div>';
+            buttonsHTML += '<button type="button" data-question_id="' + questionId + '" class="question-paging btn btn-outline-primary px-3">' + questionNumber + '</button>';
         });
 
         buttonsHTML += '</div>';
@@ -857,11 +861,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 Now is a great time to check your answers and to try to answer the
                 following questions that you've skipped:
             </p>
+            <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
+                ${buttonsHTML}
+            </div>
 
-        <div class="question-palette">
-            ${buttonsHTML}
-
-        </div>
             `;
         if ($next.length > 0) {
 
