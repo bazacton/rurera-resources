@@ -564,6 +564,57 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="books-card">
+                                                        <div class="img-holder">
+                                                            <img src="/store/1/books/book-cover-image/003.jpg" alt="" area-hidden="true" height="182" width="137">
+                                                        </div>
+                                                        <div class="text-holder">
+                                                            <h3 class="font-14 font-weight-bold text-dark-charcoal">
+                                                                <a href="/books/doing-my-chores">Sunny Meadows Woodland School</a>
+                                                            </h3>
+                                                            <span>Daniel Harper</span>
+                                                            <div class="books-progress-holder">
+                                                                <div class="progress">
+                                                                    <div class="progress-green w_75"></div>
+                                                                </div>
+                                                                <div class="book-pages">329/763</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="books-card">
+                                                        <div class="img-holder">
+                                                            <img src="/store/1/books/book-cover-image/012.jpg" alt="" area-hidden="true" height="182" width="137">
+                                                        </div>
+                                                        <div class="text-holder">
+                                                            <h3 class="font-14 font-weight-bold text-dark-charcoal">
+                                                                <a href="/books/Jessie-The-Rabbit">Tooth Fairy</a>
+                                                            </h3>
+                                                            <span>Sophia Bennett</span>
+                                                            <div class="books-progress-holder">
+                                                                <div class="progress">
+                                                                    <div class="progress-green w_75"></div>
+                                                                </div>
+                                                                <div class="book-pages">329/763</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="books-card">
+                                                        <div class="img-holder">
+                                                            <img src="/store/1/books/book-cover-image/013.jpg" alt="" area-hidden="true" height="182" width="137">
+                                                        </div>
+                                                        <div class="text-holder">
+                                                            <h3 class="font-14 font-weight-bold text-dark-charcoal">
+                                                                <a href="/books/Do-You-Wonder-Why-Bugs-Are-Good">Hammy The Hamster</a>
+                                                            </h3>
+                                                            <span>Oliver Thompson</span>
+                                                            <div class="books-progress-holder">
+                                                                <div class="progress">
+                                                                    <div class="progress-green w_75"></div>
+                                                                </div>
+                                                                <div class="book-pages">329/763</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             @endif
                                         @endif
