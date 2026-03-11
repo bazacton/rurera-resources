@@ -1362,11 +1362,9 @@ body mjx-container[display] {
 .quiz-pagination li a {
     border: 1px solid #ececec;
     border-radius: 0;
-    border-left: 0;
     color: #333;
 }
 .quiz-pagination li:first-child a {
-    border-left: 1px solid #ececec;
     border-radius: 3px 0 0 3px;
 }
 .quiz-pagination li:last-child a {
