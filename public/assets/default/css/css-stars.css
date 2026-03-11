@@ -548,6 +548,12 @@ span.learn-lable {
     margin-top: -10px;
     margin-left: 10px;
 }
+.topic-search-area .input-field img {
+    filter: invert(69%) sepia(0%) saturate(61%) hue-rotate(213deg) brightness(88%) contrast(90%);
+}
+.topic-search-area .input-field:has(input:focus) img {
+    filter: none;
+}
 .topic-search-area .search-clear {
     right: 8px;
     font-size: 25px;
