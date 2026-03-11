@@ -26,6 +26,65 @@ $correct_answer_explaination = true;//isset($correct_answer_explaination)? $corr
 $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
 @php $total_questions = isset($questions_list)? count($questions_list) : 0; @endphp
+<style>
+    .question-palette {
+        position: relative;
+        background-color: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+    .question-palette::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 12px solid white;
+        filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.05));
+    }
+    .num-box {
+        width: 45px;
+        height: 45px;
+        background-color: #007bff;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+        user-select: none;
+    }
+    .num-box:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+    }
+    .num-box.highlight {
+        background-color: white;
+        color: #007bff;
+        border: 2px solid #007bff;
+    }
+    .num-box.highlight:hover {
+        background-color: #e7f3ff;
+    }
+    .num-box.unanswered {
+        background-color: white;
+        color: #6c757d;
+        border: 1px solid #e0e0e0;
+    }
+    .num-box.unanswered:hover {
+        background-color: #f8f9fa;
+    }
+</style>
 <div class="content-section">
 
     <section class="lms-quiz-section">
