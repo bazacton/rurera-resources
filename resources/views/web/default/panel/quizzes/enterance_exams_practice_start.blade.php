@@ -260,7 +260,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 Finish
                                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                                             </a>
-                                                            <a href="javascript:;" class="review-btn finish-section rurera-hide1 mr-md-0">
+                                                            <a href="javascript:;" class="review-btn finish-section rurera-hide mr-md-0">
                                                                 Finish Section
                                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                                             </a>
@@ -772,6 +772,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".question-next-btn").removeClass('disabled-div');
         }else{
             $(".question-next-btn").addClass('disabled-div');
+            $(".finish-section").removeClass('rurera-hide');
         }
 
         if ($prev.length > 0) {
@@ -802,6 +803,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".question-next-btn").removeClass('disabled-div');
         }else{
             $(".question-next-btn").addClass('disabled-div');
+            $(".finish-section").removeClass('rurera-hide');
         }
 
         if ($prev.length > 0) {
