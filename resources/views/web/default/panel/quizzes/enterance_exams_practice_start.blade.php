@@ -190,6 +190,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 Finish
                                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                                             </a>
+                                                            <a href="javascript:;" class="review-btn finish-section rurera-hide1 mr-md-0">
+                                                                Finish Section
+                                                                <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                                                            </a>
                                                             <button type="button" class="report-btn mr-md-auto"
                                                                     data-toggle="tooltip"
                                                                     title="Report this question"
@@ -201,14 +205,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 Next
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
-                                                            <a href="javascript:;" id="prev-btn" class="rurera-hide prev-btn">
+                                                            <a href="javascript:;" id="prev-btn" class="rurera-hide1 prev-btn">
                                                                 prev
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
                                                             <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
                                                                 mark answer
                                                             </a>
-                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
+                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1">
                                                                 Next
                                                             </a>
                                                         </div>
