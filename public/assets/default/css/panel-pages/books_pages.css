@@ -257,8 +257,8 @@ border-radius:8px;
 display:block;
 }
 .ru-book-slider .book-card.active{
-transform:scale(1.03);
-box-shadow:0 12px 24px rgba(0,0,0,.12);
+    transform: none;
+    box-shadow: none;
 }
 .ru-book-slider .fade-right{
 position:absolute;
