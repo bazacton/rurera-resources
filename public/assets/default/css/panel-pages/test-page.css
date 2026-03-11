@@ -2,7 +2,15 @@
 Test Page | Student Panel Style Start
 Sub Pages Style
 *****************************/
-.panel-content .lms-jobs-form .input-field input[type="text"] {padding-left: 45px;}
+.panel-content .lms-jobs-form .input-field input[type="text"] {padding-left: 35px;}
+.listing-search .input-field img {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: 10px;
+}
 .listing-search .has-border {padding: 0; }
 .sats-listing-card {border-radius: 10px; padding: 20px; margin-bottom: 30px; }
 .sats-listing-card .img-holder {margin-bottom: 15px;}
