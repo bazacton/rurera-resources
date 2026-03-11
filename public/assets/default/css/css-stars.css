@@ -532,6 +532,9 @@ span.learn-lable {
     border-radius: 10px;
     height: 44px;
 }
+.rurera-topics-search .search-field:focus {
+    border-color: #333;
+}
 .topic-search-area .input-field {
     position: relative;
     margin: 0 0 12px;
