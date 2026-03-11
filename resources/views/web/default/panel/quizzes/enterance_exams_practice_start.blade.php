@@ -771,13 +771,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             .find('.quiz-pagination li')
             .not('.correct, .incorrect');
 
-        var buttonsHTML = '<div class="d-flex justify-content-center gap-3 mb-5">';
+        var buttonsHTML = '<div class="d-flex justify-content-center">';
 
         pendingQuestions.each(function () {
             var questionId = $(this).data('question_id');
             var questionNumber = $(this).find('a').text().trim();
 
-            buttonsHTML += '<button type="button" data-question_id="' + questionId + '" class="question-paging btn btn-outline-primary px-3">' + questionNumber + '</button>';
+            buttonsHTML += '<div data-question_id="' + questionId + '" class="question-paging num-box">' + questionNumber + '</div>';
         });
 
         buttonsHTML += '</div>';
@@ -798,10 +798,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 Now is a great time to check your answers and to try to answer the
                 following questions that you've skipped:
             </p>
-            <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
-                ${buttonsHTML}
-            </div>
 
+        <div class="question-palette">
+            ${buttonsHTML}
+
+        </div>
             `;
         if ($next.length > 0) {
 
