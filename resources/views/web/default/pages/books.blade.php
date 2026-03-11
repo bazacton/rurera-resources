@@ -23,7 +23,7 @@
                     <div class="top-search-form panel-border bg-white rounded-sm p-25">
                         <div class="search-input bg-white">
                             <form action="/books" method="get">
-                                <div class="form-group d-flex align-items-center m-0 rounded-sm">
+                                <div class="form-group d-flex align-items-center m-0 mb-25 rounded-sm">
                                     <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
                                     <span class="search-clear">&times;</span>
                                     <input type="text" name="search" id="search-input" class="form-control border-0 font-14" value="{{ request()->get('search','') }}" placeholder="Search by Author, Title, or Keyword"/>
