@@ -35,6 +35,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         display: inline-block;
         margin-bottom: 25px;
+        min-width: 600px;
     }
     .question-palette::after {
         content: '';
