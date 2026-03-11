@@ -1127,6 +1127,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         var result_id = '{{isset($newQuizStart->id)? $newQuizStart->id : 0}}';
         $(".quiz-section-data").removeClass('active');
         $(".quiz-section-data").addClass('rurera-hide');
+        console.log('=-----=====');
         var parentObj = $(this).closest('.quiz-section-data');
         parentObj.addClass('active');
         parentObj.removeClass('rurera-hide');
