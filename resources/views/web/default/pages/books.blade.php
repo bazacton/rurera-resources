@@ -228,9 +228,9 @@
         currentIndex = i;
         setActive(i);
 
-        // slider next slide se start kare
+        // slider ko next slide se start karna hai
         if(swiper){
-            swiper.slideTo(i + 1);
+            swiper.slideTo(i + 1, 0); 
         }
     }
 
