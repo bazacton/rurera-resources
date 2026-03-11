@@ -144,6 +144,17 @@ body .spell-question-area .question-label span {text-align: center;}
     align-items: flex-start;
     width: 100%;
 }
+.ru-search-input .form-group {
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+}
+.ru-search-input .form-group img {
+    height: 20px;
+    width: 20px;
+}
+.ru-search-input .form-group input {
+    padding: 5px 10px 5px 5px;
+}
 .spell-levels li > a:active {box-shadow: 0 4px 0 1px #b0b0b0;}
 .spell-levels li.easy > a:active {box-shadow: 0 4px 0 1px #0f6c9b;}
 .spell-levels .treasure > a:active {box-shadow: none;}
