@@ -1125,7 +1125,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
     $(document).on("click", ".section-start-quiz", function (e) {
         var result_id = '{{isset($newQuizStart->id)? $newQuizStart->id : 0}}';
+        $(".quiz-section-data").removeClass('active');
+        $(".quiz-section-data").addClass('rurera-hide');
         var parentObj = $(this).closest('.quiz-section-data');
+        parentObj.addClass('active');
+        parentObj.removeClass('rurera-hide');
         var section_id = parentObj.attr('data-section_id');
         $('.quiz-pagination').addClass('rurera-hide');
         parentObj.find('.quiz-pagination').removeClass('rurera-hide');
