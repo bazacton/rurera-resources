@@ -197,11 +197,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                     data-toggle2="modal">
                                                                 Report
                                                             </button>
-                                                            <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
+                                                            <a href="javascript:;" id="next-btn" class="rurera-hide1 next-btn">
                                                                 Next
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
-                                                            <a href="javascript:;" id="prev-btn" class="rurera-hide prev-btn">
+                                                            <a href="javascript:;" id="prev-btn" class="rurera-hide1 prev-btn">
                                                                 prev
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
