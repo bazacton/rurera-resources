@@ -84,6 +84,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 $question_result_id = isset($result_question_ids[$result_question_id])? $result_question_ids[$result_question_id] : 0;
                                                             $active_class = ($active_question_id == $active_actual_question_id)? '' : '';
                                                             $active_class = ($active_class == '' && $question_count == 1)? 'active' : '';
+                                                            $question_status = 'waiting';
                                                             $is_flagged = false;
                                                             @endphp
                                                             <li data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="swiper-slide {{$active_class}} {{ ( $is_flagged == true)?
@@ -677,6 +678,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         //$('#ne0xt-btn')[0].click();
     }
 
+    function afterContinue(){
+        var firstPending = $(".quiz-section-data.active")
+            .find('.quiz-pagination li')
+            .not('.correct, .incorrect')
+            .first();
+        firstPending.click();
+    }
+
     function afterPrevQuestion(){
         const $active = $('.rurera-question-block.active');
         const $next = $active.next('.rurera-question-block');
@@ -778,6 +787,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
 
     }
+
+
+
     function getTimeStr(secondsString) {
         var h = Math.floor(secondsString / 3600); //Get whole hours
         secondsString -= h * 3600;
