@@ -452,6 +452,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 var questionId = $(this).data('question_id');
                 $('.rurera-question-block[data-qresult="'+questionId+'"]').addClass('active');
                 $(".question-submit-btn").attr('data-bypass_validation', 'yes');
+                console.log('pendingQuestions----'+questionId);
                 $(".question-submit-btn").click();
 
             });
