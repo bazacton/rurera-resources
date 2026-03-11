@@ -212,7 +212,11 @@
         });
 
         swiper.on('slideChange', function(){
-            currentIndex = swiper.activeIndex;
+            currentIndex = swiper.activeIndex - 1;
+
+            if(currentIndex < 0) currentIndex = 0;
+            if(currentIndex >= books.length) currentIndex = books.length - 1;
+
             setActive(currentIndex);
             updateArrows();
         });
@@ -220,10 +224,15 @@
 
       function goTo(i){
         if(i < 0 || i >= books.length) return;
-        if(swiper){ swiper.slideTo(i); }
-        setActive(i);
+
         currentIndex = i;
-      }
+        setActive(i);
+
+        // slider next slide se start kare
+        if(swiper){
+            swiper.slideTo(i + 1);
+        }
+    }
 
       function setActive(i){
         var b = books[i];
