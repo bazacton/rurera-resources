@@ -442,6 +442,23 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             focusIntervalCount = 240;
             focusInterval = null;
         });
+        $(document).on('click', '.finish-section', function (e) {
+            var pendingQuestions = $(".quiz-section-data.active")
+                .find('.quiz-pagination li')
+                .not('.correct, .incorrect');
+
+
+            pendingQuestions.each(function () {
+                var questionId = $(this).data('question_id');
+                $('.rurera-question-block[data-qresult="'+questionId+'"]').addClass('active');
+                $(".question-submit-btn").attr('data-bypass_validation', 'yes');
+                $(".question-submit-btn").click();
+
+            });
+
+        });
+
+
 
 
 
