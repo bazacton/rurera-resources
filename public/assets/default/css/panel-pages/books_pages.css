@@ -25,7 +25,6 @@ Sub Pages Style
 }
 .top-search-form .search-clear {
     font-size: 1.5rem;
-    margin-right: 10px;
     cursor: pointer;
     display: none;
 }
