@@ -268,7 +268,7 @@
     goTo(0);  
     </script>
     <script>
-        const input = document.getElementById("searchTests");
+        const input = document.getElementById("search-input");
         const clearBtn = document.getElementById("clearSearch");
 
         input.addEventListener("input", function () {
