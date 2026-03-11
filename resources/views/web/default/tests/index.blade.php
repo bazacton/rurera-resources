@@ -206,6 +206,82 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="rurera-mock-test">
+                <!-- First Test Pack -->
+                <div class="rurera-test-pack">
+                    <div class="rurera-test-info">
+                        <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
+                        <div class="rurera-text-box font-14">
+                            <h4 class="font-16 font-weight-bold">
+                                <a href="/mock-practice/xyz" class="d-block mb-5">xyz</a>
+                            </h4>
+                            <span class="rurera-sub_label">0 Question(s),</span>
+                            <span class="rurera-sub_label">Time: 20m,</span>
+                            <span class="rurera-sub_label">Sats</span>
+                        </div>
+                    </div>
+                    <div class="rurera-test-price">
+                        <a href="/mock-practice/xyz" class="rurera-button-add-to-cart btn btn-primary">Take Test</a>
+                    </div>
+                </div>
+
+                <!-- Second Test Pack -->
+                <div class="rurera-test-pack">
+                    <div class="rurera-test-info">
+                        <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
+                        <div class="rurera-text-box font-14">
+                            <h4 class="font-16 font-weight-bold">
+                                <a href="/mock-practice/year-6-english" class="d-block mb-5">Year 6 English</a>
+                            </h4>
+                            <span class="rurera-sub_label">0 Question(s),</span>
+                            <span class="rurera-sub_label">Time: 10m,</span>
+                            <span class="rurera-sub_label">Sats</span>
+                            <img src="/assets/default/img/stop-watch.png" alt="stop-watch" width="360" height="360">
+                        </div>
+                    </div>
+                    <div class="rurera-test-price">
+                        <a href="/mock-practice/year-6-english" class="rurera-button-add-to-cart btn btn-primary">Take Test</a>
+                    </div>
+                </div>
+
+                <!-- Third Test Pack -->
+                <div class="rurera-test-pack">
+                    <div class="rurera-test-info">
+                        <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
+                        <div class="rurera-text-box font-14">
+                            <h4 class="font-16 font-weight-bold">
+                                <a href="/mock-practice/year-6-maths-curriculum-test-baz" class="d-block mb-5">Year 6 Maths Curriculum Test - Baz</a>
+                            </h4>
+                            <span class="rurera-sub_label">0 Question(s),</span>
+                            <span class="rurera-sub_label">Time: 20m,</span>
+                            <span class="rurera-sub_label">Sats</span>
+                        </div>
+                    </div>
+                    <div class="rurera-test-price">
+                        <a href="/mock-practice/year-6-maths-curriculum-test-baz" class="rurera-button-add-to-cart btn btn-primary">Take Test</a>
+                    </div>
+                </div>
+
+                <!-- Fourth Test Pack -->
+                <div class="rurera-test-pack">
+                    <div class="rurera-test-info">
+                        <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
+                        <div class="rurera-text-box font-14">
+                            <h4 class="font-16 font-weight-bold">
+                                <a href="/mock-practice/year-6-maths-curriculum-test" class="d-block mb-5">Year 6 Maths Curriculum Test</a>
+                            </h4>
+                            <span class="rurera-sub_label">0 Question(s),</span>
+                            <span class="rurera-sub_label">Time: 25m,</span>
+                            <span class="rurera-sub_label">Sats</span>
+                        </div>
+                    </div>
+                    <div class="rurera-test-price">
+                        <a href="/mock-practice/year-6-maths-curriculum-test" class="rurera-button-add-to-cart btn btn-primary">Take Test</a>
+                    </div>
+                </div>
+            </div>
             
             <!-- Sats Listings End -->
         </div>
