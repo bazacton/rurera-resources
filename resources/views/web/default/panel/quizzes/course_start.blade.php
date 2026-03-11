@@ -880,5 +880,7 @@ $(document).on("change, input", ".editor-field", function (e) {
     var thisForm = thisBlock.find('form');
     returnType = rurera_validation_process(thisForm, 'quiz_page');
 });
-
+$('[data-toggle="tooltip"]').tooltip({
+    container: '.report-btn'
+});
 </script>

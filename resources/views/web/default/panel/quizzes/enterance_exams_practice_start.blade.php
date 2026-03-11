@@ -989,6 +989,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     $('.quiz-section-data[data-section_counter="'+selected_section+'"]').removeClass('rurera-hide');
 
 
-
+    $('[data-toggle="tooltip"]').tooltip({
+        container: '.report-btn'
+    });
 
 </script>
