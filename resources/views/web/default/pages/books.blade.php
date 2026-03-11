@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="search-block mt-lg-40">
-                    <div class="top-search-form">
+                    <div class="top-search-form panel-border bg-white rounded-sm p-25">
                         <div class="search-input bg-white">
                             <form action="/books" method="get">
                                 <div class="form-group d-flex align-items-center m-0 rounded-sm">
