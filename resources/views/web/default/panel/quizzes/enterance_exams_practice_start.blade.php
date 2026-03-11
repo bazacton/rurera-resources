@@ -214,9 +214,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
                                                             <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
-                                                                mark answer
+                                                                Next
                                                             </a>
-                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1">
+                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
                                                                 Next
                                                             </a>
                                                         </div>
@@ -443,19 +443,36 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             focusInterval = null;
         });
         $(document).on('click', '.finish-section', function (e) {
+            var qattempt_id = $(".question-area .question-step").attr('data-qattempt');
+
             var pendingQuestions = $(".quiz-section-data.active")
                 .find('.quiz-pagination li')
                 .not('.correct, .incorrect');
 
 
+            var question_ids = [];
             pendingQuestions.each(function () {
                 var questionId = $(this).data('question_id');
-                $('.rurera-question-block[data-qresult="'+questionId+'"]').addClass('active');
-                $(".question-submit-btn").attr('data-bypass_validation', 'yes');
-                console.log('pendingQuestions----'+questionId);
-                $(".question-submit-btn").click();
+                question_ids.push(questionId);
 
             });
+
+            console.log(question_ids);
+
+            jQuery.ajax({
+                type: "POST",
+                url: '/question_attempt/jump_section',
+                dataType: 'json',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"qattempt_id": qattempt_id, 'question_ids': question_ids},
+                success: function (return_data) {
+
+                    console.log(return_data);
+                }
+            });
+
 
         });
 
