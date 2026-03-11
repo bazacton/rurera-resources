@@ -86,7 +86,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                             $active_class = ($active_class == '' && $question_count == 1)? 'active' : '';
                                                             $is_flagged = false;
                                                             @endphp
-                                                            <li data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="swiper-slide {{ ( $is_flagged == true)?
+                                                            <li data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="swiper-slide {{$active_class}} {{ ( $is_flagged == true)?
                                                'has-flag' : ''}} "><a
                                                                     href="javascript:;">
                                                                     {{$question_count}}</a></li>
@@ -749,9 +749,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
         var section_move_html = `
-            <div class="mb-4">
-                <img src="confetti.png" alt="Success" width="80">
-            </div>
 
             <h2 class="fw-bold mb-4">Well done!</h2>
 
