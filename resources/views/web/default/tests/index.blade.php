@@ -46,7 +46,7 @@
                             <div class="form-group">
                                 <div class="input-field">
                                     <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
-                                    <span class="search-clear" id="clearSearch">×</span>
+                                    <span class="search-clear" id="clearSearch">&times;</span>
                                     <input type="text" class="search-tests" id="searchTests" placeholder="Test Keyword">
                                 </div>
                             </div>
@@ -56,40 +56,15 @@
                             <div class="tests-list-holder">
                                 <a href="#." class="filter-mobile-btn">Filters</a>
                                 <ul class="tests-list font-14">
-                                    <!-- Test Type -->
-                                    <li class="filter-heading font-16" style="border: 0px;">Select a test type</li>
-                                    <li class="filter-item" data-name="11+">11+</li>
-                                    <li class="filter-item" data-name="13+">13+</li>
-                                </ul>
-                                <ul class="tests-list font-14">
-
-                                    <!-- Consortium -->
-                                    <li class="filter-heading bold" style="border: 0px;">Select your consortium/location</li>
-
-                                    <li class="filter-item" data-name="Bexley">Bexley</li>
-                                    <li class="filter-item" data-name="Buckinghamshire">Buckinghamshire</li>
-                                    <li class="filter-item" data-name="Dorset">Dorset</li>
-                                    <li class="filter-item" data-name="Gloucestershire">Gloucestershire</li>
-                                    <li class="filter-item" data-name="Kent">Kent</li>
-                                    <li class="filter-item" data-name="Kingston">Kingston</li>
-                                    <li class="filter-item" data-name="Lancashire">Lancashire</li>
-                                    <li class="filter-item" data-name="Lincolnshire">Lincolnshire</li>
-                                    <li class="filter-item" data-name="Medway">Medway</li>
-                                    <li class="filter-item" data-name="Plymouth">Plymouth</li>
-                                    <li class="filter-item" data-name="Redbridge">Redbridge</li>
-                                    <li class="filter-item" data-name="Slough">Slough</li>
-                                    <li class="filter-item" data-name="South West Herts">South West Herts</li>
-                                    <li class="filter-item" data-name="Torbay">Torbay</li>
-                                    <li class="filter-item" data-name="Trafford">Trafford</li>
-                                    <li class="filter-item" data-name="West Midlands">West Midlands</li>
-                                    <li class="filter-item" data-name="Wirral">Wirral</li>
-                                    <li class="filter-item" data-name="Other">Other</li>
+                                    <li data-type="all" class="active">All Tests</li>
+                                    <li data-type="sats"><img src="/assets/default/img/assignment-logo/sats.png" alt="sats"> SATs</li>
+                                    <li data-type="11plus"><img src="/assets/default/img/assignment-logo/11plus.png" alt="11plus"> 11Plus</li>
+                                    <li data-type="iseb"><img src="/assets/default/img/assignment-logo/iseb.png" alt="iseb"> ISEB</li>
+                                    <li data-type="cat4"><img src="/assets/default/img/assignment-logo/cat4.png" alt="cat4"> CAT 4</li>
+                                    <li data-type="independent_exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt="independent_exams"> Independent Exams</li>
+                                    <li data-type="progress_test"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt="progress_test"> Progress Test</li>
 
                                 </ul>
-                            </div>
-                            <div class="chapter-nav mb-0 filter-results">
-                                
-                            
                             </div>
                             <!-- Test List Filters End -->
 
