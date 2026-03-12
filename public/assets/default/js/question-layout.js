@@ -69,7 +69,10 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 	var thisBlock = $(".rurera-question-block.active");
     var thisForm = thisBlock.find('form');
     if (typeof beforeQuestionSubmit === "function") {
-        return beforeQuestionSubmit();
+        returnType =  beforeQuestionSubmit();
+        if (returnType == false) {
+            return false;
+        }
     }
 
 
