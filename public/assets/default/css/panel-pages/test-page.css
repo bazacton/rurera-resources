@@ -68,6 +68,7 @@ Sub Pages Style
 .rurera-test-pack {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 .rurera-test-info {
     display: flex;
