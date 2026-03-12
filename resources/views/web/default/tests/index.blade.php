@@ -87,6 +87,66 @@
 
 
             <div class="rurera-mock-test">
+                <div class="listing-search lms-jobs-form mb-0 panel-border bg-white rounded-sm mb-30 p-25">
+                <form>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <div class="form-group">
+                                <div class="input-field">
+                                    <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
+                                    <span class="search-clear" id="clearSearch">×</span>
+                                    <input type="text" class="search-tests" id="searchTests" placeholder="Test Keyword">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <!-- Test List Filters Start -->
+                            <div class="tests-list-holder">
+                                <a href="#." class="filter-mobile-btn">Filters</a>
+                                
+                                <ul class="tests-list font-14">
+
+                                    <!-- Test Type -->
+                                    <li class="filter-heading font-16" style="border: 0px;">Select a test type</li>
+                                    <li class="filter-item" data-name="11+">11+</li>
+                                    <li class="filter-item" data-name="13+">13+</li>
+                                </ul>
+                                <ul class="tests-list font-14">
+
+                                    <!-- Consortium -->
+                                    <li class="filter-heading bold" style="border: 0px;">Select your consortium/location</li>
+
+                                    <li class="filter-item" data-name="Bexley">Bexley</li>
+                                    <li class="filter-item" data-name="Buckinghamshire">Buckinghamshire</li>
+                                    <li class="filter-item" data-name="Dorset">Dorset</li>
+                                    <li class="filter-item" data-name="Gloucestershire">Gloucestershire</li>
+                                    <li class="filter-item" data-name="Kent">Kent</li>
+                                    <li class="filter-item" data-name="Kingston">Kingston</li>
+                                    <li class="filter-item" data-name="Lancashire">Lancashire</li>
+                                    <li class="filter-item" data-name="Lincolnshire">Lincolnshire</li>
+                                    <li class="filter-item" data-name="Medway">Medway</li>
+                                    <li class="filter-item" data-name="Plymouth">Plymouth</li>
+                                    <li class="filter-item" data-name="Redbridge">Redbridge</li>
+                                    <li class="filter-item" data-name="Slough">Slough</li>
+                                    <li class="filter-item" data-name="South West Herts">South West Herts</li>
+                                    <li class="filter-item" data-name="Torbay">Torbay</li>
+                                    <li class="filter-item" data-name="Trafford">Trafford</li>
+                                    <li class="filter-item" data-name="West Midlands">West Midlands</li>
+                                    <li class="filter-item" data-name="Wirral">Wirral</li>
+                                    <li class="filter-item" data-name="Other">Other</li>
+
+                                </ul>
+                            </div>
+                            <div class="chapter-nav mb-0 filter-results">
+                            
+                        
+                            </div>
+                            <!-- Test List Filters End -->
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
                 <!-- First Test Pack -->
                 <div class="rurera-mock-test-item panel-border rounded-sm p-20">
                     <div class="rurera-test-info">
