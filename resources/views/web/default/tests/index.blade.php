@@ -207,7 +207,7 @@
 
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
-                            <img src="/assets/default/svgs/location-form.svg" alt="" area-hidden="true" height="16" width="16">>
+                            <img src="/assets/default/svgs/location-form.svg" alt="" area-hidden="true" height="16" width="16">
                             Bexley <span>Ages 10-11</span>
                         </span>
                                     
@@ -243,7 +243,7 @@
 
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
-                            <img src="/assets/default/svgs/location-form.svg" alt="" area-hidden="true" height="16" width="16">>
+                            <img src="/assets/default/svgs/location-form.svg" alt="" area-hidden="true" height="16" width="16">
                             Bexley <span>Ages 10-11</span>
                         </span>
                                     
