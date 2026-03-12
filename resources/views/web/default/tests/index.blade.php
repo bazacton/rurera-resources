@@ -201,7 +201,7 @@
                 </div>
 
                 <!-- Second Test Pack -->
-                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                <div class="rurera-test-pack panel-border rounded-sm p-20 mb-15">
                     <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 02</h3>
                     <p class="rurera-test-description font-14">Complete mock test</p>
 
