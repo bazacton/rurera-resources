@@ -80,19 +80,9 @@
         <div class="col-12 col-lg-12 col-md-12">
             <!-- Sats Listings Start -->
             <div class="sats-listing-card medium sats-listing-card medium">
-                <table class="simple-table">
-                    <tbody>
+                {!! $practice_response_layout !!}
 
-                    {!! $practice_response_layout !!}
-
-                    {!! $response_layout !!}
-
-                    </tbody>
-                </table>
-
-
-
-
+                {!! $response_layout !!}
             </div>
 
 
