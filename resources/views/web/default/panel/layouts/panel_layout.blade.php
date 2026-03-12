@@ -511,42 +511,7 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                     @if($is_subject_page == false)
                                         @if(auth()->user()->isUser() && !request()->is('quests'))
                                             @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly'))->count() > 0 )
-                                                <div class="quests-list panel-border bg-white rounded-sm p-20 mb-30">
-                                                    <h3 class="font-16 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
-                                                        Daily Quests
-                                                        <a href="/quests" class="view-all font-weight-bold font-14">View All</a>
-                                                    </h3>
-                                                    <ul aria-label="Daily quests">
-                                                        @foreach( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly')) as $questObj)
-                                                            @php $questUserData = $DailyQuestsController->getQuestUserData($questObj);
-
-                                                            $quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
-                                                            $quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
-                                                            @endphp
-                                                            <li>
-                                                                <div class="quests-item">
-                                                                    <div class="icon-box">
-                                                                        <img src="{{$quest_icon}}" alt="quests image" loading="lazy">
-                                                                    </div>
-                                                                    <div class="item-text">
-                                                                        <h5 class="font-14 font-weight-500">{{$questObj->title}}</h5>
-                                                                        <div class="levels-progress horizontal">
-                                                                            <span class="progress-box">
-                                                                                <span class="progress-count" style="width: {{isset( $questUserData['completion_percentage'] )? $questUserData['completion_percentage'] : 0}}%;"></span>
-                                                                            </span>
-                                                                            <span class="progress-numbers">{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</span>
-                                                                        </div>
-                                                                        <span class="progress-icon">
-                                                                            <img src="/assets/default/img/quests-coin.png" alt="quests-coin" loading="lazy">
-                                                                            +{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        @endforeach
-                                                    </ul>
-                                                </div>
-                                                <div class="books-feature-listings panel-border bg-white rounded-sm p-20">
+                                                <div class="books-feature-listings panel-border bg-white rounded-sm p-20 mb-30">
                                                     <div class="books-card">
                                                         <div class="img-holder">
                                                             <img src="/store/1/books/book-cover-image/Hide-and-Seek.jpg" alt="" area-hidden="true" height="182" width="137">
@@ -618,6 +583,41 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                                     <div class="show-cards-btn-holder">
                                                         <button type="button" class="show-cards-btn">Show More 1 card</button>
                                                     </div>
+                                                </div>
+                                                <div class="quests-list panel-border bg-white rounded-sm p-20 mb-30">
+                                                    <h3 class="font-16 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
+                                                        Daily Quests
+                                                        <a href="/quests" class="view-all font-weight-bold font-14">View All</a>
+                                                    </h3>
+                                                    <ul aria-label="Daily quests">
+                                                        @foreach( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly')) as $questObj)
+                                                            @php $questUserData = $DailyQuestsController->getQuestUserData($questObj);
+
+                                                            $quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
+                                                            $quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
+                                                            @endphp
+                                                            <li>
+                                                                <div class="quests-item">
+                                                                    <div class="icon-box">
+                                                                        <img src="{{$quest_icon}}" alt="quests image" loading="lazy">
+                                                                    </div>
+                                                                    <div class="item-text">
+                                                                        <h5 class="font-14 font-weight-500">{{$questObj->title}}</h5>
+                                                                        <div class="levels-progress horizontal">
+                                                                            <span class="progress-box">
+                                                                                <span class="progress-count" style="width: {{isset( $questUserData['completion_percentage'] )? $questUserData['completion_percentage'] : 0}}%;"></span>
+                                                                            </span>
+                                                                            <span class="progress-numbers">{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</span>
+                                                                        </div>
+                                                                        <span class="progress-icon">
+                                                                            <img src="/assets/default/img/quests-coin.png" alt="quests-coin" loading="lazy">
+                                                                            +{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        @endforeach
+                                                    </ul>
                                                 </div>
                                             @endif
                                         @endif
