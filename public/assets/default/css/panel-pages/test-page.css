@@ -145,6 +145,23 @@ Sub Pages Style
 .rurera-test-price-value {
     font-weight: 600;
 }
+.rurera-test-subjects li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 12px;
+}
+.rurera-test-subjects li:before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    background-color: var(--primary);
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin: -2px 0 0 0;
+}
 .sats-listing-card thead th,
 .panel-section-card .custom-table thead td,
 .panel-section-card .custom-table thead th {padding: 15px 20px; color: #333; text-align: left; font-weight: 600;}
