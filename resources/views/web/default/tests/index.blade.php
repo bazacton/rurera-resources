@@ -266,7 +266,7 @@
                     
                         <div class="rurera-test-price">
                             <p class="rurera-test-price-value font-16">£19.00</p>
-                            <button type="button" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-list-btn font-14">Add to cart Modal</button>
+                            <button type="button" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-list-btn font-14">Add to cart</button>
                         </div>
                     </div>
                     
