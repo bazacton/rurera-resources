@@ -65,7 +65,7 @@ Sub Pages Style
     display: flex;
     align-items: center;
 }
-.rurera-test-pack {
+.rurera-mock-test-item {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -76,7 +76,7 @@ Sub Pages Style
     width: calc(100% - 130px);
     gap: 15px;
 }
-.rurera-test-pack .img-box img,
+.rurera-mock-test-item .img-box img,
 .rurera-test-info > img {
     max-width: 70px;
     min-width: 70px;
