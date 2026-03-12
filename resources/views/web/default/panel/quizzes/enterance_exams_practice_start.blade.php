@@ -189,14 +189,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                         </div>
 
                                     </div>
-                                        <div class="question-status" id="question-status-text">
-                                            Question <span>10</span>/20 &#9662;
-                                        </div>
-
-
-
+                                        
                                         <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
-
+                                            <div class="question-status" id="question-status-text">
+                                                Question <span>10</span>/20 &#9662;
+                                            </div>
                                             <div class="quiz-time-bar">
                                                 <div class="timer-wrap">
                                                     <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
