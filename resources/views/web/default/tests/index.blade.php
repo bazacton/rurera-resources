@@ -88,7 +88,7 @@
 
             <div class="rurera-mock-test">
                 <!-- First Test Pack -->
-                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                <div class="rurera-mock-test-item panel-border rounded-sm p-20">
                     <div class="rurera-test-info">
                         <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
                         <div class="rurera-text-box font-14">
@@ -106,7 +106,7 @@
                 </div>
 
                 <!-- Second Test Pack -->
-                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                <div class="rurera-mock-test-item panel-border rounded-sm p-20">
                     <div class="rurera-test-info">
                         <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
                         <div class="rurera-text-box font-14">
@@ -125,7 +125,7 @@
                 </div>
 
                 <!-- Third Test Pack -->
-                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                <div class="rurera-mock-test-item panel-border rounded-sm p-20">
                     <div class="rurera-test-info">
                         <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
                         <div class="rurera-text-box font-14">
@@ -143,7 +143,7 @@
                 </div>
 
                 <!-- Fourth Test Pack -->
-                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                <div class="rurera-mock-test-item panel-border rounded-sm p-20">
                     <div class="rurera-test-info">
                         <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
                         <div class="rurera-text-box font-14">
