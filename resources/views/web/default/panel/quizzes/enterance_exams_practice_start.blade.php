@@ -34,20 +34,20 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         display: inline-block;
-        margin-bottom: 25px;
+        margin-top: 15px;
     }
     .question-palette::after {
         content: '';
         position: absolute;
-        bottom: -10px;
+        top: -10px;
         left: 50%;
         transform: translateX(-50%);
         width: 0;
         height: 0;
         border-left: 12px solid transparent;
         border-right: 12px solid transparent;
-        border-top: 12px solid white;
-        filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.05));
+        border-bottom: 12px solid white;
+        filter: drop-shadow(0 -4px 2px rgba(0, 0, 0, 0.05));
     }
 
     /* Quiz Pagination Styles */
