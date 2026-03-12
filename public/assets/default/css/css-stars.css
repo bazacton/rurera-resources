@@ -532,6 +532,12 @@ span.learn-lable {
     border-radius: 10px;
     height: 44px;
 }
+.rurera-topics-search .search-field:focus::-webkit-input-placeholder {
+  color: #fff0;
+}
+.rurera-topics-search .search-field:focus::-moz-placeholder {
+  color: #fff0;
+}
 .rurera-topics-search .search-field:focus {
     border-color: #333;
 }
