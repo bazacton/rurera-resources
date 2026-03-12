@@ -116,6 +116,13 @@ Sub Pages Style
     border: 1px solid #ddd;
     font-weight: 500;
 }
+.rurera-test-simulation-description {
+    margin: 0 0 25px;
+}
+.rurera-test-inclusions-title {
+    color: #aeb4ba;
+    margin: 0 0 10px;
+}
 .sats-listing-card thead th,
 .panel-section-card .custom-table thead td,
 .panel-section-card .custom-table thead th {padding: 15px 20px; color: #333; text-align: left; font-weight: 600;}
