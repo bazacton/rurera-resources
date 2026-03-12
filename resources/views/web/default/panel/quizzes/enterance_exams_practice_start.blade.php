@@ -601,6 +601,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         var $activeLi = $(".quiz-section-data.active").find(".quiz-pagination li.active");
         var response_flag = true;
+        var finish_confirm = $(".quiz-section-data.active").attr('data-section_finish_confirm');
+        if(finish_confirm == 'yes'){
+            return true;
+        }
         if ($activeLi.is(":last-child")) {
             console.log("This is the last li");
             afterSectionFinish();
@@ -925,7 +929,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
     function afterSectionFinishConfirm(){
-        console.log('afterSectionFinishConfirm');
+        var current_question_id =  $(".quiz-section-data.active").find(".quiz-pagination li.active").attr('data-question_id');
+        $(".quiz-section-data.active").attr('data-section_finish_confirm', 'yes');
+        $(".quiz-section-data.active").attr('data-finish-exclude_id', current_question_id);
+        onSectionMoveConfirm();
+        $(".question-submit-btn").click();
         return true;
     }
 
@@ -957,6 +965,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
     function onSectionMoveConfirm(){
         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
+
+        var exclude_question_id = $active.attr('data-finish-exclude_id');
         var current_section_id = $active.attr('data-section_id');
         const $next = $active.next('.quiz-section-data');
 
@@ -971,7 +981,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         var question_ids = [];
         pendingQuestions.each(function () {
             var questionId = $(this).data('question_id');
-            question_ids.push(questionId);
+            if(questionId != exclude_question_id){
+                question_ids.push(questionId);
+            }
 
         });
 
