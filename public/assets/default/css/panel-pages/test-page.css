@@ -83,6 +83,16 @@ Sub Pages Style
     display: inline-block;
     object-fit: contain;
 }
+.rurera-test-info .rurera-text-box > img {
+    max-width: 50px;
+    max-height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.rurera-text-box {
+    position: relative;
+}
 .sats-listing-card thead th,
 .panel-section-card .custom-table thead td,
 .panel-section-card .custom-table thead th {padding: 15px 20px; color: #333; text-align: left; font-weight: 600;}
