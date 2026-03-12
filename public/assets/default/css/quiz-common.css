@@ -1364,12 +1364,6 @@ body mjx-container[display] {
     border-radius: 0;
     color: #333;
 }
-.quiz-pagination li:first-child a {
-    border-radius: 3px 0 0 3px;
-}
-.quiz-pagination li:last-child a {
-    border-radius: 0 3px 3px 0;
-}
 .quiz-pagination .incorrect a {color: red !important; box-shadow: 0 2px 0 0 red; border-radius: 0;}
 .quiz-pagination .correct a {color: green !important; box-shadow: 0 2px 0 0 green; border-radius: 0;}
 .quiz-pagination .in-review a {background-color: orange; border-color: #fbd796;}
