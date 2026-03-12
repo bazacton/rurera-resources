@@ -139,10 +139,7 @@ Sub Pages Style
     font-size: .875rem;
 }
 .rurera-test-price button {
-    background-color: var(--primary);
-    color: #fff;
-    height: auto;
-    padding: 10px 25px;
+    background-color: inherit;
     margin-top: 10px;
 }
 .rurera-test-price button:hover {
