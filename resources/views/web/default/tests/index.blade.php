@@ -181,17 +181,18 @@
 
                     <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
 
-                    <p class="rurera-test-inclusions-title font-14">What's included:</p>
                     <div class="rurera-test-bottom">
-                        <ul class="rurera-test-subjects">
-                            <li>
-                                1 x English &amp; Verbal Reasoning paper
-                            </li>
-                            <li>
-                                1 x Non-Verbal Reasoning &amp; Maths paper
-                            </li>
-                        </ul>
-
+                        <div class="rurera-test-subjects">
+                            <p class="rurera-test-inclusions-title font-14">What's included:</p>
+                            <ul>
+                                <li>
+                                    1 x English &amp; Verbal Reasoning paper
+                                </li>
+                                <li>
+                                    1 x Non-Verbal Reasoning &amp; Maths paper
+                                </li>
+                            </ul>
+                        </div>
                         <div class="rurera-test-price">
                             <p class="rurera-test-price-value font-16">£20.00</p>
                             <button type="button" class="rurera-button-add-to-cart btn btn-primary">Add to cart</button>
