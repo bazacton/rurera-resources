@@ -1691,8 +1691,24 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
     gap: 6px;
 }
 .colon {
-  font-weight: bold;
-  color: #000;
+    font-weight: bold;
+    color: #000;
+}
+.close-practice {
+    background-color: inherit;
+    color: var(--primary);
+    border: 0;
+    padding: 0;
+    line-height: normal;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 20px;
 }
 /* --- END: Quiz Time-Bar --- */
 /* ======================================================== */
