@@ -47,11 +47,9 @@ var totalInCorrectCount = 0;
 $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn", function (e) {
 //$(document).on('click', '.question-submit-btn', function (e) {
     e.preventDefault();
-    console.log('submit-----------');
 	if( $(this).hasClass('rurera-processing')){
 		return false;
 	}
-    console.log('length----'+$('.spells-quiz-from').length);
     if($('.spells-quiz-from').length > 0){
         var editor_field_value = '';
         var thisObj = $(".question-step.active");
@@ -70,6 +68,9 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 
 	var thisBlock = $(".rurera-question-block.active");
     var thisForm = thisBlock.find('form');
+    if (typeof beforeQuestionSubmit === "function") {
+        return beforeQuestionSubmit();
+    }
 
 
     var bypass_validation = $(".question-submit-btn").attr('data-bypass_validation');
