@@ -208,6 +208,9 @@ Sub Pages Style
     border-radius: 100%;
     border: 1px solid var(--primary);
     background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .rurera-test-subjects .icon-box span:first-child {
     margin-right: -10px;
