@@ -585,23 +585,6 @@
         input.focus();
     });
 
-    
-    const input = document.getElementById("searchMockTests");
-    const clearBtn = document.getElementById("clearMockSearch");
-
-    input.addEventListener("input", function () {
-        if (this.value.length > 0) {
-            clearBtn.style.display = "block";
-        } else {
-            clearBtn.style.display = "none";
-        }
-    });
-
-    clearBtn.addEventListener("click", function () {
-        input.value = "";
-        clearBtn.style.display = "none";
-        input.focus();
-    });
 </script>
 @if (!auth()->subscription('sats'))
     <script>
