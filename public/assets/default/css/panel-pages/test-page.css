@@ -134,6 +134,17 @@ Sub Pages Style
     gap: 10px;
     font-size: .875rem;
 }
+.rurera-test-price button {
+    height: auto;
+    padding: 10px 25px;
+    margin-top: 10px;
+}
+.rurera-test-price {
+    text-align: right;
+}
+.rurera-test-price-value {
+    font-weight: 600;
+}
 .sats-listing-card thead th,
 .panel-section-card .custom-table thead td,
 .panel-section-card .custom-table thead th {padding: 15px 20px; color: #333; text-align: left; font-weight: 600;}
