@@ -101,7 +101,7 @@
                         </div>
                     </div>
                     <div class="rurera-test-modal">
-                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test </a>
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-list-btn font-14">Take Test </a>
                     </div>
                 </div>
 
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <div class="rurera-test-modal">
-                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test </a>
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-list-btn font-14">Take Test </a>
                     </div>
                 </div>
 
@@ -138,7 +138,7 @@
                         </div>
                     </div>
                     <div class="rurera-test-modal">
-                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test </a>
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-list-btn font-14">Take Test </a>
                     </div>
                 </div>
 
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                     <div class="rurera-test-modal">
-                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test</a>
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-list-btn font-14">Take Test</a>
                     </div>
                 </div>
             </div>
@@ -195,7 +195,7 @@
                         </div>
                         <div class="rurera-test-price">
                             <p class="rurera-test-price-value font-16">£20.00</p>
-                            <button type="button" class="rurera-button-add-to-cart btn btn-primary">Add to cart</button>
+                            <button type="button" class="rurera-list-btn font-14">Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
 
                     <div class="rurera-test-price">
                         <p class="rurera-test-price-value font-16">£22.00</p>
-                        <button type="button" class="rurera-button-add-to-cart btn btn-primary">Add to cart</button>
+                        <button type="button" class="rurera-list-btn font-14">Add to cart</button>
                     </div>
                 </div>
 
@@ -270,7 +270,7 @@
 
                     <div class="rurera-test-price">
                         <p class="rurera-test-price-value font-16">£19.00</p>
-                        <button type="button" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Add to cart Modal</button>
+                        <button type="button" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-list-btn font-14">Add to cart Modal</button>
                     </div>
                 </div>
             </div>
