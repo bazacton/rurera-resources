@@ -1696,6 +1696,7 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
 .popover:has(.quiz-pagination) {
     border: 0;
     box-shadow: none;
+    z-index: 1;
 }
 .popover:has(.quiz-pagination) .arrow {
     display: none;
