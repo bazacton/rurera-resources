@@ -170,13 +170,15 @@
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
                             <img src="/assets/default/svgs/location-form.svg" alt="" area-hidden="true" height="16" width="16">
-                            Bexley <span>Ages 10-11</span>
+                            Bexley
                         </span>
+                        <span>Ages 10-11</span>
                                     
                         <span class="rurera-icon-time">
                             <img src="/assets/default/svgs/clock.svg" alt="" area-hidden="true" height="16" width="16">
-                            1h 40m <span>Qs. 125</span>
+                            1h 40m
                         </span>
+                        <span>Qs. 125</span>
                     </div>
 
                     <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
@@ -208,13 +210,15 @@
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
                             <img src="/assets/default/svgs/location-form.svg" alt="" area-hidden="true" height="16" width="16">
-                            Bexley <span>Ages 10-11</span>
+                            Bexley
                         </span>
+                        <span>Ages 10-11</span>
                                     
                         <span class="rurera-icon-time">
                             <img src="/assets/default/svgs/clock.svg" alt="" area-hidden="true" height="16" width="16">
-                            1h 45m <span>Qs. 130</span>
+                            1h 45m
                         </span>
+                        <span>Qs. 130</span>
                     </div>
 
                     <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
@@ -244,13 +248,15 @@
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
                             <img src="/assets/default/svgs/location-form.svg" alt="" area-hidden="true" height="16" width="16">
-                            Bexley <span>Ages 10-11</span>
+                            Bexley
                         </span>
+                        <span>Ages 10-11</span>
                                     
                         <span class="rurera-icon-time">
                             <img src="/assets/default/svgs/clock.svg" alt="" area-hidden="true" height="16" width="16">
-                            1h 45m <span>Qs. 130</span>
+                            1h 45m
                         </span>
+                        <span>Qs. 130</span>
                     </div>
 
                     <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
