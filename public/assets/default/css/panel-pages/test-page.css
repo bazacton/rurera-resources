@@ -177,9 +177,40 @@ Sub Pages Style
     border-radius: 6px;
     margin: 0 0 15px;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
 }
 #rureraMockTestModal .modal-dialog {
     max-width: 600px;
+}
+
+.option-card .add-list-btn {
+    border: 0;
+    padding: 10px 12px;
+    font-size: .875rem;
+    white-space: nowrap;
+    height: auto;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 5px;
+}
+.option-card .card-info h6 {
+    margin: 0 0 5px;
+}
+.option-card .card-info p {
+    font-size: .875rem;
+}
+.option-card.disabled {
+    border-color: #ddd;
+    opacity: .5;
+    user-select: none;
+}
+.option-card .add-list-btn.btn-disabled {
+    background-color: #e1eefe;
+    color: var(--primary);
 }
 .sats-listing-card thead th,
 .panel-section-card .custom-table thead td,
