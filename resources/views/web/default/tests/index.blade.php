@@ -305,7 +305,7 @@
                                 <h6 class="font-weight-bold">Online</h6>
                                 <p>Complete this test on your device. Get your results instantly.</p>
                             </div>
-                            <a href="javascript:;" class="btn btn-primary">Add to to-do list</a>
+                            <button class="btn btn-primary" type="button">Add to to-do list</button>
                         </div>
                     </div>
                     <div class="col-12">
