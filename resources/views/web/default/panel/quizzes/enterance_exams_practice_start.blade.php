@@ -1250,6 +1250,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             content: paletteContent,
             html: true,
             placement: 'top',
+            sanitize: false, // IMPORTANT
             // Use a custom template to make the popover wider and remove the header
             template: '<div class="popover" role="tooltip" style="max-width: 550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
         });
