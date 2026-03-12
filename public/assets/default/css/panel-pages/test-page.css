@@ -40,7 +40,7 @@ Sub Pages Style
 .sats-listing-card.medium .row {align-items: center;}
 .sats-listing-card.medium .img-holder {margin-bottom: 0;}
 .sats-listing-card.medium .text-holder h4 {margin-bottom: 0;}
-.sats-listing-card img {max-width: 70px; min-width: 70px; min-height: 80px; max-height: 80px; display: inline-block; margin-right: 15px; object-fit: contain;}
+.sats-listing-card img {max-width: 70px; min-width: 70px; display: inline-block; margin-right: 15px; object-fit: contain;}
 .sats-listing-card .text-box {display: inline-block; vertical-align: middle; width: calc(100% - 90px); line-height: normal; position: relative;}
 .sats-listing-card .text-box img {vertical-align: middle; margin: 0; max-width: 50px; max-height: 50px; position: absolute; top: 50%; transform: translateY(-50%); min-height: auto;}
 .sats-listing-card thead {background-color: var(--primary);}
@@ -81,8 +81,6 @@ Sub Pages Style
 .rurera-test-info > img {
     max-width: 70px;
     min-width: 70px;
-    min-height: 80px;
-    max-height: 80px;
     display: inline-block;
     object-fit: contain;
 }
