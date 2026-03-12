@@ -191,7 +191,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                     </div>
 
                                         <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
-                                            <div class="question-status" id="question-status-text">
+                                            <div class="question-status question-status-text" id="question-status-text">
                                                 Question <span>10</span>/20 &#9662;
                                             </div>
                                             <div class="quiz-time-bar">
@@ -919,9 +919,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 '',
                 true, //confirmButton
                 section_move_html,
-                'onSectionMoveConfirm'
+                'afterSectionFinishConfirm'
             );
 
+    }
+
+    function afterSectionFinishConfirm(){
+        return true;
     }
 
 
@@ -1246,7 +1250,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         const paletteContent = $('#palette-container').html();
 
         // Initialize the popover
-        $('#question-status-text').popover({
+        $('.question-status-text').popover({
             content: paletteContent,
             html: true,
             placement: 'top',
