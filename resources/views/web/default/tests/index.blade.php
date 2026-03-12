@@ -168,14 +168,15 @@
                     <p class="rurera-test-description font-14">Complete mock test</p>
 
                     <div class="rurera-test-pack-info">
-            <span class="rurera-icon-location">
-                <img src="/assets/icons/location-icon.svg" alt="Location Icon" height="16" width="16">
-            </span>Bexley
-                        <span>Ages 10-11</span>
+                        <span class="rurera-icon-location">
+                            <img src="/assets/icons/location-icon.svg" alt="" area-hidden="true" height="16" width="16">
+                            Bexley <span>Ages 10-11</span>
+                        </span>
+                                    
                         <span class="rurera-icon-time">
-                <img src="/assets/icons/time-icon.svg" alt="Time Icon" height="16" width="16">
-            </span>1h 40m
-                        <span>Qs. 125</span>
+                            <img src="/assets/icons/time-icon.svg" alt="Time Icon" height="16" width="16">
+                            1h 40m <span>Qs. 125</span>
+                        </span>
                     </div>
 
                     <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
