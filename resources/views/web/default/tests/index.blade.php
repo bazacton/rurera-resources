@@ -301,17 +301,19 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="option-card">
-                            <img src="/assets/icons/online-icon.svg" alt="Online Icon" width="32" height="32">
-                            <h6 class="font-weight-bold">Online</h6>
-                            <p>Complete this test on your device. Get your results instantly.</p>
+                            <div class="card-info">
+                                <h6 class="font-weight-bold">Online</h6>
+                                <p>Complete this test on your device. Get your results instantly.</p>
+                            </div>
                             <a href="javascript:;" class="btn btn-primary">Add to to-do list</a>
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="option-card">
-                            <img src="/assets/icons/online-icon.svg" alt="On Paper Icon" width="32" height="32">
-                            <h6 class="font-weight-bold">On paper</h6>
-                            <p>This is an online exam. A paper option is not provided.</p>
+                        <div class="option-card disabled">
+                            <div class="card-info">
+                                <h6 class="font-weight-bold">On paper</h6>
+                                <p>This is an online exam. A paper option is not provided.</p>
+                            </div>
                             <button class="btn btn-disabled" disabled>Unavailable</button>
                         </div>
                     </div>
