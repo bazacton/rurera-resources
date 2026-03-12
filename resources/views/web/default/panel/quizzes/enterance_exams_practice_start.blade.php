@@ -1266,7 +1266,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             template: '<div class="popover" role="tooltip" style="max-width:550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
         });
     });*/
-    $(document).on("click", ",question-status", function (e) {
+    $(document).on("click", ".question-status", function (e) {
 
         var btn = $(this);
         var popup = btn.closest('.quiz-section-data').find('.palette-popup');
