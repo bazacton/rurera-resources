@@ -603,7 +603,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         var response_flag = true;
         if ($activeLi.is(":last-child")) {
             console.log("This is the last li");
-            afterNoNextQuestion();
+            afterSectionFinish();
             response_flag = false;
         }
         return response_flag;
@@ -860,6 +860,67 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 'onSectionMoveConfirm'
             );
         }
+
+    }
+
+    function afterSectionFinish(){
+        const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
+
+        var quiz_timer_remaining = $active.find('.quiz-timer-counter').attr('data-time_counter');
+        var current_section_id = $active.attr('data-section_id');
+        const $next = $active.next('.quiz-section-data');
+        var total_questions = $('.quiz-pagination ul[data-section_id="'+current_section_id+'"] li').length;
+        var section_move_html =
+            'Total Questions: ' + total_questions + '<br>' +
+            'Correct Questions: ' + correct_questions + '<br>' +
+            'Incorrect Questions: ' + incorrect_questions + '<br>' +
+            'Pending Questions: ' + (total_questions - (correct_questions + incorrect_questions)) + '<br>' +
+            'You still have: ' + getTimeStr(quiz_timer_remaining) + ' remaining';
+
+        var pendingQuestions = $(".quiz-section-data.active")
+            .find('.quiz-pagination li')
+            .not('.correct, .attempted');
+
+        var buttonsHTML = '<div class="d-flex justify-content-center gap-3 mb-5">';
+
+        pendingQuestions.each(function () {
+            var questionId = $(this).data('question_id');
+            var questionNumber = $(this).find('a').text().trim();
+
+            buttonsHTML += '<button type="button" data-question_id="' + questionId + '" class="question-paging btn btn-outline-primary px-3">' + questionNumber + '</button>';
+        });
+
+        buttonsHTML += '</div>';
+
+        var section_move_html = `
+
+            <h2 class="fw-bold mb-4">Well done!</h2>
+
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <div class="border rounded px-3 py-2 bg-light">
+                    <span class="me-2">⏱</span>
+                    <span class="fw-bold text-warning">${getTimeStr(quiz_timer_remaining)}</span>
+                </div>
+                <span class="ms-2"> left</span>
+            </div>
+
+            <p class="text-muted mb-4">
+                Now is a great time to check your answers and to try to answer the
+                following questions that you've skipped:
+            </p>
+            <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
+                ${buttonsHTML}
+            </div>
+
+            `;
+
+            rurera_modal_alert(
+                '',
+                '',
+                true, //confirmButton
+                section_move_html,
+                'onSectionMoveConfirm'
+            );
 
     }
 
