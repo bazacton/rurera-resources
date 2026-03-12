@@ -142,9 +142,6 @@ Sub Pages Style
     background-color: inherit;
     margin-top: 10px;
 }
-.rurera-test-price button:hover {
-    color: #fff;
-}
 .rurera-test-price {
     text-align: right;
 }
