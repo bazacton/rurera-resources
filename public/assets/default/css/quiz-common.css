@@ -3660,4 +3660,14 @@ html:has(.learn-test-start) {
     font-weight: 500;
     font-size: .875rem;
 }
+.closePractice .modal-footer button {
+    padding: 8px 20px;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: none;
+}
+.closePractice .modal-footer .btn-light {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
 /* Test Section Style End */
