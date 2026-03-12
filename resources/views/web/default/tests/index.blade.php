@@ -94,8 +94,8 @@
                             <div class="form-group">
                                 <div class="input-field">
                                     <img src="/assets/default/svgs/search2.svg" alt="" aria-hidden="true">
-                                    <span class="search-clear" id="clearSearch">×</span>
-                                    <input type="text" class="search-tests" id="searchTests" placeholder="Test Keyword">
+                                    <span class="search-clear" id="clearMockSearch">×</span>
+                                    <input type="text" class="search-tests" id="searchMockTests" placeholder="Test Keyword">
                                 </div>
                             </div>
                         </div>
@@ -570,6 +570,24 @@
     });
     const input = document.getElementById("searchTests");
     const clearBtn = document.getElementById("clearSearch");
+
+    input.addEventListener("input", function () {
+        if (this.value.length > 0) {
+            clearBtn.style.display = "block";
+        } else {
+            clearBtn.style.display = "none";
+        }
+    });
+
+    clearBtn.addEventListener("click", function () {
+        input.value = "";
+        clearBtn.style.display = "none";
+        input.focus();
+    });
+
+    
+    const input = document.getElementById("searchMockTests");
+    const clearBtn = document.getElementById("clearMockSearch");
 
     input.addEventListener("input", function () {
         if (this.value.length > 0) {
