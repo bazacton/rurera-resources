@@ -1694,6 +1694,18 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
     font-weight: bold;
     color: #000;
 }
+/* --- END: Quiz Time-Bar --- */
+/* ======================================================== */
+
+/* --- Start: Quiz popover Style --- */
+/* ======================================================== */
+.popover:has(.quiz-pagination) {
+    border: 0;
+    box-shadow: none;
+}
+.popover:has(.quiz-pagination) .arrow {
+    display: none;
+}
 .close-practice {
     background-color: inherit;
     color: var(--primary);
@@ -1710,7 +1722,7 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
     top: 15px;
     height: 20px;
 }
-/* --- END: Quiz Time-Bar --- */
+/* --- END: Quiz popover Style --- */
 /* ======================================================== */
 
 /* ======================================================== */
