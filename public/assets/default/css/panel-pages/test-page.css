@@ -123,6 +123,17 @@ Sub Pages Style
     color: #aeb4ba;
     margin: 0 0 10px;
 }
+.rurera-test-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rurera-test-subjects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: .875rem;
+}
 .sats-listing-card thead th,
 .panel-section-card .custom-table thead td,
 .panel-section-card .custom-table thead th {padding: 15px 20px; color: #333; text-align: left; font-weight: 600;}
