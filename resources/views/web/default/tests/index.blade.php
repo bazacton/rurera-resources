@@ -320,8 +320,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <a href="#" class="btn btn-primary">Proceed</a>
+                <button type="button" class="close-btn" data-dismiss="modal">Close</button>
+                <button type="button" class="proceed-btn" data-dismiss="modal">Proceed</button>
             </div>
         </div>
     </div>
