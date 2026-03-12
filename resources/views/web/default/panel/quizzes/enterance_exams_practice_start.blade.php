@@ -151,6 +151,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
+                                        <div id="palette-container" style="display: none;">
                                         <div class="question-palette">
                                         <div class="quiz-pagination rurera-hide">
 
@@ -180,8 +181,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="question-status" id="question-status-text" data-toggle="tooltip" data-placement="top" title="Current Question">
-                                            Question <span>10</span>/20
+
+                                    </div>
+                                        <div class="question-status" id="question-status-text">
+                                            Question <span>10</span>/20 &#9662;
                                         </div>
 
 
@@ -1165,4 +1168,19 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
 
+</script>
+<script>
+    $(function () {
+        // Get the HTML content for the popover
+        const paletteContent = $('#palette-container').html();
+
+        // Initialize the popover
+        $('#question-status-text').popover({
+            content: paletteContent,
+            html: true,
+            placement: 'top',
+            // Use a custom template to make the popover wider and remove the header
+            template: '<div class="popover" role="tooltip" style="max-width: 550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
+        });
+    });
 </script>
