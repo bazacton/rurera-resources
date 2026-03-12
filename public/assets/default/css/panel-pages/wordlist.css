@@ -151,6 +151,13 @@ body .spell-question-area .question-label span {text-align: center;}
 .ru-search-input .form-group img {
     height: 20px;
     width: 20px;
+    filter: invert(69%) sepia(0%) saturate(61%) hue-rotate(213deg) brightness(88%) contrast(90%);
+}
+.ru-search-input .form-group:has(input:focus) img {
+    filter: none;
+}
+.ru-search-input .form-group:has(input:focus) {
+    border-color: #333;
 }
 .ru-search-input .form-group input {
     padding: 5px 10px 5px 5px;
