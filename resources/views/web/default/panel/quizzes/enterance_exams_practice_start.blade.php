@@ -1242,16 +1242,16 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 </script>
 <script>
     $(function () {
+        // Get the HTML content for the popover
         const paletteContent = $('#palette-container').html();
 
+        // Initialize the popover
         $('#question-status-text').popover({
+            content: paletteContent,
             html: true,
             placement: 'top',
-            sanitize: false,
-            content: function () {
-                return $('#palette-container').show(); // return the actual element
-            },
-            template: '<div class="popover" role="tooltip" style="max-width:550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
+            sanitize: false, // IMPORTANT
+            template: '<div class="popover" role="tooltip" style="max-width: 550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
         });
     });
 </script>
