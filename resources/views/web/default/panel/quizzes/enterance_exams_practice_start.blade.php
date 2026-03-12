@@ -88,7 +88,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
     /* Active / Highlight State */
-    .quiz-pagination li.active a {
+    .quiz-pagination li.active a,
+    .quiz-pagination li.active a:not([href]):not([tabindex]) {
         background-color: white;
         color: #007bff;
         border: 2px solid #007bff;
