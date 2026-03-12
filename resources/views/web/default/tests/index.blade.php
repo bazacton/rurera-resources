@@ -57,6 +57,7 @@
                                 <a href="#." class="filter-mobile-btn">Filters</a>
                                 <ul class="tests-list font-14">
                                     <li data-type="all" class="active">All Tests</li>
+
                                     <li data-type="sats"><img src="/assets/default/img/assignment-logo/sats.png" alt="sats"> SATs</li>
                                     <li data-type="11plus"><img src="/assets/default/img/assignment-logo/11plus.png" alt="11plus"> 11Plus</li>
                                     <li data-type="iseb"><img src="/assets/default/img/assignment-logo/iseb.png" alt="iseb"> ISEB</li>
@@ -180,9 +181,6 @@
                         </span>
                         <span>Qs. 125</span>
                     </div>
-
-                    <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
-
                     <div class="rurera-test-bottom">
                         <div class="rurera-test-subjects">
                             <p class="rurera-test-inclusions-title font-14">What's included:</p>
@@ -220,9 +218,6 @@
                         </span>
                         <span>Qs. 130</span>
                     </div>
-
-                    <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
-
                     <div class="rurera-test-bottom">
                         <div class="rurera-test-subjects">
                             <p class="rurera-test-inclusions-title font-14">What's included:</p>
@@ -258,9 +253,6 @@
                         </span>
                         <span>Qs. 130</span>
                     </div>
-
-                    <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
-
                     <div class="rurera-test-bottom">
                         <div class="rurera-test-subjects">
                             <p class="rurera-test-inclusions-title font-14">What's included:</p>
