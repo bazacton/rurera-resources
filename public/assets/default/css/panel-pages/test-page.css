@@ -212,6 +212,20 @@ Sub Pages Style
     background-color: #e1eefe;
     color: var(--primary);
 }
+#rureraMockTestModal .modal-footer button {
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+    padding: 6px 15px;
+    font-size: .875rem;
+}
+#rureraMockTestModal .close-btn {
+    background-color: inherit;
+    color: var(--primary);
+}
+.proceed-btn {
+    background-color: var(--primary);
+    color: #fff;
+}
 .sats-listing-card thead th,
 .panel-section-card .custom-table thead td,
 .panel-section-card .custom-table thead th {padding: 15px 20px; color: #333; text-align: left; font-weight: 600;}
