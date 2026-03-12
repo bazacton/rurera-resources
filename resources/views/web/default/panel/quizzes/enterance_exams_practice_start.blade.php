@@ -110,9 +110,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     <section class="lms-quiz-section">
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$total_questions}}">
-
+            <button class="close-practice" type="button"><span aria-hidden="true">&times;</span></button>
             <div class="justify-content-center w-100">
                 <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
+
                     <div class="question-step quiz-complete" style="display:none">
 
                         <div class="step-block">Test Completed!!!</div>
@@ -268,13 +269,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 Finish Section
                                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                                             </a>
-                                                            <button type="button" class="report-btn mr-md-auto"
-                                                                    data-toggle="tooltip"
-                                                                    title="Report this question"
-                                                                    data-target="#reportModal"
-                                                                    data-toggle2="modal">
-                                                                Report
-                                                            </button>
                                                             <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
                                                                 Next
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
@@ -390,14 +384,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         </div>
     </div>
 </div>
-<!-- Report Modal Html Start -->
-<div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="reportModalLabel" aria-hidden="true">
+
+
+<div class="modal fade closePractice" id="closePractice" tabindex="-1" role="dialog" aria-labelledby="closePracticeLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
 
             <!-- Header -->
             <div class="modal-header border-0 pb-0">
-                <h5 class="modal-title font-weight-bold font-16" id="reportModalLabel">Report Issue</h5>
+                <h5 class="modal-title font-weight-bold font-16" id="reportModalLabel">Close Practice</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -442,6 +437,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         </div>
     </div>
 </div>
+
+
 <!-- Report Modal Html End -->
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
