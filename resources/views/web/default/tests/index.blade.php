@@ -180,9 +180,6 @@
                         </span>
                         <span>Qs. 125</span>
                     </div>
-
-                    <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
-
                     <div class="rurera-test-bottom">
                         <div class="rurera-test-subjects">
                             <p class="rurera-test-inclusions-title font-14">What's included:</p>
@@ -224,9 +221,6 @@
                         </span>
                         <span>Qs. 130</span>
                     </div>
-
-                    <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
-
                     <div class="rurera-test-bottom">
                         <div class="rurera-test-subjects">
                             <p class="rurera-test-inclusions-title font-14">What's included:</p>
@@ -268,9 +262,6 @@
                         </span>
                         <span>Qs. 130</span>
                     </div>
-
-                    <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
-
                     <div class="rurera-test-bottom">
                         <div class="rurera-test-subjects">
                             <p class="rurera-test-inclusions-title font-14">What's included:</p>
