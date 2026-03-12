@@ -246,15 +246,23 @@
                             <ul>
                                 <li>
                                     <span class="icon-box">
-                                        <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
-                                        <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
+                                        <span>
+                                            <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
+                                        </span>
+                                        <span>
+                                            <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
+                                        </span>
                                     </span>
                                     1 x English &amp; Verbal Reasoning paper
                                 </li>
                                 <li>
                                     <span class="icon-box">
-                                        <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
-                                        <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
+                                        <span>
+                                            <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
+                                        </span>
+                                        <span>
+                                            <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
+                                        </span>
                                     </span>
                                     1 x Non-Verbal Reasoning &amp; Maths paper
                                 </li>
@@ -291,15 +299,23 @@
                             <ul>
                                 <li>
                                     <span class="icon-box">
-                                        <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
-                                        <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
+                                        <span>
+                                            <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
+                                        </span>
+                                        <span>
+                                            <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
+                                        </span>
                                     </span>
                                     1 x English &amp; Verbal Reasoning paper
                                 </li>
                                 <li>
                                     <span class="icon-box">
-                                        <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
-                                        <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
+                                        <span>
+                                            <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
+                                        </span>
+                                        <span>
+                                            <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
+                                        </span>
                                     </span>
                                     1 x Non-Verbal Reasoning &amp; Maths paper
                                 </li>
@@ -338,15 +354,23 @@
                             <ul>
                                 <li>
                                     <span class="icon-box">
-                                        <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
-                                        <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
+                                        <span>
+                                            <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
+                                        </span>
+                                        <span>
+                                            <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
+                                        </span>
                                     </span>
                                     1 x English &amp; Verbal Reasoning paper
                                 </li>
                                 <li>
                                     <span class="icon-box">
-                                        <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
-                                        <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
+                                        <span>
+                                            <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
+                                        </span>
+                                        <span>
+                                            <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
+                                        </span>
                                     </span>
                                     1 x Non-Verbal Reasoning &amp; Maths paper
                                 </li>
@@ -361,10 +385,6 @@
                     
                 </div>
             </div>
-
-
-
-
             <!-- Sats Listings End -->
         </div>
 
