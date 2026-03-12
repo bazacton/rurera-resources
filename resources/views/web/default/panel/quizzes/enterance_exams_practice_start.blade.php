@@ -27,6 +27,17 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 @endphp
 @php $total_questions = isset($questions_list)? count($questions_list) : 0; @endphp
 <style>
+    .palette-popup{
+        position:absolute;
+        display:none;
+        background:#fff;
+        border:1px solid #ddd;
+        border-radius:6px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.15);
+        max-width:550px;
+        padding:10px;
+        z-index:9999;
+    }
     .question-palette {
         position: relative;
         background-color: white;
@@ -191,6 +202,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                     </div>
 
                                         <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
+                                            <div id="question-status-text">Question Status</div>
                                             <div class="question-status" id="question-status-text">
                                                 Question <span>10</span>/20 &#9662;
                                             </div>
@@ -1241,11 +1253,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 </script>
 <script>
-    $(function () {
-        // Get the HTML content for the popover
+    /*$(function () {
         const paletteContent = $('#palette-container').html();
 
-        // Initialize the popover
         $('#question-status-text').popover({
             html: true,
             placement: 'top',
@@ -1255,5 +1265,19 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             },
             template: '<div class="popover" role="tooltip" style="max-width:550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
         });
+    });*/
+
+    $('#question-status-text').on('click', function(e){
+
+        var btn = $(this);
+        var popup = btn.closest('.quiz-section-data').find('.palette-popup');
+
+        var offset = btn.offset();
+
+        popup.css({
+            top: offset.top - popup.outerHeight() - 10,
+            left: offset.left
+        }).toggle();
+
     });
 </script>
