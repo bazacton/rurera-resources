@@ -189,7 +189,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                         </div>
 
                                     </div>
-                                        
+
                                         <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
                                             <div class="question-status" id="question-status-text">
                                                 Question <span>10</span>/20 &#9662;
@@ -599,7 +599,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
     function beforeQuestionSubmit(){
 
-        return false;
+        var $activeLi = $(".quiz-section-data.active").find(".quiz-pagination li.active");
+        var response_flag = true;
+        if ($activeLi.is(":last-child")) {
+            console.log("This is the last li");
+            afterNoNextQuestion();
+            response_flag = false;
+        }
+        return response_flag;
     }
 
     function getTime(secondsString) {
