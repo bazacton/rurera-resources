@@ -163,7 +163,7 @@
 
             <div class="rurera-test-pack-container">
                 <!-- First Test Pack -->
-                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                <div class="rurera-test-pack panel-border rounded-sm p-20 mb-15">
                     <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 01</h3>
                     <p class="rurera-test-description font-14">Complete mock test</p>
 
@@ -206,30 +206,28 @@
                     <p class="rurera-test-description font-14">Complete mock test</p>
 
                     <div class="rurera-test-pack-info">
-            <span class="rurera-icon-location">
-                <img src="/assets/icons/location-icon.svg" alt="Location Icon" height="16" width="16">
-            </span>Bexley
-                        <span>Ages 10-11</span>
+                        <span class="rurera-icon-location">
+                            <img src="/assets/default/svgs/location-form.svg" alt="" area-hidden="true" height="16" width="16">>
+                            Bexley <span>Ages 10-11</span>
+                        </span>
+                                    
                         <span class="rurera-icon-time">
-                <img src="/assets/icons/time-icon.svg" alt="Time Icon" height="16" width="16">
-            </span>1h 45m
-                        <span>Qs. 130</span>
+                            <img src="/assets/default/svgs/clock.svg" alt="" area-hidden="true" height="16" width="16">
+                            1h 45m <span>Qs. 130</span>
+                        </span>
                     </div>
 
                     <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
 
-                    <p class="rurera-test-inclusions-title font-14">What's included:</p>
-                    <p class="rurera-test-subjects">
-            <span class="rurera-subject-icon">
-                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English &amp; Verbal Reasoning" height="32" width="32">
-            </span>1 x English &amp; Verbal Reasoning paper
-                    </p>
-
-                    <p class="rurera-test-subjects">
-            <span class="rurera-subject-icon">
-                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning &amp; Maths" height="32" width="32">
-            </span>1 x Non-Verbal Reasoning &amp; Maths paper
-                    </p>
+                    
+                    <div class="rurera-test-subjects">
+                        <p class="rurera-test-inclusions-title font-14">What's included:</p>
+                        <ul>
+                            <li>1 x English &amp; Verbal Reasoning paper</li>
+                            <li>1 x Non-Verbal Reasoning &amp; Maths paper</li>
+                        </ul>
+                    </div>
+                    
 
                     <div class="rurera-test-price">
                         <p class="rurera-test-price-value font-16">£22.00</p>
