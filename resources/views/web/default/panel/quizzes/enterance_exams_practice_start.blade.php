@@ -191,7 +191,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                     </div>
 
                                         <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
-                                            <div class="question-status" id="question-status-text">
+                                            <div class="question-status question-status-text" id="question-status-text">
                                                 Question <span>10</span>/20 &#9662;
                                             </div>
                                             <div class="quiz-time-bar">
@@ -601,6 +601,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         var $activeLi = $(".quiz-section-data.active").find(".quiz-pagination li.active");
         var response_flag = true;
+        var finish_confirm = $(".quiz-section-data.active").attr('data-section_finish_confirm');
+        if(finish_confirm == 'yes'){
+            return true;
+        }
         if ($activeLi.is(":last-child")) {
             console.log("This is the last li");
             afterSectionFinish();
@@ -919,9 +923,18 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 '',
                 true, //confirmButton
                 section_move_html,
-                'onSectionMoveConfirm'
+                'afterSectionFinishConfirm'
             );
 
+    }
+
+    function afterSectionFinishConfirm(){
+        var current_question_id =  $(".quiz-section-data.active").find(".quiz-pagination li.active").attr('data-question_id');
+        $(".quiz-section-data.active").attr('data-section_finish_confirm', 'yes');
+        $(".quiz-section-data.active").attr('data-finish-exclude_id', current_question_id);
+        onSectionMoveConfirm();
+        $(".question-submit-btn").click();
+        return true;
     }
 
 
@@ -952,6 +965,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
     function onSectionMoveConfirm(){
         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
+
+        var exclude_question_id = $active.attr('data-finish-exclude_id');
         var current_section_id = $active.attr('data-section_id');
         const $next = $active.next('.quiz-section-data');
 
@@ -966,7 +981,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         var question_ids = [];
         pendingQuestions.each(function () {
             var questionId = $(this).data('question_id');
-            question_ids.push(questionId);
+            if(questionId != exclude_question_id){
+                question_ids.push(questionId);
+            }
 
         });
 
@@ -1246,11 +1263,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         const paletteContent = $('#palette-container').html();
 
         // Initialize the popover
-        $('#question-status-text').popover({
+        $('.question-status-text').popover({
             content: paletteContent,
             html: true,
             placement: 'top',
-            // Use a custom template to make the popover wider and remove the header
+            sanitize: false, // IMPORTANT
             template: '<div class="popover" role="tooltip" style="max-width: 550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
         });
     });
