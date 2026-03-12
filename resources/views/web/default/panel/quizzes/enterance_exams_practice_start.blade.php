@@ -392,7 +392,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             <!-- Header -->
             <div class="modal-header border-0 pb-0">
-                <h5 class="modal-title font-weight-bold font-16" id="reportModalLabel">Leave Test?</h5>
+                <h5 class="modal-title font-weight-bold font-16" id="closePracticeLabel">Leave Test?</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
