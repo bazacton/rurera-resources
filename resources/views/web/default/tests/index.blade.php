@@ -169,12 +169,12 @@
 
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
-                            <img src="/assets/icons/location-icon.svg" alt="" area-hidden="true" height="16" width="16">
+                            <img src="/assets/default/svgs/location-form.svg" alt="" area-hidden="true" height="16" width="16">
                             Bexley <span>Ages 10-11</span>
                         </span>
                                     
                         <span class="rurera-icon-time">
-                            <img src="/assets/icons/time-icon.svg" alt="Time Icon" height="16" width="16">
+                            <img src="/assets/default/svgs/clock.svg" alt="" area-hidden="true" height="16" width="16">
                             1h 40m <span>Qs. 125</span>
                         </span>
                     </div>
