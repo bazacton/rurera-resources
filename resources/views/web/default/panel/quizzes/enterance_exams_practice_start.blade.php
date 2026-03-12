@@ -1266,18 +1266,24 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             template: '<div class="popover" role="tooltip" style="max-width:550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
         });
     });*/
-    $(document).on("click", "#question-status-text", function (e) {
+    $(document).on("click", ",question-status", function (e) {
 
-        alert('test');
         var btn = $(this);
         var popup = btn.closest('.quiz-section-data').find('.palette-popup');
 
-        console.log(popup);
         var offset = btn.offset();
 
         popup.css({
             left: '10px',
         }).toggle();
+
+    });
+
+    $(document).on('click', function(e){
+
+        if(!$(e.target).closest('.question-status, .palette-popup').length){
+            $('.palette-popup').hide();
+        }
 
     });
 </script>
