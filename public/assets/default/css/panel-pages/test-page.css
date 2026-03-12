@@ -212,6 +212,11 @@ Sub Pages Style
 .rurera-test-subjects .icon-box img:first-child {
     margin-right: -10px;
 }
+.rurera-test-pack-container {
+    border-top: 1px solid #ddd;
+    padding: 40px 0 0;
+    margin: 40px 0 0;
+}
 .sats-listing-card thead th,
 .panel-section-card .custom-table thead td,
 .panel-section-card .custom-table thead th {padding: 15px 20px; color: #333; text-align: left; font-weight: 600;}
