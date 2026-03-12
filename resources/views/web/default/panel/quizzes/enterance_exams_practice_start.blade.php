@@ -925,6 +925,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
     function afterSectionFinishConfirm(){
+        console.log('afterSectionFinishConfirm');
         return true;
     }
 
