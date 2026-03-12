@@ -76,7 +76,8 @@ Sub Pages Style
     width: calc(100% - 130px);
     gap: 15px;
 }
-.rurera-test-pack .img-box img {
+.rurera-test-pack .img-box img,
+.rurera-test-info > img {
     max-width: 70px;
     min-width: 70px;
     min-height: 80px;
