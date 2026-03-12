@@ -78,6 +78,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         user-select: none;
         text-decoration: none;
     }
+    .quiz-pagination a:not([href]):not([tabindex]) {
+        color: white;
+    }
     .quiz-pagination li a:hover {
         background-color: #0056b3;
         transform: translateY(-2px);
