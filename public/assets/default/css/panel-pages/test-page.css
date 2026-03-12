@@ -103,7 +103,7 @@ Sub Pages Style
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 .rurera-test-pack-info > span {
     background-color: #f9fafd;
