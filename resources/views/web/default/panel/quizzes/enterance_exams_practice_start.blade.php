@@ -168,7 +168,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
-                                        <div id="palette-container" style="display: none;">
+                                        <div id="palette-container palette-popup" >
                                         <div class="question-palette">
                                         <div class="quiz-pagination rurera-hide">
 
@@ -1266,8 +1266,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             template: '<div class="popover" role="tooltip" style="max-width:550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
         });
     });*/
-
-    $('#question-status-text').on('click', function(e){
+    $(document).on("click", "#question-status-text", function (e) {
 
         var btn = $(this);
         var popup = btn.closest('.quiz-section-data').find('.palette-popup');
