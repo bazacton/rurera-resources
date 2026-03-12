@@ -179,6 +179,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 </ul>
                                             </div>
                                         </div>
+                                        <div class="question-status" id="question-status-text" data-toggle="tooltip" data-placement="top" title="Current Question">
+                                            Question <span>10</span>/20
+                                        </div>
 
 
 
@@ -581,7 +584,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 if (duration_type == 'total_practice') {
                     if (parseInt(quiz_timer_counter) == 0) {
                         clearInterval(Quizintervals);
-                        $(".review-btn").click();
+                        //$(".review-btn").click();
                         if ($('.question-review-btn').length > 0) {
                             $('.question-review-btn').click();
                         }
@@ -607,6 +610,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             if (curSize >= 16)
                 $('.learning-page').css('font-size', curSize);
         });
+    }
+
+    function befeforeQuestionSubmit(){
+
+        return false;
     }
 
     function getTime(secondsString) {
