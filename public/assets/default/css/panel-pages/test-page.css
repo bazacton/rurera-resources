@@ -357,30 +357,59 @@ div.dataTables_wrapper div.dataTables_filter input[type="search"] {color: #49505
 .lms-jobs-form .checkbox-field { display: flex; align-items: center; margin-bottom: 8px; }
 .lms-jobs-form .checkbox-field label { font-size: 16px; font-weight: 500; text-transform: capitalize; margin-left: 15px; margin-bottom: 0; }
 
+.lms-jobs-form .input-field input[type="text"]:focus::-webkit-input-placeholder,
+.lms-jobs-form .input-field textarea:focus::-webkit-input-placeholder,
+.lms-jobs-form .input-field input[type="email"]:focus::-webkit-input-placeholder,
+.lms-jobs-form .input-field input[type="password"]:focus:-webkit-input-placeholder { color: transparent; }
+
 .lms-jobs-form .input-field input[type="text"]::-webkit-input-placeholder,
 .lms-jobs-form .input-field textarea::-webkit-input-placeholder,
 .lms-jobs-form .input-field input[type="email"]::-webkit-input-placeholder,
 .lms-jobs-form .input-field input[type="password"]::-webkit-input-placeholder { color:#818894; opacity: 1; }
+
+
+.lms-jobs-form .input-field input[type="text"]:focus::-moz-placeholder,
+.lms-jobs-form .input-field textarea:focus::-moz-placeholder,
+.lms-jobs-form .input-field input[type="email"]:focus::-moz-placeholder,
+.lms-jobs-form .input-field input[type="password"]:focus::-moz-placeholder { color: transparent; }
 
 .lms-jobs-form .input-field input[type="text"]::-moz-placeholder,
 .lms-jobs-form .input-field textarea::-moz-placeholder,
 .lms-jobs-form .input-field input[type="email"]::-moz-placeholder,
 .lms-jobs-form .input-field input[type="password"]::-moz-placeholder { color:#818894; opacity: 1; }
 
+
+.lms-jobs-form .input-field input[type="text"]:focus:-ms-input-placeholder,
+.lms-jobs-form .input-field textarea:focus:-ms-input-placeholder,
+.lms-jobs-form .input-field input[type="email"]:focus:-ms-input-placeholder,
+.lms-jobs-form .input-field input[type="password"]:focus:-ms-input-placeholder { color:transparent; }
+
 .lms-jobs-form .input-field input[type="text"]:-ms-input-placeholder,
 .lms-jobs-form .input-field textarea:-ms-input-placeholder,
 .lms-jobs-form .input-field input[type="email"]:-ms-input-placeholder,
 .lms-jobs-form .input-field input[type="password"]:-ms-input-placeholder { color:#818894; opacity: 1; }
+
 
 .lms-jobs-form .input-field input[type="text"]::-ms-input-placeholder,
 .lms-jobs-form .input-field textarea::-ms-input-placeholder,
 .lms-jobs-form .input-field input[type="email"]::-ms-input-placeholder,
 .lms-jobs-form .input-field input[type="password"]::-ms-input-placeholder { color:#818894; opacity: 1; }
 
+.lms-jobs-form .input-field input[type="text"]:focus:-ms-input-placeholder,
+.lms-jobs-form .input-field textarea:focus::-ms-input-placeholder,
+.lms-jobs-form .input-field input[type="email"]:focus::-ms-input-placeholder,
+.lms-jobs-form .input-field input[type="password"]:focus::-ms-input-placeholder { color:transparent; }
+
+
 .lms-jobs-form .input-field input[type="text"]::placeholder,
 .lms-jobs-form .input-field textarea::placeholder,
 .lms-jobs-form .input-field input[type="email"]::placeholder,
 .lms-jobs-form .input-field input[type="password"]::placeholder { color:#818894; opacity: 1; }
+
+.lms-jobs-form .input-field input[type="text"]:focus:placeholder,
+.lms-jobs-form .input-field textarea:focus::placeholder,
+.lms-jobs-form .input-field input[type="email"]:focus::placeholder,
+.lms-jobs-form .input-field input[type="password"]:focus::placeholder { color:transparent; }
 
 .lms-jobs-form .input-field input[type="text"],
 .lms-jobs-form .input-field input[type="email"],
