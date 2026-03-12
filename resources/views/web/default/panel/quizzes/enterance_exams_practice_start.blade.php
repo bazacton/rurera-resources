@@ -27,17 +27,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 @endphp
 @php $total_questions = isset($questions_list)? count($questions_list) : 0; @endphp
 <style>
-    .palette-popup{
-        position:absolute;
-        display:none;
-        background:#fff;
-        border:1px solid #ddd;
-        border-radius:6px;
-        box-shadow:0 4px 10px rgba(0,0,0,0.15);
-        max-width:550px;
-        padding:10px;
-        z-index:9999;
-    }
     .question-palette {
         position: relative;
         background-color: white;
@@ -168,7 +157,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
-                                        <div id="palette-container" class="palette-popup">
+                                        <div id="palette-container" style="display: none;">
                                         <div class="question-palette">
                                         <div class="quiz-pagination rurera-hide">
 
@@ -202,7 +191,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                     </div>
 
                                         <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
-                                            <div id="question-status-text1">Question Status</div>
                                             <div class="question-status" id="question-status-text">
                                                 Question <span>10</span>/20 &#9662;
                                             </div>
@@ -1253,7 +1241,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 </script>
 <script>
-    /*$(function () {
+    $(function () {
         const paletteContent = $('#palette-container').html();
 
         $('#question-status-text').popover({
@@ -1265,27 +1253,5 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             },
             template: '<div class="popover" role="tooltip" style="max-width:550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
         });
-    });*/
-    $(function () {
-    $(document).on("click", ".question-status", function (e) {
-
-        var btn = $(this);
-        var popup = btn.closest('.quiz-section-data').find('.palette-popup');
-
-        var offset = btn.offset();
-
-        popup.css({
-            left: '10px',
-        }).toggle();
-
-    });
-
-    $(document).on('click', function(e){
-
-        if(!$(e.target).closest('.question-status, .palette-popup').length){
-            $('.palette-popup').hide();
-        }
-
-    });
     });
 </script>
