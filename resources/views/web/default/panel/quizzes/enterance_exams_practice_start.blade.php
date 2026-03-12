@@ -1266,6 +1266,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             template: '<div class="popover" role="tooltip" style="max-width:550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
         });
     });*/
+    $(function () {
     $(document).on("click", ".question-status", function (e) {
 
         var btn = $(this);
@@ -1285,5 +1286,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $('.palette-popup').hide();
         }
 
+    });
     });
 </script>
