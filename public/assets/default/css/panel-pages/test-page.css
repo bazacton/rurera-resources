@@ -367,7 +367,12 @@ div.dataTables_wrapper div.dataTables_filter input[type="search"] {color: #49505
 .lms-jobs-form .input-field textarea::placeholder,
 .lms-jobs-form .input-field input[type="email"]::placeholder,
 .lms-jobs-form .input-field input[type="password"]::placeholder { color:#818894; }
-
+.panel-content .lms-jobs-form .input-field input[type="text"]:focus::-webkit-input-placeholder {
+  color: #fff0;
+}
+.panel-content .lms-jobs-form .input-field input[type="text"]:focus::-moz-placeholder {
+  color: #fff0;
+}
 .lms-jobs-form .input-field input[type="text"],
 .lms-jobs-form .input-field input[type="email"],
 .lms-jobs-form .input-field input[type="password"],
