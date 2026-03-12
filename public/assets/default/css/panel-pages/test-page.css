@@ -69,11 +69,12 @@ Sub Pages Style
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    width: 100%;
 }
 .rurera-test-info {
     display: flex;
     align-items: center;
-    width: calc(100% - 130px);
+    width: calc(100% - 100px);
     gap: 15px;
 }
 .rurera-mock-test-item .img-box img,
