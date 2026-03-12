@@ -192,6 +192,10 @@
                                     1 x English &amp; Verbal Reasoning paper
                                 </li>
                                 <li>
+                                    <span class="icon-box">
+                                        <img src="/media/topic_parts/1050/11.svg" width="50" height="50" alt="" area-hidden="true">
+                                        <img src="/media/topic_parts/1050/12 (1).svg" width="50" height="50" alt="" area-hidden="true">
+                                    </span>
                                     1 x Non-Verbal Reasoning &amp; Maths paper
                                 </li>
                             </ul>
@@ -232,7 +236,13 @@
                                     </span>
                                     1 x English &amp; Verbal Reasoning paper
                                 </li>
-                                <li>1 x Non-Verbal Reasoning &amp; Maths paper</li>
+                                <li>
+                                    <span class="icon-box">
+                                        <img src="/media/topic_parts/1050/11.svg" width="50" height="50" alt="" area-hidden="true">
+                                        <img src="/media/topic_parts/1050/12 (1).svg" width="50" height="50" alt="" area-hidden="true">
+                                    </span>
+                                    1 x Non-Verbal Reasoning &amp; Maths paper
+                                </li>
                             </ul>
                         </div>
                     
@@ -273,7 +283,13 @@
                                     </span>
                                     1 x English &amp; Verbal Reasoning paper
                                 </li>
-                                <li>1 x Non-Verbal Reasoning &amp; Maths paper</li>
+                                <li>
+                                    <span class="icon-box">
+                                        <img src="/media/topic_parts/1050/11.svg" width="50" height="50" alt="" area-hidden="true">
+                                        <img src="/media/topic_parts/1050/12 (1).svg" width="50" height="50" alt="" area-hidden="true">
+                                    </span>
+                                    1 x Non-Verbal Reasoning &amp; Maths paper
+                                </li>
                             </ul>
                         </div>
                     
