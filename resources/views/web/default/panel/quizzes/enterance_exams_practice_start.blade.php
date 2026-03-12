@@ -202,7 +202,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                     </div>
 
                                         <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
-                                            <div id="question-status-text">Question Status</div>
+                                            <div id="question-status-text1">Question Status</div>
                                             <div class="question-status" id="question-status-text">
                                                 Question <span>10</span>/20 &#9662;
                                             </div>
