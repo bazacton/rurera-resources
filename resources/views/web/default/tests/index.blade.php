@@ -185,14 +185,10 @@
                     <div class="rurera-test-bottom">
                         <ul class="rurera-test-subjects">
                             <li>
-                                <span class="rurera-subject-icon">
-                                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English &amp; Verbal Reasoning" height="32" width="32">
-                                </span>1 x English &amp; Verbal Reasoning paper
+                                1 x English &amp; Verbal Reasoning paper
                             </li>
                             <li>
-                                <span class="rurera-subject-icon">
-                                    <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning &amp; Maths" height="32" width="32">
-                                </span>1 x Non-Verbal Reasoning &amp; Maths paper
+                                1 x Non-Verbal Reasoning &amp; Maths paper
                             </li>
                         </ul>
 
