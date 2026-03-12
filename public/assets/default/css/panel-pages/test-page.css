@@ -201,7 +201,7 @@ Sub Pages Style
     align-items: center;
     margin-right: 6px;
 }
-.rurera-test-subjects .icon-box img {
+.rurera-test-subjects .icon-box span {
     height: 24px;
     width: 24px;
     padding: 4px;
@@ -209,8 +209,13 @@ Sub Pages Style
     border: 1px solid var(--primary);
     background-color: #fff;
 }
-.rurera-test-subjects .icon-box img:first-child {
+.rurera-test-subjects .icon-box span:first-child {
     margin-right: -10px;
+}
+.rurera-test-subjects .icon-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 .sats-listing-card thead th,
 .panel-section-card .custom-table thead td,
