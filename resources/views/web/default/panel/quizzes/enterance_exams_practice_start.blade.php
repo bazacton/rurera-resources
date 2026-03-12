@@ -86,7 +86,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         transform: translateY(-2px);
         color: white;
     }
-
+    .question-status {
+    display: inline-block;
+    }
     /* Active / Highlight State */
     .quiz-pagination li.active a,
     .quiz-pagination li.active a:not([href]):not([tabindex]) {
