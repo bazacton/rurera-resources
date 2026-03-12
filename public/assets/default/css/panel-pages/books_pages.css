@@ -29,6 +29,12 @@ Sub Pages Style
     display: none;
 }
 .search-block .search-input input[type=text] {height: auto; padding: 0 1rem 0 0.3rem; background-color: inherit;}
+.search-block .search-input input[type=text]:focus::-webkit-input-placeholder {
+  color: #fff0;
+}
+.search-block .search-input input[type=text]:focus::-moz-placeholder {
+  color: #fff0;
+}
 .search-block .icon-box img {filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(187deg) brightness(87%) contrast(83%);}
 .lms-library-slider {margin-top: -200px; padding-bottom: 70px;}
 .lms-library-slider figure img {border-radius: 14px; max-width: 100%; transition: all .5s; width: 227px;}
