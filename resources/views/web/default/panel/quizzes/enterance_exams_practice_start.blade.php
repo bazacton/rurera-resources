@@ -1268,14 +1268,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     });*/
     $(document).on("click", "#question-status-text", function (e) {
 
+        alert('test');
         var btn = $(this);
         var popup = btn.closest('.quiz-section-data').find('.palette-popup');
 
+        console.log(popup);
         var offset = btn.offset();
 
         popup.css({
-            top: offset.top - popup.outerHeight() - 10,
-            left: offset.left
+            left: '10px',
         }).toggle();
 
     });
