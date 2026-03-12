@@ -62,10 +62,12 @@
                                     <li data-type="iseb"><img src="/assets/default/img/assignment-logo/iseb.png" alt="iseb"> ISEB</li>
                                     <li data-type="cat4"><img src="/assets/default/img/assignment-logo/cat4.png" alt="cat4"> CAT 4</li>
                                     <li data-type="independent_exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt="independent_exams"> Independent Exams</li>
+                                    <li data-type="progress_test"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt="progress_test"> Progress Test</li>
+
                                 </ul>
                             </div>
                             <!-- Test List Filters End -->
-                            
+
                         </div>
                     </div>
                 </form>
@@ -87,7 +89,204 @@
 
                     </tbody>
                 </table>
+
+
+
+
             </div>
+
+
+            <div class="rurera-mock-test">
+                <!-- First Test Pack -->
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                    <div class="rurera-test-info">
+                        <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
+                        <div class="rurera-text-box font-14">
+                            <h4 class="font-16 font-weight-bold">
+                                <a href="/mock-practice/xyz" class="d-block mb-5">xyz</a>
+                            </h4>
+                            <span class="rurera-sub_label">0 Question(s),</span>
+                            <span class="rurera-sub_label">Time: 20m,</span>
+                            <span class="rurera-sub_label">Sats</span>
+                        </div>
+                    </div>
+                    <div class="rurera-test-modal">
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test </a>
+                    </div>
+                </div>
+
+                <!-- Second Test Pack -->
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                    <div class="rurera-test-info">
+                        <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
+                        <div class="rurera-text-box font-14">
+                            <h4 class="font-16 font-weight-bold">
+                                <a href="/mock-practice/year-6-english" class="d-block mb-5">Year 6 English</a>
+                            </h4>
+                            <span class="rurera-sub_label">0 Question(s),</span>
+                            <span class="rurera-sub_label">Time: 10m,</span>
+                            <span class="rurera-sub_label">Sats</span>
+                            <img src="/assets/default/img/stop-watch.png" alt="stop-watch" width="360" height="360">
+                        </div>
+                    </div>
+                    <div class="rurera-test-modal">
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test </a>
+                    </div>
+                </div>
+
+                <!-- Third Test Pack -->
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                    <div class="rurera-test-info">
+                        <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
+                        <div class="rurera-text-box font-14">
+                            <h4 class="font-16 font-weight-bold">
+                                <a href="/mock-practice/year-6-maths-curriculum-test-baz" class="d-block mb-5">Year 6 Maths Curriculum Test - Baz</a>
+                            </h4>
+                            <span class="rurera-sub_label">0 Question(s),</span>
+                            <span class="rurera-sub_label">Time: 20m,</span>
+                            <span class="rurera-sub_label">Sats</span>
+                        </div>
+                    </div>
+                    <div class="rurera-test-modal">
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test </a>
+                    </div>
+                </div>
+
+                <!-- Fourth Test Pack -->
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                    <div class="rurera-test-info">
+                        <img src="/assets/default/img/assignment-logo/sats.png" alt="quiz_image" width="59" height="59">
+                        <div class="rurera-text-box font-14">
+                            <h4 class="font-16 font-weight-bold">
+                                <a href="/mock-practice/year-6-maths-curriculum-test" class="d-block mb-5">Year 6 Maths Curriculum Test</a>
+                            </h4>
+                            <span class="rurera-sub_label">0 Question(s),</span>
+                            <span class="rurera-sub_label">Time: 25m,</span>
+                            <span class="rurera-sub_label">Sats</span>
+                        </div>
+                    </div>
+                    <div class="rurera-test-modal">
+                        <a href="javascript:;" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Take Test</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rurera-test-pack-container">
+                <!-- First Test Pack -->
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                    <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 01</h3>
+                    <p class="rurera-test-description font-14">Complete mock test</p>
+
+                    <div class="rurera-test-pack-info">
+            <span class="rurera-icon-location">
+                <img src="/assets/icons/location-icon.svg" alt="Location Icon" height="16" width="16">
+            </span>Bexley
+                        <span>Ages 10-11</span>
+                        <span class="rurera-icon-time">
+                <img src="/assets/icons/time-icon.svg" alt="Time Icon" height="16" width="16">
+            </span>1h 40m
+                        <span>Qs. 125</span>
+                    </div>
+
+                    <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
+
+                    <p class="rurera-test-inclusions-title font-14">What's included:</p>
+                    <p class="rurera-test-subjects">
+            <span class="rurera-subject-icon">
+                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English &amp; Verbal Reasoning" height="32" width="32">
+            </span>1 x English &amp; Verbal Reasoning paper
+                    </p>
+
+                    <p class="rurera-test-subjects">
+            <span class="rurera-subject-icon">
+                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning &amp; Maths" height="32" width="32">
+            </span>1 x Non-Verbal Reasoning &amp; Maths paper
+                    </p>
+
+                    <div class="rurera-test-price">
+                        <p class="rurera-test-price-value font-16">£20.00</p>
+                        <button type="button" class="rurera-button-add-to-cart btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+
+                <!-- Second Test Pack -->
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                    <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 02</h3>
+                    <p class="rurera-test-description font-14">Complete mock test</p>
+
+                    <div class="rurera-test-pack-info">
+            <span class="rurera-icon-location">
+                <img src="/assets/icons/location-icon.svg" alt="Location Icon" height="16" width="16">
+            </span>Bexley
+                        <span>Ages 10-11</span>
+                        <span class="rurera-icon-time">
+                <img src="/assets/icons/time-icon.svg" alt="Time Icon" height="16" width="16">
+            </span>1h 45m
+                        <span>Qs. 130</span>
+                    </div>
+
+                    <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
+
+                    <p class="rurera-test-inclusions-title font-14">What's included:</p>
+                    <p class="rurera-test-subjects">
+            <span class="rurera-subject-icon">
+                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English &amp; Verbal Reasoning" height="32" width="32">
+            </span>1 x English &amp; Verbal Reasoning paper
+                    </p>
+
+                    <p class="rurera-test-subjects">
+            <span class="rurera-subject-icon">
+                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning &amp; Maths" height="32" width="32">
+            </span>1 x Non-Verbal Reasoning &amp; Maths paper
+                    </p>
+
+                    <div class="rurera-test-price">
+                        <p class="rurera-test-price-value font-16">£22.00</p>
+                        <button type="button" class="rurera-button-add-to-cart btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+
+                <!-- Third Test Pack -->
+                <div class="rurera-test-pack panel-border rounded-sm p-20">
+                    <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 03</h3>
+                    <p class="rurera-test-description font-14">Complete mock test</p>
+
+                    <div class="rurera-test-pack-info">
+            <span class="rurera-icon-location">
+                <img src="/assets/icons/location-icon.svg" alt="Location Icon" height="16" width="16">
+            </span>Bexley
+                        <span>Ages 10-11</span>
+                        <span class="rurera-icon-time">
+                <img src="/assets/icons/time-icon.svg" alt="Time Icon" height="16" width="16">
+            </span>1h 30m
+                        <span>Qs. 120</span>
+                    </div>
+
+                    <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
+
+                    <p class="rurera-test-inclusions-title font-14">What's included:</p>
+                    <p class="rurera-test-subjects">
+            <span class="rurera-subject-icon">
+                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English &amp; Verbal Reasoning" height="32" width="32">
+            </span>1 x English &amp; Verbal Reasoning paper
+                    </p>
+
+                    <p class="rurera-test-subjects">
+            <span class="rurera-subject-icon">
+                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning &amp; Maths" height="32" width="32">
+            </span>1 x Non-Verbal Reasoning &amp; Maths paper
+                    </p>
+
+                    <div class="rurera-test-price">
+                        <p class="rurera-test-price-value font-16">£19.00</p>
+                        <button type="button" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-button-add-to-cart btn btn-primary">Add to cart Modal</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
             <!-- Sats Listings End -->
         </div>
 
@@ -98,6 +297,45 @@
         </div>
     </div>
 </section>
+
+
+<div class="modal fade" id="rureraMockTestModal" tabindex="-1" role="dialog" aria-labelledby="rureraMockTestModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="rureraMockTestModalLabel">Choose how to complete this test</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="option-card">
+                            <img src="/assets/icons/online-icon.svg" alt="Online Icon" width="32" height="32">
+                            <h6 class="font-weight-bold">Online</h6>
+                            <p>Complete this test on your device. Get your results instantly.</p>
+                            <a href="javascript:;" class="btn btn-primary">Add to to-do list</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="option-card">
+                            <img src="/assets/icons/online-icon.svg" alt="On Paper Icon" width="32" height="32">
+                            <h6 class="font-weight-bold">On paper</h6>
+                            <p>This is an online exam. A paper option is not provided.</p>
+                            <button class="btn btn-disabled" disabled>Unavailable</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="#" class="btn btn-primary">Proceed</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade switch_user_modal" id="switch_user_modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">

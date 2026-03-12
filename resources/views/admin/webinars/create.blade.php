@@ -1321,6 +1321,11 @@
             </div>
         </div>
     </div>
+    <form method="post" action="javascript:;" id="deleteTopicPart" class="deleteTopicPart rurera-hide">
+        <?php echo e(csrf_field()); ?>
+        <input type="hidden" name="topic_part_id" class="topic_part_id" value="0">
+        <input type="hidden" name="current_year_id" class="delete_topic_category_id" value="0">
+    </form>
 @endsection
 
 @push('scripts_bottom')
@@ -1539,6 +1544,48 @@
             $(".topic_part_id").val(topic_part_id);
             $(".move_topic_category_id").val(year_id);
         });
+
+        $(document).on('click', '.delete-topic-part', function () {
+            var topic_part_id = $(this).attr('data-topic_part_id');
+            var year_id = $(this).attr('data-year_id');
+            $(".delete_topic_category_id").val(year_id);
+            $(".topic_part_id").val(topic_part_id);
+            rurera_modal_alert(
+                '',
+                'Are you sure you want to remove?',
+                true, //confirmButton
+                'onDeleteConfirm'
+            );
+        });
+
+        function onDeleteConfirm(){
+            $(".deleteTopicPart").submit();
+        }
+
+        $(document).on('submit', '.deleteTopicPart', function () {
+            var loaderDiv = $('.deleteTopicPart');
+            rurera_loader(loaderDiv, 'div');
+            var formData = new FormData($(this)[0]);
+            $.ajax({
+                type: "POST",
+                url: '/admin/webinars/delete_topic_part',
+                data: formData,
+                dataType: 'json',
+                processData: false,
+                contentType: false,
+                success: function (return_data) {
+                    rurera_modal_alert(
+                        return_data.status,
+                        return_data.msg,
+                        false, //confirmButton
+                    );
+                    $(".year_group_chapters").change();
+                    rurera_remove_loader(loaderDiv, 'div');
+                }
+            });
+
+        });
+
 
 
     </script>
