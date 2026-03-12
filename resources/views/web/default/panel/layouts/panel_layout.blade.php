@@ -512,7 +512,7 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
                                         @if(auth()->user()->isUser() && !request()->is('quests'))
                                             @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily', 'weekly'))->count() > 0 )
                                                 <div class="books-feature-listings panel-border bg-white rounded-sm p-20 mb-30">
-                                                    <h3 class="font-16 font-weight-bold mb-15">continue reading</h3>
+                                                    <h3 class="font-16 font-weight-bold mb-15">Continue reading</h3>
                                                     <div class="books-card">
                                                         <div class="img-holder">
                                                             <img src="/store/1/books/book-cover-image/Hide-and-Seek.jpg" alt="" area-hidden="true" height="182" width="137">
