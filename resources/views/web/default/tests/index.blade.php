@@ -182,22 +182,24 @@
                     <p class="rurera-test-simulation-description font-14">Full simulation of the Bexley Secondary Selection 11+ Grammar Exam.</p>
 
                     <p class="rurera-test-inclusions-title font-14">What's included:</p>
-                    <ul class="rurera-test-subjects">
-                        <li>
-                            <span class="rurera-subject-icon">
-                            <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English &amp; Verbal Reasoning" height="32" width="32">
-                            </span>1 x English &amp; Verbal Reasoning paper
-                        </li>
-                        <li>
-                            <span class="rurera-subject-icon">
-                                <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning &amp; Maths" height="32" width="32">
-                            </span>1 x Non-Verbal Reasoning &amp; Maths paper
-                        </li>
-                    </ul>
+                    <div class="rurera-test-bottom">
+                        <ul class="rurera-test-subjects">
+                            <li>
+                                <span class="rurera-subject-icon">
+                                <img src="/assets/icons/english-verbal-reasoning-icon.svg" alt="English &amp; Verbal Reasoning" height="32" width="32">
+                                </span>1 x English &amp; Verbal Reasoning paper
+                            </li>
+                            <li>
+                                <span class="rurera-subject-icon">
+                                    <img src="/assets/icons/non-verbal-reasoning-maths-icon.svg" alt="Non-Verbal Reasoning &amp; Maths" height="32" width="32">
+                                </span>1 x Non-Verbal Reasoning &amp; Maths paper
+                            </li>
+                        </ul>
 
-                    <div class="rurera-test-price">
-                        <p class="rurera-test-price-value font-16">£20.00</p>
-                        <button type="button" class="rurera-button-add-to-cart btn btn-primary">Add to cart</button>
+                        <div class="rurera-test-price">
+                            <p class="rurera-test-price-value font-16">£20.00</p>
+                            <button type="button" class="rurera-button-add-to-cart btn btn-primary">Add to cart</button>
+                        </div>
                     </div>
                 </div>
 
