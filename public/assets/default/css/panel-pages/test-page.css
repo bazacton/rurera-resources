@@ -325,13 +325,13 @@ div.dataTables_wrapper div.dataTables_filter input[type="search"] {color: #49505
     .pages-sub-header .sub-header-img {display: none;}
 }
 @media (max-width:575px) {
-    .lms-chapter-area .lms-chapter-widget {text-align: center;}
-    .count-number-boxes .count-number-card {padding-left: 15px; border-left: 0;}
-    .count-number-boxes .count-number-card:nth-child(3) {padding-left: 15px;}
-    .footer .footer-logo {width: 100%;}
-    .categories-card.medium .categories-text .categories-title {margin-bottom: 5px;}
-    .categories-card.medium .categories-text {text-align: left;}
-    .categories-card.medium .learning-btn {display: block; position: initial; transform: none; margin: 0 0 6px;}
+.lms-chapter-area .lms-chapter-widget {text-align: center;}
+.count-number-boxes .count-number-card {padding-left: 15px; border-left: 0;}
+.count-number-boxes .count-number-card:nth-child(3) {padding-left: 15px;}
+.footer .footer-logo {width: 100%;}
+.categories-card.medium .categories-text .categories-title {margin-bottom: 5px;}
+.categories-card.medium .categories-text {text-align: left;}
+.categories-card.medium .learning-btn {display: block; position: initial; transform: none; margin: 0 0 6px;}
 }
 /*Lms Jobs Form Style Start*/
 .lms-jobs-form-body {border-radius: 6px; }
