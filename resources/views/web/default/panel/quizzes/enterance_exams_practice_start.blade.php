@@ -1247,11 +1247,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         // Initialize the popover
         $('#question-status-text').popover({
-            content: paletteContent,
             html: true,
             placement: 'top',
-            sanitize: false, // IMPORTANT
-            template: '<div class="popover" role="tooltip" style="max-width: 550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
+            sanitize: false,
+            content: function () {
+                return $('.question-palette'); // return the actual element
+            },
+            template: '<div class="popover" role="tooltip" style="max-width:550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
         });
     });
 </script>
