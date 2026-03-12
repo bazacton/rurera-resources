@@ -392,7 +392,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             <!-- Header -->
             <div class="modal-header border-0 pb-0">
-                <h5 class="modal-title font-weight-bold font-16" id="reportModalLabel">Close Practice</h5>
+                <h5 class="modal-title font-weight-bold font-16" id="reportModalLabel">Leave Test?</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -400,39 +400,21 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             <!-- Body -->
             <div class="modal-body pt-3">
-                <div class="report-options d-flex flex-column gap-2 font-14">
-                    <label class="radio-label d-flex align-items-center mb-2">
-                        <input type="radio" name="reportReason" value="wrong_answer" class="mr-2" onchange="handleReasonChange(this)">
-                        <span>The answer options are wrong</span>
-                    </label>
+                <p>You still have time remaining to complete this test.
+                    If you exit now, your current progress will be saved.
+                </p>
 
-                    <label class="radio-label d-flex align-items-center mb-2">
-                        <input type="radio" name="reportReason" value="unclear" class="mr-2" onchange="handleReasonChange(this)">
-                        <span>The question is unclear or confusing</span>
-                    </label>
+                <p>You can rejoin the test anytime before the time limit ends and continue from where you left off.</p>
 
-                    <label class="radio-label d-flex align-items-center mb-2">
-                        <input type="radio" name="reportReason" value="typo" class="mr-2" onchange="handleReasonChange(this)">
-                        <span>Typo or grammatical error</span>
-                    </label>
+                <p>Are you sure you want to leave the test?
+                </p>
 
-                    <label class="radio-label d-flex align-items-center mb-2">
-                        <input type="radio" name="reportReason" value="other" class="mr-2" onchange="handleReasonChange(this)">
-                        <span>Other reason</span>
-                    </label>
-                </div>
-
-                <!-- Dynamic Feedback Area -->
-                <div class="feedback-area mt-3" id="feedbackArea">
-                    <label id="feedbackLabel" class="font-weight-bold font-16">Please provide details:</label>
-                    <textarea class="form-control" id="feedbackInput" rows="3" placeholder="Describe the issue here..."></textarea>
-                </div>
             </div>
 
             <!-- Footer -->
             <div class="modal-footer border-0">
-                <button type="button" class="btn btn-light border" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-danger" onclick="submitReport()">Submit Report</button>
+                <button type="button" class="btn btn-light border" data-dismiss="modal">Continue Test</button>
+                <button type="button" class="btn btn-danger" onclick="exitTest()">Exit Test</button>
             </div>
         </div>
     </div>
@@ -1100,6 +1082,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $('#reportModal').modal('show');
         });
 
+        // Open report modal
+        $(document).off('click', '.close-practice').on('click', '.close-practice', function () {
+            $('.closePractice').modal('show');
+        });
+
+
         // Submit report logic
         $(document).off('click', '#submitReport').on('click', '#submitReport', function () {
 
@@ -1172,6 +1160,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         container: '.report-btn'
     });
 
+    function exitTest(){
+        window.location.href = '/dashboard';
+    }
 
 
 </script>
