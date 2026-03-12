@@ -168,7 +168,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
-                                        <div id="palette-container palette-popup" >
+                                        <div id="palette-container" class="palette-popup">
                                         <div class="question-palette">
                                         <div class="quiz-pagination rurera-hide">
 
