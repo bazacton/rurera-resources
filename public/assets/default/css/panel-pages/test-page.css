@@ -44,7 +44,27 @@ Sub Pages Style
 .sats-listing-card .text-box {display: inline-block; vertical-align: middle; width: calc(100% - 90px); line-height: normal; position: relative;}
 .sats-listing-card .text-box img {vertical-align: middle; margin: 0; max-width: 50px; max-height: 50px; position: absolute; top: 50%; transform: translateY(-50%);}
 .sats-listing-card thead {background-color: var(--primary);}
-.sats-listing-card.medium {border-radius: 0; display: flex; align-items: flex-start; flex-wrap: wrap; padding: 0; margin-bottom: 0; width: 100%; overflow: hidden; overflow-x: auto;}
+.sats-listing-card.medium {
+    border-radius: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px 0 0;
+    margin-bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.sats-listing-item {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: .625rem;
+    margin: 0 0 15px;
+    display: flex;
+    align-items: center;
+}
 .sats-listing-card thead th,
 .panel-section-card .custom-table thead td,
 .panel-section-card .custom-table thead th {padding: 15px 20px; color: #333; text-align: left; font-weight: 600;}
