@@ -299,7 +299,7 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="option-card">
                             <img src="/assets/icons/online-icon.svg" alt="Online Icon" width="32" height="32">
                             <h6 class="font-weight-bold">Online</h6>
@@ -307,7 +307,7 @@
                             <a href="javascript:;" class="btn btn-primary">Add to to-do list</a>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="option-card">
                             <img src="/assets/icons/online-icon.svg" alt="On Paper Icon" width="32" height="32">
                             <h6 class="font-weight-bold">On paper</h6>
