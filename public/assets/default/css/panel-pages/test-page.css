@@ -103,6 +103,18 @@ Sub Pages Style
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 10px;
+}
+.rurera-test-pack-info > span {
+    background-color: #f9fafd;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: .75rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #ddd;
+    font-weight: 500;
 }
 .sats-listing-card thead th,
 .panel-section-card .custom-table thead td,
