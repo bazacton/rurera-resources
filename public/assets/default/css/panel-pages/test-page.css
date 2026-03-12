@@ -95,6 +95,15 @@ Sub Pages Style
 .rurera-text-box {
     position: relative;
 }
+.rurera-test-pack .rurera-test-description {
+    margin: 0 0 10px;
+    color: var(--primary);
+}
+.rurera-test-pack-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .sats-listing-card thead th,
 .panel-section-card .custom-table thead td,
 .panel-section-card .custom-table thead th {padding: 15px 20px; color: #333; text-align: left; font-weight: 600;}
