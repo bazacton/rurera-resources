@@ -305,7 +305,7 @@
                                 <h6 class="font-weight-bold">Online</h6>
                                 <p>Complete this test on your device. Get your results instantly.</p>
                             </div>
-                            <button class="btn btn-primary" type="button">Add to to-do list</button>
+                            <button class="add-list-btn" type="button">Add to to-do list</button>
                         </div>
                     </div>
                     <div class="col-12">
@@ -314,7 +314,7 @@
                                 <h6 class="font-weight-bold">On paper</h6>
                                 <p>This is an online exam. A paper option is not provided.</p>
                             </div>
-                            <button class="btn btn-disabled" disabled>Unavailable</button>
+                            <button class="add-list-btn btn-disabled" disabled>Unavailable</button>
                         </div>
                     </div>
                 </div>
