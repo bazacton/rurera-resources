@@ -128,7 +128,7 @@ Sub Pages Style
     align-items: center;
     justify-content: space-between;
 }
-.rurera-test-subjects {
+.rurera-test-subjects ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
