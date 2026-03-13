@@ -140,6 +140,9 @@
                                     </div>
                                 </div>
                             </a>
+                            <button type="button">
+                                <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
+                            </button>
                         </div>
                     </div>
                 </div>
