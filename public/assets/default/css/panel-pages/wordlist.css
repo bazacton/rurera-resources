@@ -226,6 +226,20 @@ body .spell-question-area .question-label span {text-align: center;}
     background-color: var(--primary);
     color: #fff;
 }
+.spell-links button {
+    height: 30px;
+    width: 30px;
+    background-color: inherit;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.spell-links button img {
+    max-width: 100%;
+    filter: invert(35%) sepia(100%) saturate(842%) hue-rotate(210deg) brightness(101%) contrast(116%);
+}
 /*Spellings Landing page Style End*/
 
 /* Sentences Screens Style Start */
