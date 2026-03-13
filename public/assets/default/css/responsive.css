@@ -1561,7 +1561,6 @@ Lms Responsive Style Start
     .blog-grid-card .blog-grid-image img {width: 100%;}
     .blog-grid-card .blog-grid-image {width: 100%; overflow: hidden;}
     .footer [class*="col-"] {max-width: 100%; flex: 0 0 100%;}
-    .sats-listing-card {text-align: center;}
     .login-password input[type="password"] {margin-bottom: 10px !important;}
     body .radio-buttons .card-radio {width: 47%;}
     .footer.footer-home .footer-copyright {text-align: center;}
