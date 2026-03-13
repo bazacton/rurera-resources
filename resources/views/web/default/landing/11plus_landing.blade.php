@@ -10,7 +10,7 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-md-6 col-lg-6">
-                    <h1 class="font-72 font-weight-bold"><span class="text-scribble mr-10">11 Plus</span>and Entrance Exams</h1>
+                    <h1><span class="text-scribble mr-10">11 Plus</span>and Entrance Exams</h1>
                     <h2 class="mb-15 font-30">Unlock Opportunities: Ace the 11 Plus Exam!
                     </h2>
                     <p class="font-19">The 11 Plus is a selective entrance exam for grammar and independent schools in England, 
