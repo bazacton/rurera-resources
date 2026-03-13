@@ -3673,7 +3673,7 @@ html:has(.learn-test-start) {
     color: #fff;
     box-shadow: none;
 }
-.modal.modal-md {
+.modal.modal-md .modal-dialog {
     max-width: 600px;
 }
 /* Test Section Style End */
