@@ -14,7 +14,7 @@
 
 @section('content')
 
-<div class="container set-work-container lms-choose-membership">
+<div class="container set-work-container rurera-choose-membership">
                     <div class="row">
                         <div class="col-12">
                             <form action="/panel/set-work/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}" method="Post" class="rurera-form-validation">
@@ -600,7 +600,7 @@
                 </div>
 
 
-<div class="modal fade lms-choose-membership" id="assignmentCreateModal" tabindex="-1" aria-labelledby="assignmentCreateModalLabel" aria-hidden="true">
+<div class="modal fade rurera-choose-membership" id="assignmentCreateModal" tabindex="-1" aria-labelledby="assignmentCreateModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="panel-header">
@@ -618,7 +618,7 @@
     </div>
 </div>
 
-<div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+<div class="modal fade rurera-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="panel-header">

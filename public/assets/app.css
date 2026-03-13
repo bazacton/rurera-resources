@@ -3302,7 +3302,7 @@ a.badge-gray200:focus {
     box-shadow: none;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
-.lms-choose-membership .form-login-reading .form-control {
+.rurera-choose-membership .form-login-reading .form-control {
     padding-left: 11px;
     color: #b5b8bf;
     font-size: 16px;
@@ -3311,7 +3311,7 @@ a.badge-gray200:focus {
     outline: none;
     border-color: #ddd;
 }
-.lms-choose-membership .form-login-reading .form-control option {
+.rurera-choose-membership .form-login-reading .form-control option {
     color: #343434;
 }
 .form-control option {
@@ -14107,7 +14107,7 @@ p {line-height: 1.5;}
     border-color: #b8f1d0;
     background-color: #f5fff9;
 }
-.fade.lms-choose-membership {
+.fade.rurera-choose-membership {
     transition: none;
 }
 @media (max-width:991px) {
@@ -16867,19 +16867,19 @@ Lms FAQS New Elements Style End
 /*************************************
 Lms Choose Membership Model Style Start
 *************************************/
-.modal.lms-choose-membership {padding-left: 0 !important;}
-.lms-choose-membership .modal-dialog {max-width: 100%; margin: 0;}
-.lms-choose-membership .modal-header{border-bottom: 0;}
-.lms-choose-membership .book-detail {text-align: center;}
-.lms-choose-membership .modal-dialog {height: 100%;}
-.lms-choose-membership .modal-content {background-color: #fafafa; border: 0; position: relative; box-shadow: none; border-radius: 0; height: 100%;}
-.lms-choose-membership .modal-body{background-color: #fafafa; padding: 0 25px 0;}
-.lms-choose-membership .modal-body .nav-link {width: 300px; margin: 25px auto;height: 60px;line-height: 44px; font-size: 18px;font-weight: bold; text-transform: capitalize;}
-.lms-choose-membership .book-form {margin: 0 auto;}
-.lms-choose-membership .form-group{margin-bottom: 15px; position: relative;}
-.lms-choose-membership .input-field {border: 0;border-radius: 0;background: none;padding: 0;height: auto;width: 100%;position: relative;}
-.lms-choose-membership .input-field input[type="text"],
-.lms-choose-membership .select-box select {background: #f3f3f3; border-radius: 6px;height: 52px;width: 100%;padding: 11px;border: 0;color: #b5b8bf;}
+.modal.rurera-choose-membership {padding-left: 0 !important;}
+.rurera-choose-membership .modal-dialog {max-width: 100%; margin: 0;}
+.rurera-choose-membership .modal-header{border-bottom: 0;}
+.rurera-choose-membership .book-detail {text-align: center;}
+.rurera-choose-membership .modal-dialog {height: 100%;}
+.rurera-choose-membership .modal-content {background-color: #fafafa; border: 0; position: relative; box-shadow: none; border-radius: 0; height: 100%;}
+.rurera-choose-membership .modal-body{background-color: #fafafa; padding: 0 25px 0;}
+.rurera-choose-membership .modal-body .nav-link {width: 300px; margin: 25px auto;height: 60px;line-height: 44px; font-size: 18px;font-weight: bold; text-transform: capitalize;}
+.rurera-choose-membership .book-form {margin: 0 auto;}
+.rurera-choose-membership .form-group{margin-bottom: 15px; position: relative;}
+.rurera-choose-membership .input-field {border: 0;border-radius: 0;background: none;padding: 0;height: auto;width: 100%;position: relative;}
+.rurera-choose-membership .input-field input[type="text"],
+.rurera-choose-membership .select-box select {background: #f3f3f3; border-radius: 6px;height: 52px;width: 100%;padding: 11px;border: 0;color: #b5b8bf;}
 .book-form label .icon-box {
     height: 18px;
     width: 18px;
@@ -16902,15 +16902,15 @@ Lms Choose Membership Model Style Start
 .discount-code-block > [class*="col-"] {
     padding: 0;
 }
-.lms-choose-membership .payment-options-holder {
+.rurera-choose-membership .payment-options-holder {
     max-width: 80%;
     margin: 0 auto;
 }
-.lms-choose-membership .discount-code-block input[type="text"] {
+.rurera-choose-membership .discount-code-block input[type="text"] {
     background-color: #fff;
     border: 1px solid #ddd;
 }
-.lms-choose-membership .discount-code-block .nav-link {
+.rurera-choose-membership .discount-code-block .nav-link {
     width: auto;
     background-color: inherit;
     border-radius: 5px !important;
@@ -16925,7 +16925,7 @@ Lms Choose Membership Model Style Start
     font-weight: 500;
     margin-bottom: 0;
 }
-.lms-choose-membership .discount-code-block .nav-link:after {
+.rurera-choose-membership .discount-code-block .nav-link:after {
     content: "\2192";
     display: inline-block;
     font-weight: 500;
@@ -16933,7 +16933,7 @@ Lms Choose Membership Model Style Start
     vertical-align: middle;
     margin-left: 10px;
 }
-.lms-choose-membership .discount-code-block p {
+.rurera-choose-membership .discount-code-block p {
     margin: 0 0 10px;
     color: var(--primary);
     font-weight: 500;
@@ -16950,13 +16950,13 @@ Lms Choose Membership Model Style Start
     color: #b5b8bf;
     font-size: 14px;
 }
-.lms-choose-membership .book-form > .row,
-.lms-choose-membership .book-form > .row > [class*="col-"] .row {
+.rurera-choose-membership .book-form > .row,
+.rurera-choose-membership .book-form > .row > [class*="col-"] .row {
     margin-left: -8px;
     margin-right: -8px;
 }
-.lms-choose-membership .book-form > .row > [class*="col-"],
-.lms-choose-membership .book-form > .row > [class*="col-"] .row [class*="col-"] {
+.rurera-choose-membership .book-form > .row > [class*="col-"],
+.rurera-choose-membership .book-form > .row > [class*="col-"] .row [class*="col-"] {
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -16991,21 +16991,21 @@ Lms Choose Membership Model Style Start
 .card-gateway-fields-holder > .row > .col-12 {
     padding: 0;
 }
-.lms-choose-membership .input-field input::-webkit-input-placeholder {color: #b5b8bf;}
-.lms-choose-membership .input-field input::-moz-placeholder {color: #b5b8bf;}
-.lms-choose-membership .input-field input:-ms-input-placeholder {color: #b5b8bf;}
-.lms-choose-membership .input-field input:-moz-placeholder {color: #b5b8bf;}
-.lms-choose-membership .input-field.input-card .icon-svg {display: inline-flex;position: absolute;left: 11px;top: 12px;}
-.lms-choose-membership .input-field.input-card .icon-svg svg {width: 24px;height: 24px;fill: #b5b8bf;}
-.lms-choose-membership .input-field.input-card .icon-svg .st0{fill:#b5b8bf;}
-.lms-choose-membership .input-field.input-card input[type="text"] {padding-left: 50px;}
-.lms-choose-membership .book-form p {font-size: 14px;}
-.lms-choose-membership .book-form p a {font-weight: 600; padding: 0 5px;color: var(--primary-hover);}
-.lms-choose-membership .subscription span {font-size: 16px;font-weight: 600;}
-.lms-choose-membership .subscription span a { font-weight: bold;color: var(--primary-hover);padding-left: 6px;text-transform: capitalize;}
-.lms-choose-membership .book-form .secure-server {display: flex;justify-content: center;align-items: center;}
-.lms-choose-membership .book-form .secure-server figure svg {width: 26px;height: 36px;display: flex;fill: #7c7d7f;margin-right: 5px;}
-.lms-choose-membership .book-form .secure-server span {font-size: 12px;line-height: 14px;color: #7c7d7f;}
+.rurera-choose-membership .input-field input::-webkit-input-placeholder {color: #b5b8bf;}
+.rurera-choose-membership .input-field input::-moz-placeholder {color: #b5b8bf;}
+.rurera-choose-membership .input-field input:-ms-input-placeholder {color: #b5b8bf;}
+.rurera-choose-membership .input-field input:-moz-placeholder {color: #b5b8bf;}
+.rurera-choose-membership .input-field.input-card .icon-svg {display: inline-flex;position: absolute;left: 11px;top: 12px;}
+.rurera-choose-membership .input-field.input-card .icon-svg svg {width: 24px;height: 24px;fill: #b5b8bf;}
+.rurera-choose-membership .input-field.input-card .icon-svg .st0{fill:#b5b8bf;}
+.rurera-choose-membership .input-field.input-card input[type="text"] {padding-left: 50px;}
+.rurera-choose-membership .book-form p {font-size: 14px;}
+.rurera-choose-membership .book-form p a {font-weight: 600; padding: 0 5px;color: var(--primary-hover);}
+.rurera-choose-membership .subscription span {font-size: 16px;font-weight: 600;}
+.rurera-choose-membership .subscription span a { font-weight: bold;color: var(--primary-hover);padding-left: 6px;text-transform: capitalize;}
+.rurera-choose-membership .book-form .secure-server {display: flex;justify-content: center;align-items: center;}
+.rurera-choose-membership .book-form .secure-server figure svg {width: 26px;height: 36px;display: flex;fill: #7c7d7f;margin-right: 5px;}
+.rurera-choose-membership .book-form .secure-server span {font-size: 12px;line-height: 14px;color: #7c7d7f;}
 .membership-steps-list {display: flex;align-items: center;justify-content: center;position: relative;max-width: 575px;margin: 0 auto;}
 .membership-steps-list li {position: relative;width: 50%;}
 .membership-steps-list li a {display: flex;position: relative;}
@@ -17014,21 +17014,21 @@ Lms Choose Membership Model Style Start
 .membership-steps-list li:last-child { width: 50px;}
 .membership-steps-list li:before {content: "";position: absolute;left: 55px;top: 20px;width: 77%;height: 13px;background: #afbacc;padding-left: 50px;border-radius: 0;}
 .membership-steps-list li:last-child:before { display: none;}
-.lms-choose-membership h2 {font-size: 1.6rem;}
+.rurera-choose-membership h2 {font-size: 1.6rem;}
 .membership-steps h3{color: var(--primary-hover);}
-.lms-choose-membership .book-detail p {position: relative;}
-.lms-choose-membership .book-detail p .icon-svg {position: absolute;left: -50px;top: 0;width: 40px;height: 40px;border: 2px solid var(--primary-hover);display: inline-flex;border-radius: 100%;align-items: center;justify-content: center;}
-.lms-choose-membership .book-detail p .icon-svg svg {width: 28px;height: 28px;fill: var(--primary-hover);}
-.lms-choose-membership .input-field input[type="text"]:focus {border-color:var(--primary-hover);}
-.lms-choose-membership .subscribe-plan-holder strong {padding: 0 100px;display: inline-block;line-height: 26px;color: var(--primary-hover);}
+.rurera-choose-membership .book-detail p {position: relative;}
+.rurera-choose-membership .book-detail p .icon-svg {position: absolute;left: -50px;top: 0;width: 40px;height: 40px;border: 2px solid var(--primary-hover);display: inline-flex;border-radius: 100%;align-items: center;justify-content: center;}
+.rurera-choose-membership .book-detail p .icon-svg svg {width: 28px;height: 28px;fill: var(--primary-hover);}
+.rurera-choose-membership .input-field input[type="text"]:focus {border-color:var(--primary-hover);}
+.rurera-choose-membership .subscribe-plan-holder strong {padding: 0 100px;display: inline-block;line-height: 26px;color: var(--primary-hover);}
 .membership-steps-list li.active::before { background:#64c07d;}
 .membership-steps-list li.active a .icon-svg{background:#64c07d;}
 
-.lms-choose-membership .bg-none {background: transparent;color: var(--primary-hover);box-shadow: none;}
-.lms-choose-membership .price-plan-image {padding-left: 0;margin-left: 0px;}
-.lms-choose-membership .price-plan-image img {transform: scale(-1, 1);z-index: 0;position: relative; height: 270px;}
-.lms-choose-membership .close{color: var(--primary-hover);font-size: 1rem;font-weight: 500;line-height: 32px;opacity: 1; padding: 20px; text-align: right; position: absolute; right: 10px; top: 0; z-index: 1;}
-.lms-choose-membership .close span {
+.rurera-choose-membership .bg-none {background: transparent;color: var(--primary-hover);box-shadow: none;}
+.rurera-choose-membership .price-plan-image {padding-left: 0;margin-left: 0px;}
+.rurera-choose-membership .price-plan-image img {transform: scale(-1, 1);z-index: 0;position: relative; height: 270px;}
+.rurera-choose-membership .close{color: var(--primary-hover);font-size: 1rem;font-weight: 500;line-height: 32px;opacity: 1; padding: 20px; text-align: right; position: absolute; right: 10px; top: 0; z-index: 1;}
+.rurera-choose-membership .close span {
     font-size: 3rem;
     vertical-align: middle;
     line-height: normal;
@@ -17036,40 +17036,40 @@ Lms Choose Membership Model Style Start
     margin-top: -10px;
     margin-left: 10px;
 }
-.lms-choose-membership .modal-logo {
+.rurera-choose-membership .modal-logo {
     padding: 20px 25px 0;
 }
-.lms-choose-membership .modal-logo img {
+.rurera-choose-membership .modal-logo img {
     height: 50px;
     width: 50px;
     object-fit: contain;
 }
 .membership-sub-header { position: relative; overflow: hidden;}
-.lms-choose-membership .form-separator {position: relative;overflow: hidden;text-align: center;margin: 30px 0;}
-.lms-choose-membership .form-separator span {display: inline-block;padding: 0 15px;font-size: 20px;color: #b5b8bf;position: relative;}
-.lms-choose-membership .form-separator span:before { content: "";position: absolute;left: 100%;width: 999px;height: 1px;background: #b5b8bf;top: 16px;}
-.lms-choose-membership .form-separator span:after {content: "";position: absolute;right: 100%;width: 999px;height: 1px;background: #b5b8bf;top: 16px;}
-.lms-choose-membership .social-login {border-radius: 50px;border: 2px solid #b4bac8;font-size: 20px;font-weight: bold;color: #b5b8bf;}
-.lms-choose-membership .form-login-reading .input-field input[type="text"] {height: 48px;border: 1px solid #ddd;}
-.lms-choose-membership .error-message {font-size: 18px;color: #ee3565;font-weight: 500;}
-.lms-choose-membership .fomr-label {display: inline-block; margin: 0 0 14px; position: relative; line-height: normal;}
-.lms-choose-membership .form-login-reading .input-field input.input-date,
-.lms-choose-membership .form-login-reading .input-field input.input-month{width: 60px; display: inline-block; margin-right: 10px;}
-.lms-choose-membership .form-login-reading .input-field input.input-year {width: 120px;}
-.lms-choose-membership h5 {margin-bottom: 5px; font-size: 18px; }
-.lms-choose-membership .form-group .select-sub-label {font-size: 14px; color: #999; display: block; line-height: normal; margin: 0 0 13px; position: relative; cursor: pointer;}
-.lms-choose-membership .select-field input[type=radio] {position: absolute; width: 0; height: 0; opacity: 0;}
-.lms-choose-membership .select-field {position: relative;}
-.lms-choose-membership .select-field label {font-size: 18px; position: relative; width: 100%; margin: 0 0 10px; padding: 0 0 0 30px; }
-.lms-choose-membership .select-field label:before {content: ""; width: 18px; height: 18px; border: 1px solid #ddd; position: absolute; left: 0; top: 50%; margin-top: -9px; border-radius: 100%;}
-.lms-choose-membership .select-field input[type=radio]:checked ~ label:before {box-shadow: 0 0 0 5px #ddd inset; }
-.lms-choose-membership .form-group input[type="password"] {height: 48px; border: 1px solid #ddd; width: 100%; padding: 11px; border-radius: 6px;}
-.lms-choose-membership .form-group .btn-field {margin: 0; text-align: right; }
-.lms-choose-membership .form-group .btn-field button {width: auto; font-size: 18px; font-weight: 600; padding: 12px 30px; height: auto; margin: 0; line-height: normal; display: inline-block;}
-.lms-choose-membership .switch-label {
+.rurera-choose-membership .form-separator {position: relative;overflow: hidden;text-align: center;margin: 30px 0;}
+.rurera-choose-membership .form-separator span {display: inline-block;padding: 0 15px;font-size: 20px;color: #b5b8bf;position: relative;}
+.rurera-choose-membership .form-separator span:before { content: "";position: absolute;left: 100%;width: 999px;height: 1px;background: #b5b8bf;top: 16px;}
+.rurera-choose-membership .form-separator span:after {content: "";position: absolute;right: 100%;width: 999px;height: 1px;background: #b5b8bf;top: 16px;}
+.rurera-choose-membership .social-login {border-radius: 50px;border: 2px solid #b4bac8;font-size: 20px;font-weight: bold;color: #b5b8bf;}
+.rurera-choose-membership .form-login-reading .input-field input[type="text"] {height: 48px;border: 1px solid #ddd;}
+.rurera-choose-membership .error-message {font-size: 18px;color: #ee3565;font-weight: 500;}
+.rurera-choose-membership .fomr-label {display: inline-block; margin: 0 0 14px; position: relative; line-height: normal;}
+.rurera-choose-membership .form-login-reading .input-field input.input-date,
+.rurera-choose-membership .form-login-reading .input-field input.input-month{width: 60px; display: inline-block; margin-right: 10px;}
+.rurera-choose-membership .form-login-reading .input-field input.input-year {width: 120px;}
+.rurera-choose-membership h5 {margin-bottom: 5px; font-size: 18px; }
+.rurera-choose-membership .form-group .select-sub-label {font-size: 14px; color: #999; display: block; line-height: normal; margin: 0 0 13px; position: relative; cursor: pointer;}
+.rurera-choose-membership .select-field input[type=radio] {position: absolute; width: 0; height: 0; opacity: 0;}
+.rurera-choose-membership .select-field {position: relative;}
+.rurera-choose-membership .select-field label {font-size: 18px; position: relative; width: 100%; margin: 0 0 10px; padding: 0 0 0 30px; }
+.rurera-choose-membership .select-field label:before {content: ""; width: 18px; height: 18px; border: 1px solid #ddd; position: absolute; left: 0; top: 50%; margin-top: -9px; border-radius: 100%;}
+.rurera-choose-membership .select-field input[type=radio]:checked ~ label:before {box-shadow: 0 0 0 5px #ddd inset; }
+.rurera-choose-membership .form-group input[type="password"] {height: 48px; border: 1px solid #ddd; width: 100%; padding: 11px; border-radius: 6px;}
+.rurera-choose-membership .form-group .btn-field {margin: 0; text-align: right; }
+.rurera-choose-membership .form-group .btn-field button {width: auto; font-size: 18px; font-weight: 600; padding: 12px 30px; height: auto; margin: 0; line-height: normal; display: inline-block;}
+.rurera-choose-membership .switch-label {
     margin-right: 10px;
 }
-.lms-choose-membership .plan-switch {
+.rurera-choose-membership .plan-switch {
     margin-top: -2px;
 }
 .child-register-form input:-webkit-autofill,
@@ -17566,7 +17566,7 @@ Main Home style End
 .rurera-button-loader .double-bounce2 { -webkit-animation-delay: -1.0s; -moz-animation-delay: -1.0s; animation-delay: -1.0s;}
 .quiz-start-btn {z-index: 999;}
 .quiz-start-btn .rurera-button-loader,
-.lms-choose-membership .rurera-button-loader {background-color: inherit;}
+.rurera-choose-membership .rurera-button-loader {background-color: inherit;}
 @-webkit-keyframes sk-bounce { 
     0%, 100% { -webkit-transform: scale(0); transform: scale(0); } 50% { -webkit-transform: scale(1); transform: scale(1);}
 }
@@ -18601,7 +18601,7 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 
 .plan-switch-holder {text-align: center; margin: 0 0 40px; display: flex; align-items: flex-start; justify-content: center; flex-wrap: wrap;}
 .plan-switch-option {display: flex; align-items: flex-start; justify-content: center; gap: 0;}
-.lms-choose-membership .plan-switch-option {justify-content: flex-start; padding: 10px 0;}
+.rurera-choose-membership .plan-switch-option {justify-content: flex-start; padding: 10px 0;}
 .save-plan {margin: 20px 0 0 25px; position: relative;}
 .save-plan span {display: inline-block; position: relative; padding: 0 0 0 115px; color: #596bfd; margin: 0;}
 .save-plan span:before {content: ""; position: absolute; left: 0; top: -30px; width: 98px; height: 48px; background: url(/assets/default/img/save-shap.png) top left no-repeat;}
@@ -19498,22 +19498,22 @@ li.disable-timetable label {
     position: relative;
     font-style: normal;
 }
-.lms-choose-membership .flexible-progress-bar li.active .stepline,
-.lms-choose-membership .flexible-progress-bar li.complete .stepline {
+.rurera-choose-membership .flexible-progress-bar li.active .stepline,
+.rurera-choose-membership .flexible-progress-bar li.complete .stepline {
     background: var(--primary);
 }
-.lms-choose-membership .stepline {
+.rurera-choose-membership .stepline {
     height: 2px;
     background-color: #ddd;
 }
-.lms-choose-membership .flexible-progress-bar li.complete i,
-.lms-choose-membership .flexible-progress-bar li.active i {
+.rurera-choose-membership .flexible-progress-bar li.complete i,
+.rurera-choose-membership .flexible-progress-bar li.active i {
     border-color: var(--primary);
     color: #fff;
     box-shadow: 0 0 0 3px #fff inset;
 }
-.lms-choose-membership .flexible-progress-bar li.complete img, 
-.lms-choose-membership .flexible-progress-bar li.active img {
+.rurera-choose-membership .flexible-progress-bar li.complete img, 
+.rurera-choose-membership .flexible-progress-bar li.active img {
     filter: invert(28%) sepia(85%) saturate(1121%) hue-rotate(174deg) brightness(104%) contrast(105%);
 }
 
@@ -20644,10 +20644,10 @@ Lms Responsive Style Start
         min-width: auto;
         width: 48%;
     }
-    .lms-choose-membership .close {
+    .rurera-choose-membership .close {
         font-size: 14px;
     }
-    .lms-choose-membership .modal-logo img {
+    .rurera-choose-membership .modal-logo img {
         height: 35px;
         width: 35px;
     }
@@ -20671,10 +20671,10 @@ Lms Responsive Style Start
     body .flexible-progress-bar br {
         display: none;
     }
-    .lms-choose-membership .close span {
+    .rurera-choose-membership .close span {
         line-height: 30px;
     }
-    .lms-choose-membership .modal-body .nav-link {
+    .rurera-choose-membership .modal-body .nav-link {
         width: 100%;
     }
 }
@@ -20872,7 +20872,7 @@ Lms Responsive Style Start
     .listing-card .read-btn .btn-icon {
         margin-right: 12px;
     }
-    .lms-choose-membership .payment-options-holder {
+    .rurera-choose-membership .payment-options-holder {
         max-width: 100%;
     }
 }

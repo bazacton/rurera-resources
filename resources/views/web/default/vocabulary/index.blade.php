@@ -165,7 +165,7 @@
     @endif
 </section>
 
-<div class="modal fade spell_words_popup lms-choose-membership" id="spell_words_popup" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade spell_words_popup rurera-choose-membership" id="spell_words_popup" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
     <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>

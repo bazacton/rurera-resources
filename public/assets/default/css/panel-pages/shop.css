@@ -134,7 +134,7 @@ Product Tabs Slider Style Start
 .rurera-button-loader .double-bounce2 { -webkit-animation-delay: -1.0s; -moz-animation-delay: -1.0s; animation-delay: -1.0s;}
 .quiz-start-btn {z-index: 999;}
 .quiz-start-btn .rurera-button-loader,
-.lms-choose-membership .rurera-button-loader {background-color: inherit;}
+.rurera-choose-membership .rurera-button-loader {background-color: inherit;}
 .product-show-thumbnail-card {flex-wrap: wrap; gap: 8px;}
 .product-show-thumbnail-card .thumbnail-card {width: 60px; height: 60px; border-radius: 10px; border: 2px solid #ececec; margin-left: 0 !important; }
 .product-show-thumbnail-card .product-video-demo-thumb-icon {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 45px; min-width: 45px; max-width: 45px; height: 45px; border-radius: 50%; z-index: 10;}

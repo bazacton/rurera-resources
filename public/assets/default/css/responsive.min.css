@@ -3047,10 +3047,10 @@
         min-width: auto;
         width: 48%;
     }
-    .lms-choose-membership .close {
+    .rurera-choose-membership .close {
         font-size: 14px;
     }
-    .lms-choose-membership .modal-logo img {
+    .rurera-choose-membership .modal-logo img {
         height: 35px;
         width: 35px;
     }
@@ -3073,7 +3073,7 @@
     body .flexible-progress-bar br {
         display: none;
     }
-    .lms-choose-membership .modal-body .nav-link {
+    .rurera-choose-membership .modal-body .nav-link {
         width: 100%;
     }
     .panel-stats .course-icon {
@@ -3985,13 +3985,13 @@
         position: initial;
         padding-top: 2px;
     }
-    .lms-choose-membership #progbar {
+    .rurera-choose-membership #progbar {
         margin-bottom: 0;
     }
-    .lms-choose-membership .modal-body {
+    .rurera-choose-membership .modal-body {
         padding: 0;
     }
-    .lms-choose-membership .modal-body.spell_words_popup_body {
+    .rurera-choose-membership .modal-body.spell_words_popup_body {
         padding-top: 20px;
     }
     .spell-words-filters h3 {
@@ -4158,7 +4158,7 @@
     .spells-quiz-from .rurera-in-row .form-field {
         width: 31.555%;
     }
-    .lms-choose-membership .subscription-content {padding-top: 35px;}
+    .rurera-choose-membership .subscription-content {padding-top: 35px;}
     .post-show.pr-50 {
         padding-right: 0 !important;
     }
@@ -5058,7 +5058,7 @@
     .listing-card .read-btn .btn-icon {
         margin-right: 12px;
     }
-    .lms-choose-membership .payment-options-holder {
+    .rurera-choose-membership .payment-options-holder {
         max-width: 100%;
     }
     .chart-filters .form-group:has(select) .input-label {
@@ -5346,7 +5346,7 @@
         flex-wrap: wrap;
         gap: 20px 0;
     }
-    .lms-choose-membership .social-login {
+    .rurera-choose-membership .social-login {
         min-height: 45px;
         margin: 0 !important;
         text-align: left !important;
@@ -5354,11 +5354,11 @@
     .social-login span {
         font-size: 12px;
     }
-    .lms-choose-membership .social-login img {
+    .rurera-choose-membership .social-login img {
         width: 15px;
         height: 15px;
     }
-    .lms-choose-membership .form-login-reading .form-separator {
+    .rurera-choose-membership .form-login-reading .form-separator {
         margin: 5px 0 15px;
     }
     .leave-option-control button {

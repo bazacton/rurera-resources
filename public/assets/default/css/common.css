@@ -1273,9 +1273,9 @@ body:has(.activities-container) .table-responsive {overflow: visible;}
 .accordion>.card:not(:first-of-type) {border-top-left-radius: 0; border-top-right-radius: 0;}
 .accordion>.card>.card-header {border-radius: 0; margin-bottom: -1px;}
 .form-control {display: block; width: 100%; /* height: 2.5rem; */ padding: 1rem 1rem; font-family: main-font-family; font-size: .75rem; font-weight: 400; line-height: 1.25; color: #343434; background-color: #fff; background-clip: padding-box; border: 1px solid #ececec; border-radius: .5rem;box-shadow: none;transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;}
-.lms-choose-membership .form-login-reading .form-control {background-color: #fff; color: #b5b8bf; font-size: inherit; height: 48px; padding: 0 10px; border-color: #ddd; border-radius: 6px;}
-.lms-choose-membership .form-login-reading .form-control.active {color: #333;}
-.lms-choose-membership .form-login-reading .form-control option {color: #343434; }
+.rurera-choose-membership .form-login-reading .form-control {background-color: #fff; color: #b5b8bf; font-size: inherit; height: 48px; padding: 0 10px; border-color: #ddd; border-radius: 6px;}
+.rurera-choose-membership .form-login-reading .form-control.active {color: #333;}
+.rurera-choose-membership .form-login-reading .form-control option {color: #343434; }
 .form-group .rurera-error-msg {position: absolute; top: -22px; right: 0;}
 .form-group:has(select) .rurera-error-msg {top: 2px;}
 .form-control option {padding-top: 10px; padding-bottom: 10px; line-height: 50px;}
@@ -1288,10 +1288,10 @@ body:has(.activities-container) .table-responsive {overflow: visible;}
     background-repeat: no-repeat;
     background-position: 95% 50%;
 }
-.lms-choose-membership .select-holder {
+.rurera-choose-membership .select-holder {
     position: relative;
 }
-.lms-choose-membership .select-holder:has(select):after {
+.rurera-choose-membership .select-holder:has(select):after {
     content: "";
     position: absolute;
     right: 15px;
@@ -1304,7 +1304,7 @@ body:has(.activities-container) .table-responsive {overflow: visible;}
     border-top: 0;
     border-left: 0;
 }
-.lms-choose-membership .select-holder:has(select) select {
+.rurera-choose-membership .select-holder:has(select) select {
     appearance: none;
 }
 @media (prefers-reduced-motion:reduce) {
