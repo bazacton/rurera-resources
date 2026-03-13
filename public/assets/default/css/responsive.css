@@ -1498,7 +1498,10 @@ body .panel-right-sidebar .navbar-toggler {position: relative; display: block; b
     .timeline-text .analytics-more_details {padding-left: 0;}
     .result-layout-summary.chart-summary-fields {padding: 0;}
     .search-block .search-input .form-group .btn {height: 30px; padding: 0 10px;}
-    .search-block .search-input .form-group {padding: 10px;}
+    .search-block .search-input .form-group {flex-wrap: wrap; margin: 0;}
+    .search-block .search-input .input-field {
+        width: 100%;
+    }
     .search-block .search-input input[type=text] {padding: 0.3rem 0.3rem 0.3rem 0;}
     .subscribe-plan {min-height: auto;}
     .team-section .section-title {flex-direction: column; gap: 10px 0;}
