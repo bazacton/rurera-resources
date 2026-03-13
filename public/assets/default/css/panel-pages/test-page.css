@@ -343,48 +343,48 @@ div.dataTables_wrapper div.dataTables_filter input[type="search"] {color: #49505
 }
 /*Lms Jobs Form Style Start*/
 .lms-jobs-form-body {border-radius: 6px; }
-.lms-jobs-form .form-element-title { margin: 0 -20px; background-color:var(--primary); padding: 16px 20px; margin-bottom: 24px; }
-.lms-jobs-form .row:nth-child(1) > .col-12 > .form-element-title { border-radius:6px 6px 0 0; }
-.lms-jobs-form .form-element-title h2 { color: #fff; font-size: 1.3rem; margin-top: 0;}
-.lms-jobs-form .checkbox-field input[type=checkbox] { transform: scale(1.5); }
-.lms-jobs-form .checkbox-group { margin-bottom: 20px; }
-.lms-jobs-form .checkbox-field { display: flex; align-items: center; margin-bottom: 8px; }
-.lms-jobs-form .checkbox-field label { font-size: 16px; font-weight: 500; text-transform: capitalize; margin-left: 15px; margin-bottom: 0; }
+.rurera-jobs-form .form-element-title { margin: 0 -20px; background-color:var(--primary); padding: 16px 20px; margin-bottom: 24px; }
+.rurera-jobs-form .row:nth-child(1) > .col-12 > .form-element-title { border-radius:6px 6px 0 0; }
+.rurera-jobs-form .form-element-title h2 { color: #fff; font-size: 1.3rem; margin-top: 0;}
+.rurera-jobs-form .checkbox-field input[type=checkbox] { transform: scale(1.5); }
+.rurera-jobs-form .checkbox-group { margin-bottom: 20px; }
+.rurera-jobs-form .checkbox-field { display: flex; align-items: center; margin-bottom: 8px; }
+.rurera-jobs-form .checkbox-field label { font-size: 16px; font-weight: 500; text-transform: capitalize; margin-left: 15px; margin-bottom: 0; }
 
-.lms-jobs-form .input-field input[type="text"]::-webkit-input-placeholder,
-.lms-jobs-form .input-field textarea::-webkit-input-placeholder,
-.lms-jobs-form .input-field input[type="email"]::-webkit-input-placeholder,
-.lms-jobs-form .input-field input[type="password"]::-webkit-input-placeholder { color:#818894; }
+.rurera-jobs-form .input-field input[type="text"]::-webkit-input-placeholder,
+.rurera-jobs-form .input-field textarea::-webkit-input-placeholder,
+.rurera-jobs-form .input-field input[type="email"]::-webkit-input-placeholder,
+.rurera-jobs-form .input-field input[type="password"]::-webkit-input-placeholder { color:#818894; }
 
-.lms-jobs-form .input-field input[type="text"]::-moz-placeholder,
-.lms-jobs-form .input-field textarea::-moz-placeholder,
-.lms-jobs-form .input-field input[type="email"]::-moz-placeholder,
-.lms-jobs-form .input-field input[type="password"]::-moz-placeholder { color:#818894; }
+.rurera-jobs-form .input-field input[type="text"]::-moz-placeholder,
+.rurera-jobs-form .input-field textarea::-moz-placeholder,
+.rurera-jobs-form .input-field input[type="email"]::-moz-placeholder,
+.rurera-jobs-form .input-field input[type="password"]::-moz-placeholder { color:#818894; }
 
-.lms-jobs-form .input-field input[type="text"]:-ms-input-placeholder,
-.lms-jobs-form .input-field textarea:-ms-input-placeholder,
-.lms-jobs-form .input-field input[type="email"]:-ms-input-placeholder,
-.lms-jobs-form .input-field input[type="password"]:-ms-input-placeholder { color:#818894; }
+.rurera-jobs-form .input-field input[type="text"]:-ms-input-placeholder,
+.rurera-jobs-form .input-field textarea:-ms-input-placeholder,
+.rurera-jobs-form .input-field input[type="email"]:-ms-input-placeholder,
+.rurera-jobs-form .input-field input[type="password"]:-ms-input-placeholder { color:#818894; }
 
-.lms-jobs-form .input-field input[type="text"]::-ms-input-placeholder,
-.lms-jobs-form .input-field textarea::-ms-input-placeholder,
-.lms-jobs-form .input-field input[type="email"]::-ms-input-placeholder,
-.lms-jobs-form .input-field input[type="password"]::-ms-input-placeholder { color:#818894; }
+.rurera-jobs-form .input-field input[type="text"]::-ms-input-placeholder,
+.rurera-jobs-form .input-field textarea::-ms-input-placeholder,
+.rurera-jobs-form .input-field input[type="email"]::-ms-input-placeholder,
+.rurera-jobs-form .input-field input[type="password"]::-ms-input-placeholder { color:#818894; }
 
-.lms-jobs-form .input-field input[type="text"]::placeholder,
-.lms-jobs-form .input-field textarea::placeholder,
-.lms-jobs-form .input-field input[type="email"]::placeholder,
-.lms-jobs-form .input-field input[type="password"]::placeholder { color:#818894; }
-.panel-content .lms-jobs-form .input-field input[type="text"]:focus::-webkit-input-placeholder {
+.rurera-jobs-form .input-field input[type="text"]::placeholder,
+.rurera-jobs-form .input-field textarea::placeholder,
+.rurera-jobs-form .input-field input[type="email"]::placeholder,
+.rurera-jobs-form .input-field input[type="password"]::placeholder { color:#818894; }
+.panel-content .rurera-jobs-form .input-field input[type="text"]:focus::-webkit-input-placeholder {
   color: #fff0;
 }
-.panel-content .lms-jobs-form .input-field input[type="text"]:focus::-moz-placeholder {
+.panel-content .rurera-jobs-form .input-field input[type="text"]:focus::-moz-placeholder {
   color: #fff0;
 }
-.lms-jobs-form .input-field input[type="text"],
-.lms-jobs-form .input-field input[type="email"],
-.lms-jobs-form .input-field input[type="password"],
-.lms-jobs-form .input-field .lms-jobs-select { 
+.rurera-jobs-form .input-field input[type="text"],
+.rurera-jobs-form .input-field input[type="email"],
+.rurera-jobs-form .input-field input[type="password"],
+.rurera-jobs-form .input-field .lms-jobs-select { 
     box-sizing: border-box;
     width: 100%;
     padding: 10px 15px;
