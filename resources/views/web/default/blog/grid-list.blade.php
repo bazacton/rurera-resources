@@ -4,7 +4,7 @@
             <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
             <span  itemprop="datePublished" content="{{ dateTimeFormat($post->updated_at, 'j M Y H:i:s') }}">{{ dateTimeFormat($post->updated_at, 'j M Y') }}</span>
         </span>
-        <h3 class="blog-grid-title mt-10 font-16 font-weight-bold" itemprop="headline">
+        <h3 class="blog-grid-title mt-10 font-16 font-weight-bold TEST@@" itemprop="headline">
             <a itemprop="url" href="{{ $post->getUrl() }}">{{ $thisController->getPostContent($post, $post->title) }}</a>
         </h3>
         @php
