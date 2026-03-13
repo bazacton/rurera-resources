@@ -222,6 +222,10 @@ body .spell-question-area .question-label span {text-align: center;}
 .spell-links .spell-popup-btn {
     color: var(--primary);
 }
+.spell-links .rurera-tooltip {
+    background-color: var(--primary);
+    color: #fff;
+}
 /*Spellings Landing page Style End*/
 
 /* Sentences Screens Style Start */
