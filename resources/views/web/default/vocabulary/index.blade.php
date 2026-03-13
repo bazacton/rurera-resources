@@ -142,7 +142,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <button type="button">
+                            <a href="javascript:;" class="dropdown-toggle-btn">
                                 <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
                                 </span>
@@ -154,7 +154,7 @@
                                         <button type="button" class="tooltip-btn practice font-16 d-block mt-15 text-center" onclick='window.location.href = "/panel/analytics/vocabulary/{{$dataObj->id}}"'>Track</button>
                                     @endif
                                 </div>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
