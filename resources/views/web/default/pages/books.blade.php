@@ -8,14 +8,14 @@
         background-size: 100% 12px, 12px 100%;
     }
 
-    .lms-books-listing {
+    .rurera-books-listing {
         background-color: #f1f1f1;
     }
 </style>
 @endpush
 
 @section('content')
-<section class="lms-books-listing pt-0">
+<section class="rurera-books-listing pt-0">
     <div class="books-listing-holder">
         <div class="row">
             <div class="col-lg-12">
