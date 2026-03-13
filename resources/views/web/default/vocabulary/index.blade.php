@@ -24,12 +24,8 @@
                     </div>
                     <div class="tests-list-holder">
                         <ul class="tests-list">
-                            <li class="active">Fiction</li>
-                            <li>Non-Fiction</li>
-                            <li>Story</li>
-                            <li>Mystery</li>
-                            <li>Fantasy</li>
-                            <li>Adventure</li>
+                            <li class="active">Word List</li>
+                            <li>Spell Bee</li>
                         </ul>
                     </div>
                 </form>
