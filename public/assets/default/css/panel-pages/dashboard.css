@@ -485,12 +485,10 @@ Left SideBar-menu End
     background: var(--primary);
     border-color: var(--primary);
 }
-
 .rurera-tasks-toggle-wrap {
     text-align: center;
     margin-top: 18px;
 }
-
 .rurera-tasks-toggle {
     display: inline-flex;
     align-items: center;
@@ -498,12 +496,10 @@ Left SideBar-menu End
     color: var(--primary);
     text-decoration: none;
 }
-
 .rurera-tasks-toggle:hover,
 .rurera-tasks-toggle:focus {
     color: var(--primary);
 }
-
 @media (max-width: 991.98px) {
     .rurera-tasks-row-right {
     margin-top: 16px;
@@ -553,7 +549,7 @@ Left SideBar-menu End
 .panel-subheader .info-modal-btn {height: 20px; width: 20px; display: inline-block; cursor: pointer; line-height: 20px; margin-left: 5px; vertical-align: middle;}
 .panel-subheader .info-modal-btn img {max-width: 100%; vertical-align: top;}
 /*Panel Stats For Subject and treasure-mission Style End*/
-
+.modal.modal-md {max-width: 600px;}
 /*Panel Content Default Style End*/
 
 /*Panel Right-Sidebar Hide Style*/
