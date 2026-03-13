@@ -2,8 +2,8 @@
 Test Page | Student Panel Style Start
 Sub Pages Style
 *****************************/
-.panel-content .lms-jobs-form .input-field input[type="text"] {padding-left: 35px;}
-.panel-content .lms-jobs-form .input-field input[type="text"]:focus {border-color: #333;}
+.panel-content .rurera-jobs-form .input-field input[type="text"] {padding-left: 35px;}
+.panel-content .rurera-jobs-form .input-field input[type="text"]:focus {border-color: #333;}
 .listing-search .input-field img {
     position: absolute;
     height: 20px;
