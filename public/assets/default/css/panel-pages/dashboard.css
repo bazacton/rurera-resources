@@ -2493,24 +2493,24 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .db-form-tabs .nav-tabs .nav-link.active {background-color: var(--primary); color: #fff; box-shadow: 0 0 15px var(--primary);}
 .db-form-tabs .nav-tabs .nav-link.active:after {display: none;}
 .db-form-tabs .tab-content {padding: 0; background-color: inherit;}
-.db-form-tabs .lms-jobs-form .input-field input[type="text"],
-.db-form-tabs .lms-jobs-form .input-field input[type="email"],
-.db-form-tabs .lms-jobs-form .input-field input[type="password"],
-.db-form-tabs .lms-jobs-form .input-field select{background-color: #fff; height: 42px; font-size: 14px; border-color: #cbd5e1; border-radius: 6px;font-weight: 400; color: #cbd6e2;}
-.db-form-tabs .lms-jobs-form .input-field select {padding-right: 40px;}
-.db-form-tabs .lms-jobs-form .input-field {margin-bottom: 15px;}
-.db-form-tabs .lms-jobs-form .row {margin: 0 -7px;}
-.db-form-tabs .lms-jobs-form [class*="col-"] {padding: 0 7px;}
+.db-form-tabs .rurera-jobs-form .input-field input[type="text"],
+.db-form-tabs .rurera-jobs-form .input-field input[type="email"],
+.db-form-tabs .rurera-jobs-form .input-field input[type="password"],
+.db-form-tabs .rurera-jobs-form .input-field select{background-color: #fff; height: 42px; font-size: 14px; border-color: #cbd5e1; border-radius: 6px;font-weight: 400; color: #cbd6e2;}
+.db-form-tabs .rurera-jobs-form .input-field select {padding-right: 40px;}
+.db-form-tabs .rurera-jobs-form .input-field {margin-bottom: 15px;}
+.db-form-tabs .rurera-jobs-form .row {margin: 0 -7px;}
+.db-form-tabs .rurera-jobs-form [class*="col-"] {padding: 0 7px;}
 .db-form-tabs .submit-btn,
 .db-form-tabs .db-security .btn-primary {background-color: var(--primary); color: #fff; font-weight: 400; border: 0; padding: 8px 15px; border-radius: 8px; margin-right: 10px; height: auto;}
 .db-form-tabs .db-security .btn-link {font-size: 14px; color: #0d6efd; text-decoration: underline; padding: 0;}
 .db-form-tabs .cancel-btn {color: var(--primary); text-decoration: underline; font-weight: 400;}
 .ms-auto{margin-left: auto!important;}
-.db-form-tabs .lms-jobs-form .card {margin-top: 25px; border: 0;}
-.db-form-tabs .lms-jobs-form .card .text-muted {margin: 0 0 15px;}
+.db-form-tabs .rurera-jobs-form .card {margin-top: 25px; border: 0;}
+.db-form-tabs .rurera-jobs-form .card .text-muted {margin: 0 0 15px;}
 .db-form-tabs .card-title,
 .db-form-tabs .card-body h5 {font-size: 1.25rem; margin-bottom: 0; }
-.db-form-tabs .lms-jobs-form .btn-danger {width: auto; padding: 0 15px; background-color: #dc3545; color: #fff; font-size: 14px; font-weight: 400; height: 35px;}
+.db-form-tabs .rurera-jobs-form .btn-danger {width: auto; padding: 0 15px; background-color: #dc3545; color: #fff; font-size: 14px; font-weight: 400; height: 35px;}
 .db-form-tabs .billing-card,
 .db-form-tabs .card {background-color: #fff;box-shadow: 0 0 15px rgba(0,0,0,0.05); margin-bottom: 30px;padding: 10px 0;border: 1px solid #e2e8f0;border-radius: 10px;}
 .db-form-tabs .text-plan {color: #9399a1; font-size: 16px;}
@@ -2591,8 +2591,8 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .db-notifications .list-group-item div div {max-width: 40%;}
 .list-group.column-2 {flex-direction: inherit; flex-wrap: wrap; margin-left: -15px; margin-right: 0;}
 .db-members .card .column-2 .list-group-item {max-width: 47.5%; width: 47.5%; margin-left: 15px;}
-.dashboard .lms-jobs-form {border: 0; }
-.panel-content .dashboard .lms-jobs-form .input-field:before {display: none;}
+.dashboard .rurera-jobs-form {border: 0; }
+.panel-content .dashboard .rurera-jobs-form .input-field:before {display: none;}
 .member-card-header {padding:20px !important; border-bottom: 1px solid #ddd; margin-bottom: 30px; background-color: #fff; border-radius: 10px 10px 0 0;}
 .member-card-header .dropdown {margin-left: auto;}
 .member-card-header .db-members .profile-dropdown a:after {display: none;}
