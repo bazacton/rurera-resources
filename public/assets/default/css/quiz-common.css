@@ -3673,4 +3673,7 @@ html:has(.learn-test-start) {
     color: #fff;
     box-shadow: none;
 }
+.modal.modal-md {
+    max-width: 600px;
+}
 /* Test Section Style End */
