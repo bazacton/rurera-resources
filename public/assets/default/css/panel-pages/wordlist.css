@@ -229,7 +229,7 @@ body .spell-question-area .question-label span {text-align: center;}
     background-color: var(--primary);
     color: #fff;
 }
-.spell-links button {
+.spell-links .dropdown-toggle-btn {
     background-color: inherit;
     border: 1px solid var(--primary);
     border-radius: 5px;
