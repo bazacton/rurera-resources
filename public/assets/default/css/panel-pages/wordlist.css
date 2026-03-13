@@ -171,17 +171,7 @@ body .spell-question-area .question-label span {text-align: center;}
 .ru-search-input .form-group input:focus::-moz-placeholder {
   color: #fff0;
 }
-.search-clear {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    background: transparent;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
+.search-clear {position: absolute; right: 10px; top: 50%; transform: translateY(-50%); border: none; background: transparent; font-size: 1.5rem; cursor: pointer; display: none;}
 .spell-levels li > a:active {box-shadow: 0 4px 0 1px #b0b0b0;}
 .spell-levels li.easy > a:active {box-shadow: 0 4px 0 1px #0f6c9b;}
 .spell-levels .treasure > a:active {box-shadow: none;}
