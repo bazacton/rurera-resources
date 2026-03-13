@@ -3678,3 +3678,9 @@ html:has(.learn-test-start) {
     max-width: 600px;
 }
 /* Test Section Style End */
+
+/* Swal2 Modal Style Start */
+.d-flex.gap-3 {
+    gap: 3%;
+}
+/* Swal2 Modal Style End */
