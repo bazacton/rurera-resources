@@ -2672,7 +2672,7 @@ Books Right Sidebar Cards Style Start
 .books-card {
     display: flex;
     align-items:center;
-    margin-bottom:15px;
+    margin-bottom:35px;
     transition: all .4s ease;
 }
 .books-card .img-holder {
