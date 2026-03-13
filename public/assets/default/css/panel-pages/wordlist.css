@@ -142,7 +142,6 @@ body .spell-question-area .question-label span {text-align: center;}
     flex-direction: column;
     display: flex;
     align-items: flex-start;
-    width: 100%;
 }
 .ru-search-input .form-group {
     border: 1px solid #ddd;
