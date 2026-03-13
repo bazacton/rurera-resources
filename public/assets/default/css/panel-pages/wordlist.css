@@ -227,14 +227,14 @@ body .spell-question-area .question-label span {text-align: center;}
     color: #fff;
 }
 .spell-links button {
-    height: 30px;
-    width: 30px;
     background-color: inherit;
     border: 1px solid var(--primary);
     border-radius: 5px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    height: 30px;
+    width: 30px;
 }
 .spell-links button img {
     max-width: 100%;
