@@ -598,7 +598,10 @@ Lms Responsive Style Start
     body .sidebar-menu-holder .sidebar-logo {display: flex; display: none;}
 	.user-profile-icons .dropdown > a > img, .user-profile-icons img,
     .panel-right-sidebar .coin-counts img{width: 28px; height: 28px; margin-right: 0; margin-top: 0;}
-    body .sidebar-logo img {max-width: 30px;}
+    body .sidebar-logo img {
+        width: 40px;
+        height: 40px;
+    }
 .panel-right-sidebar .user-menu.user-profile-dropdown {transition: none; opacity: 1; visibility: visible; display: none;}
     .panel-right-sidebar .user-menu.user-profile-dropdown.show {display: block;}
     .panel-right-sidebar [class*="col-"],
