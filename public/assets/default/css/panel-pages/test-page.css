@@ -395,17 +395,7 @@ div.dataTables_wrapper div.dataTables_filter input[type="search"] {color: #49505
     font-size: .875rem;
     color: #444;
  }
- .search-clear{
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    background: transparent;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
+ .search-clear{position: absolute; right: 10px; top: 50%; transform: translateY(-50%); border: none; background: transparent; font-size: 1.5rem; cursor: pointer; display: none;}
 .rurera-jobs-form .input-field input[type="submit"] { height: 58px; width: 225px; text-align: center; border: 0; border-radius: 4px; background: var(--primary); color: #fff; font-size: 16px; font-weight: 500; outline: none; cursor: pointer; }
 .rurera-jobs-form .input-field { margin: 0; }
 .rurera-jobs-form .input-field textarea {box-sizing: border-box; width: 100%; padding: 10px 15px; border: 1px solid #cbd5e1;border-radius: 6px;outline: 0;height: 90px;font-size: 14px;font-weight: 500;background-color: #fff;color: #444;}
