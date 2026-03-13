@@ -3675,7 +3675,7 @@ body table tbody+tbody {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 }
 
-.lms-choose-membership .form-login-reading .form-control {
+.rurera-choose-membership .form-login-reading .form-control {
     background-color: #fff;
     color: #b5b8bf;
     font-size: inherit;
@@ -3685,7 +3685,7 @@ body table tbody+tbody {
     border-radius: 6px
 }
 
-.lms-choose-membership .form-login-reading .form-control option {
+.rurera-choose-membership .form-login-reading .form-control option {
     color: #343434
 }
 

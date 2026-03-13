@@ -820,7 +820,7 @@
     </div>
 </div>
 
-<div class="modal fade edit-user-modal lms-choose-membership" id="edit-user-modal" tabindex="-1"
+<div class="modal fade edit-user-modal rurera-choose-membership" id="edit-user-modal" tabindex="-1"
      aria-labelledby="edit-user-modallabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -845,7 +845,7 @@
     </div>
 </div>
 
-<div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+<div class="modal fade rurera-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <!-- <div class="panel-header">

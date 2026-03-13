@@ -281,7 +281,7 @@
   </div>
 </div>
 
-<div class="modal fade lms-choose-membership" id="subscriptionModal">
+<div class="modal fade rurera-choose-membership" id="subscriptionModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <button type="button" class="close" data-toggle="modal" data-target="#leave-option-modal"><span aria-hidden="true">×</span></button>

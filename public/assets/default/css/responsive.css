@@ -952,8 +952,8 @@ Lms Responsive Style Start
     .sentences-select-option {margin-bottom: 30px;}
     .sentences-controls {gap: 10px; flex-wrap: wrap; width: 100%; justify-content: center;}
     .sentences-controls a {min-width: auto; width: 48%;}
-    .lms-choose-membership .close {font-size: 14px;}
-    .lms-choose-membership .modal-logo img {height: 35px; width: 35px;}
+    .rurera-choose-membership .close {font-size: 14px;}
+    .rurera-choose-membership .modal-logo img {height: 35px; width: 35px;}
     body #progbar {padding-top: 25px;}
     body .flexible-progress-bar {display: inline-flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; overflow: hidden;}
     body .flexible-progress-bar li:first-child .stepline {display: block;}
@@ -969,7 +969,7 @@ Lms Responsive Style Start
         overflow: hidden;
     }
     body .stepline {bottom: .80em; position: absolute;}
-    .lms-choose-membership .modal-body .nav-link {width: 100%;}
+    .rurera-choose-membership .modal-body .nav-link {width: 100%;}
     .panel-stats .course-icon {right: -15px; width: 180px; height: 90px;}
     .spell-levels .treasure > a .thumb-box {width: 100%;height: 100%;}
     .spell-levels .treasure > a .thumb-box img {max-width: 100%; height: 100%; object-fit: contain;}
@@ -1238,10 +1238,10 @@ Lms Responsive Style Start
     .categories-list li {flex: 0 0 50%; max-width: 50%;}
     .stats-container .stats-item:hover {transform: none;}
     .form-group .rurera-error-msg {position: initial; padding-top: 2px;}
-    .lms-choose-membership #progbar {margin-bottom: 0;}
-    .lms-choose-membership .subscription-content #progbar {padding-top: 40px;}
-    .lms-choose-membership .modal-body {padding: 0;}
-    .lms-choose-membership .modal-body.spell_words_popup_body {padding-top: 20px;}
+    .rurera-choose-membership #progbar {margin-bottom: 0;}
+    .rurera-choose-membership .subscription-content #progbar {padding-top: 40px;}
+    .rurera-choose-membership .modal-body {padding: 0;}
+    .rurera-choose-membership .modal-body.spell_words_popup_body {padding-top: 20px;}
     .spell-words-filters h3 {font-size: 1.2rem;}
     .product-card .product-card-body .product-title {min-height: auto;}
     .product-card {text-align: center;}
@@ -1296,10 +1296,10 @@ Lms Responsive Style Start
     .edit-icon em {visibility: visible; opacity: 1;}
     .detail-body.p-25 {padding: 0 !important;}
     .preference-field-group {margin: 0 0 20px;}
-    .lms-choose-membership .subscription-content {padding-top: 35px;}
+    .rurera-choose-membership .subscription-content {padding-top: 35px;}
     .transactions-table .no-records-found {padding: 12px; justify-content: center;}
     .subscription-content .usernames-suggestions {margin-bottom: 15px;}
-    .lms-choose-membership .form-login-reading select.form-control {padding-right: 42px;}
+    .rurera-choose-membership .form-login-reading select.form-control {padding-right: 42px;}
     .subchapter-slider {padding: 0 15px;}
     .subchapter-slider .swiper-slide-active {transform: none;}
     .streak-dropdown-content {
@@ -1632,7 +1632,7 @@ Lms Responsive Style Start
     .lms-books-listing .listing-card .img-holder {margin: 0 0 20px;}
     .listing-card .read-btn, .book-btn {min-width: 206px; font-size: 16px; padding: 15px 25px;}
     .listing-card .read-btn .btn-icon {margin-right: 12px;}
-    .lms-choose-membership .payment-options-holder {max-width: 100%;}
+    .rurera-choose-membership .payment-options-holder {max-width: 100%;}
     .chart-filters .form-group:has(select) .input-label {display: none;}
     .chart-filters .filters-list {margin-bottom: 0; margin-top: 0; width: 100%;}
     .payment-card {min-width: 100%;}
@@ -1717,10 +1717,10 @@ Lms Responsive Style Start
     .quests-list.p-30 {padding: 15px !important;}
     .lms-client-list .lms-client-logo figure {height: 80px;}
     .footer-bottom .footer-nav-box {flex-wrap: wrap; gap: 20px 0;}
-    .lms-choose-membership .social-login {min-height: 45px; margin: 0 !important; text-align: left !important;}
+    .rurera-choose-membership .social-login {min-height: 45px; margin: 0 !important; text-align: left !important;}
     .social-login span {font-size: 12px;}
-    .lms-choose-membership .social-login img {width: 15px; height: 15px;}
-    .lms-choose-membership .form-login-reading .form-separator {margin: 5px 0 15px;}
+    .rurera-choose-membership .social-login img {width: 15px; height: 15px;}
+    .rurera-choose-membership .form-login-reading .form-separator {margin: 5px 0 15px;}
     .leave-option-control button {width: 100%;}
     .leave-option-control {flex-wrap: wrap;}
     .analytics-dropdown select {background-position: 98% 50%;}

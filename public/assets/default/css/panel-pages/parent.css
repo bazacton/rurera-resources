@@ -134,7 +134,7 @@ Assignments Table Style Start
 /*Dashboard Packages Style Start*/
 .plan-switch-holder {text-align: center; margin: 0 0 50px; display: inline-flex; align-items: flex-start; justify-content: center; flex-wrap: wrap; position: relative;}
 .plan-switch-option {display: flex; align-items: center; justify-content: center; gap: 0;}
-.lms-choose-membership .plan-switch-option {justify-content: flex-start; padding: 10px 0;}
+.rurera-choose-membership .plan-switch-option {justify-content: flex-start; padding: 10px 0;}
 .save-plan {margin: 30px 0 0 -10px; position: absolute; left: 100%; width: 100%;}
 .save-plan span {display: inline-block; position: relative; padding: 0 0 0 115px; color: #596bfd; margin: 0;}
 .save-plan span:before {content: ""; position: absolute; left: 0; top: -30px; width: 98px; height: 48px; background: url(/assets/default/img/save-shap.png) top left no-repeat;}
@@ -178,9 +178,9 @@ Assignments Table Style Start
 }
 
 /* Wizard-Steps Style Start */
-.lms-choose-membership .panel-header {background-color: #fff; border-bottom: 4px solid #e2e8f0; position: relative; padding: 10px 20px; display: flex; align-items: center;}
-.lms-choose-membership .panel-header .modal-logo {border-right: 1px solid #ddd; padding: 0 15px 0 0; margin-right: 15px;}
-.lms-choose-membership .panel-header img {height: 40px; width: 40px; }
+.rurera-choose-membership .panel-header {background-color: #fff; border-bottom: 4px solid #e2e8f0; position: relative; padding: 10px 20px; display: flex; align-items: center;}
+.rurera-choose-membership .panel-header .modal-logo {border-right: 1px solid #ddd; padding: 0 15px 0 0; margin-right: 15px;}
+.rurera-choose-membership .panel-header img {height: 40px; width: 40px; }
 .wizard-pagination,
 .lms-setup-progress-section .package-controls {background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 15px; display: flex; align-items: center; gap: 10px; margin-top: auto; position: fixed; left: 0; right: 0; position: fixed; max-width: 304px; bottom: 1.5rem; margin-left: auto; margin-right: auto;}
 .wizard-pagination .previous-btn,
@@ -193,9 +193,9 @@ Assignments Table Style Start
 .practice-quiz-ajax-fields {margin-bottom: 30px;}
 .practice-quiz-ajax-fields:empty {display: none;}
 .disabled-btn {pointer-events: none;}
-.lms-choose-membership:has(.wizard-steps) .container, 
-.lms-choose-membership:has(.wizard-steps) .container > .row {height: 100%;}
-.lms-choose-membership:has(.wizard-steps) form {display: flex; flex-direction: column;}
+.rurera-choose-membership:has(.wizard-steps) .container, 
+.rurera-choose-membership:has(.wizard-steps) .container > .row {height: 100%;}
+.rurera-choose-membership:has(.wizard-steps) form {display: flex; flex-direction: column;}
 .progress-line {position: absolute; left: 0; bottom: -4px; height: 4px; border-radius: 50px; overflow: hidden; width: 100%; }
 .progress-line .progress-count {background-color: var(--primary); display: block; height: 100%; border-radius: 50px; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
 .wizard-steps .sats-listing-card tbody tr td {border: 0; }
@@ -211,22 +211,22 @@ Assignments Table Style Start
 /* Wizard-Steps Style End */
 
 /*Lms Choose Membership Model Style Start*/
-.modal.lms-choose-membership {padding-left: 0 !important; padding-right: 0 !important;}
-.modal.lms-choose-membership:has(.wizard-steps) {overflow: hidden;}
-.modal.lms-choose-membership:has(.wizard-steps) .modal-body {padding-left: 0; padding-right: 0; padding-top: 30px; overflow: hidden; overflow-y: auto;}
-.lms-choose-membership .modal-dialog {max-width: 100%; margin: 0;}
-.lms-choose-membership .modal-header{border-bottom: 0;}
-.lms-choose-membership .book-detail {text-align: center;}
-.lms-choose-membership .modal-dialog {height: 100%;}
-.lms-choose-membership .modal-content {background-color: #fafafa; border: 0; position: relative; box-shadow: none; border-radius: 0; /*height: 100%;*/}
-.lms-choose-membership:has(.form-login-reading) .modal-content,
-.lms-choose-membership .modal-content:has(.subscription-content) {height: 100%;}
-.lms-choose-membership:has(.card-gateway-fields-holder) .modal-content:has(.subscription-content) {
+.modal.rurera-choose-membership {padding-left: 0 !important; padding-right: 0 !important;}
+.modal.rurera-choose-membership:has(.wizard-steps) {overflow: hidden;}
+.modal.rurera-choose-membership:has(.wizard-steps) .modal-body {padding-left: 0; padding-right: 0; padding-top: 30px; overflow: hidden; overflow-y: auto;}
+.rurera-choose-membership .modal-dialog {max-width: 100%; margin: 0;}
+.rurera-choose-membership .modal-header{border-bottom: 0;}
+.rurera-choose-membership .book-detail {text-align: center;}
+.rurera-choose-membership .modal-dialog {height: 100%;}
+.rurera-choose-membership .modal-content {background-color: #fafafa; border: 0; position: relative; box-shadow: none; border-radius: 0; /*height: 100%;*/}
+.rurera-choose-membership:has(.form-login-reading) .modal-content,
+.rurera-choose-membership .modal-content:has(.subscription-content) {height: 100%;}
+.rurera-choose-membership:has(.card-gateway-fields-holder) .modal-content:has(.subscription-content) {
     height: auto;
 }
-.lms-choose-membership .modal-body{background-color: #fafafa; padding: 0 25px 0;}
+.rurera-choose-membership .modal-body{background-color: #fafafa; padding: 0 25px 0;}
 .subscription-content .col-xs-12 {width: 100%;}
-.lms-choose-membership .modal-body .nav-link {
+.rurera-choose-membership .modal-body .nav-link {
     width: 250px;
     margin: 25px auto;
     height: 55px;
@@ -238,16 +238,16 @@ Assignments Table Style Start
     align-items: center;
     justify-content: center;
 }
-.lms-choose-membership .modal-body .nav-link span {
+.rurera-choose-membership .modal-body .nav-link span {
     font-size: 24px;
     font-weight: 400;
     margin: 0 0 0 10px;
 }
-.lms-choose-membership .book-form {margin: 0 auto;}
-.lms-choose-membership .form-group{margin-bottom: 15px; position: relative;}
-.lms-choose-membership .input-field {border: 0;border-radius: 0;background: none;padding: 0;height: auto;width: 100%;position: relative;}
-.lms-choose-membership .input-field input[type="text"],
-.lms-choose-membership .select-box select,
+.rurera-choose-membership .book-form {margin: 0 auto;}
+.rurera-choose-membership .form-group{margin-bottom: 15px; position: relative;}
+.rurera-choose-membership .input-field {border: 0;border-radius: 0;background: none;padding: 0;height: auto;width: 100%;position: relative;}
+.rurera-choose-membership .input-field input[type="text"],
+.rurera-choose-membership .select-box select,
 .edit-user-modal select.form-control {background: #fff; border-radius: 6px;height: 52px;width: 100%;padding: 11px;border: 1px solid #ddd;color: #b5b8bf;}
 .edit-user-modal select.form-control {font-size: inherit; padding-left: 10px;}
 .book-form label .icon-box {height: 18px; width: 18px; display: inline-block; }
@@ -255,11 +255,11 @@ Assignments Table Style Start
 .book-form .form-label {display: block; line-height: normal; color: #999; margin: 0 0 8px; }
 .discount-code-block {margin: 0 0 40px; border-bottom: 1px solid #ddd; padding: 0 0 40px;}
 .discount-code-block > [class*="col-"] {padding: 0;}
-.lms-choose-membership .payment-options-holder {max-width: 80%; margin: 0 auto;}
-.lms-choose-membership .discount-code-block input[type="text"] {background-color: #fff; border: 1px solid #ddd; color: #333;}
-.lms-choose-membership .discount-code-block .nav-link {width: auto; background-color: inherit; border-radius: 5px !important; box-shadow: none; color: var(--primary); border: 1px solid var(--primary); text-align: center; height: 52px; line-height: 30px; position: relative; margin-top: 30px; font-weight: 500; margin-bottom: 0; }
-.lms-choose-membership .discount-code-block .nav-link:after {content: "\2192"; display: inline-block; font-weight: 500; font-size: 24px; vertical-align: middle; margin-left: 10px;}
-.lms-choose-membership .discount-code-block .rurera-processing.nav-link:after {
+.rurera-choose-membership .payment-options-holder {max-width: 80%; margin: 0 auto;}
+.rurera-choose-membership .discount-code-block input[type="text"] {background-color: #fff; border: 1px solid #ddd; color: #333;}
+.rurera-choose-membership .discount-code-block .nav-link {width: auto; background-color: inherit; border-radius: 5px !important; box-shadow: none; color: var(--primary); border: 1px solid var(--primary); text-align: center; height: 52px; line-height: 30px; position: relative; margin-top: 30px; font-weight: 500; margin-bottom: 0; }
+.rurera-choose-membership .discount-code-block .nav-link:after {content: "\2192"; display: inline-block; font-weight: 500; font-size: 24px; vertical-align: middle; margin-left: 10px;}
+.rurera-choose-membership .discount-code-block .rurera-processing.nav-link:after {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -269,26 +269,26 @@ Assignments Table Style Start
     text-decoration: underline;
     color: var(--primary);
 }
-.lms-choose-membership .form-group .rurera-error-msg {
+.rurera-choose-membership .form-group .rurera-error-msg {
     position: relative;
     top: 0;
 }
-.lms-choose-membership .form-group:has(.rurera-error-msg) .select-holder:has(select):after {
+.rurera-choose-membership .form-group:has(.rurera-error-msg) .select-holder:has(select):after {
     margin-top: -15px;
 }
-.lms-choose-membership .discount-code-block p {margin: 0 0 10px; color: var(--primary); font-weight: 500;}
+.rurera-choose-membership .discount-code-block p {margin: 0 0 10px; color: var(--primary); font-weight: 500;}
 .book-form .tests-list li {width: 49%; min-height: auto; justify-content: center; align-items: flex-start; border: 0; background-color: #f3f3f3; height: 52px; padding: 5px 10px; color: #b5b8bf; font-size: 14px;}
-.lms-choose-membership .book-form > .row,
-.lms-choose-membership .book-form > .row > [class*="col-"] .row {margin-left: -8px; margin-right: -8px;}
-.lms-choose-membership .book-form > .row > [class*="col-"],
-.lms-choose-membership .book-form > .row > [class*="col-"] .row [class*="col-"] {padding-left: 8px; padding-right: 8px;}
+.rurera-choose-membership .book-form > .row,
+.rurera-choose-membership .book-form > .row > [class*="col-"] .row {margin-left: -8px; margin-right: -8px;}
+.rurera-choose-membership .book-form > .row > [class*="col-"],
+.rurera-choose-membership .book-form > .row > [class*="col-"] .row [class*="col-"] {padding-left: 8px; padding-right: 8px;}
 .card-gateway-fields.conditional-fields.row {margin-left: -8px; margin-right: -8px;}
 .book-form .tests-list.payment-methods {gap: 16px; flex-wrap: nowrap; visibility: visible; opacity: 1; position: initial; padding: 0; box-shadow: none;}
 .book-form .tests-list.payment-methods li {flex-direction: column;}
 .book-form .tests-list li.active {box-shadow: none; background-color: var(--primary); color: #fff; }
 .book-form .tests-list li img {height: 18px; width: 18px;}
 .book-form .tests-list li img.google-icon,
-.lms-choose-membership .social-login img.google-icon {height: 30px; width: 30px; margin-bottom: -10px; }
+.rurera-choose-membership .social-login img.google-icon {height: 30px; width: 30px; margin-bottom: -10px; }
 .list-group-item .remove-btn {display: flex; align-items: center; color: #d55555; gap: 8px;}
 .db-form-tabs .list-group-item .remove-btn img,
 .list-group-item .remove-btn img {max-height: 15px;max-width: 15px;min-height: 15px;min-width: 15px;filter: invert(46%) sepia(74%) saturate(4289%) hue-rotate(328deg) brightness(89%) contrast(90%);}
@@ -302,21 +302,21 @@ Assignments Table Style Start
 .lms-library-slider .swiper-container {max-width: 1000px; margin: 0 auto;}
 .card-gateway-fields-holder > .row {margin-left: 0; margin-right: 0;}
 .card-gateway-fields-holder > .row > .col-12 {padding: 0;}
-.lms-choose-membership .input-field input::-webkit-input-placeholder {color: #b5b8bf;}
-.lms-choose-membership .input-field input::-moz-placeholder {color: #b5b8bf;}
-.lms-choose-membership .input-field input:-ms-input-placeholder {color: #b5b8bf;}
-.lms-choose-membership .input-field input:-moz-placeholder {color: #b5b8bf;}
-.lms-choose-membership .input-field.input-card .icon-svg {display: inline-flex;position: absolute;left: 11px;top: 12px;}
-.lms-choose-membership .input-field.input-card .icon-svg svg {width: 24px;height: 24px;fill: #b5b8bf;}
-.lms-choose-membership .input-field.input-card .icon-svg .st0{fill:#b5b8bf;}
-.lms-choose-membership .input-field.input-card input[type="text"] {padding-left: 50px;}
-.lms-choose-membership .book-form p {font-size: 14px;}
-.lms-choose-membership .book-form p a {font-weight: 600; padding: 0 5px;color: var(--primary);}
-.lms-choose-membership .subscription span {font-size: 16px;font-weight: 600;}
-.lms-choose-membership .subscription span a { font-weight: bold;color: var(--primary-hover);padding-left: 6px;text-transform: capitalize;}
-.lms-choose-membership .book-form .secure-server {display: flex;justify-content: center;align-items: center;}
-.lms-choose-membership .book-form .secure-server figure svg {width: 26px;height: 36px;display: flex;fill: #7c7d7f;margin-right: 5px;}
-.lms-choose-membership .book-form .secure-server span {font-size: 12px;line-height: 14px;color: #7c7d7f;}
+.rurera-choose-membership .input-field input::-webkit-input-placeholder {color: #b5b8bf;}
+.rurera-choose-membership .input-field input::-moz-placeholder {color: #b5b8bf;}
+.rurera-choose-membership .input-field input:-ms-input-placeholder {color: #b5b8bf;}
+.rurera-choose-membership .input-field input:-moz-placeholder {color: #b5b8bf;}
+.rurera-choose-membership .input-field.input-card .icon-svg {display: inline-flex;position: absolute;left: 11px;top: 12px;}
+.rurera-choose-membership .input-field.input-card .icon-svg svg {width: 24px;height: 24px;fill: #b5b8bf;}
+.rurera-choose-membership .input-field.input-card .icon-svg .st0{fill:#b5b8bf;}
+.rurera-choose-membership .input-field.input-card input[type="text"] {padding-left: 50px;}
+.rurera-choose-membership .book-form p {font-size: 14px;}
+.rurera-choose-membership .book-form p a {font-weight: 600; padding: 0 5px;color: var(--primary);}
+.rurera-choose-membership .subscription span {font-size: 16px;font-weight: 600;}
+.rurera-choose-membership .subscription span a { font-weight: bold;color: var(--primary-hover);padding-left: 6px;text-transform: capitalize;}
+.rurera-choose-membership .book-form .secure-server {display: flex;justify-content: center;align-items: center;}
+.rurera-choose-membership .book-form .secure-server figure svg {width: 26px;height: 36px;display: flex;fill: #7c7d7f;margin-right: 5px;}
+.rurera-choose-membership .book-form .secure-server span {font-size: 12px;line-height: 14px;color: #7c7d7f;}
 .membership-steps-list {display: flex;align-items: center;justify-content: center;position: relative;max-width: 575px;margin: 0 auto;}
 .membership-steps-list li {position: relative;width: 50%;}
 .membership-steps-list li a {display: flex;position: relative;}
@@ -326,51 +326,51 @@ Assignments Table Style Start
 .membership-steps-list li:before {content: "";position: absolute;left: 55px;top: 20px;width: 77%;height: 13px;background: #afbacc;padding-left: 50px;border-radius: 0;}
 .membership-steps-list li:last-child:before { display: none;}
 .membership-steps h3{color: var(--primary-hover);}
-.lms-choose-membership .book-detail p {position: relative;}
-.lms-choose-membership .book-detail p .icon-svg {position: absolute;left: -50px;top: 0;width: 40px;height: 40px;border: 2px solid var(--primary-hover);display: inline-flex;border-radius: 100%;align-items: center;justify-content: center;}
-.lms-choose-membership .book-detail p .icon-svg svg {width: 28px;height: 28px;fill: var(--primary-hover);}
-.lms-choose-membership .input-field input[type="text"]:focus {border-color:var(--primary-hover);}
-.lms-choose-membership .subscribe-plan-holder strong {padding: 0 100px;display: inline-block;line-height: 26px;color: var(--primary-hover);}
+.rurera-choose-membership .book-detail p {position: relative;}
+.rurera-choose-membership .book-detail p .icon-svg {position: absolute;left: -50px;top: 0;width: 40px;height: 40px;border: 2px solid var(--primary-hover);display: inline-flex;border-radius: 100%;align-items: center;justify-content: center;}
+.rurera-choose-membership .book-detail p .icon-svg svg {width: 28px;height: 28px;fill: var(--primary-hover);}
+.rurera-choose-membership .input-field input[type="text"]:focus {border-color:var(--primary-hover);}
+.rurera-choose-membership .subscribe-plan-holder strong {padding: 0 100px;display: inline-block;line-height: 26px;color: var(--primary-hover);}
 .membership-steps-list li.active::before { background:#64c07d;}
 .membership-steps-list li.active a .icon-svg{background:#64c07d;}
-.lms-choose-membership .bg-none {background: transparent;color: var(--primary-hover);box-shadow: none;}
-.lms-choose-membership .price-plan-image {padding-left: 0;margin-left: 0px;}
-.lms-choose-membership .price-plan-image img {transform: scale(-1, 1);z-index: 0;position: relative; height: 270px;}
-.lms-choose-membership .panel-header .close,
-.lms-choose-membership .close {color: var(--primary);font-size: 1rem; font-weight: 500; opacity: 1; text-align: right; position: absolute; z-index: 1; padding: 5px 10px 2px; top: 50%; right: 20px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); text-shadow: none; border-radius: 5px; border: 1px solid var(--primary); margin-top: 0; width: auto;}
-.lms-choose-membership .close {transform: none;margin-top: 15px;top: 0;}
-.lms-choose-membership .close span {font-size: 1.8rem; vertical-align: middle; display: inline-block; margin-top: -5px; line-height: 30px;}
-.lms-choose-membership .panel-header .close a,
-.lms-choose-membership .close a {color: var(--primary);}
-.lms-choose-membership .modal-logo {padding: 20px 25px 0; }
-.lms-choose-membership .modal-logo img {height: 50px; width: 50px; object-fit: contain;}
+.rurera-choose-membership .bg-none {background: transparent;color: var(--primary-hover);box-shadow: none;}
+.rurera-choose-membership .price-plan-image {padding-left: 0;margin-left: 0px;}
+.rurera-choose-membership .price-plan-image img {transform: scale(-1, 1);z-index: 0;position: relative; height: 270px;}
+.rurera-choose-membership .panel-header .close,
+.rurera-choose-membership .close {color: var(--primary);font-size: 1rem; font-weight: 500; opacity: 1; text-align: right; position: absolute; z-index: 1; padding: 5px 10px 2px; top: 50%; right: 20px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); text-shadow: none; border-radius: 5px; border: 1px solid var(--primary); margin-top: 0; width: auto;}
+.rurera-choose-membership .close {transform: none;margin-top: 15px;top: 0;}
+.rurera-choose-membership .close span {font-size: 1.8rem; vertical-align: middle; display: inline-block; margin-top: -5px; line-height: 30px;}
+.rurera-choose-membership .panel-header .close a,
+.rurera-choose-membership .close a {color: var(--primary);}
+.rurera-choose-membership .modal-logo {padding: 20px 25px 0; }
+.rurera-choose-membership .modal-logo img {height: 50px; width: 50px; object-fit: contain;}
 .membership-sub-header { position: relative; overflow: hidden;}
-.lms-choose-membership .form-separator {position: relative;overflow: hidden;text-align: center;margin: 30px 0;}
-.lms-choose-membership .form-separator span {display: inline-block;padding: 0 15px;font-size: 20px;color: #b5b8bf;position: relative;}
-.lms-choose-membership .form-separator span:before { content: "";position: absolute;left: 100%;width: 999px;height: 1px;background: #b5b8bf;top: 50%; margin-top: 1px;}
-.lms-choose-membership .form-separator span:after {content: "";position: absolute;right: 100%;width: 999px;height: 1px;background: #b5b8bf;top: 50%; margin-top: 1px;}
-.lms-choose-membership .social-login {border-radius: 5px; border: 1px solid var(--primary); font-size: 20px; font-weight: bold; color: var(--primary); background-color: #fff; gap: 10px; text-align: left; margin-bottom: 10px; min-height: 52px;}
-.lms-choose-membership .form-login-reading {margin-bottom: 30px;}
-.lms-choose-membership .form-login-reading .input-field input[type="text"] {height: 48px;border: 1px solid #ddd; color: #333;}
-.lms-choose-membership .social-login img {width: 18px; height: 18px;}
-.lms-choose-membership .subscription-content {height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.rurera-choose-membership .form-separator {position: relative;overflow: hidden;text-align: center;margin: 30px 0;}
+.rurera-choose-membership .form-separator span {display: inline-block;padding: 0 15px;font-size: 20px;color: #b5b8bf;position: relative;}
+.rurera-choose-membership .form-separator span:before { content: "";position: absolute;left: 100%;width: 999px;height: 1px;background: #b5b8bf;top: 50%; margin-top: 1px;}
+.rurera-choose-membership .form-separator span:after {content: "";position: absolute;right: 100%;width: 999px;height: 1px;background: #b5b8bf;top: 50%; margin-top: 1px;}
+.rurera-choose-membership .social-login {border-radius: 5px; border: 1px solid var(--primary); font-size: 20px; font-weight: bold; color: var(--primary); background-color: #fff; gap: 10px; text-align: left; margin-bottom: 10px; min-height: 52px;}
+.rurera-choose-membership .form-login-reading {margin-bottom: 30px;}
+.rurera-choose-membership .form-login-reading .input-field input[type="text"] {height: 48px;border: 1px solid #ddd; color: #333;}
+.rurera-choose-membership .social-login img {width: 18px; height: 18px;}
+.rurera-choose-membership .subscription-content {height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
 #generateBtn {border: 1px solid var(--primary); background-color: #fff; color: var(--primary); padding: 10px 15px; border-radius: 5px;}
-.lms-choose-membership .error-message {font-size: 18px;color: #ee3565;font-weight: 500;}
-.lms-choose-membership .fomr-label {display: inline-block; margin: 0 0 5px; position: relative; line-height: normal;}
-.lms-choose-membership .form-login-reading .input-field input.input-date,
-.lms-choose-membership .form-login-reading .input-field input.input-month{width: 60px; display: inline-block; margin-right: 10px;}
-.lms-choose-membership .form-login-reading .input-field input.input-year {width: 120px;}
-.lms-choose-membership h5 {margin-bottom: 5px; font-size: 18px; }
-.lms-choose-membership .form-group .select-sub-label {font-size: 14px; color: #999; display: block; line-height: normal; margin: 0 0 13px; position: relative; cursor: pointer;}
-.lms-choose-membership:not(.heatmap-select-option) .select-field input[type=radio] {position: absolute; width: 0; height: 0; opacity: 0;}
-.lms-choose-membership .select-field {position: relative;}
-.lms-choose-membership .select-field label:not(.heatmap-select-option .select-field label) {font-size: 18px; position: relative; width: 100%; margin: 0 0 10px; padding: 0 0 0 30px; }
-.lms-choose-membership:not(.heatmap-select-option .select-field label:before) .select-field label:before {content: ""; width: 18px; height: 18px; border: 1px solid #ddd; position: absolute; left: 0; top: 50%; margin-top: -9px; border-radius: 100%;}
-.lms-choose-membership:not(.heatmap-select-option .select-field input[type=radio]:checked ~ label:before) .select-field input[type=radio]:checked ~ label:before {box-shadow: 0 0 0 5px #ddd inset; }
-.lms-choose-membership .form-group input[type="password"] {background-color: #fff; height: 48px; border: 1px solid #ddd; width: 100%; padding: 11px; border-radius: 6px;}
-.lms-choose-membership .form-group .btn-field {margin: 0; }
-.lms-choose-membership .form-group .btn-field button {background-color: var(--primary); width: auto; padding: 12px 30px; height: auto; margin: 0; line-height: normal; display: inline-block; color: #fff; border: 0;}
-.lms-choose-membership .plan-switch {margin-top: -2px;}
+.rurera-choose-membership .error-message {font-size: 18px;color: #ee3565;font-weight: 500;}
+.rurera-choose-membership .fomr-label {display: inline-block; margin: 0 0 5px; position: relative; line-height: normal;}
+.rurera-choose-membership .form-login-reading .input-field input.input-date,
+.rurera-choose-membership .form-login-reading .input-field input.input-month{width: 60px; display: inline-block; margin-right: 10px;}
+.rurera-choose-membership .form-login-reading .input-field input.input-year {width: 120px;}
+.rurera-choose-membership h5 {margin-bottom: 5px; font-size: 18px; }
+.rurera-choose-membership .form-group .select-sub-label {font-size: 14px; color: #999; display: block; line-height: normal; margin: 0 0 13px; position: relative; cursor: pointer;}
+.rurera-choose-membership:not(.heatmap-select-option) .select-field input[type=radio] {position: absolute; width: 0; height: 0; opacity: 0;}
+.rurera-choose-membership .select-field {position: relative;}
+.rurera-choose-membership .select-field label:not(.heatmap-select-option .select-field label) {font-size: 18px; position: relative; width: 100%; margin: 0 0 10px; padding: 0 0 0 30px; }
+.rurera-choose-membership:not(.heatmap-select-option .select-field label:before) .select-field label:before {content: ""; width: 18px; height: 18px; border: 1px solid #ddd; position: absolute; left: 0; top: 50%; margin-top: -9px; border-radius: 100%;}
+.rurera-choose-membership:not(.heatmap-select-option .select-field input[type=radio]:checked ~ label:before) .select-field input[type=radio]:checked ~ label:before {box-shadow: 0 0 0 5px #ddd inset; }
+.rurera-choose-membership .form-group input[type="password"] {background-color: #fff; height: 48px; border: 1px solid #ddd; width: 100%; padding: 11px; border-radius: 6px;}
+.rurera-choose-membership .form-group .btn-field {margin: 0; }
+.rurera-choose-membership .form-group .btn-field button {background-color: var(--primary); width: auto; padding: 12px 30px; height: auto; margin: 0; line-height: normal; display: inline-block; color: #fff; border: 0;}
+.rurera-choose-membership .plan-switch {margin-top: -2px;}
 .regenerate-emoji, .regenerate-pin {line-height: 48px; box-shadow: none; border-radius: 5px;}
 .child-register-form input:-webkit-autofill,
 .child-register-form  input:-webkit-autofill:focus {background-color: inherit !important; background-image: none !important;}
@@ -380,8 +380,8 @@ Assignments Table Style Start
 .usernames-suggestions {display: flex; align-items: center; flex-wrap: wrap; gap: 15px; line-height: normal; margin: 0 0 15px;}
 .usernames-suggestions:empty {margin-bottom: 0;}
 .usernames-suggestions br {display: none;}
-.lms-choose-membership .emoji-icons .emoji-icon {padding: 0 5px;}
-.lms-choose-membership .pin-list {min-height: 28px; display: flex; align-items: center; color: #666; font-weight: 500;}
+.rurera-choose-membership .emoji-icons .emoji-icon {padding: 0 5px;}
+.rurera-choose-membership .pin-list {min-height: 28px; display: flex; align-items: center; color: #666; font-weight: 500;}
 .modal.spell_words_popup {padding-right: 25px !important; scrollbar-gutter: stable both-edges; margin-left: -18px; width: 103%;}
 /* Recent Reviews Style */
 .recent-reviews-section .grid-item {width: 100%; padding: 0 0 0 14px; margin-bottom: 14px;}
@@ -403,13 +403,13 @@ Assignments Table Style Start
 .recent-reviews-section .row {margin-left: -7px; margin-right: -7px;}
 .flexible-progress-bar li i {height: 45px; width: 45px; display: inline-flex; align-items: center; justify-content: center; border: 2px solid #ddd; border-radius: 100%; font-size: 28px; background-color: #fff;}
 .flexible-progress-bar li i:before {position: relative; font-style: normal;}
-.lms-choose-membership .flexible-progress-bar li.active .stepline,
-.lms-choose-membership .flexible-progress-bar li.complete .stepline {background: var(--primary);}
-.lms-choose-membership .stepline {height: 2px; background-color: #ddd; }
-.lms-choose-membership .flexible-progress-bar li.complete i,
-.lms-choose-membership .flexible-progress-bar li.active i {border-color: var(--primary); color: #fff; box-shadow: 0 0 0 3px #fff inset; }
-.lms-choose-membership .flexible-progress-bar li.complete img, 
-.lms-choose-membership .flexible-progress-bar li.active img {filter: invert(32%) sepia(96%) saturate(583%) hue-rotate(201deg) brightness(114%) contrast(110%);}
+.rurera-choose-membership .flexible-progress-bar li.active .stepline,
+.rurera-choose-membership .flexible-progress-bar li.complete .stepline {background: var(--primary);}
+.rurera-choose-membership .stepline {height: 2px; background-color: #ddd; }
+.rurera-choose-membership .flexible-progress-bar li.complete i,
+.rurera-choose-membership .flexible-progress-bar li.active i {border-color: var(--primary); color: #fff; box-shadow: 0 0 0 3px #fff inset; }
+.rurera-choose-membership .flexible-progress-bar li.complete img, 
+.rurera-choose-membership .flexible-progress-bar li.active img {filter: invert(32%) sepia(96%) saturate(583%) hue-rotate(201deg) brightness(114%) contrast(110%);}
 body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 
 .class-connect-modal {text-align: center;}
@@ -447,7 +447,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 .googlepay-gateway-fields section.container {margin-top: 0 !important;}
 .social-info-holder .row {gap: 25px 0;}
 .social-info-card-header {display: flex; align-items: center; flex-wrap: wrap; gap: 15px; margin-bottom: 10px;}
-.lms-choose-membership .social-info-card-header h5 {margin-bottom: 0;}
+.rurera-choose-membership .social-info-card-header h5 {margin-bottom: 0;}
 .social-info-card-header h5 {width: calc(100% - 70px);}
 .social-info-card .icon-box {height: 45px; width: 50px; display: inline-flex; align-items: center; justify-content: center; background-color: #cfe3f4; padding: 8px; border-radius: 3px;}
 .social-info-card .icon-box img {max-width: 100%;}

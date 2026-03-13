@@ -3050,7 +3050,7 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .edit-profile .form-group .input-field { margin-bottom: 16px; border: 0; padding: 0; height: auto; border-radius: 0; position: relative;}
 .edit-profile .form-group .input-field textarea {border: 1px solid #ddd; border-radius: 5px; padding: 10px 10px; height: 98px; width: 100%;}
 .edit-profile .select-field select {padding: 0 10px; width: 100%; color: #888; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
-.lms-choose-membership .edit-profile .form-group {margin-bottom: 0;}
+.rurera-choose-membership .edit-profile .form-group {margin-bottom: 0;}
 .edit-profile .select-field {margin-bottom: 16px; position: relative;}
 .edit-profile .select-field:after {content: "\203A"; position: absolute; right: 0; top: 0; height: 40px; width: 40px; text-align: center; line-height: 40px; font-size: 24px; color: #94a3b8; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); pointer-events: none;}
 .edit-profile .select-field:before {background-color: #ddd; content: ""; position: absolute; top: 0; right: 41px; height: 100%; width: 1px;}
@@ -3158,9 +3158,9 @@ address .info-list-label {color: #64748b;}
 /* User Detail Style End */
 
 /* Wizard-Steps Style Start */
-.lms-choose-membership .panel-header {background-color: #fff; border-bottom: 4px solid #e2e8f0; position: relative; padding: 10px 20px; display: flex; align-items: center;}
-.lms-choose-membership .panel-header .modal-logo {border-right: 1px solid #ddd; padding: 0 15px 0 0; margin-right: 15px;}
-.lms-choose-membership .panel-header img {height: 40px; width: 40px; }
+.rurera-choose-membership .panel-header {background-color: #fff; border-bottom: 4px solid #e2e8f0; position: relative; padding: 10px 20px; display: flex; align-items: center;}
+.rurera-choose-membership .panel-header .modal-logo {border-right: 1px solid #ddd; padding: 0 15px 0 0; margin-right: 15px;}
+.rurera-choose-membership .panel-header img {height: 40px; width: 40px; }
 .wizard-pagination,
 .lms-setup-progress-section .package-controls {background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 15px; display: flex; align-items: center; gap: 10px; margin-top: auto; position: fixed; left: 0; right: 0; position: fixed; max-width: 304px; bottom: 1.5rem; margin-left: auto; margin-right: auto;}
 .wizard-pagination .previous-btn,
@@ -3173,9 +3173,9 @@ address .info-list-label {color: #64748b;}
 .practice-quiz-ajax-fields {margin-bottom: 30px;}
 .practice-quiz-ajax-fields:empty {display: none;}
 .disabled-btn {pointer-events: none;}
-.lms-choose-membership:has(.wizard-steps) .container, 
-.lms-choose-membership:has(.wizard-steps) .container > .row {height: 100%;}
-.lms-choose-membership:has(.wizard-steps) form {display: flex; flex-direction: column;}
+.rurera-choose-membership:has(.wizard-steps) .container, 
+.rurera-choose-membership:has(.wizard-steps) .container > .row {height: 100%;}
+.rurera-choose-membership:has(.wizard-steps) form {display: flex; flex-direction: column;}
 .progress-line {position: absolute; left: 0; bottom: -4px; height: 4px; border-radius: 50px; overflow: hidden; width: 100%; }
 .progress-line .progress-count {background-color: var(--primary); display: block; height: 100%; border-radius: 50px; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
 .db-members .rurera-tabs-frontend {gap: 30px;}
