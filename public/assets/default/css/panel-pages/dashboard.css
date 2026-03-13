@@ -2710,7 +2710,7 @@ Books Right Sidebar Cards Style Start
     font-size: .875rem;
 }
 .books-progress-holder .progress {
-    background-color: #f1c40f;
+    background-color: #c9c8bf;
     width: 70%;
     height: 8px;
     box-shadow: none;
@@ -2728,7 +2728,7 @@ Books Right Sidebar Cards Style Start
     width: 25%;
 }
 .book-pages {
-    color: #999;
+    color: #9A9899;
 }
 .books-card.hide{
     display:none;
