@@ -79,9 +79,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         text-decoration: none;
     }
     .quiz-pagination .attempted a {
-        opacity: .5;
-        cursor: no-drop;
-        user-select: none;
+        
     }
     .quiz-pagination a:not([href]):not([tabindex]) {
         color: white;
