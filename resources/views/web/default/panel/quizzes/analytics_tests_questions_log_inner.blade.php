@@ -108,7 +108,12 @@
                                     </div>
 
                                     <div class="chart-container font-14 font-weight-500">
-
+                                        <div class="chart-row">
+                                            <div class="row-label">Number place values</div>
+                                            <div class="bar-area">
+                                                <div class="bar master" style="width: 60%;">Good</div>
+                                            </div>
+                                        </div>
                                         @if(isset($topicSubParts) && $topicSubParts->count() > 0)
                                             @foreach( $topicSubParts as $topicSubPartItemObj)
                                                 @php
