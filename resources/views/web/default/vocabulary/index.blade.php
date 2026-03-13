@@ -142,7 +142,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="javascript:;" class="dropdown-toggle-btn">
+                            <a href="javascript:;" class="dropdown-toggle-btn rurera-tooltip dropup">
                                 <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
                                 </span>
