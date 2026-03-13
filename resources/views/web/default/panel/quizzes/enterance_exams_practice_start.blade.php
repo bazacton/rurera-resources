@@ -1285,6 +1285,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 content: content,
                 html: true,
                 placement: 'top',
+                sanitize: false, // IMPORTANT
                 template: '<div class="popover" role="tooltip" style="max-width: 550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
             }).on('inserted.bs.popover', function() {
                 // Link the popover content back to the trigger for updating status
