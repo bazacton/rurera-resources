@@ -123,9 +123,11 @@
                     </div>
                     <div class="spell-top-right">
                         <div class="spell-links font-14">
-                            <a href="javascript:;" class="spell-popup-btn" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
-                                Practice Words
-                            </a>
+                            <div class="spell-popup-btn-holder">
+                                <a href="javascript:;" class="spell-popup-btn" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
+                                    Practice Words
+                                </a>
+                            </div>
                             <a href="javascript:;" class="spell-popup-btn1 rurera-tooltip dropup">
                                 <span class="dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Take a test</span>
                                 <div class="lms-tooltip dropdown-menu">
