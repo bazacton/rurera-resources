@@ -108,26 +108,6 @@
                         <h3 class="font-16 font-weight-bold">{{$dataObj->getTitleAttribute()}} 
                             <!-- <span class="progress-star {{$percentage_class}}"><img src="/assets/default/img/tick-white.png"></span> -->
                         </h3>
-                        <div class="spell-links font-14">
-                        <a href="javascript:;" class="spell-popup-btn text-gray" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
-                            Practice Words
-                        </a>
-                        <a href="javascript:;" class="spell-popup-btn1 rurera-tooltip dropup text-gray">
-                            <span class="dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Take a test</span>
-                            <div class="lms-tooltip dropdown-menu">
-                                <div class="tooltip-box">
-                                    <button type="button" data-heading="Take a test" class="tooltip-btn practice font-16 d-block mb-15 text-center spell-test-btn"  data-play_link="/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/test" data-spell_type="test">Take Test</button>
-                                    @if($spell_test_count > 0)
-                                        <button type="button" class="tooltip-btn legendary d-block font-16 text-center" onclick='window.location.href = "/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/test"'>Continue</button>
-                                    @endif
-                                    @if($spell_test_completed > 0)
-                                        <button type="button" class="tooltip-btn practice font-16 d-block mt-15 text-center" onclick='window.location.href = "/panel/analytics/vocabulary/{{$dataObj->id}}"'>Track</button>
-                                    @endif
-                                </div>
-                            </div>
-                        </a>
-                        
-                        </div>
                         @if($overall_percentage > 0 && $overall_percentage != 100)
                         <div class="levels-progress horizontal">
                             <span class="progress-box">
@@ -139,6 +119,27 @@
                             <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count" aria-label="View spelling list: {{$total_questions}} words"><span class="font-16" aria-hidden="true">{{$total_questions}}</span>word(s)</a>
                             <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count" aria-label="View spelling list: {{$total_questions}} Practiced"><span class="font-16" aria-hidden="true">12</span>Practiced</a>
                             <a href="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count" aria-label="View spelling list: {{$total_questions}} Mastered"><span class="font-16" aria-hidden="true">22</span>Mastered</a>
+                        </div>
+                    </div>
+                    <div class="spell-top-right">
+                        <div class="spell-links font-14">
+                            <a href="javascript:;" class="spell-popup-btn text-gray" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spells/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
+                                Practice Words
+                            </a>
+                            <a href="javascript:;" class="spell-popup-btn1 rurera-tooltip dropup text-gray">
+                                <span class="dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Take a test</span>
+                                <div class="lms-tooltip dropdown-menu">
+                                    <div class="tooltip-box">
+                                        <button type="button" data-heading="Take a test" class="tooltip-btn practice font-16 d-block mb-15 text-center spell-test-btn"  data-play_link="/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/test" data-spell_type="test">Take Test</button>
+                                        @if($spell_test_count > 0)
+                                            <button type="button" class="tooltip-btn legendary d-block font-16 text-center" onclick='window.location.href = "/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/test"'>Continue</button>
+                                        @endif
+                                        @if($spell_test_completed > 0)
+                                            <button type="button" class="tooltip-btn practice font-16 d-block mt-15 text-center" onclick='window.location.href = "/panel/analytics/vocabulary/{{$dataObj->id}}"'>Track</button>
+                                        @endif
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
