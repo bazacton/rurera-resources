@@ -225,8 +225,6 @@
                 <!-- First Test Pack -->
                 <div class="rurera-test-pack panel-border rounded-sm p-20 mb-15">
                     <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 01</h3>
-                    <p class="rurera-test-description font-14">Complete mock test</p>
-
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
                             <img src="/assets/default/svgs/location-form.svg" alt="" area-hidden="true" height="16" width="16">
@@ -278,7 +276,6 @@
                 <!-- Second Test Pack -->
                 <div class="rurera-test-pack panel-border rounded-sm p-20 mb-15">
                     <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 02</h3>
-                    <p class="rurera-test-description font-14">Complete mock test</p>
 
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
@@ -333,7 +330,6 @@
                 <!-- Third Test Pack -->
                  <div class="rurera-test-pack panel-border rounded-sm p-20 mb-15">
                     <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 03</h3>
-                    <p class="rurera-test-description font-14">Complete mock test</p>
 
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
