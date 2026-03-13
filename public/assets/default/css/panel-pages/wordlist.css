@@ -192,6 +192,9 @@ body .spell-question-area .question-label span {text-align: center;}
 .spell-levels.levels-grouping li.treasure a:after {display: none;}
 .spell-levels .panel-subheader h2 {display: inline-block; vertical-align: middle; margin-bottom: 0;}
 .spell-levels li:has(.rurera-stars) .lms-tooltip {margin-bottom: 50px;}
+.words-count-holder {
+    margin-top: 5px;
+}
 .words-count {
     background-color: #fff;
     text-align: center;
