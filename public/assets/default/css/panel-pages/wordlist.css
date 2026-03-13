@@ -145,7 +145,10 @@ body .spell-question-area .question-label span {text-align: center;}
     width: 78%;
 }
 .spell-top-right {
-    max-width: 20%;
+    max-width: 19%;
+}
+.spell-popup-btn-holder {
+    width: 100%;
 }
 .ru-search-input .form-group {
     border: 1px solid #ddd;
@@ -205,7 +208,7 @@ body .spell-question-area .question-label span {text-align: center;}
 .words-count span {color: #333; font-weight: 600;}
 .words-count:hover span {color: var(--primary);}
 .words-count img {margin-right: 8px; width: 15px; object-fit: contain;}
-.spell-links {display: flex; gap: 15px; align-items: center; justify-content: flex-end; flex-wrap: wrap;}
+.spell-links {display: flex; gap: 10px; align-items: center; justify-content: flex-end; flex-wrap: wrap;}
 .spell-links .rurera-tooltip.dropup .dropdown-menu[x-placement^=bottom] {margin-top: 15px;}
 .spell-links a {
     border: 1px solid var(--primary);
@@ -215,6 +218,9 @@ body .spell-question-area .question-label span {text-align: center;}
 }
 .spell-links .spell-popup-btn {
     color: var(--primary);
+    width: 100%;
+    display: inline-block;
+    text-align: center;
 }
 .spell-links .rurera-tooltip {
     background-color: var(--primary);
