@@ -238,6 +238,7 @@ body .spell-question-area .question-label span {text-align: center;}
     justify-content: center;
     height: 30px;
     width: 30px;
+    padding: 0;
 }
 .spell-links .dropdown-toggle-btn img {
     max-width: 100%;
@@ -245,6 +246,10 @@ body .spell-question-area .question-label span {text-align: center;}
 }
 .spell-links .tooltip-box button {
     width: 100%;
+}
+.spell-links .dropdown-toggle-btn span {
+    display: block;
+    padding: 4px;
 }
 /*Spellings Landing page Style End*/
 
