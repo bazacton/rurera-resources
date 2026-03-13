@@ -239,7 +239,7 @@ body .spell-question-area .question-label span {text-align: center;}
     height: 30px;
     width: 30px;
 }
-.spell-links button img {
+.spell-links .dropdown-toggle-btn img {
     max-width: 100%;
     filter: invert(35%) sepia(100%) saturate(842%) hue-rotate(210deg) brightness(101%) contrast(116%);
 }
