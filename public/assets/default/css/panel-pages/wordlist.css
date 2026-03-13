@@ -243,6 +243,9 @@ body .spell-question-area .question-label span {text-align: center;}
     max-width: 100%;
     filter: invert(35%) sepia(100%) saturate(842%) hue-rotate(210deg) brightness(101%) contrast(116%);
 }
+.spell-links .tooltip-box button {
+    width: 100%;
+}
 /*Spellings Landing page Style End*/
 
 /* Sentences Screens Style Start */
