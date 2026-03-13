@@ -39,7 +39,7 @@
         </div>
         <div class="col-12">
             <!-- Listing Search Start -->
-            <div class="listing-search lms-jobs-form mb-0 panel-border bg-white rounded-sm mb-30 p-25">
+            <div class="listing-search rurera-jobs-form mb-0 panel-border bg-white rounded-sm mb-30 p-25">
                 <form>
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-12 col-md-12">
@@ -162,7 +162,7 @@
             </div>
 
             <div class="rurera-test-pack-container">
-                <div class="listing-search lms-jobs-form mb-0 panel-border bg-white rounded-sm mb-30 p-25">
+                <div class="listing-search rurera-jobs-form mb-0 panel-border bg-white rounded-sm mb-30 p-25">
                     <form>
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-12 col-md-12">
