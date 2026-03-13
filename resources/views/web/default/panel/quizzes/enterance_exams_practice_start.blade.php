@@ -392,12 +392,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 </div>
 
 
-<div class="modal fade closePractice" id="closePractice" tabindex="-1" role="dialog" aria-labelledby="closePracticeLabel" aria-hidden="true">
+<div class="modal fade closePractice modal-md" id="closePractice" tabindex="-1" role="dialog" aria-labelledby="closePracticeLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
 
             <!-- Header -->
-            <div class="modal-header border-0 pb-0">
+            <div class="modal-header">
                 <h5 class="modal-title font-weight-bold font-16" id="closePracticeLabel">Leave Test?</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
