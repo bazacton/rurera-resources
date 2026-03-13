@@ -143,7 +143,17 @@
                                 </div>
                             </a>
                             <button type="button">
-                                <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
+                                <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
+                                </span>
+                                <div class="dropdown-menu">
+                                    @if($spell_test_count > 0)
+                                        <button type="button" class="tooltip-btn legendary d-block font-16 text-center" onclick='window.location.href = "/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/test"'>Continue</button>
+                                    @endif
+                                    @if($spell_test_completed > 0)
+                                        <button type="button" class="tooltip-btn practice font-16 d-block mt-15 text-center" onclick='window.location.href = "/panel/analytics/vocabulary/{{$dataObj->id}}"'>Track</button>
+                                    @endif
+                                </div>
                             </button>
                         </div>
                     </div>
