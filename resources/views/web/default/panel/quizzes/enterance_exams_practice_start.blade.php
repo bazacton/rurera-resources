@@ -157,43 +157,45 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
-                                        <div id="palette-container" style="display: none;">
-                                        <div class="question-palette">
-                                        <div class="quiz-pagination rurera-hide">
+                                        <div class="quiz-instance">
+                                            <div class="palette-content" style="display: none;">
+                                                <div class="question-palette">
+                                                    <div class="quiz-pagination rurera-hide">
 
-                                                <ul data-section_id="{{$section_id}}">
+                                                        <ul data-section_id="{{$section_id}}">
 
 
 
-                                                    @if( !empty( $questions_layout  ) )
-                                                        @php $question_count  = 1; @endphp
-                                                        @foreach( $questions_layout as $result_question_id => $questionLayout)
-                                                            @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
+                                                            @if( !empty( $questions_layout  ) )
+                                                                @php $question_count  = 1; @endphp
+                                                                @foreach( $questions_layout as $result_question_id => $questionLayout)
+                                                                    @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
                                                                 $question_result_id = isset($result_question_ids[$result_question_id])? $result_question_ids[$result_question_id] : 0;
                                                             $active_class = ($active_question_id == $active_actual_question_id)? '' : '';
                                                             $active_class = ($active_class == '' && $question_count == 1)? 'active' : '';
                                                             $question_status = 'waiting';
                                                             $is_flagged = false;
                                                             $active_section_id = ($active_class == 'active')? $section_id : $active_section_id;
-                                                            @endphp
-                                                            <li data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$active_class}} {{ ( $is_flagged == true)?
+                                                                    @endphp
+                                                                    <li data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$active_class}} {{ ( $is_flagged == true)?
                                                'has-flag' : ''}} "><a
-                                                                    href="javascript:;">
-                                                                    {{$question_count}}</a></li>
+                                                                                href="javascript:;">
+                                                                            {{$question_count}}</a></li>
 
-                                                            @php $question_count++; @endphp
-                                                        @endforeach
-                                                    @endif
-                                                </ul>
+                                                                    @php $question_count++; @endphp
+                                                                @endforeach
+                                                            @endif
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="question-status question-status-trigger">
+                                                Question <span>10</span>/20 &#9662;
                                             </div>
                                         </div>
 
-                                    </div>
-
                                         <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
-                                            <div class="question-status question-status-text" id="question-status-text">
-                                                Question <span>10</span>/20 &#9662;
-                                            </div>
+
                                             <div class="quiz-time-bar">
                                                 <div class="timer-wrap">
                                                     <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
@@ -1258,7 +1260,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 </script>
 <script>
-    $(function () {
+    /*$(function () {
         // Get the HTML content for the popover
         const paletteContent = $('#palette-container').html();
 
@@ -1269,6 +1271,26 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             placement: 'top',
             sanitize: false, // IMPORTANT
             template: '<div class="popover" role="tooltip" style="max-width: 550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
+        });
+    });*/
+
+    $(function () {
+        // Initialize popover for each instance
+        $('.question-status-trigger').each(function() {
+            const $trigger = $(this);
+            const $instance = $trigger.closest('.quiz-instance');
+            const content = $instance.find('.palette-content').html();
+
+            $trigger.popover({
+                content: content,
+                html: true,
+                placement: 'top',
+                template: '<div class="popover" role="tooltip" style="max-width: 550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
+            }).on('inserted.bs.popover', function() {
+                // Link the popover content back to the trigger for updating status
+                const popoverId = $(this).attr('aria-describedby');
+                $('#' + popoverId).data('trigger-element', $trigger);
+            });
         });
     });
 </script>
