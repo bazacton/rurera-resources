@@ -570,6 +570,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 }
                 if (duration_type == 'total_practice') {
                     if (parseInt(quiz_timer_counter) == 0) {
+                        alert('timer is 0');
                         clearInterval(Quizintervals);
                         //$(".review-btn").click();
                         if ($('.question-review-btn').length > 0) {
