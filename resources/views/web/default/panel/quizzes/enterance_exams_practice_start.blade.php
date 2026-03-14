@@ -1023,6 +1023,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             $next.find('.rurera-question-block').first().addClass('active');
         }else{
+            alert('after Sections Finished')
+            clearInterval(Quizintervals);
             afterSectionFinishConfirm();
         }
 
