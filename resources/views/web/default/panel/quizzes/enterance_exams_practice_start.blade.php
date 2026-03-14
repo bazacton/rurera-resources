@@ -78,9 +78,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         user-select: none;
         text-decoration: none;
     }
-    .quiz-pagination .attempted a {
-        
-    }
     .quiz-pagination a:not([href]):not([tabindex]) {
         color: white;
     }
@@ -90,7 +87,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         color: white;
     }
     .question-status {
-    display: inline-block;
+        display: inline-block;
     }
     /* Active / Highlight State */
     .quiz-pagination li.active a,
@@ -182,7 +179,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                     @endphp
                                                                     <li data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$active_class}} {{ ( $is_flagged == true)?
                                                'has-flag' : ''}} "><a
-                                                                                href="javascript:;">
+                                                                            href="javascript:;">
                                                                             {{$question_count}}</a></li>
 
                                                                     @php $question_count++; @endphp
@@ -219,7 +216,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
                                         <div class="section-layout-block">
-                                        {!! $section_layout !!}
+                                            {!! $section_layout !!}
                                         </div>
 
                                         <div class="quiz-section-questions rurera-hide">
@@ -272,11 +269,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                             </div>
                                                         </div>
                                                         <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                                            <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide mr-md-0 mr-10" data-target="#review_submit">
+                                                            <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide mr-md-0" data-target="#review_submit">
                                                                 Finish
                                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                                             </a>
-                                                            <a href="javascript:;" class="review-btn finish-section rurera-hide mr-md-0 mr-lg-10">
+                                                            <a href="javascript:;" class="review-btn finish-section rurera-hide mr-md-0">
                                                                 Finish Section
                                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                                             </a>
@@ -923,13 +920,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             `;
 
-            rurera_modal_alert(
-                '',
-                '',
-                true, //confirmButton
-                section_move_html,
-                'afterSectionFinishConfirm'
-            );
+        rurera_modal_alert(
+            '',
+            '',
+            true, //confirmButton
+            section_move_html,
+            'afterSectionFinishConfirm'
+        );
 
     }
 
@@ -1008,21 +1005,21 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         if ($next.length > 0) {
 
-             $active.addClass('rurera-hide');
-             $active.removeClass('active');
+            $active.addClass('rurera-hide');
+            $active.removeClass('active');
 
             $('.quiz-status-bar').addClass('rurera-hide');
             $active.find('.quiz-status-bar').removeClass('rurera-hide');
             $active.find('.quiz-status-bar').addClass('active');
 
-             $next.addClass('active');
-             $next.removeClass('rurera-hide');
+            $next.addClass('active');
+            $next.removeClass('rurera-hide');
 
-             $('.rurera-question-block.active').removeClass('active');
+            $('.rurera-question-block.active').removeClass('active');
 
 
 
-             $next.find('.rurera-question-block').first().addClass('active');
+            $next.find('.rurera-question-block').first().addClass('active');
         }
 
     }

@@ -108,17 +108,11 @@
                                     </div>
 
                                     <div class="chart-container font-14 font-weight-500">
-                                        <div class="chart-row">
-                                            <div class="row-label">Number place values</div>
-                                            <div class="bar-area">
-                                                <div class="bar master" style="width: 60%;">Good</div>
-                                            </div>
-                                        </div>
-                                        @if(isset($topicSubParts) && $topicSubParts->count() > 0)
-                                            @foreach( $topicSubParts as $topicSubPartItemObj)
+                                        @if(isset($topic_parts_data) && !empty($topic_parts_data))
+                                            @foreach( $topic_parts_data as $topic_part_id => $topic_part_data)
                                                 @php
-                                                    $PartItemsPerformance = $quiz->QuizUserPartItemsPerformance->where('topic_part_item_id', $topicSubPartItemObj->id)->where('year_id', $quiz->year_id)->where('user_id', $user->id)->first();
-                                                    $smart_score = isset($PartItemsPerformance->smart_score)? $PartItemsPerformance->smart_score : 0;
+                                                    $smart_score = isset($topic_part_data->smart_score)? $topic_part_data->smart_score : 0;
+                                                    $topic_part_title = isset($topic_part_data->topic_part_title)? $topic_part_data->topic_part_title : '';
 
 
                                                     $progress_title = 'Not Started';
@@ -131,9 +125,10 @@
 
 
                                                 <div class="chart-row">
-                                                    <div class="row-label">{{$topicSubPartItemObj->title}}</div>
+                                                    <div class="row-label">{{$topic_part_title}}</div>
                                                     <div class="bar-area">
-                                                        <div class="bar master" style="width: {{$smart_score}}%;">{{$progress_title}}</div>
+                                                        <div class="bar master" style="width: {{$smart_score}}%;">
+                                                            <span class="smart-score">{{$smart_score}}</span> {{$progress_title}}</div>
                                                     </div>
                                                 </div>
                                             @endforeach
