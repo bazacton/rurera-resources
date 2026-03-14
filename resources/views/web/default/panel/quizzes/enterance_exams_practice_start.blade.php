@@ -548,19 +548,19 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
         Quizintervals = setInterval(function () {
-            var parentObj = $(".quiz-status-bar.active");
+            var parentObj = $(".quiz-section-data.active").find(".quiz-status-bar.active");
             if( TimerActive == true){
-                var quiz_timer_counter = $(".quiz-status-bar.active").find(".quiz-timer-counter").attr('data-time_counter');
+                var quiz_timer_counter = $(".quiz-section-data.active").find(".quiz-status-bar.active").find(".quiz-timer-counter").attr('data-time_counter');
                 if (duration_type == 'no_time_limit') {
                     quiz_timer_counter = parseInt(quiz_timer_counter) + parseInt(1);
                 } else {
                     quiz_timer_counter = parseInt(quiz_timer_counter) - parseInt(1);
                 }
-                $(".quiz-status-bar.active").find(".quiz-timer-counter").html(getTime(quiz_timer_counter));
+                $(".quiz-section-data.active").find(".quiz-status-bar.active").find(".quiz-timer-counter").html(getTime(quiz_timer_counter));
                 if (parentObj.find('.nub-of-sec').length > 0) {
                     parentObj.find('.nub-of-sec').html(getTime(quiz_timer_counter));
                 }
-                $(".quiz-status-bar.active").find(".quiz-timer-counter").attr('data-time_counter', quiz_timer_counter);
+                $(".quiz-section-data.active").find(".quiz-status-bar.active").find(".quiz-timer-counter").attr('data-time_counter', quiz_timer_counter);
                 if (duration_type == 'per_question') {
                     if (parseInt(quiz_timer_counter) == 0) {
                         clearInterval(Quizintervals);
@@ -572,6 +572,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                     if (parseInt(quiz_timer_counter) == 0) {
                         alert('timer is 0');
                         onSectionMoveConfirm();
+                        clearInterval(Quizintervals);
                         //$(".review-btn").click();
                         if ($('.question-review-btn').length > 0) {
                             $('.question-review-btn').click();
