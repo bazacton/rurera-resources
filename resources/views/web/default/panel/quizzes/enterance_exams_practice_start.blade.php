@@ -576,8 +576,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                         if ($next.length == 0) {
                             alert('clear-session');
                             clearInterval(Quizintervals);
+                            afterSectionFinishConfirm();
+                        }else{
+                            onSectionMoveConfirm();
                         }
-                        onSectionMoveConfirm();
                         //$(".review-btn").click();
                         if ($('.question-review-btn').length > 0) {
                             $('.question-review-btn').click();
