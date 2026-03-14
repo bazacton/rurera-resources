@@ -572,7 +572,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                     if (parseInt(quiz_timer_counter) == 0) {
                         alert('timer is 0');
                         onSectionMoveConfirm();
-                        //clearInterval(Quizintervals);
+
+                        const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
+                        const $next = $active.next('.quiz-section-data');
+                        if ($next.length == 0) {
+                            alert('clear-session');
+                            clearInterval(Quizintervals);
+                        }
                         //$(".review-btn").click();
                         if ($('.question-review-btn').length > 0) {
                             $('.question-review-btn').click();
