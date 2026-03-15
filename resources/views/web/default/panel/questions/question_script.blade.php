@@ -7,7 +7,7 @@
     var correct_value = "{{ $correct_value }}";
     var is_result_question = "{{$is_result_question}}";
 
-    var questionBlock = $('.rurera-question-block[data-qresult="'+is_result_question+'"]');
+    var questionBlock = $('.rurera-question-block[data-qresult="'+result_question_id+'"]');
 
     if (field_type === 'text' || field_type === 'number') {
 
