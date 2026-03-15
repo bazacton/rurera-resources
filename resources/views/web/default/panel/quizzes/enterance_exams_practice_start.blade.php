@@ -621,6 +621,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                         }else{
                             onSectionMoveConfirm();
+
+                            initQuestionStatusPopover();
                         }
                         //$(".review-btn").click();
                         if ($('.question-review-btn').length > 0) {
@@ -925,6 +927,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             );
         }
 
+        initQuestionStatusPopover();
+
     }
 
     function afterSectionFinish(){
@@ -994,6 +998,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".quiz-section-data.active").attr('data-finish-exclude_id', current_question_id);
         $('.question-submit-btn').attr('data-bypass_validation', 'yes');
         $(".question-submit-btn").click();
+
+        initQuestionStatusPopover();
         onSectionMoveConfirm();
 
 
@@ -1344,7 +1350,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
     function initQuestionStatusPopover() {
 
-        $('.question-status-trigger').each(function () {
+        $('.quiz-section-data.active').find('.question-status-trigger').each(function () {
 
             const $trigger = $(this);
             const $instance = $trigger.closest('.quiz-instance');
@@ -1364,7 +1370,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             }).on('inserted.bs.popover', function () {
 
                 const popoverId = $(this).attr('aria-describedby');
-                $('#' + popoverId).data('trigger-element', $trigger);
+                $('.quiz-section-data.active').find('#' + popoverId).data('trigger-element', $trigger);
 
             });
 
