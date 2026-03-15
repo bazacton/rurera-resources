@@ -61,7 +61,18 @@ Left SideBar-menu Start
 .border-radius-10 {border-radius: 10px;}
 .notification-card:hover button,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li.active:before {background-color: var(--primary)}
-.sidebar-menu-holder {width: 100%; display: flex; justify-content: flex-start;}
+.panel-sidebar .sidebar-menu::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+.panel-sidebar .sidebar-menu::-webkit-scrollbar-thumb {
+  background-color: #8888881a;
+  border-radius: 5px;
+}
+.panel-sidebar .sidebar-menu::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.sidebar-menu-holder {width: 100%; display: flex; justify-content: flex-start;height: 100vh;}
 .sidebar-menu-holder .tooltip {left: auto !important; right: auto; display: none;}
 .parent-panel .sidebar-menu-holder .tooltip {left: 0 !important; right: 0;}
 @media (min-width:1601px) {
