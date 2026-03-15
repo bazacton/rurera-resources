@@ -828,7 +828,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         console.log('afterNextQuestion==='+question_id);
         $(".quiz-section-data.active").find(".quiz-pagination li").removeClass('active');
         $(".quiz-section-data.active").find('.quiz-pagination li[data-question_id="'+question_id+'"]').addClass('active');
-        $(".quiz-section-data.active").find('.quiz-pagination li[data-question_id="'+question_id+'"]').addClass('active2');
 
 
 
@@ -850,6 +849,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
         var current_question_counter =  $(".quiz-section-data.active").find(".quiz-pagination li.active").attr('data-question_counter');
         $(".quiz-section-data.active").find(".question-status span").html(current_question_counter);
+
+        initQuestionStatusPopover();
 
 
     }
@@ -1339,24 +1340,38 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         });
     });*/
 
-    $(function () {
-        // Initialize popover for each instance
-        $('.question-status-trigger').each(function() {
+    function initQuestionStatusPopover() {
+
+        $('.question-status-trigger').each(function () {
+
             const $trigger = $(this);
             const $instance = $trigger.closest('.quiz-instance');
             const content = $instance.find('.palette-content').html();
+
+            // destroy previous instance if exists
+            if ($trigger.data('bs.popover')) {
+                $trigger.popover('dispose');
+            }
 
             $trigger.popover({
                 content: content,
                 html: true,
                 placement: 'top',
-                sanitize: false, // IMPORTANT
+                sanitize: false,
                 template: '<div class="popover" role="tooltip" style="max-width: 550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
-            }).on('inserted.bs.popover', function() {
-                // Link the popover content back to the trigger for updating status
+            }).on('inserted.bs.popover', function () {
+
                 const popoverId = $(this).attr('aria-describedby');
                 $('#' + popoverId).data('trigger-element', $trigger);
+
             });
+
         });
+
+    }
+
+    // Run on page load
+    $(function () {
+        initQuestionStatusPopover();
     });
 </script>
