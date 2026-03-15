@@ -547,6 +547,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         $('.quiz-pagination ul li[data-actual_question_id="'+active_question_id+'"]').click();
 
+
+
         var active_section_id = $('.quiz-pagination ul li.active').closest('ul').attr('data-section_id');
 
 
@@ -650,6 +652,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             if (curSize >= 16)
                 $('.learning-page').css('font-size', curSize);
         });
+
+        var current_question_counter =  $(".quiz-section-data.active").find(".quiz-pagination li.active").attr('data-question_counter');
+        $(".quiz-section-data.active").find(".question-status span").html(current_question_counter);
     }
 
     function beforeQuestionSubmit(){
