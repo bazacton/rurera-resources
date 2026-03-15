@@ -575,6 +575,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                         const $next = $active.next('.quiz-section-data');
                         if ($next.length == 0) {
                             alert('clear-session');
+                            TimerActive = false;
                             clearInterval(Quizintervals);
                             afterSectionFinishConfirm();
                         }else{
