@@ -428,6 +428,39 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     </div>
 </div>
 
+<div class="modal fade TimeOutPractice modal-md" id="TimeOutPractice" tabindex="-1" role="dialog" aria-labelledby="TimeOutPracticeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
+
+            <!-- Header -->
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-bold font-16" id="TimeOutPracticeLabel">Leave Test?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body pt-3">
+                <p>You still have time remaining to complete this test.
+                    If you exit now, your current progress will be saved.
+                </p>
+
+                <p>You can rejoin the test anytime before the time limit ends and continue from where you left off.</p>
+
+                <p>Are you sure you want to leave the test?
+                </p>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-light border" data-dismiss="modal">Continue Test</button>
+                <button type="button" class="btn btn-danger" onclick="exitTest()">Exit Test</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Report Modal Html End -->
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
@@ -585,6 +618,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                             $(".question-submit-btn").click();
 
                             afterSectionFinishConfirm();
+
+                            //On Test time out Modal
+                            $(".TimeOutPractice").modal('show');
+
                         }else{
                             onSectionMoveConfirm();
                         }
