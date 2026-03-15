@@ -1,5 +1,5 @@
 <script class="question-script">
-    initQuestionScript(this);
+    initQuestionScript(document.currentScript);
     function initQuestionScript(scriptTag){
 
         var questionBlock = scriptTag.closest('.rurera-question-block');
