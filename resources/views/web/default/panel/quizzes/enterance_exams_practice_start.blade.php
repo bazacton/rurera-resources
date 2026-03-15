@@ -1088,6 +1088,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             //afterSectionFinishConfirm();
         }
 
+
+        initQuestionStatusPopover();
     }
 
 
