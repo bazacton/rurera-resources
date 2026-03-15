@@ -190,7 +190,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 </div>
                                             </div>
                                             <div class="question-status question-status-trigger">
-                                                Question <span>1</span>/{{$question_count}} &#9662;
+                                                Question <span>1</span>/{{count($questions_layout)}} &#9662;
                                             </div>
                                         </div>
 
