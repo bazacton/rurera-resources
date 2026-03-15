@@ -1,3 +1,45 @@
+<script class="question-script">
+    initQuestionScript(this);
+    function initQuestionScript(scriptTag){
+
+        var questionBlock = scriptTag.closest('.rurera-question-block');
+        if(!questionBlock) return;
+
+        var field_type = "{{ $field_type }}";
+        var field_id = "{{ $field_key }}";
+        var user_selected_value = "{{ is_object($user_selected_value)? '' : $user_selected_value }}";
+        var correct_value = "{{ $correct_value }}";
+        var is_result_question = "{{$is_result_question}}";
+
+        if (field_type === 'text' || field_type === 'number') {
+
+            var textField = questionBlock.querySelector('#field-' + field_id);
+            if(!textField) return;
+
+            textField.value = user_selected_value;
+
+            if(is_result_question == true){
+                textField.classList.add(
+                    user_selected_value !== correct_value ? 'wrong' : 'correct'
+                );
+            }
+
+        } else if (field_type === 'radio') {
+
+            var userInput = questionBlock.querySelector('[name="field-'+field_id+'"][value="'+user_selected_value+'"]');
+            var correctInput = questionBlock.querySelector('[name="field-'+field_id+'"][value="'+correct_value+'"]');
+
+            if(userInput) userInput.checked = true;
+
+            if(is_result_question == true){
+                if(userInput) userInput.closest('.field-holder')?.classList.add(user_selected_value !== correct_value ? 'wrong':'correct');
+                if(correctInput) correctInput.closest('.field-holder')?.classList.add('correct');
+            }
+
+        }
+
+    }
+</script>
 <script>
     (function(){
 
