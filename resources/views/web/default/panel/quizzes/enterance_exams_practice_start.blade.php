@@ -1331,6 +1331,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         window.location.href = '/dashboard';
     }
 
+    initQuestionStatusPopover();
+
 
 </script>
 <script>
