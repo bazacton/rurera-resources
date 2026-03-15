@@ -158,7 +158,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
                                         <div class="quiz-instance">
-                                            <div class="palette-content" style="display: none;">
+                                                <div class="palette-content" style="display: none;">
                                                 <div class="question-palette">
                                                     <div class="quiz-pagination rurera-hide">
 
@@ -177,7 +177,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                             $is_flagged = false;
                                                             $active_section_id = ($active_class == 'active')? $section_id : $active_section_id;
                                                                     @endphp
-                                                                    <li data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$active_class}} {{ ( $is_flagged == true)?
+                                                                    <li data-question_counter="{{$question_count}}" data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$active_class}} {{ ( $is_flagged == true)?
                                                'has-flag' : ''}} "><a
                                                                             href="javascript:;">
                                                                             {{$question_count}}</a></li>
@@ -190,7 +190,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 </div>
                                             </div>
                                             <div class="question-status question-status-trigger">
-                                                Question <span>10</span>/20 &#9662;
+                                                Question <span>1</span>/{{$question_count}} &#9662;
                                             </div>
                                         </div>
 
