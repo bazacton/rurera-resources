@@ -1035,7 +1035,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             TimerActive = false;
             alert('after Sections Finished')
             clearInterval(Quizintervals);
-            afterSectionFinishConfirm();
+            //afterSectionFinishConfirm();
         }
 
     }
