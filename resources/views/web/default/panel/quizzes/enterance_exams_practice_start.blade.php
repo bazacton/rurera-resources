@@ -577,6 +577,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                             alert('clear-session');
                             TimerActive = false;
                             clearInterval(Quizintervals);
+
+                            $('.rurera-question-block').removeClass('rurera-hide');
+
+                            $active.find('.rurera-question-block').first().addClass('active');
+                            $('.question-submit-btn').attr('data-bypass_validation', 'yes');
+                            $(".question-submit-btn").click();
+
                             afterSectionFinishConfirm();
                         }else{
                             onSectionMoveConfirm();
@@ -947,6 +954,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $('.question-submit-btn').attr('data-bypass_validation', 'yes');
         $(".question-submit-btn").click();
         onSectionMoveConfirm();
+
+
 
         TimerActive = false;
         alert('after Sections Finished')
