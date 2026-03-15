@@ -1322,6 +1322,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     $('.quiz-section-data[data-section_counter="'+selected_section+'"]').addClass('active');
     $('.quiz-section-data[data-section_counter="'+selected_section+'"]').removeClass('rurera-hide');
 
+    initQuestionStatusPopover();
 
     $('[data-toggle="tooltip"]').tooltip({
         container: '.report-btn'
@@ -1331,7 +1332,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         window.location.href = '/dashboard';
     }
 
-    initQuestionStatusPopover();
 
 
 </script>
