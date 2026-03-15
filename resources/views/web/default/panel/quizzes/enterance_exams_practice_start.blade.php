@@ -578,7 +578,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                             TimerActive = false;
                             clearInterval(Quizintervals);
 
-                            $('.rurera-question-block').removeClass('rurera-hide');
+                            $('.rurera-question-block').removeClass('active');
 
                             $active.find('.rurera-question-block').last().addClass('active');
                             $('.question-submit-btn').attr('data-bypass_validation', 'yes');
