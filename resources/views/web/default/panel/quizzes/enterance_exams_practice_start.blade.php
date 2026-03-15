@@ -434,7 +434,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             <!-- Header -->
             <div class="modal-header">
-                <h5 class="modal-title font-weight-bold font-16" id="TimeOutPracticeLabel">Leave Test?</h5>
+                <h5 class="modal-title font-weight-bold font-16">
+                    ⏱ Time's Up!
+                </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -442,22 +444,18 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             <!-- Body -->
             <div class="modal-body pt-3">
-                <p>You still have time remaining to complete this test.
-                    If you exit now, your current progress will be saved.
-                </p>
+                <p>Your practice time has ended.</p>
 
-                <p>You can rejoin the test anytime before the time limit ends and continue from where you left off.</p>
+                <p>Your progress has been automatically saved.</p>
 
-                <p>Are you sure you want to leave the test?
-                </p>
-
+                <p>You can now review your answers or continue to the results.</p>
             </div>
 
             <!-- Footer -->
             <div class="modal-footer border-0">
-                <button type="button" class="btn btn-light border" data-dismiss="modal">Continue Test</button>
-                <button type="button" class="btn btn-danger" onclick="exitTest()">Exit Test</button>
+                <button type="button" class="btn btn-primary">View Results</button>
             </div>
+
         </div>
     </div>
 </div>
@@ -603,11 +601,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 }
                 if (duration_type == 'total_practice') {
                     if (parseInt(quiz_timer_counter) == 0) {
-                        alert('timer is 0');
+
                         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
                         const $next = $active.next('.quiz-section-data');
                         if ($next.length == 0) {
-                            alert('clear-session');
                             TimerActive = false;
                             clearInterval(Quizintervals);
 
@@ -995,7 +992,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
         TimerActive = false;
-        alert('after Sections Finished')
         clearInterval(Quizintervals);
         return true;
     }
