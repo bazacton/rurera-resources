@@ -448,12 +448,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                 <p>Your progress has been automatically saved.</p>
 
-                <p>You can now review your answers or continue to the results.</p>
+                <p>You can now review your answers.</p>
             </div>
 
             <!-- Footer -->
             <div class="modal-footer border-0">
-                <button type="button" class="btn btn-primary">View Results</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">View Results</button>
             </div>
 
         </div>
