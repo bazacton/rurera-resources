@@ -231,7 +231,7 @@ body .spell-question-area .question-label span {text-align: center;}
 }
 .spell-links .dropdown-toggle-btn {
     background-color: inherit;
-    border: 1px solid var(--primary);
+    border: 0;
     border-radius: 5px;
     display: inline-flex;
     align-items: center;
