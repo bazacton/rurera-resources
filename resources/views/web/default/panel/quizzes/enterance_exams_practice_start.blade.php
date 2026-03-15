@@ -22,6 +22,8 @@ if($time_consumed > 0){
     $timer_counter = $time_consumed;
 }
 
+$already_attempted_questions = isset($already_attempted_questions)? $already_attempted_questions : array();
+
 $correct_answer_explaination = true;//isset($correct_answer_explaination)? $correct_answer_explaination : 0;
 $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
@@ -173,11 +175,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 $question_result_id = isset($result_question_ids[$result_question_id])? $result_question_ids[$result_question_id] : 0;
                                                             $active_class = ($active_question_id == $active_actual_question_id)? '' : '';
                                                             $active_class = ($active_class == '' && $question_count == 1)? 'active' : '';
-                                                            $question_status = 'waiting';
+                                                            $question_status = '';
+                                                            $question_status = in_array($question_result_id, $already_attempted_questions)? 'attempted' : $question_status;
                                                             $is_flagged = false;
                                                             $active_section_id = ($active_class == 'active')? $section_id : $active_section_id;
                                                                     @endphp
-                                                                    <li data-question_counter="{{$question_count}}" data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$active_class}} {{ ( $is_flagged == true)?
+                                                                    <li data-question_counter="{{$question_count}}" data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$question_status}} {{$active_class}} {{ ( $is_flagged == true)?
                                                'has-flag' : ''}} "><a
                                                                             href="javascript:;">
                                                                             {{$question_count}}</a></li>
