@@ -846,6 +846,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }else{
             $(".prev-btn").addClass('disabled-div');
         }
+        var current_question_counter =  $(".quiz-section-data.active").find(".quiz-pagination li.active").attr('data-question_counter');
+        $(".quiz-section-data.active").find(".question-status span").html(current_question_counter);
+
+
     }
 
 
