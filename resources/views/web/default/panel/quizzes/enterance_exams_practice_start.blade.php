@@ -825,6 +825,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
 
         var question_id = $(".quiz-section-data.active").find(".rurera-question-block.active").attr('data-qresult');
+        console.lo('afterNextQuestion==='+question_id);
         $(".quiz-section-data.active").find(".quiz-pagination li").removeClass('active');
         $(".quiz-section-data.active").find('.quiz-pagination li[data-question_id="'+question_id+'"]').addClass('active');
 
