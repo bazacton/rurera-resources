@@ -166,7 +166,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                          data-start_time="0" data-qresult="{{isset( $question_result_id )? $question_result_id : 0}}"
                                                                          data-question_no="{{$question_counter}}"
                                                                          data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
-
+<span class="questions-total-holder d-flex align-items-center mb-15 px-15 w-100">
+                                                                        <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
+                                                                        Question: {{$question_counter}}
+                                                                    </span>
                                                                         {!! $questionLayout !!}
 
                                                                     </div>
