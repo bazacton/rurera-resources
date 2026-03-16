@@ -3532,11 +3532,15 @@ html:has(.learn-test-start) {
     font-weight: 500;
     margin: 0;
     background-color: var(--primary);
+    border-color: var(--primary);
     color: #fff;
+    padding: 8px 20px;
+    border-radius: 3px;
+    line-height: normal;
 }
 .rur-settings-modal .modal-footer .setting-reset-btn {
-    background-color: inherit;
-    color: inherit;
+    border-color: transparent;
+    border-radius: 3px;
 }
 /* Demo UI blocks */
 .rur-demo-card { border: 1px solid rgba(0,0,0,0.08); border-radius: 0.6rem; }
