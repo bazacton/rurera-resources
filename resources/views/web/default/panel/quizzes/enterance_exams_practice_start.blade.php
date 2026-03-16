@@ -519,6 +519,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                     quiz_timer_counter = parseInt(quiz_timer_counter) - parseInt(1);
                 }
                 $(".quiz-section-data.active").find(".quiz-status-bar.active").find(".quiz-timer-counter").html(getTime(quiz_timer_counter));
+                $(".time-counter-modal").html(getTime(quiz_timer_counter));
                 if (parentObj.find('.nub-of-sec').length > 0) {
                     parentObj.find('.nub-of-sec').html(getTime(quiz_timer_counter));
                 }
@@ -846,8 +847,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             <div class="d-flex px-20 align-items-center gap-3 mb-20 time-left font-14">
                 <div class="border rounded px-3 py-2 bg-light">
                     <span class="me-2">⏱</span>
-<div class="quiz-timer-counter" data-time_counter="2534"><div class="time-box" id="hh">0</div><span class="colon">:</span><div class="time-box" id="mm">42</div><span class="colon">:</span><div class="time-box" id="ss">14</div></div>
-                    <span class="fw-bold text-warning">${getTimeStr(quiz_timer_remaining)}</span>
+                    <span class="fw-bold text-warning time-counter-modal">${getTimeStr(quiz_timer_remaining)}</span>
                 </div>
                 <span class="ms-2"> left</span>
             </div>
