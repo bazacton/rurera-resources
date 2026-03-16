@@ -3543,9 +3543,10 @@ html:has(.learn-test-start) {
     border-radius: 3px;
 }
 .rur-settings-modal .modal-footer button.btn-danger {
-    background-color: #f63c3c;
-    border-color: #f63c3c;
+    background-color: inherit;
+    border-color: var(--primary);
     box-shadow: none;
+    color: var(--primary);
 }
 /* Demo UI blocks */
 .rur-demo-card { border: 1px solid rgba(0,0,0,0.08); border-radius: 0.6rem; }
