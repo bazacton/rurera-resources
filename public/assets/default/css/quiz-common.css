@@ -3710,6 +3710,9 @@ body .swal2-actions button {
     padding: 8px 20px;
     font-size: .875rem;
 }
+body .swal2-header {
+    position: relative;
+}
 body .swal2-close {
     font-size: 1.5rem;
     font-weight: bold;
