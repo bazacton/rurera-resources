@@ -285,7 +285,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         </div>
     </div>
 </div>
-<div class="modal fade rur-settings-modal" id="rurSettingsModal" tabindex="-1" role="dialog" aria-labelledby="rurSettingsTitle" aria-hidden="true">
+<div class="modal modal-md fade rur-settings-modal" id="rurSettingsModal" tabindex="-1" role="dialog" aria-labelledby="rurSettingsTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content shadow">
             <div class="modal-header">
