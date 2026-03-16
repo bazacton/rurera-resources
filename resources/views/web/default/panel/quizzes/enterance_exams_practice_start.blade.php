@@ -928,6 +928,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             section_move_html,
             'afterSectionFinishConfirm'
         );
+        if ($next.length == 0) {
+            $(".finish-section").html('Finish');
+        }else{
+            $(".finish-section").html('Finish Section');
+        }
+
 
     }
 
