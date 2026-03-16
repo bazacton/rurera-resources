@@ -1417,7 +1417,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         var device_id = '{{$device_id}}';
         jQuery.ajax({
             type: "GET",
-            url: '/common/quiz-heartbeat',
+            url: '/common/quiz_heartbeat',
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
