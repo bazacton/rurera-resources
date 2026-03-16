@@ -3688,7 +3688,7 @@ body .swal2-modal {
     width: 600px;
 }
 .d-flex.gap-3 {
-    gap: 5%;
+    gap: 3%;
 }
 .swal2-content .question-paging {
     border-color: var(--primary);
