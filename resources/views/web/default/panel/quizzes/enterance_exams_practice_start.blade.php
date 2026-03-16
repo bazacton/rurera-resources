@@ -685,12 +685,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             show_notification = true;
 
         }
-        if(practice_with_review_check == true){
-            $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
-            $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
-        }else{
-            $(".question-area-block").find('.question-next-btn').click();
-        }
+
 
         if (show_notification == true) {
             const el = document.querySelector('.show-notifications');
@@ -717,7 +712,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             //window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
         }
 
-
+        if(practice_with_review_check == true){
+            $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
+            $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
+        }else{
+            $(".question-area-block").find('.question-next-btn').click();
+        }
         //$('#ne0xt-btn')[0].click();
     }
 
