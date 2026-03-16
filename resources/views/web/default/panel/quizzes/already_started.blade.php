@@ -19,7 +19,7 @@
                         <div class="learning-text">
                             <h5 class="font-30 mb-10">Already Started</h5>
                             <p class="font-18">Get PLUS today for accsecc to live student activity and progress from the freedom of your desk.</p>
-                            <button type="button" class="">Continue</button>
+                            <button type="button" class="already-started-continue">Continue</button>
                         </div>
 
                     </div>
@@ -28,3 +28,21 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).on('change', '.show-pagination-check', function (evt) {
+        var result_id = '{{$result_id}}';
+        jQuery.ajax({
+            type: "POST",
+            url: '/question_attempt/already_started_continue',
+            dataType: 'json',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: {"result_id": result_id},
+            success: function (return_data) {
+                window.location.reload();
+            }
+        });
+    })
+</script>
