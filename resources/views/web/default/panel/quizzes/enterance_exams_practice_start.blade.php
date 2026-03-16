@@ -192,7 +192,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 </button>
                                                             </div>
                                                         </div>
-                                                        <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+                                                        <div class="prev-next-controls text-center mb-50 questions-nav-controls justify-content-start">
                                                             <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide mr-md-0" data-target="#review_submit">
                                                                 Finish
                                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
@@ -210,7 +210,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 Finish Section
                                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                                             </a>
-                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1 ml-0">
+                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1 ml-auto">
                                                                 Next
                                                             </a>
                                                         </div>
