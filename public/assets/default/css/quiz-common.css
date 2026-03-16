@@ -3708,21 +3708,19 @@ html:has(.learn-test-start) {
     border-bottom: 12px solid white;
     filter: drop-shadow(0 -4px 2px rgba(0, 0, 0, 0.05));
 }
-
-/* Quiz Pagination Styles */
-.quiz-pagination ul {
+.question-palette .quiz-pagination ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 550px; /* Adjust to fit 10 items */
+    max-width: 550px;
 }
-.quiz-pagination li {
+.question-palette .quiz-pagination li {
     margin: 4px;
 }
-.quiz-pagination li a {
+.question-palette .quiz-pagination li a {
     width: 45px;
     height: 45px;
     background-color: #007bff;
@@ -3737,36 +3735,33 @@ html:has(.learn-test-start) {
     user-select: none;
     text-decoration: none;
 }
-.quiz-pagination a:not([href]):not([tabindex]) {
+.question-palette .quiz-pagination a:not([href]):not([tabindex]) {
     color: white;
 }
-.quiz-pagination li a:hover {
+.question-palette .quiz-pagination li a:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
     color: white;
 }
-.question-status {
+.question-palette .question-status {
     display: inline-block;
 }
-/* Active / Highlight State */
-.quiz-pagination li.active a,
-.quiz-pagination li.active a:not([href]):not([tabindex]) {
+.question-palette .quiz-pagination li.active a,
+.question-palette .quiz-pagination li.active a:not([href]):not([tabindex]) {
     background-color: white;
     color: #007bff;
     border: 2px solid #007bff;
 }
-.quiz-pagination li.active a:hover {
+.question-palette .quiz-pagination li.active a:hover {
     background-color: #e7f3ff;
     color: #007bff;
 }
-
-/* Incorrect State (White background like unanswered) */
-.quiz-pagination li.incorrect:not(.active) a {
+.question-palette .quiz-pagination li.incorrect:not(.active) a {
     background-color: white;
     color: #6c757d;
     border: 1px solid #e0e0e0;
 }
-.quiz-pagination li.incorrect:not(.active) a:hover {
+.question-palette .quiz-pagination li.incorrect:not(.active) a:hover {
     background-color: #f8f9fa;
 }
 /* Question palette Pagination Style Start */
