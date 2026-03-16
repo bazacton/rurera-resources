@@ -3719,6 +3719,7 @@ body .swal2-styled.swal2-cancel,
     border: 1px solid var(--primary);
     color: var(--primary);
     box-shadow: none;
+    height: auto;
 }
 body .swal2-styled.swal2-cancel {
     background-color: #f63c3c;  
