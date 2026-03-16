@@ -3683,6 +3683,10 @@ html:has(.learn-test-start) {
 .d-flex.gap-3 {
     gap: 5%;
 }
+.swal2-content .question-paging,
+.swal2-content .question-paging:hover {
+    border-color: var(--primary);
+}
 /* Swal2 Modal Style End */
 
 /* Question palette Pagination Style Start */
