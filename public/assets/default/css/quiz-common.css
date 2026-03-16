@@ -3696,6 +3696,7 @@ body .swal2-modal {
 }
 body .swal2-content {
     color: #000;
+    padding: 0;
 }
 body .swal2-actions {
     justify-content: flex-end;
