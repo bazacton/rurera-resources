@@ -35,7 +35,6 @@
         jQuery.ajax({
             type: "POST",
             url: '/question_attempt/already_started_continue',
-            dataType: 'json',
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
