@@ -3684,3 +3684,89 @@ html:has(.learn-test-start) {
     gap: 3%;
 }
 /* Swal2 Modal Style End */
+
+/* Question palette Pagination Style Start */
+.question-palette {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 15px;
+}
+.question-palette::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    filter: drop-shadow(0 -4px 2px rgba(0, 0, 0, 0.05));
+}
+
+/* Quiz Pagination Styles */
+.quiz-pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 550px; /* Adjust to fit 10 items */
+}
+.quiz-pagination li {
+    margin: 4px;
+}
+.quiz-pagination li a {
+    width: 45px;
+    height: 45px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+    text-decoration: none;
+}
+.quiz-pagination a:not([href]):not([tabindex]) {
+    color: white;
+}
+.quiz-pagination li a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    color: white;
+}
+.question-status {
+    display: inline-block;
+}
+/* Active / Highlight State */
+.quiz-pagination li.active a,
+.quiz-pagination li.active a:not([href]):not([tabindex]) {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+.quiz-pagination li.active a:hover {
+    background-color: #e7f3ff;
+    color: #007bff;
+}
+
+/* Incorrect State (White background like unanswered) */
+.quiz-pagination li.incorrect:not(.active) a {
+    background-color: white;
+    color: #6c757d;
+    border: 1px solid #e0e0e0;
+}
+.quiz-pagination li.incorrect:not(.active) a:hover {
+    background-color: #f8f9fa;
+}
+/* Question palette Pagination Style Start */
