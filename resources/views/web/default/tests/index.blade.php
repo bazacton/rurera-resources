@@ -247,10 +247,10 @@
                             <ul>
                                 <li>
                                     <span class="icon-box">
-                                        <span>
+                                        <span class="bg-blue">
                                             <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
                                         </span>
-                                        <span>
+                                        <span class="bg-pink">
                                             <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
                                         </span>
                                     </span>
@@ -258,10 +258,10 @@
                                 </li>
                                 <li>
                                     <span class="icon-box">
-                                        <span>
+                                        <span class="bg-orange">
                                             <img src="/media/427159/VR-learning.svg" width="50" height="50" alt="" area-hidden="true">
                                         </span>
-                                        <span>
+                                        <span class="bg-teal">
                                             <img src="/assets/default/svgs/blocks-abc.svg" width="50" height="50" alt="" area-hidden="true">
                                         </span>
                                     </span>
