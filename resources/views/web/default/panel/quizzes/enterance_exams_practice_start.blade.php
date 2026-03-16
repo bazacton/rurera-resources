@@ -215,6 +215,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 </button>
                                             </div>
                                         </div>
+                                        <div class="section-title">Section: {{$section_name}}</div>
 
 
 
@@ -229,7 +230,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                                     <div class="left-content has-bg">
                                                         <div class="questions-lists-block">
-                                                            Section: {{$section_name}}
+
                                                             @if( !empty( $questions_layout  ) )
                                                                 @php $question_counter  = 1; @endphp
                                                                 @foreach( $questions_layout as $result_question_id => $questionLayout)
