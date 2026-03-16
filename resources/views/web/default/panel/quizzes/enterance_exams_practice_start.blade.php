@@ -622,6 +622,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
     function beforeQuestionSubmit(){
 
+        return true;
         var $activeLi = $(".quiz-section-data.active").find(".quiz-pagination li.active");
         var response_flag = true;
         var finish_confirm = $(".quiz-section-data.active").attr('data-section_finish_confirm');
@@ -631,6 +632,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         if ($activeLi.is(":last-child")) {
             console.log("This is the last li");
             afterSectionFinish();
+
             response_flag = false;
         }
         return response_flag;
