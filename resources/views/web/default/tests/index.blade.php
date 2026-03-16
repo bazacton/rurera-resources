@@ -224,7 +224,10 @@
                 </div>
                 <!-- First Test Pack -->
                 <div class="rurera-test-pack panel-border rounded-sm p-20 mb-15">
-                    <h3 class="rurera-test-title font-16 font-weight-bold mb-10">11+ The Bexley Secondary Selection Test 01</h3>
+                    <h3 class="rurera-test-title font-16 font-weight-bold mb-10">
+                        11+ The Bexley Secondary Selection Test 01
+                        <span class="rurera-test-price-value font-16">£20.00</span>
+                    </h3>
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
                             <img src="/assets/default/svgs/location-form.svg" alt="" area-hidden="true" height="16" width="16">
@@ -267,7 +270,6 @@
                             </ul>
                         </div>
                         <div class="rurera-test-price">
-                            <p class="rurera-test-price-value font-16">£20.00</p>
                             <button type="button" class="rurera-list-btn font-14">Add to cart</button>
                         </div>
                     </div>
@@ -275,7 +277,10 @@
 
                 <!-- Second Test Pack -->
                 <div class="rurera-test-pack panel-border rounded-sm p-20 mb-15">
-                    <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 02</h3>
+                    <h3 class="rurera-test-title font-16 font-weight-bold mb-10">
+                        11+ The Bexley Secondary Selection Test 02
+                        <span class="rurera-test-price-value font-16">£22.00</span>
+                    </h3>
 
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
@@ -320,7 +325,6 @@
                         </div>
                     
                         <div class="rurera-test-price">
-                            <p class="rurera-test-price-value font-16">£22.00</p>
                             <button type="button" class="rurera-list-btn font-14">Add to cart</button>
                         </div>
                     </div>
@@ -329,7 +333,10 @@
 
                 <!-- Third Test Pack -->
                  <div class="rurera-test-pack panel-border rounded-sm p-20 mb-15">
-                    <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 03</h3>
+                    <h3 class="rurera-test-title font-16 font-weight-bold mb-10">
+                        11+ The Bexley Secondary Selection Test 03
+                        <span class="rurera-test-price-value font-16">£19.00</span>
+                    </h3>
 
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
@@ -374,7 +381,6 @@
                         </div>
                     
                         <div class="rurera-test-price">
-                            <p class="rurera-test-price-value font-16">£19.00</p>
                             <button type="button" data-toggle="modal" data-target="#rureraMockTestModal" class="rurera-list-btn font-14">Add to cart</button>
                         </div>
                     </div>
