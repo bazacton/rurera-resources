@@ -839,7 +839,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 <span class="ms-2"> left</span>
             </div>
 
-            <p class="text-muted mb-4">
+            <p class="mb-4 font-14">
                 Now is a great time to check your answers and to try to answer the
                 following questions that you've skipped:
             </p>
