@@ -769,6 +769,10 @@ function init_question_functions() {
         $('.rurera-question-block[data-qresult="'+question_id+'"]').addClass('active');
         $(this).addClass('active');
 
+        if (typeof afterPrevQuestion === "function") {
+            afterPrevQuestion();
+        }
+
     });
 
     $("body").on('click', '.quiz-pagination11 ul li, .questions-nav-controls .prev-btn1, .questions-nav-controls .next-btn1', function (e) {
