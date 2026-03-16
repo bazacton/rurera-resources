@@ -3803,6 +3803,9 @@ body .swal2-close {
     user-select: none;
     text-decoration: none;
 }
+.question-palette .quiz-pagination .attempted a {
+    box-shadow: 0 0 0 2px #fff inset;
+}
 .question-palette .quiz-pagination a:not([href]):not([tabindex]) {
     color: white;
 }
