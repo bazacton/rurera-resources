@@ -3661,7 +3661,8 @@ html:has(.learn-test-start) {
     font-weight: 500;
     font-size: .875rem;
 }
-.closePractice .modal-footer button {
+.closePractice .modal-footer button,
+.TimeOutPractice .btn {
     padding: 8px 20px;
     height: auto;
     border-radius: 3px;
