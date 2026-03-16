@@ -159,19 +159,20 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
-                                        <div class="quiz-instance">
+                                        <div class="section-top-bar">
+                                            <div class="quiz-instance">
                                                 <div class="palette-content" style="display: none;">
-                                                <div class="question-palette">
-                                                    <div class="quiz-pagination rurera-hide">
+                                                    <div class="question-palette">
+                                                        <div class="quiz-pagination rurera-hide">
 
-                                                        <ul data-section_id="{{$section_id}}">
+                                                            <ul data-section_id="{{$section_id}}">
 
 
 
-                                                            @if( !empty( $questions_layout  ) )
-                                                                @php $question_count  = 1; @endphp
-                                                                @foreach( $questions_layout as $result_question_id => $questionLayout)
-                                                                    @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
+                                                                @if( !empty( $questions_layout  ) )
+                                                                    @php $question_count  = 1; @endphp
+                                                                    @foreach( $questions_layout as $result_question_id => $questionLayout)
+                                                                        @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
                                                                 $question_result_id = isset($result_question_ids[$result_question_id])? $result_question_ids[$result_question_id] : 0;
                                                             $active_class = ($active_question_id == $active_actual_question_id)? '' : '';
                                                             $active_class = ($active_class == '' && $question_count == 1)? 'active' : '';
@@ -179,43 +180,44 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                             $question_status = in_array($question_result_id, $already_attempted_questions)? 'attempted' : $question_status;
                                                             $is_flagged = false;
                                                             $active_section_id = ($active_class == 'active')? $section_id : $active_section_id;
-                                                                    @endphp
-                                                                    <li data-question_counter="{{$question_count}}" data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$question_status}} {{$active_class}} {{ ( $is_flagged == true)?
+                                                                        @endphp
+                                                                        <li data-question_counter="{{$question_count}}" data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$question_status}} {{$active_class}} {{ ( $is_flagged == true)?
                                                'has-flag' : ''}} "><a
-                                                                            href="javascript:;">
-                                                                            {{$question_count}}</a></li>
+                                                                                href="javascript:;">
+                                                                                {{$question_count}}</a></li>
 
-                                                                    @php $question_count++; @endphp
-                                                                @endforeach
-                                                            @endif
-                                                        </ul>
+                                                                        @php $question_count++; @endphp
+                                                                    @endforeach
+                                                                @endif
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="question-status question-status-trigger">
-                                                Question <span>1</span>/{{count($questions_layout)}} &#9662;
-                                            </div>
-                                        </div>
-
-                                        <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
-
-                                            <div class="quiz-time-bar">
-                                                <div class="timer-wrap">
-                                                    <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
-                                                    <div class="quiz-timer-counter" data-time_counter="{{($section_practice_time)}}">
-                                                        <div class="time-box" id="hh">00</div>
-                                                        <span class="colon">:</span>
-                                                        <div class="time-box" id="mm">00</div>
-                                                        <span class="colon">:</span>
-                                                        <div class="time-box" id="ss">00</div>
-                                                    </div>
+                                                <div class="question-status question-status-trigger">
+                                                    Question <span>1</span>/{{count($questions_layout)}} &#9662;
                                                 </div>
-                                                <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
-                                                    <img src="/assets/default/svgs/setting.svg" alt="setting">
-                                                </button>
                                             </div>
+
+                                            <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
+
+                                                <div class="quiz-time-bar">
+                                                    <div class="timer-wrap">
+                                                        <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
+                                                        <div class="quiz-timer-counter" data-time_counter="{{($section_practice_time)}}">
+                                                            <div class="time-box" id="hh">00</div>
+                                                            <span class="colon">:</span>
+                                                            <div class="time-box" id="mm">00</div>
+                                                            <span class="colon">:</span>
+                                                            <div class="time-box" id="ss">00</div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
+                                                        <img src="/assets/default/svgs/setting.svg" alt="setting">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="section-title">Section: {{$section_name}}</div>
                                         </div>
-                                        <div class="section-title">Section: {{$section_name}}</div>
 
 
 
@@ -294,7 +296,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                             </a>
 
                                                             <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1">
-                                                                Skip
+                                                                Next
                                                             </a>
                                                         </div>
                                                     </div>
