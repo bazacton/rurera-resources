@@ -861,14 +861,21 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             `;
         if ($next.length > 0) {
 
-            rurera_modal_alert(
+            /*rurera_modal_alert(
                 '',
                 '',
                 true, //confirmButton
                 section_move_html,
                 'onSectionMoveConfirm'
-            );
+            );*/
         }
+        rurera_modal_alert(
+            '',
+            '',
+            true, //confirmButton
+            section_move_html,
+            'onSectionMoveConfirm'
+        );
 
         initQuestionStatusPopover();
 
