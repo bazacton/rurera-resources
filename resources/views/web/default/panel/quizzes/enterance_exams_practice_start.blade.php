@@ -860,13 +860,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             </div>
 
             `;
-        rurera_modal_alert(
-            '',
-            '',
-            true, //confirmButton
-            section_move_html,
-            'onSectionMoveConfirm'
-        );
+        if ($next.length > 0) {
+            rurera_modal_alert(
+                '',
+                '',
+                true, //confirmButton
+                section_move_html,
+                'onSectionMoveConfirm'
+            );
+        }
 
         initQuestionStatusPopover();
 
