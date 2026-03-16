@@ -536,6 +536,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
                         const $next = $active.next('.quiz-section-data');
+
+                        if($('.swal2-close').length > 0){
+                            $(".swal2-close").click();
+                        }
+
                         if ($next.length == 0) {
                             TimerActive = false;
                             clearInterval(Quizintervals);
