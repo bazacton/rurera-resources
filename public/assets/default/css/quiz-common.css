@@ -3671,7 +3671,6 @@ html:has(.learn-test-start) {
     font-weight: 500;
     font-size: .875rem;
 }
-.closePractice .modal-footer button,
 .TimeOutPractice .btn {
     padding: 8px 20px;
     height: auto;
@@ -3710,7 +3709,8 @@ body .swal2-styled.swal2-confirm:hover {
     color: #fff;
 }
 body .swal2-styled.swal2-confirm,
-body .swal2-styled.swal2-cancel {
+body .swal2-styled.swal2-cancel,
+.closePractice .modal-footer button {
     border-radius: 3px;
     font-size: .875rem;
     padding: 8px 20px;
@@ -3718,6 +3718,7 @@ body .swal2-styled.swal2-cancel {
     background-color: inherit;
     border: 1px solid var(--primary);
     color: var(--primary);
+    box-shadow: none;
 }
 body .swal2-styled.swal2-cancel {
     background-color: #f63c3c;  
