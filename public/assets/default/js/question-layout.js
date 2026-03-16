@@ -67,6 +67,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 	var thisObj = $(this);
 
 	var thisBlock = $(".rurera-question-block.active");
+    var device_id = thisBlock.attr('data-device_id');
     var thisForm = thisBlock.find('form');
     if (typeof beforeQuestionSubmit === "function") {
         returnType =  beforeQuestionSubmit();
@@ -230,6 +231,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
         },
         data: {
             "question_id": question_id,
+            "device_id": device_id,
             "question_data": question_data,
             "qresult_id": qresult_id,
             "qattempt_id": qattempt_id,
