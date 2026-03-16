@@ -23,7 +23,8 @@ $quiz_image = ($rowObj->quiz_image != '')? $rowObj->quiz_image : '/assets/defaul
         <span class="sub_label">{{$rowObj->no_of_questions}} Question(s),</span> 
         <span class="sub_label">Time:{{$rowObj->time}}m,</span> 
         <span class="sub_label">{{getQuizTypeTitle($rowObj->quiz_type)}}</span>
-        @if( $rowObj->time == 10)
+        <span class="sub_label">Attempts:0,</span>
+    @if( $rowObj->time == 10)
             <img src="/assets/default/img/stop-watch.png" alt="stop-watch" width="360" height="360">
         @endif
     </div>
