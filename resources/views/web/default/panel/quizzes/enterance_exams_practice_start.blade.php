@@ -935,6 +935,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".finish-section").html('Finish Section');
         }
 
+        afterPrevQuestion();
+
 
     }
 
@@ -1271,6 +1273,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }else{
             $(".finish-section").html('Finish Section');
         }
+
+        afterPrevQuestion();
 
     });
 
