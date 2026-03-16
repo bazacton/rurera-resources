@@ -1052,7 +1052,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             $next.find('.rurera-question-block').first().addClass('active');
         }else{
-            afterSectionFinishConfirm();
+            var current_question_id =  $(".quiz-section-data.active").find(".quiz-pagination li.active").attr('data-question_id');
+            $(".quiz-section-data.active").attr('data-section_finish_confirm', 'yes');
+            $(".quiz-section-data.active").attr('data-finish-exclude_id', current_question_id);
+            $('.question-submit-btn').attr('data-bypass_validation', 'yes');
+            $(".question-submit-btn").click();
         }
 
         var result_id = '{{isset($newQuizStart->id)? $newQuizStart->id : 0}}';
