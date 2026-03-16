@@ -365,10 +365,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             </div>
 
             <!-- Body -->
-            <div class="modal-body pt-3">
-                <p>Your practice time has ended.</p>
+            <div class="modal-body pt-3 font-14">
+                <p class="mb-10">Your practice time has ended.</p>
 
-                <p>Your progress has been automatically saved.</p>
+                <p class="mb-10">Your progress has been automatically saved.</p>
 
                 <p>You can now review your answers.</p>
             </div>
