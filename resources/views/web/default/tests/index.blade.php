@@ -224,7 +224,7 @@
                 </div>
                 <!-- First Test Pack -->
                 <div class="rurera-test-pack panel-border rounded-sm p-20 mb-15">
-                    <h3 class="rurera-test-title font-16 font-weight-bold">11+ The Bexley Secondary Selection Test 01</h3>
+                    <h3 class="rurera-test-title font-16 font-weight-bold mb-10">11+ The Bexley Secondary Selection Test 01</h3>
                     <div class="rurera-test-pack-info">
                         <span class="rurera-icon-location">
                             <img src="/assets/default/svgs/location-form.svg" alt="" area-hidden="true" height="16" width="16">
