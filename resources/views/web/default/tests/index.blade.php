@@ -182,14 +182,16 @@
                                 <ul class="tests-list font-14">
 
                                     <!-- Test Type -->
-                                    <li class="filter-heading font-16" style="border: 0px;">Select a test type</li>
+                                    <li class="filter-heading font-16" style="border: 0px;"><span class="icon-box">ℹ</span> Select a test type</li>
                                     <li class="filter-item" data-name="11+">11+</li>
                                     <li class="filter-item" data-name="13+">13+</li>
                                 </ul>
                                 <ul class="tests-list font-14">
 
                                     <!-- Consortium -->
-                                    <li class="filter-heading bold" style="border: 0px;">Select your consortium/location</li>
+                                    <li class="filter-heading bold" style="border: 0px;">
+                                       <span class="icon-box">ℹ</span> Select your consortium/location
+                                    </li>
 
                                     <li class="filter-item" data-name="Bexley">Bexley</li>
                                     <li class="filter-item" data-name="Buckinghamshire">Buckinghamshire</li>
