@@ -869,6 +869,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 'onSectionMoveConfirm'
             );*/
         }
+        alert($('.sats-summary').length);
         if ($('.sats-summary').length == 0) {
             rurera_modal_alert(
                 '',
@@ -877,9 +878,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 section_move_html,
                 'onSectionMoveConfirm'
             );
+            initQuestionStatusPopover();
         }
 
-        initQuestionStatusPopover();
 
     }
 
