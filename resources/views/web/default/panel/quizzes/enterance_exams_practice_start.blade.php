@@ -33,7 +33,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     <section class="lms-quiz-section">
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$total_questions}}">
-            <button class="close-practice" type="button"><span aria-hidden="true">&times;</span></button>
+
             <div class="justify-content-center w-100">
                 <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
 
@@ -132,6 +132,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 </div>
                                             </div>
                                             <div class="section-title">Section: {{$section_name}}</div>
+                                            <button class="close-practice" type="button"><span aria-hidden="true">&times;</span></button>
                                         </div>
 
 
