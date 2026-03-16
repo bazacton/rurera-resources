@@ -18,7 +18,7 @@
                         </div>
                         <div class="learning-text">
                             <h5 class="font-30 mb-10">Already Started</h5>
-                            <p class="font-18">Get PLUS today for accsecc to live student activity and progress from the freedom of your desk.</p>
+                            <p class="font-18">By Continue, the other session will be expired.</p>
                             <button type="button" class="already-started-continue">Continue</button>
                         </div>
 
