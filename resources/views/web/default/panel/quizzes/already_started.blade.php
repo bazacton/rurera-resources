@@ -30,7 +30,7 @@
 </div>
 
 <script>
-    $(document).on('change', '.show-pagination-check', function (evt) {
+    $(document).on('click', '.already-started-continue', function (evt) {
         var result_id = '{{$result_id}}';
         jQuery.ajax({
             type: "POST",
