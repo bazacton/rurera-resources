@@ -3668,6 +3668,9 @@ html:has(.learn-test-start) {
     border-radius: 3px;
     box-shadow: none;
 }
+.TimeOutPractice p {
+    font-weight: 400;
+}
 .closePractice .modal-footer .btn-light,
 .closePractice .modal-footer .btn-light:not(:disabled):not(.disabled):active:focus {
     background-color: var(--primary);
