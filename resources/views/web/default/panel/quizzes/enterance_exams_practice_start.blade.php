@@ -834,7 +834,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             <h2 class="fw-bold mb-15 font-16 font-weight-bold text-left">Well done!</h2>
 
-            <div class="d-flex px-20 align-items-center gap-3 mb-20 time-left">
+            <div class="d-flex px-20 align-items-center gap-3 mb-20 time-left font-14">
                 <div class="border rounded px-3 py-2 bg-light">
                     <span class="me-2">⏱</span>
                     <span class="fw-bold text-warning">${getTimeStr(quiz_timer_remaining)}</span>
