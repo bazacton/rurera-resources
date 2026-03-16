@@ -1052,7 +1052,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             $next.find('.rurera-question-block').first().addClass('active');
         }else{
-            //afterSectionFinishConfirm();
+            afterSectionFinishConfirm();
         }
 
         var result_id = '{{isset($newQuizStart->id)? $newQuizStart->id : 0}}';
