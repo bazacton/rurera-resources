@@ -524,7 +524,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 <img src="confetti.png" alt="Success" width="80">
             </div>
 
-            <h2 class="font-weight-bold mb-20 font-16 text-left">Well done!</h2>
+            <h2 class="mb-15 font-16 font-weight-bold text-left">Well done!</h2>
 
             <div class="d-flex justify-content-start align-items-center gap-3 mb-20 time-left">
                 <div class="border rounded px-3 py-2 bg-light mr-2">
