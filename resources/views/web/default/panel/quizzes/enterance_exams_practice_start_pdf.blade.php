@@ -524,9 +524,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 <img src="confetti.png" alt="Success" width="80">
             </div>
 
-            <h2 class="fw-bold mb-4">Well done!</h2>
+            <h2 class="fw-bold mb-20 font-16">Well done!</h2>
 
-            <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
+            <div class="d-flex justify-content-center align-items-center gap-3 mb-4 time-left">
                 <div class="border rounded px-3 py-2 bg-light mr-2">
                     <span class="me-2">⏱</span>
                     <span class="fw-bold text-warning">${getTimeStr(quiz_timer_remaining)}</span>
