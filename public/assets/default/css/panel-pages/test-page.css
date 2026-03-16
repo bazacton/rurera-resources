@@ -220,12 +220,14 @@ Sub Pages Style
 }
 .rurera-test-subjects .icon-box .bg-pink {
     background-color: var(--pink);
+    border-color: #a7004d;
 }
 .rurera-test-subjects .icon-box .bg-red {
     background-color: var(--red);
 }
 .rurera-test-subjects .icon-box .bg-orange {
     background-color: var(--orange);
+    border-color: #8e4a11;
 }
 .rurera-test-subjects .icon-box img {
     height: 100%;
