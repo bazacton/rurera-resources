@@ -311,7 +311,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             <div class="modal-footer d-flex justify-content-end">
                 <button type="button" class="btn btn-outline-secondary btn-sm setting-reset-btn" id="setting-reset-btn">Reset</button>
                 <div>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
