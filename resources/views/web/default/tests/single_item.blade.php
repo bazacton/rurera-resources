@@ -23,7 +23,7 @@ $quiz_image = ($rowObj->quiz_image != '')? $rowObj->quiz_image : '/assets/defaul
         <span class="sub_label">{{$rowObj->no_of_questions}} Question(s),</span> 
         <span class="sub_label">Time:{{$rowObj->time}}m,</span> 
         <span class="sub_label">{{getQuizTypeTitle($rowObj->quiz_type)}},</span>
-        @php $TestsUserPerformanceObj = $rowObj->TestsUserPerformanceObj->where('user_id', auth()->user()->id); @endphp
+        @php $TestsUserPerformanceObj = $rowObj->TestsUserPerformanceObj()->where('user_id', auth()->user()->id); @endphp
         <span class="sub_label">Attempts:{{$TestsUserPerformanceObj->no_of_attempts}}</span>
     @if( $rowObj->time == 10)
             <img src="/assets/default/img/stop-watch.png" alt="stop-watch" width="360" height="360">
