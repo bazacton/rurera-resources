@@ -33,7 +33,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     <section class="lms-quiz-section">
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$total_questions}}">
-            <button class="close-practice" type="button"><span aria-hidden="true">&times;</span></button>
+
             <div class="justify-content-center w-100">
                 <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
 
@@ -132,6 +132,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 </div>
                                             </div>
                                             <div class="section-title">Section: {{$section_name}}</div>
+                                            <button class="close-practice" type="button"><span aria-hidden="true">&times;</span></button>
                                         </div>
 
 
@@ -518,6 +519,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                     quiz_timer_counter = parseInt(quiz_timer_counter) - parseInt(1);
                 }
                 $(".quiz-section-data.active").find(".quiz-status-bar.active").find(".quiz-timer-counter").html(getTime(quiz_timer_counter));
+                $(".time-counter-modal").html(getTime(quiz_timer_counter));
                 if (parentObj.find('.nub-of-sec').length > 0) {
                     parentObj.find('.nub-of-sec').html(getTime(quiz_timer_counter));
                 }
@@ -684,12 +686,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             show_notification = true;
 
         }
-        if(practice_with_review_check == true){
-            $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
-            $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
-        }else{
-            $(".question-area-block").find('.question-next-btn').click();
-        }
+
 
         if (show_notification == true) {
             const el = document.querySelector('.show-notifications');
@@ -707,6 +704,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".questions-nav-controls").addClass('rurera-hide');
             $(".show-notifications").addClass('rurera-hide');
             $(".quiz-pagination").addClass('rurera-hide');
+            $(".section-top-bar").addClass('rurera-hide');
 
 
             $(".rurera-question-block").removeClass('active');
@@ -716,7 +714,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             //window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
         }
 
-
+        if(practice_with_review_check == true){
+            $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
+            $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
+        }else{
+            $(".question-area-block").find('.question-next-btn').click();
+        }
         //$('#ne0xt-btn')[0].click();
     }
 
@@ -808,13 +811,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         afterPrevQuestion();
     });
 
-    function afterNoNextQuestion(){
+    function afterNoNextQuestion() {
         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
 
         var quiz_timer_remaining = $active.find('.quiz-timer-counter').attr('data-time_counter');
         var current_section_id = $active.attr('data-section_id');
         const $next = $active.next('.quiz-section-data');
-        var total_questions = $('.quiz-pagination ul[data-section_id="'+current_section_id+'"] li').length;
+        var total_questions = $('.quiz-pagination ul[data-section_id="' + current_section_id + '"] li').length;
         var section_move_html =
             'Total Questions: ' + total_questions + '<br>' +
             'Correct Questions: ' + correct_questions + '<br>' +
@@ -839,12 +842,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         var section_move_html = `
 
-            <h2 class="fw-bold mb-15 font-16 font-weight-bold text-left">Well done!</h2>
+            <h2 class="fw-bold mb-15 font-16 font-weight-bold text-left">Well done! 11</h2>
 
             <div class="d-flex px-20 align-items-center gap-3 mb-20 time-left font-14">
                 <div class="border rounded px-3 py-2 bg-light">
                     <span class="me-2">⏱</span>
-                    <span class="fw-bold text-warning">${getTimeStr(quiz_timer_remaining)}</span>
+                    <span class="fw-bold text-warning time-counter-modal">${getTimeStr(quiz_timer_remaining)}</span>
                 </div>
                 <span class="ms-2"> left</span>
             </div>
@@ -860,6 +863,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             `;
         if ($next.length > 0) {
 
+            /*rurera_modal_alert(
+                '',
+                '',
+                true, //confirmButton
+                section_move_html,
+                'onSectionMoveConfirm'
+            );*/
+        }
+        if ($('.sats-summary').length == 0) {
             rurera_modal_alert(
                 '',
                 '',
@@ -867,9 +879,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 section_move_html,
                 'onSectionMoveConfirm'
             );
+            initQuestionStatusPopover();
         }
 
-        initQuestionStatusPopover();
 
     }
 
@@ -957,8 +969,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
 
-        TimerActive = false;
-        clearInterval(Quizintervals);
+        //TimerActive = false;
+        //clearInterval(Quizintervals);
         return true;
     }
 
@@ -1044,8 +1056,25 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             $next.find('.rurera-question-block').first().addClass('active');
         }else{
-            //afterSectionFinishConfirm();
+            var current_question_id =  $(".quiz-section-data.active").find(".quiz-pagination li.active").attr('data-question_id');
+            $(".quiz-section-data.active").attr('data-section_finish_confirm', 'yes');
+            $(".quiz-section-data.active").attr('data-finish-exclude_id', current_question_id);
+            $('.question-submit-btn').attr('data-bypass_validation', 'yes');
+            $(".question-submit-btn").click();
         }
+
+        var result_id = '{{isset($newQuizStart->id)? $newQuizStart->id : 0}}';
+
+        jQuery.ajax({
+            type: "POST",
+            url: '/common/update_section_time',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: {"section_id": current_section_id, "result_id": result_id},
+            success: function (return_data) {
+            }
+        });
 
 
         initQuestionStatusPopover();
