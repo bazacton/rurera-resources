@@ -24,7 +24,7 @@ $quiz_image = ($rowObj->quiz_image != '')? $rowObj->quiz_image : '/assets/defaul
         <span class="sub_label">Time:{{$rowObj->time}}m,</span> 
         <span class="sub_label">{{getQuizTypeTitle($rowObj->quiz_type)}},</span>
         @php $TestsUserPerformanceObj = $rowObj->TestsUserPerformanceObj()->where('user_id', auth()->user()->id); @endphp
-        <span class="sub_label">Attempts:{{$TestsUserPerformanceObj->no_of_attempts}}</span>
+        <span class="sub_label">Attempts:{{isset($TestsUserPerformanceObj->no_of_attempts)? $TestsUserPerformanceObj->no_of_attempts : 0}}</span>
     @if( $rowObj->time == 10)
             <img src="/assets/default/img/stop-watch.png" alt="stop-watch" width="360" height="360">
         @endif
