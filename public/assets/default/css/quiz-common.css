@@ -3694,6 +3694,9 @@ body .swal2-modal {
 .swal2-content .question-paging:hover {
     border-color: var(--primary);
 }
+.swal2-content .question-paging:hover {
+    background-color: var(--primary);
+}
 body .swal2-content {
     color: #000;
     padding: 0;
