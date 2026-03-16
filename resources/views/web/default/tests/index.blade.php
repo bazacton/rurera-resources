@@ -224,7 +224,7 @@
                 </div>
                 <!-- First Test Pack -->
                 <div class="rurera-test-pack panel-border rounded-sm p-20 mb-15">
-                    <h3 class="rurera-test-title font-16 font-weight-bold mb-10">
+                    <h3 class="rurera-test-title font-16 font-weight-bold mb-10 d-flex align-items-center flex-wrap justify-content-between">
                         11+ The Bexley Secondary Selection Test 01
                         <span class="rurera-test-price-value font-16">£20.00</span>
                     </h3>
@@ -277,7 +277,7 @@
 
                 <!-- Second Test Pack -->
                 <div class="rurera-test-pack panel-border rounded-sm p-20 mb-15">
-                    <h3 class="rurera-test-title font-16 font-weight-bold mb-10">
+                    <h3 class="rurera-test-title font-16 font-weight-bold mb-10 d-flex align-items-center flex-wrap justify-content-between">
                         11+ The Bexley Secondary Selection Test 02
                         <span class="rurera-test-price-value font-16">£22.00</span>
                     </h3>
@@ -333,7 +333,7 @@
 
                 <!-- Third Test Pack -->
                  <div class="rurera-test-pack panel-border rounded-sm p-20 mb-15">
-                    <h3 class="rurera-test-title font-16 font-weight-bold mb-10">
+                    <h3 class="rurera-test-title font-16 font-weight-bold mb-10 d-flex align-items-center flex-wrap justify-content-between">
                         11+ The Bexley Secondary Selection Test 03
                         <span class="rurera-test-price-value font-16">£19.00</span>
                     </h3>
