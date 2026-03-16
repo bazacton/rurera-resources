@@ -3697,6 +3697,9 @@ body .swal2-modal {
 body .swal2-content {
     color: #000;
 }
+body .swal2-actions {
+    justify-content: space-between;
+}
 /* Swal2 Modal Style End */
 
 /* Question palette Pagination Style Start */
