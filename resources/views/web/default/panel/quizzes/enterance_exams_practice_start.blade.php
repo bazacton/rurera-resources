@@ -968,8 +968,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
 
-        TimerActive = false;
-        clearInterval(Quizintervals);
+        //TimerActive = false;
+        //clearInterval(Quizintervals);
         return true;
     }
 
