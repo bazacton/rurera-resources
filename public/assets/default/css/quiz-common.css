@@ -3690,12 +3690,13 @@ body .swal2-modal {
 .d-flex.gap-3 {
     gap: 5%;
 }
-.swal2-content .question-paging,
-.swal2-content .question-paging:hover {
+.swal2-content .question-paging {
     border-color: var(--primary);
+    color: var(--primary);
 }
 .swal2-content .question-paging:hover {
     background-color: var(--primary);
+    color: #fff;
 }
 body .swal2-content {
     color: #000;
