@@ -330,11 +330,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             <!-- Body -->
             <div class="modal-body pt-3">
-                <p>You still have time remaining to complete this test.
+                <p class="mb-15">You still have time remaining to complete this test.
                     If you exit now, your current progress will be saved.
                 </p>
 
-                <p>You can rejoin the test anytime before the time limit ends and continue from where you left off.</p>
+                <p class="mb-15">You can rejoin the test anytime before the time limit ends and continue from where you left off.</p>
 
                 <p>Are you sure you want to leave the test?
                 </p>
