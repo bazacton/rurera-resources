@@ -3726,6 +3726,7 @@ body .swal2-close {
 .time-left {
     border-top: 1px solid #ddd;
     padding-top: 20px;
+    margin: 0 -20px;
 }
 /* Swal2 Modal Style End */
 
