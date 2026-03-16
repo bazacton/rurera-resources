@@ -48,12 +48,7 @@
             @endif
         </div>
     @endif
-    <span class="questions-total-holders d-block mb-15 rurera-hide">
 
-        @if($layout_type != 'results') <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$question_no}}</span>
-        @endif
-        <span class="question-dev-details">({{ $question->id }}) ({{ $question->question_difficulty_level }}) ({{ $question->question_type }})</span>
-    </span>
 
     @php $classes = isset( $class )? $class : ''; @endphp
     <div id="rureraform-form-1"
