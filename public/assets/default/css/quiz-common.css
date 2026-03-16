@@ -3791,7 +3791,7 @@ body .swal2-close {
 .question-palette .quiz-pagination li a {
     width: 45px;
     height: 45px;
-    background-color: #007bff;
+    background-color: var(--primary);
     color: white;
     display: flex;
     justify-content: center;
@@ -3807,7 +3807,7 @@ body .swal2-close {
     color: white;
 }
 .question-palette .quiz-pagination li a:hover {
-    background-color: #0056b3;
+    background-color: var(--primary);
     transform: translateY(-2px);
     color: white;
 }
@@ -3817,12 +3817,12 @@ body .swal2-close {
 .question-palette .quiz-pagination li.active a,
 .question-palette .quiz-pagination li.active a:not([href]):not([tabindex]) {
     background-color: white;
-    color: #007bff;
-    border: 2px solid #007bff;
+    color: var(--primary);
+    border: 2px solid var(--primary);
 }
 .question-palette .quiz-pagination li.active a:hover {
     background-color: #e7f3ff;
-    color: #007bff;
+    color: var(--primary);
 }
 .question-palette .quiz-pagination li.incorrect:not(.active) a {
     background-color: white;
