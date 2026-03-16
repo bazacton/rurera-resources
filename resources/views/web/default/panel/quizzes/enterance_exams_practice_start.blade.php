@@ -163,7 +163,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                     }
                                                                     @endphp
                                                                     <span class="questions-total-holders d-block mb-15 rurera-hide1">
-                                                                        <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$question_counter}}</span>
+                                                                        <span class="question-number-holder question-number" style="z-index: 999999999;">00-- {{$question_counter}}</span>
                                                                     </span>
 
                                                                     <div class=" rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
@@ -860,13 +860,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             </div>
 
             `;
-        rurera_modal_alert(
-            '',
-            '',
-            true, //confirmButton
-            section_move_html,
-            'onSectionMoveConfirm'
-        );
+        if ($next.length > 0) {
+            rurera_modal_alert(
+                '',
+                '',
+                true, //confirmButton
+                section_move_html,
+                'onSectionMoveConfirm'
+            );
+        }
 
         initQuestionStatusPopover();
 
