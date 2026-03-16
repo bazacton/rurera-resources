@@ -3698,7 +3698,12 @@ body .swal2-content {
     color: #000;
 }
 body .swal2-actions {
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+body .swal2-actions button {
+    font-size: .875rem;
+    padding: 8px 20px;
+    font-size: .875rem;
 }
 /* Swal2 Modal Style End */
 
