@@ -3722,6 +3722,7 @@ body .swal2-header {
 body .swal2-close {
     font-size: 1.5rem;
     font-weight: bold;
+    width: auto;
 }
 .time-left {
     border-top: 1px solid #ddd;
