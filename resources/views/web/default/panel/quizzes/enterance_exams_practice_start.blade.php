@@ -855,16 +855,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             </div>
 
             `;
-        if ($next.length > 0) {
-
-            rurera_modal_alert(
-                '',
-                '',
-                true, //confirmButton
-                section_move_html,
-                'onSectionMoveConfirm'
-            );
-        }
+        rurera_modal_alert(
+            '',
+            '',
+            true, //confirmButton
+            section_move_html,
+            'onSectionMoveConfirm'
+        );
 
         initQuestionStatusPopover();
 
@@ -928,6 +925,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             section_move_html,
             'afterSectionFinishConfirm'
         );
+        $(".finish-section").addClass('rurera-hide');
         if ($next.length == 0) {
             $(".finish-section").html('Finish');
         }else{
@@ -943,6 +941,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".quiz-section-data.active").attr('data-finish-exclude_id', current_question_id);
         $('.question-submit-btn').attr('data-bypass_validation', 'yes');
         $(".question-submit-btn").click();
+
+
 
         initQuestionStatusPopover();
         onSectionMoveConfirm();
@@ -1260,6 +1260,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         });
 
         initQuestionStatusPopover();
+        const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
+        const $next = $active.next('.quiz-section-data');
+        $(".finish-section").addClass('rurera-hide');
+        if ($next.length == 0) {
+            $(".finish-section").html('Finish');
+        }else{
+            $(".finish-section").html('Finish Section');
+        }
 
     });
 
