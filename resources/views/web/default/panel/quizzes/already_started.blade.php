@@ -1,11 +1,7 @@
-@extends('web.default.panel.layouts.panel_layout')
+
 @php use App\Models\Webinar; @endphp
 
-@push('styles_top')
 
-@endpush
-
-@section('content')
 
 <div class="learning-page">
 
@@ -59,8 +55,3 @@
         </div>
     </div>
 </div>
-@endsection
-
-@push('scripts_bottom')
-
-@endpush
