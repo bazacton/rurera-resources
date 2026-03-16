@@ -3701,11 +3701,15 @@ body .swal2-styled.swal2-confirm:hover {
 }
 body .swal2-styled.swal2-confirm {
     background-color: var(--primary);
+    border-radius: 3px;
     outline: none;
     box-shadow: none;
 }
-body .swal2-actions button {
+body .swal2-styled.swal2-cancel {
     border-radius: 3px;
+    background-color: #f63c3c;
+    font-size: .875rem;
+    padding: 8px 20px;
 }
 body .swal2-content {
     color: #000;
