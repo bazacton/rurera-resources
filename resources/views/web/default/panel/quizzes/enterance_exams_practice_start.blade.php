@@ -1047,6 +1047,19 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             //afterSectionFinishConfirm();
         }
 
+        var result_id = '{{isset($newQuizStart->id)? $newQuizStart->id : 0}}';
+
+        jQuery.ajax({
+            type: "POST",
+            url: '/common/update_section_time',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: {"section_id": current_section_id, "result_id": result_id},
+            success: function (return_data) {
+            }
+        });
+
 
         initQuestionStatusPopover();
     }
