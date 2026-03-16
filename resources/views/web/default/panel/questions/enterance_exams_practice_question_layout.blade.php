@@ -62,7 +62,7 @@
                 @endif
             @endif
 
-            
+
             {!! $question_layout !!}
 
             <div class="validation-error"></div>
