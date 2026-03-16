@@ -703,6 +703,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".questions-nav-controls").addClass('rurera-hide');
             $(".show-notifications").addClass('rurera-hide');
             $(".quiz-pagination").addClass('rurera-hide');
+            $(".section-top-bar").addClass('rurera-hide');
 
 
             $(".rurera-question-block").removeClass('active');
@@ -869,7 +870,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 'onSectionMoveConfirm'
             );*/
         }
-        alert($('.sats-summary').length);
         if ($('.sats-summary').length == 0) {
             rurera_modal_alert(
                 '',
