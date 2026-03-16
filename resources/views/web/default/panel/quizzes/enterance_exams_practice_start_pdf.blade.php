@@ -526,7 +526,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             <h2 class="fw-bold mb-20 font-16">Well done!</h2>
 
-            <div class="d-flex justify-content-center align-items-center gap-3 mb-20 time-left">
+            <div class="d-flex justify-content-start align-items-center gap-3 mb-20 time-left">
                 <div class="border rounded px-3 py-2 bg-light mr-2">
                     <span class="me-2">⏱</span>
                     <span class="fw-bold text-warning">${getTimeStr(quiz_timer_remaining)}</span>
@@ -534,12 +534,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 <span class="ms-2"> left</span>
             </div>
 
-            <p class="mb-20 font-14">
+            <p class="mb-20 font-14 text-left">
                 Now is a great time to check your answers and to try to answer the
                 following questions that you've skipped:
             </p>
 
-            <div class="d-flex justify-content-center gap-3 mb-5">
+            <div class="d-flex justify-content-start gap-3 mb-5">
                 <button class="btn btn-outline-primary px-3">2</button>
                 <button class="btn btn-outline-primary px-3">10</button>
             </div>
