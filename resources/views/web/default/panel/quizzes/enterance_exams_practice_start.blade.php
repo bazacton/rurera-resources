@@ -282,10 +282,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 Finish
                                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                                             </a>
-                                                            <a href="javascript:;" class="review-btn finish-section rurera-hide mr-md-0">
-                                                                Finish Section
-                                                                <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-                                                            </a>
+                                                            
                                                             <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
                                                                 Next
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
@@ -294,7 +291,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 prev
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
-
+                                                            <a href="javascript:;" class="review-btn finish-section rurera-hide mr-md-0">
+                                                                Finish Section
+                                                                <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                                                            </a>
                                                             <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1">
                                                                 Next
                                                             </a>
