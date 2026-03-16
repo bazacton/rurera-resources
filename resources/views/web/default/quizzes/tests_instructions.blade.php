@@ -43,7 +43,7 @@
                 <img src="/assets/default/svgs/clipboard-list.svg" height="64" width="64" alt="clipboard-list">
             </div>
             <div class="stat-label font-14 font-weight-500">Question</div>
-            <div class="stat-value font-14 font-weight-bold">{{$quiz->quizQuestionsList->count()}}</div>
+            <div class="stat-value font-14 font-weight-bold">{{$quiz->no_of_questions}}</div>
         </div>
         <div class="card-box">
             <div class="icon-box">
