@@ -3711,13 +3711,13 @@ body .swal2-styled.swal2-confirm:hover {
 }
 body .swal2-styled.swal2-confirm,
 body .swal2-styled.swal2-cancel {
-    background-color: var(--primary);
     border-radius: 3px;
-    outline: none;
-    box-shadow: none;
     font-size: .875rem;
-    line-height: normal;
     padding: 8px 20px;
+    line-height: normal;
+    background-color: inherit;
+    border: 1px solid var(--primary);
+    color: var(--primary);
 }
 body .swal2-styled.swal2-cancel {
     background-color: #f63c3c;  
