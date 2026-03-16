@@ -179,7 +179,7 @@
                             <div class="tests-list-holder">
                                 <a href="#." class="filter-mobile-btn">Filters</a>
                                 
-                                <ul class="tests-list font-14">
+                                <ul class="tests-list font-14 mb-20">
 
                                     <!-- Test Type -->
                                     <li class="filter-heading font-16" style="border: 0px;"><span class="icon-box">ℹ</span> Select a test type</li>

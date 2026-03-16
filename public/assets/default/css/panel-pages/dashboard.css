@@ -575,6 +575,26 @@ Left SideBar-menu End
 .tests-list li.active {background-color: var(--primary); border-color: var(--primary); color: #fff;}
 .tests-list.school-zone-list li {min-height: 60px;}
 .tests-list img {width: 20px; height: 20px; object-fit: contain; }
+.tests-list .filter-heading {
+    width: 100%;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0;
+    gap: 5px;
+    margin: 0 0 10px;
+}
+.tests-list .filter-heading .icon-box {
+    background-color: #dcdde2;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #b1b1bd;
+    font-size: .775rem;
+    font-weight: normal;
+    width: 18px;
+    height: 18px;
+}
 /*Test-List Default Style For Timestables Practice Page End*/
 
 /*Grid Card Default Style For Timestables Practice Page*/
