@@ -3704,6 +3704,9 @@ body .swal2-styled.swal2-confirm {
     outline: none;
     box-shadow: none;
 }
+body .swal2-actions button {
+    border-radius: 3px;
+}
 body .swal2-content {
     color: #000;
     padding: 0;
