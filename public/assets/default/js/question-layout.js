@@ -1859,7 +1859,7 @@ $(document).on('click', '.confirm-delete', function (e) {
 	$(".rurera-confirm-delete").modal('show');
 });
 
-$(document).on('change', '.rureraform-checkbox-medium', function (e) {
+$(document).on('change', '.rureraform-checkbox-medium1', function (e) {
 	var max_options = $(this).attr('data-max');
 	max_options = rurera_is_field(max_options)? max_options : 1;
 	var this_field_name = $(this).attr('name');
