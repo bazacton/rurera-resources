@@ -1410,4 +1410,25 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     $(function () {
         initQuestionStatusPopover();
     });
+
+
+    setInterval(function(){
+        var result_id = '{{$quizAttempt->quiz_result_id}}';
+        var device_id = '{{$device_id}}';
+        jQuery.ajax({
+            type: "GET",
+            url: '/common/quiz-heartbeat',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            dataType:'json',
+            data: {"result_id": result_id, "device_id": device_id},
+            success: function (return_data) {
+                if(return_data.status == 'already_started'){
+                    $(".alreaduStarted").modal('show');
+                    return false;
+                }
+            }
+        });
+    },15000);
 </script>
