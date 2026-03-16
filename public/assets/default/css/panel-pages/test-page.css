@@ -222,8 +222,9 @@ Sub Pages Style
     background-color: var(--pink);
     border-color: #a7004d;
 }
-.rurera-test-subjects .icon-box .bg-red {
-    background-color: var(--red);
+.rurera-test-subjects .icon-box .bg-teal {
+    background-color: var(--teal);
+    border-color: #137d5e;
 }
 .rurera-test-subjects .icon-box .bg-orange {
     background-color: var(--orange);
