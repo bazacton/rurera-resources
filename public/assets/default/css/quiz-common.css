@@ -3723,7 +3723,9 @@ body .swal2-styled.swal2-cancel,
     height: auto;
 }
 body .swal2-styled.swal2-cancel {
-    background-color: #f63c3c;  
+    background-color: inherit;
+    border: 1px solid var(--primary);
+    color: var(--primary);
 }
 body .swal2-actions:not(.swal2-loading) .swal2-styled:hover {
     background-image: none;
