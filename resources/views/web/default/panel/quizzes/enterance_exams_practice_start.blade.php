@@ -776,7 +776,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         if ($next.length > 0) {
             $(".question-next-btn").removeClass('disabled-div');
+            $(".question-next-btn").removeClass('rurera-hide');
         }else{
+            $(".question-next-btn").addClass('rurera-hide');
             $(".question-next-btn").addClass('disabled-div');
             $(".finish-section").removeClass('rurera-hide');
         }
