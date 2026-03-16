@@ -239,6 +239,10 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
             "time_consumed": time_consumed
         },
         success: function (return_data) {
+            if(return_data.status == 'already_started'){
+                $(".alreaduStarted").modal('show');
+                return;
+            }
             attempted_questions = parseInt(attempted_questions)+1;
 			var question_status_class = (return_data.incorrect_flag == true) ? 'incorrect' : 'correct';
 			if( question_status_class == 'incorrect'){

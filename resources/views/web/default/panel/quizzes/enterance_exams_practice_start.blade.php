@@ -390,6 +390,33 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     </div>
 </div>
 
+<div class="modal fade alreaduStarted modal-md" id="alreaduStarted" tabindex="-1" role="dialog" aria-labelledby="alreaduStartedLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
+
+            <!-- Header -->
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-bold font-16">
+                    Already Started
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body pt-3 font-14">
+                <p class="mb-10">Its already started on another session.</p>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
 <!-- Report Modal Html End -->
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
