@@ -206,13 +206,16 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 prev
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
-                                                            <a href="javascript:;" class="review-btn finish-section rurera-hide mr-10 ml-auto">
-                                                                Finish Section
-                                                                <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-                                                            </a>
-                                                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1 ml-auto">
-                                                                Next
-                                                            </a>
+                                                            <div class="ml-auto">
+                                                                <a href="javascript:;" class="review-btn finish-section rurera-hide mr-10 ml-auto">
+                                                                    Finish Section
+                                                                    <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                                                                </a>
+                                                                <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1 ml-auto">
+                                                                    Next
+                                                                </a>
+                                                            </div>
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
