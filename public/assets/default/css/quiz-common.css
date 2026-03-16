@@ -3684,6 +3684,9 @@ html:has(.learn-test-start) {
 /* Test Section Style End */
 
 /* Swal2 Modal Style Start */
+body .swal2-modal {
+    width: 600px;
+}
 .d-flex.gap-3 {
     gap: 5%;
 }
@@ -3691,7 +3694,7 @@ html:has(.learn-test-start) {
 .swal2-content .question-paging:hover {
     border-color: var(--primary);
 }
-.swal2-content {
+body .swal2-content {
     color: #000;
 }
 /* Swal2 Modal Style End */
