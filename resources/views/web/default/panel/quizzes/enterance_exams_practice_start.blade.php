@@ -809,13 +809,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         afterPrevQuestion();
     });
 
-    function afterNoNextQuestion(){
+    function afterNoNextQuestion() {
         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
 
         var quiz_timer_remaining = $active.find('.quiz-timer-counter').attr('data-time_counter');
         var current_section_id = $active.attr('data-section_id');
         const $next = $active.next('.quiz-section-data');
-        var total_questions = $('.quiz-pagination ul[data-section_id="'+current_section_id+'"] li').length;
+        var total_questions = $('.quiz-pagination ul[data-section_id="' + current_section_id + '"] li').length;
         var section_move_html =
             'Total Questions: ' + total_questions + '<br>' +
             'Correct Questions: ' + correct_questions + '<br>' +
@@ -869,13 +869,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 'onSectionMoveConfirm'
             );*/
         }
-        rurera_modal_alert(
-            '',
-            '',
-            true, //confirmButton
-            section_move_html,
-            'onSectionMoveConfirm'
-        );
+        if ($('.sats-summary').length == 0) {
+            rurera_modal_alert(
+                '',
+                '',
+                true, //confirmButton
+                section_move_html,
+                'onSectionMoveConfirm'
+            );
+        }
 
         initQuestionStatusPopover();
 
@@ -912,7 +914,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         var section_move_html = `
 
-            <h2 class="font-weight-bold mb-20 font-16 text-left">Well done! 22</h2>
+            <h2 class="font-weight-bold mb-20 font-16 text-left">Well done!</h2>
 
             <div class="d-flex justify-content-start align-items-center gap-3 mb-20 font-14 time-left px-20">
                 <div class="border rounded px-3 py-2 bg-light">
