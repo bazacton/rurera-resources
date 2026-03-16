@@ -132,6 +132,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 </div>
                                             </div>
                                             <div class="section-title">Section: {{$section_name}}</div>
+
+
                                         </div>
 
 
@@ -160,6 +162,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                         $active_question = true;
                                                                     }
                                                                     @endphp
+                                                                    <span class="questions-total-holders d-block mb-15 rurera-hide1">
+                                                                        <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$question_counter}}</span>
+                                                                    </span>
 
                                                                     <div class=" rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
                                                                          data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
