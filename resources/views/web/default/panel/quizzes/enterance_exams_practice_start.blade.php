@@ -259,6 +259,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                             @endif
                                                         </div>
                                                         <div class="show-notifications" data-show_message="yes"></div>
+                                                        <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
+                                                            Mark Answer
+                                                        </a>
                                                         <div id="scroll-controls" class="page-prev-next-controls pr-0">
                                                             <div class="controls-inner">
                                                                 <!-- Top State: Scroll Down Button -->
@@ -289,9 +292,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 prev
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
-                                                            <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
-                                                                Mark Answer
-                                                            </a>
+
                                                             <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1">
                                                                 Skip
                                                             </a>
