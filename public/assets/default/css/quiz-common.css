@@ -3691,6 +3691,9 @@ html:has(.learn-test-start) {
 .swal2-content .question-paging:hover {
     border-color: var(--primary);
 }
+.swal2-content {
+    color: #000;
+}
 /* Swal2 Modal Style End */
 
 /* Question palette Pagination Style Start */
