@@ -538,7 +538,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $('.no-questions-value').html(current_question_no);
 
 
-
+        setInterval(function(){
+            var count_tabs = countTabs();
+            if(count_tabs > 1){
+                $(".alreaduStarted").modal('show');
+            }
+        },2000);
 
         Quizintervals = setInterval(function () {
             var parentObj = $(".quiz-section-data.active").find(".quiz-status-bar.active");
@@ -1436,12 +1441,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             }
         });
     },15000);
-    setInterval(function(){
-        var count_tabs = countTabs();
-        if(count_tabs > 1){
-            $(".alreaduStarted").modal('show');
-        }
-    },2000);
+
 
     if (!sessionStorage.tabId) {
         sessionStorage.tabId = Math.random().toString(36).slice(2);
@@ -1505,9 +1505,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 // Cleanup
                 localStorage.removeItem("form-" + currentTabId);
                 sessionStorage.removeItem("tabId");
-
-                alert("This session is now active in another tab.");
-
                 // Try to close
                 window.location.href = "/dashboard";
 
