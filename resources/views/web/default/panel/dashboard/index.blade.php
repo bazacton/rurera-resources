@@ -1115,6 +1115,7 @@
     @endsection
 
     @push('scripts_bottom')
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="/assets/default/vendors/apexcharts/apexcharts.min.js"></script>
     <script src="/assets/default/vendors/chartjs/chart.min.js"></script>
 
