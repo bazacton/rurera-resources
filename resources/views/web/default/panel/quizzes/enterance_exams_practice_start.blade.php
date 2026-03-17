@@ -1437,7 +1437,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             }
         });
     },15000);
-
+    setInterval(function(){
+        console.log(countTabs());
+    },2000);
 
     if (!sessionStorage.tabId) {
         sessionStorage.tabId = Math.random().toString(36).slice(2);
