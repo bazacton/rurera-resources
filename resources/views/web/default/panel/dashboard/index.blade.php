@@ -5,7 +5,30 @@
     <link rel="stylesheet" href="/assets/default/vendors/chartjs/chart.min.css"/>
     <link rel="stylesheet" href="/assets/default/vendors/apexcharts/apexcharts.css"/>
 @endpush
+<style>
+    /* SVG Spinner */
+    .spinner {
+        width: 80px;
+        height: 80px;
+        animation: spin 1s linear infinite;
+    }
 
+    .spinner circle {
+        fill: none;
+        stroke: #007bff;
+        stroke-width: 6;
+        stroke-linecap: round;
+        stroke-dasharray: 150;
+        stroke-dashoffset: 100;
+    }
+
+    /* Rotation animation */
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
 @section('content')
 <section>
 
