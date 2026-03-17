@@ -574,6 +574,19 @@
 										</div>
 										<div class="col-12 col-lg-3 mt-10 mt-lg-0 text-right resume-test">
 											<a href="/mock-practice/{{$resultObj->parentQuiz->quiz_slug}}" data-request_type="approved" class="request-action-btn js-show-message btn btn-border-white">Resume Test</a>
+
+                                            <div class="loader-wrapper"
+                                                 data-toggle="tooltip"
+                                                 data-placement="top"
+                                                 data-time_remaining="50"
+                                                 title="Loading...">
+
+                                                <!-- SVG Loader -->
+                                                <svg class="spinner" viewBox="0 0 50 50">
+                                                    <circle cx="25" cy="25" r="20"></circle>
+                                                </svg>
+
+                                            </div>
 										</div>
 									</div>
 								</div>
@@ -1188,3 +1201,45 @@ $(document).ready(function () {
 
     @endpush
     @endif
+
+<script>
+    $(document).ready(function () {
+
+        function formatTime(seconds) {
+            let h = Math.floor(seconds / 3600);
+            let m = Math.floor((seconds % 3600) / 60);
+            let s = seconds % 60;
+
+            return `${h}h ${m}m ${s}s`;
+        }
+
+        $('.loader-wrapper').each(function () {
+            let $el = $(this);
+
+            // Get initial time from data attribute
+            let totalSeconds = parseInt($el.attr('data-time_remaining')) || 0;
+
+            // Initialize tooltip ONCE per element
+            $el.tooltip({
+                trigger: 'hover'
+            });
+
+            function updateTooltip() {
+                let text = "Time remaining: " + formatTime(totalSeconds);
+
+                $el
+                    .attr('data-original-title', text)
+                    .tooltip('update');
+
+                if (totalSeconds > 0) {
+                    totalSeconds--;
+                }
+            }
+
+            // Start countdown for THIS element
+            updateTooltip();
+            setInterval(updateTooltip, 1000);
+        });
+
+    });
+</script>
