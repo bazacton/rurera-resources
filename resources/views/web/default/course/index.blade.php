@@ -126,7 +126,6 @@
                         <div class="accordion-content-wrapper" id="chaptersAccordion" role="tablist" aria-multiselectable="true">
                             <ul class="lms-chapter-ul font-14 font-weight-500" id="accordion">
                                 @foreach($course->chapters as $chapter)
-                                    @php if(!isset($chapter->id)){ continue; } @endphp
 
                                     <li id="subject_{{isset($chapter->id)? $chapter->id: 0}}">
                                         <h3 class="mb-10 font-14 font-weight-bold">{{ $chapter->title }} <span class="total-sub-topics"><em>{{$chapter->ChapterYearTopicParts->count()}}</em> Topics</span></h3>
@@ -134,6 +133,7 @@
                                         @if($chapter->ChapterYearTopicParts->count() > 0)
                                             <div class="lms-chapter-ul-outer">
                                                 @foreach($chapter->ChapterYearTopicParts as $topicPartObj)
+                                                    @php if(!isset($topicPartObj->id)){ continue; } @endphp
                                                     @php
 
                                                         $total_completion = 0;
