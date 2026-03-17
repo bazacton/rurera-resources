@@ -35,7 +35,7 @@ $quiz_image = ($rowObj->quiz_image != '')? $rowObj->quiz_image : '/assets/defaul
             <a href="javascript:;" class="rurera-list-btn font-14">Assign</a>
         @endif
         @if (auth()->check() && auth()->user()->isUser())
-            <a href="/{{isset($url_slug)? $url_slug : 'sats'}}/{{$rowObj->quiz_slug}}" class="rurera-list-btn font-14 {{ subscriptionCheckLink('bookshelf') }}">{{$button_label}}</a>
+            <a href="/{{isset($url_slug)? $url_slug : 'sats'}}/{{$rowObj->quiz_slug}}" class="rurera-list-btn font-14 {{ subscriptionCheckLink('bookshelf') }}">{{$button_label}}1</a>
         @endif
     </div>
 </div>
