@@ -49,7 +49,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
 
-                            @php $active_question = false; $active_section_id = ''; @endphp
+                            @php $active_section = false; $active_question = false; $active_section_id = ''; @endphp
                             @if(!empty($questions_sections_layout))
 
                                 @php $section_counter = 1; @endphp
@@ -70,6 +70,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 continue;
                                             }
                                         }
+                                        $active_section = true;
                                     @endphp
 
 
@@ -1403,6 +1404,23 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
 </script>
+@if($active_section == false)
+    <script>
+    var result_id = '{{$quizAttempt->quiz_result_id}}';
+    jQuery.ajax({
+        type: "GET",
+        url: '/common/mark_result',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        dataType:'json',
+        data: {"result_id": result_id},
+        success: function (return_data) {
+            window.location.reload();
+        }
+    });
+</script>
+@endif
 <script>
     /*$(function () {
         // Get the HTML content for the popover
