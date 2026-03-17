@@ -35,7 +35,7 @@ $rand_id = rand(99,9999);
 
                         <p>You are not authorize for this page</p>
 
-                        <a href="/panel" class="btn btn-primary btn-sm mt-15">Return to Dashboard</a>
+                        <a href="/dashboard" class="btn btn-primary btn-sm mt-15">Return to Dashboard</a>
                         <div class="learning-content-quiz"></div>
 
                     </div>
