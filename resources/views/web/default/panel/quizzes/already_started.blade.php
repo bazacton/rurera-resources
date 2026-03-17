@@ -18,7 +18,6 @@
                             <p class="font-18">📘 You're already taking this test</p>
                             <p>What would you like to do?</p>
                             <button type="button" class="already-started-continue">Continue on this device</button>
-                            <button type="button" class="back-other-device exit-tab">Go back to other device</button>
                         </div>
 
                     </div>

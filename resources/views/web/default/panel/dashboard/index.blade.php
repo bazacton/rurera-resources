@@ -573,7 +573,7 @@
 											</div>
 										</div>
 										<div class="col-12 col-lg-3 mt-10 mt-lg-0 text-right resume-test">
-											<a href="/sats/{{$resultObj->parentQuiz->quiz_slug}}" data-request_type="approved" class="request-action-btn js-show-message btn btn-border-white">Resume Test</a>
+											<a href="/mock-practice/{{$resultObj->parentQuiz->quiz_slug}}" data-request_type="approved" class="request-action-btn js-show-message btn btn-border-white">Resume Test</a>
 										</div>
 									</div>
 								</div>
