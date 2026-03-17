@@ -442,7 +442,6 @@ Left SideBar-menu End
     display: flex;
     align-items: center;
     font-size: .875rem;
-    justify-content: space-between;
     width: 100%;
 }
 .rurera-tasks-actions-dropdown {
