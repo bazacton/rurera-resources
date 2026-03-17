@@ -32,7 +32,7 @@
                                     <button type="submit" class="btn btn-primary rounded-pill">{{ trans('home.find') }}</button>
                                 </div>
                                 <div class="tests-list-holder">
-                                    <ul class="tests-list">
+                                    <ul class="tests-list font-12">
                                         <li class="active">Fiction</li>
                                         <li>Non-Fiction</li>
                                         <li>Story</li>
