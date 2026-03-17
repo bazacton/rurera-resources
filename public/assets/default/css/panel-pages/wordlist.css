@@ -142,10 +142,10 @@ body .spell-question-area .question-label span {text-align: center;}
     flex-direction: column;
     display: flex;
     align-items: flex-start;
-    width: 78%;
+    width: 75%;
 }
 .spell-top-right {
-    max-width: 19%;
+    max-width: 22%;
 }
 .spell-popup-btn-holder {
     width: 100%;
@@ -197,7 +197,6 @@ body .spell-question-area .question-label span {text-align: center;}
 }
 .words-count {
     background-color: #fff;
-    text-align: center;
     display: inline-flex;
     margin: 0 0 0 12px;
     flex-direction: column-reverse;
