@@ -23,7 +23,7 @@
                         <span class="search-clear" id="clearSearch">&times;</span>
                     </div>
                     <div class="tests-list-holder">
-                        <ul class="tests-list">
+                        <ul class="tests-list font-12">
                             <li class="active">Word List</li>
                             <li>Spell Bee</li>
                         </ul>
