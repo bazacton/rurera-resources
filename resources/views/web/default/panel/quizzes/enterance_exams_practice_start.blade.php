@@ -1438,7 +1438,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         });
     },15000);
     setInterval(function(){
-        console.log(countTabs());
+        var count_tabs = countTabs();
+        if(count_tabs > 1){
+            $(".alreaduStarted").modal('show');
+        }
     },2000);
 
     if (!sessionStorage.tabId) {
@@ -1448,16 +1451,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     const tabId = sessionStorage.tabId;
 
     // Register this tab
-    localStorage.setItem("form-" + tabId, "open");
-    console.log('TAB====='+"form-" + tabId);
+    localStorage.setItem("mock_practice-" + tabId, "open");
 
     // Cleanup
     window.addEventListener("beforeunload", () => {
-        localStorage.removeItem("form-" + tabId);
+        localStorage.removeItem("mock_practice-" + tabId);
     });
 
     // Check how many tabs have form open
     function countTabs() {
-        return Object.keys(localStorage).filter(k => k.startsWith("form-")).length;
+        return Object.keys(localStorage).filter(k => k.startsWith("mock_practice-")).length;
     }
 </script>
