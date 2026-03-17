@@ -133,7 +133,6 @@
                                         @if($chapter->ChapterYearTopicParts->count() > 0)
                                             <div class="lms-chapter-ul-outer">
                                                 @foreach($chapter->ChapterYearTopicParts as $topicPartObj)
-                                                    @php pre($topicPartObj); @endphp
                                                     @php
 
                                                         $total_completion = 0;
