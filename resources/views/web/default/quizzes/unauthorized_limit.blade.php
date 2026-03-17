@@ -29,12 +29,12 @@ $rand_id = rand(99,9999);
 
 
                     <div class="learning-content-box d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
-                        <div class="learning-content-box-icon">
-                            <img src="/assets/default/img/learning/quiz.svg" alt="downloadable icon">
+                        <div class="learning-text">
+                            <h5 class="font-30 mb-10">You already have a mock test in progress ⏳</h5>
+                            <p class="font-18">Please complete or submit your current test before starting a new one.
+                            </p>
+                            <p>This helps you stay focused and ensures your test is evaluated correctly.</p>
                         </div>
-
-                        <p>You are not authorize for this page</p>
-                        <p>Please Attempt the previous pending tests first.</p>
 
                         <a href="/dashboard" class="btn btn-primary btn-sm mt-15">Return to Dashboard</a>
                         <div class="learning-content-quiz"></div>
