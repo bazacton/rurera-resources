@@ -38,7 +38,7 @@
             },
             data: {"result_id": result_id},
             success: function (return_data) {
-                //window.location.reload();
+                window.location.reload();
             }
         });
     });
