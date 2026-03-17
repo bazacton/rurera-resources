@@ -2654,6 +2654,7 @@ body:has(.question-right-side) #scroll-controls {
     right: 0;
     left: 0;
     bottom: 0;
+    z-index: 3;
 }
 .page-prev-next-controls .scroll-btn:hover {
     background-color: #ffffff;
