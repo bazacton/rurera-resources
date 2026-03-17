@@ -605,3 +605,19 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     color: #fff;
 }
 /* Rurera-Confirm-Delete Modal Style End */
+
+/* Students-Table Style Start */
+.last-activity .dropdown-menu {
+    min-width: 130px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    left: auto;
+    right: 0;
+    font-size: .875rem;
+}
+.db-members .card .list-group-item .last-activity .remove-btn img {
+    margin-right: 0;
+}
+/* Students-Table Style End */
