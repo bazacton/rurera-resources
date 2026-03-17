@@ -2,7 +2,7 @@
 $counter++;
 $lock_image = ($counter > 2)? 'lock.svg' : 'unlock.svg';
 $lock_unlock_class = ($counter > 2)? 'rurera-lock-item' : 'rurera-unlock-item';
-
+$results_count = $rowObj->parentResults()->where('user_id', auth()->user()->id)->where('status', 'waiting')->count();
 $is_passed = isset( $resultData->is_passed )? $resultData->is_passed : false;
 $in_progress = isset( $resultData->in_progress )? $resultData->in_progress : false;
 $current_status = isset( $resultData->current_status )? $resultData->current_status : '';
@@ -10,6 +10,7 @@ $button_label = ($in_progress == true)? 'Resume' :'Practice Now';
 $button_label = ($is_passed == true) ? 'Practice Again' : $button_label;
 $button_label = ($in_progress == true)? 'Resume Test' :'Take Test';
 $button_class = ($in_progress == true)? 'resume-test' :'';
+$button_label = ($results_count > 0)? 'Resume Test' : $button_label;
 $quiz_image = ($rowObj->quiz_image != '')? $rowObj->quiz_image : '/assets/default/img/assignment-logo/'.$rowObj->quiz_type.'.png';
 @endphp
 <div class="sats-listing-item">
