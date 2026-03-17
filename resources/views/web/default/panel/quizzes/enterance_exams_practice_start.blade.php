@@ -1437,4 +1437,25 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             }
         });
     },15000);
+
+
+    if (!sessionStorage.tabId) {
+        sessionStorage.tabId = Math.random().toString(36).slice(2);
+    }
+
+    const tabId = sessionStorage.tabId;
+
+    // Register this tab
+    localStorage.setItem("form-" + tabId, "open");
+    console.log('TAB====='+"form-" + tabId);
+
+    // Cleanup
+    window.addEventListener("beforeunload", () => {
+        localStorage.removeItem("form-" + tabId);
+    });
+
+    // Check how many tabs have form open
+    function countTabs() {
+        return Object.keys(localStorage).filter(k => k.startsWith("form-")).length;
+    }
 </script>
