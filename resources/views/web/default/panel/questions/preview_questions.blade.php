@@ -374,7 +374,7 @@ Here is the question to review:
                                             <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                         </a>
 
-                                        <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
+                                        <a href="javascript:;" id="question-submit-btn" class="question-submit-btn d-none rurera-hide">
                                             mark answer
                                         </a>
                                     </div>
