@@ -397,7 +397,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             <!-- Header -->
             <div class="modal-header">
                 <h5 class="modal-title font-weight-bold font-16">
-                    Session Taken Over on another Device Opened
+                    Test already open
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -406,16 +406,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             <!-- Body -->
             <div class="modal-body pt-3 font-14">
-                <p>Test switched to another device or browser.</p>
-                <p>Your test has been opened somewhere else.</p>
-                <p>👉 This session has now been paused.</p>
-                <p>If this wasn’t you, please tell the teacher or site admin right away.</p>
+                <p>This test is already open in another tab.</p>
+                <p>What would you like to do?</p>
 
             </div>
 
             <!-- Footer -->
             <div class="modal-footer border-0">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary remove-tab">Go to other tab</button>
+                <button type="button" class="btn btn-primary continue-tab" data-dismiss="modal">Continue here instead</button>
             </div>
 
         </div>
@@ -1462,4 +1461,56 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     function countTabs() {
         return Object.keys(localStorage).filter(k => k.startsWith("mock_practice-")).length;
     }
+    $(document).on("click", ".remove-tab", function (e) {
+        e.preventDefault();
+
+        // Get current tabId
+        const tabId = sessionStorage.tabId;
+
+        if (tabId) {
+            // Remove from localStorage (global tracking)
+            localStorage.removeItem("mock_practice-" + tabId);
+
+            // Remove from sessionStorage (this tab identity)
+            sessionStorage.removeItem("tabId");
+        }
+
+        // Try to close the tab
+        window.close();
+    });
+
+    $(document).on("click", ".continue-tab", function (e) {
+        e.preventDefault();
+
+        const currentTabId = sessionStorage.tabId;
+
+        // Tell all tabs which one should stay alive
+        localStorage.setItem("active-tab", currentTabId);
+
+        // Trigger event for other tabs
+        localStorage.setItem("force-close-tabs", Date.now());
+    });
+    window.addEventListener("storage", function (e) {
+
+        // Detect force close signal
+        if (e.key === "force-close-tabs") {
+
+            const activeTab = localStorage.getItem("active-tab");
+            const currentTabId = sessionStorage.tabId;
+
+            // If NOT the active tab → close نفسك 😄
+            if (currentTabId !== activeTab) {
+
+                // Cleanup
+                localStorage.removeItem("form-" + currentTabId);
+                sessionStorage.removeItem("tabId");
+
+                alert("This session is now active in another tab.");
+
+                // Try to close
+                window.close();
+
+            }
+        }
+    });
 </script>
