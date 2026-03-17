@@ -1476,7 +1476,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
 
         // Try to close the tab
-        window.close();
+        //window.close();
+        window.location.href = "/dashboard";
     });
 
 
@@ -1508,7 +1509,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 alert("This session is now active in another tab.");
 
                 // Try to close
-                window.close();
+                window.location.href = "/dashboard";
 
             }
         }
