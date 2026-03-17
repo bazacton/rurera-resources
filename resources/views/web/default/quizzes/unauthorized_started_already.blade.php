@@ -36,7 +36,7 @@ $rand_id = rand(99,9999);
                             <p>What would you like to do?</p>
                         </div>
 
-                        <a href="/dashboard" class="btn btn-primary btn-sm mt-15 already-started-continue">Continue on this device</a>
+                        <a href="javascript:;" class="btn btn-primary btn-sm mt-15 already-started-continue">Continue on this device</a>
 
 
                     </div>
