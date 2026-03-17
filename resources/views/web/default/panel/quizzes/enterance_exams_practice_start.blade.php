@@ -1465,18 +1465,53 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         e.preventDefault();
 
         // Get current tabId
-        const tabId = sessionStorage.tabId;
+        const CurrenttabId = sessionStorage.tabId;
 
-        if (tabId) {
+        if (CurrenttabId) {
             // Remove from localStorage (global tracking)
-            localStorage.removeItem("mock_practice-" + tabId);
+            localStorage.removeItem("mock_practice-" + CurrenttabId);
 
             // Remove from sessionStorage (this tab identity)
-            sessionStorage.removeItem("tabId");
+            sessionStorage.removeItem("CurrenttabId");
         }
 
         // Try to close the tab
         window.close();
+    });
+
+
+    $(document).on("click", ".continue-tab", function (e) {
+        e.preventDefault();
+
+        const currentTabId = sessionStorage.tabId;
+
+        // Tell all tabs which one should stay alive
+        localStorage.setItem("active-tab", currentTabId);
+
+        // Trigger event for other tabs
+        localStorage.setItem("force-close-tabs", Date.now());
+    });
+    window.addEventListener("storage", function (e) {
+
+        // Detect force close signal
+        if (e.key === "force-close-tabs") {
+
+            const activeTab = localStorage.getItem("active-tab");
+            const currentTabId = sessionStorage.tabId;
+
+            if (currentTabId !== activeTab) {
+
+                // Cleanup
+                localStorage.removeItem("form-" + currentTabId);
+                sessionStorage.removeItem("tabId");
+
+                alert("This session is now active in another tab.");
+
+                // Try to close
+                window.close();
+
+            }
+        }
     });
 
 </script>
