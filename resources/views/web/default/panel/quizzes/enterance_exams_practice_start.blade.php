@@ -1479,38 +1479,4 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         window.close();
     });
 
-    $(document).on("click", ".continue-tab", function (e) {
-        e.preventDefault();
-
-        const currentTabId = sessionStorage.tabId;
-
-        // Tell all tabs which one should stay alive
-        localStorage.setItem("active-tab", currentTabId);
-
-        // Trigger event for other tabs
-        localStorage.setItem("force-close-tabs", Date.now());
-    });
-    window.addEventListener("storage", function (e) {
-
-        // Detect force close signal
-        if (e.key === "force-close-tabs") {
-
-            const activeTab = localStorage.getItem("active-tab");
-            const currentTabId = sessionStorage.tabId;
-
-            // If NOT the active tab → close نفسك 😄
-            if (currentTabId !== activeTab) {
-
-                // Cleanup
-                localStorage.removeItem("form-" + currentTabId);
-                sessionStorage.removeItem("tabId");
-
-                alert("This session is now active in another tab.");
-
-                // Try to close
-                window.close();
-
-            }
-        }
-    });
 </script>
