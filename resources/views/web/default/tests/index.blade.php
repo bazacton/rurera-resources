@@ -55,7 +55,7 @@
                             <!-- Test List Filters Start -->
                             <div class="tests-list-holder">
                                 <a href="#." class="filter-mobile-btn">Filters</a>
-                                <ul class="tests-list font-14">
+                                <ul class="tests-list font-12">
                                     <li data-type="all" class="active">All Tests</li>
                                     <li data-type="sats"><img src="/assets/default/img/assignment-logo/sats.png" alt="sats"> SATs</li>
                                     <li data-type="11plus"><img src="/assets/default/img/assignment-logo/11plus.png" alt="11plus"> 11Plus</li>
@@ -179,7 +179,7 @@
                             <div class="tests-list-holder">
                                 <a href="#." class="filter-mobile-btn">Filters</a>
                                 
-                                <ul class="tests-list font-14 mb-20">
+                                <ul class="tests-list font-12 mb-20">
 
                                     <!-- Test Type -->
                                     <li class="filter-heading font-16" style="border: 0px;"><span class="icon-box">ℹ</span> Select a test type</li>
