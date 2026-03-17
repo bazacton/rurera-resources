@@ -31,9 +31,10 @@ $rand_id = rand(99,9999);
                     <div class="learning-content-box d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
 
                         <div class="learning-text">
-                            <h5 class="font-30 mb-10">Test Already Active</h5>
-                            <p class="font-18">📘 You're already taking this test</p>
-                            <p>What would you like to do?</p>
+                            <h5 class="font-30 mb-10">You already have a mock test in progress ⏳</h5>
+                            <p class="font-18">Please complete or submit your current test before starting a new one.
+                            </p>
+                            <p>This helps you stay focused and ensures your test is evaluated correctly.</p>
                         </div>
 
                         <a href="javascript:;" class="btn btn-primary btn-sm mt-15 already-started-continue">Continue on this device</a>
