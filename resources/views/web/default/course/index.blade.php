@@ -132,7 +132,7 @@
 
                                         @if($chapter->ChapterYearTopicParts->count() > 0)
                                             <div class="lms-chapter-ul-outer">
-                                                @foreach($chapter->ChapterYearTopicParts as $topicPartObj)
+                                                @foreach($chapter->ChapterYearTopicParts() as $topicPartObj)
                                                     @php if(!isset($topicPartObj->id)){ continue; } @endphp
                                                     @php
 
