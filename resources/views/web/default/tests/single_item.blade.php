@@ -24,8 +24,12 @@ $quiz_image = ($rowObj->quiz_image != '')? $rowObj->quiz_image : '/assets/defaul
         <span class="sub_label">{{$rowObj->no_of_questions}} Question(s),</span> 
         <span class="sub_label">Time:{{$rowObj->time}}m,</span> 
         <span class="sub_label">{{getQuizTypeTitle($rowObj->quiz_type)}},</span>
-        @php $TestsUserPerformanceObj = $rowObj->TestsUserPerformanceObj()->where('user_id', auth()->user()->id)->first(); @endphp
-        <span class="sub_label">Attempts:{{isset($TestsUserPerformanceObj->no_of_attempts)? $TestsUserPerformanceObj->no_of_attempts : 0}}</span>
+        @php $TestsUserPerformanceObj = $rowObj->TestsUserPerformanceObj()->where('user_id', auth()->user()->id)->first();
+        $no_of_attempts = isset($TestsUserPerformanceObj->no_of_attempts)? $TestsUserPerformanceObj->no_of_attempts : 0;
+        @endphp
+        @if($no_of_attempts > 0)
+        <span class="sub_label">Attempts:{{$no_of_attempts}}</span>
+        @endif
     @if( $rowObj->time == 10)
             <img src="/assets/default/img/stop-watch.png" alt="stop-watch" width="360" height="360">
         @endif
@@ -35,7 +39,7 @@ $quiz_image = ($rowObj->quiz_image != '')? $rowObj->quiz_image : '/assets/defaul
             <a href="javascript:;" class="rurera-list-btn font-14">Assign</a>
         @endif
         @if (auth()->check() && auth()->user()->isUser())
-            <a href="/{{isset($url_slug)? $url_slug : 'sats'}}/{{$rowObj->quiz_slug}}" class="rurera-list-btn font-14 {{ subscriptionCheckLink('bookshelf') }}">{{$button_label}}1</a>
+            <a href="/{{isset($url_slug)? $url_slug : 'sats'}}/{{$rowObj->quiz_slug}}" class="rurera-list-btn font-14 {{ subscriptionCheckLink('bookshelf') }}">{{$button_label}} -- {{$results_count}}</a>
         @endif
     </div>
 </div>
