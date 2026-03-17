@@ -1115,10 +1115,50 @@
     @endsection
 
     @push('scripts_bottom')
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="/assets/default/vendors/apexcharts/apexcharts.min.js"></script>
     <script src="/assets/default/vendors/chartjs/chart.min.js"></script>
 
+    <script>
+        $(document).ready(function () {
+
+            function formatTime(seconds) {
+                let h = Math.floor(seconds / 3600);
+                let m = Math.floor((seconds % 3600) / 60);
+                let s = seconds % 60;
+
+                return `${h}h ${m}m ${s}s`;
+            }
+
+            $('.loader-wrapper').each(function () {
+                let $el = $(this);
+
+                // Get initial time from data attribute
+                let totalSeconds = parseInt($el.attr('data-time_remaining')) || 0;
+
+                // Initialize tooltip ONCE per element
+                $el.tooltip({
+                    trigger: 'hover'
+                });
+
+                function updateTooltip() {
+                    let text = "Time remaining: " + formatTime(totalSeconds);
+
+                    $el
+                        .attr('data-original-title', text)
+                        .tooltip('update');
+
+                    if (totalSeconds > 0) {
+                        totalSeconds--;
+                    }
+                }
+
+                // Start countdown for THIS element
+                updateTooltip();
+                setInterval(updateTooltip, 1000);
+            });
+
+        });
+    </script>
     <script>
         var offlineSuccess = '';
         var $chartDataMonths = @json($monthlyChart['months']);
@@ -1225,45 +1265,3 @@ $(document).ready(function () {
 
     @endpush
     @endif
-
-<script>
-    $(document).ready(function () {
-
-        function formatTime(seconds) {
-            let h = Math.floor(seconds / 3600);
-            let m = Math.floor((seconds % 3600) / 60);
-            let s = seconds % 60;
-
-            return `${h}h ${m}m ${s}s`;
-        }
-
-        $('.loader-wrapper').each(function () {
-            let $el = $(this);
-
-            // Get initial time from data attribute
-            let totalSeconds = parseInt($el.attr('data-time_remaining')) || 0;
-
-            // Initialize tooltip ONCE per element
-            $el.tooltip({
-                trigger: 'hover'
-            });
-
-            function updateTooltip() {
-                let text = "Time remaining: " + formatTime(totalSeconds);
-
-                $el
-                    .attr('data-original-title', text)
-                    .tooltip('update');
-
-                if (totalSeconds > 0) {
-                    totalSeconds--;
-                }
-            }
-
-            // Start countdown for THIS element
-            updateTooltip();
-            setInterval(updateTooltip, 1000);
-        });
-
-    });
-</script>
