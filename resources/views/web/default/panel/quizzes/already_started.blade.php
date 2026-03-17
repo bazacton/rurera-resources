@@ -42,5 +42,8 @@
                 window.location.reload();
             }
         });
-    })
+    });
+    $(document).on("click", ".exit-tab", function (e) {
+        window.location.href = "/dashboard";
+    });
 </script>
