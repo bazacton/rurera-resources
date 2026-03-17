@@ -397,7 +397,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             <!-- Header -->
             <div class="modal-header">
                 <h5 class="modal-title font-weight-bold font-16">
-                    Already Started
+                    Session Taken Over on another Device Opened
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -406,7 +406,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             <!-- Body -->
             <div class="modal-body pt-3 font-14">
-                <p class="mb-10">Its already started on another session.</p>
+                <p>Test switched to another device or browser.</p>
+                <p>Your test has been opened somewhere else.</p>
+                <p>👉 This session has now been paused.</p>
+                <p>If this wasn’t you, please tell the teacher or site admin right away.</p>
+
             </div>
 
             <!-- Footer -->

@@ -13,13 +13,12 @@
             <div class="learning-content" id="learningPageContent">
                 <div class="d-flex align-items-center justify-content-center w-100">
                     <div class="learning-start">
-                        <div class="learning-icon">
-                            <span><img src="/assets/default/svgs/crown-simple.svg" width="111" height="80" alt=""></span>
-                        </div>
                         <div class="learning-text">
-                            <h5 class="font-30 mb-10">Already Started</h5>
-                            <p class="font-18">By Continue, the other session will be expired.</p>
-                            <button type="button" class="already-started-continue">Continue</button>
+                            <h5 class="font-30 mb-10">Test Already Active</h5>
+                            <p class="font-18">📘 You're already taking this test</p>
+                            <p>What would you like to do?</p>
+                            <button type="button" class="already-started-continue">Continue on this device</button>
+                            <button type="button" class="back-other-device exit-tab">Go back to other device</button>
                         </div>
 
                     </div>
