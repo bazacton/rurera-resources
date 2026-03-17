@@ -420,6 +420,38 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         </div>
     </div>
 </div>
+
+
+<div class="modal fade sessionTakenOver modal-md" id="sessionTakenOver" tabindex="-1" role="dialog" aria-labelledby="sessionTakenOverLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
+
+            <!-- Header -->
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-bold font-16">
+                    Test switched to another device or browser.
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body pt-3 font-14">
+                <p>Your test has been opened somewhere else.</p>
+                <p>This session has now been paused.</p>
+                <p>If this wasn’t you, please tell the teacher or site admin right away.</p>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-primary remove-tab">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
 <!-- Report Modal Html End -->
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
@@ -1435,7 +1467,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             data: {"result_id": result_id, "device_id": device_id},
             success: function (return_data) {
                 if(return_data.status == 'already_started'){
-                    $(".alreaduStarted").modal('show');
+                    $(".sessionTakenOver").modal('show');
                     return false;
                 }
             }
