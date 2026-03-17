@@ -3705,11 +3705,6 @@ body .swal2-modal {
     border-color: var(--primary);
     color: var(--primary);
 }
-.swal2-content .question-paging:hover,
-body .swal2-styled.swal2-confirm:hover {
-    background-color: var(--primary);
-    color: #fff;
-}
 body .swal2-styled.swal2-confirm,
 body .swal2-styled.swal2-cancel,
 .closePractice .modal-footer button {
@@ -3722,6 +3717,12 @@ body .swal2-styled.swal2-cancel,
     color: var(--primary);
     box-shadow: none;
     height: auto;
+}
+.swal2-content .question-paging:hover,
+body .swal2-styled.swal2-confirm,
+body .swal2-styled.swal2-confirm:hover {
+    background-color: var(--primary);
+    color: #fff;
 }
 body .swal2-styled.swal2-cancel {
     background-color: inherit;
