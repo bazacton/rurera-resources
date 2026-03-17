@@ -29,15 +29,15 @@ $rand_id = rand(99,9999);
 
 
                     <div class="learning-content-box d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
-                        <div class="learning-content-box-icon">
-                            <img src="/assets/default/img/learning/quiz.svg" alt="downloadable icon">
+
+                        <div class="learning-text">
+                            <h5 class="font-30 mb-10">Test Already Active</h5>
+                            <p class="font-18">📘 You're already taking this test</p>
+                            <p>What would you like to do?</p>
                         </div>
 
-                        <p>You are not authorize for this page</p>
-                        <p>Please Attempt the previous pending tests first.</p>
+                        <a href="/dashboard" class="btn btn-primary btn-sm mt-15 already-started-continue">Continue on this device</a>
 
-                        <a href="/dashboard" class="btn btn-primary btn-sm mt-15">Return to Dashboard</a>
-                        <div class="learning-content-quiz"></div>
 
                     </div>
                 </div>
@@ -62,6 +62,24 @@ $rand_id = rand(99,9999);
 
 <script src="/assets/default/js/parts/video_player_helpers.min.js"></script>
 <script src="/assets/learning_page/scripts.min.js?var={{$rand_id}}"></script>
-
+<script>
+    $(document).on('click', '.already-started-continue', function (evt) {
+        var result_id = '{{$result_id}}';
+        jQuery.ajax({
+            type: "POST",
+            url: '/question_attempt/already_started_continue',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: {"result_id": result_id},
+            success: function (return_data) {
+                window.location.reload();
+            }
+        });
+    });
+    $(document).on("click", ".exit-tab", function (e) {
+        window.location.href = "/dashboard";
+    });
+</script>
 
 @endpush
