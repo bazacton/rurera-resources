@@ -27,7 +27,15 @@ $correct_answer_explaination = true;//isset($correct_answer_explaination)? $corr
 $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
 @php $total_questions = 10; @endphp
-<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
+<script>
+    window.MathJax = {
+        tex: {
+            packages: {'[+]': ['ams']} // enables \boxed
+        }
+    };
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js"></script>
 <div class="content-section">
 
 
@@ -885,5 +893,23 @@ $(document).on("change, input", ".editor-field", function (e) {
 });
 $('[data-toggle="tooltip"]').tooltip({
     container: '.report-btn'
+});
+
+function renderMath(element) {
+    let html = element.innerHTML;
+
+    html = html.replace(/([^<]*\\boxed\{.*?\}[^<]*)/g, function(match) {
+        return '\\(' + match.trim() + '\\)';
+    });
+
+    element.innerHTML = html;
+
+    if (window.MathJax && MathJax.typesetPromise) {
+        MathJax.typesetPromise([element]);
+    }
+}
+
+document.querySelectorAll('.rurera-question-block').forEach(el => {
+    renderMath(el);
 });
 </script>
