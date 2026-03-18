@@ -887,6 +887,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     });
 
     function afterNoNextQuestion() {
+        alert('afterNoNextQuestion');
         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
 
         var quiz_timer_remaining = $active.find('.quiz-timer-counter').attr('data-time_counter');
@@ -917,7 +918,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         var section_move_html = `
 
-            <h2 class="fw-bold mb-15 font-16 font-weight-bold text-left">Well done! 11</h2>
+            <h2 class="fw-bold mb-15 font-16 font-weight-bold text-left">Well done! 111</h2>
 
             <div class="d-flex px-20 align-items-center gap-3 mb-20 time-left font-14">
                 <div class="border rounded px-3 py-2 bg-light">
@@ -963,6 +964,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
     function afterSectionFinish(){
+        alert('afterSectionFinish');
         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
 
         var quiz_timer_remaining = $active.find('.quiz-timer-counter').attr('data-time_counter');
@@ -1033,6 +1035,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
     function afterSectionFinishConfirm(){
+        alert('afterSectionFinishConfirm');
         var current_question_id =  $(".quiz-section-data.active").find(".quiz-pagination li.active").attr('data-question_id');
         $(".quiz-section-data.active").attr('data-section_finish_confirm', 'yes');
         $(".quiz-section-data.active").attr('data-finish-exclude_id', current_question_id);
