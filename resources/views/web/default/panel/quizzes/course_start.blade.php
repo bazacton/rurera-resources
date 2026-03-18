@@ -27,7 +27,9 @@ $correct_answer_explaination = true;//isset($correct_answer_explaination)? $corr
 $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
 @php $total_questions = 10; @endphp
+<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
 <div class="content-section">
+
 
     <section class="lms-quiz-section">
 
