@@ -478,7 +478,7 @@
             <!-- Header -->
             <div class="modal-header">
                 <h5 class="modal-title font-weight-bold font-16">
-                    Test Already Active
+                    📘 You're already taking this test
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -487,15 +487,16 @@
 
             <!-- Body -->
             <div class="modal-body pt-3 font-14">
-                <p>This test is already open in another tab.</p>
-                <p>What would you like to do?</p>
+                <p>Your test is open on another device or browser. Please return to the other device or browser to keep going.</p>
+                <p>👉 Don’t worry — your answers are safe!</p>
 
+                <p>What would you like to do?</p>
             </div>
 
             <!-- Footer -->
             <div class="modal-footer border-0">
-                <button type="button" class="btn btn-primary remove-tab">Go to other tab</button>
-                <button type="button" class="btn btn-primary continue-tab" data-dismiss="modal">Continue here instead</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary continue-tab" data-dismiss="modal">Continue on this device</button>
             </div>
 
         </div>
