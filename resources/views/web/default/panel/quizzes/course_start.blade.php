@@ -902,7 +902,7 @@ $('[data-toggle="tooltip"]').tooltip({
     console.log('wrapRawLatex');
 
     const containers = document.querySelectorAll(
-    '.question-layout, .question-explaination'
+    '.question-layout, .question-explaination, .question-layout-block'
     );
 
     containers.forEach(container => {
