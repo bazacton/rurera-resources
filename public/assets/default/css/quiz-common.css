@@ -3763,6 +3763,11 @@ body .swal2-close {
     gap: 10px;
     margin-left: 10px;
 }
+.time-left img {
+    height: 28px;
+    width: 28px;
+    margin: 0 -5px 0 -8px;
+}
 /* Swal2 Modal Style End */
 
 /* Question palette Pagination Style Start */
