@@ -1128,7 +1128,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         jQuery.ajax({
             type: "POST",
-            url: '/question_attempt/jump_section',
+            url: '/question_attempt/jump_section1',
             dataType: 'json',
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
