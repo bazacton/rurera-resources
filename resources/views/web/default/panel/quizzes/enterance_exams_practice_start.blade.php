@@ -117,17 +117,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                         </div>
 
 
-
                                         <div class="section-layout-block">
                                             {!! $section_layout !!}
-                                        </div>
 
+                                        </div>
                                         <div class="quiz-section-questions rurera-hide">
+                                            <div class="question-palette">
                                             <div class="quiz-pagination rurera-hide">
 
                                                 <ul data-section_id="{{$section_id}}">
-
-
 
                                                     @if( !empty( $questions_layout  ) )
                                                         @php $question_count  = 1; @endphp
@@ -151,6 +149,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                     @endif
                                                 </ul>
                                             </div>
+                                        </div>
+
+
                                             <div class="question-inner-step-area">
                                                 <div class="question-layout-block">
 
