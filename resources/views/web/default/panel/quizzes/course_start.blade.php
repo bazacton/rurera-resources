@@ -952,4 +952,5 @@ $('[data-toggle="tooltip"]').tooltip({
 }
 
     document.addEventListener('DOMContentLoaded', wrapRawLatex);
+wrapRawLatex();
 </script>
