@@ -66,7 +66,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                         $section_practice_time = $section_time;
                                         if($start_time > 0){
                                             $section_practice_time = get_practice_time($section_time, $start_time);
-                                            pre($section_practice_time);
                                             if($section_practice_time <= 0){
                                                 continue;
                                             }
