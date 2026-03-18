@@ -30,12 +30,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 <script>
     window.MathJax = {
         tex: {
-            packages: {'[+]': ['ams', 'enclose']}
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$']]
+        },
+        svg: {
+            fontCache: 'global'
         }
     };
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
 <div class="content-section">
 
 
@@ -894,29 +897,61 @@ $(document).on("change, input", ".editor-field", function (e) {
 $('[data-toggle="tooltip"]').tooltip({
     container: '.report-btn'
 });
+<script>
+    function wrapRawLatex() {
+    console.log('wrapRawLatex');
 
-function renderMath(element) {
-    let html = element.innerHTML;
+    const containers = document.querySelectorAll(
+    '.question-layout, .question-explaination'
+    );
 
-    // Wrap ANY LaTeX expression containing backslash commands
-    html = html.replace(/([^<]*\\[a-zA-Z]+[^<]*)/g, function(match) {
+    containers.forEach(container => {
 
-        // Avoid double wrapping
-        if (match.includes('\\(') || match.includes('\\[')) {
-            return match;
-        }
+    // 1️⃣ Normal text nodes
+    container.querySelectorAll('*:not(script):not(style)').forEach(el => {
+    if (el.children.length > 0) return;
 
-        return '\\(' + match.trim() + '\\)';
-    });
+    let text = el.textContent?.trim();
+    if (!text) return;
 
-    element.innerHTML = html;
+    // Skip already wrapped math
+    if (
+    text.includes('$$') ||
+    text.includes('\\(') ||
+    text.includes('\\[')
+    ) return;
 
-    if (window.MathJax && MathJax.typesetPromise) {
-        MathJax.typesetPromise([element]);
-    }
+    // ✅ STRICT: only real LaTeX commands
+    if (/\\[a-zA-Z]+/.test(text)) {
+    el.innerHTML = `$$${text}$$`;
+}
+});
+
+    // 2️⃣ .math-equation spans
+    container.querySelectorAll('.math-equation').forEach(el => {
+    if (el.dataset.converted) return;
+
+    let latex =
+    el.getAttribute('data-equation') ||
+    el.textContent?.trim();
+
+    if (!latex) return;
+
+    el.innerHTML = `$$${latex}$$`;
+    el.dataset.converted = 'true';
+});
+
+});
+
+    // 3️⃣ MathJax render
+    if (window.MathJax?.typesetPromise) {
+    MathJax.typesetClear(containers);
+    MathJax.typesetPromise(containers).catch(err =>
+    console.error('MathJax error:', err)
+    );
+}
 }
 
-document.querySelectorAll('.math-equation').forEach(el => {
-    renderMath(el);
-});
+    document.addEventListener('DOMContentLoaded', wrapRawLatex);
+</script>
 </script>
