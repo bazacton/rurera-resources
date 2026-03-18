@@ -582,7 +582,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         return return_string;
     }
 
-
+console.log('course_start---course_start---course_start');
     function afterNextQuestion(){
         $('.question-next-btn').addClass('rurera-hide');
         $('.question-submit-btn').removeClass('rurera-hide');
