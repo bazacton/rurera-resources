@@ -897,7 +897,6 @@ $(document).on("change, input", ".editor-field", function (e) {
 $('[data-toggle="tooltip"]').tooltip({
     container: '.report-btn'
 });
-<script>
     function wrapRawLatex() {
     console.log('wrapRawLatex');
 
@@ -953,5 +952,4 @@ $('[data-toggle="tooltip"]').tooltip({
 }
 
     document.addEventListener('DOMContentLoaded', wrapRawLatex);
-</script>
 </script>
