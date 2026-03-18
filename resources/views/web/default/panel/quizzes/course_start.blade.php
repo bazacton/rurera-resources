@@ -909,7 +909,7 @@ function renderMath(element) {
     }
 }
 
-document.querySelectorAll('.rurera-question-block').forEach(el => {
+document.querySelectorAll('.math-equation').forEach(el => {
     renderMath(el);
 });
 </script>
