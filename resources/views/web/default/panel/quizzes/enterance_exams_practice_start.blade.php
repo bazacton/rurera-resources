@@ -196,7 +196,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                             @endif
                                                         </div>
                                                         <div class="show-notifications" data-show_message="yes"></div>
-                                                        <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
+                                                        <a style="display:none;" href="javascript:;" id="question-submit-btn" class="question-submit-btn">
                                                             Mark Answer
                                                         </a>
                                                         <div id="scroll-controls" class="page-prev-next-controls pr-0">
@@ -1488,7 +1488,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 <script>
     $(document).on('change', '.rureraform-checkbox-medium', function (e) {
         var max_options = $(this).attr('data-max');
-        alert(max_options);
         max_options = rurera_is_field(max_options)? max_options : 1;
         if(max_options == 1){
             $(".question-submit-btn").click();
