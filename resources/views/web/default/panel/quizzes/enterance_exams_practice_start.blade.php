@@ -184,7 +184,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                          data-device_id="{{isset($device_id)? $device_id : 0}}" >
 <span class="questions-total-holder d-flex align-items-center mb-15 px-15 w-100">
                                                                         <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
-                                                                        Question: {{$question_counter}} / {{count($questionLayout)}}
+                                                                        Question: {{$question_counter}} / {{count($questions_layout)}}
                                                                     </span>
 
                                                                         {!! $questionLayout !!}
