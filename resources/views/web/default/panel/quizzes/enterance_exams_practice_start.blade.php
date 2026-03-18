@@ -67,6 +67,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                         if($start_time > 0){
                                             $section_practice_time = get_practice_time($section_time, $start_time);
                                             if($section_practice_time <= 0){
+                                                $section_counter++;
                                                 continue;
                                             }
                                         }
@@ -76,6 +77,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
                                         <div class="section-top-bar">
+                                            <div class="practice-title"></div>
                                             <div class="quiz-instance">
                                                 <div class="palette-content" style="display: none;">
                                                     <div class="question-palette">
