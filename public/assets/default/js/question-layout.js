@@ -216,6 +216,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
     quiz_user_data[0]['attempt'][question_id] = question_data_array;
     var qresult_id = thisBlock.attr('data-qresult');
     var qattempt_id = thisBlock.attr('data-qattempt');
+    var next_active = thisBlock.attr('data-next_active') || 'yes';
 
     QuestionSubmitRequest = jQuery.ajax({
         type: "POST",
@@ -230,6 +231,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
         data: {
+            "next_active": next_active,
             "question_id": question_id,
             "device_id": device_id,
             "question_data": question_data,

@@ -177,12 +177,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                     if($active_class == 'active'){
                                                                         $active_question = true;
                                                                     }
+                                                                    $next_active = ($question_counter == count($questions_layout))? 'no' : 'yes';
                                                                     @endphp
 
                                                                     <div class=" rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
                                                                          data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
                                                                          data-start_time="0" data-qresult="{{isset( $question_result_id )? $question_result_id : 0}}"
                                                                          data-question_no="{{$question_counter}}"
+                                                                         data-next_active="{{$next_active}}"
                                                                          data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}"
                                                                          data-device_id="{{isset($device_id)? $device_id : 0}}" >
 <span class="questions-total-holder d-flex align-items-center mb-15 px-15 w-100">
