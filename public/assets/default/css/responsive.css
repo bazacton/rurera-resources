@@ -1804,6 +1804,9 @@ Lms Responsive Style Start
     .prev-next-controls .question-next-btn {
         min-width: auto;
     }
+    .prev-next-controls .review-btn.finish-section {
+        min-width: 80px;
+    }
     #analyticsAccordion .card-body {
         padding: 1rem;
     }
