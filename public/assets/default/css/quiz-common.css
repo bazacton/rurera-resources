@@ -3762,6 +3762,7 @@ body .swal2-close {
     align-items: center;
     gap: 10px;
     margin-left: 10px;
+    white-space: nowrap;
 }
 .time-left img {
     height: 28px;
