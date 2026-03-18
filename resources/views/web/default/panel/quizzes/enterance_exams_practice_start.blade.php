@@ -122,7 +122,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                         </div>
                                         <div class="quiz-section-questions rurera-hide">
-                                            <div class="question-palette">
+
+                                            <div class="question-pagination-top">
                                             <div class="quiz-pagination rurera-hide">
 
                                                 <ul data-section_id="{{$section_id}}">
