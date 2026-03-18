@@ -475,6 +475,8 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
 
+            <input name="result_id" class="result_id" type="text" value="0">
+            <input name="target_url" class="target_url" type="text" value="">
             <!-- Header -->
             <div class="modal-header">
                 <h5 class="modal-title font-weight-bold font-16">
@@ -496,7 +498,7 @@
             <!-- Footer -->
             <div class="modal-footer border-0">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary continue-tab" data-dismiss="modal">Continue on this device</button>
+                <button type="button" class="btn btn-primary already-started-continue" >Continue on this device</button>
             </div>
 
         </div>
@@ -568,6 +570,8 @@
                 success: function (return_data) {
                     rurera_remove_loader(thisObj, 'div');
                     if(return_data.already_started_check == true){
+                        $(".target_url").val(target_url);
+                        $(".result_id").val(return_data.result_id);
                         $(".alreaduStarted").modal('show');
                     }else{
                         window.location.href = target_url;
@@ -577,6 +581,22 @@
 
         });
 
+        $(document).on('click', '.already-started-continue', function (evt) {
+            var target_url = $(".target_url").val();
+            var result_id = $(".result_id").val();
+            jQuery.ajax({
+                type: "POST",
+                url: '/question_attempt/already_started_continue',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"result_id": result_id},
+                success: function (return_data) {
+
+                    window.location.href = target_url;
+                }
+            });
+        });
 
 
         var searchRequest = null;
