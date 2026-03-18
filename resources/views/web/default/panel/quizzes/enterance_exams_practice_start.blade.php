@@ -133,6 +133,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                 </div>
                                             </div>
                                             <div class="section-title">Section: {{$section_name}}</div>
+                                            <div class="section-counter">Section {{$section_counter}}/{{count($questions_sections_layout)}}</div>
                                         </div>
 
 
