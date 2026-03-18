@@ -380,7 +380,7 @@ $started_already = isset($started_already)? $started_already : false;
                     $(".practice-start-block").addClass('rurera-hide');
                     $(".start-practice-btn").removeClass('rurera-hide');
                     return;
-                }, 5000);
+                }, 2000);
             }
 
             if (index >= messages.length) {
