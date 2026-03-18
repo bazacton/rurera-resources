@@ -1076,6 +1076,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
     $(document).on('click', '.finish-section', function (e) {
+        alert('finish-section');
         afterNoNextQuestion();
 
     });
