@@ -1551,11 +1551,12 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 			if (thisObj.attr('type') == 'checkbox') {
 				var field_name = thisObj.attr('name');
                 var minimum_selection = thisObj.attr('data-min');
+                var maximum_selection = thisObj.attr('data-max');
 				var selectedCount = thisObj.closest('.rurera-question-block').find('input[name="' + field_name + '"]:checked').length;
 				var is_field_checked = thisObj.closest('.rurera-question-block').find('input[name="' + field_name + '"]').is(':checked');
 
 
-				if (is_field_checked == false || selectedCount < minimum_selection) {
+				if (is_field_checked == false || (selectedCount < minimum_selection || selectedCount < maximum_selection)) {
 					checkbox_fields[index_no] = thisObj;
 					error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, '', 'checkbox', minimum_selection);
 					error_objects[index_no]['error_obj'] = thisObj;
