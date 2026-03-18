@@ -921,7 +921,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
             <div class="d-flex px-20 align-items-center gap-3 mb-20 time-left font-14">
                 <div class="border rounded px-3 py-2 bg-light">
-                    <span class="me-2">⏱</span>
+                    <span class="me-2">
+                        <img src="/assets/default/svgs/timer2.svg" alt="" area-hidden="true">
+                    </span>
                     <span class="fw-bold text-warning time-counter-modal">${getTimeStr(quiz_timer_remaining)}</span>
                 </div>
                 <span class="ms-2"> left</span>
