@@ -583,6 +583,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
 
+    function afterNextQuestion(){
+        $('.question-next-btn').addClass('rurera-hide');
+        $('.question-submit-btn').removeClass('rurera-hide');
+    }
     function afterQuestionValidation(return_data, thisForm, question_id, thisBlock) {
         var question_status_class = (return_data.incorrect_flag == true) ? 'incorrect' : 'correct';
         $(".quiz-pagination ul li[data-actual_question_id='" + question_id + "']").addClass(question_status_class);
