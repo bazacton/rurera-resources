@@ -471,7 +471,7 @@
     </div>
 </div>
 
-<div class="modal fade alreaduStarted modal-md" id="alreaduStarted" tabindex="-1" role="dialog" aria-labelledby="alreaduStartedLabel" aria-hidden="true">
+<div class="modal fade alreadyStarted modal-md" id="alreadyStarted" tabindex="-1" role="dialog" aria-labelledby="alreadyStartedLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
 
@@ -602,7 +602,6 @@
                     rurera_remove_loader(thisObj, 'div');
                     if (return_data.limit_reached == true) {
                         $(".limitReached").modal('show');
-
                     } else if (return_data.already_started_check == true) {
                         $(".target_url").val(target_url);
                         $(".result_id").val(return_data.result_id);
