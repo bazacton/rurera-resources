@@ -19,7 +19,7 @@
 @section('content')
 
 <div class="set-work-container rurera-choose-membership">
-    <form action="/panel/set-work/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}" method="Post" class="rurera-form-validation p-0">
+    <form action="/panel/set-work/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}" method="Post" class="rurera-form-validation p-20">
         {{ csrf_field() }}
 
         <ul class="set-work-tagss text-left rurera-hide remove-pending"></ul>
