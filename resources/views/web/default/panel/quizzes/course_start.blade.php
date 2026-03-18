@@ -672,8 +672,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".quiz-timer-counter").attr('data-time_counter', timer_counter);
             quiz_default_functions();
         }
-        $('.question-next-btn').addClass('rurera-hide');
-        $('.question-submit-btn').removeClass('rurera-hide');
+        //$('.question-next-btn').addClass('rurera-hide');
+        //$('.question-submit-btn').removeClass('rurera-hide');
     }
 
 
