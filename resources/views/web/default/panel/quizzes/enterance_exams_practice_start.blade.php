@@ -1509,7 +1509,17 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             template: '<div class="popover" role="tooltip" style="max-width: 550px;"><div class="arrow"></div><div class="popover-body p-0"></div></div>'
         });
     });*/
+    $(document).on('click', function (e) {
 
+        // If click is NOT on a popover or trigger element
+        if (
+            !$(e.target).closest('.popover').length &&
+            !$(e.target).closest('.question-status-trigger').length
+        ) {
+            $('.question-status-trigger').popover('hide');
+        }
+
+    });
     function initQuestionStatusPopover() {
 
         $('.quiz-section-data.active').find('.question-status-trigger').each(function () {
