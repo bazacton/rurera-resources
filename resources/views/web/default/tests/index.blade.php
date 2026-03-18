@@ -475,8 +475,8 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
 
-            <input name="result_id" class="result_id" type="text" value="0">
-            <input name="target_url" class="target_url" type="text" value="">
+            <input name="result_id" class="result_id" type="hidden" value="0">
+            <input name="target_url" class="target_url" type="hidden" value="">
             <!-- Header -->
             <div class="modal-header">
                 <h5 class="modal-title font-weight-bold font-16">
