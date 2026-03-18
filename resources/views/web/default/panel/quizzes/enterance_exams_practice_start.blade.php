@@ -224,7 +224,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
                                                             <a href="javascript:;" id="prev-btn" class="rurera-hide1 prev-btn">
-                                                                prev
+                                                                Previous
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
                                                             <div class="ml-auto">
