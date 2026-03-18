@@ -77,7 +77,9 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
                                         <div class="section-top-bar">
-                                            <div class="practice-title"></div>
+                                            <div class="practice-title">
+                                                {{$quiz->getTitleAttribute()}}
+                                            </div>
                                             <div class="quiz-instance">
                                                 <div class="palette-content" style="display: none;">
                                                     <div class="question-palette">
