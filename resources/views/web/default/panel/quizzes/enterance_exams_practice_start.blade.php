@@ -28,6 +28,18 @@ $correct_answer_explaination = true;//isset($correct_answer_explaination)? $corr
 $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $incorrect_answer_explaination : 0;
 @endphp
 @php $total_questions = isset($questions_list)? count($questions_list) : 0; @endphp
+<script>
+    window.MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$']]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
 <div class="content-section">
 
     <section class="lms-quiz-section">
@@ -1571,5 +1583,64 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             }
         }
     });
+
+
+
+    function wrapRawLatex() {
+        console.log('wrapRawLatex');
+
+        const containers = document.querySelectorAll(
+            '.question-layout, .question-explaination, .question-layout-block'
+        );
+
+        containers.forEach(container => {
+
+            // 1️⃣ Normal text nodes
+            container.querySelectorAll('*:not(script):not(style)').forEach(el => {
+                if (el.children.length > 0) return;
+
+                let text = el.textContent?.trim();
+                if (!text) return;
+
+                // Skip already wrapped math
+                if (
+                    text.includes('$$') ||
+                    text.includes('\\(') ||
+                    text.includes('\\[')
+                ) return;
+
+                // ✅ STRICT: only real LaTeX commands
+                if (/\\[a-zA-Z]+/.test(text)) {
+                    el.innerHTML = `$$${text}$$`;
+                }
+            });
+
+            // 2️⃣ .math-equation spans
+            container.querySelectorAll('.math-equation').forEach(el => {
+                if (el.dataset.converted) return;
+
+                let latex =
+                    el.getAttribute('data-equation') ||
+                    el.textContent?.trim();
+
+                if (!latex) return;
+
+                el.innerHTML = `$$${latex}$$`;
+                el.dataset.converted = 'true';
+            });
+
+        });
+
+        // 3️⃣ MathJax render
+        if (window.MathJax?.typesetPromise) {
+            MathJax.typesetClear(containers);
+            MathJax.typesetPromise(containers).catch(err =>
+                console.error('MathJax error:', err)
+            );
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', wrapRawLatex);
+    wrapRawLatex();
 
 </script>
