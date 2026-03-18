@@ -505,6 +505,37 @@
     </div>
 </div>
 
+
+<div class="modal fade limitReached modal-md" id="limitReached" tabindex="-1" role="dialog" aria-labelledby="limitReachedLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
+
+            <!-- Header -->
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-bold font-16">
+                    You already have a mock test in progress ⏳
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body pt-3 font-14">
+                <p>Please complete or submit your current test before starting a new one.</p>
+                <p>This helps you stay focused and ensures your test is evaluated correctly.</p>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 @endsection
 
 @push('scripts_bottom')
@@ -569,7 +600,9 @@
                 data: {"test_id": test_id},
                 success: function (return_data) {
                     rurera_remove_loader(thisObj, 'div');
-                    if(return_data.already_started_check == true){
+                    if(return_data.limit_reached == true){
+                        $(".limitReached").modal('show');
+                    }elseif(return_data.already_started_check == true){
                         $(".target_url").val(target_url);
                         $(".result_id").val(return_data.result_id);
                         $(".alreaduStarted").modal('show');
