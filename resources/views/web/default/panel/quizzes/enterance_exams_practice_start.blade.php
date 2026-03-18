@@ -1116,8 +1116,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
         var question_ids = [];
+        var question_ids_all = [];
         pendingQuestions.each(function () {
             var questionId = $(this).data('question_id');
+            question_ids_all.push(questionId);
             if(questionId != exclude_question_id){
                 question_ids.push(questionId);
             }
@@ -1131,7 +1133,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
-            data: {"qattempt_id": qattempt_id, 'question_ids': question_ids},
+            data: {"qattempt_id": qattempt_id, 'question_ids': question_ids, 'question_ids_all': question_ids_all},
             success: function (return_data) {
 
             }
