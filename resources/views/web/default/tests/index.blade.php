@@ -519,6 +519,25 @@
 
         });
 
+        $(document).on('click', '.rurera-tests-btn', function (e) {
+            var thisObj = $('.rurera-tests-btn');
+            rurera_loader(thisObj, 'div');
+            jQuery.ajax({
+                type: "GET",
+                url: '/tests/check_test_validity',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"graph_type": graph_type},
+                success: function (return_data) {
+                    rurera_remove_loader(thisObj, 'div');
+                }
+            });
+
+        });
+
+
+
         var searchRequest = null;
         $('body').on('keyup', '.search-tests', function (e) {
             rurera_loader($(".simple-table tbody"), 'div');
