@@ -1798,7 +1798,8 @@ Lms Responsive Style Start
         margin-right: 0;
     }
     .prev-next-controls .prev-btn {
-        padding-right: 35px;
+        padding-right: 20px;
+        padding-left: 25px;
         margin-right: 5px;
     }
     .prev-next-controls .question-next-btn {
@@ -1806,6 +1807,10 @@ Lms Responsive Style Start
     }
     .prev-next-controls .review-btn.finish-section {
         min-width: 80px;
+    }
+    .next-btn svg, .next-btn img, .prev-btn img {
+        width: 10px;
+        height: 10px;
     }
     #analyticsAccordion .card-body {
         padding: 1rem;
