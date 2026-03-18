@@ -600,13 +600,15 @@
                 data: {"test_id": test_id},
                 success: function (return_data) {
                     rurera_remove_loader(thisObj, 'div');
-                    if(return_data.limit_reached == true){
+                    if (return_data.limit_reached == true) {
                         $(".limitReached").modal('show');
-                    }elseif(return_data.already_started_check == true){
+
+                    } else if (return_data.already_started_check == true) {
                         $(".target_url").val(target_url);
                         $(".result_id").val(return_data.result_id);
-                        $(".alreaduStarted").modal('show');
-                    }else{
+                        $(".alreadyStarted").modal('show');
+
+                    } else {
                         window.location.href = target_url;
                     }
                 }
