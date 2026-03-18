@@ -30,7 +30,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 <script>
     window.MathJax = {
         tex: {
-            packages: {'[+]': ['ams']} // enables \boxed
+            packages: {'[+]': ['ams', 'enclose']}
         }
     };
 </script>
@@ -898,7 +898,14 @@ $('[data-toggle="tooltip"]').tooltip({
 function renderMath(element) {
     let html = element.innerHTML;
 
-    html = html.replace(/([^<]*\\boxed\{.*?\}[^<]*)/g, function(match) {
+    // Wrap ANY LaTeX expression containing backslash commands
+    html = html.replace(/([^<]*\\[a-zA-Z]+[^<]*)/g, function(match) {
+
+        // Avoid double wrapping
+        if (match.includes('\\(') || match.includes('\\[')) {
+            return match;
+        }
+
         return '\\(' + match.trim() + '\\)';
     });
 
