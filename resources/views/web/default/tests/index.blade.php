@@ -521,6 +521,7 @@
 
         $(document).on('click', '.rurera-tests-btn', function (e) {
             var thisObj = $('.rurera-tests-btn');
+            var test_id = $(this).attr('data-test_id');
             rurera_loader(thisObj, 'div');
             jQuery.ajax({
                 type: "GET",
@@ -528,7 +529,7 @@
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
-                data: {"graph_type": graph_type},
+                data: {"test_id": test_id},
                 success: function (return_data) {
                     rurera_remove_loader(thisObj, 'div');
                 }
