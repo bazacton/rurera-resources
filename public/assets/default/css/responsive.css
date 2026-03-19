@@ -1303,10 +1303,15 @@ Lms Responsive Style Start
     .subchapter-slider {padding: 0 15px;}
     .subchapter-slider .swiper-slide-active {transform: none;}
     .streak-dropdown-content {
-        left: -30px;
+        left: -12px;
         right: auto;
         transform: none;
         width: 300px;
+    }
+    .days-list .day-circle,
+    .user-profile-icons .days-list img {
+        height: 20px;
+        width: 20px;
     }
     .streak-dropdown:hover .streak-dropdown-content {
         transform: none;
