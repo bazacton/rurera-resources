@@ -490,7 +490,7 @@ input.droppable-field {
 .spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
 .spells-quiz-from .question-label span {text-align: center; line-height: 31px;}
 /*.quiz-group .rureraform-column-label {margin-bottom: 0;}*/
-.rureraform-label {font-weight: 600;}
+.rureraform-label {font-weight: 500; color: #a8a8a8;}
 .quiz-group .rureraform-column-label:has(label:empty) {display: none;}
 /* --- END: Question Label --- */
 /* ======================================================== */
