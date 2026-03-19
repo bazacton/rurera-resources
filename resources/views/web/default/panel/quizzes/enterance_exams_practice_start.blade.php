@@ -1095,6 +1095,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
     function afterQuestionActive(){
+        alert('afterQuestionActive');
         const $active = $('.rurera-question-block.active');
         var comprehension_html = $active.find('.question-comprehension-block').html();
         $(".comprehension-block").html(comprehension_html);
