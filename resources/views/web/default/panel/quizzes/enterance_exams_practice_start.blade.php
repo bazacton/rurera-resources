@@ -377,7 +377,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                         <div class="rur-setting-sub">Show Pagination</div>
                     </div>
                     <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input show-pagination-check" id="show-pagination-check">
+                        <input type="checkbox" class="custom-control-input show-pagination-check" id="show-pagination-check" checked>
                         <label class="custom-control-label" for="show-pagination-check"></label>
                     </div>
                 </div>
@@ -1343,11 +1343,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
     $(document).on('change', '.show-pagination-check', function (evt) {
 
-        var show_timer = $(this).is(':checked')? true : false;
-        $(".questions-total-holder").removeClass('rurera-hide');
+        var show_pagination = $(this).is(':checked')? true : false;
+        $(".question-pagination-top").removeClass('rurera-hide');
+        $(".bottom-pagination").removeClass('rurera-hide');
 
-        if(show_timer == false){
-            $(".questions-total-holder").addClass('rurera-hide');
+
+        if(show_pagination == false){
+            $(".question-pagination-top").addClass('rurera-hide');
+            $(".bottom-pagination").addClass('rurera-hide');
         }
     });
 
