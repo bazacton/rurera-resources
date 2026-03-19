@@ -194,9 +194,12 @@
                                     <select name="list_type" data-search-option="list_type" class="form-control "
                                             data-placeholder="Search List Type">
                                         <option value="">Select List</option>
-                                        <option value="Course">Course</option>
-                                        <option value="Mock Practice">Mock Practice</option>
-                                        <option value="Mock Exam">Mock Exam</option>
+                                        @php $checked = (get_filter_request('list_type', 'bulk_list_search') == 'Course')? 'selected' : ''; @endphp
+                                        <option value="Course" {{$checked}}>Course</option>
+                                        @php $checked = (get_filter_request('list_type', 'bulk_list_search') == 'Mock Practice')? 'selected' : ''; @endphp
+                                        <option value="Mock Practice" {{$checked}}>Mock Practice</option>
+                                        @php $checked = (get_filter_request('list_type', 'bulk_list_search') == 'Mock Exam')? 'selected' : ''; @endphp
+                                        <option value="Mock Exam" {{$checked}}>Mock Exam</option>
                                     </select>
                                 </div>
 
