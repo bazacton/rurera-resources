@@ -243,20 +243,22 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                     Next
                                                                 </a>
 
-                                                                <div class="bottom-pagination">
-                                                                    <div class="quiz-instance">
-                                                                        <div class="palette-content" style="display: none;">
-                                                                            <div class="question-palette">
-                                                                                <div class="quiz-pagination rurera-hide">
 
-                                                                                    <ul data-section_id="{{$section_id}}">
+                                                            </div>
+                                                            <div class="bottom-pagination">
+                                                                <div class="quiz-instance">
+                                                                    <div class="palette-content" style="display: none;">
+                                                                        <div class="question-palette">
+                                                                            <div class="quiz-pagination rurera-hide">
+
+                                                                                <ul data-section_id="{{$section_id}}">
 
 
 
-                                                                                        @if( !empty( $questions_layout  ) )
-                                                                                            @php $question_count  = 1; @endphp
-                                                                                            @foreach( $questions_layout as $result_question_id => $questionLayout)
-                                                                                                @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
+                                                                                    @if( !empty( $questions_layout  ) )
+                                                                                        @php $question_count  = 1; @endphp
+                                                                                        @foreach( $questions_layout as $result_question_id => $questionLayout)
+                                                                                            @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
                                                                 $question_result_id = isset($result_question_ids[$result_question_id])? $result_question_ids[$result_question_id] : 0;
                                                             $active_class = ($active_question_id == $active_actual_question_id)? '' : '';
                                                             $active_class = ($active_class == '' && $question_count == 1)? 'active' : '';
@@ -264,22 +266,21 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                             $question_status = in_array($question_result_id, $already_attempted_questions)? 'attempted' : $question_status;
                                                             $is_flagged = false;
                                                             $active_section_id = ($active_class == 'active')? $section_id : $active_section_id;
-                                                                                                @endphp
-                                                                                                <li data-question_counter="{{$question_count}}" data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$question_status}} {{$active_class}} {{ ( $is_flagged == true)?
+                                                                                            @endphp
+                                                                                            <li data-question_counter="{{$question_count}}" data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$question_status}} {{$active_class}} {{ ( $is_flagged == true)?
                                                'has-flag' : ''}} "><a
-                                                                                                            href="javascript:;">
-                                                                                                        {{$question_count}}</a></li>
+                                                                                                        href="javascript:;">
+                                                                                                    {{$question_count}}</a></li>
 
-                                                                                                @php $question_count++; @endphp
-                                                                                            @endforeach
-                                                                                        @endif
-                                                                                    </ul>
-                                                                                </div>
+                                                                                            @php $question_count++; @endphp
+                                                                                        @endforeach
+                                                                                    @endif
+                                                                                </ul>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="question-status question-status-trigger">
-                                                                            Question <span>1</span>/{{count($questions_layout)}} &#9662;
-                                                                        </div>
+                                                                    </div>
+                                                                    <div class="question-status question-status-trigger">
+                                                                        Question <span>1</span>/{{count($questions_layout)}} &#9662;
                                                                     </div>
                                                                 </div>
                                                             </div>
