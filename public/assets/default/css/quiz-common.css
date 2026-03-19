@@ -3885,6 +3885,9 @@ body .swal2-close {
     margin: 0 0 25px;
     width: 100%;
 }
+.quiz-section-data .quiz-section-questions {
+    padding-top: 50px;
+}
 .section-left-top {
     display: inline-flex;
     align-items: center;
