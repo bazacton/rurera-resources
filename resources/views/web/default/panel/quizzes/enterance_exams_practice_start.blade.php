@@ -84,10 +84,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                             }
                                         }
                                         $active_section = true;
+                                    $is_last_section = 'no';
+                                    $is_last_section = ($section_counter == count($questions_sections_layout))? 'yes' : $is_last_section;
                                     @endphp
 
 
-                                    <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
+                                    <div class="quiz-section-data rurera-hide" data-is_last_section="{{$is_last_section}}" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
                                         <div class="section-top-bar">
                                             <div class="section-left-top">
                                                 <button class="close-practice" type="button"><span aria-hidden="true">×</span></button>
@@ -1155,6 +1157,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         var exclude_question_id = $active.attr('data-finish-exclude_id');
         var current_section_id = $active.attr('data-section_id');
+
+        var is_last_section = $active.attr('data-is_last_section');
         const $next = $active.next('.quiz-section-data');
 
 
@@ -1183,7 +1187,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
-            data: {"qattempt_id": qattempt_id, 'question_ids': question_ids, 'question_ids_all': question_ids_all},
+            data: {"is_last_section" : is_last_section, "qattempt_id": qattempt_id, 'question_ids': question_ids, 'question_ids_all': question_ids_all},
             success: function (return_data) {
 
             }
