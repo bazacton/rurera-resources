@@ -234,17 +234,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 Previous
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
-                                                            <div class="ml-auto">
-                                                                <a href="javascript:;" class="review-btn finish-section rurera-hide mr-10 ml-auto">
-                                                                    Finish Section
-                                                                    <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-                                                                </a>
-                                                                <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1 ml-auto">
-                                                                    Next
-                                                                </a>
-
-
-                                                            </div>
                                                             <div class="bottom-pagination">
                                                                 <div class="quiz-instance">
                                                                     <div class="palette-content" style="display: none;">
@@ -284,6 +273,18 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div class="ml-auto">
+                                                                <a href="javascript:;" class="review-btn finish-section rurera-hide mr-10 ml-auto">
+                                                                    Finish Section
+                                                                    <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                                                                </a>
+                                                                <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1 ml-auto">
+                                                                    Next
+                                                                </a>
+
+
+                                                            </div>
+
 
                                                         </div>
                                                     </div>
