@@ -3845,6 +3845,7 @@ body .swal2-close {
     text-decoration: none;
 }
 .question-palette .quiz-pagination .attempted a {
+    background-color: var(--primary);
     box-shadow: 0 0 0 2px #fff inset;
 }
 .question-palette .quiz-pagination .not-attempted a {
