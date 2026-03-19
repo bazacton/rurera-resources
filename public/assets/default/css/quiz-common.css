@@ -3802,6 +3802,8 @@ body .swal2-close {
     filter: drop-shadow(0 -4px 2px rgba(0, 0, 0, 0.05));
 } */
 .bs-popover-top .question-palette::after {
+    content: "";
+    position: absolute;
     top: 100%;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
@@ -3823,14 +3825,14 @@ body .swal2-close {
     width: auto;
 }
 .question-palette .quiz-pagination li a {
-    width: 45px;
-    height: 45px;
+    width: 29px;
+    height: 29px;
     background-color: var(--primary);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
     transition: all 0.2s ease-in-out;
