@@ -3772,11 +3772,12 @@ body .swal2-close {
     margin: 0 0 25px;
     position: fixed;
     left: 0;
-    padding: 20px 25px;
+    padding: 12px 25px;
     background-color: #fff;
     z-index: 2;
     top: 0;
     border-bottom: 2px solid #ddd;
+    width: 100%;
 }
 .quiz-instance .question-status {
     display: inline-block;
@@ -3875,14 +3876,6 @@ body .swal2-close {
 }
 .question-palette .quiz-pagination li.incorrect:not(.active) a:hover {
     background-color: #f8f9fa;
-}
-.section-top-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 0 25px;
-    width: 100%;
 }
 .quiz-section-data .quiz-section-questions {
     padding-top: 60px;
