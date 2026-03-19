@@ -89,31 +89,33 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
                                         <div class="section-top-bar">
-                                            <div class="practice-title">
-                                                {{$quiz->getTitleAttribute()}}
+                                            <div class="section-left-top">
+                                                <div class="test-title">
+                                                    {{$quiz->getTitleAttribute()}}
+                                                </div>
+                                                <div class="section-title">Section: {{$section_name}}</div>
+                                                <div class="section-counter">Section {{$section_counter}}/{{count($questions_sections_layout)}}</div>
                                             </div>
 
-
-                                            <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
-
-                                                <div class="quiz-time-bar">
-                                                    <div class="timer-wrap">
-                                                        <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
-                                                        <div class="quiz-timer-counter" data-time_counter="{{($section_practice_time)}}">
-                                                            <div class="time-box" id="hh">00</div>
-                                                            <span class="colon">:</span>
-                                                            <div class="time-box" id="mm">00</div>
-                                                            <span class="colon">:</span>
-                                                            <div class="time-box" id="ss">00</div>
+                                            <div class="section-right-top">
+                                                <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
+                                                    <div class="quiz-time-bar">
+                                                        <div class="timer-wrap">
+                                                            <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
+                                                            <div class="quiz-timer-counter" data-time_counter="{{($section_practice_time)}}">
+                                                                <div class="time-box" id="hh">00</div>
+                                                                <span class="colon">:</span>
+                                                                <div class="time-box" id="mm">00</div>
+                                                                <span class="colon">:</span>
+                                                                <div class="time-box" id="ss">00</div>
+                                                            </div>
                                                         </div>
+                                                        <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
+                                                            <img src="/assets/default/svgs/setting.svg" alt="setting">
+                                                        </button>
                                                     </div>
-                                                    <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
-                                                        <img src="/assets/default/svgs/setting.svg" alt="setting">
-                                                    </button>
                                                 </div>
                                             </div>
-                                            <div class="section-title">Section: {{$section_name}}</div>
-                                            <div class="section-counter">Section {{$section_counter}}/{{count($questions_sections_layout)}}</div>
                                         </div>
 
 
