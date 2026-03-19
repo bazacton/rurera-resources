@@ -3779,7 +3779,6 @@ body .swal2-close {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: inline-block;
     margin-top: 0;
-    width: 100%;
 }
 .question-palette::after {
     content: '';
