@@ -130,6 +130,9 @@ Left SideBar-menu Start
 .notification-card .notification-title {text-transform: capitalize;}
 .notification-card:hover button {color: #fff; background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-size: 1rem 1rem;}
 .notification-card button {-webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
+.notification-card .loader-wrapper .spinner {height: 20px; width: 20px;}
+.notification-card .loader-wrapper .spinner circle {stroke: #fff;}
+.notification-card .loader-wrapper {position: absolute; top: 50%; transform: translateY(-50%); right: 20px; opacity: 0; visibility: hidden;}
 .panel-sidebar .container {padding: 0;}
 .sidebar-logo {display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px;}
 .sidebar-logo img {max-width: 50px; object-fit: contain;}
