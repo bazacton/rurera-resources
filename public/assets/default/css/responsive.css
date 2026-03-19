@@ -891,14 +891,8 @@ Lms Responsive Style Start
     .lms-client-description p.font-16 {font-size: 16px !important;}
     .container-fluid.read-quiz-content {padding-left: 15px; padding-right: 15px;}
     .panel-sidebar .sidebar-menu {padding-left: 15px;}
-    .panel-content .rurera-books-listing .listing-card {
-        padding: 0 30px 25px;
-        margin: 0 -30px 20px;
-    }
-    .rurera-books-listing .listing-card .img-holder {
-        height: auto;
-        margin: 0 0 15px;
-    }
+    .panel-content .rurera-books-listing .listing-card {padding: 0 30px 25px; margin: 0 -30px 20px;}
+    .rurera-books-listing .listing-card .img-holder {height: auto; margin: 0 0 15px;}
     .listing-card .btn-holder,
     .book-percentage {position: initial;transform: none;margin-top: 20px;}
     body .lms-quiz-section .question-area,
