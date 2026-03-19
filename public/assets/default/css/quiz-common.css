@@ -1732,7 +1732,7 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
+    background-color: var(--primary);
     border-radius: 3px;
 }
 .questions-total-holder {
