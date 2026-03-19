@@ -11,7 +11,7 @@ $have_images_class = ($have_images == 'yes')? 'lms-checkbox-img'.' image-'.$imag
 <div class="checkbox-element">
     <div class="rureraform-column-label"><label class="rureraform-label">{{$elementObj->label}}</label></div>
     <div class="rureraform-column-input">
-        <div class="rureraform-input">
+        <div class="rureraform-input font-14">
             <div class="form-box {{$have_images_class}} {{$elementObj->template_style}} {{isset( $elementObj->list_style )? $elementObj->list_style : ''}} {{isset( $elementObj->template_alignment )? $elementObj->template_alignment : ''}} {{isset( $elementObj->image_size )? $elementObj->image_size : ''}}">
 
 
