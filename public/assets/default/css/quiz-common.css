@@ -333,7 +333,7 @@ input.droppable-field {
 .form-box {position: relative;}
 .form-field input[type="checkbox"] {position: absolute; left: 0; top: 0; opacity: 0;}
 .form-field label,
-.api-questions-form .option-group {background-color: #fff; border: 2px solid #ddd; cursor: pointer; border-bottom-width: 4px; border-radius: 8px; position: relative; padding: 12px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: 22px; display: inline-flex; align-items: center;}
+.api-questions-form .option-group {background-color: #fff; border: 2px solid #ddd; cursor: pointer; border-bottom-width: 4px; border-radius: 8px; position: relative; padding: 12px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: 22px; display: inline-flex; align-items: center; font-size: .813rem;}
 .form-field input[type="checkbox"] ~ label {min-height: 52px; text-align: left;}
 .form-field input[type="checkbox"]:checked ~ label:after {opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 .row-fields.lms-checkbox-img label {padding: 5px;}
@@ -1294,7 +1294,7 @@ body mjx-container[display] {
 .alphabet-list-style .field-holder:has(input),
 .alphabet-list-style .form-field:has(input){padding-left: 0;}
 .alphabet-list-style .field-holder:before,
-.alphabet-list-style .form-field:before {content: counter(listStyle, lower-alpha); position: absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; border-radius: 2px; color: #999; margin-top: -12px; z-index: 1; display: inline-flex; justify-content: center; align-items: center; pointer-events: none;}
+.alphabet-list-style .form-field:before {content: counter(listStyle, lower-alpha); position: absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; border-radius: 2px; color: #999; margin-top: -12px; z-index: 1; display: inline-flex; justify-content: center; align-items: center; pointer-events: none; font-size: .813rem;}
 .alphabet-list-style .form-field input[type="checkbox"] ~ label {padding-left: 45px;}
 .alphabet-list-style .lms-radio-select.image-right .field-holder input[type="radio"] ~ label,
 .numeric-list-style .lms-radio-select .field-holder label,
