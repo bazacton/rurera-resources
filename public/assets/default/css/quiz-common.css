@@ -347,10 +347,10 @@ input.droppable-field {
 .lms-checkbox-img .form-field.wrong label:before {border-color: #ff4a4a;}
 .active-option label,
 .form-field label:hover,
-.form-field input[type="checkbox"]:checked ~ label {
+/* .form-field input[type="checkbox"]:checked ~ label {
     color: #8fc963;
     border-color: #72af45;
-}
+} */
 /* --- END: Multi Response List --- */
 /* ======================================================== */
 
@@ -1311,7 +1311,7 @@ body mjx-container[display] {
 .alphabet-list-style .lms-radio-select.image-right .field-holder label:before {left: 40px;}
 .alphabet-list-style .active-option.form-field:before,
 .alphabet-list-style .form-field:hover:before,
-.form-field:has(input[type="checkbox"]:checked):before {border-color: #72af45; color: #fff; background-color: #8fc963; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;}
+.form-field:has(input[type="checkbox"]:checked):before {border-color: var(--primary); color: #fff; background-color: var(--primary); -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;}
 .rurera-in-row.image-right.numeric-list-style .form-field label {justify-content: flex-start;}
 /* --- END: Quistions Type Alphabet-list --- */
 /* ======================================================== */
