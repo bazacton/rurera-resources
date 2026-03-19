@@ -117,6 +117,17 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                     </div>
                                                 </div>
                                             </div>
+
+                                        </div>
+
+
+                                        <div class="section-layout-block">
+                                            {!! $section_layout !!}
+
+                                        </div>
+                                        <div class="quiz-section-questions rurera-hide">
+
+
                                             <div class="question-pagination-top">
                                                 <div class="question-palette">
                                                     <div class="quiz-pagination rurera-hide">
@@ -147,17 +158,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-
-
-                                        <div class="section-layout-block">
-                                            {!! $section_layout !!}
-
-                                        </div>
-                                        <div class="quiz-section-questions rurera-hide">
-
-
-
 
                                             <div class="question-inner-step-area">
                                                 <div class="question-layout-block">
