@@ -834,19 +834,17 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
         if( return_data.is_complete == true) {
             var quiz_result_id = return_data.result_id;
-            $(".quiz-complete").html(return_data.result_page_layout);
+            /*$(".quiz-complete").html(return_data.result_page_layout);
             $(".quiz-status-bar").addClass('rurera-hide');
             $(".questions-nav-controls").addClass('rurera-hide');
             $(".show-notifications").addClass('rurera-hide');
             $(".quiz-pagination").addClass('rurera-hide');
             $(".section-top-bar").addClass('rurera-hide');
 
-
             $(".rurera-question-block").removeClass('active');
             $("body").removeClass('quiz-area-page');
             $(".quiz-complete").show();
-            TimerActive = false;
-            //window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
+            TimerActive = false;*/
         }
 
         if(practice_with_review_check == true){
