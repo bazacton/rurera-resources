@@ -1191,6 +1191,19 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             data: {"is_last_section" : is_last_section, "qattempt_id": qattempt_id, 'question_ids': question_ids, 'question_ids_all': question_ids_all},
             success: function (return_data) {
 
+                if(is_last_section == 'yes'){
+                    $(".quiz-complete").html(return_data);
+                    $(".quiz-status-bar").addClass('rurera-hide');
+                    $(".questions-nav-controls").addClass('rurera-hide');
+                    $(".show-notifications").addClass('rurera-hide');
+                    $(".quiz-pagination").addClass('rurera-hide');
+                    $(".section-top-bar").addClass('rurera-hide');
+
+                    $(".rurera-question-block").removeClass('active');
+                    $("body").removeClass('quiz-area-page');
+                    $(".quiz-complete").show();
+                    TimerActive = false;
+                }
             }
         });
 
