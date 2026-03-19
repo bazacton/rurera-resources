@@ -186,6 +186,22 @@
                             </div>
                         </div>
 
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="input-label">List Type</label>
+                                <div class="select-holder">
+                                    <select name="list_type" data-search-option="list_type" class="form-control "
+                                            data-placeholder="Search List Type">
+                                        <option value="">Select List</option>
+                                        <option value="Course">Course</option>
+                                        <option value="Mock Practice">Mock Practice</option>
+                                        <option value="Mock Exam">Mock Exam</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label>Subjects</label>
