@@ -851,7 +851,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
             $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
         }else{
-            //$(".question-area-block").find('.question-next-btn').click();
+            $(".question-area-block").find('.question-next-btn').click();
         }
         //$('#ne0xt-btn')[0].click();
     }
