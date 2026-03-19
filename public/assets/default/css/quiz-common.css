@@ -3808,6 +3808,7 @@ body .swal2-close {
 }
 .question-palette .quiz-pagination li {
     margin: 4px;
+    width: auto;
 }
 .question-palette .quiz-pagination li a {
     width: 45px;
