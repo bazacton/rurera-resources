@@ -1713,9 +1713,6 @@ body:has(.type-practice) .question-layout-block .prev-next-controls,
     align-items: center;
     justify-content: center;
     font-size: 1.6rem;
-    position: absolute;
-    right: 15px;
-    top: 15px;
     height: 20px;
 }
 /* --- END: Quiz popover Style --- */
