@@ -45,7 +45,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     <section class="lms-quiz-section">
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$total_questions}}">
-            
             <button class="close-practice" type="button"><span aria-hidden="true">&times;</span></button>
             <div class="justify-content-center w-100">
                 <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
@@ -89,6 +88,34 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
+                                        <div class="section-top-bar">
+                                            <div class="practice-title">
+                                                {{$quiz->getTitleAttribute()}}
+                                            </div>
+
+
+                                            <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
+
+                                                <div class="quiz-time-bar">
+                                                    <div class="timer-wrap">
+                                                        <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
+                                                        <div class="quiz-timer-counter" data-time_counter="{{($section_practice_time)}}">
+                                                            <div class="time-box" id="hh">00</div>
+                                                            <span class="colon">:</span>
+                                                            <div class="time-box" id="mm">00</div>
+                                                            <span class="colon">:</span>
+                                                            <div class="time-box" id="ss">00</div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
+                                                        <img src="/assets/default/svgs/setting.svg" alt="setting">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="section-title">Section: {{$section_name}}</div>
+                                            <div class="section-counter">Section {{$section_counter}}/{{count($questions_sections_layout)}}</div>
+                                        </div>
+
 
                                         <div class="section-layout-block">
                                             {!! $section_layout !!}
@@ -191,7 +218,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 Finish
                                                                 <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                                                             </a>
-                                                            
+
                                                             <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
                                                                 Next
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
@@ -249,7 +276,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -822,7 +849,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".question-area-block").find('.question-submit-btn').addClass('rurera-hide');
             $(".question-area-block").find('.question-next-btn').removeClass('rurera-hide');
         }else{
-            $(".question-area-block").find('.question-next-btn').click();
+            //$(".question-area-block").find('.question-next-btn').click();
         }
         //$('#ne0xt-btn')[0].click();
     }
@@ -1460,6 +1487,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 <script>
     $(document).on('change', '.rureraform-checkbox-medium', function (e) {
+        var min_options = $(this).attr('data-min');
         var max_options = $(this).attr('data-max');
         max_options = rurera_is_field(max_options)? max_options : 1;
         if(max_options == 1){
