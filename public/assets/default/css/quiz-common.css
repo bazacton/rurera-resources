@@ -3883,6 +3883,7 @@ body .swal2-close {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 0 25px;
+    width: 100%;
 }
 .section-left-top {
     display: inline-flex;
