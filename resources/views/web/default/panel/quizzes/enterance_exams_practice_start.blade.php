@@ -1345,12 +1345,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
         var show_pagination = $(this).is(':checked')? true : false;
         $(".question-pagination-top").removeClass('rurera-hide');
-        $(".bottom-pagination").removeClass('rurera-hide');
+        //$(".bottom-pagination").removeClass('rurera-hide');
 
 
         if(show_pagination == false){
             $(".question-pagination-top").addClass('rurera-hide');
-            $(".bottom-pagination").addClass('rurera-hide');
+            //$(".bottom-pagination").addClass('rurera-hide');
         }
     });
 
