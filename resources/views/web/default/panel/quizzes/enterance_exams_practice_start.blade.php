@@ -1490,7 +1490,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 <script>
     $(document).on('change', '.rureraform-checkbox-medium', function (e) {
 
-        var $group = $(this).closest('.question-container'); // adjust if needed
+        var $group = $(this).closest('.rureraform-input'); // adjust if needed
 
         var min_options = parseInt($(this).attr('data-min')) || 0;
         var max_options = parseInt($(this).attr('data-max')) || 1;
