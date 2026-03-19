@@ -1049,6 +1049,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".quiz-section-data.active").find(".question-status span").html(current_question_counter);
 
         initQuestionStatusPopover();
+
+        afterQuestionActive();
     }
     function afterNextQuestion(){
         focusIntervalCount = 240;
