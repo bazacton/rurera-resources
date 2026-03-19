@@ -98,7 +98,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                             </div>
 
                                             <div class="section-right-top">
-                                                <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
+                                                <div class="quiz-status-bar rurera-hide">
                                                     <div class="quiz-time-bar">
                                                         <div class="timer-wrap">
                                                             <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
