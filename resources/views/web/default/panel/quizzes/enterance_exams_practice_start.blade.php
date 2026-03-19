@@ -45,7 +45,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     <section class="lms-quiz-section">
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$total_questions}}">
-            <button class="close-practice" type="button"><span aria-hidden="true">&times;</span></button>
+
             <div class="justify-content-center w-100">
                 <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
 
@@ -90,6 +90,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
                                         <div class="section-top-bar">
                                             <div class="section-left-top">
+                                                <button class="close-practice" type="button"><span aria-hidden="true">&times;</span></button>
                                                 <div class="test-title">
                                                     <h3>{{$quiz->getTitleAttribute()}}</h3>
                                                 </div>
