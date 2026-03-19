@@ -3857,4 +3857,17 @@ body .swal2-close {
 .question-palette .quiz-pagination li.incorrect:not(.active) a:hover {
     background-color: #f8f9fa;
 }
+.section-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 25px;
+}
+.section-left-top {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 /* Question palette Pagination Style Start */
