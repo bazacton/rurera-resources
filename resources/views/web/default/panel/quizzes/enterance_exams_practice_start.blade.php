@@ -90,12 +90,12 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                     <div class="quiz-section-data rurera-hide" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
                                         <div class="section-top-bar">
                                             <div class="section-left-top">
-                                                <button class="close-practice" type="button"><span aria-hidden="true">&times;</span></button>
+                                                <button class="close-practice" type="button"><span aria-hidden="true">×</span></button>
                                                 <div class="test-title">
-                                                    <h3>{{$quiz->getTitleAttribute()}}</h3>
+                                                    <h5>{{$quiz->getTitleAttribute()}}</h5>
                                                 </div>
-                                                <div class="section-title">Section: {{$section_name}}</div>
-                                                <div class="section-counter">Section {{$section_counter}}/{{count($questions_sections_layout)}}</div>
+                                                <div class="section-title font-14">- Section: {{$section_name}}</div>
+                                                <div class="section-counter font-14">- Section {{$section_counter}}/{{count($questions_sections_layout)}}</div>
                                             </div>
 
                                             <div class="section-right-top">
@@ -184,6 +184,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                          data-start_time="0" data-qresult="{{isset( $question_result_id )? $question_result_id : 0}}"
                                                                          data-question_no="{{$question_counter}}"
                                                                          data-next_active="{{$next_active}}"
+                                                                         data-mark_complete="no"
                                                                          data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}"
                                                                          data-device_id="{{isset($device_id)? $device_id : 0}}" >
 <span class="questions-total-holder d-flex align-items-center mb-15 px-15 w-100">
