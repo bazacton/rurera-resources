@@ -117,6 +117,36 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="question-pagination-top">
+                                                <div class="question-palette">
+                                                    <div class="quiz-pagination rurera-hide">
+
+                                                        <ul data-section_id="{{$section_id}}">
+
+                                                            @if( !empty( $questions_layout  ) )
+                                                                @php $question_count  = 1; @endphp
+                                                                @foreach( $questions_layout as $result_question_id => $questionLayout)
+                                                                    @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
+                                                                $question_result_id = isset($result_question_ids[$result_question_id])? $result_question_ids[$result_question_id] : 0;
+                                                            $active_class = ($active_question_id == $active_actual_question_id)? '' : '';
+                                                            $active_class = ($active_class == '' && $question_count == 1)? 'active' : '';
+                                                            $question_status = '';
+                                                            $question_status = in_array($question_result_id, $already_attempted_questions)? 'attempted' : $question_status;
+                                                            $is_flagged = false;
+                                                            $active_section_id = ($active_class == 'active')? $section_id : $active_section_id;
+                                                                    @endphp
+                                                                    <li data-question_counter="{{$question_count}}" data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$question_status}} {{$active_class}} {{ ( $is_flagged == true)?
+                                               'has-flag' : ''}} "><a
+                                                                                href="javascript:;">
+                                                                            {{$question_count}}</a></li>
+
+                                                                    @php $question_count++; @endphp
+                                                                @endforeach
+                                                            @endif
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
 
@@ -126,36 +156,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                         </div>
                                         <div class="quiz-section-questions rurera-hide">
 
-                                            <div class="question-pagination-top">
-                                                <div class="question-palette">
-                                            <div class="quiz-pagination rurera-hide">
 
-                                                <ul data-section_id="{{$section_id}}">
-
-                                                    @if( !empty( $questions_layout  ) )
-                                                        @php $question_count  = 1; @endphp
-                                                        @foreach( $questions_layout as $result_question_id => $questionLayout)
-                                                            @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
-                                                                $question_result_id = isset($result_question_ids[$result_question_id])? $result_question_ids[$result_question_id] : 0;
-                                                            $active_class = ($active_question_id == $active_actual_question_id)? '' : '';
-                                                            $active_class = ($active_class == '' && $question_count == 1)? 'active' : '';
-                                                            $question_status = '';
-                                                            $question_status = in_array($question_result_id, $already_attempted_questions)? 'attempted' : $question_status;
-                                                            $is_flagged = false;
-                                                            $active_section_id = ($active_class == 'active')? $section_id : $active_section_id;
-                                                            @endphp
-                                                            <li data-question_counter="{{$question_count}}" data-question_id="{{$question_result_id}}" data-actual_question_id="{{$result_question_id}}" class="{{$question_status}} {{$active_class}} {{ ( $is_flagged == true)?
-                                               'has-flag' : ''}} "><a
-                                                                        href="javascript:;">
-                                                                    {{$question_count}}</a></li>
-
-                                                            @php $question_count++; @endphp
-                                                        @endforeach
-                                                    @endif
-                                                </ul>
-                                            </div>
-                                                </div>
-                                        </div>
 
 
                                             <div class="question-inner-step-area">
@@ -368,6 +369,16 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                     <div class="custom-control custom-switch">
                         <input type="checkbox" class="custom-control-input show-timer-check" id="show-timer-check">
                         <label class="custom-control-label" for="show-timer-check"></label>
+                    </div>
+                </div>
+                <div class="rur-setting-row">
+                    <div class="rur-setting-text">
+                        <div class="rur-setting-title">Pagination</div>
+                        <div class="rur-setting-sub">Show Pagination</div>
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input show-pagination-check" id="show-pagination-check" checked>
+                        <label class="custom-control-label" for="show-pagination-check"></label>
                     </div>
                 </div>
             </div>
@@ -833,19 +844,17 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
         if( return_data.is_complete == true) {
             var quiz_result_id = return_data.result_id;
-            $(".quiz-complete").html(return_data.result_page_layout);
+            /*$(".quiz-complete").html(return_data.result_page_layout);
             $(".quiz-status-bar").addClass('rurera-hide');
             $(".questions-nav-controls").addClass('rurera-hide');
             $(".show-notifications").addClass('rurera-hide');
             $(".quiz-pagination").addClass('rurera-hide');
             $(".section-top-bar").addClass('rurera-hide');
 
-
             $(".rurera-question-block").removeClass('active');
             $("body").removeClass('quiz-area-page');
             $(".quiz-complete").show();
-            TimerActive = false;
-            //window.location.href = '/panel/quizzes/' + quiz_result_id + '/check_answers';
+            TimerActive = false;*/
         }
 
         if(practice_with_review_check == true){
@@ -1334,11 +1343,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
     $(document).on('change', '.show-pagination-check', function (evt) {
 
-        var show_timer = $(this).is(':checked')? true : false;
-        $(".questions-total-holder").removeClass('rurera-hide');
+        var show_pagination = $(this).is(':checked')? true : false;
+        $(".question-pagination-top").removeClass('rurera-hide');
+        //$(".bottom-pagination").removeClass('rurera-hide');
 
-        if(show_timer == false){
-            $(".questions-total-holder").addClass('rurera-hide');
+
+        if(show_pagination == false){
+            $(".question-pagination-top").addClass('rurera-hide');
+            //$(".bottom-pagination").addClass('rurera-hide');
         }
     });
 
