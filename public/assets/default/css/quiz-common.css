@@ -3801,6 +3801,9 @@ body .swal2-close {
     border-bottom: 12px solid white;
     filter: drop-shadow(0 -4px 2px rgba(0, 0, 0, 0.05));
 } */
+ .bottom-pagination {
+    margin-left: auto;
+}
 .bs-popover-top .question-palette::after {
     content: "";
     position: absolute;
