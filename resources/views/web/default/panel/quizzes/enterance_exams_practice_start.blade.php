@@ -49,7 +49,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             <div class="justify-content-center w-100">
                 <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
 
-                    <div class="question-step quiz-complete" style="display:none">
+                    <div class="question-step quiz-complete-full" style="display:none">
 
                         <div class="step-block">Test Completed!!!</div>
 
@@ -234,17 +234,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                 Previous
                                                                 <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                                             </a>
-                                                            <div class="ml-auto">
-                                                                <a href="javascript:;" class="review-btn finish-section rurera-hide mr-10 ml-auto">
-                                                                    Finish Section
-                                                                    <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-                                                                </a>
-                                                                <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1 ml-auto">
-                                                                    Next
-                                                                </a>
-
-
-                                                            </div>
                                                             <div class="bottom-pagination">
                                                                 <div class="quiz-instance">
                                                                     <div class="palette-content" style="display: none;">
@@ -284,6 +273,18 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div class="ml-auto">
+                                                                <a href="javascript:;" class="review-btn finish-section rurera-hide mr-10 ml-auto">
+                                                                    Finish Section
+                                                                    <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                                                                </a>
+                                                                <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide1 ml-auto">
+                                                                    Next
+                                                                </a>
+
+
+                                                            </div>
+
 
                                                         </div>
                                                     </div>
@@ -1184,7 +1185,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         jQuery.ajax({
             type: "POST",
             url: '/question_attempt/jump_section',
-            dataType: 'json',
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
@@ -1192,7 +1192,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             success: function (return_data) {
 
                 if(is_last_section == 'yes'){
-                    $(".quiz-complete").html(return_data);
+                    $(".quiz-complete-full").html(return_data);
                     $(".quiz-status-bar").addClass('rurera-hide');
                     $(".questions-nav-controls").addClass('rurera-hide');
                     $(".show-notifications").addClass('rurera-hide');
@@ -1201,7 +1201,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                     $(".rurera-question-block").removeClass('active');
                     $("body").removeClass('quiz-area-page');
-                    $(".quiz-complete").show();
+                    $(".quiz-complete-full").show();
                     TimerActive = false;
                 }
             }
