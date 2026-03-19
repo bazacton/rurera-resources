@@ -179,9 +179,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                         $active_question = true;
                                                                     }
                                                                     $next_active = ($question_counter == count($questions_layout))? 'no' : 'yes';
+                                                                    $question_class = '';
+                                                                    $question_class .= ($question_counter == 1)? 'comprehension-question' : '';
                                                                     @endphp
 
-                                                                    <div class=" rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
+                                                                    <div class=" {{$question_class}} rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
                                                                          data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
                                                                          data-start_time="0" data-qresult="{{isset( $question_result_id )? $question_result_id : 0}}"
                                                                          data-question_no="{{$question_counter}}"
@@ -194,6 +196,14 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                         Question: {{$question_counter}} of {{count($questions_layout)}}
                                                                     </span>
 
+                                                                        @if($question_counter == 1)
+                                                                            <div class="comprehension-block">
+                                                                                <h3>What is Lorem Ipsum?</h3>
+                                                                                <p>
+                                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                                                </p>
+                                                                            </div>
+                                                                        @endif
                                                                         {!! $questionLayout !!}
 
                                                                     </div>
@@ -522,6 +532,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             <!-- Footer -->
             <div class="modal-footer border-0">
                 <button type="button" class="btn btn-primary remove-tab">Close</button>
+                <button type="button" class="btn btn-primary already-started-continue" >Continue on this device</button>
             </div>
 
         </div>
@@ -1669,6 +1680,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         // Trigger event for other tabs
         localStorage.setItem("force-close-tabs", Date.now());
     });
+
+
+
+
+
     window.addEventListener("storage", function (e) {
 
         // Detect force close signal
@@ -1689,7 +1705,20 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
     });
 
-
+    $(document).on('click', '.already-started-continue', function (evt) {
+        var result_id = '{{$quizAttempt->quiz_result_id}}';
+        jQuery.ajax({
+            type: "POST",
+            url: '/question_attempt/already_started_continue',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: {"result_id": result_id},
+            success: function (return_data) {
+                window.location.reload();
+            }
+        });
+    });
 
     function wrapRawLatex() {
         console.log('wrapRawLatex');
