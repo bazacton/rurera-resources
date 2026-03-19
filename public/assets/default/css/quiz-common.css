@@ -1580,7 +1580,7 @@ body mjx-container[display] {
 
 .submit-btn,
 .question-submit-btn,
-.question-next-btn {border: 1px solid #8fc963; border-radius: 5px; padding: 0 40px; height: 55px; color: #ffff;font-weight: 500; text-transform: uppercase;}
+.question-next-btn {border: 1px solid #8fc963; border-radius: 5px; padding: 0 40px; height: 55px; color: #ffff;font-weight: 500; }
 .question-submit-btn.submit-btn,
 .question-next-btn.submit-btn,
 .question-submit-btn,
