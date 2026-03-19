@@ -217,6 +217,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
     var qresult_id = thisBlock.attr('data-qresult');
     var qattempt_id = thisBlock.attr('data-qattempt');
     var next_active = thisBlock.attr('data-next_active') || 'yes';
+    var mark_complete = thisBlock.attr('data-mark_complete') || 'yes';
 
     QuestionSubmitRequest = jQuery.ajax({
         type: "POST",
@@ -232,6 +233,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
         },
         data: {
             "next_active": next_active,
+            "mark_complete": mark_complete,
             "question_id": question_id,
             "device_id": device_id,
             "question_data": question_data,
