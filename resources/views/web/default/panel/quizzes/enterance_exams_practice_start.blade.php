@@ -45,35 +45,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     <section class="lms-quiz-section">
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$total_questions}}">
-            <div class="section-top-bar">
-            <div class="practice-title">
-                <button class="close-practice" type="button"><span aria-hidden="true">&times;</span></button>
-                {{$quiz->getTitleAttribute()}}
-            </div>
-
-
-            <div class="quiz-status-bar mb-md-50 mt-15 rurera-hide">
-
-                <div class="quiz-time-bar">
-                    <div class="timer-wrap">
-                        <span class="time-label"><img src="/assets/default/svgs/time-past.svg" alt="time-past"></span>
-                        <div class="quiz-timer-counter" data-time_counter="{{($section_practice_time)}}">
-                            <div class="time-box" id="hh">00</div>
-                            <span class="colon">:</span>
-                            <div class="time-box" id="mm">00</div>
-                            <span class="colon">:</span>
-                            <div class="time-box" id="ss">00</div>
-                        </div>
-                    </div>
-                    <button type="button" data-toggle="modal" class="setting-modal-btn" data-target="#rurSettingsModal" fdprocessedid="oan7zr">
-                        <img src="/assets/default/svgs/setting.svg" alt="setting">
-                    </button>
-                </div>
-            </div>
-            <div class="section-title">Section: {{$section_name}}</div>
-            <div class="section-counter">Section {{$section_counter}}/{{count($questions_sections_layout)}}</div>
-        </div>
             
+            <button class="close-practice" type="button"><span aria-hidden="true">&times;</span></button>
             <div class="justify-content-center w-100">
                 <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
 
