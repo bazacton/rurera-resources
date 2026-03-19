@@ -1173,8 +1173,6 @@ body:has(.quiz-topbar) {overflow: hidden;overflow-y: auto;scrollbar-gutter: stab
 }
 body mjx-container[display] {
     padding: 0;
-    margin: 0;
-    display: inline-block;
     width: auto;
     font-size: 13px;
 }
@@ -3793,7 +3791,7 @@ body .swal2-close {
     display: inline-block;
     margin-top: 0;
 }
-.question-palette::after {
+/* .question-palette::after {
     content: '';
     position: absolute;
     top: -10px;
@@ -3805,7 +3803,7 @@ body .swal2-close {
     border-right: 12px solid transparent;
     border-bottom: 12px solid white;
     filter: drop-shadow(0 -4px 2px rgba(0, 0, 0, 0.05));
-}
+} */
 .bs-popover-top .question-palette::after {
     top: 100%;
     border-left: 12px solid transparent;
@@ -3885,6 +3883,10 @@ body .swal2-close {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 0 25px;
+    width: 100%;
+}
+.quiz-section-data .quiz-section-questions {
+    padding-top: 60px;
 }
 .section-left-top {
     display: inline-flex;
