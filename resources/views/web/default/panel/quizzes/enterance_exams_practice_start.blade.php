@@ -49,7 +49,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             <div class="justify-content-center w-100">
                 <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
 
-                    <div class="question-step quiz-complete" style="display:none">
+                    <div class="question-step quiz-complete-full" style="display:none">
 
                         <div class="step-block">Test Completed!!!</div>
 
@@ -1192,7 +1192,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             success: function (return_data) {
 
                 if(is_last_section == 'yes'){
-                    $(".quiz-complete").html(return_data);
+                    $(".quiz-complete-full").html(return_data);
                     $(".quiz-status-bar").addClass('rurera-hide');
                     $(".questions-nav-controls").addClass('rurera-hide');
                     $(".show-notifications").addClass('rurera-hide');
@@ -1201,7 +1201,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                     $(".rurera-question-block").removeClass('active');
                     $("body").removeClass('quiz-area-page');
-                    $(".quiz-complete").show();
+                    $(".quiz-complete-full").show();
                     TimerActive = false;
                 }
             }
