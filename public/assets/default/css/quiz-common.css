@@ -1344,7 +1344,7 @@ body mjx-container[display] {
 /* ======================================================== */
 /* [49] pagination Learn Practice */
 /* --- START: pagination Learn Practice --- */
-.quiz-pagination {position: relative; padding: 0; margin: 0; max-width: 600px; }
+.quiz-pagination {position: relative; padding: 0; margin: 0; max-width: 100%; }
 .quiz-pagination .swiper-container {margin-top: 0; padding: 0;}
 .quiz-pagination .swiper-button-next,
 .quiz-pagination .swiper-button-prev{width: 25px; height: 25px; background-color:transparent; border-radius:100%; text-align: center; margin-top: -8px; left: 0px;}
@@ -3783,6 +3783,7 @@ body .swal2-close {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: inline-block;
     margin-top: 0;
+    width: 100%;
 }
 .question-palette::after {
     content: '';
@@ -3804,7 +3805,7 @@ body .swal2-close {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 550px;
+    max-width: 100%;
 }
 .question-palette .quiz-pagination li {
     margin: 4px;
