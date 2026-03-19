@@ -1489,12 +1489,20 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 <script>
     $(document).on('change', '.rureraform-checkbox-medium', function (e) {
-        var min_options = $(this).attr('data-min');
-        var max_options = $(this).attr('data-max');
-        max_options = rurera_is_field(max_options)? max_options : 1;
-        if(max_options == 1){
+
+        var $group = $(this).closest('.question-container'); // adjust if needed
+
+        var min_options = parseInt($(this).attr('data-min')) || 0;
+        var max_options = parseInt($(this).attr('data-max')) || 1;
+
+        // count checked checkboxes in same group
+        var checkedCount = $group.find('.rureraform-checkbox-medium:checked').length;
+
+        // condition: within min and max
+        if (checkedCount >= min_options && checkedCount <= max_options) {
             $(".question-submit-btn").click();
         }
+
     });
 </script>
 
