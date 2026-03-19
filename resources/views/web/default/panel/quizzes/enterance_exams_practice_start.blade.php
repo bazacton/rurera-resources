@@ -1098,6 +1098,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         alert('afterQuestionActive');
         const $active = $(".quiz-section-data.active").find(".rurera-question-block.active");
         var comprehension_html = $active.find('.question-comprehension-block').html();
+        alert(comprehension_html);
         $(".comprehension-block").html(comprehension_html);
     }
 
