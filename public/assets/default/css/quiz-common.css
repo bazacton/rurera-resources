@@ -3779,6 +3779,9 @@ body .swal2-close {
 .quiz-instance .question-status {
     display: inline-block;
 }
+.question-pagination-top {
+    margin-bottom: 15px;
+}
 .question-palette {
     position: relative;
     background-color: white;
