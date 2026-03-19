@@ -3870,4 +3870,7 @@ body .swal2-close {
     flex-wrap: wrap;
     gap: 15px;
 }
+.section-right-top .quiz-status-bar {
+    margin-bottom: 0;
+}
 /* Question palette Pagination Style Start */
