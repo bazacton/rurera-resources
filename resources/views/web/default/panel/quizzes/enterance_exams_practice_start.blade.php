@@ -91,7 +91,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                         <div class="section-top-bar">
                                             <div class="section-left-top">
                                                 <div class="test-title">
-                                                    {{$quiz->getTitleAttribute()}}
+                                                    <h3>{{$quiz->getTitleAttribute()}}</h3>
                                                 </div>
                                                 <div class="section-title">Section: {{$section_name}}</div>
                                                 <div class="section-counter">Section {{$section_counter}}/{{count($questions_sections_layout)}}</div>
