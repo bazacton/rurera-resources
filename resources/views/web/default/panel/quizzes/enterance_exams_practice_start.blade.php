@@ -371,6 +371,16 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                         <label class="custom-control-label" for="show-timer-check"></label>
                     </div>
                 </div>
+                <div class="rur-setting-row">
+                    <div class="rur-setting-text">
+                        <div class="rur-setting-title">Pagination</div>
+                        <div class="rur-setting-sub">Show Pagination</div>
+                    </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input show-pagination-check" id="show-pagination-check">
+                        <label class="custom-control-label" for="show-pagination-check"></label>
+                    </div>
+                </div>
             </div>
 
             <div class="modal-footer d-flex justify-content-end">
