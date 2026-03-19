@@ -1544,13 +1544,11 @@ body mjx-container[display] {
 
 .prev-btn,
 .next-btn {min-width: auto; padding: 0 18px; position: relative;}
-.prev-next-controls .prev-btn {
-    padding: 0 18px 0 50px;
-}
 .prev-next-controls .prev-btn img {
     left: 10px;
     right: auto;
     transform: scale(-1);
+    display: none;
 }
 .review-btn svg,
 .prev-btn svg,
@@ -3778,6 +3776,7 @@ body .swal2-close {
     background-color: #fff;
     z-index: 2;
     top: 0;
+    border-bottom: 2px solid #ddd;
 }
 .quiz-instance .question-status {
     display: inline-block;
