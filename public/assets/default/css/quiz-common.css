@@ -3808,6 +3808,8 @@ body .swal2-close {
     content: "";
     position: absolute;
     top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-top: 12px solid white;
@@ -3830,8 +3832,8 @@ body .swal2-close {
 .question-palette .quiz-pagination li a {
     width: 29px;
     height: 29px;
-    background-color: var(--primary);
-    color: white;
+    background-color: #fff;
+    color: var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;
