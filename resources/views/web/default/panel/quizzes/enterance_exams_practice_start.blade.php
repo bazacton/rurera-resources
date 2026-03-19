@@ -960,7 +960,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     });
 
     function afterNoNextQuestion() {
-        alert('afterNoNextQuestion');
+        //alert('afterNoNextQuestion');
         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
 
         var quiz_timer_remaining = $active.find('.quiz-timer-counter').attr('data-time_counter');
@@ -1037,7 +1037,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
     function afterSectionFinish(){
-        alert('afterSectionFinish');
+        //alert('afterSectionFinish');
         const $active = $('.rurera-question-block.active').closest('.quiz-section-data.active');
 
         var quiz_timer_remaining = $active.find('.quiz-timer-counter').attr('data-time_counter');
@@ -1108,7 +1108,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
     function afterSectionFinishConfirm(){
-        alert('afterSectionFinishConfirm');
+        //alert('afterSectionFinishConfirm');
         var current_question_id =  $(".quiz-section-data.active").find(".quiz-pagination li.active").attr('data-question_id');
         $(".quiz-section-data.active").attr('data-section_finish_confirm', 'yes');
         $(".quiz-section-data.active").attr('data-finish-exclude_id', current_question_id);
@@ -1149,7 +1149,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     }
 
     $(document).on('click', '.finish-section', function (e) {
-        alert('finish-section');
+        //alert('finish-section');
         afterNoNextQuestion();
 
     });
@@ -1190,7 +1190,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             },
             data: {"is_last_section" : is_last_section, "qattempt_id": qattempt_id, 'question_ids': question_ids, 'question_ids_all': question_ids_all},
             success: function (return_data) {
-
                 if(is_last_section == 'yes'){
                     $(".quiz-complete-full").html(return_data);
                     $(".quiz-status-bar").addClass('rurera-hide');
