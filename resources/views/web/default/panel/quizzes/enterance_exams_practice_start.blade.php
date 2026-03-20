@@ -1131,7 +1131,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             .find('.quiz-pagination li')
             .not('.correct, .attempted');
 
-        var buttonsHTML = '<div class="d-flex justify-content-center gap-3 mb-5">';
+        var buttonsHTML = '<div class="d-flex gap-3 mb-5 flex-wrap justify-content-start">';
 
         pendingQuestions.each(function () {
             var questionId = $(this).data('question_id');
