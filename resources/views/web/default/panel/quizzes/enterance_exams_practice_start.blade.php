@@ -1160,7 +1160,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                 Now is a great time to check your answers and to try to answer the
                 following questions that you've skipped:
             </p>
-            <div class="d-flex justify-content-start px-10 gap-3 mb-5 flex-wrap">
+            <div class="d-flex justify-content-start px-0 gap-3 mb-5 flex-wrap">
                 ${buttonsHTML}
             </div>
 
