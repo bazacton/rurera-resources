@@ -442,71 +442,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
                                                         <div class="question-shell">
                                                             <div class="question-content" id="rightQuestionContent">
-                                                                <div class="question-number">Question 01</div>
-                                                                <div class="question-heading">
-                                                                    Which two sentences best show that Clara is observant and thoughtful?
-                                                                </div>
-                                                                <div class="question-instruction">Select two options.</div>
 
-                                                                <div class="options-wrap">
-                                                                    <div class="option-item">
-                                                                        <label class="option-label">
-                                                                            <input type="checkbox" name="q1" />
-                                                                            <div class="option-text">
-                                                                                <span class="option-prefix">A.</span>
-                                                                                She noticed when a shop had changed the arrangement of its window display.
-                                                                            </div>
-                                                                        </label>
-                                                                    </div>
 
-                                                                    <div class="option-item">
-                                                                        <label class="option-label">
-                                                                            <input type="checkbox" name="q1" />
-                                                                            <div class="option-text">
-                                                                                <span class="option-prefix">B.</span>
-                                                                                She ran faster than most children in the playground.
-                                                                            </div>
-                                                                        </label>
-                                                                    </div>
 
-                                                                    <div class="option-item">
-                                                                        <label class="option-label">
-                                                                            <input type="checkbox" name="q1" />
-                                                                            <div class="option-text">
-                                                                                <span class="option-prefix">C.</span>
-                                                                                She remembered the names of old songs that her grandfather whistled.
-                                                                            </div>
-                                                                        </label>
-                                                                    </div>
 
-                                                                    <div class="option-item">
-                                                                        <label class="option-label">
-                                                                            <input type="checkbox" name="q1" />
-                                                                            <div class="option-text">
-                                                                                <span class="option-prefix">D.</span>
-                                                                                She disliked walking past the old house at the end of the lane.
-                                                                            </div>
-                                                                        </label>
-                                                                    </div>
-
-                                                                    <div class="option-item">
-                                                                        <label class="option-label">
-                                                                            <input type="checkbox" name="q1" />
-                                                                            <div class="option-text">
-                                                                                <span class="option-prefix">E.</span>
-                                                                                She preferred loud places and busy streets to quiet ones.
-                                                                            </div>
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="mt-3">
-                                                                    <p><strong>Hint:</strong> Look for details that show careful noticing and memory, not speed or preference.</p>
-                                                                    <p>This extra content is added so the right panel can overflow and use the same Scroll More / Scroll Up logic as the left panel.</p>
-                                                                    <p>When the content is taller than the visible area, the button will appear. If the panel becomes tall enough after window resize, the button will hide automatically.</p>
-                                                                    <p>You can also drag the divider between the columns. After dragging, both panels recalculate whether they still need the scroll buttons.</p>
-                                                                    <p>This keeps the behaviour the same on both sides.</p>
-                                                                </div>
                                                             </div>
 
                                                             <div class="question-scroll-controls" id="rightControls">
@@ -528,12 +467,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                     </div>
 
 
-
-
-
-
-
-                                
 
 
                                     <div class="quiz-section-data rurera-hide" data-is_last_section="{{$is_last_section}}" data-section_counter="{{$section_counter}}" data-section_id="{{$section_id}}">
@@ -1545,10 +1478,13 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         const $active = $(".quiz-section-data.active").find(".rurera-question-block.active");
         var comprehension_html = '';
         $(".quiz-section-data.active").removeClass('comprehension-layout');
+        $('.question-content').html('');
         if($active.find('.question-comprehension-block').length > 0) {
             $activeSection.addClass('comprehension-layout');
             comprehension_html = $active.find('.question-comprehension-block').html();
+            $('.question-content').html($active.html());
         }
+        $(".story-body").html(comprehension_html);
         $(".comprehension-block").html(comprehension_html);
     }
 
