@@ -3846,6 +3846,22 @@ body .swal2-close {
     transition: all 0.2s ease-in-out;
     user-select: none;
     text-decoration: none;
+    position: relative;
+}
+.question-palette .quiz-pagination .attempted.active a {
+    background-color: var(--primary);
+    color: #fff;
+}
+.question-palette .quiz-pagination .attempted.active a:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 94%;
+    width: 94%;
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 2px;
+    transform: translate(-50%, -50%);
 }
 .question-palette .quiz-pagination .attempted a {
     background-color: var(--primary);
