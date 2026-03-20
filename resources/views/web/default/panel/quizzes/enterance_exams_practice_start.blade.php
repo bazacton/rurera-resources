@@ -1482,7 +1482,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         if($active.find('.question-comprehension-block').length > 0) {
             $activeSection.addClass('comprehension-layout');
             comprehension_html = $active.find('.question-comprehension-block').html();
-            $('.question-content').html($active.html());
+            $('.question-content').html($active.prop('outerHTML'));
         }
         $(".story-body").html(comprehension_html);
         $(".comprehension-block").html(comprehension_html);
