@@ -3904,8 +3904,22 @@ body .swal2-close {
 .question-palette .quiz-pagination li.incorrect:not(.active) a:hover {
     background-color: #f8f9fa;
 }
-.quiz-section-data .quiz-section-questions {
+
+.comprehension-block,
+.quiz-section-questions {
     padding-top: 60px;
+    padding-right: 15px;
+    width: 50%;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+}
+.quiz-section-questions {
+    padding-left: 15px;
+    padding-right: 0;
+}
+.quiz-section-questions .rurera-in-row .form-field {
+    width: 100%;
 }
 .section-left-top {
     display: inline-flex;
