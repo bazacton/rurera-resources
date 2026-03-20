@@ -40,6 +40,329 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-svg.js" defer></script>
+
+
+
+
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: #f5f6f8;
+        font-family: Arial, sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    :root {
+        --topbar-height: 70px;
+    }
+
+    .top-quiz-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: var(--topbar-height);
+        background: #ffffff;
+        border-bottom: 1px solid #dfe3e8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        padding: 0 20px;
+    }
+
+    .top-quiz-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #222;
+        text-align: center;
+    }
+
+    .app-wrap {
+        width: 100%;
+        height: 100vh;
+        padding: calc(var(--topbar-height) + 12px) 12px 12px;
+    }
+
+    .split-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border: 1px solid #d9dee5;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #edf1f5;
+        position: relative;
+    }
+
+    .pane {
+        height: 100%;
+        min-width: 220px;
+        padding: 14px;
+        overflow: hidden;
+    }
+
+    .pane-left {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+
+    .pane-right {
+        flex: 1 1 auto;
+        min-width: 220px;
+    }
+
+    .divider {
+        width: 12px;
+        min-width: 12px;
+        position: relative;
+        cursor: col-resize;
+        flex: 0 0 12px;
+        background: transparent;
+        z-index: 5;
+    }
+
+    .divider::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        background: #c8ced6;
+        transition: all 0.2s ease;
+    }
+
+    .divider:hover::before,
+    .divider.active::before {
+        width: 4px;
+        background: #007bff;
+        box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.12);
+    }
+
+    .story-card,
+    .question-card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        border: 1px solid #dfe3e8;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .story-title,
+    .question-titlebar {
+        flex: 0 0 auto;
+        padding: 14px 18px;
+        border-bottom: 1px solid #ebedf0;
+        background: #fafbfc;
+        font-size: 18px;
+        font-weight: 700;
+        color: #222;
+    }
+
+    .story-body,
+    .question-content {
+        flex: 1 1 auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 18px;
+        line-height: 1.8;
+        font-size: 15px;
+        color: #333;
+        scroll-behavior: smooth;
+        min-height: 0;
+    }
+
+    .story-body p {
+        margin-bottom: 16px;
+    }
+
+    .story-controls,
+    .question-scroll-controls {
+        flex: 0 0 auto;
+        padding: 12px 18px;
+        border-top: 1px solid #ebedf0;
+        background: #fafbfc;
+        text-align: center;
+    }
+
+    .story-controls.hidden,
+    .question-scroll-controls.hidden {
+        display: none;
+    }
+
+    .right-inner {
+        width: 600px;
+        max-width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .scroll-btn {
+        min-width: 130px;
+    }
+
+    .question-shell {
+        position: relative;
+        flex: 1 1 auto;
+        min-height: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .question-number {
+        font-size: 14px;
+        font-weight: 700;
+        color: #6c757d;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+    }
+
+    .question-heading {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.35;
+        color: #222;
+        margin-bottom: 10px;
+    }
+
+    .question-instruction {
+        font-size: 15px;
+        color: #6c757d;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .options-wrap {
+        margin-bottom: 16px;
+    }
+
+    .option-item {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .option-label {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        padding: 14px 16px;
+        border: 1px solid #dfe3e8;
+        border-radius: 8px;
+        background: #fff;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        user-select: none;
+    }
+
+    .option-label:hover {
+        border-color: #007bff;
+        background: #f8fbff;
+    }
+
+    .option-item input {
+        margin-top: 4px;
+        margin-right: 12px;
+        transform: scale(1.15);
+        flex: 0 0 auto;
+    }
+
+    .option-text {
+        flex: 1 1 auto;
+        font-size: 15px;
+        line-height: 1.5;
+        color: #222;
+    }
+
+    .option-prefix {
+        font-weight: 700;
+        margin-right: 6px;
+    }
+
+    .option-item input:checked + .option-text {
+        color: #0056b3;
+        font-weight: 600;
+    }
+
+    .question-footer {
+        flex: 0 0 auto;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+        border-top: 1px solid #ebedf0;
+        background: #fafbfc;
+    }
+
+    .pagination-serial {
+        font-size: 15px;
+        font-weight: 700;
+        color: #495057;
+        text-align: center;
+        min-width: 90px;
+    }
+
+    .footer-btn {
+        min-width: 110px;
+    }
+
+    @media (max-width: 991px) {
+        html, body {
+            overflow: auto;
+        }
+
+        .top-quiz-bar {
+            position: sticky;
+        }
+
+        .app-wrap {
+            height: auto;
+            min-height: 100vh;
+            padding-top: 12px;
+        }
+
+        .split-wrapper {
+            height: auto;
+            display: block;
+        }
+
+        .pane,
+        .pane-left,
+        .pane-right {
+            width: 100% !important;
+            min-width: 100%;
+            height: auto;
+        }
+
+        .divider {
+            display: none;
+        }
+
+        .story-card,
+        .question-card {
+            height: 520px;
+            margin-bottom: 14px;
+        }
+    }
+</style>
+
 <div class="content-section">
 
     <section class="lms-quiz-section">
@@ -62,7 +385,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
 
-                            
+
 
                             <div class="container-fluid app-wrap">
                                 <div class="split-wrapper" id="splitWrapper">
