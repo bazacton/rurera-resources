@@ -3758,6 +3758,9 @@ body .swal2-close {
     width: 28px;
     margin: 0 -5px 0 -8px;
 }
+.swal2-content .question-paging {
+    min-width: 55px;
+}
 /* Swal2 Modal Style End */
 
 /* Question palette Pagination Style Start */
