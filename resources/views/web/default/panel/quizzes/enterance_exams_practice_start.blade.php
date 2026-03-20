@@ -61,6 +61,133 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
 
+
+                            
+
+                            <div class="container-fluid app-wrap">
+                                <div class="split-wrapper" id="splitWrapper">
+
+                                    <!-- Left Column -->
+                                    <div class="pane pane-left" id="leftPane">
+                                        <div class="story-card">
+                                            <div class="story-title">Story Passage</div>
+                                            <div class="story-body" id="leftContent"></div>
+                                            <div class="story-controls" id="leftControls">
+                                                <button type="button" class="btn btn-primary scroll-btn" id="leftBtn">Scroll More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Divider -->
+                                    <div class="divider" id="divider"></div>
+
+                                    <!-- Right Column -->
+                                    <div class="pane pane-right" id="rightPane">
+                                        <div class="right-inner">
+                                            <div class="question-card">
+                                                <div class="question-titlebar text-center">MCQ Question</div>
+
+                                                <div class="question-shell">
+                                                    <div class="question-content" id="rightQuestionContent">
+                                                        <div class="question-number">Question 01</div>
+                                                        <div class="question-heading">
+                                                            Which two sentences best show that Clara is observant and thoughtful?
+                                                        </div>
+                                                        <div class="question-instruction">Select two options.</div>
+
+                                                        <div class="options-wrap">
+                                                            <div class="option-item">
+                                                                <label class="option-label">
+                                                                    <input type="checkbox" name="q1" />
+                                                                    <div class="option-text">
+                                                                        <span class="option-prefix">A.</span>
+                                                                        She noticed when a shop had changed the arrangement of its window display.
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="option-item">
+                                                                <label class="option-label">
+                                                                    <input type="checkbox" name="q1" />
+                                                                    <div class="option-text">
+                                                                        <span class="option-prefix">B.</span>
+                                                                        She ran faster than most children in the playground.
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="option-item">
+                                                                <label class="option-label">
+                                                                    <input type="checkbox" name="q1" />
+                                                                    <div class="option-text">
+                                                                        <span class="option-prefix">C.</span>
+                                                                        She remembered the names of old songs that her grandfather whistled.
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="option-item">
+                                                                <label class="option-label">
+                                                                    <input type="checkbox" name="q1" />
+                                                                    <div class="option-text">
+                                                                        <span class="option-prefix">D.</span>
+                                                                        She disliked walking past the old house at the end of the lane.
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="option-item">
+                                                                <label class="option-label">
+                                                                    <input type="checkbox" name="q1" />
+                                                                    <div class="option-text">
+                                                                        <span class="option-prefix">E.</span>
+                                                                        She preferred loud places and busy streets to quiet ones.
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="mt-3">
+                                                            <p><strong>Hint:</strong> Look for details that show careful noticing and memory, not speed or preference.</p>
+                                                            <p>This extra content is added so the right panel can overflow and use the same Scroll More / Scroll Up logic as the left panel.</p>
+                                                            <p>When the content is taller than the visible area, the button will appear. If the panel becomes tall enough after window resize, the button will hide automatically.</p>
+                                                            <p>You can also drag the divider between the columns. After dragging, both panels recalculate whether they still need the scroll buttons.</p>
+                                                            <p>This keeps the behaviour the same on both sides.</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="question-scroll-controls" id="rightControls">
+                                                        <button type="button" class="btn btn-primary scroll-btn" id="rightBtn">Scroll More</button>
+                                                    </div>
+
+                                                    <div class="question-footer">
+                                                        <button type="button" class="btn btn-outline-primary footer-btn">Previous</button>
+                                                        <div class="pagination-serial">1 / 10</div>
+                                                        <button type="button" class="btn btn-primary footer-btn">Next</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             @php $active_section = false; $active_question = false; $active_section_id = ''; @endphp
                             @if(!empty($questions_sections_layout))
 
