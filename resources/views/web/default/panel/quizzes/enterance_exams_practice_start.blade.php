@@ -195,10 +195,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                          data-mark_complete="no"
                                                                          data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}"
                                                                          data-device_id="{{isset($device_id)? $device_id : 0}}" >
-<span class="questions-total-holder d-flex align-items-center mb-15 px-15 w-100">
-                                                                        <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
-                                                                        Question: {{$question_counter}} of {{count($questions_layout)}}
-                                                                    </span>
+                                                                        <span class="questions-total-holder d-flex align-items-center mb-15 px-0 w-100">
+                                                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
+                                                                            Question: {{$question_counter}} of {{count($questions_layout)}}
+                                                                        </span>
 
 
                                                                         @if($question_counter == 1)
