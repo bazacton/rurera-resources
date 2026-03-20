@@ -2372,3 +2372,167 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
     wrapRawLatex();
 
 </script>
+
+
+
+<script>
+    const storyHtml = `
+      <p>On the far side of a quiet market town, beyond the baker’s shop and the narrow bridge over the river, there stood an old lane lined with sycamore trees. In spring, the lane shimmered with pale green leaves. In summer, it hummed with bees. In autumn, it filled with gold and copper leaves that drifted slowly across the cobbles. At the very end of that lane stood a house with blue shutters, a steep slate roof, and a brass knocker shaped like a sleeping fox.</p>
+
+      <p>Most people in the town passed the house without stopping. Some believed it belonged to a retired musician. Others said it was once owned by a cartographer who had spent his life drawing islands nobody could find. Children invented wilder stories. They said the house was full of clocks that ticked backwards, cupboards full of forgotten recipes, and shelves that carried books whose endings changed every time they were opened. Adults smiled at such stories and told the children not to be silly, but even the adults lowered their voices slightly when they walked by the gate.</p>
+
+      <p>In a smaller house across the square lived a girl named Clara, who was known for asking careful questions. She was not the loudest child in the classroom, nor the fastest runner in the playground, but she noticed details other people missed. She could tell when a shop had changed the arrangement of its window display. She remembered the names of old songs that her grandfather whistled while mending chairs. She noticed when one paving stone had sunk lower than the others after heavy rain. Most of all, she noticed unfinished things.</p>
+
+      <p>There was a scarf in her mother’s basket with one end still waiting to be knitted. There was a birdhouse in her neighbour’s shed that had never received its roof. There was a letter her brother had started writing to a friend after an argument, then folded away before the second paragraph was complete. There was a pencil sketch in Clara’s own desk drawer of the willow tree by the river. The branches were graceful, the trunk was strong, but she had never finished shading the water because she had grown impatient and told herself it was not worth continuing.</p>
+
+      <p>One windy evening in October, after clouds had gathered low over the town and the first drops of rain were beginning to strike the windows, Clara found herself walking alone down the lane of sycamore trees. She had not planned to go there. She had meant only to return a library book before the weather worsened. Yet as she crossed the square and reached the corner, she felt a curious pull, as though some quiet part of the day had been waiting for her to notice it. So instead of going home, she turned towards the lane and followed it to the house with blue shutters.</p>
+
+      <p>The gate was slightly open. The brass fox on the door looked polished by age and countless winters. Clara stood for a moment, listening. The rain was steadier now. Somewhere behind the house a loose branch tapped softly against a wall. She ought to have gone back. She knew that. Yet she also knew that if she left without knocking, she would spend the rest of the evening wondering what might have happened if she had stayed. So she raised her hand and let the fox-head knocker fall once against the wood.</p>
+
+      <p>The sound was deep and unexpectedly musical. It did not echo like a hollow knock. It rang like the note of a bell from very far away. For a few seconds nothing happened. Then the latch shifted, and the door opened inward on its own.</p>
+
+      <p>Inside was a long hallway lit by warm lamplight. The air smelled faintly of cedar wood, old paper, and something sweet that Clara could not quite identify. Along the walls hung framed maps, portraits, and botanical drawings. Some of the portraits showed people reading. Some showed them writing. Some had their eyes closed, as though listening to sounds beyond the room. At the far end of the hallway, where Clara expected another wall, there glowed a softer light, golden and steady, like firelight in a library.</p>
+
+      <p>Clara stepped inside.</p>
+
+      <p>Her footsteps were quiet on the carpet runner. As she reached the end of the hall, the house opened into the largest room she had ever seen. Shelves rose from floor to ceiling. Ladders stood against them. Lanterns hung in the air without visible chains. At the centre of the room stood a long oak table, and at that table sat an elderly woman in a dark green coat reading from a thick ledger bound in blue cloth.</p>
+
+      <p>The woman looked up calmly, as if she had been expecting Clara all afternoon.</p>
+
+      <p>“You are later than I thought,” she said.</p>
+
+      <p>Clara blinked. “Were you expecting me?”</p>
+
+      <p>“I was expecting someone with unfinished business.”</p>
+
+      <p>Clara glanced around the room again. Now that she looked more closely, she saw that the shelves held stranger things than books alone. There were model boats with one sail missing, clocks without hands, music sheets without final bars, folded paper birds with one wing left flat, chessboards paused in the middle of games, and small canvases whose skies had not yet been painted. Nothing in the room looked broken. It all looked paused.</p>
+
+      <p>“What is this place?” Clara asked.</p>
+
+      <p>The woman closed the ledger gently. “A house for unfinished things.”</p>
+
+      <p>Clara did not know how to respond to that, so she asked the question again in a different form. “Why would unfinished things need a house?”</p>
+
+      <p>“Because people mistake unfinished things for failed things,” the woman replied. “They are not the same. Some work is abandoned too early. Some is interrupted by fear. Some is left aside through hurry, grief, distraction, or doubt. Not everything unfinished should be completed, but much of it deserves to be understood before it is dismissed.”</p>
+
+      <p>The answer settled over the room with the weight of something both strange and sensible. Clara thought immediately of her half-finished sketch of the willow tree, and of the letter her brother had hidden in the drawer beneath his socks, and of the little birdhouse in the neighbour’s shed. For the first time, she considered that unfinished things might wait, quietly and stubbornly, for someone to return to them with better patience.</p>
+
+      <p>The keeper led Clara through the house. In one room stood shelves of letters that had never been sent. Some were apologies. Some were invitations. Some were thank-you notes that the writers had postponed until the moment had passed. In another room stood inventions abandoned halfway through their making: a tiny windmill, a folding lantern, a puzzle box that almost opened, a toy carriage awaiting its final wheel. There was a room of unfinished songs, where instruments rested in velvet-lined cases and low threads of melody drifted through the air as if still waiting for their last notes.</p>
+
+      <p>Word spread, quietly at first, then more widely, that old unfinished tasks in the town had begun to stir back into life. The baker returned to a plum tart recipe he had abandoned after one disastrous winter. The dressmaker completed a half-cut coat pattern she had hidden in a drawer for three years. A carpenter repaired a toy cart that had waited in pieces on his workbench since midsummer. None of these things became easier merely because they were resumed. Yet once begun again with patience, they no longer seemed impossible.</p>
+
+      <p>And whenever Clara faced a page, a letter, a drawing, or a task that resisted her halfway through, she remembered the folded bird, the half-painted willow tree, and the keeper’s calm instruction: Begin again, but more carefully.</p>
+    `;
+
+    function initScrollableBox(contentId, controlsId, buttonId) {
+        const content = document.getElementById(contentId);
+        const controls = document.getElementById(controlsId);
+        const button = document.getElementById(buttonId);
+
+        function hasOverflow() {
+            return content.scrollHeight > content.clientHeight + 1;
+        }
+
+        function atBottom() {
+            return content.scrollTop + content.clientHeight >= content.scrollHeight - 2;
+        }
+
+        function updateUI() {
+            if (!hasOverflow()) {
+                controls.classList.add("hidden");
+                return;
+            }
+
+            controls.classList.remove("hidden");
+            button.textContent = atBottom() ? "Scroll Up" : "Scroll More";
+        }
+
+        function scrollStep() {
+            const lineHeight = parseFloat(window.getComputedStyle(content).lineHeight) || 27;
+            return Math.round(lineHeight * 10);
+        }
+
+        button.addEventListener("click", function () {
+            if (!hasOverflow()) {
+                updateUI();
+                return;
+            }
+
+            if (atBottom()) {
+                content.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            } else {
+                content.scrollBy({
+                    top: scrollStep(),
+                    behavior: "smooth"
+                });
+            }
+
+            setTimeout(updateUI, 250);
+        });
+
+        content.addEventListener("scroll", updateUI);
+
+        return {
+            updateUI: updateUI
+        };
+    }
+
+    document.getElementById("leftContent").innerHTML = storyHtml;
+
+    const leftBox = initScrollableBox("leftContent", "leftControls", "leftBtn");
+    const rightBox = initScrollableBox("rightQuestionContent", "rightControls", "rightBtn");
+
+    function refreshAllUI() {
+        leftBox.updateUI();
+        rightBox.updateUI();
+    }
+
+    (function () {
+        const wrapper = document.getElementById("splitWrapper");
+        const leftPane = document.getElementById("leftPane");
+        const divider = document.getElementById("divider");
+
+        let isDragging = false;
+
+        divider.addEventListener("mousedown", function () {
+            if (window.innerWidth <= 991) return;
+            isDragging = true;
+            divider.classList.add("active");
+            document.body.style.userSelect = "none";
+            document.body.style.cursor = "col-resize";
+        });
+
+        document.addEventListener("mousemove", function (e) {
+            if (!isDragging || window.innerWidth <= 991) return;
+
+            const rect = wrapper.getBoundingClientRect();
+            const dividerWidth = divider.offsetWidth;
+            const minLeft = 220;
+            const minRight = 220;
+
+            let newLeftWidth = e.clientX - rect.left;
+            const maxLeftWidth = rect.width - dividerWidth - minRight;
+
+            if (newLeftWidth < minLeft) newLeftWidth = minLeft;
+            if (newLeftWidth > maxLeftWidth) newLeftWidth = maxLeftWidth;
+
+            leftPane.style.width = newLeftWidth + "px";
+            refreshAllUI();
+        });
+
+        document.addEventListener("mouseup", function () {
+            if (!isDragging) return;
+            isDragging = false;
+            divider.classList.remove("active");
+            document.body.style.userSelect = "";
+            document.body.style.cursor = "";
+            refreshAllUI();
+        });
+    })();
+
+    window.addEventListener("load", refreshAllUI);
+    window.addEventListener("resize", refreshAllUI);
+</script>
