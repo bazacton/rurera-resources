@@ -2136,7 +2136,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 }
 .math-equation svg,
 mjx-container[jax="SVG"] > svg {
-    scale: 1;
+    scale: .9;
 }
 /* --- END: Dialog Fields --- */
 /* ======================================================== */
