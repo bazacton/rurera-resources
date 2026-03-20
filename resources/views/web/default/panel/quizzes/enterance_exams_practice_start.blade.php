@@ -127,6 +127,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                             {!! $section_layout !!}
 
                                         </div>
+                                        <div class="comprehension-block">
+
+
+                                        </div>
                                         <div class="quiz-section-questions rurera-hide">
 
 
@@ -179,9 +183,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                         $active_question = true;
                                                                     }
                                                                     $next_active = ($question_counter == count($questions_layout))? 'no' : 'yes';
+                                                                    $question_class = '';
+                                                                    $question_class .= ($question_counter == 1)? 'comprehension-question' : '';
                                                                     @endphp
 
-                                                                    <div class=" rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
+                                                                    <div class=" {{$question_class}} rurera-question-block question-step my-auto question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
                                                                          data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
                                                                          data-start_time="0" data-qresult="{{isset( $question_result_id )? $question_result_id : 0}}"
                                                                          data-question_no="{{$question_counter}}"
@@ -194,6 +200,139 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
                                                                         Question: {{$question_counter}} of {{count($questions_layout)}}
                                                                     </span>
 
+
+                                                                        @if($question_counter == 1)
+                                                                        <div class="question-comprehension-block rurera-hide">
+                                                                            <h3>Cast List</h3>
+                                                                            <p>Narrator</p>
+                                                                            <p>The Wolf</p>
+                                                                            <p>Little Red Riding Hood</p>
+                                                                            <p>Mother</p>
+                                                                            <p>Grandma</p>
+                                                                            <p>Woodcutter</p>
+
+                                                                            <h3>Scene List</h3>
+                                                                            <p>Little Red Riding Hood’s House</p>
+                                                                            <p>The Woods</p>
+                                                                            <p>Grandma’s Cottage</p>
+
+                                                                            <h2>Little Red Riding Hood</h2>
+
+                                                                            <h3>Scene 1 - Little Red Riding Hood’s House</h3>
+
+                                                                            <p><em>Enter Mother carrying a basket of food, and Little Red Riding Hood, wearing her red cape.</em></p>
+
+                                                                            <p><strong>Mother:</strong> Right young lady, I need you to go to Grandma’s with this basket of food. She’s not very well.</p>
+
+                                                                            <p><strong>LRRH:</strong> Ok Mum. I’ll stay and have a cup of tea with her too.</p>
+
+                                                                            <p><strong>Mother:</strong> That will be very nice. Good girl. Now, off you go. And be careful going through that wood.</p>
+
+                                                                            <p><strong>LRRH:</strong> I will.</p>
+
+                                                                            <p><strong>Narrator:</strong> So Little Red Riding Hood trotted off with her basket of goodies for Grandma.</p>
+
+                                                                            <h3>Scene 2 - The Woods</h3>
+
+                                                                            <p><em>Little Red Riding Hood is skipping through the woods, humming to herself. In the background a wolf is lurking behind the trees.</em></p>
+
+                                                                            <p><strong>Narrator:</strong> Little Red Riding Hood loved walking to Grandma’s.</p>
+
+                                                                            <p><strong>LRRH:</strong> I love walking to Grandma’s. The woods are so lovely!</p>
+
+                                                                            <p><strong>Narrator:</strong> Soon, Little Red Riding Hood saw a woodcutter chopping the trees down in the woods.</p>
+
+                                                                            <p><em>Enter a woodcutter with an axe, chopping trees down.</em></p>
+
+                                                                            <p><strong>LRRH:</strong> Hello Woodcutter. How are you today?</p>
+
+                                                                            <p><strong>Woodcutter:</strong> Hello there, Little Red Riding Hood. I’m very well, thank you. Where are you going to?</p>
+
+                                                                            <p><strong>LRRH:</strong> I’m going to Grandma’s house. She lives at the other side of the woods.</p>
+
+                                                                            <p><strong>Woodcutter:</strong> Well, you be careful in these woods. I hear there are wolves around. And say hello to your Grandma from me.</p>
+
+                                                                            <p><strong>LRRH:</strong> I will. And I am careful. But I don’t think there are really any wolves around. They’re just in fairy stories.</p>
+
+                                                                            <p><em>LRRH skips off further into the woods. The wolf pops out from behind a tree and chuckles to himself, rubbing his paws together.</em></p>
+
+                                                                            <p><strong>Wolf:</strong> Ah ha! Going to Grandma’s eh? Well now. I think I might go to Grandma’s too. And I know a short cut there.</p>
+
+                                                                            <p><em>Wolf runs off laughing to himself.</em></p>
+
+                                                                            <p><strong>Wolf:</strong> I’m going to trick that Little Red Riding Hood.</p>
+
+                                                                            <p><em>Wolf knocks on the door.</em></p>
+
+                                                                            <p><strong>Grandma:</strong> Yes? Is that Little Red Riding Hood?<br>(from inside the cottage)</p>
+
+                                                                            <p><em>Wolf coughs and speaks in a high voice.</em></p>
+
+                                                                            <p><strong>Wolf:</strong> Yes Grandma. It is me, Little Red Riding Hood.</p>
+
+                                                                            <p><strong>Grandma:</strong> Come in my dear, come in!</p>
+
+                                                                            <p><em>Wolf tiptoes into the cottage.</em></p>
+
+                                                                            <p><strong>Narrator:</strong> Now, Grandma was very old and she couldn’t see very well. She could not tell it was the wolf.</p>
+
+                                                                            <p><strong>Wolf:</strong> Ah ha! I’ve got you now Grandma!</p>
+
+                                                                            <p><em>Wolf grabs Grandma and lifts her out of bed and locks her in the wardrobe!</em></p>
+
+                                                                            <p><strong>Wolf:</strong> Right, I need a nightdress, a night hat and some glasses.</p>
+
+                                                                            <p><em>Wolf finds all the things he needs and dresses up as Grandma. Then he hops into bed and pulls up the covers and waits.</em></p>
+
+                                                                            <p><strong>Narrator:</strong> The Wolf did not have to wait long. Little Red Riding Hood knocked at the door.</p>
+
+                                                                            <p><strong>LRRH:</strong> Hello Grandma, it’s me, Little Red Riding Hood. I’ve brought you some goodies!</p>
+
+                                                                            <p><em>Wolf coughs and speaks in a high squeaky voice.</em></p>
+
+                                                                            <p><strong>Wolf:</strong> Come in my dear, come in!</p>
+
+                                                                            <p><em>Little Red Riding Hood opens the door and goes inside the cottage.</em></p>
+
+                                                                            <p><strong>LRRH:</strong> Mother has sent some lovely food over for you.</p>
+
+                                                                            <p><strong>Wolf:</strong> Oh, how lovely!<br>(in a squeaky high voice)</p>
+
+                                                                            <p><em>LRRH looks at Grandma in a puzzled way.</em></p>
+
+                                                                            <p><strong>LRRH:</strong> Grandma. What big ears you have!</p>
+
+                                                                            <p><strong>Wolf:</strong> All the better to hear you with, my dear.</p>
+
+                                                                            <p><em>Little Red Riding Hood walks around the bed staring at Grandma.</em></p>
+
+                                                                            <p><strong>LRRH:</strong> And Grandma…. What big eyes you have!</p>
+
+                                                                            <p><strong>Wolf:</strong> All the better to see you with, my dear.</p>
+
+                                                                            <p><strong>LRRH:</strong> And Gr..Grand..Grandma what big TEETH <br>(stuttering) you have!</p>
+
+                                                                            <p><strong>Wolf:</strong> All the better to EAT you with, my dear!</p>
+
+                                                                            <p><em>The wolf leaps out of bed, chases Little Red Riding Hood around the bed one way, and then the other. Little Red Riding Hood screams and shouts.</em></p>
+
+                                                                            <p><em>Suddenly the Woodcutter throws open the door and raises his axe.</em></p>
+
+                                                                            <p><strong>Woodcutter:</strong> Be gone, wolf, or I shall chop you up into little pieces!</p>
+
+                                                                            <p><strong>Wolf:</strong> (whimpering) No! No! I wasn’t really going to eat her! I was just joking. Don’t chop me up into little pieces. Let me go and you shall never see me again!</p>
+
+                                                                            <p><strong>Narrator:</strong> And with that, the wolf ran out of the door and away into the woods. And they never did see him ever again!</p>
+
+                                                                            <h3>Scene 4 – Around the table at Grandma’s Cottage</h3>
+
+                                                                            <p><strong>Narrator:</strong> Little Red Riding Hood and the Woodcutter heard Grandma knocking from inside the wardrobe, and helped her out. Then they all sat down to eat the delicious goodies that Little Red Riding Hood had brought in her basket.</p>
+
+                                                                            <p><em>Woodcutter, Grandma and Little Red Riding Hood are sitting around the table, pouring the tea and eating cake.</em></p>
+
+                                                                            <p><strong>Narrator:</strong> And they all lived happily ever after!</p>
+                                                                        </div>
+                                                                        @endif
                                                                         {!! $questionLayout !!}
 
                                                                     </div>
@@ -522,6 +661,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             <!-- Footer -->
             <div class="modal-footer border-0">
                 <button type="button" class="btn btn-primary remove-tab">Close</button>
+                <button type="button" class="btn btn-primary already-started-continue" >Continue on this device</button>
             </div>
 
         </div>
@@ -908,6 +1048,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".quiz-section-data.active").find(".question-status span").html(current_question_counter);
 
         initQuestionStatusPopover();
+
+        afterQuestionActive();
     }
     function afterNextQuestion(){
         focusIntervalCount = 240;
@@ -946,8 +1088,18 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".quiz-section-data.active").find(".question-status span").html(current_question_counter);
 
         initQuestionStatusPopover();
+        afterQuestionActive();
 
 
+    }
+
+    function afterQuestionActive(){
+        const $active = $(".quiz-section-data.active").find(".rurera-question-block.active");
+        var comprehension_html = '';
+        if($active.find('.question-comprehension-block').length > 0) {
+            comprehension_html = $active.find('.question-comprehension-block').html();
+        }
+        $(".comprehension-block").html(comprehension_html);
     }
 
 
@@ -1669,6 +1821,11 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         // Trigger event for other tabs
         localStorage.setItem("force-close-tabs", Date.now());
     });
+
+
+
+
+
     window.addEventListener("storage", function (e) {
 
         // Detect force close signal
@@ -1689,7 +1846,20 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         }
     });
 
-
+    $(document).on('click', '.already-started-continue', function (evt) {
+        var result_id = '{{$quizAttempt->quiz_result_id}}';
+        jQuery.ajax({
+            type: "POST",
+            url: '/question_attempt/already_started_continue',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: {"result_id": result_id},
+            success: function (return_data) {
+                window.location.reload();
+            }
+        });
+    });
 
     function wrapRawLatex() {
         console.log('wrapRawLatex');
