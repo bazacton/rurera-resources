@@ -2376,7 +2376,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
 
 <script>
-    const storyHtml = `
+    var storyHtml = `
       <p>On the far side of a quiet market town, beyond the baker’s shop and the narrow bridge over the river, there stood an old lane lined with sycamore trees. In spring, the lane shimmered with pale green leaves. In summer, it hummed with bees. In autumn, it filled with gold and copper leaves that drifted slowly across the cobbles. At the very end of that lane stood a house with blue shutters, a steep slate roof, and a brass knocker shaped like a sleeping fox.</p>
 
       <p>Most people in the town passed the house without stopping. Some believed it belonged to a retired musician. Others said it was once owned by a cartographer who had spent his life drawing islands nobody could find. Children invented wilder stories. They said the house was full of clocks that ticked backwards, cupboards full of forgotten recipes, and shelves that carried books whose endings changed every time they were opened. Adults smiled at such stories and told the children not to be silly, but even the adults lowered their voices slightly when they walked by the gate.</p>
