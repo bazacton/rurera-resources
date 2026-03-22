@@ -64,6 +64,7 @@
 
             @php $topicPartItemObj = $question->topicPartItem;
             $topicPartObj = $question->topicPart;
+            pre($topicPartObj->id, false);
             @endphp
 
             @if(isset($topicPartObj->id) && $topicPartObj->topic_part_type == 'comprehension')
