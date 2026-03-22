@@ -62,6 +62,16 @@
                 @endif
             @endif
 
+            @php $topicPartItemObj = $question->topicPartItem;
+            $topicPartObj = $question->topicPart;
+            @endphp
+
+            @if(isset($topicPartObj->id) && $topicPartObj->topic_part_type == 'comprehension')
+                <div class="question-comprehension-block rurera-hide">
+                    {!! $topicPartItemObj->description !!}
+
+                </div>
+            @endif
 
             {!! $question_layout !!}
 

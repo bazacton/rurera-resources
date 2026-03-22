@@ -1166,6 +1166,7 @@ $(document).on('click', '.topic-form-submit', function (e) {
     var subject_id = parentObj.find('input[name="subject_id"]').val();
     var topic_part_name = parentObj.find('input[name="topic_part_name"]').val();
     var topic_part_slug = parentObj.find('input[name="topic_part_slug"]').val();
+    var topic_part_type = parentObj.find('select[name="topic_part_type"]').val();
     var topic_part_status = parentObj
         .find('input[name="topic_part_active"]')
         .is(':checked') ? 'active' : 'inactive';
@@ -1176,7 +1177,7 @@ $(document).on('click', '.topic-form-submit', function (e) {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
         dataType: 'json',
-        data: {"topic_part_status": topic_part_status, "topic_part_id": topic_part_id, "year_id": year_id, "subject_id": subject_id, "topic_part_name": topic_part_name, "topic_part_slug": topic_part_slug},
+        data: {"topic_part_type": topic_part_type, "topic_part_status": topic_part_status, "topic_part_id": topic_part_id, "year_id": year_id, "subject_id": subject_id, "topic_part_name": topic_part_name, "topic_part_slug": topic_part_slug},
         success: function (return_data) {
             rurera_modal_alert(
                 return_data.status,
@@ -1201,6 +1202,8 @@ $(document).on('click', '.topic-add-form-submit', function (e) {
     var sub_chapter_id = parentObj.find('input[name="sub_chapter_id"]').val();
     var topic_part_name = parentObj.find('input[name="topic_part_name"]').val();
     var topic_part_slug = parentObj.find('input[name="topic_part_slug"]').val();
+    var topic_part_type = parentObj.find('select[name="topic_part_type"]').val();
+
     jQuery.ajax({
         type: "POST",
         url: '/admin/topics_parts/add_topic_part',
@@ -1208,7 +1211,7 @@ $(document).on('click', '.topic-add-form-submit', function (e) {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
         dataType: 'json',
-        data: {"sub_chapter_id": sub_chapter_id, "chapter_id": chapter_id, "year_id": year_id, "subject_id": subject_id, "topic_part_name": topic_part_name, "topic_part_slug": topic_part_slug},
+        data: {"topic_part_type": topic_part_type, "sub_chapter_id": sub_chapter_id, "chapter_id": chapter_id, "year_id": year_id, "subject_id": subject_id, "topic_part_name": topic_part_name, "topic_part_slug": topic_part_slug},
         success: function (return_data) {
             rurera_modal_alert(
                 return_data.status,
