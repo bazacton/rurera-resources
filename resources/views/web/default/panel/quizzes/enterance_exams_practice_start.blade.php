@@ -1543,9 +1543,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".quiz-section-data.active").attr('data-section_finish_confirm', 'yes');
         $(".quiz-section-data.active").attr('data-finish-exclude_id', current_question_id);
         $('.question-submit-btn').attr('data-bypass_validation', 'yes');
+        $(".app-wrap").addClass('rurera-hide');
         $(".question-submit-btn").click();
 
-        $(".app-wrap").addClass('rurera-hide');
+
 
         initQuestionStatusPopover();
         onSectionMoveConfirm();

@@ -290,7 +290,7 @@
 
 											<div class="form-group">
 												<label>Paragraph</label>
-												<textarea data-id="0" name="description" class="form-control part-paragraph" rows="10" placeholder="Enter the paragraph here..."></textarea>
+												<textarea data-id="0" name="description" class="form-control part-paragraph summernote" rows="10" placeholder="Enter the paragraph here..."></textarea>
 											</div>
 
 										</div>
@@ -445,6 +445,7 @@
 		var unique_id  = $(this).closest('tr').attr('data-id');
 		$(".part-paragraph").attr('data-id', unique_id);
 		$(".part-paragraph").val(part_paragraph);
+        $(".part-paragraph").summernote('code', part_paragraph);
 		$(".part-difficulty_level").attr('data-id', unique_id);
 		$(".part-part_title").attr('data-id', unique_id);
 		$('.part-part_title').val(part_title);
