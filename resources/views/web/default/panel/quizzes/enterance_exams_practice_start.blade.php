@@ -1539,7 +1539,6 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
     function afterSectionFinishConfirm(){
         //alert('afterSectionFinishConfirm');
-        $(".app-wrap").addClass('rurera-hide');
         var current_question_id =  $(".quiz-section-data.active").find(".quiz-pagination li.active").attr('data-question_id');
         $(".quiz-section-data.active").attr('data-section_finish_confirm', 'yes');
         $(".quiz-section-data.active").attr('data-finish-exclude_id', current_question_id);
