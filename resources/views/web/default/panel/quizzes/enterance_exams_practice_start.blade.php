@@ -1545,6 +1545,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $('.question-submit-btn').attr('data-bypass_validation', 'yes');
         $(".question-submit-btn").click();
 
+        $(".app-wrap").addClass('rurera-hide');
 
         initQuestionStatusPopover();
         onSectionMoveConfirm();
