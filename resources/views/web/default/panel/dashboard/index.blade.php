@@ -596,8 +596,7 @@
 											</div>
 										</div>
 										<div class="col-12 col-lg-3 mt-10 mt-lg-0 text-right resume-test">
-											<a href="/mock-practice/{{$resultObj->parentQuiz->quiz_slug}}" data-request_type="approved" class="request-action-btn js-show-message btn btn-border-white">Resume Test</a>
-
+											<a href="javascript:;" data-test_id="{{$resultObj->parentQuiz->id}}" data-target_url="/mock-practice/{{$resultObj->parentQuiz->quiz_slug}}" data-request_type="approved" class="rurera-tests-btn request-action-btn js-show-message btn btn-border-white">Resume Test</a>
                                             <div class="loader-wrapper"
                                                  data-toggle="tooltip"
                                                  data-placement="top"
@@ -1111,6 +1110,70 @@
     </div>
     </div>
 
+<div class="modal fade alreadyStarted modal-md" id="alreadyStarted" tabindex="-1" role="dialog" aria-labelledby="alreadyStartedLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
+
+            <input name="result_id" class="result_id" type="hidden" value="0">
+            <input name="target_url" class="target_url" type="hidden" value="">
+            <!-- Header -->
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-bold font-16">
+                    📘 You're already taking this test
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body pt-3 font-14">
+                <p>Your test is open on another device or browser. Please return to the other device or browser to keep going.</p>
+                <p>👉 Don’t worry — your answers are safe!</p>
+
+                <p>What would you like to do?</p>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary already-started-continue" >Continue on this device</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade limitReached modal-md" id="limitReached" tabindex="-1" role="dialog" aria-labelledby="limitReachedLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
+
+            <!-- Header -->
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-bold font-16">
+                    You already have a mock test in progress ⏳
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body pt-3 font-14">
+                <p>Please complete or submit your current test before starting a new one.</p>
+                <p>This helps you stay focused and ensures your test is evaluated correctly.</p>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
     @endsection
 
     @push('scripts_bottom')
@@ -1207,6 +1270,38 @@ $(document).ready(function () {
         });
     });
 });
+
+
+$(document).on('click', '.rurera-tests-btn', function (e) {
+    var thisObj = $('.rurera-tests-btn');
+    var test_id = $(this).attr('data-test_id');
+    var target_url = $(this).attr('data-target_url');
+    rurera_loader(thisObj, 'div');
+    jQuery.ajax({
+        type: "GET",
+        dataType: 'json',
+        url: '/tests/check_test_validity',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: {"test_id": test_id},
+        success: function (return_data) {
+            rurera_remove_loader(thisObj, 'div');
+            if (return_data.limit_reached == true) {
+                $(".limitReached").modal('show');
+            } else if (return_data.already_started_check == true) {
+                $(".target_url").val(target_url);
+                $(".result_id").val(return_data.result_id);
+                $(".alreadyStarted").modal('show');
+
+            } else {
+                window.location.href = target_url;
+            }
+        }
+    });
+
+});
+
 </script>
 @endpush
 
@@ -1219,7 +1314,7 @@ $(document).ready(function () {
             handleLimitedAccountModal('{!! $giftModal !!}', 40)
         })(jQuery)
     </script>
-    
+
 
     @endpush
     @endif
