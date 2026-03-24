@@ -1544,7 +1544,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".quiz-section-data.active").attr('data-finish-exclude_id', current_question_id);
         $('.question-submit-btn').attr('data-bypass_validation', 'yes');
         $(".question-submit-btn").click();
-
+        $(".app-wrap").addClass('rurera-hide');
 
 
         initQuestionStatusPopover();
