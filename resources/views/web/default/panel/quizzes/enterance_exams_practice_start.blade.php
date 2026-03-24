@@ -367,10 +367,10 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
 
     <section class="lms-quiz-section">
 
-        <div class="container questions-data-block read-quiz-content" data-total_questions="{{$total_questions}}">
+        <div class="container questions-data-block read-quiz-content questionClass" data-classes="container" data-total_questions="{{$total_questions}}">
 
             <div class="justify-content-center w-100">
-                <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
+                <div class="col-lg-9 col-md-12 col-sm-12 mx-auto questionClass" data-classes="col-lg-9 col-md-12 col-sm-12 mx-auto">
 
                     <div class="question-step quiz-complete-full" style="display:none">
 
@@ -1345,6 +1345,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $active.removeClass('rurera-hide');
         $('.question-footer').html('');
         $(".question-layout-block").find(".questions-nav-controls").removeClass('rurera-hide');
+        $('.questionClass').each(function () {
+            var classesToAdd = $(this).data('classes');
+
+            if (classesToAdd) {
+                classesToAdd.split(' ').forEach(cls => {
+                    $(this).addClass(cls);
+                });
+            }
+        });
         if($active.find('.question-comprehension-block').length > 0) {
             $activeSection.addClass('comprehension-layout');
             comprehension_html = $active.find('.question-comprehension-block').html();
@@ -1355,7 +1364,15 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".question-layout-block").find(".questions-nav-controls").addClass('rurera-hide');
             $('.question-footer').html($(".questions-nav-controls").prop('outerHTML'));
             $('.question-footer').find(".questions-nav-controls").removeClass('rurera-hide');
+            $('.questionClass').each(function () {
+                var classesToRemove = $(this).data('classes');
 
+                if (classesToRemove) {
+                    classesToRemove.split(' ').forEach(cls => {
+                        $(this).removeClass(cls);
+                    });
+                }
+            });
 
         }
         $(".story-body").html(comprehension_html);
