@@ -1276,7 +1276,7 @@ $(document).on('click', '.rurera-tests-btn', function (e) {
     var thisObj = $('.rurera-tests-btn');
     var test_id = $(this).attr('data-test_id');
     var target_url = $(this).attr('data-target_url');
-    rurera_loader(thisObj, 'div');
+    rurera_loader(thisObj, 'button');
     jQuery.ajax({
         type: "GET",
         dataType: 'json',
