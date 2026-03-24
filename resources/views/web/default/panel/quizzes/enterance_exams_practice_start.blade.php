@@ -1884,6 +1884,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         parentObj.find('.section-layout-block').addClass('rurera-hide');
         $('.quiz-section-questions').addClass('rurera-hide');
 
+        $(".app-wrap").addClass('rurera-hide');
         $(this).closest('.quiz-section-data').find('.quiz-section-questions').removeClass('rurera-hide');
 
 
