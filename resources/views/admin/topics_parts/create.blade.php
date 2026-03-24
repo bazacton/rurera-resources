@@ -437,7 +437,11 @@
 		$("#sortableTableBody").html('');
         $("#add-part-modal-box").modal('show');
     });
-
+    function decodeHtml(html) {
+        var txt = document.createElement("textarea");
+        txt.innerHTML = html;
+        return txt.value;
+    }
 	$("body").on("click", ".edit-part-modal", function (t) {
 		var part_paragraph = $(this).closest('tr').find('.part_text').html();
 		var part_difficulty_level = $(this).closest('tr').find('.difficulty_level').html();
@@ -445,7 +449,7 @@
 		var unique_id  = $(this).closest('tr').attr('data-id');
 		$(".part-paragraph").attr('data-id', unique_id);
 		$(".part-paragraph").val(part_paragraph);
-        $(".part-paragraph").summernote('code', part_paragraph);
+        $(".part-paragraph").summernote('code', decodeHtml(part_paragraph));
 		$(".part-difficulty_level").attr('data-id', unique_id);
 		$(".part-part_title").attr('data-id', unique_id);
 		$('.part-part_title').val(part_title);
