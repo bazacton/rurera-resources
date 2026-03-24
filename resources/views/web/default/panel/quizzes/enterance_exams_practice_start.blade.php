@@ -1343,7 +1343,8 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
         $(".question-pagination-top").removeClass('rurera-hide');
         $(".app-wrap").addClass('rurera-hide');
         $active.removeClass('rurera-hide');
-        $(".questions-nav-controls").removeClass('rurera-hide');
+        $('.question-footer').html('');
+        $(".question-layout-block").find(".questions-nav-controls").removeClass('rurera-hide');
         if($active.find('.question-comprehension-block').length > 0) {
             $activeSection.addClass('comprehension-layout');
             comprehension_html = $active.find('.question-comprehension-block').html();
@@ -1351,7 +1352,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $active.addClass('rurera-hide');
             $(".question-pagination-top").addClass('rurera-hide');
             $(".app-wrap").removeClass('rurera-hide');
-            $(".questions-nav-controls").addClass('rurera-hide');
+            $(".question-layout-block").find(".questions-nav-controls").addClass('rurera-hide');
             $('.question-footer').html($(".questions-nav-controls").prop('outerHTML'));
 
 
