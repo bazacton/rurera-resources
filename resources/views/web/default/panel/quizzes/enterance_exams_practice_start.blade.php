@@ -1354,6 +1354,7 @@ $incorrect_answer_explaination = true;//isset($incorrect_answer_explaination)? $
             $(".app-wrap").removeClass('rurera-hide');
             $(".question-layout-block").find(".questions-nav-controls").addClass('rurera-hide');
             $('.question-footer').html($(".questions-nav-controls").prop('outerHTML'));
+            $('.question-footer').find(".questions-nav-controls").removeClass('rurera-hide');
 
 
         }
