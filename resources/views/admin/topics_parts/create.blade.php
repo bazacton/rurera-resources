@@ -261,7 +261,7 @@
                             </form>
 
 							<div id="edit-part-modal-box" class="modal fade" role="dialog" data-backdrop="static">
-								<div class="modal-dialog modal-lg">
+								<div class="modal-dialog modal-xl">
 									<div class="modal-content">
 									<form class="topic-subparts-form" action="/admin/topics_parts/update_topic_sub_part"
 								method="Post">
