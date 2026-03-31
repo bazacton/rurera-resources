@@ -85,6 +85,7 @@
                             @if( !empty( $childs ) )
                             @php $child_count = 0; @endphp
                                     @foreach($childs as $childLinkObj)
+                                    @php pre($childLinkObj); @endphp
                                     @if(!isset($childObj->id)) @php continue; @endphp  @endif
                                     @php $childObj = $childLinkObj->user; @endphp
                                     @php
