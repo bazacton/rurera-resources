@@ -45,7 +45,9 @@
                 @foreach( $parentData as $parentObj)
                     @php $parent_listing_data = isset($parentObj->listing_data)? $parentObj->listing_data : (object) array(); @endphp
 
-
+                    <tr class="listing-data-row" data-parent_id="{{isset($parentObj->id)? $parentObj->id : 0}}">
+                        <td data-th="Topic">sdd</td>
+                    </tr>
                     @if(!empty($parent_listing_data))
                         @foreach($parent_listing_data as $listingObj)
                             @php $smart_score = isset($listingObj->performance)? $listingObj->performance : 0;
