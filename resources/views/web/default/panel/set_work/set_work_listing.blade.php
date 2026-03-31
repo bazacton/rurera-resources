@@ -9,6 +9,7 @@
                 $assignmentTitle = isset($quizObj->id)? $quizObj->getTitleAttribute() : '';
                 $assignmentTitle = ($assignmentTitle == '')? ucfirst($assignmentObj->StudentAssignmentData->assignment_type) : $assignmentTitle;
                 $assignmentLink = '/assignment/'.$assignmentObj->id;
+                $time_difference = TimeDifference($assignmentObj->deadline_date , time() , 'minutes');
             @endphp
             <div class="rurera-tasks-item">
                 <div class="row align-items-center">
@@ -17,7 +18,7 @@
                             <div class="rurera-tasks-content">
                                 <div class="rurera-tasks-title-row">
                                     <h3 class="rurera-tasks-name font-16 font-weight-bold">{{$assignmentTitle}}</h3>
-                                    <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
+                                    <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">{{$time_difference}} - Due Soon</span>
                                 </div>
                                 <p class="subject-info font-14 text-gray">{{ucfirst($assignmentObj->StudentAssignmentData->assignment_type)}} • Deadline {{dateTimeFormat($assignmentObj->deadline_date, 'd F Y')}} • Assigned by {{$assignmentObj->StudentAssignmentData->creator->get_full_name()}}</p>
                             </div>
