@@ -85,11 +85,9 @@
                             @if( !empty( $childs ) )
                             @php $child_count = 0; @endphp
                                     @foreach($childs as $childLinkObj)
-                                    @php pre($childLinkObj); @endphp
-                                    @if(!isset($childObj->id)) @php continue; @endphp  @endif
                                     @php $childObj = $childLinkObj->user; @endphp
+                                    @if(!isset($childObj->id)) @php continue; @endphp  @endif
                                     @php
-                                    pre('testing', false);
                                     $userSubscriptions = isset($childObj->id)? $childObj->userSubscriptions : '';
                                     $is_user_subscribed = isset( $userSubscriptions->id )? true : false;
                                     if($is_user_subscribed == true){
