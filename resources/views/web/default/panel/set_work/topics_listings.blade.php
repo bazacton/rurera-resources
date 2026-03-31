@@ -12,7 +12,7 @@
     <div class="subject-filters">
 
         @if(!empty( $parentData))
-            <button class="chip parent-filters active" data-id="all"><span class="active-tick">✓</span> All</button>
+            <button type="button" class="chip parent-filters active" data-id="all"><span class="active-tick">✓</span> All</button>
             @foreach( $parentData as $parentObj)
                 <button type="button" class="chip parent-filters" data-id="{{isset($parentObj->id)? $parentObj->id : 0}}">{{isset($parentObj->title)? $parentObj->title : ''}}</button>
             @endforeach
