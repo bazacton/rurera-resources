@@ -17,20 +17,15 @@
                                     <h3 class="rurera-tasks-name font-16 font-weight-bold">{{$assignmentTitle}}</h3>
                                     <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
                                 </div>
-                                <p class="subject-info font-14 text-gray">{{ucfirst($assignmentObj->StudentAssignmentData->assignment_type)}} • Deadline 01/07/24 • Assigned by you</p>
+                                <p class="subject-info font-14 text-gray">{{ucfirst($assignmentObj->StudentAssignmentData->assignment_type)}} • Deadline {{dateTimeFormat($assignmentObj->deadline_date, 'd F Y')}} • Assigned by {{$assignmentObj->StudentAssignmentData->creator->get_full_name()}}</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-5 rurera-tasks-row-right">
                         <div class="rurera-tasks-actions font-14">
-                            <button class="rurera-tasks-btn rurera-tasks-btn-outline">Download</button>
-                            <div class="rurera-tasks-actions-dropdown dropdown">
-                                <button type="button"
-                                        class="dropdown-toggle"
-                                        id="rurera-tasks-dropdown"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false">
+                            <button class="rurera-tasks-btn rurera-tasks-btn-outline">Continue</button>
+                            <div class="rurera-tasks-actions-dropdown">
+                                <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
