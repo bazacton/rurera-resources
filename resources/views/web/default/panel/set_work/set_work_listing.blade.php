@@ -38,7 +38,7 @@
                     <div class="col-md-5 rurera-tasks-row-right">
                         <div class="rurera-tasks-actions font-14">
                             {!! $assignmentLink !!}
-                            <div class="rurera-tasks-actions-dropdown">
+                            <div class="rurera-tasks-actions-dropdown rurera-hide">
                                 <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
                                 </button>
