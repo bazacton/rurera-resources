@@ -1094,6 +1094,7 @@ $(document).on('click', '.rurera-tests-btn', function (e) {
                 $(".alreadyStarted").modal('show');
 
             } else {
+                console.log(target_type);
                 if(target_type == 'post'){
                     postRedirect(url, {
                         user_id: 123,
