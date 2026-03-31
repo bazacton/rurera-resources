@@ -60,8 +60,8 @@
     <div class="section-title text-left mb-10">
         <h2 class="font-16 font-weight-bold">Set Work</h2>
     </div>
-    @if(isset($assignments))
-        @include('web.default.panel.set_work.set_work_listing',['assignments' => $assignments])
+    @if(isset($assignmentsArray))
+        @include('web.default.panel.set_work.set_work_listing',['assignments' => $assignmentsArray])
     @endif
 
     <div class="mt-15 rurera-hide">
