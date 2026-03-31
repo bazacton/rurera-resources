@@ -17,7 +17,7 @@
                                     <h3 class="rurera-tasks-name font-16 font-weight-bold">{{$assignmentTitle}}</h3>
                                     <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
                                 </div>
-                                <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                                <p class="subject-info font-14 text-gray">{{ucfirst($assignmentObj->StudentAssignmentData->assignment_type)}} • Deadline 01/07/24 • Assigned by you</p>
                             </div>
                         </div>
                     </div>
