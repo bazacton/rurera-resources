@@ -354,8 +354,8 @@
         </div>
     </div>
 	@include('web.default.flash_message')
-    @if(isset($assignments))
-	    @include('web.default.panel.set_work.set_work_listing',['assignments' => $assignments])
+    @if(isset($assignmentsArray))
+	    @include('web.default.panel.set_work.set_work_listing',['assignmentsArray' => $assignmentsArray])
     @endif
 </div>
 @endif
@@ -367,7 +367,9 @@
                 <h2 class="font-22 font-weight-bold">Set Work</h2>
             </div>
         </div>
-        @include('web.default.panel.set_work.set_work_listing',['assignments' => [$assignmentsArray]])
+        @if(isset($assignmentsArray))
+        @include('web.default.panel.set_work.set_work_listing',['assignmentsArray' => $assignmentsArray])
+        @endif
     </div>
 @endif
 @if(auth()->user()->isUser())
