@@ -41,50 +41,49 @@
             </tr>
             </thead>
             <tbody>
-            @if(!empty($listingData))
-                @foreach($listingData as $listingObj)
-                    @php $smart_score = isset($listingObj->performance)? $listingObj->performance : 0;
+            @if(!empty( $parentData))
+                @foreach( $parentData as $parentObj)
+                    @php $parent_listing_data = isset($parentObj->listing_data)? $parentObj->listing_data : (object) array(); @endphp
+
+
+                    @if(!empty($parent_listing_data))
+                        @foreach($parent_listing_data as $listingObj)
+                            @php $smart_score = isset($listingObj->performance)? $listingObj->performance : 0;
                         $last_activity = isset($listingObj->last_activity)? $listingObj->last_activity : '-';
                         $completion_title = 'Not Started';
                         $completion_title = ($smart_score > 0)? 'Practice Needed' : $completion_title;
                         $completion_title = ($smart_score > 39)? 'Good' : $completion_title;
                         $completion_title = ($smart_score > 59)? 'Very Good' : $completion_title;
                         $completion_title = ($smart_score > 79)? 'Excellent' : $completion_title;
-                    @endphp
-                    <tr class="listing-data-row" data-level_type="{{$completion_title}}" data-parent_id="{{isset($listingObj->parent_id)? $listingObj->parent_id : 0}}">
-                        <td data-th="Topic"> <input type="checkbox" id="check_{{isset($listingObj->id)? $listingObj->id : 0}}" name="chapter_ids[]" value="{{isset($listingObj->id)? $listingObj->id : 0}}" class="topic-check topic-selection-check" data-topic="{{isset($listingObj->title)? $listingObj->title : '-'}}"> <label  for="check_{{isset($listingObj->id)? $listingObj->id : 0}}">{{isset($listingObj->title)? $listingObj->title : '-'}}</label></td>
-                        <td data-th="Performance">
-                            @if($smart_score > 0)
-                                {{$smart_score}}
-                                <div class="percent-holder">
-                                    <div class="chapter_percent circle-blue" data-percent="{{$smart_score}}">
-                                        <div class="circle_inner">
-                                            <div class="round_per"></div>
+                            @endphp
+                            <tr class="listing-data-row" data-level_type="{{$completion_title}}" data-parent_id="{{isset($listingObj->parent_id)? $listingObj->parent_id : 0}}">
+                                <td data-th="Topic"> <input type="checkbox" id="check_{{isset($listingObj->id)? $listingObj->id : 0}}" name="chapter_ids[]" value="{{isset($listingObj->id)? $listingObj->id : 0}}" class="topic-check topic-selection-check" data-topic="{{isset($listingObj->title)? $listingObj->title : '-'}}"> <label  for="check_{{isset($listingObj->id)? $listingObj->id : 0}}">{{isset($listingObj->title)? $listingObj->title : '-'}}</label></td>
+                                <td data-th="Performance">
+                                    @if($smart_score > 0)
+                                        {{$smart_score}}
+                                        <div class="percent-holder">
+                                            <div class="chapter_percent circle-blue" data-percent="{{$smart_score}}">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            @else
-                                Not enough data
-                            @endif
-                        </td>
-                        <td data-th="Last seen">
-                            @if(isset($last_activity) && $last_activity > 0)
-                                {{ dateTimeFormat($last_activity, 'j M Y') }}
-                            @else
-                                -
-                            @endif
-                            </td>
-                    </tr>
+                                    @else
+                                        Not enough data
+                                    @endif
+                                </td>
+                                <td data-th="Last seen">
+                                    @if(isset($last_activity) && $last_activity > 0)
+                                        {{ dateTimeFormat($last_activity, 'j M Y') }}
+                                    @else
+                                        -
+                                    @endif
+                                </td>
+                            </tr>
+                        @endforeach
+                    @endif
                 @endforeach
-            @else
-                <tr class="listing-data-row" data-parent_id="{{isset($listingObj->parent_id)? $listingObj->parent_id : 0}}">
-                    <td colspan="4">
-                        @include('web.default.default.list_no_record')
-                    </td>
-                </tr>
             @endif
-
-
             </tbody>
         </table>
     </div>
