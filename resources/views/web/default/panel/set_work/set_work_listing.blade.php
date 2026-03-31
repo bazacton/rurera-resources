@@ -5,7 +5,9 @@
                 if(!isset($assignmentObj->StudentAssignmentData->id)){
                     continue;
                 }
-                $assignmentTitle = ucfirst($assignmentObj->StudentAssignmentData->assignment_type);
+                $quizObj = $assignmentObj->quizData;
+                $assignmentTitle = isset($quizObj->id)? $quizObj->getTitleAttribute() : '';
+                $assignmentTitle = ($assignmentTitle == '')? ucfirst($assignmentObj->StudentAssignmentData->assignment_type) : $assignmentTitle;
                 $assignmentLink = '/assignment/'.$assignmentObj->id;
             @endphp
             <div class="rurera-tasks-item">
