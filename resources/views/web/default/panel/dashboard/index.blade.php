@@ -61,7 +61,7 @@
         <h2 class="font-16 font-weight-bold">Set Work</h2>
     </div>
     @if(isset($assignmentsArray))
-        @include('web.default.panel.set_work.set_work_listing',['assignments' => $assignmentsArray])
+        @include('web.default.panel.set_work.set_work_listing',['assignmentsArray' => $assignmentsArray])
     @endif
 
     <div class="mt-15 rurera-hide">
