@@ -76,7 +76,7 @@
             @if (auth()->check() && auth()->user()->isParent())
             <div class="years-group populated-data mb-10">
                 <div class="form-section mb-20 text-left 223">
-                    <h2 class="section-title font-18 font-weight-bold">Select Student1</h2>
+                    <h2 class="section-title font-18 font-weight-bold">Select Student</h2>
                 </div>
                 <div class="form-group">
                     <div class="input-group">
@@ -88,6 +88,7 @@
                                     @if(!isset($childObj->id)) @php continue; @endphp  @endif
                                     @php $childObj = $childLinkObj->user; @endphp
                                     @php
+                                    pre('testing', false);
                                     $userSubscriptions = isset($childObj->id)? $childObj->userSubscriptions : '';
                                     $is_user_subscribed = isset( $userSubscriptions->id )? true : false;
                                     if($is_user_subscribed == true){
