@@ -1113,6 +1113,14 @@ function postRedirect(url, data) {
     form.method = 'POST';
     form.action = url;
 
+    // Add CSRF token
+    const csrfInput = document.createElement('input');
+    csrfInput.type = 'hidden';
+    csrfInput.name = '_token';
+    csrfInput.value = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+    form.appendChild(csrfInput);
+
+    // Add other data
     for (const key in data) {
         if (data.hasOwnProperty(key)) {
             const input = document.createElement('input');
