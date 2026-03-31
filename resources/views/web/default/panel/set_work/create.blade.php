@@ -1575,6 +1575,7 @@
                     }
                     rurera_remove_loader(thisObj, 'button');
 
+                    $(".assignment_subject_check:checked").change();
                 }
             });
         });
