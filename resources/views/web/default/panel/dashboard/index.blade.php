@@ -1097,8 +1097,9 @@ $(document).on('click', '.rurera-tests-btn', function (e) {
                 console.log(target_type);
                 if(target_type == 'post'){
                     postRedirect(target_url, {
-                        user_id: 123,
-                        name: "Baz"
+                        question_type: 'multiplication',
+                        no_of_questions: 10,
+                        question_values: [2,10]
                     });
                 }else{
                     window.location.href = target_url;
@@ -1108,33 +1109,44 @@ $(document).on('click', '.rurera-tests-btn', function (e) {
     });
 
 });
+
 function postRedirect(url, data) {
     const form = document.createElement('form');
     form.method = 'POST';
     form.action = url;
 
-    // Add CSRF token
+    // CSRF token
     const csrfInput = document.createElement('input');
     csrfInput.type = 'hidden';
     csrfInput.name = '_token';
-    csrfInput.value = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+    csrfInput.value = document.querySelector('meta[name="csrf-token"]').content;
     form.appendChild(csrfInput);
 
-    // Add other data
     for (const key in data) {
         if (data.hasOwnProperty(key)) {
-            const input = document.createElement('input');
-            input.type = 'hidden';
-            input.name = key;
-            input.value = data[key];
-            form.appendChild(input);
+
+            // ✅ Handle arrays
+            if (Array.isArray(data[key])) {
+                data[key].forEach(value => {
+                    const input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = key + '[]';   // important
+                    input.value = value;
+                    form.appendChild(input);
+                });
+            } else {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = key;
+                input.value = data[key];
+                form.appendChild(input);
+            }
         }
     }
 
     document.body.appendChild(form);
     form.submit();
 }
-
 </script>
 @endpush
 
