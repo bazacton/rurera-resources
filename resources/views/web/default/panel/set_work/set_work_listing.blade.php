@@ -1,67 +1,195 @@
+<div class="rurera-tasks-card bg-white panel-border rounded-sm px-20 py-15" id="rureraTasksCard">
+    <div class="rurera-tasks-item">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <div class="d-flex align-items-center">
+                    <div class="rurera-tasks-content">
+                        <div class="rurera-tasks-title-row">
+                            <h3 class="rurera-tasks-name font-16 font-weight-bold">Cambridge Select Insight (CEM Select)</h3>
+                            <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
+                        </div>
+                        <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 rurera-tasks-row-right">
+                <div class="rurera-tasks-actions font-14">
+                    <button class="rurera-tasks-btn rurera-tasks-btn-outline">Download</button>
+                    <div class="rurera-tasks-actions-dropdown dropdown">
+                        <button type="button"
+                                class="dropdown-toggle"
+                                id="rurera-tasks-dropdown"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                            <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
+                            <button type="button" class="rurera-tasks-close-btn">
+                                <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
+                                <span>Delete</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<section class="dashboard">
-    <div class="db-form-tabs">
-        <div class="db-members">
-            <div class="row g-3 list-unstyled">
-                <div class="col-12">
-                    <div class="card pt-0">
-                        <div class="card-body">
-                            <ul class="rurera-tabs-frontend set-work-ajax d-flex flex-wrap align-items-center">
-                                <li class="active font-weight-bold font-18 pb-10" data-type="active">Inprogress</li>
-                                <li class="font-weight-bold font-18 pb-10" data-type="completed">Completed</li>
-                                <li class="font-weight-bold font-18 pb-10" data-type="expired">Overdue</li>
-                                
-                            </ul>
+    <div class="rurera-tasks-item">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <div class="d-flex align-items-center">
+                    <div class="rurera-tasks-content">
+                        <div class="rurera-tasks-title-row">
+                            <h3 class="rurera-tasks-name font-16 font-weight-bold">English Placement Assessment</h3>
+                            <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
+                        </div>
+                        <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 rurera-tasks-row-right">
+                <div class="rurera-tasks-actions font-14">
+                    <button class="rurera-tasks-btn rurera-tasks-btn-outline">Resume</button>
+                    <div class="rurera-tasks-actions-dropdown">
+                        <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
+                            <button type="button" class="rurera-tasks-close-btn">
+                                <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
+                                <span>Delete</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                            <div class="list-group list-group-custom set-work-content list-group-flush totalChilds pt-0" data-childs="12">
-                                <div class="rurera-tables-list">
-                                    <div class="list-group-item">
-                                        <div class="table-sm">
-                                            <table class="students-table">
-                                                <thead>
-                                                <tr>
-                                                    <th><h6 class="font-18 font-weight-500">Next to Practice</h6></th>
-                                                    <th><h6 class="font-18 font-weight-500">Assigned By</h6></th>
-                                                    <th><h6 class="font-18 font-weight-500">Due Date</h6></th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td data-th="Title">
-                                                        <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/sidebar/timestable.svg" alt="timestables" height="65" width="98">
-                                                            TT-Powerup-[1-6] 1M - 1Att
-                                                            <span class="type-tags">Timestables</span>
-                                                            <span class="type-tags">2, 3, 4 Tables</span>
-                                                        </a>
-                                                        <div class="dropdown-box hide-lg">
-                                                            <div class="dropdown">
-                                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three" height="800" width="800"></span>
-                                                                </a>
-                                                                <div class="dropdown-menu">
-                                                                    <a href="/panel/set-work/16/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple" height="64" width="64"> Details</a>
-                                                                    <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/16/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu" height="800" width="800"> Delete</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td data-th="Assigned By">
-                                                        <h6 class="font-16 font-weight-normal">
-                                                            <span class="font-16">Parent 5000</span>
-                                                        </h6>
-                                                    </td>
-                                                    <td data-th="Due Date">
-                                                        <div class="last-activity">
-                                                            <span class="due-date font-16">20 Feb 2026</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="rurera-pagination"></div>
+    <div class="rurera-tasks-item">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <div class="d-flex align-items-center">
+                    <div class="rurera-tasks-content">
+                        <div class="rurera-tasks-title-row">
+                            <h3 class="rurera-tasks-name font-16 font-weight-bold">Quantitative Reasoning Practice</h3>
+                            <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
+                        </div>
+                        <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 rurera-tasks-row-right">
+                <div class="rurera-tasks-actions font-14">
+                    <button class="rurera-tasks-btn rurera-tasks-btn-outline">Continue</button>
+                    <div class="rurera-tasks-actions-dropdown">
+                        <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
+                            <button type="button" class="rurera-tasks-close-btn">
+                                <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
+                                <span>Delete</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="rureraHiddenTasks" class="collapse" style="margin-top: 18px; border-top: 1px solid #e6ebf0; padding-top: 18px;">
+        <div class="rurera-tasks-item">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="d-flex align-items-center">
+                        <div class="rurera-tasks-content">
+                            <div class="rurera-tasks-title-row">
+                                <h3 class="rurera-tasks-name font-16 font-weight-bold">Reading Comprehension Mock</h3>
+                                <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">Due Soon</span>
+                            </div>
+                            <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 rurera-tasks-row-right">
+                    <div class="rurera-tasks-actions font-14">
+                        <button class="rurera-tasks-btn rurera-tasks-btn-outline">Join</button>
+                        <div class="rurera-tasks-actions-dropdown">
+                            <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
+                                <button type="button" class="rurera-tasks-close-btn">
+                                    <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
+                                    <span>Delete</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rurera-tasks-item">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="d-flex align-items-center">
+                        <div class="rurera-tasks-content">
+                            <div class="rurera-tasks-title-row">
+                                <h3 class="rurera-tasks-name font-16 font-weight-bold">Vocabulary Builder Challenge</h3>
+                                <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
+                            </div>
+                            <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 rurera-tasks-row-right">
+                    <div class="rurera-tasks-actions font-14">
+                        <button class="rurera-tasks-btn rurera-tasks-btn-outline">Open</button>
+                        <div class="rurera-tasks-actions-dropdown">
+                            <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
+                                <button type="button" class="rurera-tasks-close-btn">
+                                    <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
+                                    <span>Delete</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rurera-tasks-item">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="d-flex align-items-center">
+                        <div class="rurera-tasks-content">
+                            <div class="rurera-tasks-title-row">
+                                <h3 class="rurera-tasks-name font-16 font-weight-bold">Verbal Skills Final Check</h3>
+                                <span class="rurera-tasks-tag rurera-tasks-tag-overdue">Overdue</span>
+                            </div>
+                            <p class="subject-info font-14 text-gray">Mock test • Deadline 01/07/24 • Assigned by you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 rurera-tasks-row-right">
+                    <div class="rurera-tasks-actions font-14">
+                        <button class="rurera-tasks-btn rurera-tasks-btn-outline">Submit</button>
+                        <div class="rurera-tasks-actions-dropdown">
+                            <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="rurera-tasks-dropdown">
+                                <button type="button" class="rurera-tasks-close-btn">
+                                    <img src="/assets/default/svgs/delete.svg" alt="" aria-hidden="true">
+                                    <span>Delete</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -69,4 +197,10 @@
             </div>
         </div>
     </div>
-</section>
+
+    <div class="rurera-tasks-toggle-wrap" id="rureraTasksToggleWrap">
+        <a class="rurera-tasks-toggle font-weight-500" data-toggle="collapse" href="#rureraHiddenTasks" role="button" aria-expanded="false" aria-controls="rureraHiddenTasks" id="rureraTasksToggle">
+            View all tasks →
+        </a>
+    </div>
+</div>
