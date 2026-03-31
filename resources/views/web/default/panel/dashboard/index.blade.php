@@ -569,7 +569,7 @@
                 <h2 class="font-22 font-weight-bold">Set Work</h2>
             </div>
         </div>
-        @include('web.default.panel.set_work.set_work_listing',['assignments' => []])
+        @include('web.default.panel.set_work.set_work_listing',['assignments' => [$assignmentsArray]])
     </div>
 @endif
 @if(auth()->user()->isUser())
