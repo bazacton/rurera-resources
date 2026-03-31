@@ -9,7 +9,7 @@
                 $assignmentTitle = isset($quizObj->id)? $quizObj->getTitleAttribute() : '';
                 $assignmentTitle = ($assignmentTitle == '')? ucfirst($assignmentObj->StudentAssignmentData->assignment_type) : $assignmentTitle;
                 $assignmentLink = '/assignment/'.$assignmentObj->id;
-                $time_difference = TimeDifference($assignmentObj->deadline_date , time() , 'minutes');
+                $time_difference = TimeDifference(time(), $assignmentObj->deadline_date , 'minutes');
             @endphp
             <div class="rurera-tasks-item">
                 <div class="row align-items-center">
