@@ -1074,6 +1074,7 @@ $(document).on('click', '.rurera-tests-btn', function (e) {
     var thisObj = $('.rurera-tests-btn');
     var test_id = $(this).attr('data-test_id');
     var target_url = $(this).attr('data-target_url');
+    var target_type = $(this).attr('data-target_type');
     rurera_loader(thisObj, 'button');
     jQuery.ajax({
         type: "GET",
@@ -1093,13 +1094,37 @@ $(document).on('click', '.rurera-tests-btn', function (e) {
                 $(".alreadyStarted").modal('show');
 
             } else {
-                window.location.href = target_url;
+                if(target_type == 'post'){
+                    postRedirect(url, {
+                        user_id: 123,
+                        name: "Baz"
+                    });
+                }else{
+                    window.location.href = target_url;
+                }
             }
         }
     });
 
 });
+function postRedirect(url, data) {
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = url;
 
+    for (const key in data) {
+        if (data.hasOwnProperty(key)) {
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = key;
+            input.value = data[key];
+            form.appendChild(input);
+        }
+    }
+
+    document.body.appendChild(form);
+    form.submit();
+}
 
 </script>
 @endpush
