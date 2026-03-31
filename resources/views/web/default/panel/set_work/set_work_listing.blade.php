@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-md-5 rurera-tasks-row-right">
                         <div class="rurera-tasks-actions font-14">
-                            <button class="rurera-tasks-btn rurera-tasks-btn-outline">Continue</button>
+                            <a href="{{$assignmentLink}}" class="rurera-tasks-btn rurera-tasks-btn-outline">Continue</a>
                             <div class="rurera-tasks-actions-dropdown">
                                 <button type="button" class="dropdown-toggle" id="rurera-tasks-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="/assets/default/svgs/dots-three.svg" alt="" aria-hidden="true">
