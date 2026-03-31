@@ -10,6 +10,7 @@
                 $assignmentTitle = ($assignmentTitle == '')? ucfirst($assignmentObj->StudentAssignmentData->assignment_type) : $assignmentTitle;
                 $assignmentLink = '/assignment/'.$assignmentObj->id;
                 $time_difference = TimeDifference(time(), $assignmentObj->deadline_date , 'minutes');
+                $assignmentLink = getAssignmentLink($assignmentObj, $assignmentObj->StudentAssignmentData);
                 $due_label = '';
                 $due_class = '';
                 $due_label = ($time_difference <= 4000)? '- Due Soon' : $due_label;
