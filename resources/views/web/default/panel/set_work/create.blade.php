@@ -1728,6 +1728,8 @@
         $(".year_group_quiz_ajax_select").change();
         $(".assignment_quiz_type:checked").change();
         $(".assignment_type_check:checked").change();
+        $(".assignment_subject_check:checked").change();
+
 
 
         $('body').on('change', '.topic-section-parent', function (e) {
