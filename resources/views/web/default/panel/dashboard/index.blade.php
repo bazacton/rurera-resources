@@ -1137,66 +1137,6 @@ $(document).ready(function () {
     });
 });
 
-
-$(document).on('click', '.rurera-tests-btn1', function (e) {
-    var thisObj = $('.rurera-tests-btn');
-    var test_id = $(this).attr('data-test_id');
-    var target_url = $(this).attr('data-target_url');
-    rurera_loader(thisObj, 'button');
-    jQuery.ajax({
-        type: "GET",
-        dataType: 'json',
-        url: '/tests/check_test_validity',
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        },
-        data: {"test_id": test_id},
-        success: function (return_data) {
-            rurera_remove_loader(thisObj, 'div');
-            if (return_data.limit_reached == true) {
-                $(".limitReached").modal('show');
-            } else if (return_data.already_started_check == true) {
-                $(".target_url").val(target_url);
-                $(".result_id").val(return_data.result_id);
-                $(".alreadyStarted").modal('show');
-
-            } else {
-                window.location.href = target_url;
-            }
-        }
-    });
-
-});
-
-$(document).on('click', '.rurera-tests-btn', function (e) {
-    var thisObj = $('.rurera-tests-btn');
-    var test_id = $(this).attr('data-test_id');
-    var target_url = $(this).attr('data-target_url');
-    rurera_loader(thisObj, 'button');
-    jQuery.ajax({
-        type: "GET",
-        dataType: 'json',
-        url: '/tests/check_test_validity',
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        },
-        data: {"test_id": test_id},
-        success: function (return_data) {
-            rurera_remove_loader(thisObj, 'div');
-            if (return_data.limit_reached == true) {
-                $(".limitReached").modal('show');
-            } else if (return_data.already_started_check == true) {
-                $(".target_url").val(target_url);
-                $(".result_id").val(return_data.result_id);
-                $(".alreadyStarted").modal('show');
-
-            } else {
-                window.location.href = target_url;
-            }
-        }
-    });
-
-});
 </script>
 @endpush
 
