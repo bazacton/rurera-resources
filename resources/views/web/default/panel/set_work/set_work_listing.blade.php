@@ -11,8 +11,13 @@
                 $assignmentLink = '/assignment/'.$assignmentObj->id;
                 $time_difference = TimeDifference(time(), $assignmentObj->deadline_date , 'minutes');
                 $due_label = '';
-                $due_label = ($time_difference <= 4000)? '- Due Soon' : $due_label;
+                $due_class = '';
+                $due_label = ($time_difference <= 1440)? '- Due Soon' : $due_label;
                 $due_label = ($time_difference <= 5)? '- Overdue' : $due_label;
+
+                $due_label = ($time_difference <= 1440)? 'rurera-tasks-tag-due-soon' : $due_class;
+                $due_label = ($time_difference <= 5)? 'rurera-tasks-tag-overdue' : $due_class;
+
             @endphp
             <div class="rurera-tasks-item">
                 <div class="row align-items-center">
@@ -21,7 +26,9 @@
                             <div class="rurera-tasks-content">
                                 <div class="rurera-tasks-title-row">
                                     <h3 class="rurera-tasks-name font-16 font-weight-bold">{{$assignmentTitle}}</h3>
-                                    <span class="rurera-tasks-tag rurera-tasks-tag-due-soon">{{$time_difference}} {{$due_label}}</span>
+                                    @if($due_label != '')
+                                        <span class="rurera-tasks-tag {{$due_label}}">{{$due_label}}</span>
+                                    @endif
                                 </div>
                                 <p class="subject-info font-14 text-gray">{{ucfirst($assignmentObj->StudentAssignmentData->assignment_type)}} • Deadline {{dateTimeFormat($assignmentObj->deadline_date, 'd F Y')}} • Assigned by {{$assignmentObj->StudentAssignmentData->creator->get_full_name()}}</p>
                             </div>
