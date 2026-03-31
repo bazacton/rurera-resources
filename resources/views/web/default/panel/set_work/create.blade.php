@@ -1574,6 +1574,8 @@
                         $(".quiz-ajax-fields").html(return_data);
                     }
                     rurera_remove_loader(thisObj, 'button');
+
+                    $(".assignment_subject_check:checked").change();
                 }
             });
         });
