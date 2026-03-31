@@ -1096,7 +1096,7 @@ $(document).on('click', '.rurera-tests-btn', function (e) {
             } else {
                 console.log(target_type);
                 if(target_type == 'post'){
-                    postRedirect(url, {
+                    postRedirect(target_url, {
                         user_id: 123,
                         name: "Baz"
                     });
