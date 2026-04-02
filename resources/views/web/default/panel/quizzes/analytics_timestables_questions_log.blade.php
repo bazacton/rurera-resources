@@ -29,7 +29,7 @@
     <div class="section-title mb-15">
         <h2 class="font-22 mb-0">Skill Summary</h2>
     </div>
-    @include('web.default.panel.quizzes.analytics_tests_questions_log_inner',
+    @include('web.default.panel.quizzes.analytics_timestables_questions_log_inner',
     [
     'question'               => $question,
     'attempted_questions_list' => $attempted_questions_list,
