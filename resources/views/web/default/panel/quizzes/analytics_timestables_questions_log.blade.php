@@ -189,7 +189,7 @@
                                                                 $correct_answers = is_array($correct_answers)? array_column($correct_answers, 0) : array();
 
                                                                 $user_answers = isset($logQuestionObj->user_answer)? json_decode($logQuestionObj->user_answer, true) : array();
-                                                                $user_answers = array_column($user_answers, 0);
+                                                                $user_answers = is_array($user_answers)? array_column($user_answers, 0) : array();
                                                                 $status_class = '';
                                                                 $status_class = ($question_status == 'correct')? 'question-status-correct' : $status_class;
                                                                 $status_class = ($question_status == 'incorrect')? 'question-status-incorrect' : $status_class;
