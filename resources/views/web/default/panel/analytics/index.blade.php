@@ -64,8 +64,24 @@
         <div class="chart-filters p-0">
             <div class="filters-list mb-0 font-14">
                 <a href="#" class="filter-mobile-btn">Filters</a>
+                @php $module_types = module_types(); @endphp
                 <ul class="analytics-type">
                     @php $link_append = (isset($_GET['child'])) ? '?child='.$_GET['child'] : ''; @endphp
+
+
+                    @if(!empty($module_types))
+                        @foreach($module_types as $module_slug => $module_data)
+                            @php
+                                $module_label = isset($module_data['label'])? $module_data['label'] : '';
+                                $background_color = isset($module_data['background_color'])? $module_data['background_color'] : '';
+                                $font_color = isset($module_data['font_color'])? $module_data['font_color'] : '';
+                                $icon = isset($module_data['icon'])? $module_data['icon'] : '';
+                            @endphp
+
+                            <li {{($type_selected == $module_slug)? 'class=active' : ''}}><a href="/analytics{{$link_append}}" data-graph_type="{{$module_slug}}"><img src="{{$icon}}" height="800" width="800" alt="{{$module_slug}}"> {{$module_label}}</a></li>
+                        @endforeach
+                    @endif
+
                     <li {{($type_selected == 'all')? 'class=active' : ''}}><a href="/analytics{{$link_append}}" data-graph_type="all"><img src="/assets/default/img/sidebar/all.svg" height="800" width="800" alt="all"> All</a></li>
                     <li {{($type_selected == 'learn')? 'class=active' : ''}}><a href="/analytics/learn{{$link_append}}" data-graph_type="learn"><img src="/assets/default/img/sidebar/learn.png" height="800" width="800" alt="learn"> Learn</a></li>
                     <li {{($type_selected == 'timestables')? 'class=active' : ''}}><a href="/analytics/timestables{{$link_append}}" data-graph_type="timestables"><img src="/assets/default/img/sidebar/timestable.svg" height="800" width="800" alt="timestable"> Timestable</a></li>
