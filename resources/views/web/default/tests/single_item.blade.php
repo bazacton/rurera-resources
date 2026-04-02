@@ -12,7 +12,8 @@ $button_label = ($in_progress == true)? 'Resume Test' :'Take Test';
 $button_class = ($in_progress == true)? 'resume-test' :'';
 $button_label = ($results_count > 0)? 'Resume Test' : $button_label;
 $quiz_image = ($rowObj->quiz_image != '')? $rowObj->quiz_image : '/assets/default/img/assignment-logo/'.$rowObj->quiz_type.'.png';
-$assignments_count = $rowObj->check_is_assignment();
+$assignments_data = $rowObj->check_is_assignment();
+$assignments_count = isset($assignments_data['count'])? $assignments_data['count'] : 0;
 @endphp
 <div class="sats-listing-item">
     <div class="img-box">
