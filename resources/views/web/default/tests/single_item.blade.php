@@ -18,10 +18,13 @@ $assignments_count = $rowObj->check_is_assignment();
     <div class="img-box">
         <img src="{{$quiz_image}}" alt="quiz_image" width="59" height="59">
     </div>
-    Counts: {{$assignments_count}}
     <div class="text-box font-14">
         <h4 class="font-16 font-weight-bold">
-            <a href="/{{isset($url_slug)? $url_slug : 'sats'}}/{{$rowObj->quiz_slug}}" class="{{ subscriptionCheckLink('bookshelf') }} d-block mb-5">{{$rowObj->getTitleAttribute()}}</a>
+            <a href="/{{isset($url_slug)? $url_slug : 'sats'}}/{{$rowObj->quiz_slug}}" class="{{ subscriptionCheckLink('bookshelf') }} d-block mb-5">{{$rowObj->getTitleAttribute()}}
+            @if($assignments_count > 0)
+                <span class="icon-box"><img src="/assets/default/svgs/icon-star.svg" alt="icon-star" /></span>
+            @endif
+            </a>
         </h4>
         <span class="sub_label">{{$rowObj->no_of_questions}} Question(s),</span> 
         <span class="sub_label">Time:{{$rowObj->time}}m,</span> 
