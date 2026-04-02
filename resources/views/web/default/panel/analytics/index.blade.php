@@ -90,12 +90,6 @@
                         @endforeach
                     @endif
 
-                    <li {{($type_selected == 'all')? 'class=active' : ''}}><a href="/analytics{{$link_append}}" data-graph_type="all"><img src="/assets/default/img/sidebar/all.svg" height="800" width="800" alt="all"> All</a></li>
-                    <li {{($type_selected == 'learn')? 'class=active' : ''}}><a href="/analytics/learn{{$link_append}}" data-graph_type="learn"><img src="/assets/default/img/sidebar/learn.png" height="800" width="800" alt="learn"> Learn</a></li>
-                    <li {{($type_selected == 'timestables')? 'class=active' : ''}}><a href="/analytics/timestables{{$link_append}}" data-graph_type="timestables"><img src="/assets/default/img/sidebar/timestable.svg" height="800" width="800" alt="timestable"> Timestable</a></li>
-                    <li {{($type_selected == 'vocabulary')? 'class=active' : ''}}><a href="/analytics/vocabulary{{$link_append}}" data-graph_type="word_lists"><img src="/assets/default/img/sidebar/spell.svg" height="800" width="800" alt="spell"> Word Lists</a></li>
-                    <li {{($type_selected == 'books')? 'class=active' : ''}}><a href="/analytics/books{{$link_append}}" data-graph_type="books"><img src="/assets/default/img/sidebar/books.svg" height="800" width="800" alt="books"> Books</a></li>
-                    <li {{($type_selected == 'tests')? 'class=active' : ''}}><a href="/analytics/tests{{$link_append}}" data-graph_type="tests"><img src="/assets/default/img/sidebar/test.svg" height="800" width="800" alt="test"> Test</a></li>
                 </ul>
             </div>
             <ul class="analytics-data-ul">
