@@ -83,6 +83,9 @@
                                 if($font_color != ''){
                                     $style .= ' color:'.$font_color.';';
                                 }
+                                if($style != ''){
+                                    $style = 'style="'.$style.'"';
+                                }
                             @endphp
 
                             <li {{$style}} {{($type_selected == $module_slug)? 'class=active' : ''}}><a href="/analytics{{$link_append}}" data-graph_type="{{$module_slug}}"><img src="{{$icon}}" height="800" width="800" alt="{{$module_slug}}"> {{$module_label}}</a></li>
