@@ -86,10 +86,10 @@
 
                             @endphp
 
-                            <li style="{{$style}}" {{($type_selected == $module_slug)? 'class=active' : ''}}><a href="/analytics{{$link_append}}" data-graph_type="{{$module_slug}}"><img src="{{$icon}}" height="800" width="800" alt="{{$module_slug}}"> {{$module_label}}</a></li>
+                            <li style="{{$style}}" {{($type_selected == $module_slug)? 'class=active' : ''}}><a href="/analytics/{{$module_slug}}{{$link_append}}" data-graph_type="{{$module_slug}}"><img src="{{$icon}}" height="800" width="800" alt="{{$module_slug}}"> {{$module_label}}</a></li>
                         @endforeach
                     @endif
-                    <li {{($type_selected == 'set_work')? 'class=active' : ''}}><a href="/analytics{{$link_append}}" data-graph_type="set_work"><img src="/assets/default/img/sidebar/set-work.svg" height="800" width="800" alt="set work"> Set Work</a></li>
+                    <li {{($type_selected == 'set_work')? 'class=active' : ''}}><a href="/analytics/set_work{{$link_append}}" data-graph_type="set_work"><img src="/assets/default/img/sidebar/set-work.svg" height="800" width="800" alt="set work"> Set Work</a></li>
 
                 </ul>
             </div>
