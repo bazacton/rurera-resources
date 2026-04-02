@@ -76,9 +76,16 @@
                                 $background_color = isset($module_data['background_color'])? $module_data['background_color'] : '';
                                 $font_color = isset($module_data['font_color'])? $module_data['font_color'] : '';
                                 $icon = isset($module_data['icon'])? $module_data['icon'] : '';
+                                $style = '';
+                                if($background_color != ''){
+                                    $style .= ' background:'.$background_color.';';
+                                }
+                                if($font_color != ''){
+                                    $style .= ' color:'.$font_color.';';
+                                }
                             @endphp
 
-                            <li {{($type_selected == $module_slug)? 'class=active' : ''}}><a href="/analytics{{$link_append}}" data-graph_type="{{$module_slug}}"><img src="{{$icon}}" height="800" width="800" alt="{{$module_slug}}"> {{$module_label}}</a></li>
+                            <li {{$style}} {{($type_selected == $module_slug)? 'class=active' : ''}}><a href="/analytics{{$link_append}}" data-graph_type="{{$module_slug}}"><img src="{{$icon}}" height="800" width="800" alt="{{$module_slug}}"> {{$module_label}}</a></li>
                         @endforeach
                     @endif
 
