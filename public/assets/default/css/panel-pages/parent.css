@@ -506,7 +506,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 .parent-panel .sidebar-menu-holder .sidebar-logo {display: none;}
 .parent-panel .sidebar-menu-holder {display: flex; justify-content: flex-end;}
 
-@media screen and (min-width: 992px) and (max-width: 2500px) {
+@media screen and (min-width: 992px) and (max-width: 4500px) {
     .parent-panel .sidebar-menu-holder {height: auto; width: auto;}
 }
 @media screen and (max-width: 992px) {
