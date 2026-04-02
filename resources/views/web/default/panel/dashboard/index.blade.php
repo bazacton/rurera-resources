@@ -1101,7 +1101,7 @@ $(document).on('click', '.rurera-tests-btn', function (e) {
                     postRedirect(target_url, {
                         question_type: 'multiplication',
                         no_of_questions: 10,
-                        question_values: [2,10]
+                        question_values: [2,3]
                     });
                 }else{
                     window.location.href = target_url;
