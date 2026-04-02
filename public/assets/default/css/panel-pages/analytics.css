@@ -134,7 +134,7 @@ Sub Pages Style
 .date-range-box .daterangepicker {width: 100%; margin-left: -10px;}
 .date-range-box .daterangepicker .ranges ul {width: 100%;}
 .date-range-box .daterangepicker .ranges {width: 100%;}
-.rurera-hide {display: none;}
+.rurera-hide {display: none !important;}
 .analytics-dropdown .daterangepicker .ranges li.active,
 .analytics-dropdown .daterangepicker td.active, 
 .analytics-dropdown .daterangepicker td.active:hover,
