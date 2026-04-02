@@ -22,6 +22,7 @@ $assignments_count = isset($assignments_data['count'])? $assignments_data['count
     <div class="text-box font-14">
         <h4 class="font-16 font-weight-bold">
             <a href="/{{isset($url_slug)? $url_slug : 'sats'}}/{{$rowObj->quiz_slug}}" class="{{ subscriptionCheckLink('bookshelf') }} d-block mb-5">{{$rowObj->getTitleAttribute()}}
+                Count = {{$assignments_count}} -
             @if($assignments_count > 0)
                 <span class="icon-box"><img src="/assets/default/svgs/icon-star.svg" alt="icon-star" /></span>
             @endif
