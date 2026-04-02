@@ -80,7 +80,7 @@
             </ul>
         </div>
         <div class="analytics-dropdown font-14">
-            <div class="select-holder">
+            <div class="select-holder rurera-hide">
                 <h5 class="font-14 font-weight-500">Subject</h5>
                 <div class="select-box">
                     <select class="font-14">
