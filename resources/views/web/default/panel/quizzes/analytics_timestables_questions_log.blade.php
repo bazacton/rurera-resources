@@ -39,7 +39,6 @@
             <span>SESSION </span>
 
             <span class="analytics-timespend">
-                <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
                 <span>Thu, 02 Apr 26 - 14s</span>
             </span>
             <span class="analytics-cions-earned">
@@ -57,7 +56,6 @@
                 <span>Table 2 </span>
 
                 <span class="analytics-timespend">
-                <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
                 <span>Thu, 02 Apr 26 - 14s</span>
             </span>
                 <span class="analytics-cions-earned">
