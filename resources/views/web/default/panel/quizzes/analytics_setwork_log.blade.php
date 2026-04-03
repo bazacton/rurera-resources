@@ -48,8 +48,8 @@ $rand_id = rand(99,9999);
                     [
                     'question'               => 0,
                     'attempted_questions_list' => $attempted_questions_list,
-                    'time_consumed'          => 0,
-                    'incorrect_questions' => 0,
+                    'time_consumed'          => $time_consumed,
+                    'incorrect_questions' => $incorrect_questions,
                     'QuestionsAttemptController' => $QuestionsAttemptController,
                     'results_sessions' => $results_sessions,
                     'show_topic_performance' => 0,
