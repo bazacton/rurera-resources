@@ -27,7 +27,7 @@ $rand_id = rand(99,9999);
 @section('content')
 
     <div class="section-title mb-15">
-        <h2 class="font-22 mb-0">Skill Summary</h2>
+        <h2 class="font-22 mb-0">Skill Summary1</h2>
     </div>
     @include('web.default.panel.quizzes.analytics_questions_log_inner',
     [
