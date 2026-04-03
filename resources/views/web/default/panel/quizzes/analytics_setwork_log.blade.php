@@ -53,7 +53,7 @@ $rand_id = rand(99,9999);
 
                         <div class="question-area-block">
                             <div class="section-title mb-15">
-                                <h2 class="font-22 mb-0">title</h2>
+                                <h2 class="font-22 mb-0">{{$userAssignedTopicObj->StudentAssignmentData->title}}</h2>
                             </div>
                             <div class="chart-summary-fields result-layout-summary">
                                 <div class="sats-summary">
