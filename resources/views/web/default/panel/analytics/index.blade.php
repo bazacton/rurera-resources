@@ -116,7 +116,11 @@
                 </div>
             </div>
         </div>
-        @include('web.default.panel.analytics.setwork_analytics',['analytics_data' => $analytics_data])
+        @if($type == 'set_work')
+         @include('web.default.panel.analytics.setwork_analytics',['analytics_data' => $analytics_data])
+        @else
+            @include('web.default.panel.analytics.learn_analytics',['analytics_data' => $analytics_data])
+        @endif
 
 
 
