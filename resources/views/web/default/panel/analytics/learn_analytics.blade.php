@@ -1,5 +1,5 @@
 <div class="accordion" id="analyticsAccordion">
-
+    
     @if( !empty( $analytics_data) )
         @foreach( $analytics_data as $date_str => $analyticDataArray)
             @php if(!isset( $analyticDataArray['practice_time'] ) || $analyticDataArray['practice_time'] == 0){ continue; } @endphp
