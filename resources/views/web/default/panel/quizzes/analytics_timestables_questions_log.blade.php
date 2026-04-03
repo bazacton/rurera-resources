@@ -51,7 +51,7 @@
 
         <div id="attempt_questions_5642" class="collapse" data-parent="#analyticsAccordion" style="">
 
-            <div class="card-header  mb-0 font-14 border-top-0 collapsed" role="button" data-toggle="collapse" data-target="#attempt_questions_5642" aria-expanded="false" aria-controls="attempt_questions_5642">
+            <div class="card-header  mb-0 font-14 border-top-0 collapsed" role="button" data-toggle="collapse" data-target="#attempt_questions_56421_sum" aria-expanded="false" aria-controls="attempt_questions_5642">
 
                 <span>Table 2 </span>
 
@@ -62,7 +62,7 @@
                 <span>&nbsp;</span>
             </span>
             </div>
-
+            <div id="attempt_questions_56421_sum" class="collapse" data-parent="#analyticsAccordion" style="">
             <div class="card-body pb-20">
 
                 <div class="question-result-layout-holder">
@@ -297,6 +297,7 @@
 
                 </div>
             </div>
+        </div>
         </div>
 
 
