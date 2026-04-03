@@ -33,7 +33,7 @@ $rand_id = rand(99,9999);
     <div class="container mt-4">
 
         <!-- Tabs Nav -->
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <ul class="nav nav-pills" id="myTab" role="tablist">
             @if($topicAssignmentResults->count() > 0)
                 @php $attempt_counter = 1; @endphp
                 @foreach($topicAssignmentResults as $topicAssignmentResultObj)
