@@ -4,7 +4,6 @@
     @if( $studentAssignments->count() > 0 )
         @foreach( $studentAssignments as $studentAssignmentObj)
             @php $assignedTopics = $studentAssignmentObj->assignedTopics()->get();
-            pre($assignedTopics);
             @endphp
             <div class="card">
                 <div class="card-header collapsed mb-0 font-14" data-toggle="collapse" role="button" data-target="#report_{{$studentAssignmentObj->id}}" aria-expanded="true" aria-controls="report_{{$studentAssignmentObj->id}}">
@@ -23,6 +22,21 @@
                 <div id="report_{{$studentAssignmentObj->id}}" class="collapse" data-parent="#analyticsAccordion">
                     <div class="card-body">
                         <ul class="timeline-list">
+
+                            @if($assignedTopics->count() > 0)
+                                @foreach($assignedTopics as $assignedTopicObj)
+                                    @php $quizObj = $assignedTopicObj->quizData; @endphp
+
+                                    <li>
+                                        <div class="timeline-icon"><img src="/assets/default/img/types/practice.svg" width="26" height="26" alt="avatar"></div>
+                                        <div class="timeline-text"><p><strong><a href="">{{isset( $quizObj->id )? $quizObj->getTitleAttribute() : ''}}</a></strong>
+                                                </p>
+                                        </div>
+                                    </li>
+
+
+                                @endforeach
+                            @endif
 
                             @if( isset($analyticDataArray) && !empty( $analyticDataArray['data'] ) )
                                 @foreach( $analyticDataArray['data'] as $attempt_id => $analyticData)
