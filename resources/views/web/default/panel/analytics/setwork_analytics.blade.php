@@ -33,7 +33,12 @@
                             @if($assignedTopics->count() > 0)
                                 @foreach($assignedTopics as $assignedTopicObj)
                                     @php $quizObj = $assignedTopicObj->quizData;
-                                        $analytics_detail_link = 'analytics/set_work/'.isset($quizObj->id)? $quizObj->quiz_slug : '';
+
+                                        $analytics_detail_link = '';
+                                        if(isset($quizObj->id)){
+                                            pre($quizObj);
+                                            $analytics_detail_link = 'analytics/set_work/'.$quizObj->quiz_slug;
+                                        }
                                         $analytics_detail_link .= '/'.$studentAssignmentObj->id;
                                     @endphp
 
