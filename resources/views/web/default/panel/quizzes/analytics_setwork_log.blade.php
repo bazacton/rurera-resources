@@ -47,7 +47,7 @@ $rand_id = rand(99,9999);
                 @include('web.default.panel.quizzes.analytics_questions_log_inner',
                     [
                     'question'               => 0,
-                    'attempted_questions_list' => (object) array(),
+                    'attempted_questions_list' => $attempted_questions_list,
                     'time_consumed'          => 0,
                     'incorrect_questions' => 0,
                     'QuestionsAttemptController' => $QuestionsAttemptController,
