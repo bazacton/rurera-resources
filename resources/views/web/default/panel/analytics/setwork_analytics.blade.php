@@ -1,29 +1,27 @@
+@php $studentAssignments = $analytics_data; @endphp
 <div class="accordion" id="analyticsAccordion">
 
-    @if( !empty( $analytics_data) )
-        @foreach( $analytics_data as $date_str => $analyticDataArray)
-            @php if(!isset( $analyticDataArray['practice_time'] ) || $analyticDataArray['practice_time'] == 0){ continue; } @endphp
-            @php $report_date = strtotime(str_replace('_', '-', $date_str)); @endphp
+    @if( $studentAssignments->count() > 0 )
+        @foreach( $studentAssignments as $studentAssignmentObj)
             <div class="card">
-                <div class="card-header collapsed mb-0 font-14" data-toggle="collapse" role="button" data-target="#report_{{$date_str}}" aria-expanded="true" aria-controls="report_{{$date_str}}">
-                    <span>{{ dateTimeFormat($report_date,'d F Y') }}</span>
+                <div class="card-header collapsed mb-0 font-14" data-toggle="collapse" role="button" data-target="#report_{{$studentAssignmentObj->id}}" aria-expanded="true" aria-controls="report_{{$date_str}}">
+                    <span>test</span>
                     <span class="analytics-timespend float-right">
-                        <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
-                        <span>{{ isset( $analyticDataArray['practice_time'] )? getTimeWithText($analyticDataArray['practice_time']) : 0 }}</span>
+                        <span></span>
                     </span>
                     <span class="analytics-cions-earned float-right mr-10">
                         <img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins">
                         <span>
-                            {{ isset( $analyticDataArray['coins_earned'] )? $analyticDataArray['coins_earned'] : 0 }}
+                            0
                         </span>
                     </span>
                 </div>
 
-                <div id="report_{{$date_str}}" class="collapse" data-parent="#analyticsAccordion">
+                <div id="report_{{$studentAssignmentObj->id}}" class="collapse" data-parent="#analyticsAccordion">
                     <div class="card-body">
                         <ul class="timeline-list">
 
-                            @if( !empty( $analyticDataArray['data'] ) )
+                            @if( isset($analyticDataArray) && !empty( $analyticDataArray['data'] ) )
                                 @foreach( $analyticDataArray['data'] as $attempt_id => $analyticData)
                                     @php $parent_type_id = isset( $analyticData['parent_type_id'] )? $analyticData['parent_type_id']
                         : '';
