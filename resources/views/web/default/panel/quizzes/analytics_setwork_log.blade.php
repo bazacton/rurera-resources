@@ -38,9 +38,9 @@ $rand_id = rand(99,9999);
                 @php $attempt_counter = 1; @endphp
                 @foreach($topicAssignmentResults as $topicAssignmentResultObj)
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link {{($active_result_id == $topicAssignmentResultObj->id)? 'active' : ''}}" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">
+                        <a href="#" class="nav-link {{($active_result_id == $topicAssignmentResultObj->id)? 'active' : ''}}" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">
                             Attempt {{$attempt_counter}}
-                        </button>
+                        </a>
                     </li>
                     @php $attempt_counter++; @endphp
                 @endforeach
