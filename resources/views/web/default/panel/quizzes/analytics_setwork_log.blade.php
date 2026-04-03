@@ -34,11 +34,18 @@ $rand_id = rand(99,9999);
 
         <!-- Tabs Nav -->
         <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">
-                    Attempt 1
-                </button>
-            </li>
+            @if($topicAssignmentResults->count() > 0)
+                @php $attempt_counter = 1; @endphp
+                @foreach($topicAssignmentResults as $$topicAssignmentResultObj)
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">
+                            Attempt {{$attempt_counter}}
+                        </button>
+                    </li>
+                    @php $attempt_counter++; @endphp
+                @endforeach
+            @endif
+
         </ul>
 
         <!-- Tabs Content -->
