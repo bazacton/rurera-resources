@@ -35,9 +35,7 @@
                                     @php $quizObj = $assignedTopicObj->quizData;
 
                                         $analytics_detail_link = '';
-                                        if(isset($quizObj->id)){
-                                            $analytics_detail_link = '/analytics/set_work/'.$studentAssignmentObj->id.'/'.$assignedTopicObj->id;
-                                        }
+                                        $analytics_detail_link = '/analytics/set_work/'.$studentAssignmentObj->id.'/'.$assignedTopicObj->id;
                                     @endphp
 
                                     <li>
