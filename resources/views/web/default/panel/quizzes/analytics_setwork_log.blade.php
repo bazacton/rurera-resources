@@ -29,6 +29,43 @@ $rand_id = rand(99,9999);
     <div class="section-title mb-15">
         <h2 class="font-22 mb-0">{{$userAssignedTopicObj->StudentAssignmentData->title}} - Summary</h2>
     </div>
+
+    <div class="container mt-4">
+
+        <!-- Tabs Nav -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">
+                    Home
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button">
+                    Profile
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button">
+                    Contact
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="home">
+                <p>This is Home tab content.</p>
+            </div>
+            <div class="tab-pane fade" id="profile">
+                <p>This is Profile tab content.</p>
+            </div>
+            <div class="tab-pane fade" id="contact">
+                <p>This is Contact tab content.</p>
+            </div>
+        </div>
+
+    </div>
+
     <div class="content-section">
         <section class="lms-quiz-section no-bg">
             <div class="container-fluid questions-data-block read-quiz-content" data-total_questions="10">
@@ -126,5 +163,6 @@ $rand_id = rand(99,9999);
     </div>
 
 @endsection
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
