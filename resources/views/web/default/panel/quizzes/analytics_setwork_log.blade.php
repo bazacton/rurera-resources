@@ -38,7 +38,7 @@ $rand_id = rand(99,9999);
                 @php $attempt_counter = 1; @endphp
                 @foreach($topicAssignmentResults as $topicAssignmentResultObj)
                     <li class="nav-item" role="presentation">
-                        <a href="/analytics/set_work/{{$student_assignment_id}}/{{$topic_assignment_id}}:session={{$topicAssignmentResultObj->id}}" class="nav-link {{($active_result_id == $topicAssignmentResultObj->id)? 'active' : ''}}" id="home-tab">
+                        <a href="/analytics/questions-log:assignment={{$topic_assignment_id}}&session={{$topicAssignmentResultObj->id}}" class="nav-link {{($active_result_id == $topicAssignmentResultObj->id)? 'active' : ''}}" id="home-tab">
                             Attempt {{$attempt_counter}}
                         </a>
                     </li>
