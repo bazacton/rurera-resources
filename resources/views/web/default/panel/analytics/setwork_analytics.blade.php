@@ -31,6 +31,9 @@
                                         <div class="timeline-icon"><img src="/assets/default/img/types/practice.svg" width="26" height="26" alt="avatar"></div>
                                         <div class="timeline-text"><p><strong><a href="">{{isset( $quizObj->id )? $quizObj->getTitleAttribute() : ''}}</a></strong>
                                                 </p>
+                                            <span class="analytic-item">Attempts: 1</span>
+                                            <span class="analytic-item">Questions answered: 10</span>
+                                            <span class="analytic-item">Correct answers: 3</span>
                                         </div>
                                     </li>
 
