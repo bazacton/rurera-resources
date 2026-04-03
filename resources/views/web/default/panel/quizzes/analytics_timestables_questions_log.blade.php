@@ -56,7 +56,7 @@
                 <span>Table 2 </span>
 
                 <span class="analytics-timespend">
-                <span>Thu, 02 Apr 26 - 14s</span>
+                <span>Questions: 2 | Correct: 1 | Incorrect: 1</span>
             </span>
                 <span class="analytics-cions-earned">
                 <span>&nbsp;</span>
