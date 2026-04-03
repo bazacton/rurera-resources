@@ -116,15 +116,10 @@
                 </div>
             </div>
         </div>
-        <div class="analytics-header">
-            <div class="header-text font-14 font-weight-bold text-dark-charcoal">
-                <span>Date</span>
-                <span>Avg Daily Mins</span>
-                <span>Coins Earned</span>
-            </div>
-        </div>
-
         @include('web.default.panel.analytics.setwork_analytics',['analytics_data' => $analytics_data])
+
+
+
 
     </div>
 </section>

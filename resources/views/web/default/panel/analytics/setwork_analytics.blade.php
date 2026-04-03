@@ -1,4 +1,11 @@
 @php $studentAssignments = $analytics_data; @endphp
+<div class="analytics-header">
+    <div class="header-text font-14 font-weight-bold text-dark-charcoal">
+        <span>Setwork Title</span>
+        <span>Avg Daily Mins</span>
+        <span>Coins Earned</span>
+    </div>
+</div>
 <div class="accordion" id="analyticsAccordion">
 
     @if( $studentAssignments->count() > 0 )
