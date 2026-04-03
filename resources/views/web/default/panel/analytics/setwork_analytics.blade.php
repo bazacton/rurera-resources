@@ -3,7 +3,7 @@
 
     @if( $studentAssignments->count() > 0 )
         @foreach( $studentAssignments as $studentAssignmentObj)
-            @php $assignedTopics = $studentAssignmentObj->assignedTopics();
+            @php $assignedTopics = $studentAssignmentObj->assignedTopics()->get();
             pre($assignedTopics);
             @endphp
             <div class="card">
