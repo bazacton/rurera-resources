@@ -36,7 +36,7 @@ $rand_id = rand(99,9999);
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             @if($topicAssignmentResults->count() > 0)
                 @php $attempt_counter = 1; @endphp
-                @foreach($topicAssignmentResults as $$topicAssignmentResultObj)
+                @foreach($topicAssignmentResults as $topicAssignmentResultObj)
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">
                             Attempt {{$attempt_counter}}
