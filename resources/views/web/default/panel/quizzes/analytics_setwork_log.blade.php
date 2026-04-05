@@ -8,6 +8,7 @@ $rand_id = rand(99,9999);
 
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/css/quiz-common.css">
+<link rel="stylesheet" href="/assets/default/css/panel-pages/timestable.css">
 
 <style>
 .field-holder.correct, .form-field.correct, .form-field.correct label {

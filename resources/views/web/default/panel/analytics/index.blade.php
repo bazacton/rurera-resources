@@ -2,7 +2,6 @@
 @push('styles_top')
 <script src="/assets/default/vendors/charts/chart.js"></script>
 <link rel="stylesheet" href="/assets/default/vendors/daterangepicker/daterangepicker.min.css">
-<link rel="stylesheet" href="/assets/default/css/panel-pages/timestable.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <style>
     .hide {
