@@ -108,11 +108,12 @@
                                     </div>
 
                                     <div class="chart-container font-14 font-weight-500">
-                                        @if(isset($topic_parts_data) && !empty($topic_parts_data))
-                                            @foreach( $topic_parts_data as $topic_part_id => $topic_part_data)
+
+                                        @if(isset($topicSubParts) && $topicSubParts->count() > 0)
+                                            @foreach( $topicSubParts as $topicSubPartItemObj)
                                                 @php
-                                                    $smart_score = isset($topic_part_data->smart_score)? $topic_part_data->smart_score : 0;
-                                                    $topic_part_title = isset($topic_part_data->topic_part_title)? $topic_part_data->topic_part_title : '';
+                                                    $PartItemsPerformance = $quiz->QuizUserPartItemsPerformance->where('topic_part_item_id', $topicSubPartItemObj->id)->where('year_id', $quiz->year_id)->where('user_id', $user->id)->first();
+                                                    $smart_score = isset($PartItemsPerformance->smart_score)? $PartItemsPerformance->smart_score : 0;
 
 
                                                     $progress_title = 'Not Started';
@@ -125,14 +126,14 @@
 
 
                                                 <div class="chart-row">
-                                                    <div class="row-label">{{$topic_part_title}}</div>
+                                                    <div class="row-label">{{$topicSubPartItemObj->title}}</div>
                                                     <div class="bar-area">
-                                                        <div class="bar master" style="width: {{$smart_score}}%;">
-                                                            <span class="smart-score">{{$smart_score}}</span> {{$progress_title}}</div>
+                                                        <div class="bar master" style="width: {{$smart_score}}%;">{{$progress_title}}</div>
                                                     </div>
                                                 </div>
                                             @endforeach
                                         @endif
+
 
                                     </div>
                                 </div>
@@ -168,8 +169,8 @@
                                             </span>
 
                                             <span class="analytics-cions-earned">
-
-                                                <span>&nbsp;</span>
+                                                <img src="/assets/default/img/sidebar/all.svg" alt="coins">
+                                                <span>{{isset($resultSessionArray['smart_code_label'])? $resultSessionArray['smart_code_label'] : ''}}</span>
                                             </span>
                                         </div>
 
@@ -290,20 +291,20 @@
         @foreach($attempted_questions_list->orderBy('attempted_at', 'asc')->get() as $attemptedQuestionObj)
 
         @php
-            $line = 'rgba(97,191,226,1)';      // blue
-            $fill = 'rgba(97,191,226,0.35)';     // blue
-            if ($attemptedQuestionObj->year_id == $user->year_id) {
-                $smart_score = $attemptedQuestionObj->smart_score;
-            }else{
-                if($is_skill_summary == true){
-                    $line = '#fe3c30';     // red
-                    $fill = '#ff9690';    // red
+                $line = 'rgba(97,191,226,1)';      // blue
+                $fill = 'rgba(97,191,226,0.35)';     // blue
+                if ($attemptedQuestionObj->year_id == $user->year_id) {
+                    $smart_score = $attemptedQuestionObj->smart_score;
+                }else{
+                    if($is_skill_summary == true){
+                        $line = '#fe3c30';     // red
+                        $fill = '#ff9690';    // red
+                    }
                 }
-            }
 
-            if ($is_skill_summary == false) {
-                $smart_score = $attemptedQuestionObj->smart_score;
-            }
+                if ($is_skill_summary == false) {
+                    $smart_score = $attemptedQuestionObj->smart_score;
+                }
         @endphp
 
         labels.push({{ $question_counter }});
