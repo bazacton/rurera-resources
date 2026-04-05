@@ -34,6 +34,9 @@
                                 @foreach($assignedTopics as $assignedTopicObj)
                                     @php $quizObj = $assignedTopicObj->quizData;
 
+                                        $topicAssignmentResults = $assignedTopicObj-topicAssignmentResults()->count();
+                                        pre($topicAssignmentResults);
+
                                         $analytics_detail_link = '';
                                         $analytics_detail_link = '/analytics/questions-log:assignment='.$assignedTopicObj->id;
                                     @endphp
