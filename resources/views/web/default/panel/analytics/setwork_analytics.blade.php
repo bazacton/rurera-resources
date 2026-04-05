@@ -34,7 +34,7 @@
                                 @foreach($assignedTopics as $assignedTopicObj)
                                     @php $quizObj = $assignedTopicObj->quizData;
 
-                                        $topicAssignmentResults = $assignedTopicObj-topicAssignmentResults()->count();
+                                        $topicAssignmentResults = $assignedTopicObj->topicAssignmentResults()->count();
                                         pre($topicAssignmentResults);
 
                                         $analytics_detail_link = '';
