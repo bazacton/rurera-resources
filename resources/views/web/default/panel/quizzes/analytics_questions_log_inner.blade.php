@@ -187,7 +187,7 @@
                                                                 $logQuestionObj = isset($log_question_array['logQuestionObj'])? $log_question_array['logQuestionObj'] : (object) array();
                                                                 $question_status = isset($logQuestionObj->status)? $logQuestionObj->status : '';
                                                                 $correct_answers = isset($logQuestionObj->correct_answer)? json_decode($logQuestionObj->correct_answer, true) : array();
-                                                                $correct_answers = array_column($correct_answers, 0);
+                                                                $correct_answers = is_array($correct_answers)? array_column($correct_answers, 0) : array();
 
                                                                 $user_answers = isset($logQuestionObj->user_answer)? json_decode($logQuestionObj->user_answer, true) : array();
                                                                 $user_answers = array_column($user_answers, 0);
