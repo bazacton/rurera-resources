@@ -34,8 +34,9 @@
                                 @foreach($assignedTopics as $assignedTopicObj)
                                     @php $quizObj = $assignedTopicObj->quizData;
 
-                                        $topicAssignmentResults = $assignedTopicObj->topicAssignmentResults()->count();
-                                        pre($topicAssignmentResults);
+                                        $topicAssignmentResults = $assignedTopicObj->topicAssignmentResults;
+                                        $total_attempts = $topicAssignmentResults->count();
+
 
                                         $analytics_detail_link = '';
                                         $analytics_detail_link = '/analytics/questions-log:assignment='.$assignedTopicObj->id;
@@ -45,7 +46,7 @@
                                         <div class="timeline-icon"><img src="/assets/default/img/types/practice.svg" width="26" height="26" alt="avatar"></div>
                                         <div class="timeline-text"><p><strong><a href="{{$analytics_detail_link}}">{{isset( $quizObj->id )? $quizObj->getTitleAttribute() : ''}}</a></strong>
                                                 </p>
-                                            <span class="analytic-item">Attempts: 1</span>
+                                            <span class="analytic-item">Attempts: {{$total_attempts}}</span>
                                             <span class="analytic-item">Questions answered: 10</span>
                                             <span class="analytic-item">Correct answers: 3</span>
                                             <span class="analytics-more_details"><a href="{{$analytics_detail_link}}">More Details</a></span>
