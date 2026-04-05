@@ -36,6 +36,8 @@
 
                                         $topicAssignmentResults = $assignedTopicObj->topicAssignmentResults;
                                         $total_attempts = $topicAssignmentResults->count();
+                                        $total_attempted = $topicAssignmentResults->sum('total_attempted');
+                                        $total_correct = $topicAssignmentResults->sum('total_correct');
 
 
                                         $analytics_detail_link = '';
@@ -47,8 +49,8 @@
                                         <div class="timeline-text"><p><strong><a href="{{$analytics_detail_link}}">{{isset( $quizObj->id )? $quizObj->getTitleAttribute() : ''}}</a></strong>
                                                 </p>
                                             <span class="analytic-item">Attempts: {{$total_attempts}}</span>
-                                            <span class="analytic-item">Questions answered: 10</span>
-                                            <span class="analytic-item">Correct answers: 3</span>
+                                            <span class="analytic-item">Questions answered: {{$total_attempted}}</span>
+                                            <span class="analytic-item">Correct answers: {{$total_correct}}</span>
                                             <span class="analytics-more_details"><a href="{{$analytics_detail_link}}">More Details</a></span>
                                         </div>
                                     </li>
