@@ -10,7 +10,7 @@
 
     @if( $studentAssignments->count() > 0 )
         @foreach( $studentAssignments as $studentAssignmentObj)
-            @php $assignedTopics = $studentAssignmentObj->assignedTopics()->get();
+            @php $assignedTopics = $studentAssignmentObj->assignedTopics($selected_child)->get();
             @endphp
             <div class="card">
                 <div class="card-header collapsed mb-0 font-14" data-toggle="collapse" role="button" data-target="#report_{{$studentAssignmentObj->id}}" aria-expanded="true" aria-controls="report_{{$studentAssignmentObj->id}}">
