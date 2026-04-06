@@ -187,9 +187,7 @@
                                          $attempts = isset( $to_tableObj['attempts'] )? $to_tableObj['attempts'] : 0;
                                          $class = ($attempts > 0)? $class : '';
                                                 @endphp
-                                            @if(!empty($to_tableObj))
-                                                @php pre($to_tableObj); @endphp
-                                            @endif
+                                            
                                                 <td class="{{$class}} below_12" data-is_correct="{{$is_correct}}">
                                                     <span>{{$table_no}} <span>&#215;</span> {{$table_no_counter}}</span>
                                                 </td>
