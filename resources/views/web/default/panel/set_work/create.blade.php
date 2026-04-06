@@ -666,6 +666,48 @@
                                 </div>
                             </div>
                         </div>
+                            @php
+                                $tables_no = isset( $assignmentObj->tables_no )? json_decode($assignmentObj->tables_no) : array();
+                            @endphp
+
+
+                            <div class="form-group rurera_common_hide_field select_tables_field">
+
+                                <div class="questions-select-number">
+                                    <ul class="d-flex justify-content-center flex-wrap mb-30">
+                                        <li><input type="checkbox" value="10" name="ajax[new][tables_no][]" {{in_array(10,$tables_no)?
+                                                'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
+                                        <li><input type="checkbox" value="2" name="ajax[new][tables_no][]" {{in_array(2,$tables_no)?
+                                                'checked' : ''}} id="tables_two" /> <label for="tables_two">2</label></li>
+                                        <li><input type="checkbox" value="5" name="ajax[new][tables_no][]" {{in_array(5,$tables_no)?
+                                                'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
+                                        <li><input type="checkbox" value="3" name="ajax[new][tables_no][]" {{in_array(3,$tables_no)?
+                                                'checked' : ''}} id="tables_three" /> <label for="tables_three">3</label></li>
+                                        <li><input type="checkbox" value="4" name="ajax[new][tables_no][]" {{in_array(4,$tables_no)?
+                                                'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
+                                        <li><input type="checkbox" value="8" name="ajax[new][tables_no][]" {{in_array(8,$tables_no)?
+                                                'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
+                                        <li><input type="checkbox" value="6" name="ajax[new][tables_no][]" {{in_array(6,$tables_no)?
+                                                'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
+                                        <li><input type="checkbox" value="7" name="ajax[new][tables_no][]" {{in_array(7,$tables_no)?
+                                                'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
+                                        <li><input type="checkbox" value="9" name="ajax[new][tables_no][]" {{in_array(9,$tables_no)?
+                                                'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
+                                        <li><input type="checkbox" value="11" name="ajax[new][tables_no][]" {{in_array(11,$tables_no)?
+                                                'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
+                                        <li><input type="checkbox" value="12" name="ajax[new][tables_no][]" {{in_array(12,$tables_no)?
+                                                'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
+                                        <li><input type="checkbox" value="13" name="ajax[new][tables_no][]" {{in_array(13,$tables_no)?
+                                                'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
+                                        <li><input type="checkbox" value="14" name="ajax[new][tables_no][]" {{in_array(14,$tables_no)?
+                                                'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
+                                        <li><input type="checkbox" value="15" name="ajax[new][tables_no][]" {{in_array(15,$tables_no)?
+                                                'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
+                                        <li><input type="checkbox" value="16" name="ajax[new][tables_no][]" {{in_array(16,$tables_no)?
+                                                'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                 <div class="form-group rurera_common_hide_field timestables_heatmap"></div>
@@ -675,48 +717,7 @@
 
 
 
-                        @php
-                            $tables_no = isset( $assignmentObj->tables_no )? json_decode($assignmentObj->tables_no) : array();
-                        @endphp
 
-
-                        <div class="form-group rurera_common_hide_field select_tables_field">
-
-                            <div class="questions-select-number">
-                                <ul class="d-flex justify-content-center flex-wrap mb-30">
-                                    <li><input type="checkbox" value="10" name="ajax[new][tables_no][]" {{in_array(10,$tables_no)?
-                                                'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
-                                    <li><input type="checkbox" value="2" name="ajax[new][tables_no][]" {{in_array(2,$tables_no)?
-                                                'checked' : ''}} id="tables_two" /> <label for="tables_two">2</label></li>
-                                    <li><input type="checkbox" value="5" name="ajax[new][tables_no][]" {{in_array(5,$tables_no)?
-                                                'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
-                                    <li><input type="checkbox" value="3" name="ajax[new][tables_no][]" {{in_array(3,$tables_no)?
-                                                'checked' : ''}} id="tables_three" /> <label for="tables_three">3</label></li>
-                                    <li><input type="checkbox" value="4" name="ajax[new][tables_no][]" {{in_array(4,$tables_no)?
-                                                'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
-                                    <li><input type="checkbox" value="8" name="ajax[new][tables_no][]" {{in_array(8,$tables_no)?
-                                                'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
-                                    <li><input type="checkbox" value="6" name="ajax[new][tables_no][]" {{in_array(6,$tables_no)?
-                                                'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
-                                    <li><input type="checkbox" value="7" name="ajax[new][tables_no][]" {{in_array(7,$tables_no)?
-                                                'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
-                                    <li><input type="checkbox" value="9" name="ajax[new][tables_no][]" {{in_array(9,$tables_no)?
-                                                'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
-                                    <li><input type="checkbox" value="11" name="ajax[new][tables_no][]" {{in_array(11,$tables_no)?
-                                                'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
-                                    <li><input type="checkbox" value="12" name="ajax[new][tables_no][]" {{in_array(12,$tables_no)?
-                                                'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
-                                    <li><input type="checkbox" value="13" name="ajax[new][tables_no][]" {{in_array(13,$tables_no)?
-                                                'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
-                                    <li><input type="checkbox" value="14" name="ajax[new][tables_no][]" {{in_array(14,$tables_no)?
-                                                'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
-                                    <li><input type="checkbox" value="15" name="ajax[new][tables_no][]" {{in_array(15,$tables_no)?
-                                                'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
-                                    <li><input type="checkbox" value="16" name="ajax[new][tables_no][]" {{in_array(16,$tables_no)?
-                                                'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
-                                </ul>
-                            </div>
-                        </div>
 
 
 
