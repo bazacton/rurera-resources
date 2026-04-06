@@ -149,7 +149,7 @@
 
 
 
-                        @if(isset($times_tables_data))
+                        @if(isset($times_tables_data) && !empty($times_tables_data))
                         <div class="heatmap-table-holder mb-20 rurera-hide1">
 
                             <table class="heatmap-table">
