@@ -1956,13 +1956,13 @@
             var user_id = $(".assignment-user-class:checked").val();
             var thisObj = $('.timestables_heatmap');
             $(".timestables_heatmap").html('');
-            rurera_loader(thisObj, 'div');
+            //rurera_loader(thisObj, 'div');
             jQuery.ajax({
                 type: "GET",
                 url: '/timestable/get_heatmap_layout',
                 data: {"user_id": user_id},
                 success: function (return_data) {
-                    rurera_remove_loader(thisObj, 'button');
+                    //rurera_remove_loader(thisObj, 'button');
                     $(".timestables_heatmap").html(return_data);
                 }
             });
