@@ -1990,7 +1990,11 @@
             .not('.subscription-modal')
             .first()
             .prop('checked', true);
-        $(".assignemnet_types_selection:checked").change();
+        if ($(".assignemnet_types_selection").length > 0) {
+            $('.assignemnet_types_selection:checked').each(function () {
+                $(this).change()
+            });
+        }
 
 
 
