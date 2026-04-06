@@ -838,7 +838,7 @@
                             placeholder=""/>
                 </div>
 
-                <div class="form-section rurera-hide">
+                <div class="form-section">
                     <h2 class="section-title">General information</h2>
                 </div>
                 <div class="row">
