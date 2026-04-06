@@ -1987,7 +1987,7 @@
         });
 
         $('.assignemnet_types_selection')
-            .not('.rurera-hide')
+            .not('.subscription-modal')
             .first()
             .prop('checked', true);
 
