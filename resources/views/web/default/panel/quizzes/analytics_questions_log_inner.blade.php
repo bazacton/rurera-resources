@@ -149,6 +149,7 @@
 
 
 
+                        @if(isset($times_tables_data))
                         <div class="heatmap-table-holder mb-20 rurera-hide1">
 
                             <table class="heatmap-table">
@@ -203,6 +204,7 @@
 
 
                         </div>
+                        @endif
 
 
 
