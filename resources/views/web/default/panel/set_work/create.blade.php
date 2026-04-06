@@ -420,7 +420,7 @@
                                 <legend class="input-label">Attempt Type</legend>
                                 <div class="radio-buttons" aria-label="Attempt Type">
                                     <label class="card-radio">
-                                        <input type="radio" class="sub_types_selection" name="ajax[new][attempt_type]" value="practice" checked>
+                                        <input type="radio" class="sub_types_selection" name="ajax[new][attempt_type]" value="spell_practice" checked>
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
                                                 <h3>Practice Words</h3>
@@ -429,7 +429,7 @@
                                         </span>
                                     </label>
                                     <label class="card-radio">
-                                        <input type="radio" class="sub_types_selection" name="ajax[new][attempt_type]" value="test">
+                                        <input type="radio" class="sub_types_selection" name="ajax[new][attempt_type]" value="spell_test">
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
                                                 <h3>Take Test</h3>
@@ -1824,8 +1824,8 @@
         trophy_mode_parent: 'timestables',
         treasure_mission_parent: 'timestables',
         showdown_mode_parent: 'timestables',
-        practice_parent: 'vocabulary',
-        practice_parent: 'test',
+        spell_practice_parent: 'vocabulary',
+        spell_test_parent: 'vocabulary',
     };
 
     var conditional_parent_data = {
@@ -1905,10 +1905,10 @@
         showdown_mode_fields_array: [
             '',
         ],
-        practice_fields_array:[
-            'vocabulary_attempt_type_fields'
+        spell_practice_fields_array:[
+            'vocabulary_attempt_type_fields',
         ],
-        test_fields_array:[
+        spell_test_fields_array:[
             ''
         ],
         vocabulary_fields_array: [
