@@ -151,8 +151,12 @@
                         @php
                         $tables_last_data = isset($times_tables_data['tables_last_data'])? $times_tables_data['tables_last_data'] : array();
 
-                        pre($tables_last_data);
                         @endphp
+                        @if(!empty($tables_last_data))
+                            @foreach($tables_last_data as $table_no => $table_data)
+                                @php pre($table_data); @endphp
+                          @endforeach
+                        @endif
                         <div class="heatmap-table-holder mb-20 rurera-hide">
 
                             <table class="heatmap-table">
