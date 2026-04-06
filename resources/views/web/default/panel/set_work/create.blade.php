@@ -810,6 +810,18 @@
                 <div class="form-section rurera-hide">
                     <h2 class="section-title">General information</h2>
                 </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label class="input-label">Practice Title</label>
+                            <input type="text"
+                                   name="ajax[{{ !empty($assignmentObj) ? $assignmentObj->id : 'new' }}][title]"
+                                   value="{{ !empty($assignmentObj) ? $assignmentObj->title : old('title') }}"
+                                   class="js-ajax-title form-control rurera-req-field bg-white"
+                                   placeholder=""/>
+                        </div>
+                    </div>
+                </div>
 
 
                 <div class="form-section rurera-hide">
