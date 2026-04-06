@@ -61,7 +61,7 @@
                                 </span>
                     </label>
                 @else
-                    <a href="javascript:;" class="subscription-modal rurera-hide remove-pending" data-type="update_package_confirm" data-id="{{isset($childObj->id)? $childObj->id : 0}}">
+                    <a href="javascript:;" class="rurera-hide subscription-modal rurera-hide remove-pending" data-type="update_package_confirm" data-id="{{isset($childObj->id)? $childObj->id : 0}}">
                             <span class="radio-btn disabled-style"><i class="las la-check"></i>
                                 <div class="card-icon">
                                 <img src="{{ $childObj->getAvatar() }}" alt="card-icon">
