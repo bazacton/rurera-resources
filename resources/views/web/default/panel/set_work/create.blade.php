@@ -420,7 +420,7 @@
                                 <legend class="input-label">Attempt Type</legend>
                                 <div class="radio-buttons" aria-label="Attempt Type">
                                     <label class="card-radio">
-                                        <input type="radio" name="ajax[new][attempt_type]" value="practice">
+                                        <input type="radio" name="ajax[new][attempt_type]" value="practice" checked>
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
                                                 <h3>Practice Words</h3>
