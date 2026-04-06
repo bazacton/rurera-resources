@@ -585,7 +585,7 @@
                         <div class="form-group rurera_common_hide_field timestables_heatmap"></div>
 
                         <div class="form-group rurera_common_hide_field timestables_modes_selection">
-                            <label class="input-label">Timestables Mode</label>
+                            <label class="input-label">Select Timestables Mode</label>
                             <div class="input-group">
                                 <div class="radio-buttons">
 
