@@ -633,44 +633,44 @@
                             </div>
                         </div>
 
-                        <div class="form-group rurera_common_hide_field arthmetic_operations">
-                            <label class="input-label">Select Arithmetic Operations</label>
-                            <div class="input-group">
-                                <div class="radio-buttons">
-                                    <label class="card-radio">
-                                        <input type="radio" name="ajax[new][arthmetic_operations]" value="multiplication_division">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>Multiplication and Division</h3>
-                                                                        </div>
-                                                                    </span>
-                                    </label>
-                                    <label class="card-radio">
-                                        <input type="radio" name="ajax[new][arthmetic_operations]" value="multiplication" checked>
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>Multiplication only</h3>
-                                                                        </div>
-                                                                    </span>
-                                    </label>
-                                    <label class="card-radio">
-                                        <input type="radio" name="ajax[new][arthmetic_operations]" value="division">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>Division only</h3>
-                                                                        </div>
-                                                                    </span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+
 
                         <div class="row">
 
 
                         <div class="col-lg-6 col-md-6 col-sm-12 col-6">
 
-
+                            <div class="form-group rurera_common_hide_field arthmetic_operations">
+                                <label class="input-label">Select Arithmetic Operations</label>
+                                <div class="input-group">
+                                    <div class="radio-buttons">
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][arthmetic_operations]" value="multiplication_division">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>Multiplication and Division</h3>
+                                                                        </div>
+                                                                    </span>
+                                        </label>
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][arthmetic_operations]" value="multiplication" checked>
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>Multiplication only</h3>
+                                                                        </div>
+                                                                    </span>
+                                        </label>
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][arthmetic_operations]" value="division">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>Division only</h3>
+                                                                        </div>
+                                                                    </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                             @php
                                 $tables_no = isset( $assignmentObj->tables_no )? json_decode($assignmentObj->tables_no) : array();
                             @endphp
