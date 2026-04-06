@@ -1974,9 +1974,9 @@
             $('.assignemnet_types_selection[value="' + data_type + '"]').removeClass('disabled-style');
             $('.assignemnet_types_selection[value="' + data_type + '"]').removeClass('subscription-modal');
             $('.assignemnet_types_selection[value="' + data_type + '"]').attr('data-type', data_type);
-            $('.assignemnet_types_selection[value="' + data_type + '"]').removeClass('rurera-hide');
+            $('.assignemnet_types_selection[value="' + data_type + '"]').closest('.card-radio').removeClass('rurera-hide');
             if( is_permission != true) {
-                $('.assignemnet_types_selection[value="' + data_type + '"]').addClass('rurera-hide');
+                $('.assignemnet_types_selection[value="' + data_type + '"]').closest('.card-radio').addClass('rurera-hide');
                 $('.assignemnet_types_selection[value="' + data_type + '"]').addClass('disabled-style');
                 $('.assignemnet_types_selection[value="' + data_type + '"]').addClass('subscription-modal');
                 $('.assignemnet_types_selection[value="' + data_type + '"]').attr('data-reason', 'module_access');
