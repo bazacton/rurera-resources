@@ -1955,7 +1955,6 @@
     $('body').on('change', '.assignment-user-class', function (e) {
         var year_id = $(this).attr('data-year_id');
         var timestables_no = $(this).data('timestables_no').toString().split(',').map(Number);
-        console.log(timestables_no);
         $('input[name="ajax[new][tables_no][]"]').each(function () {
             var val = parseInt($(this).val(), 10);
             if ($.inArray(val, timestables_no) === -1) {
@@ -1986,6 +1985,13 @@
             }
 
         });
+
+        $('.assignemnet_types_selection')
+            .not('.rurera-hide')
+            .first()
+            .prop('checked', true);
+
+
 
     });
 
