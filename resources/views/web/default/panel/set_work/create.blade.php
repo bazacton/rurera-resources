@@ -582,8 +582,11 @@
 
                 <div class="row1">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                         <div class="form-group rurera_common_hide_field timestables_heatmap"></div>
+                        </div>
 
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                         <div class="form-group rurera_common_hide_field timestables_modes_selection">
                             <label class="input-label">Select Timestables Mode</label>
                             <div class="input-group">
@@ -663,6 +666,7 @@
                                     </label>
                                 </div>
                             </div>
+                        </div>
                         </div>
 
 
