@@ -170,7 +170,7 @@
                                 </thead>
 
 
-                                <tbody class="summary-table-item hide" data-datestring="1775088000">
+                                <tbody class="summary-table-item " data-datestring="1775088000">
                                 @php
                                     $tables_last_data = isset($times_tables_data['tables_last_data'])? $times_tables_data['tables_last_data'] : array();
 
@@ -187,7 +187,7 @@
                                          $attempts = isset( $to_tableObj['attempts'] )? $to_tableObj['attempts'] : 0;
                                          $class = ($attempts > 0)? $class : '';
                                                 @endphp
-                                            
+
                                                 <td class="{{$class}} below_12" data-is_correct="{{$is_correct}}">
                                                     <span>{{$table_no}} <span>&#215;</span> {{$table_no_counter}}</span>
                                                 </td>
