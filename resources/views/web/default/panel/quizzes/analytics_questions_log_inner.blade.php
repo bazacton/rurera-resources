@@ -148,69 +148,8 @@
 
 
 
-                        @php
-                        $tables_last_data = isset($times_tables_data['tables_last_data'])? $times_tables_data['tables_last_data'] : array();
 
-                        @endphp
-                        @if(!empty($tables_last_data))
-                            @foreach($tables_last_data as $table_no => $tableData)
-                                <tr class="below_12">
-                                    <td>{{$table_no}}</td>
-                                    @php $table_no_counter = 2; @endphp
-                                    @while($table_no_counter <= 12)
-                                        @php $to_tableObj = isset( $tableData[$table_no_counter] )? $tableData[$table_no_counter] : array();
-                                         $class = isset( $to_tableObj['class'] )? $to_tableObj['class'] : '';
-                                         $is_correct = isset( $to_tableObj['is_correct'] )? $to_tableObj['is_correct'] : '';
-                                         $attempts = isset( $to_tableObj['attempts'] )? $to_tableObj['attempts'] : 0;
-                                         $class = ($attempts > 0)? $class : '';
-                                        @endphp
-                                        <td class="{{$class}} below_12" data-is_correct="{{$is_correct}}">
-                                            <span>{{$table_no}} <span>&#215;</span> {{$table_no_counter}}</span>
-                                        </td>
-                                        @php $table_no_counter++; @endphp
-                                    @endwhile
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>2 <span>×</span> 2</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>2 <span>×</span> 3</span></td>
-                                    <td class="correct below_12" data-is_correct="1">
-                                        <span>2 <span>×</span> 4</span></td>
-                                    <td class="correct-fast below_12" data-is_correct="1">
-                                        <span>2 <span>×</span> 5</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>2 <span>×</span> 6</span></td>
-                                    <td class="wrong below_12" data-is_correct="">
-                                        <span>2 <span>×</span> 7</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>2 <span>×</span> 8</span></td>
-                                    <td class="correct below_12" data-is_correct="1">
-                                        <span>2 <span>×</span> 9</span></td>
-                                    <td class="wrong below_12" data-is_correct="">
-                                        <span>2 <span>×</span> 10</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>2 <span>×</span> 11</span></td>
-                                    <td class="correct-fast below_12" data-is_correct="1">
-                                        <span>2 <span>×</span> 12</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>2 <span>×</span> 13</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>2 <span>×</span> 14</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>2 <span>×</span> 15</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>2 <span>×</span> 16</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>2 <span>×</span> 17</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>2 <span>×</span> 18</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>2 <span>×</span> 19</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>2 <span>×</span> 20</span></td>
-                                </tr>
-                          @endforeach
-                        @endif
-                        <div class="heatmap-table-holder mb-20 rurera-hide">
+                        <div class="heatmap-table-holder mb-20 rurera-hide1">
 
                             <table class="heatmap-table">
                                 <thead>
@@ -224,7 +163,30 @@
 
 
                                 <tbody class="summary-table-item hide" data-datestring="1775088000">
+                                @php
+                                    $tables_last_data = isset($times_tables_data['tables_last_data'])? $times_tables_data['tables_last_data'] : array();
 
+                                @endphp
+                                @if(!empty($tables_last_data))
+                                    @foreach($tables_last_data as $table_no => $tableData)
+                                        <tr class="below_12">
+                                            <td>{{$table_no}}</td>
+                                            @php $table_no_counter = 2; @endphp
+                                            @while($table_no_counter <= 12)
+                                                @php $to_tableObj = isset( $tableData[$table_no_counter] )? $tableData[$table_no_counter] : array();
+                                         $class = isset( $to_tableObj['class'] )? $to_tableObj['class'] : '';
+                                         $is_correct = isset( $to_tableObj['is_correct'] )? $to_tableObj['is_correct'] : '';
+                                         $attempts = isset( $to_tableObj['attempts'] )? $to_tableObj['attempts'] : 0;
+                                         $class = ($attempts > 0)? $class : '';
+                                                @endphp
+                                                <td class="{{$class}} below_12" data-is_correct="{{$is_correct}}">
+                                                    <span>{{$table_no}} <span>&#215;</span> {{$table_no_counter}}</span>
+                                                </td>
+                                                @php $table_no_counter++; @endphp
+                                            @endwhile
+                                        </tr>
+                                    @endforeach
+                                @endif
                                 <tr class="below_12">
                                     <td>2</td>
                                     <td class=" below_12" data-is_correct="">
