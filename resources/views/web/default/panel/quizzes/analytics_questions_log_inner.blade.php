@@ -155,7 +155,7 @@
                         @if(!empty($tables_last_data))
                             @foreach($tables_last_data as $table_no => $table_data)
                                 <tr class="below_12">
-                                    <td>2</td>
+                                    <td>{{$table_no}}</td>
                                     <td class=" below_12" data-is_correct="">
                                         <span>2 <span>×</span> 2</span></td>
                                     <td class=" below_12" data-is_correct="">
