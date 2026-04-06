@@ -581,8 +581,8 @@
 
 
                 <div class="row1">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 66666">
+                    <div class="11">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                             <div class="form-group rurera_common_hide_field timestables_heatmap"></div>
                         </div>
 
