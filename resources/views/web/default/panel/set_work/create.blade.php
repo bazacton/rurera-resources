@@ -420,7 +420,7 @@
                                 <legend class="input-label">Attempt Type</legend>
                                 <div class="radio-buttons" aria-label="Attempt Type">
                                     <label class="card-radio">
-                                        <input type="radio" name="ajax[new][attempt_type]" value="practice" checked>
+                                        <input type="radio" class="sub_types_selection" name="ajax[new][attempt_type]" value="practice" checked>
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
                                                 <h3>Practice Words</h3>
@@ -429,7 +429,7 @@
                                         </span>
                                     </label>
                                     <label class="card-radio">
-                                        <input type="radio" name="ajax[new][attempt_type]" value="test">
+                                        <input type="radio" class="sub_types_selection" name="ajax[new][attempt_type]" value="test">
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
                                                 <h3>Take Test</h3>
@@ -444,7 +444,7 @@
                     </div>
                 </div>
 
-                <div class="rurera_common_hide_field ">
+                <div class="rurera_common_hide_field vocabulary_attempt_type_fields">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
                             <fieldset class="form-group">
@@ -1824,6 +1824,8 @@
         trophy_mode_parent: 'timestables',
         treasure_mission_parent: 'timestables',
         showdown_mode_parent: 'timestables',
+        practice_parent: 'vocabulary',
+        practice_parent: 'test',
     };
 
     var conditional_parent_data = {
@@ -1902,6 +1904,12 @@
         ],
         showdown_mode_fields_array: [
             '',
+        ],
+        practice_fields_array:[
+            'vocabulary_attempt_type_fields'
+        ],
+        test_fields_array:[
+            ''
         ],
         vocabulary_fields_array: [
             //'year_group_field',
