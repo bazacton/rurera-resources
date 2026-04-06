@@ -1990,6 +1990,7 @@
             .not('.subscription-modal')
             .first()
             .prop('checked', true);
+        $(".assignemnet_types_selection:checked").change();
 
 
 
