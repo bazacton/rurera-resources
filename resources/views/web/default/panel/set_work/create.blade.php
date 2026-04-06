@@ -444,7 +444,7 @@
                     </div>
                 </div>
 
-                <div class="rurera_common_hide_field vocabulary_practice_type_field">
+                <div class="rurera_common_hide_field ">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
                             <fieldset class="form-group">
