@@ -177,6 +177,7 @@
                                 @endphp
                                 @if(!empty($tables_last_data))
                                     @foreach($tables_last_data as $table_no => $tableData)
+                                        @php pre($tableData); @endphp
                                         <tr class="below_12">
                                             <td>{{$table_no}}</td>
                                             @php $table_no_counter = 2; @endphp
