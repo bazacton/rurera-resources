@@ -811,7 +811,7 @@
                     <h2 class="section-title">General information</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="col-lg-12 col-md-12 col-sm-6 col-12">
                         <div class="form-group">
                             <label class="input-label">Practice Title</label>
                             <input type="text"
