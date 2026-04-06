@@ -154,7 +154,47 @@
                         @endphp
                         @if(!empty($tables_last_data))
                             @foreach($tables_last_data as $table_no => $table_data)
-                                @php pre($table_data); @endphp
+                                <tr class="below_12">
+                                    <td>2</td>
+                                    <td class=" below_12" data-is_correct="">
+                                        <span>2 <span>×</span> 2</span></td>
+                                    <td class=" below_12" data-is_correct="">
+                                        <span>2 <span>×</span> 3</span></td>
+                                    <td class="correct below_12" data-is_correct="1">
+                                        <span>2 <span>×</span> 4</span></td>
+                                    <td class="correct-fast below_12" data-is_correct="1">
+                                        <span>2 <span>×</span> 5</span></td>
+                                    <td class=" below_12" data-is_correct="">
+                                        <span>2 <span>×</span> 6</span></td>
+                                    <td class="wrong below_12" data-is_correct="">
+                                        <span>2 <span>×</span> 7</span></td>
+                                    <td class=" below_12" data-is_correct="">
+                                        <span>2 <span>×</span> 8</span></td>
+                                    <td class="correct below_12" data-is_correct="1">
+                                        <span>2 <span>×</span> 9</span></td>
+                                    <td class="wrong below_12" data-is_correct="">
+                                        <span>2 <span>×</span> 10</span></td>
+                                    <td class=" below_12" data-is_correct="">
+                                        <span>2 <span>×</span> 11</span></td>
+                                    <td class="correct-fast below_12" data-is_correct="1">
+                                        <span>2 <span>×</span> 12</span></td>
+                                    <td class=" above_12" data-is_correct="">
+                                        <span>2 <span>×</span> 13</span></td>
+                                    <td class=" above_12" data-is_correct="">
+                                        <span>2 <span>×</span> 14</span></td>
+                                    <td class=" above_12" data-is_correct="">
+                                        <span>2 <span>×</span> 15</span></td>
+                                    <td class=" above_12" data-is_correct="">
+                                        <span>2 <span>×</span> 16</span></td>
+                                    <td class=" above_12" data-is_correct="">
+                                        <span>2 <span>×</span> 17</span></td>
+                                    <td class=" above_12" data-is_correct="">
+                                        <span>2 <span>×</span> 18</span></td>
+                                    <td class=" above_12" data-is_correct="">
+                                        <span>2 <span>×</span> 19</span></td>
+                                    <td class=" above_12" data-is_correct="">
+                                        <span>2 <span>×</span> 20</span></td>
+                                </tr>
                           @endforeach
                         @endif
                         <div class="heatmap-table-holder mb-20 rurera-hide">
