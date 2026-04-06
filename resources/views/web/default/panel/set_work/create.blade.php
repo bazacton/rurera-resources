@@ -176,7 +176,7 @@
 
             <div class="years-group populated-data">
                 <fieldset class="form-group">
-                    <legend class="input-label">Practice Type</legend>
+                    <label class="input-label">Practice Type</label>
                         <div class="radio-buttons" aria-label="Practice Type">
                             <label class="card-radio">
                                 <input type="radio" name="ajax[new][assignment_topic_type]" class="assignemnet_types_selection" value="practice" checked>
@@ -239,7 +239,7 @@
                     <div class="invalid-feedback"></div>
                 </fieldset>
                 <fieldset class="form-group rurera_common_hide_field test_types_field rurera-hide">
-                    <legend class="input-label">Test Type</legend>
+                    <label class="input-label">Test Type</label>
                     <div class="radio-buttons" aria-label="Test Type">
                         <label class="card-radio">
                             <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="sats" checked>
@@ -370,7 +370,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <fieldset class="form-group">
-                                <legend class="input-label">Practice Type</legend>
+                                <label class="input-label">Practice Type</label>
                                 <div class="radio-buttons" role="radiogroup" aria-label="Practice Type">
                                     <label class="card-radio">
                                         <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Word Lists" checked>
@@ -417,7 +417,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
                             <fieldset class="form-group">
-                                <legend class="input-label">Attempt Type</legend>
+                                <label class="input-label">Attempt Type</label>
                                 <div class="radio-buttons" aria-label="Attempt Type">
                                     <label class="card-radio">
                                         <input type="radio" class="sub_types_selection" name="ajax[new][attempt_type]" value="spell_practice" checked>
@@ -448,7 +448,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
                             <fieldset class="form-group">
-                                <legend class="input-label">Practice Type</legend>
+                                <label class="input-label">Practice Type</label>
                                 <div class="radio-buttons" aria-label="Practice Type">
                                     @php $spell_counter = 1;$spell_modes = get_spell_modes(); @endphp
 
