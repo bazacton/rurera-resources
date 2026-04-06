@@ -1907,10 +1907,9 @@
         ],
         spell_practice_fields_array:[
             'vocabulary_attempt_type_fields',
-            'smart_score_field',
         ],
         spell_test_fields_array:[
-            ''
+            'smart_score_field',
         ],
         vocabulary_fields_array: [
             //'year_group_field',
