@@ -153,9 +153,22 @@
 
                         @endphp
                         @if(!empty($tables_last_data))
-                            @foreach($tables_last_data as $table_no => $table_data)
+                            @foreach($tables_last_data as $table_no => $tableData)
                                 <tr class="below_12">
                                     <td>{{$table_no}}</td>
+                                    @php $table_no_counter = 2; @endphp
+                                    @while($table_no_counter <= 12)
+                                        @php $to_tableObj = isset( $tableData[$table_no_counter] )? $tableData[$table_no_counter] : array();
+                                         $class = isset( $to_tableObj['class'] )? $to_tableObj['class'] : '';
+                                         $is_correct = isset( $to_tableObj['is_correct'] )? $to_tableObj['is_correct'] : '';
+                                         $attempts = isset( $to_tableObj['attempts'] )? $to_tableObj['attempts'] : 0;
+                                         $class = ($attempts > 0)? $class : '';
+                                        @endphp
+                                        <td class="{{$class}} below_12" data-is_correct="{{$is_correct}}">
+                                            <span>{{$table_no}} <span>&#215;</span> {{$table_no_counter}}</span>
+                                        </td>
+                                        @php $table_no_counter++; @endphp
+                                    @endwhile
                                     <td class=" below_12" data-is_correct="">
                                         <span>2 <span>×</span> 2</span></td>
                                     <td class=" below_12" data-is_correct="">
