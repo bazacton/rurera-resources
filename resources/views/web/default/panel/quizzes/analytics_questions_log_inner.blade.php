@@ -148,6 +148,10 @@
 
 
 
+                        @php
+
+                        pre($times_tables_data);
+                        @endphp
                         <div class="heatmap-table-holder mb-20 rurera-hide">
 
                             <table class="heatmap-table">
@@ -157,22 +161,6 @@
                                     <th class="below_12">2</th>
                                     <th class="below_12">3</th>
                                     <th class="below_12">4</th>
-                                    <th class="below_12">5</th>
-                                    <th class="below_12">6</th>
-                                    <th class="below_12">7</th>
-                                    <th class="below_12">8</th>
-                                    <th class="below_12">9</th>
-                                    <th class="below_12">10</th>
-                                    <th class="below_12">11</th>
-                                    <th class="below_12">12</th>
-                                    <th class="above_12">13</th>
-                                    <th class="above_12">14</th>
-                                    <th class="above_12">15</th>
-                                    <th class="above_12">16</th>
-                                    <th class="above_12">17</th>
-                                    <th class="above_12">18</th>
-                                    <th class="above_12">19</th>
-                                    <th class="above_12">20</th>
                                 </tr>
                                 </thead>
 
@@ -307,134 +295,6 @@
                                         <span>4 <span>×</span> 20</span></td>
                                 </tr>
 
-
-                                <tr class="below_12">
-                                    <td>5</td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>5 <span>×</span> 2</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>5 <span>×</span> 3</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>5 <span>×</span> 4</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>5 <span>×</span> 5</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>5 <span>×</span> 6</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>5 <span>×</span> 7</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>5 <span>×</span> 8</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>5 <span>×</span> 9</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>5 <span>×</span> 10</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>5 <span>×</span> 11</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>5 <span>×</span> 12</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>5 <span>×</span> 13</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>5 <span>×</span> 14</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>5 <span>×</span> 15</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>5 <span>×</span> 16</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>5 <span>×</span> 17</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>5 <span>×</span> 18</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>5 <span>×</span> 19</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>5 <span>×</span> 20</span></td>
-                                </tr>
-
-
-                                <tr class="below_12">
-                                    <td>6</td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>6 <span>×</span> 2</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>6 <span>×</span> 3</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>6 <span>×</span> 4</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>6 <span>×</span> 5</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>6 <span>×</span> 6</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>6 <span>×</span> 7</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>6 <span>×</span> 8</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>6 <span>×</span> 9</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>6 <span>×</span> 10</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>6 <span>×</span> 11</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>6 <span>×</span> 12</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>6 <span>×</span> 13</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>6 <span>×</span> 14</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>6 <span>×</span> 15</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>6 <span>×</span> 16</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>6 <span>×</span> 17</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>6 <span>×</span> 18</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>6 <span>×</span> 19</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>6 <span>×</span> 20</span></td>
-                                </tr>
-
-
-                                <tr class="below_12">
-                                    <td>7</td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>7 <span>×</span> 2</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>7 <span>×</span> 3</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>7 <span>×</span> 4</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>7 <span>×</span> 5</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>7 <span>×</span> 6</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>7 <span>×</span> 7</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>7 <span>×</span> 8</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>7 <span>×</span> 9</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>7 <span>×</span> 10</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>7 <span>×</span> 11</span></td>
-                                    <td class=" below_12" data-is_correct="">
-                                        <span>7 <span>×</span> 12</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>7 <span>×</span> 13</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>7 <span>×</span> 14</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>7 <span>×</span> 15</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>7 <span>×</span> 16</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>7 <span>×</span> 17</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>7 <span>×</span> 18</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>7 <span>×</span> 19</span></td>
-                                    <td class=" above_12" data-is_correct="">
-                                        <span>7 <span>×</span> 20</span></td>
-                                </tr>
 
 
                                 <tr class="below_12">
