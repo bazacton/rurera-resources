@@ -417,6 +417,37 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
                             <fieldset class="form-group">
+                                <legend class="input-label">Attempt Type</legend>
+                                <div class="radio-buttons" aria-label="Attempt Type">
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][attempt_type]" value="practice">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <h3>Practice Words</h3>
+                                            </div>
+
+                                        </span>
+                                    </label>
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[new][attempt_type]" value="test">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <h3>Take Test</h3>
+                                            </div>
+
+                                        </span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="rurera_common_hide_field vocabulary_practice_type_field">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
+                            <fieldset class="form-group">
                                 <legend class="input-label">Practice Type</legend>
                                 <div class="radio-buttons" aria-label="Practice Type">
                                     @php $spell_counter = 1;$spell_modes = get_spell_modes(); @endphp
