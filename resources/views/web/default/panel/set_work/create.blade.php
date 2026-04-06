@@ -708,6 +708,61 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="form-group rurera_common_hide_field table_group_field">
+                                <label class="input-label">Select Table Group</label>
+                                <div class="input-group">
+                                    <div class="radio-buttons">
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][table_group]" value="1">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>1-3</h3>
+                                                                        </div>
+                                                                    </span>
+                                        </label>
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][table_group]" value="2" checked>
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>1-6</h3>
+                                                                        </div>
+                                                                    </span>
+                                        </label>
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][table_group]" value="3">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>1-9</h3>
+                                                                        </div>
+                                                                    </span>
+                                        </label>
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][table_group]" value="4">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>1-12</h3>
+                                                                        </div>
+                                                                    </span>
+                                        </label>
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][table_group]" value="5">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>1-15</h3>
+                                                                        </div>
+                                                                    </span>
+                                        </label>
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][table_group]" value="6">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>1-18</h3>
+                                                                        </div>
+                                                                    </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                 <div class="form-group rurera_common_hide_field timestables_heatmap"></div>
@@ -722,61 +777,7 @@
 
 
 
-                        <div class="form-group rurera_common_hide_field table_group_field">
-                            <label class="input-label">Select Table Group</label>
-                            <div class="input-group">
-                                <div class="radio-buttons">
-                                    <label class="card-radio">
-                                        <input type="radio" name="ajax[new][table_group]" value="1">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>1-3</h3>
-                                                                        </div>
-                                                                    </span>
-                                    </label>
-                                    <label class="card-radio">
-                                        <input type="radio" name="ajax[new][table_group]" value="2" checked>
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>1-6</h3>
-                                                                        </div>
-                                                                    </span>
-                                    </label>
-                                    <label class="card-radio">
-                                        <input type="radio" name="ajax[new][table_group]" value="3">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>1-9</h3>
-                                                                        </div>
-                                                                    </span>
-                                    </label>
-                                    <label class="card-radio">
-                                        <input type="radio" name="ajax[new][table_group]" value="4">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>1-12</h3>
-                                                                        </div>
-                                                                    </span>
-                                    </label>
-                                    <label class="card-radio">
-                                        <input type="radio" name="ajax[new][table_group]" value="5">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>1-15</h3>
-                                                                        </div>
-                                                                    </span>
-                                    </label>
-                                    <label class="card-radio">
-                                        <input type="radio" name="ajax[new][table_group]" value="6">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>1-18</h3>
-                                                                        </div>
-                                                                    </span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+
 
 
                         <div class="form-group rurera_common_hide_field practice_duration_field">
