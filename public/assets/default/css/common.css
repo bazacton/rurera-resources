@@ -5423,7 +5423,7 @@ p {line-height: 1.5;}
 .rurera-hide,
 .hide-sec,
 .hide, .above_12 {
-    display: none;
+    display: none !important;
 }
 
 /*Rurera Tooltip Style Start*/
