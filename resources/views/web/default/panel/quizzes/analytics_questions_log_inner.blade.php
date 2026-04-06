@@ -177,7 +177,6 @@
                                 @endphp
                                 @if(!empty($tables_last_data))
                                     @foreach($tables_last_data as $table_no => $tableData)
-                                        @php pre($tableData); @endphp
                                         <tr class="below_12">
                                             <td>{{$table_no}}</td>
                                             @php $table_no_counter = 2; @endphp
@@ -188,6 +187,7 @@
                                          $attempts = isset( $to_tableObj['attempts'] )? $to_tableObj['attempts'] : 0;
                                          $class = ($attempts > 0)? $class : '';
                                                 @endphp
+                                                @php pre($to_tableObj); @endphp
                                                 <td class="{{$class}} below_12" data-is_correct="{{$is_correct}}">
                                                     <span>{{$table_no}} <span>&#215;</span> {{$table_no_counter}}</span>
                                                 </td>
