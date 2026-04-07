@@ -3012,24 +3012,24 @@ function rureraform_properties_open(_object) {
         }*/
     }, 500);
 
-    $(document).on('change', 'select[name="rureraform-label_type"]', function () {
 
-        $(".label_type-depend").addClass('rurera-hide');
-        var label_type = $(this).val();
-
-        console.log('testin4555555555');
-        console.log(label_type);
-
-        //editor.trigger('summernote.change');
-        $("."+label_type+"_fields").removeClass('rurera-hide');
-    });
 
     if($('select[name="rureraform-label_type"]').length > 0){
         $('select[name="rureraform-label_type"]').change();
     }
     return false;
 }
+$(document).on('change', 'select[name="rureraform-label_type"]', function () {
 
+    $(".label_type-depend").addClass('rurera-hide');
+    var label_type = $(this).val();
+
+    console.log('testin4555555555');
+    console.log(label_type);
+
+    //editor.trigger('summernote.change');
+    $("."+label_type+"_fields").removeClass('rurera-hide');
+});
 
 function rureraform_styles_html() {
     var html = "<select onchange='rureraform_styles_load(this);'><option value=''>" + rureraform_esc_html__("Select theme...") + "</option>";
