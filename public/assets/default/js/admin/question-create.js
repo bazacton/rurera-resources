@@ -3013,9 +3013,9 @@ function rureraform_properties_open(_object) {
     }, 500);
 
 
-    /*if($('select[name="rureraform-label_type"]').length > 0){
+    if($('select[name="rureraform-label_type"]').length > 0){
         $('select[name="rureraform-label_type"]').change();
-    }*/
+    }
     return false;
 }
 
