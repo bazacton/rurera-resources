@@ -3012,12 +3012,12 @@ function rureraform_properties_open(_object) {
         }*/
     }, 500);
 
+    setTimeout(function () {
+        $(".label_type-depend").addClass('rurera-hide');
+        var label_type =  $(".rureraform-admin-popup.active").find('select[name="rureraform-label_type"]').val();
+        $("."+label_type+"_fields").removeClass('rurera-hide');
+    }, 3000);
 
-    $(".label_type-depend").addClass('rurera-hide');
-    var label_type =  $(".rureraform-admin-popup.active").find('select[name="rureraform-label_type"]').val();
-    console.log('testin4555555555');
-    console.log(label_type);
-    $("."+label_type+"_fields").removeClass('rurera-hide');
     return false;
 }
 $(document).on('change', 'select[name="rureraform-label_type"]', function () {
