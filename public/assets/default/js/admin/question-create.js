@@ -11887,6 +11887,8 @@ $(document).on('change', 'select[name="rureraform-label_type"]', function () {
     $(".label_type-depend").addClass('rurera-hide');
     var label_type = $(this).val();
 
+    console.log('testin4555555555');
+    consoel.log(label_type);
 
     //editor.trigger('summernote.change');
     $("."+label_type+'_fields').removeClass('rurera-hide');
