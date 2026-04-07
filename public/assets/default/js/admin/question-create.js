@@ -3016,7 +3016,7 @@ function rureraform_properties_open(_object) {
         $(".label_type-depend").addClass('rurera-hide');
         var label_type =  $(".rureraform-admin-popup.active").find('select[name="rureraform-label_type"]').val();
         $("."+label_type+"_fields").removeClass('rurera-hide');
-    }, 3000);
+    }, 1000);
 
     return false;
 }
