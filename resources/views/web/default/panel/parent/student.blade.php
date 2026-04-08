@@ -278,6 +278,14 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-6 col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <span class="fomr-label mb-10 d-block">Date of Birth</span>
+                                    <div class="input-field">
+                                        <input type="text" class="rurera-req-field" placeholder="Date of Birth" name="dob" value="{{$user->dob}}">
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="col-6 col-lg-6 col-md-6">
                                 <span class="fomr-label mb-10 d-block">Preference</span>
@@ -302,7 +310,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-12 col-md-12 form-group">
+                            <div class="col-6 col-lg-6 col-md-6 form-group">
                                 <span class="fomr-label mb-10 d-block">Year Group</span>
                                 <div class="select-field">
                                     <select class="rurera-req-field" name="year_id">
