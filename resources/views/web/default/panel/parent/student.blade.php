@@ -282,7 +282,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <div class="form-group">
                                     <span class="fomr-label mb-10 d-block">Date of Birth</span>
                                     <div class="input-field">
-                                        <input type="text" class="rurera-req-field rureradatepicker" placeholder="Date of Birth" name="dob" value="{{date('Y-m-d', $user->dob)}}">
+                                        <input type="text" class="rurera-req-field rureradatepicker" placeholder="Date of Birth" name="dob" max="{{date('Y-m-d')}}" value="{{date('Y-m-d', $user->dob)}}">
                                     </div>
                                 </div>
                             </div>
