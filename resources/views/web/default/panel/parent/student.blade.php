@@ -395,10 +395,10 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     <label>Test Prep School Choice</label>
                                     <div class="select-field">
                                         <select class="form-control rurera-req-field" name="test_prep_school">
-                                            <option value="Not sure" {{($user->test_prep_school == 'Not sure')? 'selected' : ''}}>Not sure</option>
-                                            <option value="Independent schools" {{($user->test_prep_school == 'Independent schools')? 'selected' : ''}}>Independent schools</option>
-                                            <option value="Grammar schools" {{($user->test_prep_school == 'Grammar schools')? 'selected' : ''}}>Grammar schools</option>
-                                            <option value="Independent & grammar schools" {{($user->test_prep_school == 'Independent & grammar schools')? 'selected' : ''}}>Independent & grammar schools</option>
+                                            <option value="Not sure" {{($user->prep_school == 'Not sure')? 'selected' : ''}}>Not sure</option>
+                                            <option value="Independent schools" {{($user->prep_school == 'Independent schools')? 'selected' : ''}}>Independent schools</option>
+                                            <option value="Grammar schools" {{($user->prep_school == 'Grammar schools')? 'selected' : ''}}>Grammar schools</option>
+                                            <option value="Independent & grammar schools" {{($user->prep_school == 'Independent & grammar schools')? 'selected' : ''}}>Independent & grammar schools</option>
                                         </select>
                                     </div>
                                 </div>
