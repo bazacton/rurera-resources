@@ -127,7 +127,7 @@
                                                         <tr class="list-group-item {{$is_cancelled}}">
 
                                                             <td data-th="Student">
-                                                                <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="student-info">
+                                                                <a href="/students/{{$childObj->username}}" class="student-info">
 
                                                                     <img
                                                                             src="{{$childObj->getAvatar()}}"
@@ -162,14 +162,14 @@
                                                                 </div>
                                                             </td>
                                                             <td data-th="Years">
-                                                                <a href="/{{panelRoute()}}/students/{{$childObj->username}}">
+                                                                <a href="/students/{{$childObj->username}}">
                                                                     <small class="text-muted">
                                                                         <span class="year-lable">{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}}</span>
                                                                     </small>
                                                                 </a>
                                                             </td>
                                                             <td data-th="Last Activity">
-                                                                <a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="last-activity">
+                                                                <a href="/students/{{$childObj->username}}" class="last-activity">
                                                                 <span class="font-14 d-block"><strong class="d-block">{{ ($childObj->getLastActivity() != '')? dateTimeFormat($childObj->getLastActivity(), 'j M Y') : '' }}</strong>
                                                                     {{ ($childObj->getLastActivity() != '')? 'Last Activity' : '' }}
                                                                 </span>
