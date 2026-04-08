@@ -66,7 +66,7 @@
                 <a href="#" class="filter-mobile-btn">Filters</a>
                 @php $module_types = module_types(); @endphp
                 <ul class="analytics-type">
-                    @php $link_append = (isset($_GET['child'])) ? '?child='.$_GET['child'] : ''; @endphp
+                    @php $link_append = (isset($_GET['child']) && $_GET['child'] > 0) ? '?child='.$_GET['child'] : ''; @endphp
 
 
                     @if(!empty($module_types))
