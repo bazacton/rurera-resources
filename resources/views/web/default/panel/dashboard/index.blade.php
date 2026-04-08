@@ -1,5 +1,5 @@
 @php use App\Models\QuizzesResult; @endphp
-@extends(getTemplate() .'.panel.layouts.panel_layout')
+@extends(getTemplate() .'.panel.layouts.panel_layout_full')
 
 @push('styles_top')
     <link rel="stylesheet" href="/assets/default/vendors/chartjs/chart.min.css"/>
