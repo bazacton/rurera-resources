@@ -277,20 +277,14 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 </div> -->
                                 <div class="select-option d-flex align-items-center flex-wrap">
                                     <div class="radio-field">
-                                        <input type="radio" name="gender" id="male">
+                                        <input type="radio" name="gender" id="male" {{($user->user_preference == 'male' || $user->user_preference == '')? 'checked' : ''}}>
                                         <label for="male" class="d-inline-flex align-items-center flex-wrap mb-0 text-center">
-                                            <!-- <span class="thumb-box float-left mr-10">
-                                                <img src="/avatar/svgA16395287444009177.png" alt="select-option image" height="35" width="35">
-                                            </span> -->
                                             Male
                                         </label>
                                     </div>
                                     <div class="radio-field">
-                                        <input type="radio" name="gender" id="female">
+                                        <input type="radio" name="gender" id="female" {{($user->user_preference == 'female')? 'checked' : ''}}>
                                         <label for="female" class="d-inline-flex align-items-center flex-wrap mb-0 text-center">
-                                            <!-- <span class="thumb-box float-left mr-10">
-                                                <img src="/avatar/svgA16395287444009177.png" alt="select-option image" height="35" width="35">
-                                            </span> -->
                                             Female
                                         </label>
                                     </div>
