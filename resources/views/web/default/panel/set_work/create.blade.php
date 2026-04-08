@@ -2050,6 +2050,7 @@
             }
 
         });
+        $(".quiz-ajax-fields").html('');
 
         $('.assignemnet_types_selection')
             .not('.subscription-modal')
