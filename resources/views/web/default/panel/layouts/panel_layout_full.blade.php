@@ -78,7 +78,7 @@
             <div class="panel-content">
                 <div class="container">
                     <div class="row"> 
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="col-lg-9 col-md-9 col-12 mx-auto">
                             @yield('content')
                         </div>
                         <!-- Panel Right Sidebar Start -->
