@@ -326,7 +326,7 @@ $is_subject_page = isset($is_subject_page)? $is_subject_page : false
 
                                     @endif
 
-                                    @if(request()->is('panel/marketing/affiliates') || auth()->user()->isParent() || auth()->user()->isTutor())
+                                    @if(request()->is('panel/marketing/affiliates'))
 
                                     @if( !empty( $profile_navs ) )
                                     <div class="sidebar-students-list db-members mb-30">
