@@ -142,7 +142,7 @@
                                                                     </span>
                                                                     </a>
                                                                     <ul>
-                                                                        <li><a href="/panel/switch_user/{{$childObj->id}}" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-user.svg" alt=""></span> Switch User</a></li>
+                                                                        <li><a href="/switch_user/{{$childObj->id}}" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-user.svg" alt=""></span> Switch User</a></li>
                                                                         <li class="rurera-hide"><a href="javascript:;" data-toggle="modal" data-target="#class-connect-modal" class="connect-user-btn" data-user_id="{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/link-file.svg" alt=""></span> Connect to Class</a></li>
                                                                         @if(!isset( $childObj->userSubscriptions->subscribe ) )
                                                                             <li>
@@ -164,7 +164,7 @@
                                                             <td data-th="Years">
                                                                 <a href="/students/{{$childObj->username}}">
                                                                     <small class="text-muted">
-                                                                        <span class="year-lable">{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}}</span>
+                                                                        <span>{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}}</span>
                                                                     </small>
                                                                 </a>
                                                             </td>
@@ -209,7 +209,8 @@
                                                                     </span>
                                                                     </a>
                                                                     <ul>
-                                                                        <li><a href="/panel/switch_user/{{$childObj->id}}" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-user.svg" alt=""></span> Switch User</a></li>
+                                                                        <li><a href="/students/{{$childObj->username}}"><span class="icon-box"><img src="/assets/default/svgs/settings.svg" alt=""></span> Profile Settings</a></li>
+                                                                        <li><a href="/switch_user/{{$childObj->id}}" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-user.svg" alt=""></span> Switch User</a></li>
                                                                         <li class="rurera-hide"><a href="javascript:;" data-toggle="modal" data-target="#class-connect-modal" class="connect-user-btn" data-user_id="{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/link-file.svg" alt=""></span> Connect to Class</a></li>
                                                                         @if(!isset( $childObj->userSubscriptions->subscribe ) )
                                                                             <li>
