@@ -1658,7 +1658,7 @@
             });
         });
 
-        $('body').on('change', '.assignment_subject_check', function (e) {
+        $('body').on('change', '.assignment_subject_check-bk', function (e) {
             var subject_id = $(this).val();
             var thisObj = $(this);
             var user_id = $(".assignment-user-class:checked").val();
