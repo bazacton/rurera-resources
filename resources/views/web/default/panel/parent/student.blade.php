@@ -1390,8 +1390,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 <script>
 
     $(document).on('click', '.edit-profile-btn', function (e) {
-        $('body').addClass('disabled-div');
-        $('body').addClass('disabled-style2');
+        //$('body').addClass('disabled-div');
+        //$('body').addClass('disabled-style2');
         $(this).closest('.edit-info-list').find('.profile-view-data').addClass('rurera-hide');
         $(this).closest('.edit-info-list').find('.edit-profile-block').removeClass('rurera-hide');
 
@@ -1399,8 +1399,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
     });
 
     $(document).on('click', '.cancel-edit-button', function (e) {
-        $('body').removeClass('disabled-div');
-        $('body').removeClass('disabled-style2');
+        //$('body').removeClass('disabled-div');
+        //$('body').removeClass('disabled-style2');
         $(this).closest('.edit-info-list').find('.profile-view-data').removeClass('rurera-hide');
         $(this).closest('.edit-info-list').find('.edit-profile-block').addClass('rurera-hide');
         $(this).closest('.edit-info-list').find('.edit-profile-block').removeClass('no-disabled');
