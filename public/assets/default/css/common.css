@@ -5463,3 +5463,6 @@ p {line-height: 1.5;}
 .parent-panel .daterangepicker td.active, 
 .parent-panel .daterangepicker td.active:hover {background-color: var(--primary)}
 /* Date Calendar Style End */
+
+.disabled-style{opacity: 0.5;}
+.disabled-div {pointer-events: none;}
