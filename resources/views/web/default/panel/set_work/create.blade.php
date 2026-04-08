@@ -242,7 +242,7 @@
                     <label class="input-label">Test Type</label>
                     <div class="radio-buttons" aria-label="Test Type">
                         <label class="card-radio">
-                            <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="sats" checked>
+                            <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="sats" >
                             <span class="radio-btn"><i class="las la-check"></i>
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
@@ -420,7 +420,7 @@
                                 <label class="input-label">Attempt Type</label>
                                 <div class="radio-buttons" aria-label="Attempt Type">
                                     <label class="card-radio">
-                                        <input type="radio" class="sub_types_selection" name="ajax[new][attempt_type]" value="spell_practice" checked>
+                                        <input type="radio" class="sub_types_selection" name="ajax[new][attempt_type]" value="spell_practice" >
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
                                                 <h3>Practice Words</h3>
@@ -589,7 +589,7 @@
                                 <div class="radio-buttons">
 
                                     <label class="card-radio">
-                                        <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="freedom_mode" checked>
+                                        <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="freedom_mode">
                                         <span class="radio-btn"><i class="las la-check"></i>
                                                                         <div class="card-icon">
                                                                             <h3>Freedom Mode</h3>
@@ -1614,7 +1614,7 @@
                 var vocabulary_type = $(".vocabulary_type:checked").val();
             }
 
-            var thisObj = $(this);//$(".quiz-ajax-fields");
+            var thisObj = $(this);
             $(".yeargroup-ajax-fields").html('');
             rurera_loader(thisObj, 'button');
             jQuery.ajax({
