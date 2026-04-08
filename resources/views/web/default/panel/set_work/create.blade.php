@@ -242,7 +242,7 @@
                     <label class="input-label">Test Type</label>
                     <div class="radio-buttons" aria-label="Test Type">
                         <label class="card-radio">
-                            <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="sats" checked>
+                            <input type="radio" name="ajax[new][assignment_test_type]" class="test_types_selection" value="sats">
                             <span class="radio-btn"><i class="las la-check"></i>
                                 <div class="card-icon">
                                     <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
@@ -589,7 +589,7 @@
                                 <div class="radio-buttons">
 
                                     <label class="card-radio">
-                                        <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="freedom_mode" checked>
+                                        <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="freedom_mode">
                                         <span class="radio-btn"><i class="las la-check"></i>
                                                                         <div class="card-icon">
                                                                             <h3>Freedom Mode</h3>
@@ -1658,7 +1658,7 @@
             });
         });
 
-        $('body').on('change', '.assignment_subject_check-bk', function (e) {
+        $('body').on('change', '.assignment_subject_check', function (e) {
             var subject_id = $(this).val();
             var thisObj = $(this);
             var user_id = $(".assignment-user-class:checked").val();
