@@ -1,4 +1,4 @@
-@extends('web.default.panel.layouts.panel_layout_full')
+@extends(panelLayout('panel_layout_full'))
 @push('styles_top')
 <script src="/assets/default/vendors/charts/chart.js"></script>
 <link rel="stylesheet" href="/assets/default/vendors/daterangepicker/daterangepicker.min.css">
