@@ -98,9 +98,6 @@
                                                     <h6 class="font-16 font-weight-500">Membership</h6>
                                                 </th>
                                                 <th>
-                                                    <h6 class="font-16 font-weight-500">Status</h6>
-                                                </th>
-                                                <th>
                                                     <h6 class="font-16 font-weight-500">Action</h6>
                                                 </th>
                                             </tr>
@@ -168,8 +165,6 @@
                                                                 <a href="/{{panelRoute()}}/students/{{$childObj->username}}">
                                                                     <small class="text-muted">
                                                                         <span class="year-lable">{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}}</span>
-                                                                        <span class="class-lable">{{isset($childObj->userClass->title)? $childObj->userClass->title : ''}}</span>
-                                                                        {{isset( $childObj->userSection->title )? $childObj->userSection->title : ''}}
                                                                     </small>
                                                                 </a>
                                                             </td>
@@ -205,9 +200,6 @@
                                                                     @endif
                                                                 </span>
                                                                 </div>
-                                                            </td>
-                                                            <td data-th="Status">
-                                                                <span class="status-lable active">Active</span>
                                                             </td>
                                                             <td data-th="Action">
                                                                 <div class="last-activity profile-dropdown">
