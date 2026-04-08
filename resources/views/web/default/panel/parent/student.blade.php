@@ -212,7 +212,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                 <span class="info-list-label font-16">
                                     Date of Birth
-                                    <strong class="d-block font-weight-500">{{$user->dob}}</strong>
+                                    <strong class="d-block font-weight-500">{{dateTimeFormat($user->dob,'d F Y')}}</strong>
                                 </span>
                                 <span class="edit-icon d-inline-flex align-items-center">
                                     <!-- <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18"> -->
