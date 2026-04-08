@@ -149,13 +149,13 @@
 
 
                 @if(auth()->user()->isParent() || auth()->user()->isTutor())
-                    <li class="sidenav-item {{ (request()->is('panel/students') or request()->is('panel/students/*')) ? 'sidenav-item-active' : '' }}">
-                        <a class="d-flex align-items-center" href="/{{panelRoute()}}/students" data-toggle="tooltip" data-placement="left" title="Students">
+                    <li class="sidenav-item {{ (request()->is('students') or request()->is('students/*')) ? 'sidenav-item-active' : '' }}">
+                        <a class="d-flex align-items-center" href="/students" data-toggle="tooltip" data-placement="left" title="Students">
                             <span class="sidenav-setting-icon sidenav-item-icon">
                                 <img src="/assets/default/img/sidebar/members.png" width="150" height="150" alt="members">
                             </span>
                         </a>
-                        <a href="/{{panelRoute()}}/students" class="font-14 nav-sub-title">Students</a>
+                        <a href="/students" class="font-14 nav-sub-title">Students</a>
                     </li>
 
 
