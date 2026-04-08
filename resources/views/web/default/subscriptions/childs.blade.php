@@ -47,7 +47,7 @@
                 <div class="form-group">
                     <span class="fomr-label">Date of birth</span>
                     <div class="input-field">
-                        <input type="text" name="date-of-birth" class="rureradatepicker date-of-birth-field rurera-req-field rurera-min-char rurera-no-space" data-min="6" placeholder="Date of birth">
+                        <input type="text" name="date-of-birth" max="{{date('Y-m-d')}}" class="rureradatepicker date-of-birth-field rurera-req-field rurera-min-char rurera-no-space" data-min="6" placeholder="Date of birth">
                     </div>
                 </div>
             </div>
