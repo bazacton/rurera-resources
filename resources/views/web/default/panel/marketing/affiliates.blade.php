@@ -1,4 +1,4 @@
-@extends(getTemplate() .'.panel.layouts.panel_layout')
+@extends(panelLayout())
 
 @push('styles_top')
 
