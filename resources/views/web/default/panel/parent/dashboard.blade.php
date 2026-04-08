@@ -190,7 +190,9 @@
                                                                                 $expiry_at = $childObj->userSubscriptions->expiry_at;
                                                                             @endphp
                                                                         </strong>
+                                                                    @if($childObj->userSubscriptions->subscribe->price > 0)
                                                                         <br><span class="expiry-at">{{ dateTimeFormat($expiry_at, 'j M Y') }}</span>
+                                                                    @endif
                                                                     @else
                                                                         @if(!isset( $childObj->userSubscriptions->subscribe ) )
                                                                             <a href="javascript:;" class="package-payment-btn subscription-modal" data-type="child_payment" data-id="{{$childObj->id}}">
