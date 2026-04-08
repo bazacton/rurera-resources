@@ -193,7 +193,7 @@
                                                                     @if($childObj->userSubscriptions->subscribe->price > 0)
                                                                         <br><span class="expiry-at">{{ dateTimeFormat($expiry_at, 'j M Y') }}</span>
                                                                     @else
-                                                                        <a href="javascript:;" class="package-update-btn subscription-modal" data-type="update_package" data-id="{{$childObj->id}}">
+                                                                        <br><a href="javascript:;" class="package-update-btn subscription-modal" data-type="update_package" data-id="{{$childObj->id}}">
                                                                             Update Package
                                                                         </a>
                                                                     @endif
