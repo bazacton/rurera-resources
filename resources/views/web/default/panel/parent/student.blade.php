@@ -971,16 +971,21 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             </div>
                             @php //pre($user->userSubscriptions); @endphp
                             <div class="d-flex align-items-start text-dark-charcoal mb-0 subscribe-price">
+                                @if($subscribe->price > 0)
                                 <span class="font-36 line-height-1 packages-prices" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($user->userSubscriptions->charged_amount) }}</span>
                                 <span class="yearly-price">{{ addCurrencyToPrice($user->userSubscriptions->charged_amount) }} / {{(isset( $user->userSubscriptions->subscribe_for ) && $user->userSubscriptions->subscribe_for == 12)? 'Yearly' : 'Monthly'}}</span>
                                 <span class="yearly-price">Expiry: {{isset( $user->userSubscriptions->expiry_at )? dateTimeFormat($user->userSubscriptions->expiry_at, 'j M Y') : '-'}}</span>
+                                @else
+                                    <span class="font-36 line-height-1 packages-prices" data-package_price="{{$subscribe->price}}">FREE</span>
+                                @endif
+
 
                             </div>
                         </div>
                     @endif
                     <div class="subscription-controls d-flex align-items-center ml-auto">
                         <a href="javascript:;" class="package-update-btn btn subscription-modal" data-type="update_package" data-id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Update Subscription</a>
-                        @if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )
+                        @if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0  && $subscribe->price > 0)
                         <a href="javascript:;" class="reset-btn package-payment-btn cancel-subscription-modal" data-type="child_payment" data-id="{{$user->id}}">
                             <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>
                                 Cancel Subscription
