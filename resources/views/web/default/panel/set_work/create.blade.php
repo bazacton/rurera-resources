@@ -2051,7 +2051,7 @@
 
         });
 
-        /*$('.assignemnet_types_selection')
+        $('.assignemnet_types_selection')
             .not('.subscription-modal')
             .first()
             .prop('checked', true);
@@ -2059,7 +2059,7 @@
             $('.assignemnet_types_selection:checked').each(function () {
                 $(this).change()
             });
-        }*/
+        }
 
 
 
