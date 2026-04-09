@@ -652,7 +652,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     Learning Journey
                                     <strong class="d-block font-weight-500">
                                         @if(!$user->subscription('learningjourney'))
-                                            <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
+                                            <a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a>
                                         @else
                                             {{$user->show_sats == 1 ? 'Show' : 'Hide'}}
                                         @endif
