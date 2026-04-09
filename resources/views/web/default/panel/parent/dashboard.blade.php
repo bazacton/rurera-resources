@@ -232,7 +232,7 @@
                                                                             </li>
                                                                         @endif
                                                                         <li><a href="/panel/students/print-card/{{$childObj->id}}" target="_blank"><span class="icon-box"><img src="/assets/default/svgs/printer-activity.svg" alt=""></span> Print Login Card</a></li>
-                                                                        <li><a href="javascript:;" data-href="/panel/students/print-card/{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/trash-bin.svg" alt=""></span> Delete</a></li>
+                                                                        <li><a href="javascript:;" data-confirm_text="Are you sure you want to remove?" class="rurera-confirm" data-href="/panel/students/print-card/{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/trash-bin.svg" alt=""></span> Delete</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </td>
@@ -1250,6 +1250,15 @@
 	$(document).on('click', '.close-modal', function (e) {
 		$("#subscriptionModal").modal('hide');
 	});
+
+    $(document).on('click', '.rurera-confirm', function (e) {
+        var href_link = $(this).attr('data-href');
+        var confirm_text = $(this).attr('data-confirm_text');
+        $(".confirm-detail").html(confirm_text);
+        $('.confirm-approve-btn').attr('href', href_link);
+        $(".rurera-confirm-modal").modal('hide');
+    });
+
 
     $(document).on('click', '.subscribe-plans', function (e) {
         var current_index = $(".choose-plan-modal").attr('data-current_index');
