@@ -1,4 +1,10 @@
 <div class="rurera-tasks-card bg-white panel-border rounded-sm px-20 py-15" id="rureraTasksCard">
+    @if( $assignments->count() > 0 )
+        @foreach( $assignments as $studentAssignmentData)
+            @php pre($studentAssignmentData); @endphp
+        @endforeach
+    @endif
+
     @if( $assignmentsArray->count() > 0 )
         @foreach( $assignmentsArray as $assignmentObj)
             @php
