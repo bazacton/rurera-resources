@@ -972,6 +972,13 @@
 <script src="/assets/admin/vendor/daterangepicker/daterangepicker.min.js"></script>
 <script type="text/javascript">
 
+    $(document).on('click', '.rurera-confirm', function (e) {
+        var href_link = $(this).attr('data-href');
+        var confirm_text = $(this).attr('data-confirm_text');
+        $(".confirm-detail").html(confirm_text);
+        $('.confirm-approve-btn').attr('href', href_link);
+        $(".rurera-confirm-modal").modal('show');
+    });
 
 
 
@@ -1251,13 +1258,7 @@
 		$("#subscriptionModal").modal('hide');
 	});
 
-    $(document).on('click', '.rurera-confirm', function (e) {
-        var href_link = $(this).attr('data-href');
-        var confirm_text = $(this).attr('data-confirm_text');
-        $(".confirm-detail").html(confirm_text);
-        $('.confirm-approve-btn').attr('href', href_link);
-        $(".rurera-confirm-modal").modal('show');
-    });
+
 
 
     $(document).on('click', '.subscribe-plans', function (e) {
