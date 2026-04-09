@@ -8,7 +8,7 @@
                 <div class="header">
                     <div>
                         <div class="fw-bold">{{$studentAssignmentData->title}}</div>
-                        <div class="deadline">DEADLINE : 23, MAR 2026</div>
+                        <div class="deadline">DEADLINE : {{dateTimeFormat($studentAssignmentData->assignment_end_date, 'd, M Y', false)}}</div>
                     </div>
 
                     <!-- 3-dot dropdown -->
