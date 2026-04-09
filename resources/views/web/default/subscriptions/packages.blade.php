@@ -35,6 +35,22 @@ $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
         <div class="container">
             <form class="package-register-form" method="post" action="javascript:;" data-user_subscribed_for="{{isset( $user_subscribed_for )? $user_subscribed_for : 1}}">
                       {{ csrf_field() }}
+
+                <div class="package-register-form-fields">
+                @if(!empty($userRegisterForm))
+                    @foreach($userRegisterForm as $field_key => $field_value)
+
+                        @if(is_array($field_value))
+                            @foreach($field_value as $value)
+                                <input type="hidden" name="userRegisterForm[{{ $field_key }}][]" value="{{ $value }}">
+                            @endforeach
+                        @else
+                            <input type="hidden" name="userRegisterForm[{{ $field_key }}]" value="{{ $field_value }}">
+                        @endif
+
+                    @endforeach
+                @endif
+                </div>
                 <div class="row">
                         <div class="col-12 col-lg-12 text-center">
                             <div class="section-title text-center mb-40">	
