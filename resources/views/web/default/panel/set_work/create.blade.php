@@ -1634,7 +1634,7 @@
 
                     $(".assignment_subject_check:checked").change();
 
-                    $(".general-info-block").removeClass('rurera-hide');
+
                 }
             });
         });
@@ -1676,6 +1676,7 @@
                     //rurera_remove_loader($(".practice-quiz-topics-list"), 'button');
                     $(".practice-quiz-topics-list").html(return_data);
                     progress_cirlce_refresh();
+                    $(".general-info-block").removeClass('rurera-hide');
                 }
             });
         });
