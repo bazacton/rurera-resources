@@ -1935,6 +1935,7 @@
         ],
         word_lists_fields_array:[
 
+            'smart_score_field',
         ],
         vocabulary_fields_array: [
             /*'vocabulary_list_data',
