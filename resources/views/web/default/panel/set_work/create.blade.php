@@ -1626,8 +1626,10 @@
                 data: {"quiz_type": quiz_type, "quiz_category": vocabulary_type, "year_id": year_id, "student_id": user_id},
                 success: function (return_data) {
                     if (quiz_type == 'practice') {
+                        $(".general-info-block").addClass('rurera-hide');
                         $(".practice-quiz-ajax-fields").html(return_data);
                     } else {
+                        $(".general-info-block").removeClass('rurera-hide');
                         $(".quiz-ajax-fields").html(return_data);
                     }
                     rurera_remove_loader(thisObj, 'button');
