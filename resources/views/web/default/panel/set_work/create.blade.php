@@ -1592,10 +1592,12 @@
             var quiz_type = $(".assignemnet_types_selection:checked").val();
             if(quiz_type == 'tests'){
                 var quiz_type = $(".test_types_selection:checked").val();
+                console.log(quiz_type);
                 if(quiz_type == undefined || quiz_type == 'undefined'){
                     return;
                 }
             }
+            console.log('quiz_type=='+quiz_type);
             var vocabulary_type = '';
             if(quiz_type == 'vocabulary') {
                 var vocabulary_type = $(".vocabulary_type:checked").val();
