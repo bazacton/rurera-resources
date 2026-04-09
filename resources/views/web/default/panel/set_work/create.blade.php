@@ -1940,6 +1940,7 @@
             'vocabulary_practice_type_field',
             'no_of_questions_field',
             'show_words_type_field',
+            'general-info-block',
         ],
         spell_test_fields_array:[
             'vocabulary_type_fields',
@@ -1949,6 +1950,7 @@
             'vocabulary_practice_type_field',
             'no_of_questions_field',
             'show_words_type_field',
+            'general-info-block',
         ],
         word_lists_fields_array:[
 
