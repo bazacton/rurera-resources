@@ -612,23 +612,6 @@
                                                                         </div>
                                                                     </span>
                                     </label>
-                                    <label class="card-radio">
-                                        <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="treasure_mission">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>Treasure Mission Mode</h3>
-                                                                        </div>
-                                                                    </span>
-                                    </label>
-                                    <label class="card-radio">
-                                        <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="showdown_mode">
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>Showdown Mode</h3>
-                                                                        </div>
-                                                                    </span>
-                                    </label>
-
                                 </div>
                             </div>
                         </div>
