@@ -1171,7 +1171,7 @@
                                             MAX_VALUE
                                         );
 
-                                        if (value >= maxValue) {
+                                        if (value > maxValue) {
                                             this.value = maxValue - 1;
                                         }
 
