@@ -414,6 +414,7 @@
                 </div>
 
                 <div class="rurera_common_hide_field vocabulary_practice_type_field">
+
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
                             <fieldset class="form-group">
@@ -607,10 +608,10 @@
                                     <label class="card-radio">
                                         <input type="radio" class="sub_types_selection" name="ajax[new][timestables_type]" value="trophy_mode">
                                         <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>Trophy Mode</h3>
-                                                                        </div>
-                                                                    </span>
+                                            <div class="card-icon">
+                                                <h3>Trophy Mode</h3>
+                                            </div>
+                                        </span>
                                     </label>
                                 </div>
                             </div>
@@ -1930,6 +1931,7 @@
             'no_of_questions_field',
             'show_words_type_field',
             'no_of_attemptes_field',
+            'vocabulary_type_fields',
 
         ],
 
