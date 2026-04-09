@@ -232,7 +232,9 @@
                                                                             </li>
                                                                         @endif
                                                                         <li><a href="/panel/students/print-card/{{$childObj->id}}" target="_blank"><span class="icon-box"><img src="/assets/default/svgs/printer-activity.svg" alt=""></span> Print Login Card</a></li>
-                                                                        <li><a href="javascript:;" data-confirm_text="Are you sure you want to remove?" class="rurera-confirm" data-href="/panel/students/print-card/{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/trash-bin.svg" alt=""></span> Delete</a></li>
+                                                                        <li><a href="javascript:;" data-confirm-para="This action will permanently remove the student’s record and all associated history from the Rurera. This cannot be undone.
+If you need urgent assistance or want to recover any data, please contact Rurera Support before proceeding.<br>
+Confirm to continue or cancel to go back." data-confirm_text="Are you sure you want to delete this student?" class="rurera-confirm" data-href="/panel/students/print-card/{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/trash-bin.svg" alt=""></span> Delete</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </td>
@@ -975,7 +977,9 @@
     $(document).on('click', '.rurera-confirm', function (e) {
         var href_link = $(this).attr('data-href');
         var confirm_text = $(this).attr('data-confirm_text');
-        $(".confirm-detail").html(confirm_text);
+        var confirm_para = $(this).attr('data-confirm-para');
+        $(".confirm-title").html(confirm_text);
+        $(".confirm-detail").html(confirm_para);
         $('.confirm-approve-btn').attr('href', href_link);
         $(".rurera-confirm-modal").modal('show');
     });
