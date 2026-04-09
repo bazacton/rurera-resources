@@ -5466,3 +5466,31 @@ p {line-height: 1.5;}
 
 .disabled-style{opacity: 0.5;}
 .disabled-div {pointer-events: none;}
+
+.inactivity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+}
+.inactivity-controls a {
+    color: #fff;
+    padding: 5px 15px;
+    line-height: normal;
+    display: block;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.inactivity-controls .continue-btn {
+    background-color: var(--blue);
+}
+.inactivity-controls .confirm-approve-btn {
+    background-color: #ffdada;
+    color: #b42525;
+}
+.rurera-confirm-modal .confirm-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
