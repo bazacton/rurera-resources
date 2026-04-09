@@ -1968,7 +1968,7 @@
 
 
 
-        $(".practice-quiz-topics-list ").html('');
+        $(".assignment_subject_check").prop('checked', false);
         var fields_to_show_array = conditional_parent_data[current_selected_type+'_fields_array'];
         $(fields_to_show_array).each(function (index, field_to_show) {
             $("."+field_to_show).removeClass('rurera-hide');
