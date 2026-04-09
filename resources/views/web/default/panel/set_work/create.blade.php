@@ -2031,6 +2031,7 @@
 
     $('body').on('change', '.assignment-user-class', function (e) {
         var year_id = $(this).attr('data-year_id');
+        $(".test_types_selection").prop('checked', false);
         var timestables_no = $(this).data('timestables_no').toString().split(',').map(Number);
         $('input[name="ajax[new][tables_no][]"]').each(function () {
             var val = parseInt($(this).val(), 10);
@@ -2062,7 +2063,6 @@
             }
 
         });
-        $(".test_types_selection").prop('checked', false);
         $(".quiz-ajax-fields").html('');
 
         $('.assignemnet_types_selection')
