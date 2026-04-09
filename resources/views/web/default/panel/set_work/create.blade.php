@@ -1601,6 +1601,7 @@
 
             var thisObj = $(this);
             $(".yeargroup-ajax-fields").html('');
+            $(".quiz-ajax-fields").html('');
             rurera_loader(thisObj, 'button');
             jQuery.ajax({
                 type: "GET",
