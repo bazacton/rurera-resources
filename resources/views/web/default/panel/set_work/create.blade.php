@@ -1745,6 +1745,7 @@
             //$( ".no_of_questions" ).val( $( "#slider-range-max" ).slider( "value" ) );
             $(".no_of_questions").val(0);
 
+            $(".practice-quiz-topics-list ").html('');
 
 
 
