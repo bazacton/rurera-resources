@@ -1971,11 +1971,12 @@
         $(".assignment_subject_check").prop('checked', false);
         $(".test_types_selection").prop('checked', false);
 
+
         var fields_to_show_array = conditional_parent_data[current_selected_type+'_fields_array'];
         $(fields_to_show_array).each(function (index, field_to_show) {
             $("."+field_to_show).removeClass('rurera-hide');
         });
-
+        $(".practice-quiz-topics-list").html('');
         if(current_selected_type == 'timestables'){
             var user_id = $(".assignment-user-class:checked").val();
             var thisObj = $('.timestables_heatmap');
