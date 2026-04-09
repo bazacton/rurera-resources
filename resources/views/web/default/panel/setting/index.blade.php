@@ -21,10 +21,7 @@
 
 @section('content')
     <div class="row">
-		@if(auth()->check() && auth()->user()->isParent())
-        <div class="col-lg-8 col-md-8 col-12 mx-auto">
-		@endif
-            <form method="post" id="userSettingForm" class="userSettingForm" action="{{ (!empty($new_user)) ? '/panel/manage/'. $user_type .'/new' : '/panel/setting' }}">
+		    <form method="post" id="userSettingForm" class="userSettingForm" action="{{ (!empty($new_user)) ? '/panel/manage/'. $user_type .'/new' : '/panel/setting' }}">
                 {{ csrf_field() }}
                 <input type="hidden" name="step" value="{{ !empty($currentStep) ? $currentStep : 1 }}">
                 <input type="hidden" name="next_step" value="0">
@@ -46,9 +43,7 @@
                 @endif
 
             </form>
-		@if(auth()->check() && auth()->user()->isParent())
-        </div>
-		@endif
+
     </div>
 @endsection
 
