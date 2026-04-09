@@ -23,7 +23,7 @@
                     </div>
                 </div>
 
-                @php pre($studentAssignmentData, false); @endphp
+                @php pre($studentAssignmentData->userAssignedTopics->count(), false); @endphp
                 <!-- List -->
                 <ul class="assignment-list">
 
