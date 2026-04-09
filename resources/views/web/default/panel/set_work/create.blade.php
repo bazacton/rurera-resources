@@ -1981,6 +1981,7 @@
             $("."+field_to_show).removeClass('rurera-hide');
         });
         $(".practice-quiz-topics-list").html('');
+        $(".quiz-ajax-fields").html('');
         $(".general-info-block").addClass('rurera-hide');
         if(current_selected_type == 'timestables'){
             var user_id = $(".assignment-user-class:checked").val();
