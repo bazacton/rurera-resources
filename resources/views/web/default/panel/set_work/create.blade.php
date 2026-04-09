@@ -1839,7 +1839,7 @@
         showdown_mode_parent: 'timestables',
         spell_practice_parent: 'vocabulary',
         spell_test_parent: 'vocabulary',
-        word_lists_parent: 'vocabulary',
+        word_lists_parent: 'vocabulary_type',
     };
 
     var conditional_parent_data = {
