@@ -1606,6 +1606,9 @@
                 if(vocabulary_type == undefined || vocabulary_type == 'undefined'){
                     return;
                 }
+                vocabulary_type = (vocabulary_type == 'spelling_bee')? 'Spelling Bee' : vocabulary_type;
+                vocabulary_type = (vocabulary_type == 'syllabus')? 'Syllabus' : vocabulary_type;
+                vocabulary_type = (vocabulary_type == 'word_lists')? 'Word Lists' : vocabulary_type;
             }
 
             var thisObj = $(this);
