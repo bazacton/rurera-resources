@@ -373,7 +373,7 @@
                                 <label class="input-label">Practice Type</label>
                                 <div class="radio-buttons" role="radiogroup" aria-label="Practice Type">
                                     <label class="card-radio">
-                                        <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Word Lists" checked>
+                                        <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Word Lists">
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
                                                 <h3>Word Lists</h3>
