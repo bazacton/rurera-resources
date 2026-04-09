@@ -1917,11 +1917,9 @@
         ],
         spell_practice_fields_array:[
             'vocabulary_attempt_type_fields',
-            'general-info-block',
         ],
         spell_test_fields_array:[
             'smart_score_field',
-            'general-info-block',
         ],
         vocabulary_fields_array: [
             //'year_group_field',
