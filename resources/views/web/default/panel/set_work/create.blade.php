@@ -1911,21 +1911,27 @@
             'table_group_field',
             'practice_duration_field',
             'no_of_attemptes_field',
+            'general-info-block',
         ],
         trophy_mode_fields_array: [
-            '',
+
+            'general-info-block',
         ],
         treasure_mission_fields_array: [
             'no_of_stages_field',
+            'general-info-block',
         ],
         showdown_mode_fields_array: [
-            '',
+
+            'general-info-block',
         ],
         spell_practice_fields_array:[
             'vocabulary_attempt_type_fields',
+            'general-info-block',
         ],
         spell_test_fields_array:[
             'smart_score_field',
+            'general-info-block',
         ],
         vocabulary_fields_array: [
             //'year_group_field',
