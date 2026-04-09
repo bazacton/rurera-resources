@@ -1,7 +1,7 @@
 
     @if( $assignments->count() > 0 )
         @foreach( $assignments as $studentAssignmentData)
-            <div class="rurera-tasks-card bg-white panel-border rounded-sm px-20 py-15" id="rureraTasksCard">
+            <div class="rurera-tasks-card bg-white panel-border rounded-sm px-20 py-15 mb-10" id="rureraTasksCard">
             <div class="container setwork-block">
 
                 <!-- Header -->
