@@ -232,9 +232,9 @@
                                                                             </li>
                                                                         @endif
                                                                         <li><a href="/panel/students/print-card/{{$childObj->id}}" target="_blank"><span class="icon-box"><img src="/assets/default/svgs/printer-activity.svg" alt=""></span> Print Login Card</a></li>
-                                                                        <li><a href="javascript:;" data-confirm-para="This action will permanently remove the student’s record and all associated history from the Rurera. This cannot be undone.
-If you need urgent assistance or want to recover any data, please contact Rurera Support before proceeding.<br>
-Confirm to continue or cancel to go back." data-confirm_text="Are you sure you want to delete this student?" class="rurera-confirm" data-href="/panel/students/print-card/{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/trash-bin.svg" alt=""></span> Delete</a></li>
+                                                                        <li><a href="javascript:;" data-confirm-para="<p>This action will permanently remove the student’s record and all associated history from the Rurera. This cannot be undone.
+If you need urgent assistance or want to recover any data, please contact Rurera Support before proceeding.</p><p>
+Confirm to continue or cancel to go back.</p>" data-confirm_text="Are you sure you want to delete this student?" class="rurera-confirm" data-href="/panel/students/print-card/{{$childObj->id}}"><span class="icon-box"><img src="/assets/default/svgs/trash-bin.svg" alt=""></span> Delete</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </td>
@@ -958,7 +958,7 @@ Confirm to continue or cancel to go back." data-confirm_text="Are you sure you w
             <div class="modal-body">
                 <div class="modal-box">
                     <h3 class="font-24 font-weight-normal mb-10 confirm-title"></h3>
-                    <p class="mb-15 font-16 confirm-detail"></p>
+                    <span class="mb-15 font-16 confirm-detail"></span>
                     <div class="inactivity-controls">
                         <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">No</a>
                         <a href="javascript:;" class="confirm-approve-btn">Yes to Delete</a>
