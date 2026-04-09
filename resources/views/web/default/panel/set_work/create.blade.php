@@ -852,10 +852,10 @@
                             placeholder=""/>
                 </div>
 
-                <div class="form-section">
+                <div class="form-section general-info-block rurera_common_hide_field">
                     <h2 class="section-title">General information</h2>
                 </div>
-                <div class="row">
+                <div class="row general-info-block rurera_common_hide_field">
                     <div class="col-lg-12 col-md-12 col-sm-6 col-12">
                         <div class="form-group">
                             <label class="input-label">Practice Title</label>
@@ -873,7 +873,7 @@
                     <h2 class="section-title">Schedule</h2>
                 </div>
 
-                <div class="row">
+                <div class="row  general-info-block rurera_common_hide_field">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                         <div class="form-group">
                             <label class="input-label">Practice Start Date</label>
@@ -891,7 +891,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-6  general-info-block rurera_common_hide_field">
                         <div class="form-group">
                             <label class="input-label">Practice Due Date</label>
                             <div class="input-group">
@@ -1850,6 +1850,7 @@
             'smart_score_field',
             'courses_fields',
             'practice-quiz-topics-list',
+            'general-info-block'.
         ],
         tests_fields_array: [
             'test_types_field',
