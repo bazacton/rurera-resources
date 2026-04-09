@@ -949,6 +949,23 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade rurera-confirm-modal" id="rurera-confirm-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-box">
+                    <h3 class="font-24 font-weight-normal mb-10 confirm-title"></h3>
+                    <p class="mb-15 font-16 confirm-detail"></p>
+                    <div class="inactivity-controls">
+                        <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">No</a>
+                        <a href="javascript:;" class="confirm-approve-btn">Yes to Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 
 @push('scripts_bottom')
