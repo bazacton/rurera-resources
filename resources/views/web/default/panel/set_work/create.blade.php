@@ -1841,6 +1841,8 @@
         spell_test_parent: 'vocabulary',
         word_lists_parent: 'vocabulary',
         spelling_bee_parent: 'vocabulary',
+        syllabus_parent: 'vocabulary',
+
     };
 
     var conditional_parent_data = {
@@ -1937,11 +1939,34 @@
 
             'vocabulary_type_fields',
             'smart_score_field',
+            'vocabulary_list_data',
+            'vocabulary_fields',
+            'vocabulary_practice_type_field',
+            'no_of_questions_field',
+            'show_words_type_field',
+            'no_of_attemptes_field',
         ],
         spelling_bee_fields_array:[
 
             'vocabulary_type_fields',
             'smart_score_field',
+            'vocabulary_list_data',
+            'vocabulary_fields',
+            'vocabulary_practice_type_field',
+            'no_of_questions_field',
+            'show_words_type_field',
+            'no_of_attemptes_field',
+        ],
+        syllabus_fields_array:[
+
+            'vocabulary_type_fields',
+            'smart_score_field',
+            'vocabulary_list_data',
+            'vocabulary_fields',
+            'vocabulary_practice_type_field',
+            'no_of_questions_field',
+            'show_words_type_field',
+            'no_of_attemptes_field',
         ],
         vocabulary_fields_array: [
             /*'vocabulary_list_data',
