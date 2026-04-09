@@ -23,6 +23,7 @@
                     </div>
                 </div>
 
+                @php pre($studentAssignmentData, false); @endphp
                 <!-- List -->
                 <ul class="assignment-list">
 
