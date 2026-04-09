@@ -1933,10 +1933,22 @@
             'general-info-block',
         ],
         spell_practice_fields_array:[
-            'vocabulary_attempt_type_fields',
+            'vocabulary_type_fields',
+            'smart_score_field',
+            'vocabulary_list_data',
+            'vocabulary_fields',
+            'vocabulary_practice_type_field',
+            'no_of_questions_field',
+            'show_words_type_field',
         ],
         spell_test_fields_array:[
+            'vocabulary_type_fields',
             'smart_score_field',
+            'vocabulary_list_data',
+            'vocabulary_fields',
+            'vocabulary_practice_type_field',
+            'no_of_questions_field',
+            'show_words_type_field',
         ],
         word_lists_fields_array:[
 
