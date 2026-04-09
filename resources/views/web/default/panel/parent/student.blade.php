@@ -372,7 +372,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                 <span class="info-list-label font-16">
                                     School Preference 1
-                                    <strong class="d-block font-weight-500">{{isset($user->userSchoolPreffernce1->title)? $user->userSchoolPreffernce1->title : '-'}} {{($user->school_preference_1_date != '')? '( '.dateTimeFormat($user->school_preference_1_date, 'j M Y').' )' : ''}} </strong>
+                                    <strong class="d-block font-weight-500">{{isset($user->test_prep_school)? $user->test_prep_school : '-'}} {{($user->school_preference_1_date != '')? '( '.dateTimeFormat($user->school_preference_1_date, 'j M Y').' )' : ''}} </strong>
                                 </span>
                                 <span class="edit-icon d-inline-flex align-items-center">
                                     <!-- <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18"> -->
