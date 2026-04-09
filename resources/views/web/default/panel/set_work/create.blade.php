@@ -1745,7 +1745,6 @@
             //$( ".no_of_questions" ).val( $( "#slider-range-max" ).slider( "value" ) );
             $(".no_of_questions").val(0);
 
-            $(".practice-quiz-topics-list ").html('');
 
 
 
@@ -1969,6 +1968,7 @@
 
 
 
+        $(".practice-quiz-topics-list ").html('');
         var fields_to_show_array = conditional_parent_data[current_selected_type+'_fields_array'];
         $(fields_to_show_array).each(function (index, field_to_show) {
             $("."+field_to_show).removeClass('rurera-hide');
