@@ -1,39 +1,13 @@
 <div class="rurera-tasks-card bg-white panel-border rounded-sm px-20 py-15" id="rureraTasksCard">
     @if( $assignments->count() > 0 )
         @foreach( $assignments as $studentAssignmentData)
-            @php pre($studentAssignmentData); @endphp
-        @endforeach
-    @endif
-
-    @if( $assignmentsArray->count() > 0 )
-        @foreach( $assignmentsArray as $assignmentObj)
-            @php
-                if(!isset($assignmentObj->StudentAssignmentData->id)){
-                    continue;
-                }
-                $quizObj = $assignmentObj->quizData;
-                $assignmentTitle = isset($quizObj->id)? $quizObj->getTitleAttribute() : '';
-                $assignmentTitle = ($assignmentTitle == '')? ucfirst($assignmentObj->StudentAssignmentData->assignment_type) : $assignmentTitle;
-                $assignmentLink = '/assignment/'.$assignmentObj->id;
-                $time_difference = TimeDifference(time(), $assignmentObj->deadline_date , 'minutes');
-                $assignmentLink = getAssignmentLink($assignmentObj, $assignmentObj->StudentAssignmentData);
-                $due_label = '';
-                $due_class = '';
-                $due_label = ($time_difference <= 4000)? '- Due Soon' : $due_label;
-                $due_label = ($time_difference <= 5)? '- Overdue' : $due_label;
-
-                $due_label = ($time_difference <= 4000)? 'rurera-tasks-tag-due-soon' : $due_class;
-                $due_label = ($time_difference <= 5)? 'rurera-tasks-tag-overdue' : $due_class;
-
-            @endphp
-
 
             <div class="container setwork-block">
 
                 <!-- Header -->
                 <div class="header">
                     <div>
-                        <div class="fw-bold">WORKING LIKE A SCIENTIST</div>
+                        <div class="fw-bold">{{$studentAssignmentData->title}}</div>
                         <div class="deadline">DEADLINE : 23, MAR 2026</div>
                     </div>
 
@@ -81,6 +55,33 @@
                 </ul>
 
             </div>
+        @endforeach
+    @endif
+
+    @if( $assignmentsArray->count() > 0 )
+        @foreach( $assignmentsArray as $assignmentObj)
+            @php
+                if(!isset($assignmentObj->StudentAssignmentData->id)){
+                    continue;
+                }
+                $quizObj = $assignmentObj->quizData;
+                $assignmentTitle = isset($quizObj->id)? $quizObj->getTitleAttribute() : '';
+                $assignmentTitle = ($assignmentTitle == '')? ucfirst($assignmentObj->StudentAssignmentData->assignment_type) : $assignmentTitle;
+                $assignmentLink = '/assignment/'.$assignmentObj->id;
+                $time_difference = TimeDifference(time(), $assignmentObj->deadline_date , 'minutes');
+                $assignmentLink = getAssignmentLink($assignmentObj, $assignmentObj->StudentAssignmentData);
+                $due_label = '';
+                $due_class = '';
+                $due_label = ($time_difference <= 4000)? '- Due Soon' : $due_label;
+                $due_label = ($time_difference <= 5)? '- Overdue' : $due_label;
+
+                $due_label = ($time_difference <= 4000)? 'rurera-tasks-tag-due-soon' : $due_class;
+                $due_label = ($time_difference <= 5)? 'rurera-tasks-tag-overdue' : $due_class;
+
+            @endphp
+
+
+
 
 
             <div class="rurera-tasks-item">
