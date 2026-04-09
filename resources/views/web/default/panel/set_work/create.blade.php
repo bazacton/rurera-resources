@@ -1844,7 +1844,6 @@
 
     var conditional_parent_data = {
 
-
         practice_fields_array: [
             //'year_group_field',
             'smart_score_field',
@@ -2013,7 +2012,7 @@
         $(".year_quiz_ajax_select").change();
     });
 
-    $('body').on('change', '.sub_types_selection', function (e) {
+    $('body').on('change', '.sub_types_selection, .vocabulary_type', function (e) {
 
         $(".rurera_common_hide_field").addClass('rurera-hide');
 
