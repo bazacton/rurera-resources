@@ -1628,13 +1628,13 @@
                     if (quiz_type == 'practice') {
                         $(".practice-quiz-ajax-fields").html(return_data);
                     } else {
+                        $(".general-info-block").removeClass('rurera-hide');
                         $(".quiz-ajax-fields").html(return_data);
                     }
                     rurera_remove_loader(thisObj, 'button');
 
                     $(".assignment_subject_check:checked").change();
 
-                    $(".general-info-block").removeClass('rurera-hide');
 
 
                 }
