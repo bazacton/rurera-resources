@@ -2059,6 +2059,9 @@
         $(".test_types_selection").prop('checked', false);
         $(".quiz-ajax-fields").html('');
 
+
+        $(".practice-quiz-ajax-fields").html('');
+        $(".quiz-ajax-fields").html('');
         $('.assignemnet_types_selection')
             .not('.subscription-modal')
             .first()
