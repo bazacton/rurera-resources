@@ -1931,13 +1931,12 @@
             'smart_score_field',
         ],
         vocabulary_fields_array: [
-            //'year_group_field',
-            'vocabulary_list_data',
+            /*'vocabulary_list_data',
             'vocabulary_fields',
             'vocabulary_practice_type_field',
             'no_of_questions_field',
             'show_words_type_field',
-            'no_of_attemptes_field',
+            'no_of_attemptes_field',*/
             'vocabulary_type_fields',
 
         ],
