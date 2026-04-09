@@ -25,35 +25,24 @@
 
                 @php pre($studentAssignmentData->userAssignedTopics->count(), false); @endphp
                 <!-- List -->
-                <ul class="assignment-list">
-
-                    <li class="assignment-item">
-                        <div class="assignment-left">
-                            <div class="icon-box">🎓</div>
-                            <div>
-                                <div class="assignment-title">Working Like a Scientist</div>
-                                <div class="assignment-meta">
-                                    Attempts : 2/10 &nbsp;&nbsp; SmartScore : 50/100
+                @if($studentAssignmentData->userAssignedTopics->count() > 0)
+                    <ul class="assignment-list">
+                    @foreach($studentAssignmentData->userAssignedTopics->count() as $assignmentObj)
+                            <li class="assignment-item">
+                                <div class="assignment-left">
+                                    <div class="icon-box">🎓</div>
+                                    <div>
+                                        <div class="assignment-title">Working Like a Scientist</div>
+                                        <div class="assignment-meta">
+                                            Attempts : 2/10 &nbsp;&nbsp; SmartScore : 50/100
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="arrow">→</div>
-                    </li>
-
-                    <li class="assignment-item">
-                        <div class="assignment-left">
-                            <div class="icon-box">🎓</div>
-                            <div>
-                                <div class="assignment-title">Subject a Scientist</div>
-                                <div class="assignment-meta">
-                                    Attempts : 10/10 &nbsp;&nbsp; SmartScore : 60/100
-                                </div>
-                            </div>
-                        </div>
-                        <div class="arrow">→</div>
-                    </li>
-
-                </ul>
+                                <div class="arrow">→</div>
+                            </li>
+                    @endforeach
+                    </ul>
+                @endif
 
             </div>
         @endforeach
