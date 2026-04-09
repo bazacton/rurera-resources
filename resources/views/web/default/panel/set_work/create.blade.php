@@ -1947,7 +1947,6 @@
             'vocabulary_practice_type_field',
             'no_of_questions_field',
             'show_words_type_field',
-            'no_of_attemptes_field',
         ],
         spelling_bee_fields_array:[
 
@@ -1958,7 +1957,6 @@
             'vocabulary_practice_type_field',
             'no_of_questions_field',
             'show_words_type_field',
-            'no_of_attemptes_field',
         ],
         syllabus_fields_array:[
 
@@ -1969,7 +1967,6 @@
             'vocabulary_practice_type_field',
             'no_of_questions_field',
             'show_words_type_field',
-            'no_of_attemptes_field',
         ],
         vocabulary_fields_array: [
             /*'vocabulary_list_data',
