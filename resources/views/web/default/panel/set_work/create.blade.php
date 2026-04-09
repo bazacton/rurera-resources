@@ -373,7 +373,7 @@
                                 <label class="input-label">Practice Type</label>
                                 <div class="radio-buttons" role="radiogroup" aria-label="Practice Type">
                                     <label class="card-radio">
-                                        <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Word Lists">
+                                        <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="word_lists">
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
                                                 <h3>Word Lists</h3>
@@ -381,7 +381,7 @@
                                         </span>
                                     </label>
                                     <label class="card-radio">
-                                        <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Spelling Bee">
+                                        <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="spelling_bee">
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
                                                 <h3>Spelling Bee</h3>
@@ -389,7 +389,7 @@
                                         </span>
                                     </label>
                                     <label class="card-radio">
-                                        <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="Syllabus">
+                                        <input type="radio" class="vocabulary_type" name="ajax[new][vocabulary_type]" value="syllabus">
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
                                                 <h3>Syllabus</h3>
@@ -1839,6 +1839,7 @@
         showdown_mode_parent: 'timestables',
         spell_practice_parent: 'vocabulary',
         spell_test_parent: 'vocabulary',
+        word_lists_parent: 'vocabulary',
     };
 
     var conditional_parent_data = {
@@ -1906,6 +1907,8 @@
 
             'general-info-block',
         ],
+
+
         powerup_mode_fields_array: [
             'table_group_field',
             'practice_duration_field',
@@ -1929,6 +1932,9 @@
         ],
         spell_test_fields_array:[
             'smart_score_field',
+        ],
+        word_lists_fields_array:[
+
         ],
         vocabulary_fields_array: [
             /*'vocabulary_list_data',
