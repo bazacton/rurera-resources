@@ -1603,6 +1603,9 @@
             var vocabulary_type = '';
             if(quiz_type == 'vocabulary') {
                 var vocabulary_type = $(".vocabulary_type:checked").val();
+                if(vocabulary_type == undefined || vocabulary_type == 'undefined'){
+                    return;
+                }
             }
 
             var thisObj = $(this);
