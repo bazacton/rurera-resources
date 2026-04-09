@@ -1590,6 +1590,8 @@
             var year_id = $(this).val();
             var user_id = $(".assignment-user-class:checked").val();
             var quiz_type = $(".assignemnet_types_selection:checked").val();
+            $(".quiz-ajax-fields").html('');
+            $(".yeargroup-ajax-fields").html('');
             if(quiz_type == 'tests'){
                 var quiz_type = $(".test_types_selection:checked").val();
                 console.log(quiz_type);
@@ -1604,8 +1606,6 @@
             }
 
             var thisObj = $(this);
-            $(".yeargroup-ajax-fields").html('');
-            $(".quiz-ajax-fields").html('');
             rurera_loader(thisObj, 'button');
             jQuery.ajax({
                 type: "GET",
