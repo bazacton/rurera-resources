@@ -20,6 +20,63 @@
                 $due_label = ($time_difference <= 5)? 'rurera-tasks-tag-overdue' : $due_class;
 
             @endphp
+
+
+            <div class="container setwork-block">
+
+                <!-- Header -->
+                <div class="header">
+                    <div>
+                        <div class="fw-bold">WORKING LIKE A SCIENTIST</div>
+                        <div class="deadline">DEADLINE : 23, MAR 2026</div>
+                    </div>
+
+                    <!-- 3-dot dropdown -->
+                    <div class="dropdown">
+                        <button class="menu-btn" data-bs-toggle="dropdown">
+                            ⋮
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- List -->
+                <ul class="assignment-list">
+
+                    <li class="assignment-item">
+                        <div class="assignment-left">
+                            <div class="icon-box">🎓</div>
+                            <div>
+                                <div class="assignment-title">Working Like a Scientist</div>
+                                <div class="assignment-meta">
+                                    Attempts : 2/10 &nbsp;&nbsp; SmartScore : 50/100
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow">→</div>
+                    </li>
+
+                    <li class="assignment-item">
+                        <div class="assignment-left">
+                            <div class="icon-box">🎓</div>
+                            <div>
+                                <div class="assignment-title">Subject a Scientist</div>
+                                <div class="assignment-meta">
+                                    Attempts : 10/10 &nbsp;&nbsp; SmartScore : 60/100
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow">→</div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
             <div class="rurera-tasks-item">
                 <div class="row align-items-center">
                     <div class="col-md-7">
