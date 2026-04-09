@@ -1593,13 +1593,13 @@
             $(".quiz-ajax-fields").html('');
             $(".yeargroup-ajax-fields").html('');
             if(quiz_type == 'tests'){
-                var quiz_type = $(".test_types_selection:checked").val();
-                console.log(quiz_type);
-                if(quiz_type == undefined || quiz_type == 'undefined'){
+                var test_quiz_type = $(".test_types_selection:checked").val();
+                console.log(test_quiz_type);
+                if(test_quiz_type == undefined || test_quiz_type == 'undefined'){
                     return;
                 }
             }
-            console.log('quiz_type=='+quiz_type);
+            console.log('test_quiz_type=='+test_quiz_type);
             var vocabulary_type = '';
             if(quiz_type == 'vocabulary') {
                 var vocabulary_type = $(".vocabulary_type:checked").val();
