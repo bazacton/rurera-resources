@@ -1256,7 +1256,7 @@
         var confirm_text = $(this).attr('data-confirm_text');
         $(".confirm-detail").html(confirm_text);
         $('.confirm-approve-btn').attr('href', href_link);
-        $(".rurera-confirm-modal").modal('hide');
+        $(".rurera-confirm-modal").modal('show');
     });
 
 
