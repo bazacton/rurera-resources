@@ -548,7 +548,13 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                 <span class="info-list-label font-16">
                                     Timestables
-                                    <strong class="d-block font-weight-500">{{$user->show_timestables == 1 ? 'Show' : 'Hide'}}</strong>
+                                    <strong class="d-block font-weight-500">
+                                        @if(!$user->subscription('timestables'))
+                                            <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
+                                        @else
+                                            {{$user->show_timestables == 1 ? 'Show' : 'Hide'}}
+                                        @endif
+                                    </strong>
                                 </span>
                                 <span class="edit-icon d-inline-flex align-items-center">
                                     <!-- <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18"> -->
@@ -560,7 +566,13 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                 <span class="info-list-label font-16">
                                     Spellings
-                                    <strong class="d-block font-weight-500">{{$user->show_spellings == 1 ? 'Show' : 'Hide'}}</strong>
+                                    <strong class="d-block font-weight-500">
+                                        @if(!$user->subscription('vocabulary'))
+                                            <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
+                                        @else
+                                            {{$user->show_spellings == 1 ? 'Show' : 'Hide'}}
+                                        @endif
+                                    </strong>
                                 </span>
                                 <span class="edit-icon d-inline-flex align-items-center">
                                     <!-- <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18"> -->
@@ -584,7 +596,13 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                 <span class="info-list-label font-16">
                                     Books
-                                    <strong class="d-block font-weight-500">{{$user->show_books == 1 ? 'Show' : 'Hide'}}</strong>
+                                     <strong class="d-block font-weight-500">
+                                        @if(!$user->subscription('bookshelf'))
+                                             <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
+                                         @else
+                                             {{$user->show_books == 1 ? 'Show' : 'Hide'}}
+                                         @endif
+                                    </strong>
                                 </span>
                                 <span class="edit-icon d-inline-flex align-items-center">
                                     <!-- <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18"> -->
@@ -596,7 +614,13 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                 <span class="info-list-label font-16">
                                     Enterance Exams
-                                    <strong class="d-block font-weight-500">{{$user->show_enterance_exams == 1 ? 'Show' : 'Hide'}}</strong>
+                                    <strong class="d-block font-weight-500">
+                                        @if(!$user->subscription('11plus'))
+                                            <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
+                                        @else
+                                            {{$user->show_enterance_exams == 1 ? 'Show' : 'Hide'}}
+                                        @endif
+                                    </strong>
                                 </span>
                                 <span class="edit-icon d-inline-flex align-items-center">
                                     <!-- <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18"> -->
@@ -608,7 +632,13 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                 <span class="info-list-label font-16">
                                     SATs
-                                    <strong class="d-block font-weight-500">{{$user->show_sats == 1 ? 'Show' : 'Hide'}}</strong>
+                                    <strong class="d-block font-weight-500">
+                                        @if(!$user->subscription('sats'))
+                                            <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
+                                        @else
+                                            {{$user->show_sats == 1 ? 'Show' : 'Hide'}}
+                                        @endif
+                                    </strong>
                                 </span>
                                 <span class="edit-icon d-inline-flex align-items-center">
                                     <!-- <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18"> -->
@@ -620,7 +650,13 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                 <span class="info-list-label font-16">
                                     Learning Journey
-                                    <strong class="d-block font-weight-500">{{$user->show_sats == 1 ? 'Show' : 'Hide'}}</strong>
+                                    <strong class="d-block font-weight-500">
+                                        @if(!$user->subscription('learningjourney'))
+                                            <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
+                                        @else
+                                            {{$user->show_sats == 1 ? 'Show' : 'Hide'}}
+                                        @endif
+                                    </strong>
                                 </span>
                                 <span class="edit-icon d-inline-flex align-items-center">
                                     <!-- <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18"> -->
