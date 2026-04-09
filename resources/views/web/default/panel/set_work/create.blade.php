@@ -1613,8 +1613,10 @@
                         $(".general-info-block").addClass('rurera-hide');
                         $(".practice-quiz-ajax-fields").html(return_data);
                     } else {
-                        $(".general-info-block").removeClass('rurera-hide');
                         $(".quiz-ajax-fields").html(return_data);
+                    }
+                    if(quiz_type == 'vocabulary'){
+                        $(".general-info-block").removeClass('rurera-hide');
                     }
                     rurera_remove_loader(thisObj, 'button');
 
