@@ -402,17 +402,6 @@
                     </div>
 
                 </div>
-
-
-                <div class="rurera_common_hide_field vocabulary_list_data">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="quiz-ajax-fields"></div>
-                        </div>
-                        <div class="spell-questions-list rurera-hide"></div>
-                    </div>
-                </div>
-
                 <div class="rurera_common_hide_field vocabulary_practice_type_field">
 
                     <div class="row">
@@ -444,7 +433,6 @@
 
                     </div>
                 </div>
-
                 <div class="rurera_common_hide_field vocabulary_attempt_type_fields">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-12 conditional_fields_block practice_fields_block">
@@ -458,7 +446,7 @@
                                             @php $is_checked = ($spell_counter == 1)? 'checked' : ''; @endphp
                                             <label class="card-radio">
                                                 <input type="radio" name="ajax[new][spell_practice_type]" value="{{$spell_mode_key}}"
-                                                    {{$is_checked}}>
+                                                        {{$is_checked}}>
                                                 <span class="radio-btn"><i class="las la-check"></i>
                                                                     <div class="card-icon">
                                                                         <h3>{{$spell_mode_value}}</h3>
@@ -502,6 +490,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="rurera_common_hide_field vocabulary_list_data">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="quiz-ajax-fields"></div>
+                        </div>
+                        <div class="spell-questions-list rurera-hide"></div>
+                    </div>
+                </div>
+
+
+
+
 
                 <div class="practice-quiz-ajax-fields rurera_common_hide_field courses_fields rurera-hide"></div>
 
