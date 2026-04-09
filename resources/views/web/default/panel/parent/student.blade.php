@@ -106,7 +106,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
             </h2>
         </div>
         <div class="profile-controls d-inline-flex align-items-center flex-wrap">
-            <a href="/{{panelRoute()}}/switch_user/{{$user->id}}" class="font-weight-500">
+            <a href="/switch_user/{{$user->id}}" class="font-weight-500">
                 <span class="icon-box d-inline-block mr-5">
                     <img src="/assets/default/svgs/switch-user.svg" alt="switch-user">
                 </span>
@@ -118,7 +118,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                 </span>
                 Unlink
             </a>
-            <a href="/{{panelRoute()}}/students/print-card/{{$user->id}}" target="_blank" class="font-weight-500">
+            <a href="/students/print-card/{{$user->id}}" target="_blank" class="font-weight-500">
                 <span class="icon-box d-inline-block mr-5">
                     <img src="/assets/default/svgs/printer-activity.svg" alt="printer-activity">
                 </span>
