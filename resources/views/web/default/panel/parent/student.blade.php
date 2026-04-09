@@ -550,7 +550,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     Timestables
                                     <strong class="d-block font-weight-500">
                                         @if(!$user->subscription('timestables'))
-                                            <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
+                                            Update Subscription
                                         @else
                                             {{$user->show_timestables == 1 ? 'Show' : 'Hide'}}
                                         @endif
@@ -568,7 +568,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     Spellings
                                     <strong class="d-block font-weight-500">
                                         @if(!$user->subscription('vocabulary'))
-                                            <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
+                                            Update Subscription
                                         @else
                                             {{$user->show_spellings == 1 ? 'Show' : 'Hide'}}
                                         @endif
@@ -598,7 +598,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     Books
                                      <strong class="d-block font-weight-500">
                                         @if(!$user->subscription('bookshelf'))
-                                             <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
+                                             Update Subscription
                                          @else
                                              {{$user->show_books == 1 ? 'Show' : 'Hide'}}
                                          @endif
@@ -616,7 +616,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     Enterance Exams
                                     <strong class="d-block font-weight-500">
                                         @if(!$user->subscription('11plus'))
-                                            <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
+                                            Update Subscription
                                         @else
                                             {{$user->show_enterance_exams == 1 ? 'Show' : 'Hide'}}
                                         @endif
@@ -634,7 +634,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     SATs
                                     <strong class="d-block font-weight-500">
                                         @if(!$user->subscription('sats'))
-                                            <span class="update-subscription-text ml-auto"><a href="javascript:;" class="package-update-btn btn subscription-modal p-0 h-auto" data-type="update_package" data-id="{{$user->id}}">Update Subscription</a></span>
+                                            Update Subscription
                                         @else
                                             {{$user->show_sats == 1 ? 'Show' : 'Hide'}}
                                         @endif
