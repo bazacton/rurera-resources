@@ -1218,7 +1218,7 @@
                                     rangeMaxValue.addEventListener('input', function () {
                                         const minThumbPercent = getThumbPosition('min');
 
-                                        if (parseInt(this.value) <= parseInt(minThumbPercent)) {
+                                        if (parseInt(this.value) < parseInt(minThumbPercent)) {
                                             this.value = minThumbPercent;
                                         }
 
