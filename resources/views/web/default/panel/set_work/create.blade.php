@@ -1839,7 +1839,8 @@
         showdown_mode_parent: 'timestables',
         spell_practice_parent: 'vocabulary',
         spell_test_parent: 'vocabulary',
-        word_lists_parent: 'vocabulary_type',
+        word_lists_parent: 'vocabulary',
+        spelling_bee_parent: 'vocabulary',
     };
 
     var conditional_parent_data = {
@@ -1934,6 +1935,12 @@
         ],
         word_lists_fields_array:[
 
+            'vocabulary_type_fields',
+            'smart_score_field',
+        ],
+        spelling_bee_fields_array:[
+
+            'vocabulary_type_fields',
             'smart_score_field',
         ],
         vocabulary_fields_array: [
