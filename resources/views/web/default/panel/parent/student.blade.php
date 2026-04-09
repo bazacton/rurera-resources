@@ -297,13 +297,13 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 </div> -->
                                 <div class="select-option d-flex align-items-center flex-wrap">
                                     <div class="radio-field">
-                                        <input type="radio" name="gender" id="male" {{($user->user_preference == 'male' || $user->user_preference == '')? 'checked' : ''}}>
+                                        <input type="radio" value="male" name="gender" id="male" {{($user->user_preference == 'male' || $user->user_preference == '')? 'checked' : ''}}>
                                         <label for="male" class="d-inline-flex align-items-center flex-wrap mb-0 text-center">
                                             Male
                                         </label>
                                     </div>
                                     <div class="radio-field">
-                                        <input type="radio" name="gender" id="female" {{($user->user_preference == 'female')? 'checked' : ''}}>
+                                        <input type="radio" value="female" name="gender" id="female" {{($user->user_preference == 'female')? 'checked' : ''}}>
                                         <label for="female" class="d-inline-flex align-items-center flex-wrap mb-0 text-center">
                                             Female
                                         </label>
