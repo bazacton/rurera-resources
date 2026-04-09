@@ -1592,6 +1592,7 @@
             var quiz_type = $(".assignemnet_types_selection:checked").val();
             if(quiz_type == 'tests'){
                 var quiz_type = $(".test_types_selection:checked").val();
+                console.log('quiz_type===='+quiz_type);
             }
             var vocabulary_type = '';
             if(quiz_type == 'vocabulary') {
@@ -2059,9 +2060,6 @@
         $(".test_types_selection").prop('checked', false);
         $(".quiz-ajax-fields").html('');
 
-
-        $(".practice-quiz-ajax-fields").html('');
-        $(".quiz-ajax-fields").html('');
         $('.assignemnet_types_selection')
             .not('.subscription-modal')
             .first()
