@@ -1850,7 +1850,7 @@
             'smart_score_field',
             'courses_fields',
             'practice-quiz-topics-list',
-            'general-info-block'.
+            'general-info-block',
         ],
         tests_fields_array: [
             'test_types_field',
