@@ -360,7 +360,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
                                 <span class="info-list-label font-16">
                                     Test Prep School Choice
-                                    <strong class="d-block font-weight-500">{{isset($user->test_prep_school)? $user->test_prep_school : '-'}}</strong>
+                                    <strong class="d-block font-weight-500">{{isset($user->prep_school)? $user->prep_school : '-'}}</strong>
                                 </span>
                                 <span class="edit-icon d-inline-flex align-items-center">
                                     <!-- <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18"> -->
