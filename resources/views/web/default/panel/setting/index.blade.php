@@ -20,7 +20,6 @@
 @endpush
 
 @section('content')
-    <div class="row">
 		    <form method="post" id="userSettingForm" class="userSettingForm" action="{{ (!empty($new_user)) ? '/panel/manage/'. $user_type .'/new' : '/panel/setting' }}">
                 {{ csrf_field() }}
                 <input type="hidden" name="step" value="{{ !empty($currentStep) ? $currentStep : 1 }}">
@@ -44,7 +43,6 @@
 
             </form>
 
-    </div>
 @endsection
 
 @push('scripts_bottom')
