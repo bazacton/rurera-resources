@@ -979,9 +979,9 @@
                 <div class="row">
 
 
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-6 rurera_common_hide_field smart_score_field  ">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-6 rurera_common_hide_field general-info-block smart_score_field  ">
                         <div class="form-group">
-                            <label class="input-label">Smart Score</label>
+                            <label class="input-label">Smart Score1</label>
 
                             <div class="invalid-feedback"></div>
                             <div class="range-slider">
