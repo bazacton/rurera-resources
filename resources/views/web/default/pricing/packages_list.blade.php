@@ -106,6 +106,7 @@ $show_details = isset( $show_details )? $show_details : true;
 <script type="text/javascript">
 
     $(document).on('change', '.subscribed_for-field', function (e) {
+        console.log('field-change');
 		var user_subscribed_for = $(".package-register-form").attr('data-user_subscribed_for');
 		var selected_package = '{{$selected_package}}';
         var package_month = 1;
@@ -115,6 +116,7 @@ $show_details = isset( $show_details )? $show_details : true;
             user_subscribed_for = 12;
             package_discount = 25;
         }
+        console.log(user_subscribed_for);
         var currency_sign = $(".rurera-membership-section").attr('data-currency_sign');
 		$('.subscribe-plan').find('.package-selection').removeClass('disabled-style');
 		$('.subscribe-plan').find('.package-selection').removeClass('disabled-div');
