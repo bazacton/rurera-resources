@@ -617,6 +617,9 @@ function decodeHtml(html) {
      var section_id = $(this).attr('data-section_id');
 	 var part_item_id = $(this).attr('data-part_item_id');
 	 var default_question_id = $('.part_item_selection').attr('data-default_question_id');
+     if(default_question_id == undefined || default_question_id == 'undefined'){
+         var default_question_id = $(".mock_test_selection").attr('data-default_question_id');
+     }
 	 var loaderDiv = $('.tab-content');
 		rurera_loader(loaderDiv, 'button');
 		$.ajax({
@@ -665,6 +668,7 @@ function decodeHtml(html) {
     }
 
  $("body").on("click", ".question-builder-layout", function (t) {
+
      var default_question_id = $(".part_item_selection").attr('data-default_question_id');
      if(default_question_id == undefined || default_question_id == 'undefined'){
          var default_question_id = $(".mock_test_selection").attr('data-default_question_id');
