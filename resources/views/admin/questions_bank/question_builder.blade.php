@@ -586,6 +586,7 @@ $rand_id = rand(999,99999);
 													<h3>Topic Parts</h3>
 
 													@if(isset($topics_array) && !empty($topics_array))
+														<div class="topic-parts-block">
 														<select class="form-control d-none" id="topicSelect" name="topic_part_id">
 															<option value="">Select Topic</option>
 														@foreach($topics_array as $chapter_id => $topic_data)
@@ -597,6 +598,17 @@ $rand_id = rand(999,99999);
 															@endif
 														@endforeach
 														</select>
+															<div class="dropdown mt-2">
+																<button class="btn btn-primary dropdown-toggle w-100" id="dropdownBtn" data-toggle="dropdown">
+																	Select Topic Part
+																</button>
+
+																<div class="dropdown-menu" id="dropdownMenu">
+																	<input type="text" class="form-control search-box" placeholder="Search...">
+																	<div id="dropdownContent"></div>
+																</div>
+															</div>
+														</div>
 													@endif
 
 
