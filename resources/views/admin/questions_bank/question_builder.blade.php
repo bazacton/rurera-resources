@@ -605,7 +605,7 @@ $rand_id = rand(999,99999);
 														</select>
 															<div class="dropdown mt-2">
 																<button class="btn btn-primary dropdown-toggle w-100" id="dropdownBtn" data-toggle="dropdown">
-																	Select Topic Part
+																	{{$topic_part_label}}
 																</button>
 
 																<div class="dropdown-menu" id="dropdownMenu">
