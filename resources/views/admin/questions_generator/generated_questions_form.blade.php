@@ -686,7 +686,8 @@ function decodeHtml(html) {
          var loaderDiv = $('.tab-content');
          if($(".mock_test_selection").length > 0){
 
-             console.log('mock-test');
+             window.location.href = '/admin/questions-generator/view-api-response/'+questions_bulk_list_id+'/'+topic_part_item_id+'/'+question_id;
+             return;
          }else{
             rurera_loader(loaderDiv, 'button');
             window.location.href = '/admin/questions-generator/view-api-response/'+questions_bulk_list_id+'/'+topic_part_item_id+'/'+question_id;
