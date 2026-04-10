@@ -101,11 +101,14 @@ $show_details = isset( $show_details )? $show_details : true;
 </div>
 @endforeach
 @endif
+<script type="text/javascript">
+
+	$(".subscribed_for-field").change();
+</script>
 @push('scripts_bottom')
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 <script type="text/javascript">
 
-
-
+	$(".subscribed_for-field").change();
 </script>
 @endpush
