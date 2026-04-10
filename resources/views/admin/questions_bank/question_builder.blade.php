@@ -586,12 +586,13 @@ $rand_id = rand(999,99999);
 													<h3>Topic Parts</h3>
 
 													@if(isset($topics_array) && !empty($topics_array))
-														<select class="form-control" name="topic_part_id">
+														<select class="form-control d-none" id="topicSelect" name="topic_part_id">
+															<option value="">Select Topic</option>
 														@foreach($topics_array as $chapter_id => $topic_data)
 															@php $topics_data_array = isset($topic_data['topics'])? $topic_data['topics'] : array(); @endphp
 															@if(isset($topics_data_array) && !empty($topics_data_array))
 																@foreach($topics_data_array as $chapter_id => $topicData)
-																	<option value="{{isset($topicData['id'])? $topicData['id'] : ''}}">{{isset($topicData['title'])? $topicData['title'] : ''}}</option>
+																	<option data-group="{{isset($topic_data['title'])? $topic_data['title'] : ''}}" value="{{isset($topicData['id'])? $topicData['id'] : ''}}">{{isset($topicData['title'])? $topicData['title'] : ''}}</option>
 																@endforeach
 															@endif
 														@endforeach
@@ -1444,4 +1445,69 @@ $(document).on("change", 'select[name="question_slide_type"]', function () {
 $('select[name="question_slide_type"]').change();
 
 
+</script>
+
+
+<script>
+	$(document).ready(function () {
+
+		let groups = {};
+
+		// Build groups from select
+		$('#topicSelect option').each(function () {
+			let group = $(this).data('group');
+			let text = $(this).text();
+			let value = $(this).val();
+
+			if (!groups[group]) groups[group] = [];
+			groups[group].push({ text, value });
+		});
+
+		// Render dropdown
+		function renderDropdown(filter = "") {
+			let html = "";
+
+			$.each(groups, function (group, items) {
+
+				let visibleItems = items.filter(item =>
+						item.text.toLowerCase().includes(filter.toLowerCase())
+				);
+
+				if (visibleItems.length > 0) {
+					html += `<div class="dropdown-header">${group}</div>`;
+
+					visibleItems.forEach(item => {
+						html += `<div class="dropdown-item sub-item" data-value="${item.value}">
+                    ${item.text}
+                  </div>`;
+					});
+				}
+
+			});
+
+			$('#dropdownContent').html(html);
+		}
+
+		renderDropdown();
+
+		// Search
+		$('.search-box').on('keyup', function () {
+			renderDropdown($(this).val());
+		});
+
+		// Prevent close on search click
+		$('.search-box').on('click', function (e) {
+			e.stopPropagation();
+		});
+
+		// Select item
+		$(document).on('click', '.sub-item', function () {
+			let text = $(this).text();
+			let value = $(this).data('value');
+
+			$('#dropdownBtn').text(text);
+			$('#topicSelect').val(value); // important for form submit
+		});
+
+	});
 </script>
