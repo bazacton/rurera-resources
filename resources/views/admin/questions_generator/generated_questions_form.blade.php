@@ -351,6 +351,7 @@ $single_question = isset($single_question)? $single_question : false;
 <div class="edit-questions-difficulty-tabs">
 @if($single_question == false)
     @if(isset($QuestionsBulkListObj->quiz_id) && $QuestionsBulkListObj->quiz_id > 0)
+            @php $default_question_id = isset($_GET['question_id'])? $_GET['question_id'] : 0; @endphp
         <a href="javascript:;" class="mock_test_selection rurera-hide" data-default_question_id="{{$default_question_id}}"  data-quiz_id="{{isset($QuestionsBulkListObj->quiz_id)? $QuestionsBulkListObj->quiz_id : 0}}" data-bulk_list_id="{{isset($QuestionsBulkListObj->id)? $QuestionsBulkListObj->id : 0}}">Mock Test</a>
     @endif
 <div class="question-types-colors">
