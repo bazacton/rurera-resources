@@ -672,6 +672,10 @@ function decodeHtml(html) {
      console.log('default_question_id='+default_question_id);
 	 var thisObj = $(this);
 	 var question_id = $(this).attr('data-question_id');
+     if(default_question_id != undefined && default_question_id != 'undefined'){
+
+         question_id = default_question_id;
+     }
      if(default_question_id != question_id) {
          var topic_part_item_id = $(this).attr('data-topic_part_item_id');
          var questions_bulk_list_id = $(this).attr('data-questions_bulk_list_id');
