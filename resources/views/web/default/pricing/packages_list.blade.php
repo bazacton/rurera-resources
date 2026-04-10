@@ -117,6 +117,19 @@ $show_details = isset( $show_details )? $show_details : true;
         var currency_sign = $(".rurera-membership-section").attr('data-currency_sign');
 		$('.subscribe-plan').find('.package-selection').removeClass('disabled-style');
 		$('.subscribe-plan').find('.package-selection').removeClass('disabled-div');
+
+
+        $(".subscribe-plan").each(function(){
+            var package_user_subscribed_for = $(this).attr('data-user_subscribed_for');
+            $(this).find('.package-selection').removeClass('disabled-style');
+            $(this).find('.package-selection').removeClass('disabled-div');
+            if(user_subscribed_for == package_user_subscribed_for){
+                $(this).find('.package-selection').addClass('disabled-style');
+                $(this).find('.package-selection').addClass('disabled-div');
+            }
+
+        });
+
         $(".packages-prices").each(function(){
            var package_price = $(this).attr('data-package_price');
 		   var package_id = $(this).attr('data-package_id');
