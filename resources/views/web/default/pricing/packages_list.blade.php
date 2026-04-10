@@ -106,6 +106,6 @@ $show_details = isset( $show_details )? $show_details : true;
 <script type="text/javascript">
 
 
-	$(".subscribed_for-field").change();
+
 </script>
 @endpush
