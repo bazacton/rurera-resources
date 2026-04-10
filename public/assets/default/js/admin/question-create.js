@@ -256,6 +256,7 @@ function rureraform_save(_object, question_status) {
 
     question_layout.find('.editor-field').removeAttr("correct_answere");
     var question_layout = rureraform_encode64(JSON.stringify(question_layout.html()));
+    var topic_part_id = $('input[name="topic_part_id"]').val();
 
     var post_data = {
         "new_glossaries": new_glossaries,
@@ -289,7 +290,8 @@ function rureraform_save(_object, question_status) {
         "form-pages": post_pages,
         "form-elements": post_elements,
         "question_layout": question_layout,
-        "question_status": question_status
+        "question_status": question_status,
+        "topic_part_id": topic_part_id,
     };
     var form_submit_url = $(".form-class").attr('data-question_save_type');
     jQuery.ajax({
@@ -386,6 +388,7 @@ function rureraform_builder_save(_object, question_status) {
 
     question_layout.find('.editor-field').removeAttr("correct_answere");
     var question_layout = rureraform_encode64(JSON.stringify(question_layout.html()));
+    var topic_part_id = $('input[name="topic_part_id"]').val();
 
     var post_data = {
         "question_solve": question_solve,
@@ -398,6 +401,7 @@ function rureraform_builder_save(_object, question_status) {
         "form-pages": post_pages,
         "form-elements": post_elements,
         "question_layout": question_layout,
+        "topic_part_id": topic_part_id,
         "question_slide_type": question_slide_type,
     };
 
