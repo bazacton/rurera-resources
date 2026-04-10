@@ -27,7 +27,7 @@ $element_class = ($packages_count < 2)? 'col-lg-12 col-md-12 col-sm-12' : $eleme
 $show_details = isset( $show_details )? $show_details : true;
 @endphp
 <div class="{{$element_class}}">
-    <div data-user_subscribed_for="{{isset($user_subscribed_for)? $user_subscribed_for : 0}}" class="subscribe-plan {{(isset( $selected_package ) && $selected_package == $subscribe->id)? 'active' : ''}} current-plan position-relative d-flex flex-column rounded-lg pb-25 pt-25 px-20">
+    <div  data-user_subscribed_for="{{isset($user_subscribed_for)? $user_subscribed_for : 0}}" class="subscribe-plan {{(isset( $selected_package ) && $selected_package == $subscribe->id)? 'active' : ''}} current-plan position-relative d-flex flex-column rounded-lg pb-25 pt-25 px-20">
         <div class="plan-header">
 			<span class="subscribe-icon"><img src="{{ $subscribe->icon }}" height="128" width="128" alt="Box image"/></span>
 			<div class="subscribe-title text-left">
@@ -36,7 +36,7 @@ $show_details = isset( $show_details )? $show_details : true;
 		</div>
 
         <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
-            <span class="font-20 packages-prices" data-package_id="{{$subscribe->id}}" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span><span
+            <span data-currency_sign="{{getCurrencySign()}}" class="font-20 packages-prices" data-package_id="{{$subscribe->id}}" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span><span
                     class="yearly-price font-14">
 
                 @if($subscribe->price > 0)
