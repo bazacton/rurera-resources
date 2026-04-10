@@ -586,12 +586,12 @@ $rand_id = rand(999,99999);
 													<h3>Topic Parts</h3>
 
 													@if(isset($topics_array) && !empty($topics_array))
-														<select class="form-control">
+														<select class="form-control" name="topic_part_id">
 														@foreach($topics_array as $chapter_id => $topic_data)
 															@php $topics_data_array = isset($topic_data['topics'])? $topic_data['topics'] : array(); @endphp
 															@if(isset($topics_data_array) && !empty($topics_data_array))
 																@foreach($topics_data_array as $chapter_id => $topicData)
-																	<option value="Accepted">Accepted</option>
+																	<option value="{{isset($topicData['id'])? $topicData['id'] : ''}}">{{isset($topicData['title'])? $topicData['title'] : ''}}</option>
 																@endforeach
 															@endif
 														@endforeach
