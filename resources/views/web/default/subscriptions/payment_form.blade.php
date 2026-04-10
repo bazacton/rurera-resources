@@ -115,7 +115,7 @@ button:disabled {
 					<br><br>
 					<p>After submission, you will be redirected to securely complete next steps.</p>
 					<div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center">
-            <a href="javascript:;" data-user_id="{{isset($user_id)? $user_id : 0}}" data-subscribed_for="{{isset($subscribed_for)? $subscribed_for : 0}}" class="nav-link btn-primary rounded-pill mb-25 process-payment">Take me to Payment <span>&#8594;</span></a>
+            <a href="javascript:;" data-selected_package="{{isset($selected_package)? $selected_package : 0}}" data-user_id="{{isset($user_id)? $user_id : 0}}" data-subscribed_for="{{isset($subscribed_for)? $subscribed_for : 0}}" class="nav-link btn-primary rounded-pill mb-25 process-payment">Take me to Payment <span>&#8594;</span></a>
           </div>
                 </div>
                 <div class="col-12 col-lg-12 col-md-12 col-sm-12 rurera-hide">
