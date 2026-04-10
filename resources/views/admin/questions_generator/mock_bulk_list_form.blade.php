@@ -81,7 +81,7 @@
                             @php $selected = (isset($quizObj->id) && $quizObj->mock_type == 'mock_practice')? 'selected' : ''; @endphp
                             <option data-target_common_class="practice_type_fields" data-target_field_class="mock_practice_fields" value="mock_practice" {{$selected}}>Yes</option>
                             @php $selected = (isset($quizObj->id) && $quizObj->mock_type == 'mock_exam')? 'selected' : ''; @endphp
-                            <option data-target_common_class="practice_type_fields" data-target_field_class="" value="mock_exam" {{$selected}}>No</option>
+                            <option data-target_common_class="practice_type_fields" data-target_field_class="mock_practice_fields" value="mock_exam" {{$selected}}>No</option>
                         </select>
                     </div>
                 </div>
