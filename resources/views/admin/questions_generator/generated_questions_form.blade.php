@@ -680,6 +680,8 @@ function decodeHtml(html) {
 
          question_id = default_question_id;
      }
+     console.log('default_question_id==='+default_question_id);
+     console.log('question_id==='+question_id);
      if(default_question_id != question_id) {
          var topic_part_item_id = $(this).attr('data-topic_part_item_id');
          var questions_bulk_list_id = $(this).attr('data-questions_bulk_list_id');
