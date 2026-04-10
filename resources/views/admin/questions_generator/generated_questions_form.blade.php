@@ -672,7 +672,7 @@ function decodeHtml(html) {
      console.log('default_question_id='+default_question_id);
 	 var thisObj = $(this);
 	 var question_id = $(this).attr('data-question_id');
-     if(default_question_id != undefined && default_question_id != 'undefined'){
+     if(default_question_id > 0){
 
          question_id = default_question_id;
      }
@@ -696,6 +696,8 @@ function decodeHtml(html) {
 	 var similiarity_responses = $('.questions-nav-bar').attr('data-similiarity_responses');
 	 $('.question-builder-area').html('');
 	 var loaderDiv = $('.tab-content');
+
+     console.log('question_id--question_id='+question_id);
 	 if(is_deleted == 'yes'){
 		 var return_data = '<div class="col-12 col-md-12 api-question-status"><div class="alert alert-danger" role="alert"><strong>Question Deleted</strong><p>Question was initially imported but has since been removed from the question bank.</p></div></div>';
 		 $('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
