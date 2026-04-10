@@ -676,10 +676,6 @@ function decodeHtml(html) {
      console.log('default_question_id='+default_question_id);
 	 var thisObj = $(this);
 	 var question_id = $(this).attr('data-question_id');
-     if(default_question_id > 0){
-
-         question_id = default_question_id;
-     }
      console.log('default_question_id==='+default_question_id);
      console.log('question_id==='+question_id);
      if(default_question_id != question_id) {
