@@ -586,6 +586,7 @@ $rand_id = rand(999,99999);
 													<h3>Topic Parts</h3>
 
 													@if(isset($topics_array) && !empty($topics_array))
+														@php $topic_part_label = 'Select Topic Part'; @endphp
 														<div class="topic-parts-block">
 														<select class="form-control d-none" id="topicSelect" name="topic_part_id">
 														@foreach($topics_array as $chapter_id => $topic_data)
@@ -593,7 +594,9 @@ $rand_id = rand(999,99999);
 															@if(isset($topics_data_array) && !empty($topics_data_array))
 																@foreach($topics_data_array as $chapter_id => $topicData)
 																	@php $topic_part_id = isset($topicData['id'])? $topicData['id'] : '';
+																	$topic_part_title = isset($topicData['title'])? $topicData['title'] : '';
  																	$selected = ($topic_part_id == $questionObj->topic_part_id)? 'selected' : '';
+                                                                     $topic_part_label = ($topic_part_id == $questionObj->topic_part_id)? $topic_part_title : $topic_part_label;
  																	@endphp
 																	<option {{$selected}} data-group="{{isset($topic_data['title'])? $topic_data['title'] : ''}}" value="{{isset($topicData['id'])? $topicData['id'] : ''}}">{{isset($topicData['title'])? $topicData['title'] : ''}}</option>
 																@endforeach
@@ -1523,5 +1526,11 @@ $('select[name="question_slide_type"]').change();
 			$('#topicSelect').val(value); // important for form submit
 		});
 
+		if($('select[name="topic_part_id"]').length > 0){
+			$('select[name="topic_part_id"]').change();
+		}
+
 	});
+
+
 </script>
