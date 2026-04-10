@@ -588,7 +588,6 @@ $rand_id = rand(999,99999);
 													@if(isset($topics_array) && !empty($topics_array))
 														<div class="topic-parts-block">
 														<select class="form-control d-none" id="topicSelect" name="topic_part_id">
-															<option value="">Select Topic</option>
 														@foreach($topics_array as $chapter_id => $topic_data)
 															@php $topics_data_array = isset($topic_data['topics'])? $topic_data['topics'] : array(); @endphp
 															@if(isset($topics_data_array) && !empty($topics_data_array))
