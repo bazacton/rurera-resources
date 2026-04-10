@@ -592,7 +592,10 @@ $rand_id = rand(999,99999);
 															@php $topics_data_array = isset($topic_data['topics'])? $topic_data['topics'] : array(); @endphp
 															@if(isset($topics_data_array) && !empty($topics_data_array))
 																@foreach($topics_data_array as $chapter_id => $topicData)
-																	<option data-group="{{isset($topic_data['title'])? $topic_data['title'] : ''}}" value="{{isset($topicData['id'])? $topicData['id'] : ''}}">{{isset($topicData['title'])? $topicData['title'] : ''}}</option>
+																	@php $topic_part_id = isset($topicData['id'])? $topicData['id'] : '';
+ 																	$selected = ($topic_part_id == $questionObj->topic_part_id)? 'selected' : '';
+ 																	@endphp
+																	<option {{$selected}} data-group="{{isset($topic_data['title'])? $topic_data['title'] : ''}}" value="{{isset($topicData['id'])? $topicData['id'] : ''}}">{{isset($topicData['title'])? $topicData['title'] : ''}}</option>
 																@endforeach
 															@endif
 														@endforeach
