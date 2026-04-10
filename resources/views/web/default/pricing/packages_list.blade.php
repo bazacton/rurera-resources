@@ -36,7 +36,7 @@ $show_details = isset( $show_details )? $show_details : true;
 		</div>
 
         <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
-            <span data-selected_package="{{isset($selected_package)? $selected_package : 0}}" data-currency_sign="{{getCurrencySign()}}" class="font-20 packages-prices" data-package_id="{{$subscribe->id}}" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span><span
+            <span data-user_subscribed_for="{{isset($user_subscribed_for)? $user_subscribed_for : 0}}" data-selected_package="{{isset($selected_package)? $selected_package : 0}}" data-currency_sign="{{getCurrencySign()}}" class="font-20 packages-prices" data-package_id="{{$subscribe->id}}" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span><span
                     class="yearly-price font-14">
 
                 @if($subscribe->price > 0)
