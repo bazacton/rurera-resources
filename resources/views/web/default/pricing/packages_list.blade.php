@@ -44,6 +44,7 @@ $show_details = isset( $show_details )? $show_details : true;
                 @else
                     FREE
                 @endif
+                {{$user_subscribed_for}}
             </span>
         </div>
         <button type="submit" data-user_id="{{isset($childObj->id)?$childObj->id : 0}}" data-type="package_selection" data-id="{{$subscribe->id}}"
