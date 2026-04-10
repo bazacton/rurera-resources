@@ -112,6 +112,7 @@ $show_details = isset( $show_details )? $show_details : true;
         var package_discount = 0;
         if($(this).is(':checked')) {
             package_month = 12;
+            user_subscribed_for = 12;
             package_discount = 25;
         }
         var currency_sign = $(".rurera-membership-section").attr('data-currency_sign');
